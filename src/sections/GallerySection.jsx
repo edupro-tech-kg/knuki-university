@@ -1,17 +1,20 @@
 import SectionTitle from "../components/SectionTitle";
-import { gallery } from "../data/content";
+import { useTranslation } from "react-i18next";
 
 export default function GallerySection() {
+  const { t } = useTranslation();
+  const gallery = t("gallery");
+
   return (
     <section id="gallery" className="container-edge space-y-8 py-14 md:py-16">
       <SectionTitle
-        eyebrow="Галерея"
-        title="Жизнь университета"
-        description="Постановки, репетиции, закулисье и кадры из учебного процесса."
+        eyebrow={gallery.eyebrow}
+        title={gallery.title}
+        description={gallery.description}
       />
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {gallery.map((item) => (
+        {gallery.list.map((item) => (
           <div
             key={item.title}
             className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-gray-200 shadow-card"

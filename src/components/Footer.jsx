@@ -1,7 +1,10 @@
-import { navLinks } from "../data/content";
 import { Button } from "./Button";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+  const navLinks = t("navLinks");
+
   return (
     <footer className="bg-dark text-white">
       <div className="container-edge grid gap-10 py-12 md:grid-cols-[1.5fr_1fr_1fr] md:py-16">
@@ -12,22 +15,19 @@ export default function Footer() {
             </div>
             <div>
               <p className="text-sm uppercase tracking-[0.16em] text-white/60">
-                Kyrgyz National
+                {t("header.brandTop")}
               </p>
-              <p className="font-serif text-lg font-semibold leading-tight">Cultural & Arts University</p>
+              <p className="font-serif text-lg font-semibold leading-tight">{t("header.brandName")}</p>
             </div>
           </div>
-          <p className="max-w-md text-white/70">
-            Университет, где традиции кыргызского искусства встречаются с современными творческими
-            практиками.
-          </p>
+          <p className="max-w-md text-white/70">{t("footer.about")}</p>
           <Button variant="primary" className="bg-white text-primary hover:opacity-90">
-            Скачать буклет
+            {t("footer.download")}
           </Button>
         </div>
 
         <div>
-          <h4 className="mb-4 font-semibold">Навигация</h4>
+          <h4 className="mb-4 font-semibold">{t("footer.navTitle")}</h4>
           <ul className="space-y-3 text-white/70">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -40,16 +40,16 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-4 font-semibold">Контакты</h4>
+          <h4 className="mb-4 font-semibold">{t("footer.contactsTitle")}</h4>
           <ul className="space-y-3 text-white/70">
-            <li>г. Бишкек, пр. Чуй 123</li>
-            <li>+996 (312) 000 000</li>
-            <li>info@knu-arts.kg</li>
+            <li>{t("footer.address")}</li>
+            <li>{t("footer.phone")}</li>
+            <li>{t("footer.email")}</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10 py-6 text-center text-sm text-white/50">
-        © 2025 Кыргызский национальный университет культуры и искусств
+        {t("footer.copyright")}
       </div>
     </footer>
   );

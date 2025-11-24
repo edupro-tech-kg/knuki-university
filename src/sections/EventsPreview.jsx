@@ -1,24 +1,27 @@
 import Card from "../components/Card";
 import SectionTitle from "../components/SectionTitle";
-import { events } from "../data/content";
 import { Button } from "../components/Button";
 import CalendarMini from "./CalendarMini";
+import { useTranslation } from "react-i18next";
 
 export default function EventsPreview() {
+  const { t } = useTranslation();
+  const events = t("events");
+
   return (
     <section id="events" className="container-edge space-y-8 py-14 md:py-16">
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <SectionTitle
-          eyebrow="Мероприятия"
-          title="Ближайшие события"
-          description="Концерты, показы и мастер-классы от преподавателей и приглашенных артистов."
+          eyebrow={events.eyebrow}
+          title={events.title}
+          description={events.description}
         />
-        <Button className="self-start md:self-auto">Полное расписание</Button>
+        <Button className="self-start md:self-auto">{events.button}</Button>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         <div className="space-y-4">
-          {events.map((event) => (
+          {events.list.map((event) => (
             <Card key={event.title} className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <div className="flex items-center gap-4">
                 <div className="rounded-2xl bg-primary px-4 py-3 text-center text-white shadow-soft">
@@ -31,7 +34,7 @@ export default function EventsPreview() {
                 </div>
               </div>
               <Button variant="outline" className="px-4 py-2">
-                Зарегистрироваться
+                {events.register}
               </Button>
             </Card>
           ))}
