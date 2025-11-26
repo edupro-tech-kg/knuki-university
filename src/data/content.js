@@ -13,6 +13,10 @@ export const translations = {
       brandName: "Cultural & Arts University",
       apply: "Подать заявку",
     },
+    search: {
+      placeholder: "Поиск",
+      button: "Далее"
+    },
     hero: {
       pill: "Искусство будущего",
       badge: "Прием 2025 открыт",
