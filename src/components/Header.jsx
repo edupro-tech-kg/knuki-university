@@ -32,6 +32,9 @@ export default function Header() {
   const languageButtonRef = useRef(null);
   const mobileLanguageButtonRef = useRef(null);
 
+  // Адрес университета
+  const universityAddress = "https://www.google.com/maps/place/%D0%A3%D0%BB%D0%B8%D1%86%D0%B0+%D0%91%D0%B0%D0%B9%D1%82%D0%B8%D0%BA+%D0%91%D0%B0%D0%B0%D1%82%D1%8B%D1%80%D0%B0+3g,+%D0%91%D0%B8%D1%88%D0%BA%D0%B5%D0%BA/@42.8347316,74.5902183,17z/data=!3m1!4b1!4m6!3m5!1s0x389ec83e335b0c4f:0x4e6b7b3f3e0bcc5e!8m2!3d42.8347277!4d74.5927932!16s%2Fg%2F11s7v5q9f?entry=ttu";
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "unset";
     return () => {
@@ -93,7 +96,14 @@ export default function Header() {
     <div className="flex items-center gap-3">
       <img src={Mail} className="w-6 h-6 cursor-pointer hover:opacity-80" />
       <img src={Phone} className="w-6 h-6 cursor-pointer hover:opacity-80" />
-      <img src={Map} className="w-6 h-6 cursor-pointer hover:opacity-80" />
+      <a 
+        href={universityAddress} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="w-6 h-6 cursor-pointer hover:opacity-80"
+      >
+        <img src={Map} alt="Map" className="w-6 h-6" />
+      </a>
       <img src={Facebook} className="w-6 h-6 cursor-pointer hover:opacity-80" />
       <img
         src={Instagram}
