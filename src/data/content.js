@@ -188,6 +188,31 @@ export const translations = {
       email: "info@knu-arts.kg",
       copyright: "© 2025 Кыргызский национальный университет культуры и искусств",
     },
+    news: {
+      title: "Новости университета",
+      items: [
+        {
+          title: "Балетный вечер",
+          buttonText: "Подробнее"
+        },
+        {
+          title: "Вокальный концерт",
+          buttonText: "Подробнее"
+        },
+        {
+          title: "Образовательные услуги",
+          buttonText: "Подробнее"
+        },
+        {
+          title: "Творческая лаборатория",
+          buttonText: "Подробнее"
+        },
+        {
+          title: "Творческий вечер",
+          buttonText: "Подробнее"
+        }
+      ]
+    },
   },
   en: {
     locale: "en",
@@ -218,7 +243,7 @@ export const translations = {
       ],
       weekEvents: [
         { date: "September 14, 12:30", title: "Open house for the Arts Faculty" },
-        { date: "September 16, 18:00", title: "Diploma showcase “New Stage”" },
+        { date: "September 16, 18:00", title: "Diploma showcase \"New Stage\"" },
         { date: "September 18, 15:00", title: "Ethno-jazz improvisation masterclass" },
       ],
       admission: {
@@ -294,7 +319,7 @@ export const translations = {
       register: "Register",
       list: [
         { date: "Jan 12", title: "Winter student gala concert", location: "Grand Hall, KNUCA" },
-        { date: "Jan 26", title: "Premiere of the play “Muras”", location: "Theatre Stage" },
+        { date: "Jan 26", title: "Premiere of the play \"Muras\"", location: "Theatre Stage" },
         { date: "Feb 05", title: "Open masterclass on ethno-jazz", location: "Music Studio" },
       ],
     },
@@ -376,6 +401,31 @@ export const translations = {
       phone: "+996 (312) 000 000",
       email: "info@knu-arts.kg",
       copyright: "© 2025 Kyrgyz National University of Culture & Arts",
+    },
+    news: {
+      title: "University News",
+      items: [
+        {
+          title: "Ballet Evening",
+          buttonText: "More"
+        },
+        {
+          title: "Vocal Concert",
+          buttonText: "More"
+        },
+        {
+          title: "Educational Services",
+          buttonText: "More"
+        },
+        {
+          title: "Creative Laboratory",
+          buttonText: "More"
+        },
+        {
+          title: "Creative Evening",
+          buttonText: "More"
+        }
+      ]
     },
   },
   ky: {
@@ -566,7 +616,31 @@ export const translations = {
       email: "info@knu-arts.kg",
       copyright: "© 2025 Кыргыз Улуттук Маданият жана Искусство Университети",
     },
+    news: {
+      title: "Университет жаңылыктары",
+      items: [
+        {
+          title: "Балет кечеси",
+          buttonText: "Кененирээк"
+        },
+        {
+          title: "Вокалдык концерт",
+          buttonText: "Кененирээк"
+        },
+        {
+          title: "Билим берүү кызматтары",
+          buttonText: "Кененирээк"
+        },
+        {
+          title: "Чыгармачыл лаборатория",
+          buttonText: "Кененирээк"
+        },
+        {
+          title: "Чыгармачыл кече",
+          buttonText: "Кененирээк"
+        }
+      ]
+    },
   },
 };
-
 export const defaultLocale = "ru";
