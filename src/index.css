@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -35,4 +33,47 @@ body {
 
 .pill {
   @apply inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium uppercase tracking-[0.08em];
+}
+
+.headline-1 {
+  @apply font-serif text-headline1 text-primary;
+}
+.headline-2 {
+  @apply font-serif text-headline2 text-primary;
+}
+.headline-3 {
+  @apply font-sans text-headline3 text-text-primary;
+}
+.headline-4 {
+  @apply font-sans text-headline4 text-text-primary;
+}
+.headline-5 {
+  @apply font-sans text-headline5 text-text-primary;
+}
+.headline-6 {
+  @apply font-sans text-headline6 text-text-primary;
+}
+.label-lg {
+  @apply font-sans text-labelLg text-text-primary;
+}
+.label-md {
+  @apply font-sans text-labelMd text-text-primary;
+}
+.label-sm {
+  @apply font-sans text-labelSm text-text-primary;
+}
+.body-lg {
+  @apply font-sans text-bodyLg text-text-primary;
+}
+.body-md {
+  @apply font-sans text-bodyMd text-text-primary;
+}
+.body-sm {
+  @apply font-sans text-bodySm text-text-primary;
+}
+.body-cap {
+  @apply font-sans text-bodyCap text-text-primary;
+}
+.body-cap-sm {
+  @apply font-sans text-bodyCapSm text-text-primary;
 }

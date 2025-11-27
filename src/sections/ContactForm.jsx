@@ -18,11 +18,15 @@ export default function ContactForm() {
           />
           <div className="grid grid-cols-2 gap-4 text-sm text-white/80">
             <div className="rounded-2xl bg-white/10 p-4">
-              <p className="text-xs uppercase tracking-[0.12em] text-white/60">{contact.addressLabel}</p>
+              <p className="text-xs uppercase tracking-[0.12em] text-white/60">
+                {contact.addressLabel}
+              </p>
               <p className="text-base font-semibold">{contact.addressValue}</p>
             </div>
             <div className="rounded-2xl bg-white/10 p-4">
-              <p className="text-xs uppercase tracking-[0.12em] text-white/60">{contact.phoneLabel}</p>
+              <p className="text-xs uppercase tracking-[0.12em] text-white/60">
+                {contact.phoneLabel}
+              </p>
               <p className="text-base font-semibold">{contact.phoneValue}</p>
             </div>
           </div>
@@ -31,7 +35,9 @@ export default function ContactForm() {
         <div className="section-surface space-y-4 bg-white/95 text-dark shadow-soft">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-xs uppercase tracking-[0.12em] text-gray-500">{contact.formBadge}</p>
+              <p className="text-xs uppercase tracking-[0.12em] text-gray-500">
+                {contact.formBadge}
+              </p>
               <p className="text-lg font-semibold text-dark">{contact.formTitle}</p>
             </div>
             <div className="h-10 w-10 rounded-xl bg-primary/10"></div>

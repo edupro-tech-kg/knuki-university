@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { CiFileOn } from "react-icons/ci";
 
-const FileForm = ({ 
+const FileForm = ({
   label,
   className = "",
   labelClassName = "",
   accept,
   multiple = false,
-  onChange 
+  onChange,
 }) => {
   const [file, setFile] = useState(null);
 

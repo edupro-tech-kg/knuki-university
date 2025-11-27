@@ -25,7 +25,9 @@ export default function CalendarMini() {
               item.active ? "bg-primary text-white shadow-soft" : "bg-light text-dark"
             }`}
           >
-            <span className="text-[11px] uppercase tracking-[0.12em] text-gray-500">{item.day}</span>
+            <span className="text-[11px] uppercase tracking-[0.12em] text-gray-500">
+              {item.day}
+            </span>
             <span className="text-base font-semibold">{item.date}</span>
           </div>
         ))}

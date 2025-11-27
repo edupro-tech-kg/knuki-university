@@ -11,9 +11,7 @@ function QuickLinks() {
 
   return (
     <section className="py-14 w-full">
-      <h2 className="text-center text-3xl md:text-4xl font-serif mb-10">
-        {quickLinks.title}
-      </h2>
+      <h2 className="text-center text-3xl md:text-4xl font-serif mb-10">{quickLinks.title}</h2>
 
       <div
         className="
@@ -35,11 +33,7 @@ function QuickLinks() {
           >
             <div className="flex justify-between w-full mt-[-12px]">
               <img src={Ornament} alt="" className="w-16 h-16 -ml-4" />
-              <img
-                src={Ornament}
-                alt=""
-                className="w-16 h-16 rotate-90 -mr-4"
-              />
+              <img src={Ornament} alt="" className="w-16 h-16 rotate-90 -mr-4" />
             </div>
 
             <p className="text-lg font-semibold text-[#751715] min-h-[70px] flex items-center justify-center">
