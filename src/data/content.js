@@ -10,7 +10,7 @@ export const translations = {
     ],
     header: {
       universityName:
-        "Кыргызский национальный университет культуры и искусств имени Бюбюсары Бейшеналиевой",
+        "Кыргызский национальный университет культуры и искусств имени Бубусары Бейшеналиевой",
       menu: "Меню",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
@@ -284,6 +284,26 @@ export const translations = {
         },
       ],
     },
+    consultation: {
+      title: "Запись на консультацию",
+      description: "В ближайшее время с вами свяжется менеджер!",
+      form: {
+        name: "Ваше имя",
+        namePlaceholder: "Введите ваше имя",
+        faculty: "Факультет",
+        phone: "Номер телефона",
+        phonePlaceholder: "+996",
+        portfolio: "Портфолио",
+        upload: "Загрузить",
+        submit: "Отправить",
+        programs: {
+          program1: "Изобразительное искусство",
+          program2: "Дизайн и мультимедиа",
+          program3: "Музыка и сценическое искусство"
+        }
+      }
+    }
+
   },
   en: {
     locale: "en",
@@ -565,6 +585,25 @@ export const translations = {
         },
       ],
     },
+    consultation: {
+      title: "book a consultation",
+      description: "a manager will contact you shortly!",
+      form: {
+        name: "Your Name",
+        namePlaceholder: "Enter your name",
+        faculty: "Faculty",
+        phone: "Your Phone Number",
+        phonePlaceholder: "+996",
+        portfolio: "Portfolio",
+        upload: "Upload",
+        submit: "Send",
+        programs: {
+          program1: "Fine Arts",
+          program2: "Design and Multimedia",
+          program3: "Music and Performing Arts"
+        }
+      }
+    }
   },
   ky: {
     locale: "ky",
@@ -851,6 +890,25 @@ export const translations = {
         },
       ],
     },
+    consultation: {
+      title: "Консультацияга жазылуу",
+      description: "Жакын аралыкта сиз менен менеджер байланышат!",
+      form: {
+        name: "Атыңыз",
+        namePlaceholder: "Атыңызды жазыңыз",
+        faculty: "Факультет",
+        phone: "Телефон номериңиз",
+        phonePlaceholder: "+996",
+        portfolio: "Портфолио",
+        upload: "Жүктөө",
+        submit: "Жиберүү",
+        programs: {
+          program1: "Сүрөт искусствосу",
+          program2: "Дизайн жана мультимедия",
+          program3: "Музыка жана сахналык искусство"
+        }
+      }
+    }
   },
 };
 

@@ -7,10 +7,10 @@ import AdvantagesSection from "./sections/AdvantagesSection";
 import EventsPreview from "./sections/EventsPreview";
 import HistorySection from "./sections/HistorySection";
 import GallerySection from "./sections/GallerySection";
-import ContactForm from "./sections/ContactForm";
+// import ContactForm from "./sections/ContactForm";
 import QuickLinks from "./sections/QuickLinks";
 import NewsSection from "./sections/NewsSection";
-
+import ConsultationSection from "./sections/ConsultationSection";
 function App() {
   return (
     <div className="min-h-screen bg-light text-dark">
@@ -25,7 +25,8 @@ function App() {
         <QuickLinks />
         <HistorySection />
         <GallerySection />
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <ConsultationSection />
       </main>
       <Footer />
     </div>

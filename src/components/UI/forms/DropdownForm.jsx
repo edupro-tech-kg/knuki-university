@@ -4,8 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 const DropdownForm = ({ 
   fields = [], 
   className = "",
-  spacing = "normal",
-  inputWidth = "md" 
+  labelClassName = "",
 }) => {
   const [values, setValues] = useState(
     fields.reduce((acc, field) => {
@@ -16,41 +15,29 @@ const DropdownForm = ({
 
   const handleChange = (name, value) => {
     setValues(prev => ({ ...prev, [name]: value }));
-    
-    if (fields.find(f => f.name === name)?.onChange) {
-      fields.find(f => f.name === name).onChange(value);
-    }
-  };
-
-  const spacingClasses = {
-    compact: "mb-3",
-    normal: "mb-4",
-    loose: "mb-6"
-  };
-
-  const widthClasses = {
-    sm: "max-w-xs",  
-    md: "max-w-md",   
-    lg: "max-w-lg",   
-    xl: "max-w-xl"   
+    const field = fields.find(f => f.name === name);
+    if (field?.onChange) field.onChange(value);
   };
 
   return (
-    <div className={`mx-auto p-6 ${className}`}>
+    <div className={`w-full ${className}`}>
       {fields.map((field) => (
-        <div key={field.name} className={spacingClasses[spacing]}>
+        <div key={field.name} className="mb-4 w-full">
           {field.label && (
             <label 
               htmlFor={field.name}
-              className="block text-white text-lg font-medium mb-2"
+              className={`block text-black font-medium mb-2 ${labelClassName}`}
             >
               {field.label}
-              {field.required && <span className="text-red-400 ml-1">*</span>}
+              {field.required && (
+                <span className="text-red-400 ml-1">
+                  {/* * */}
+                  </span>
+              )}
             </label>
           )}
 
-          {/* Контейнер с контролируемой шириной */}
-          <div className={`relative ${widthClasses[inputWidth]}`}>
+          <div className="relative w-full">
             <select
               id={field.name}
               value={values[field.name]}
@@ -58,7 +45,7 @@ const DropdownForm = ({
               disabled={field.disabled}
               className="
                 w-full 
-                rounded-lg 
+                rounded
                 px-4
                 py-3
                 text-gray-800 
@@ -80,10 +67,15 @@ const DropdownForm = ({
               "
             >
               <option value="" disabled={field.required}>
-                {field.placeholder || "Select an option..."}
+                {field.placeholder || "Select..."}
               </option>
+
               {field.options?.map((opt) => (
-                <option key={opt.value} value={opt.value} disabled={opt.disabled}>
+                <option 
+                  key={opt.value} 
+                  value={opt.value} 
+                  disabled={opt.disabled}
+                >
                   {opt.label}
                 </option>
               ))}
