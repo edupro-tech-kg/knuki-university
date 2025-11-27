@@ -1,40 +1,76 @@
 import React, { useState } from "react";
 
-const PrimaryForm = () => {
-    const [value, setValue] = useState("");
-    const [focused, setFocused] = useState(false);
+const PrimaryForm = ({ 
+  label,
+  className = "",
+  inputWidth = "md",
+  type = "text",
+  onChange 
+}) => {
+  const [value, setValue] = useState("");
+  const [focused, setFocused] = useState(false);
 
-    const showLabel = focused || value.length > 0;
+  const handleChange = (e) => {
+    setValue(e.target.value);
+    if (onChange) {
+      onChange(e.target.value);
+    }
+  };
 
-    return (
-        <div className="w-full max-w-md mx-auto p-4">
-            <div className="relative">
+  const showLabel = focused || value.length > 0;
 
-               <input
-  type="text"
-  placeholder={showLabel ? "" : "Text"}
-  className="
-    w-full 
-    max-w-[12rem]        
-    sm:max-w-[16rem] 
-    md:max-w-[20rem]    
-    lg:max-w-[24rem]    
-    mx-auto            
+  const widthClasses = {
+    sm: "max-w-xs",  
+    md: "max-w-md",   
+    lg: "max-w-lg",   
+    xl: "max-w-xl"   
+  };
 
-    rounded px-3 text-gray-700 border border-gray-300
-    transition-all duration-200 outline-none
-    focus:ring-2 focus:ring-black
+  return (
+    <div className={`mx-auto p-6 ${className}`}>
+      <div className="mb-4">
+        {label && (
+          <label 
+            htmlFor="primary-input"
+            className="block text-white text-lg font-medium mb-2"
+          >
+            {label}
+          </label>
+        )}
 
-  
-    py-2 text-sm
-    sm:py-3 sm:text-base
-    md:py-4
-  "
-/>
-
-            </div>
+        <div className={`relative ${widthClasses[inputWidth]}`}>
+          <input
+            id="primary-input"
+            type={type}
+            value={value}
+            placeholder={showLabel ? "" : "Text"}
+            onChange={handleChange}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+            className="
+              w-full 
+              rounded-lg 
+              px-4
+              py-3
+              text-gray-800 
+              border 
+              border-gray-300
+              transition-all 
+              duration-200 
+              outline-none
+              focus:ring-2 
+              focus:ring-black
+              focus:border-black
+              text-base
+              bg-white
+              hover:border-gray-400
+              placeholder-gray-500
+            "
+          />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default PrimaryForm;
