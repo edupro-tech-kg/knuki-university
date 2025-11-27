@@ -180,15 +180,8 @@ export const translations = {
       disclaimer: "Нажимая кнопку, вы соглашаетесь на обработку персональных данных.",
     },
     footer: {
-      about:
-        "Университет, где традиции кыргызского искусства встречаются с современными творческими практиками.",
-      download: "Скачать буклет",
-      navTitle: "Навигация",
-      contactsTitle: "Контакты",
-      address: "г. Бишкек, пр. Чуй 123",
-      phone: "+996 (312) 000 000",
-      email: "info@knu-arts.kg",
-      copyright: "© 2025 Кыргызский национальный университет культуры и искусств",
+      address: "АДРЕС",
+      links: "БЫСТРЫЕ ССЫЛКИ"
     },
   },
   en: {
@@ -372,14 +365,8 @@ export const translations = {
       disclaimer: "By submitting you agree to personal data processing.",
     },
     footer: {
-      about: "Where Kyrgyz artistic heritage meets contemporary creative practice.",
-      download: "Download brochure",
-      navTitle: "Navigation",
-      contactsTitle: "Contacts",
-      address: "Bishkek, Chui Ave 123",
-      phone: "+996 (312) 000 000",
-      email: "info@knu-arts.kg",
-      copyright: "© 2025 Kyrgyz National University of Culture & Arts",
+      address: "ADDRESS",
+      links: "QUICK LINKS"
     },
   },
   ky: {
@@ -563,14 +550,8 @@ export const translations = {
       disclaimer: "Баскычты басып, жеке маалыматты иштетүүгө макулдугуңузду бересиз.",
     },
     footer: {
-      about: "Кыргыз искусствосунун мурасы жана заманбап чыгармачыл практика чогулган жер.",
-      download: "Буклетти жүктөө",
-      navTitle: "Навигация",
-      contactsTitle: "Байланыш",
-      address: "Бишкек ш., Чүй пр. 123",
-      phone: "+996 (312) 000 000",
-      email: "info@knu-arts.kg",
-      copyright: "© 2025 Кыргыз Улуттук Маданият жана Искусство Университети",
+      address: "АДРЕС",
+      links: "ТЕЗ ШИЛТЕМЕЛЕР"
     },
   },
 };
