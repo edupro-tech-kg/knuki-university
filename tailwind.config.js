@@ -23,6 +23,7 @@ export default {
 					"linear-gradient(120deg, rgba(138,43,43,0.65), rgba(26,26,26,0.75)), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1600&q=80')",
 				'about-pattern':
 					'radial-gradient(circle at 20% 20%, rgba(195,146,75,0.18), transparent 25%), radial-gradient(circle at 80% 10%, rgba(138,43,43,0.15), transparent 22%), radial-gradient(circle at 50% 80%, rgba(26,26,26,0.12), transparent 28%)',
+				'section-fone': 'url("https://i.ibb.co/4wn6CgY8/lastFone.png")',
 			},
 		},
 	},
