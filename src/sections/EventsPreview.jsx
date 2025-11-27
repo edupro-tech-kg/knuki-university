@@ -40,7 +40,6 @@ export default function EventsPreview() {
           ))}
         </div>
 
-        <CalendarMini />
       </div>
     </section>
   );
