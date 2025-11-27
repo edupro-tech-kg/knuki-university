@@ -162,6 +162,16 @@ export const translations = {
         { day: "Вс", date: 12, active: false },
       ],
     },
+    quickLinks: {
+      title: "Быстрые ссылки",
+      cards: [
+        { id: 1, title: "Об университете" },
+        { id: 2, title: "Наука и международные связи" },
+        { id: 3, title: "Ebilim" },
+        { id: 4, title: "Документы" },
+      ],
+      button: "Подробнее",
+    },
     history: {
       eyebrow: "История",
       title: "Наследие университета",
@@ -435,6 +445,17 @@ export const translations = {
         { day: "Sun", date: 12, active: false },
       ],
     },
+    quickLinks: {
+      title: "Quick Links",
+      cards: [
+        { id: 1, title: "About the University" },
+        { id: 2, title: "Science & International Relations" },
+        { id: 3, title: "Ebilim" },
+        { id: 4, title: "Documents" },
+      ],
+      button: "Learn More",
+    },
+
     history: {
       eyebrow: "History",
       title: "University legacy",
@@ -708,6 +729,17 @@ export const translations = {
         { day: "Жк", date: 12, active: false },
       ],
     },
+    quickLinks: {
+      title: "Тез ссылкалар",
+      cards: [
+        { id: 1, title: "Университет тууралуу" },
+        { id: 2, title: "Илим жана эл аралык байланыш" },
+        { id: 3, title: "Ebilim" },
+        { id: 4, title: "Документтер" },
+      ],
+      button: "Кененирээк",
+    },
+
     history: {
       eyebrow: "Тарых",
       title: "Университет мурасы",
