@@ -16,6 +16,10 @@ export const translations = {
       brandName: "Cultural & Arts University",
       apply: "Подать заявку",
     },
+    search: {
+      placeholder: "Поиск",
+      button: "Далее",
+    },
     hero: {
       pill: "Искусство будущего",
       badge: "Прием 2025 открыт",
@@ -232,6 +236,16 @@ export const translations = {
         "Нажимая кнопку, вы соглашаетесь на обработку персональных данных.",
     },
     footer: {
+      about:
+        "Университет, где традиции кыргызского искусства встречаются с современными творческими практиками.",
+      download: "Скачать буклет",
+      navTitle: "Навигация",
+      contactsTitle: "Контакты",
+      address: "г. Бишкек, пр. Чуй 123",
+      phone: "+996 (312) 000 000",
+      email: "info@knu-arts.kg",
+      copyright:
+        "© 2025 Кыргызский национальный университет культуры и искусств",
       address: "АДРЕС",
       links: "БЫСТРЫЕ ССЫЛКИ",
     },
@@ -278,6 +292,10 @@ export const translations = {
       brandName: "Cultural & Arts University",
       apply: "Apply now",
     },
+    search: {
+      placeholder: "Search",
+      button: "Next",
+    },
     hero: {
       pill: "Art of the future",
       badge: "Admissions 2025 open",
@@ -296,7 +314,7 @@ export const translations = {
           date: "September 14, 12:30",
           title: "Open house for the Arts Faculty",
         },
-        { date: "September 16, 18:00", title: 'Diploma showcase "New Stage"' },
+        { date: "September 16, 18:00", title: "Diploma showcase “New Stage”" },
         {
           date: "September 18, 15:00",
           title: "Ethno-jazz improvisation masterclass",
@@ -392,7 +410,7 @@ export const translations = {
         },
         {
           date: "Jan 26",
-          title: 'Premiere of the play "Muras"',
+          title: "Premiere of the play “Muras”",
           location: "Theatre Stage",
         },
         {
@@ -489,6 +507,15 @@ export const translations = {
       disclaimer: "By submitting you agree to personal data processing.",
     },
     footer: {
+      about:
+        "Where Kyrgyz artistic heritage meets contemporary creative practice.",
+      download: "Download brochure",
+      navTitle: "Navigation",
+      contactsTitle: "Contacts",
+      address: "Bishkek, Chui Ave 123",
+      phone: "+996 (312) 000 000",
+      email: "info@knu-arts.kg",
+      copyright: "© 2025 Kyrgyz National University of Culture & Arts",
       address: "ADDRESS",
       links: "QUICK LINKS",
     },
@@ -534,6 +561,10 @@ export const translations = {
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
       apply: "Кабыл алууга өтүү",
+    },
+    search: {
+      placeholder: "Издөө",
+      button: "Кийинки",
     },
     hero: {
       pill: "Келечектин искусствосу",
@@ -751,6 +782,15 @@ export const translations = {
         "Баскычты басып, жеке маалыматты иштетүүгө макулдугуңузду бересиз.",
     },
     footer: {
+      about:
+        "Кыргыз искусствосунун мурасы жана заманбап чыгармачыл практика чогулган жер.",
+      download: "Буклетти жүктөө",
+      navTitle: "Навигация",
+      contactsTitle: "Байланыш",
+      address: "Бишкек ш., Чүй пр. 123",
+      phone: "+996 (312) 000 000",
+      email: "info@knu-arts.kg",
+      copyright: "© 2025 Кыргыз Улуттук Маданият жана Искусство Университети",
       address: "АДРЕС",
       links: "ТЕЗ ШИЛТЕМЕЛЕР",
     },
