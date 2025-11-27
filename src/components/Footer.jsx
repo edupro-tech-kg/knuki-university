@@ -1,10 +1,10 @@
 import { Button } from "./Button";
 import { useTranslation } from "react-i18next";
-import facebook from "../assets/facebook.svg"
-import instagram from "../assets/instagram.svg"
-import letter from "../assets/letter.svg"
-import Map from "../assets/Map.svg"
-import Phone from "../assets/Phone.svg"
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
+import letter from "../assets/letter.svg";
+import Map from "../assets/Map.svg";
+import Phone from "../assets/Phone.svg";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -14,7 +14,9 @@ export default function Footer() {
       <div className="container-edge md:flex items-end justify-between py-16 grid lg:gap-0 gap-10">
         <div className="flex gap-10">
           <div className="grid gap-4">
-            <strong className="font-medium text-[16.57px] lg:text-[26px]">{t("footer.address")}</strong>
+            <strong className="font-medium text-[16.57px] lg:text-[26px]">
+              {t("footer.address")}
+            </strong>
             <ul className="font-light text-[12.74px] lg:text-[20px] tracking-[-0.04em]">
               <li>720005 г. Бишкек</li>
               <li>ул. Джантошева 113</li>
@@ -25,7 +27,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="grid gap-4">
-            <strong className="font-medium text-[16.57px] lg:text-[26px]">{t("footer.links")}</strong>
+            <strong className="font-medium text-[16.57px] lg:text-[26px]">
+              {t("footer.links")}
+            </strong>
             <ul className="font-light text-[12.74px] lg:text-[20px] tracking-[-0.04em]">
               <li>720005 г. Бишкек</li>
               <li>ул. Джантошева 113</li>

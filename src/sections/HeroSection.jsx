@@ -42,8 +42,13 @@ export default function HeroSection() {
             </div>
             <ul className="space-y-4 text-dark">
               {weekEvents.map((event, idx) => (
-                <li key={event.title} className="flex items-start gap-3 rounded-2xl bg-light px-4 py-3">
-                  <div className={`mt-1 h-2 w-2 rounded-full ${idx % 2 === 0 ? "bg-primary" : "bg-accent"}`}></div>
+                <li
+                  key={event.title}
+                  className="flex items-start gap-3 rounded-2xl bg-light px-4 py-3"
+                >
+                  <div
+                    className={`mt-1 h-2 w-2 rounded-full ${idx % 2 === 0 ? "bg-primary" : "bg-accent"}`}
+                  ></div>
                   <div>
                     <p className="text-sm text-gray-500">{event.date}</p>
                     <p className="text-base font-semibold">{event.title}</p>
@@ -53,7 +58,9 @@ export default function HeroSection() {
             </ul>
             <div className="flex items-center justify-between rounded-2xl bg-dark px-4 py-3 text-white">
               <div>
-                <p className="text-sm uppercase tracking-[0.14em] text-white/70">{hero.admission.label}</p>
+                <p className="text-sm uppercase tracking-[0.14em] text-white/70">
+                  {hero.admission.label}
+                </p>
                 <p className="text-lg font-semibold">{hero.admission.deadline}</p>
               </div>
               <Button variant="primary" className="bg-white text-primary hover:opacity-90">

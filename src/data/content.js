@@ -67,8 +67,7 @@ export const translations = {
     programs: {
       eyebrow: "Программы",
       title: "Направления обучения",
-      description:
-        "Погружение в ключевые дисциплины с упором на практику и творческие проекты.",
+      description: "Погружение в ключевые дисциплины с упором на практику и творческие проекты.",
       cta: "Подробнее",
       duration: "4 года",
       list: [
@@ -84,26 +83,22 @@ export const translations = {
         },
         {
           title: "Хореография",
-          description:
-            "Народный и современный танец, постановочная работа и тренажные классы.",
+          description: "Народный и современный танец, постановочная работа и тренажные классы.",
         },
         {
           title: "Декоративно-прикладное искусство",
-          description:
-            "Дизайн костюма, сценография и ремесла, основанные на кыргызских традициях.",
+          description: "Дизайн костюма, сценография и ремесла, основанные на кыргызских традициях.",
         },
       ],
     },
     advantages: {
       eyebrow: "Почему мы",
       title: "Сильные стороны университета",
-      description:
-        "Живой контакт с мастерами, регулярная сцена и участие в проектах.",
+      description: "Живой контакт с мастерами, регулярная сцена и участие в проектах.",
       list: [
         {
           title: "Сильный педагогический состав",
-          description:
-            "Народные артисты, заслуженные деятели искусств и приглашенные наставники.",
+          description: "Народные артисты, заслуженные деятели искусств и приглашенные наставники.",
         },
         {
           title: "Практика на сцене",
@@ -117,16 +112,14 @@ export const translations = {
         },
         {
           title: "Современная инфраструктура",
-          description:
-            "Студии звукозаписи, костюмерные, репетиционные классы и медиатека.",
+          description: "Студии звукозаписи, костюмерные, репетиционные классы и медиатека.",
         },
       ],
     },
     events: {
       eyebrow: "Мероприятия",
       title: "Ближайшие события",
-      description:
-        "Концерты, показы и мастер-классы от преподавателей и приглашенных артистов.",
+      description: "Концерты, показы и мастер-классы от преподавателей и приглашенных артистов.",
       button: "Полное расписание",
       register: "Зарегистрироваться",
       list: [
@@ -175,8 +168,7 @@ export const translations = {
     history: {
       eyebrow: "История",
       title: "Наследие университета",
-      description:
-        "Каждый этап роста — новые сцены, имена и вклад в культурную жизнь страны.",
+      description: "Каждый этап роста — новые сцены, имена и вклад в культурную жизнь страны.",
       list: [
         {
           year: "1954",
@@ -199,8 +191,7 @@ export const translations = {
     gallery: {
       eyebrow: "Галерея",
       title: "Жизнь университета",
-      description:
-        "Постановки, репетиции, закулисье и кадры из учебного процесса.",
+      description: "Постановки, репетиции, закулисье и кадры из учебного процесса.",
       list: [
         {
           title: "Сцена",
@@ -242,8 +233,7 @@ export const translations = {
         comment: "Комментарий",
       },
       submit: "Отправить заявку",
-      disclaimer:
-        "Нажимая кнопку, вы соглашаетесь на обработку персональных данных.",
+      disclaimer: "Нажимая кнопку, вы соглашаетесь на обработку персональных данных.",
     },
     footer: {
       about:
@@ -254,8 +244,7 @@ export const translations = {
       address: "г. Бишкек, пр. Чуй 123",
       phone: "+996 (312) 000 000",
       email: "info@knu-arts.kg",
-      copyright:
-        "© 2025 Кыргызский национальный университет культуры и искусств",
+      copyright: "© 2025 Кыргызский национальный университет культуры и искусств",
       address: "АДРЕС",
       links: "БЫСТРЫЕ ССЫЛКИ",
     },
@@ -350,15 +339,13 @@ export const translations = {
     programs: {
       eyebrow: "Programs",
       title: "Study tracks",
-      description:
-        "Immerse in key disciplines with emphasis on practice and creative projects.",
+      description: "Immerse in key disciplines with emphasis on practice and creative projects.",
       cta: "Learn more",
       duration: "4 years",
       list: [
         {
           title: "Music Arts",
-          description:
-            "Classical vocal, folk instruments and composition led by stage masters.",
+          description: "Classical vocal, folk instruments and composition led by stage masters.",
         },
         {
           title: "Theatre & Film",
@@ -367,49 +354,41 @@ export const translations = {
         },
         {
           title: "Choreography",
-          description:
-            "Folk and contemporary dance, staging work and training studios.",
+          description: "Folk and contemporary dance, staging work and training studios.",
         },
         {
           title: "Applied Arts & Design",
-          description:
-            "Costume design, scenography and crafts rooted in Kyrgyz traditions.",
+          description: "Costume design, scenography and crafts rooted in Kyrgyz traditions.",
         },
       ],
     },
     advantages: {
       eyebrow: "Why us",
       title: "University strengths",
-      description:
-        "Direct mentorship from masters, constant stage time and project participation.",
+      description: "Direct mentorship from masters, constant stage time and project participation.",
       list: [
         {
           title: "Renowned faculty",
-          description:
-            "National artists, honored cultural figures and guest mentors.",
+          description: "National artists, honored cultural figures and guest mentors.",
         },
         {
           title: "Stage practice",
-          description:
-            "Concert halls, labs and film sets for regular performances.",
+          description: "Concert halls, labs and film sets for regular performances.",
         },
         {
           title: "International projects",
-          description:
-            "Exchange programs, festivals and co-productions abroad.",
+          description: "Exchange programs, festivals and co-productions abroad.",
         },
         {
           title: "Modern infrastructure",
-          description:
-            "Recording studios, costume shop, rehearsal rooms and media library.",
+          description: "Recording studios, costume shop, rehearsal rooms and media library.",
         },
       ],
     },
     events: {
       eyebrow: "Events",
       title: "Upcoming",
-      description:
-        "Concerts, showcases and masterclasses by faculty and guest artists.",
+      description: "Concerts, showcases and masterclasses by faculty and guest artists.",
       button: "View full schedule",
       register: "Register",
       list: [
@@ -459,8 +438,7 @@ export const translations = {
     history: {
       eyebrow: "History",
       title: "University legacy",
-      description:
-        "Each growth milestone brings new stages, names and cultural impact.",
+      description: "Each growth milestone brings new stages, names and cultural impact.",
       list: [
         {
           year: "1954",
@@ -528,8 +506,7 @@ export const translations = {
       disclaimer: "By submitting you agree to personal data processing.",
     },
     footer: {
-      about:
-        "Where Kyrgyz artistic heritage meets contemporary creative practice.",
+      about: "Where Kyrgyz artistic heritage meets contemporary creative practice.",
       download: "Download brochure",
       navTitle: "Navigation",
       contactsTitle: "Contacts",
@@ -634,15 +611,13 @@ export const translations = {
     programs: {
       eyebrow: "Программалар",
       title: "Окуу багыттары",
-      description:
-        "Практикага жана чыгармачыл долбоорлорго басым жасаган негизги дисциплиналар.",
+      description: "Практикага жана чыгармачыл долбоорлорго басым жасаган негизги дисциплиналар.",
       cta: "Толугураак",
       duration: "4 жыл",
       list: [
         {
           title: "Музыкалык искусство",
-          description:
-            "Академиялык вокал, элдик аспаптар жана композиция сахна устаттары менен.",
+          description: "Академиялык вокал, элдик аспаптар жана композиция сахна устаттары менен.",
         },
         {
           title: "Театр жана кино",
@@ -651,13 +626,11 @@ export const translations = {
         },
         {
           title: "Хореография",
-          description:
-            "Элдик жана заманбап бий, коюу иши жана машыгуу залдары.",
+          description: "Элдик жана заманбап бий, коюу иши жана машыгуу залдары.",
         },
         {
           title: "Колдонмо искусство жана дизайн",
-          description:
-            "Костюм дизайны, сценография жана кыргыз салтына негизделген кол өнөрчүлүк.",
+          description: "Костюм дизайны, сценография жана кыргыз салтына негизделген кол өнөрчүлүк.",
         },
       ],
     },
@@ -669,8 +642,7 @@ export const translations = {
       list: [
         {
           title: "Күчтүү окутуучулар курамы",
-          description:
-            "Эл артисттери, эмгек сиңирген ишмерлер жана чакырылган наставниктер.",
+          description: "Эл артисттери, эмгек сиңирген ишмерлер жана чакырылган наставниктер.",
         },
         {
           title: "Сахнадагы практика",
@@ -679,21 +651,18 @@ export const translations = {
         },
         {
           title: "Эл аралык долбоорлор",
-          description:
-            "Алмашуу программалары, фестивалдар жана чет өлкөлүк биргелешкен коюулар.",
+          description: "Алмашуу программалары, фестивалдар жана чет өлкөлүк биргелешкен коюулар.",
         },
         {
           title: "Заманбап инфраструктура",
-          description:
-            "Жаздыруу студиялары, костюмер, репетиция залдары жана медиатека.",
+          description: "Жаздыруу студиялары, костюмер, репетиция залдары жана медиатека.",
         },
       ],
     },
     events: {
       eyebrow: "Иш-чаралар",
       title: "Жакынкы иш-чаралар",
-      description:
-        "Концерттер, көрсөтуүлөр жана устаттар менен мастер-класстар.",
+      description: "Концерттер, көрсөтуүлөр жана устаттар менен мастер-класстар.",
       button: "Толук расписание",
       register: "Катталуу",
       list: [
@@ -743,8 +712,7 @@ export const translations = {
     history: {
       eyebrow: "Тарых",
       title: "Университет мурасы",
-      description:
-        "Ар бир этап — жаңы сахналар, жаңы ысымдар жана өлкөнүн маданиятына салым.",
+      description: "Ар бир этап — жаңы сахналар, жаңы ысымдар жана өлкөнүн маданиятына салым.",
       list: [
         {
           year: "1954",
@@ -767,8 +735,7 @@ export const translations = {
     gallery: {
       eyebrow: "Галерея",
       title: "Университет жашоосу",
-      description:
-        "Коюулар, репетициялар, сахна арты жана окуу процессинин кадрлары.",
+      description: "Коюулар, репетициялар, сахна арты жана окуу процессинин кадрлары.",
       list: [
         {
           title: "Сахна",
@@ -810,12 +777,10 @@ export const translations = {
         comment: "Комментарий",
       },
       submit: "Өтүнмөнү жиберүү",
-      disclaimer:
-        "Баскычты басып, жеке маалыматты иштетүүгө макулдугуңузду бересиз.",
+      disclaimer: "Баскычты басып, жеке маалыматты иштетүүгө макулдугуңузду бересиз.",
     },
     footer: {
-      about:
-        "Кыргыз искусствосунун мурасы жана заманбап чыгармачыл практика чогулган жер.",
+      about: "Кыргыз искусствосунун мурасы жана заманбап чыгармачыл практика чогулган жер.",
       download: "Буклетти жүктөө",
       navTitle: "Навигация",
       contactsTitle: "Байланыш",

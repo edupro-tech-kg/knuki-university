@@ -3,9 +3,7 @@ export default function SectionTitle({ eyebrow, title, description, align = "lef
 
   return (
     <div className={`flex flex-col gap-3 ${alignment}`}>
-      {eyebrow ? (
-        <span className="pill bg-primary/10 text-primary">{eyebrow}</span>
-      ) : null}
+      {eyebrow ? <span className="pill bg-primary/10 text-primary">{eyebrow}</span> : null}
       <h2 className="text-3xl font-serif font-semibold text-dark md:text-4xl">{title}</h2>
       {description ? <p className="text-base text-gray-600 md:max-w-2xl">{description}</p> : null}
     </div>

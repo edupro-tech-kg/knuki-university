@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 
-const PrimaryForm = ({ 
-  label,
-  className = "",
-  inputWidth = "md",
-  type = "text",
-  onChange 
-}) => {
+const PrimaryForm = ({ label, className = "", inputWidth = "md", type = "text", onChange }) => {
   const [value, setValue] = useState("");
   const [focused, setFocused] = useState(false);
 
@@ -20,20 +14,17 @@ const PrimaryForm = ({
   const showLabel = focused || value.length > 0;
 
   const widthClasses = {
-    sm: "max-w-xs",  
-    md: "max-w-md",   
-    lg: "max-w-lg",   
-    xl: "max-w-xl"   
+    sm: "max-w-xs",
+    md: "max-w-md",
+    lg: "max-w-lg",
+    xl: "max-w-xl",
   };
 
   return (
     <div className={`mx-auto p-6 ${className}`}>
       <div className="mb-4">
         {label && (
-          <label 
-            htmlFor="primary-input"
-            className="block text-white text-lg font-medium mb-2"
-          >
+          <label htmlFor="primary-input" className="block text-white text-lg font-medium mb-2">
             {label}
           </label>
         )}
