@@ -9,6 +9,7 @@ import HistorySection from "./sections/HistorySection";
 import GallerySection from "./sections/GallerySection";
 import ContactForm from "./sections/ContactForm";
 import QuickLinks from "./sections/QuickLinks";
+import NewsSection from "./sections/NewsSection";
 
 function App() {
   return (
@@ -16,11 +17,12 @@ function App() {
       <Header />
       <main className="space-y-12 md:space-y-16">
         <HeroSection />
+        <NewsSection />
         <AboutShort />
         <ProgramsSection />
         <AdvantagesSection />
         <EventsPreview />
-        <QuickLinks/>
+        <QuickLinks />
         <HistorySection />
         <GallerySection />
         <ContactForm />
