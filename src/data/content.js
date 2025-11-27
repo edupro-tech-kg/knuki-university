@@ -9,9 +9,15 @@ export const translations = {
       { label: "Контакты", href: "#contact" },
     ],
     header: {
+      universityName: "Кыргызский национальный университет культуры и искусств имени Бюбюсары Бейшеналиевой",
+      menu: "Меню",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
       apply: "Подать заявку",
+    },
+    search: {
+      placeholder: "Поиск",
+      button: "Далее",
     },
     hero: {
       pill: "Искусство будущего",
@@ -249,6 +255,8 @@ export const translations = {
       email: "info@knu-arts.kg",
       copyright:
         "© 2025 Кыргызский национальный университет культуры и искусств",
+      address: "АДРЕС",
+      links: "БЫСТРЫЕ ССЫЛКИ"
     },
   },
   en: {
@@ -261,9 +269,15 @@ export const translations = {
       { label: "Contact", href: "#contact" },
     ],
     header: {
+      universityName: "Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva",
+      menu: "Menu",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
       apply: "Apply now",
+    },
+    search: {
+      placeholder: "Search",
+      button: "Next",
     },
     hero: {
       pill: "Art of the future",
@@ -387,6 +401,9 @@ export const translations = {
           title: "Open masterclass on ethno-jazz",
           location: "Music Studio",
         },
+        { date: "Jan 12", title: "Winter student gala concert", location: "Grand Hall, KNUCA" },
+        { date: "Jan 26", title: "Premiere of the play \"Muras\"", location: "Theatre Stage" },
+        { date: "Feb 05", title: "Open masterclass on ethno-jazz", location: "Music Studio" },
       ],
     },
     calendar: {
@@ -496,6 +513,8 @@ export const translations = {
       phone: "+996 (312) 000 000",
       email: "info@knu-arts.kg",
       copyright: "© 2025 Kyrgyz National University of Culture & Arts",
+      address: "ADDRESS",
+      links: "QUICK LINKS"
     },
   },
   ky: {
@@ -508,9 +527,15 @@ export const translations = {
       { label: "Байланыш", href: "#contact" },
     ],
     header: {
+      universityName: "Бүбүсара Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университети",
+      menu: "Меню",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
       apply: "Кабыл алууга өтүү",
+    },
+    search: {
+      placeholder: "Издөө",
+      button: "Кийинки",
     },
     hero: {
       pill: "Келечектин искусствосу",
@@ -748,6 +773,8 @@ export const translations = {
       phone: "+996 (312) 000 000",
       email: "info@knu-arts.kg",
       copyright: "© 2025 Кыргыз Улуттук Маданият жана Искусство Университети",
+      address: "АДРЕС",
+      links: "ТЕЗ ШИЛТЕМЕЛЕР"
     },
   },
 };
