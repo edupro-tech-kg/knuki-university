@@ -8,6 +8,7 @@ import EventsPreview from "./sections/EventsPreview";
 import HistorySection from "./sections/HistorySection";
 import GallerySection from "./sections/GallerySection";
 import ContactForm from "./sections/ContactForm";
+import QuickLinks from "./sections/QuickLinks";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <ProgramsSection />
         <AdvantagesSection />
         <EventsPreview />
+        <QuickLinks/>
         <HistorySection />
         <GallerySection />
         <ContactForm />
