@@ -9,7 +9,8 @@ export const translations = {
       { label: "Контакты", href: "#contact" },
     ],
     header: {
-      universityName: "Кыргызский национальный университет культуры и искусств имени Бюбюсары Бейшеналиевой",
+      universityName:
+        "Кыргызский национальный университет культуры и искусств имени Бюбюсары Бейшеналиевой",
       menu: "Меню",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
@@ -246,7 +247,32 @@ export const translations = {
       copyright:
         "© 2025 Кыргызский национальный университет культуры и искусств",
       address: "АДРЕС",
-      links: "БЫСТРЫЕ ССЫЛКИ"
+      links: "БЫСТРЫЕ ССЫЛКИ",
+    },
+    news: {
+      title: "Новости университета",
+      items: [
+        {
+          title: "Балетный вечер",
+          buttonText: "Подробнее",
+        },
+        {
+          title: "Вокальный концерт",
+          buttonText: "Подробнее",
+        },
+        {
+          title: "Образовательные услуги",
+          buttonText: "Подробнее",
+        },
+        {
+          title: "Творческая лаборатория",
+          buttonText: "Подробнее",
+        },
+        {
+          title: "Творческий вечер",
+          buttonText: "Подробнее",
+        },
+      ],
     },
   },
   en: {
@@ -259,7 +285,8 @@ export const translations = {
       { label: "Contact", href: "#contact" },
     ],
     header: {
-      universityName: "Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva",
+      universityName:
+        "Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva",
       menu: "Menu",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
@@ -391,9 +418,6 @@ export const translations = {
           title: "Open masterclass on ethno-jazz",
           location: "Music Studio",
         },
-        { date: "Jan 12", title: "Winter student gala concert", location: "Grand Hall, KNUCA" },
-        { date: "Jan 26", title: "Premiere of the play \"Muras\"", location: "Theatre Stage" },
-        { date: "Feb 05", title: "Open masterclass on ethno-jazz", location: "Music Studio" },
       ],
     },
     calendar: {
@@ -493,7 +517,32 @@ export const translations = {
       email: "info@knu-arts.kg",
       copyright: "© 2025 Kyrgyz National University of Culture & Arts",
       address: "ADDRESS",
-      links: "QUICK LINKS"
+      links: "QUICK LINKS",
+    },
+    news: {
+      title: "University News",
+      items: [
+        {
+          title: "Ballet Evening",
+          buttonText: "More",
+        },
+        {
+          title: "Vocal Concert",
+          buttonText: "More",
+        },
+        {
+          title: "Educational Services",
+          buttonText: "More",
+        },
+        {
+          title: "Creative Laboratory",
+          buttonText: "More",
+        },
+        {
+          title: "Creative Evening",
+          buttonText: "More",
+        },
+      ],
     },
   },
   ky: {
@@ -506,7 +555,8 @@ export const translations = {
       { label: "Байланыш", href: "#contact" },
     ],
     header: {
-      universityName: "Бүбүсара Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университети",
+      universityName:
+        "Бүбүсара Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университети",
       menu: "Меню",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
@@ -742,7 +792,32 @@ export const translations = {
       email: "info@knu-arts.kg",
       copyright: "© 2025 Кыргыз Улуттук Маданият жана Искусство Университети",
       address: "АДРЕС",
-      links: "ТЕЗ ШИЛТЕМЕЛЕР"
+      links: "ТЕЗ ШИЛТЕМЕЛЕР",
+    },
+    news: {
+      title: "Университет жаңылыктары",
+      items: [
+        {
+          title: "Балет кечеси",
+          buttonText: "Кененирээк",
+        },
+        {
+          title: "Вокалдык концерт",
+          buttonText: "Кененирээк",
+        },
+        {
+          title: "Билим берүү кызматтары",
+          buttonText: "Кененирээк",
+        },
+        {
+          title: "Чыгармачыл лаборатория",
+          buttonText: "Кененирээк",
+        },
+        {
+          title: "Чыгармачыл кече",
+          buttonText: "Кененирээк",
+        },
+      ],
     },
   },
 };

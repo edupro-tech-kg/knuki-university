@@ -34,6 +34,33 @@ export default {
         "hero-pattern": "linear-gradient(120deg, rgba(212, 19, 16, 0.65), rgba(13,13,13,0.75)), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1600&q=80')",
         "about-pattern": "radial-gradient(circle at 20% 20%, rgba(117,23,21,0.18), transparent 25%), radial-gradient(circle at 80% 10%, rgba(13,13,13,0.15), transparent 22%)",
       },
+      
+      // ДОБАВЬ ЭТИ НАСТРОЙКИ ДЛЯ 3D ЭФФЕКТОВ
+      rotate: {
+        'y-5': 'rotateY(5deg)',
+        'y-8': 'rotateY(8deg)',
+        'y-10': 'rotateY(10deg)',
+        'y-12': 'rotateY(12deg)',
+        'y-15': 'rotateY(15deg)',
+        'y-20': 'rotateY(20deg)',
+        'y--5': 'rotateY(-5deg)',
+        'y--8': 'rotateY(-8deg)',
+        'y--10': 'rotateY(-10deg)',
+        'y--12': 'rotateY(-12deg)',
+        'y--15': 'rotateY(-15deg)',
+        'y--20': 'rotateY(-20deg)',
+      },
+      perspective: {
+        '1000': '1000px',
+        '1200': '1200px',
+        '1500': '1500px',
+      },
+      transformStyle: {
+        '3d': 'preserve-3d',
+      },
+      backfaceVisibility: {
+        'hidden': 'hidden',
+      },
     },
   },
   plugins: [],
