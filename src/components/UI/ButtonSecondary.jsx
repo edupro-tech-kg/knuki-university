@@ -1,4 +1,4 @@
-export default function ButtonSecondary({ 
+export default function ButtonSecondary({
   children,
   onClick,
   disabled = false,
@@ -7,21 +7,21 @@ export default function ButtonSecondary({
   disabledBackground = "#FFFFFF",
   disabledText = "#898989",
   textColor = "#FFFFFF",
-  
+
   // Размеры
   width = "w-[150px] sm:w-[180px]",
   height = "h-[45px] sm:h-[50px]",
-  
+
   // Отступы
   padding = "px-4 py-2 sm:px-6 sm:py-3",
-  
+
   // Текст
   textSize = "text-sm sm:text-base lg:text-lg",
   fontWeight = "font-semibold",
-  
+
   // Стили
   borderRadius = "rounded",
-  
+
   className = "",
   type = "button",
   ...props
@@ -39,12 +39,14 @@ export default function ButtonSecondary({
     ${fontWeight}
     ${borderRadius}
     ${className}
-  `.replace(/\s+/g, ' ').trim();
+  `
+    .replace(/\s+/g, " ")
+    .trim();
 
   const buttonStyle = {
     backgroundColor: disabled ? disabledBackground : backgroundColor,
     color: disabled ? disabledText : textColor,
-    borderColor: disabled ? disabledText : 'transparent',
+    borderColor: disabled ? disabledText : "transparent",
   };
 
   return (

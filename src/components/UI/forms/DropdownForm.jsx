@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const DropdownForm = ({ 
-  fields = [], 
-  className = "",
-  spacing = "normal",
-  inputWidth = "md" 
-}) => {
+const DropdownForm = ({ fields = [], className = "", spacing = "normal", inputWidth = "md" }) => {
   const [values, setValues] = useState(
     fields.reduce((acc, field) => {
       acc[field.name] = field.defaultValue || "";
@@ -15,24 +10,24 @@ const DropdownForm = ({
   );
 
   const handleChange = (name, value) => {
-    setValues(prev => ({ ...prev, [name]: value }));
-    
-    if (fields.find(f => f.name === name)?.onChange) {
-      fields.find(f => f.name === name).onChange(value);
+    setValues((prev) => ({ ...prev, [name]: value }));
+
+    if (fields.find((f) => f.name === name)?.onChange) {
+      fields.find((f) => f.name === name).onChange(value);
     }
   };
 
   const spacingClasses = {
     compact: "mb-3",
     normal: "mb-4",
-    loose: "mb-6"
+    loose: "mb-6",
   };
 
   const widthClasses = {
-    sm: "max-w-xs",  
-    md: "max-w-md",   
-    lg: "max-w-lg",   
-    xl: "max-w-xl"   
+    sm: "max-w-xs",
+    md: "max-w-md",
+    lg: "max-w-lg",
+    xl: "max-w-xl",
   };
 
   return (
@@ -40,10 +35,7 @@ const DropdownForm = ({
       {fields.map((field) => (
         <div key={field.name} className={spacingClasses[spacing]}>
           {field.label && (
-            <label 
-              htmlFor={field.name}
-              className="block text-white text-lg font-medium mb-2"
-            >
+            <label htmlFor={field.name} className="block text-white text-lg font-medium mb-2">
               {field.label}
               {field.required && <span className="text-red-400 ml-1">*</span>}
             </label>

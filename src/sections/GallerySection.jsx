@@ -18,7 +18,11 @@ export default function GallerySection() {
           <div
             key={item.title}
             className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-gray-200 shadow-card"
-            style={{ backgroundImage: `url(${item.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+            style={{
+              backgroundImage: `url(${item.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-dark/10 to-transparent transition group-hover:from-primary/70"></div>
             <div className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-dark">
