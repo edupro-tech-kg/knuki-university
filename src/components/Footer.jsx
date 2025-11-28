@@ -8,14 +8,15 @@ import Phone from "../assets/Phone.svg";
 
 export default function Footer() {
   const { t } = useTranslation();
-  const navLinks = t("navLinks");
+  const footer = t("footer", { returnObjects: true });
+
   return (
-    <footer className="bg-dark text-white">
+    <footer className="bg-[#0D0D0D] text-white">
       <div className="container-edge md:flex items-end justify-between py-16 grid lg:gap-0 gap-10">
         <div className="flex gap-10">
           <div className="grid gap-4">
             <strong className="font-medium text-[16.57px] lg:text-[26px]">
-              {t("footer.address")}
+              {footer.labels.address}
             </strong>
             <ul className="font-light text-[12.74px] lg:text-[20px] tracking-[-0.04em]">
               <li>720005 г. Бишкек</li>
@@ -28,7 +29,7 @@ export default function Footer() {
           </div>
           <div className="grid gap-4">
             <strong className="font-medium text-[16.57px] lg:text-[26px]">
-              {t("footer.links")}
+              {footer.labels.links}
             </strong>
             <ul className="font-light text-[12.74px] lg:text-[20px] tracking-[-0.04em]">
               <li>720005 г. Бишкек</li>
