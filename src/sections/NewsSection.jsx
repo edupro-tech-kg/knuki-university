@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
 import ButtonPrimary from "../components/UI/ButtonPrimary";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
@@ -14,32 +16,6 @@ import rehearsal from "../../src/assets/rehearsal.png";
 import audience from "../../src/assets/audience.png";
 import tracery from "../../src/assets/tracery.png";
 import traceryMobile from "../../src/assets/traceryMobile.png";
-
-// SVG компоненты вместо react-icons
-const ArrowLeft = ({ className = "" }) => (
-  <svg 
-    width="24" 
-    height="24" 
-    viewBox="0 0 24 24" 
-    fill="currentColor" 
-    className={className}
-  >
-    <path d="M19 12H5M12 19l-7-7 7-7"/>
-  </svg>
-);
-
-const ArrowRight = ({ className = "" }) => (
-  <svg 
-    width="24" 
-    height="24" 
-    viewBox="0 0 24 24" 
-    fill="currentColor" 
-    className={className}
-  >
-    <path d="M5 12h14M12 5l7 7-7 7"/>
-  </svg>
-);
-
 export default function NewsSection() {
   const { t } = useTranslation();
   const news = t("news", { returnObjects: true });
@@ -203,14 +179,14 @@ export default function NewsSection() {
               ref={prevRef}
               className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed px-5 md:px-4"
             >
-              <ArrowLeft className="w-6 h-6 md:w-14" />
+              <FaArrowLeftLong className="w-6 h-6 md:w-14" />
             </button>
 
             <button
               ref={nextRef}
               className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed px-5 md:px-4"
             >
-              <ArrowRight className="w-6 h-6 md:w-14" />
+              <FaArrowRightLong className="w-6 h-6 md:w-14" />
             </button>
           </div>
         </div>
