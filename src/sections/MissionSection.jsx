@@ -13,10 +13,10 @@ function MissionSection() {
     <section className="w-full py-16 lg:py-24 relative">
       <div className="max-w-[1440px] mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-[#751715] font-inter italic transform skew-x-[1deg]">
+          <h2 className="font-serif italic text-[24px] font-semibold leading-[1.1] text-text-primary md:text-[60px] md:leading-[1.05] md:font-medium">
             {t("mission.title")}
           </h2>
-          <p className="text-gray-600 w-[350px] max-w-2xl mx-auto">
+          <p className="mt-4 text-[12px] font-normal leading-[1.4] text-text-primary md:text-[20px] md:font-normal md:leading-[1.4] md:mx-auto md:max-w-3xl">
             {t("mission.description")}
           </p>
         </div>
@@ -64,11 +64,7 @@ function MissionSection() {
       </div>
 
       <div className="w-screen h-[51px] mt-12 overflow-hidden absolute left-1/2 transform -translate-x-1/2">
-        <img
-          src={LongOrnament}
-          alt="Ornament"
-          className="w-screen h-[51px] object-cover"
-        />
+        <img src={LongOrnament} alt="Ornament" className="w-screen h-[51px] object-cover" />
       </div>
     </section>
   );
