@@ -5,6 +5,7 @@ import Mission2 from "../assets/image/mission2image.png";
 import Mission3 from "../assets/image/mission3.png";
 import Button from "../components/Button";
 import LongOrnament from "../assets/image/longOrnament.png";
+import { Trans } from "react-i18next";
 
 function MissionSection() {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ function MissionSection() {
       <div className="max-w-[1440px] mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-serif italic text-[24px] font-semibold leading-[1.1] text-text-primary md:text-[60px] md:leading-[1.05] md:font-medium">
-            {t("mission.title")}
+            <Trans i18nKey="mission.title" components={{ br: <br /> }} />
           </h2>
           <p className="mt-4 text-[12px] font-normal leading-[1.4] text-text-primary md:text-[20px] md:font-normal md:leading-[1.4] md:mx-auto md:max-w-3xl">
             {t("mission.description")}
