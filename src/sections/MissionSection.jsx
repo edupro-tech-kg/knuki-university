@@ -13,7 +13,7 @@ function MissionSection() {
     <section className="w-full py-16 lg:py-24 relative">
       <div className="max-w-[1440px] mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-[#751715] font-playfair italic transform skew-x-[1deg]">
+          <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-[#751715] font-inter italic transform skew-x-[1deg]">
             {t("mission.title")}
           </h2>
           <p className="text-gray-600 w-[350px] max-w-2xl mx-auto">
