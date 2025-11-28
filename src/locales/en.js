@@ -230,4 +230,12 @@ export default {
     readLess: "Collapse",
     imageAlt: "Traditional dancers",
   },
+  mission: {
+    title: "The University's mission is culture and art",
+    description:
+      "is to train talented, creative, intellectual personnel in the field of culture and arts",
+    imageDescription:
+      "The opening ceremony of the X International Student Theater Festival 'New Names' took place. The solemn ceremony was attended by Vice Prime Minister of the Kyrgyz Republic Edil Baisalov, Deputy Minister of Culture, Information and Youth Policy Timurland Ajimaliev, as well as theater figures, foreign guests, students and theater lovers.",
+    button: "Learn More",
+  },
 };
