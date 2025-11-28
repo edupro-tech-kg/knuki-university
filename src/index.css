@@ -23,24 +23,6 @@ body {
   background: #f7f7f7;
 }
 
-/* Font family classes */
-.font-inter {
-  font-family: "Inter", sans-serif;
-}
-
-
-.font-unbounded {
-  font-family: "Unbounded", sans-serif;
-}
-
-.font-roboto-condensed {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.font-open-sans {
-  font-family: "Open Sans", sans-serif;
-}
-
 .container-edge {
   @apply mx-auto max-w-6xl px-4 md:px-6 lg:px-8;
 }
