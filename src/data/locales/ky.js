@@ -1,41 +1,33 @@
 export default {
-	code: 'ky',
+  code: "ky",
 
-	week: {
-		dow: 1,
-		doy: 4,
-	},
+  week: {
+    dow: 1,
+    doy: 4,
+  },
 
-	buttonText: {
-		today: 'Бүгүн',
-		month: 'Ай',
-		week: 'Жума',
-		day: 'Күн',
-		list: 'Күн тартиби',
-	},
+  buttonText: {
+    today: "Бүгүн",
+    month: "Ай",
+    week: "Жума",
+    day: "Күн",
+    list: "Күн тартиби",
+  },
 
-	allDayText: 'Күн бою',
-	moreLinkText(n) {
-		return `Дагы ${n}`;
-	},
-	noEventsText: 'Иш-чара жок',
+  allDayText: "Күн бою",
+  moreLinkText(n) {
+    return `Дагы ${n}`;
+  },
+  noEventsText: "Иш-чара жок",
 
-	weekText: 'Жум.',
-	weekTextLong: 'Жума',
+  weekText: "Жум.",
+  weekTextLong: "Жума",
 
-	dayNamesShort: ['Дш', 'Шш', 'Шр', 'Бш', 'Жм', 'Иш', 'Жк'],
+  dayNamesShort: ["Дш", "Шш", "Шр", "Бш", "Жм", "Иш", "Жк"],
 
-	dayNames: [
-		'Дүйшөмбү',
-		'Шейшемби',
-		'Шаршемби',
-		'Бейшемби',
-		'Жума',
-		'Ишемби',
-		'Жекшемби',
-	],
+  dayNames: ["Дүйшөмбү", "Шейшемби", "Шаршемби", "Бейшемби", "Жума", "Ишемби", "Жекшемби"],
 
-	dayHeaderFormat: {
-		weekday: 'short',
-	},
+  dayHeaderFormat: {
+    weekday: "short",
+  },
 };

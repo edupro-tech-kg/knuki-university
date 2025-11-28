@@ -1,6 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import { defaultLocale, translations } from "../data/content";
+import { defaultLocale, translations } from "../locales";
 
 const resources = {
   ru: { translation: translations.ru },

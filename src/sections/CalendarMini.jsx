@@ -2,7 +2,7 @@ import Calendar from '../components/calendar/Calendar';
 import Card from '../components/Card';
 import { useTranslation } from 'react-i18next';
 import patterns from '../assets/patterns.svg';
-import test from '../assets/images/lastFone.png';
+import test from '../assets/image/lastFone.png';
 
 export default function CalendarMini() {
 	const { t } = useTranslation();
