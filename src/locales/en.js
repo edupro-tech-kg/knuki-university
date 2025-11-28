@@ -84,10 +84,22 @@ export default {
     title: "University strengths",
     description: "Direct mentorship from masters, constant stage time and project participation.",
     list: [
-      { title: "Renowned faculty", description: "National artists, honored cultural figures and guest mentors." },
-      { title: "Stage practice", description: "Concert halls, labs and film sets for regular performances." },
-      { title: "International projects", description: "Exchange programs, festivals and co-productions abroad." },
-      { title: "Modern infrastructure", description: "Recording studios, costume shop, rehearsal rooms and media library." },
+      {
+        title: "Renowned faculty",
+        description: "National artists, honored cultural figures and guest mentors.",
+      },
+      {
+        title: "Stage practice",
+        description: "Concert halls, labs and film sets for regular performances.",
+      },
+      {
+        title: "International projects",
+        description: "Exchange programs, festivals and co-productions abroad.",
+      },
+      {
+        title: "Modern infrastructure",
+        description: "Recording studios, costume shop, rehearsal rooms and media library.",
+      },
     ],
   },
   events: {
@@ -132,7 +144,10 @@ export default {
     title: "University legacy",
     description: "Each growth milestone brings new stages, names and cultural impact.",
     list: [
-      { year: "1954", text: "Founded as a conservatory with vocal and folk instrument departments." },
+      {
+        year: "1954",
+        text: "Founded as a conservatory with vocal and folk instrument departments.",
+      },
       { year: "1996", text: "Expanded performing arts faculty and launched directing studio." },
       { year: "2008", text: "Opened choreography building and major rehearsal complex." },
       { year: "2023", text: "Upgraded media library and launched international internships." },
@@ -145,26 +160,31 @@ export default {
     list: [
       {
         title: "Stage",
-        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+        image:
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
       },
       {
         title: "Costume shop",
-        image: "https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?auto=format&fit=crop&w=900&q=80",
+        image:
+          "https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?auto=format&fit=crop&w=900&q=80",
       },
       {
         title: "Dance hall",
-        image: "https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=900&q=80",
+        image:
+          "https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=900&q=80",
       },
       {
         title: "Recording studio",
-        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80",
+        image:
+          "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80",
       },
     ],
   },
   contact: {
     eyebrow: "Contact",
     title: "Book a consultation",
-    description: "Leave your contacts and we will share program details, intake dates and entrance exams.",
+    description:
+      "Leave your contacts and we will share program details, intake dates and entrance exams.",
     addressLabel: "Address",
     phoneLabel: "Phone",
     addressValue: "Bishkek, Chui Ave 123",
@@ -202,5 +222,13 @@ export default {
       { title: "Creative Laboratory", buttonText: "More" },
       { title: "Creative Evening", buttonText: "More" },
     ],
+  },
+  mission: {
+    title: "The University's mission is culture and art",
+    description:
+      "is to train talented, creative, intellectual personnel in the field of culture and arts",
+    imageDescription:
+      "The opening ceremony of the X International Student Theater Festival 'New Names' took place. The solemn ceremony was attended by Vice Prime Minister of the Kyrgyz Republic Edil Baisalov, Deputy Minister of Culture, Information and Youth Policy Timurland Ajimaliev, as well as theater figures, foreign guests, students and theater lovers.",
+    button: "Learn More",
   },
 };

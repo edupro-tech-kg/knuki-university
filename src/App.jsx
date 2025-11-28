@@ -8,6 +8,7 @@ import EventsPreview from "./sections/EventsPreview";
 import HistorySection from "./sections/HistorySection";
 import GallerySection from "./sections/GallerySection";
 import ContactForm from "./sections/ContactForm";
+import MissionSection from "./sections/MissionSection";
 import QuickLinks from "./sections/QuickLinks";
 import NewsSection from "./sections/NewsSection";
 
@@ -19,6 +20,7 @@ function App() {
         <HeroSection />
         <NewsSection />
         <AboutShort />
+        <MissionSection/>
         <ProgramsSection />
         <AdvantagesSection />
         <EventsPreview />
