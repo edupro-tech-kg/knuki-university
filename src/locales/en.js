@@ -55,27 +55,25 @@ export default {
     badge: "Live stage at KNUCA",
   },
   programs: {
-    eyebrow: "Programs",
-    title: "Study tracks",
-    description: "Immerse in key disciplines with emphasis on practice and creative projects.",
-    cta: "Learn more",
-    duration: "4 years",
+    eyebrow: "KNUCA DIRECTIONS",
+    faculty: "faculty",
+    buttonText: "Learn More",
     list: [
       {
-        title: "Music Arts",
-        description: "Classical vocal, folk instruments and composition led by stage masters.",
+        id: 1,
+        title: "Variety Arts and Music",
       },
       {
-        title: "Theatre & Film",
-        description: "Acting, directing and stage movement with practice on the university stages.",
+        id: 2,
+        title: "Theatre Arts",
       },
       {
-        title: "Choreography",
-        description: "Folk and contemporary dance, staging work and training studios.",
+        id: 3,
+        title: "Film and Television",
       },
       {
-        title: "Applied Arts & Design",
-        description: "Costume design, scenography and crafts rooted in Kyrgyz traditions.",
+        id: 4,
+        title: "Choreography and Cultural Activities",
       },
     ],
   },
