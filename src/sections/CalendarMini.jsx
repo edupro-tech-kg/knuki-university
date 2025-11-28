@@ -17,21 +17,21 @@ export default function CalendarMini() {
 				</div>
 				<div className='bg-[#751715] py-24  '>
 					<div className='flex justify-center '>
-						<p className=' italic font-[auto] font-medium text-6xl text-white'>
+						<p className=' italic font-[auto] font-medium text-6xl text-white mb-24'>
 							КАЛЕНДАРЬ СОБЫТИЙ
 						</p>
 					</div>
-					<div className='flex justify-center relative mt-10  '>
-						<img src={test} alt='' className='absolute w-[97%] -z-0 ' />
+					<div className='flex justify-center absolute  '>
+						<img src={test} alt='' className='relative w-[97%] -z-0 ' />
 					</div>
 					<div
-						className={`mt-36 flex   bg-section-fone bg-cover bg-center pb-20 relative z-10 `}
+						className={`mt-24 flex justify-between    ter pb-20 relative z-10 `}
 					>
 						<div className=' w-[50%] pr-[55px] pl-[100px]'>
 							<Calendar />
 						</div>
-						<div className='w-[50%]'>
-							<h1 className='text-zinc-950'>
+						<div className='w-[50%] pl-16 pr-20'>
+							<h1 className='text-zinc-950 '>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
 								eveniet qui ex doloribus repellat repudiandae, hic eum
 								recusandae culpa. Magni earum blanditiis maiores enim veritatis
