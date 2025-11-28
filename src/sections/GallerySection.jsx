@@ -79,7 +79,7 @@ const Row = ({ reverse }) => (
   </Swiper>
 );
 
-export default function Gallery() {
+export default function GallerySection() {
   const { t } = useTranslation();
 
   return (
