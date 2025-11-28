@@ -1,57 +1,74 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import MissionSectionImg from "../assets/image/missionImage.png";
+import Mission2 from "../assets/image/mission2image.png";
+import Mission3 from "../assets/image/mission3.png";
+import Button from "../components/Button";
+import LongOrnament from "../assets/image/longOrnament.png";
 
 function MissionSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Top block */}
+    <section className="w-full py-16 lg:py-24 relative">
+      <div className="max-w-[1440px] mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-sm text-gray-500 font-medium mb-2">
-            {t("about.eyebrow")}
-          </p>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            {t("about.title")}
+          <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-[#751715] font-playfair italic transform skew-x-[1deg]">
+            {t("mission.title")}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {t("about.description")}
+          <p className="text-gray-600 w-[350px] max-w-2xl mx-auto">
+            {t("mission.description")}
           </p>
         </div>
 
-        {/* Grid content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
-          {/* Left block */}
-          <div className="lg:col-span-2 order-1 lg:order-none">
-            <div className="relative w-full h-[320px] bg-gray-200 rounded-2xl overflow-hidden mb-4">
-              {/* Place for photo */}
+        <div className="grid grid-cols-1 lg:grid-cols-[544px_1fr] gap-5 items-start">
+          <div className="relative w-[544px] h-[650px] overflow-hidden">
+            <img
+              src={MissionSectionImg}
+              alt="Main mission"
+              className="w-[544px] h-[650px] object-cover"
+            />
+
+            <div className="absolute inset-0 mt-[100px] bg-black bg-opacity-40 flex flex-col justify-start pt-8 px-6">
+              <p className="text-white w-[250px] text-sm md:text-base mb-6 max-w-[80%]">
+                {t("mission.imageDescription")}
+              </p>
+
+              <Button
+                variant="outline"
+                className="bg-transparent !text-white !border-white hover:bg-[#751715] hover:!text-white w-[191px] h-12"
+              >
+                {t("mission.button")}
+              </Button>
             </div>
-            <span className="inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full mb-3">
-              {t("about.badge")}
-            </span>
-            <div className="flex items-center gap-6 mb-4">
-              {t("about.highlights", { returnObjects: true }).map((item, idx) => (
-                <div key={idx}>
-                  <p className="text-2xl font-bold text-blue-600">{item.value}</p>
-                  <p className="text-gray-600 text-sm">{item.text}</p>
-                </div>
-              ))}
-            </div>
-            <button className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition">
-              {t("common.more")}
-            </button>
           </div>
 
-          {/* Right block (two photos) */}
-          <div className="flex flex-col gap-6 order-2 lg:order-none">
-            <div className="w-full h-[150px] bg-gray-200 rounded-2xl overflow-hidden"></div>
-            <div className="w-full h-[150px] bg-gray-200 rounded-2xl overflow-hidden"></div>
+          <div className="flex flex-col gap-3">
+            <div className="w-full h-[319px] overflow-hidden">
+              <img
+                src={Mission2}
+                alt="Secondary mission"
+                className="w-full h-full object-cover filter grayscale"
+              />
+            </div>
+
+            <div className="w-full h-[319px] overflow-hidden">
+              <img
+                src={Mission3}
+                alt="Additional mission"
+                className="w-full h-full object-cover filter grayscale"
+              />
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom decorative line */}
-        <div className="w-full h-20 bg-gray-100 rounded-xl mt-12"></div>
+      <div className="w-screen h-[51px] mt-12 overflow-hidden absolute left-1/2 transform -translate-x-1/2">
+        <img
+          src={LongOrnament}
+          alt="Ornament"
+          className="w-screen h-[51px] object-cover"
+        />
       </div>
     </section>
   );

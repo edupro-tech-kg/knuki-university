@@ -9,7 +9,8 @@ export const translations = {
       { label: "Контакты", href: "#contact" },
     ],
     header: {
-      universityName: "Кыргызский национальный университет культуры и искусств имени Бюбюсары Бейшеналиевой",
+      universityName:
+        "Кыргызский национальный университет культуры и искусств имени Бюбюсары Бейшеналиевой",
       menu: "Меню",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
@@ -62,6 +63,14 @@ export const translations = {
         { value: "1300+", text: "выпускников-артистов" },
       ],
       badge: "Живая сцена КНКАИ",
+    },
+    mission: {
+      title: "Миссия университета - культура и искусство",
+      description:
+        "заключается в подготовке талантливых, творческих, интеллектуальных кадров в сфере культуры и искусства.",
+      imageDescription:
+        "Состоялась церемония открытия Х Международного студенческого театрального фестиваля «Новые имена». В торжественной церемонии приняли участие вице-премьер-министр Кыргызской Республики Эдиль Байсалов, заместитель министра культуры, информации и молодежной политики Тимурлан Аджималиев, а также театральные деятели, зарубежные гости, студенты и любители театра.",
+      button: "Подробнее",
     },
     programs: {
       eyebrow: "Программы",
@@ -246,7 +255,15 @@ export const translations = {
       copyright:
         "© 2025 Кыргызский национальный университет культуры и искусств",
       address: "АДРЕС",
-      links: "БЫСТРЫЕ ССЫЛКИ"
+      links: "БЫСТРЫЕ ССЫЛКИ",
+    },
+    mission: {
+      title: "The University's mission is culture and art",
+      description:
+        "is to train talented, creative, intellectual personnel in the field of culture and arts.",
+      imageDescription:
+        "The opening ceremony of the X International Student Theater Festival 'New Names' took place. The solemn ceremony was attended by Vice Prime Minister of the Kyrgyz Republic Edil Baisalov, Deputy Minister of Culture, Information and Youth Policy Timurland Ajimaliev, as well as theater figures, foreign guests, students and theater lovers.",
+      button: "Learn More",
     },
   },
   en: {
@@ -259,7 +276,8 @@ export const translations = {
       { label: "Contact", href: "#contact" },
     ],
     header: {
-      universityName: "Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva",
+      universityName:
+        "Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva",
       menu: "Menu",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
@@ -391,9 +409,21 @@ export const translations = {
           title: "Open masterclass on ethno-jazz",
           location: "Music Studio",
         },
-        { date: "Jan 12", title: "Winter student gala concert", location: "Grand Hall, KNUCA" },
-        { date: "Jan 26", title: "Premiere of the play \"Muras\"", location: "Theatre Stage" },
-        { date: "Feb 05", title: "Open masterclass on ethno-jazz", location: "Music Studio" },
+        {
+          date: "Jan 12",
+          title: "Winter student gala concert",
+          location: "Grand Hall, KNUCA",
+        },
+        {
+          date: "Jan 26",
+          title: 'Premiere of the play "Muras"',
+          location: "Theatre Stage",
+        },
+        {
+          date: "Feb 05",
+          title: "Open masterclass on ethno-jazz",
+          location: "Music Studio",
+        },
       ],
     },
     calendar: {
@@ -493,7 +523,7 @@ export const translations = {
       email: "info@knu-arts.kg",
       copyright: "© 2025 Kyrgyz National University of Culture & Arts",
       address: "ADDRESS",
-      links: "QUICK LINKS"
+      links: "QUICK LINKS",
     },
   },
   ky: {
@@ -506,7 +536,8 @@ export const translations = {
       { label: "Байланыш", href: "#contact" },
     ],
     header: {
-      universityName: "Бүбүсара Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университети",
+      universityName:
+        "Бүбүсара Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университети",
       menu: "Меню",
       brandTop: "Kyrgyz National",
       brandName: "Cultural & Arts University",
@@ -559,6 +590,14 @@ export const translations = {
         { value: "1300+", text: "артист бүтүрүүчүлөр" },
       ],
       badge: "КНУКАИ жандуу сахнасы",
+    },
+    mission: {
+      title: "Университеттин миссиясы маданият жана искусство",
+      description:
+        "тармагында таланттуу, чыгармачыл, интеллектуалдык кадрларды даярдоо болуп саналат.",
+      imageDescription:
+        "Жаңы ысымдар” Х эл аралык студенттик театр фестивалынын ачылыш аземи болуп өттү. Салтанаттуу аземге Кыргыз Республикасынын Министрлер Кабинетинин Төрагасынын орун басары Эдиль Байсалов, Маданият, маалымат жана жаштар саясаты министринин орун басары Тимурлан Ажымалиев ошондой эле театр ишмерлери, чет элден келген меймандар, студенттер жана театр сүйүүчүлөрү катышты.",
+      button: "Кененирээк",
     },
     programs: {
       eyebrow: "Программалар",
@@ -742,7 +781,7 @@ export const translations = {
       email: "info@knu-arts.kg",
       copyright: "© 2025 Кыргыз Улуттук Маданият жана Искусство Университети",
       address: "АДРЕС",
-      links: "ТЕЗ ШИЛТЕМЕЛЕР"
+      links: "ТЕЗ ШИЛТЕМЕЛЕР",
     },
   },
 };

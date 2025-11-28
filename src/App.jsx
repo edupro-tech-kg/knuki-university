@@ -8,6 +8,7 @@ import EventsPreview from "./sections/EventsPreview";
 import HistorySection from "./sections/HistorySection";
 import GallerySection from "./sections/GallerySection";
 import ContactForm from "./sections/ContactForm";
+import MissionSection from "./sections/MissionSection";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <main className="space-y-12 md:space-y-16">
         <HeroSection />
         <AboutShort />
+        <MissionSection/>
         <ProgramsSection />
         <AdvantagesSection />
         <EventsPreview />
