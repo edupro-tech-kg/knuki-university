@@ -143,21 +143,12 @@ export default {
       weekday: "short",
     },
     events: [
-      { title: "Congratulations on White Hat Day.", date: "2025-11-05" },
-      {
-        title: "The rector congratulated the veteran women of KMMIU",
-        date: "2025-11-08",
-      },
-      {
-        title: "Uzbekistan",
-        data: "2025-11-13",
-      },
-      {
-        title: "KMMU and Bishkek City Drama Theater collaborate",
-        date: "2025-11-12",
-      },
-      { title: "Dance lesson", date: "2025-11-15" },
-      { title: "Ankara", date: "2025-11-22" },
+      { id: 1, title: "Congratulations on White Hat Day.", date: "2025-11-05" },
+      { id: 2, title: "The rector congratulated the veteran women of KMMIU", date: "2025-11-08" },
+      { id: 3, title: "Uzbekistan", data: "2025-11-13" },
+      { id: 4, title: "KMMU and Bishkek City Drama Theater collaborate", date: "2025-11-12" },
+      { id: 5, title: "Dance lesson", date: "2025-11-15" },
+      { id: 6, title: "Ankara", date: "2025-11-22" },
     ],
     lastNews: {
       title: "Latest News",
