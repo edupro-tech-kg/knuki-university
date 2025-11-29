@@ -1,7 +1,6 @@
 import Card from "../components/Card";
 import SectionTitle from "../components/SectionTitle";
 import { Button } from "../components/Button";
-import CalendarMini from "./CalendarMini";
 import { useTranslation } from "react-i18next";
 
 export default function EventsPreview() {

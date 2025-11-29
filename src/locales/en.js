@@ -159,6 +159,47 @@ export default {
       { title: "Dance lesson", date: "2025-11-15" },
       { title: "Ankara", date: "2025-11-22" },
     ],
+    lastNews: {
+      title: "Latest News",
+      newsData: [
+        {
+          desc: "A KUMIU student took 3rd place in an international competition",
+          date: "April 22, 2025",
+        },
+        {
+          desc: "The 10th International Festival 'New Names' has concluded",
+          date: "April 22, 2025",
+        },
+        {
+          desc: "Ballet star Aisuluu Tokombaeva at KUMIU",
+          date: "April 9, 2025",
+        },
+        {
+          desc: "A delegation from the Yakut Arctic State Institute of Culture and Arts arrived at KUMIU",
+          date: "April 3, 2025",
+        },
+        {
+          desc: "Awarded National Status",
+          date: "March 27, 2025",
+        },
+        {
+          desc: "KMMUI celebrated the Nooruz holiday",
+          date: "March 24, 2025",
+        },
+        {
+          desc: "A reporting concert for first-year students was held",
+          date: "March 6, 2025",
+        },
+        {
+          desc: "International cooperation agreement signed",
+          date: "March 6, 2025",
+        },
+        {
+          desc: "A representative of the Russian Film School has arrived",
+          date: "April 22, 2025",
+        },
+      ],
+    },
   },
   quickLinks: {
     title: "Quick Links",

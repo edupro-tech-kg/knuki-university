@@ -11,7 +11,7 @@ import ContactForm from "./sections/ContactForm";
 import MissionSection from "./sections/MissionSection";
 import QuickLinks from "./sections/QuickLinks";
 import NewsSection from "./sections/NewsSection";
-import CalendarMini from "./sections/CalendarMini";
+import CalendarEvents from "./sections/CalendarEvents";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <ProgramsSection />
         <AdvantagesSection />
         <EventsPreview />
-        <CalendarMini />
+        <CalendarEvents />
         <QuickLinks />
         <HistorySection />
         <GallerySection />
