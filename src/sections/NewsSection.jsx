@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
-import ButtonPrimary from "../components/UI/ButtonPrimary";
+import ButtonPrimary from "../components/UI/Button";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import "swiper/css";
@@ -163,7 +163,7 @@ export default function NewsSection() {
                         </h4>
                       </div>
                       <div className="flex justify-center">
-                        <ButtonPrimary className="bg-transparent border-white text-white hover:bg-white hover:!text-black text-sm md:text-base py-2 px-4 md:py-3 md:px-6">
+                        <ButtonPrimary>
                           {slide.buttonText}
                         </ButtonPrimary>
                       </div>
