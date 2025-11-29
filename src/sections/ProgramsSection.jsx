@@ -1,6 +1,6 @@
 import React, { use } from "react";
 import { useTranslation } from "react-i18next";
-import ButtonPrimary from "../components/UI/ButtonPrimary";
+import ButtonPrimary from "../components/UI/Button";
 import music from "../assets/svg/music.svg";
 import mask from "../assets/svg/mask.svg";
 import projector from "../assets/svg/projector.svg";
@@ -43,8 +43,8 @@ export default function ProgramsSection() {
                 </div>
 
                 <div className="mt-auto flex">
-                  <ButtonPrimary>
-                    {t("programs.buttonText")} →
+                  <ButtonPrimary variant="primaryIcon">
+                    {t("programs.buttonText")}
                   </ButtonPrimary>
                 </div>
               </div>
