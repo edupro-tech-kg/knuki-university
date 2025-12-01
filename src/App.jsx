@@ -1,10 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeroSection from "./sections/HeroSection";
-import AboutShort from "./sections/AboutShort";
 import ProgramsSection from "./sections/ProgramsSection";
-import AdvantagesSection from "./sections/AdvantagesSection";
-import EventsPreview from "./sections/EventsPreview";
 import HistorySection from "./sections/HistorySection";
 import GallerySection from "./sections/GallerySection";
 import ContactForm from "./sections/ContactForm";
@@ -20,11 +17,8 @@ function App() {
       <main className="space-y-12 md:space-y-16">
         <HeroSection />
         <NewsSection />
-        <AboutShort />
-        <MissionSection />
         <ProgramsSection />
-        <AdvantagesSection />
-        <EventsPreview />
+        <MissionSection />
         <CalendarEvents />
         <QuickLinks />
         <HistorySection />

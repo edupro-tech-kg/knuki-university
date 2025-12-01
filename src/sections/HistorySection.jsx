@@ -1,6 +1,6 @@
 import { useScroll, useTransform, motion, useMotionValue } from "framer-motion";
 import { useRef, useEffect } from "react";
-import Dansers from "../assets/img/dancers.png";
+import Dansers from "../assets/images/dancers.png";
 import { useTranslation } from "react-i18next";
 
 export default function HistorySection() {

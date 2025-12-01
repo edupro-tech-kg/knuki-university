@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import Ornament from "../assets/svg/ornament.svg";
-import Button from "../components/Button";
+import Button from "../components/UI/Button";
 
 function QuickLinks() {
   const { t } = useTranslation();

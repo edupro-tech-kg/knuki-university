@@ -9,13 +9,13 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 
-import ballerina from "../../src/assets/img/ballerina.png";
-import girlSinging from "../../src/assets/img/girlSinging.png";
-import delivery from "../../src/assets/img/delivery.png";
-import rehearsal from "../../src/assets/img/rehearsal.png";
-import audience from "../../src/assets/img/audience.png";
-import tracery from "../../src/assets/img/tracery.png";
-import traceryMobile from "../../src/assets/img/traceryMobile.png";
+import ballerina from "../../src/assets/images/ballerina.png";
+import girlSinging from "../../src/assets/images/girlSinging.png";
+import delivery from "../../src/assets/images/delivery.png";
+import rehearsal from "../../src/assets/images/rehearsal.png";
+import audience from "../../src/assets/images/audience.png";
+import tracery from "../../src/assets/images/tracery.png";
+import traceryMobile from "../../src/assets/images/traceryMobile.png";
 export default function NewsSection() {
   const { t } = useTranslation();
   const news = t("news", { returnObjects: true });
@@ -163,9 +163,7 @@ export default function NewsSection() {
                         </h4>
                       </div>
                       <div className="flex justify-center">
-                        <ButtonPrimary>
-                          {slide.buttonText}
-                        </ButtonPrimary>
+                        <ButtonPrimary>{slide.buttonText}</ButtonPrimary>
                       </div>
                     </div>
                   )}

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight, FaSearch } from "react-icons/fa";
-import img from "../assets/hero-img.png";
-import tracery from "../../src/assets/tracery.png";
+import img from "../assets/images/hero-img.png";
+import tracery from "../../src/assets/images/tracery.png";
 import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
@@ -49,15 +49,12 @@ export default function HeroSection() {
   }, []);
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const nextSlide = () =>
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  const prevSlide = () =>
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
+  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <section className="lg:mt-[160px] mt-[200px] relative">
       <div className="flex flex flex-col-reverse xl:flex-row relative justify-between w-full xl:w-[1449px] mx-auto px-4 lx:p-0">
-
         {/* LEFT SLIDER */}
         <div className="bg-[#751715] xl:w-[466px] w-full h-[295px] lg:h-[712px] p-6 xl:p-12 mb-10 xl:mb-0">
           {/* slides nav */}
@@ -78,8 +75,9 @@ export default function HeroSection() {
                 {slides.map((_, i) => (
                   <span
                     key={i}
-                    className={`h-1.5 w-1.5 rounded-full ${i === currentSlide ? "bg-white" : "bg-white/40"
-                      }`}
+                    className={`h-1.5 w-1.5 rounded-full ${
+                      i === currentSlide ? "bg-white" : "bg-white/40"
+                    }`}
                   ></span>
                 ))}
               </div>
@@ -168,7 +166,6 @@ export default function HeroSection() {
           animation: scrollLeft 16s linear infinite;
         }
       `}</style>
-
     </section>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import MissionSectionImg from "../assets/image/missionImage.png";
-import Mission2 from "../assets/image/mission2image.png";
-import Mission3 from "../assets/image/mission3.png";
-import Button from "../components/Button";
-import LongOrnament from "../assets/image/longOrnament.png";
+import MissionSectionImg from "../assets/images/missionImage.png";
+import Mission2 from "../assets/images/mission2image.png";
+import Mission3 from "../assets/images/mission3.png";
+import Button from "../components/UI/Button";
+import LongOrnament from "../assets/images/longOrnament.png";
 import { Trans } from "react-i18next";
 
 function MissionSection() {

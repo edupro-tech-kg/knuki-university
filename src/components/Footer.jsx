@@ -1,10 +1,9 @@
-import { Button } from "./Button";
 import { useTranslation } from "react-i18next";
-import facebook from "../assets/facebook.svg";
-import instagram from "../assets/instagram.svg";
-import letter from "../assets/letter.svg";
-import Map from "../assets/Map.svg";
-import Phone from "../assets/Phone.svg";
+import facebook from "../assets/svg/facebook.svg";
+import instagram from "../assets/svg/instagram.svg";
+import letter from "../assets/svg/letter.svg";
+import Map from "../assets/svg/Map.svg";
+import Phone from "../assets/svg/Phone.svg";
 
 export default function Footer() {
   const { t } = useTranslation();
