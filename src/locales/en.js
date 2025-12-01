@@ -117,15 +117,78 @@ export default {
     month: "September 2025",
     legend: "Events",
     note: "Live schedule for the week with stages and masterclasses.",
-    days: [
-      { day: "Mon", date: 6, active: false },
-      { day: "Tue", date: 7, active: true },
-      { day: "Wed", date: 8, active: false },
-      { day: "Thu", date: 9, active: true },
-      { day: "Fri", date: 10, active: false },
-      { day: "Sat", date: 11, active: false },
-      { day: "Sun", date: 12, active: false },
+    days: {
+      dayNamesShort: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      dayNames: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    },
+    weeks: {
+      weekText: "week.",
+      weekTextLong: "Week",
+    },
+    buttonText: {
+      today: "Today",
+      month: "Month",
+      week: "Week",
+      day: "Day",
+      list: "Agendas",
+    },
+    allDayText: "All day",
+    moreLinkText(n) {
+      return `More ${n}`;
+    },
+    noEventsText: "There is no event",
+    dayHeaderFormat: {
+      weekday: "short",
+    },
+    events: [
+      { id: 1, title: "Congratulations on White Hat Day.", date: "2025-11-05" },
+      { id: 2, title: "The rector congratulated the veteran women of KMMIU", date: "2025-11-08" },
+      { id: 3, title: "Uzbekistan", data: "2025-11-13" },
+      { id: 4, title: "KMMU and Bishkek City Drama Theater collaborate", date: "2025-11-12" },
+      { id: 5, title: "Dance lesson", date: "2025-11-15" },
+      { id: 6, title: "Ankara", date: "2025-11-22" },
     ],
+    lastNews: {
+      title: "Latest News",
+      newsData: [
+        {
+          desc: "A KUMIU student took 3rd place in an international competition",
+          date: "April 22, 2025",
+        },
+        {
+          desc: "The 10th International Festival 'New Names' has concluded",
+          date: "April 22, 2025",
+        },
+        {
+          desc: "Ballet star Aisuluu Tokombaeva at KUMIU",
+          date: "April 9, 2025",
+        },
+        {
+          desc: "A delegation from the Yakut Arctic State Institute of Culture and Arts arrived at KUMIU",
+          date: "April 3, 2025",
+        },
+        {
+          desc: "Awarded National Status",
+          date: "March 27, 2025",
+        },
+        {
+          desc: "KMMUI celebrated the Nooruz holiday",
+          date: "March 24, 2025",
+        },
+        {
+          desc: "A reporting concert for first-year students was held",
+          date: "March 6, 2025",
+        },
+        {
+          desc: "International cooperation agreement signed",
+          date: "March 6, 2025",
+        },
+        {
+          desc: "A representative of the Russian Film School has arrived",
+          date: "April 22, 2025",
+        },
+      ],
+    },
   },
   quickLinks: {
     title: "Quick Links",
@@ -136,20 +199,6 @@ export default {
       { id: 4, title: "Documents" },
     ],
     button: "Learn More",
-  },
-  history: {
-    eyebrow: "History",
-    title: "University legacy",
-    description: "Each growth milestone brings new stages, names and cultural impact.",
-    list: [
-      {
-        year: "1954",
-        text: "Founded as a conservatory with vocal and folk instrument departments.",
-      },
-      { year: "1996", text: "Expanded performing arts faculty and launched directing studio." },
-      { year: "2008", text: "Opened choreography building and major rehearsal complex." },
-      { year: "2023", text: "Upgraded media library and launched international internships." },
-    ],
   },
   gallery: {
     eyebrow: "Gallery",
