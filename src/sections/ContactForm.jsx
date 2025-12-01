@@ -1,4 +1,4 @@
-import ButtonSecondary from "../components/UI/ButtonSecondary";
+import Button from "../components/UI/Button";
 import PrimaryForm from "../components/UI/forms/PrimaryForm";
 import DropdownForm from "../components/UI/forms/DropdownForm";
 import FileForm from "../components/UI/forms/FileForm";
@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
   const { t } = useTranslation();
- 
+
   return (
     <section className="container mx-auto px-4 md:px-8 py-12 md:py-16 lg:py-20">
       <div className="grid lg:grid-cols-2 gap-16 lg:gap-8 items-start">
@@ -62,10 +62,12 @@ export default function ContactForm() {
               labelClassName="text-sm md:text-sm lg:text-base"
             />
           </div>
+     
 
-          <ButtonSecondary className="!w-full mt-6">
-            {t('consultation.form.submit')}
-          </ButtonSecondary>
+            <Button variant="secondary" className="!w-full" >
+              {t('consultation.form.submit')}
+            </Button>
+     
         </div>
 
       </div>
