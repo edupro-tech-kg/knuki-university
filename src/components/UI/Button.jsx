@@ -6,6 +6,7 @@ const Button = ({
   variant = "primary",
   disabled = false,
   onClick,
+  className = "",
 }) => {
   const base =
     "inline-flex items-center justify-center gap-2 font-medium text-lg px-8 py-3 transition-all duration-300";
@@ -38,7 +39,7 @@ const Button = ({
     <button
       disabled={disabled}
       onClick={onClick}
-      className={`${base} ${variants[variant]}`}
+      className={`${base} ${variants[variant]} ${className}`}
     >
       {children}
 

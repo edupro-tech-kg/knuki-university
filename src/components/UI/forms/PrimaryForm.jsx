@@ -1,46 +1,49 @@
 import React, { useState } from "react";
 
-const PrimaryForm = ({ label, className = "", inputWidth = "md", type = "text", onChange }) => {
+const PrimaryForm = ({
+  label,
+  children = "Text",
+  className = "",
+  labelClassName = "",
+  type = "text",
+  onChange,
+}) => {
   const [value, setValue] = useState("");
   const [focused, setFocused] = useState(false);
 
   const handleChange = (e) => {
     setValue(e.target.value);
-    if (onChange) {
-      onChange(e.target.value);
-    }
+    if (onChange) onChange(e.target.value);
   };
 
   const showLabel = focused || value.length > 0;
 
-  const widthClasses = {
-    sm: "max-w-xs",
-    md: "max-w-md",
-    lg: "max-w-lg",
-    xl: "max-w-xl",
-  };
-
   return (
-    <div className={`mx-auto p-6 ${className}`}>
-      <div className="mb-4">
+    <div className={`w-full ${className}`}>
+      <div className="mb-4 w-full">
         {label && (
-          <label htmlFor="primary-input" className="block text-white text-lg font-medium mb-2">
+          <label
+            htmlFor="primary-input"
+            className={`block text-black font-medium mb-2 ${labelClassName}`}
+          >
             {label}
           </label>
+
+
         )}
 
-        <div className={`relative ${widthClasses[inputWidth]}`}>
+        <div className="relative w-full">
           <input
             id="primary-input"
             type={type}
             value={value}
-            placeholder={showLabel ? "" : "Text"}
+            placeholder={showLabel ? "" : children}
             onChange={handleChange}
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
             className="
               w-full 
-              rounded-lg 
+              rounded
               px-4
               py-3
               text-gray-800 

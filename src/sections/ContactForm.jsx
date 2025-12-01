@@ -1,56 +1,75 @@
-import SectionTitle from "../components/SectionTitle";
-import Input from "../components/Input";
-import { Button } from "../components/Button";
+import Button from "../components/UI/Button";
+import PrimaryForm from "../components/UI/forms/PrimaryForm";
+import DropdownForm from "../components/UI/forms/DropdownForm";
+import FileForm from "../components/UI/forms/FileForm";
 import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
   const { t } = useTranslation();
-  const contact = t("contact");
 
   return (
-    <section id="contact" className="bg-dark text-white">
-      <div className="container-edge grid gap-10 py-14 md:grid-cols-[1.2fr_1fr] md:py-16">
-        <div className="space-y-6">
-          <SectionTitle
-            eyebrow={contact.eyebrow}
-            title={contact.title}
-            description={contact.description}
-          />
-          <div className="grid grid-cols-2 gap-4 text-sm text-white/80">
-            <div className="rounded-2xl bg-white/10 p-4">
-              <p className="text-xs uppercase tracking-[0.12em] text-white/60">
-                {contact.addressLabel}
-              </p>
-              <p className="text-base font-semibold">{contact.addressValue}</p>
-            </div>
-            <div className="rounded-2xl bg-white/10 p-4">
-              <p className="text-xs uppercase tracking-[0.12em] text-white/60">
-                {contact.phoneLabel}
-              </p>
-              <p className="text-base font-semibold">{contact.phoneValue}</p>
-            </div>
-          </div>
+    <section className="container mx-auto px-4 md:px-8 py-12 md:py-16 lg:py-20">
+      <div className="grid lg:grid-cols-2 gap-16 lg:gap-8 items-start">
+
+        <div className="pt-6">
+          <h1 className="text-xl md:text-xl lg:text-4xl font-semibold mb-4 font-serif uppercase italic max-w-[80%]">
+            {t('consultation.title')}
+          </h1>
+
+          <p className="text-base md:text-lg lg:text-lg font-sans max-w-[85%]">
+            {t('consultation.description')}
+          </p>
         </div>
 
-        <div className="section-surface space-y-4 bg-white/95 text-dark shadow-soft">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-xs uppercase tracking-[0.12em] text-gray-500">
-                {contact.formBadge}
-              </p>
-              <p className="text-lg font-semibold text-dark">{contact.formTitle}</p>
-            </div>
-            <div className="h-10 w-10 rounded-xl bg-primary/10"></div>
+        <div>
+          <div className="grid grid-cols-2 gap-4 md:gap-6 ">
+
+            <PrimaryForm
+              label={t('consultation.form.name')}
+              children={t('consultation.form.namePlaceholder')}
+              className="w-full"
+              labelClassName="text-sm md:text-sm lg:text-base"
+            />
+
+            <DropdownForm
+              labelClassName="text-sm md:text-sm lg:text-base"
+              fields={[
+                {
+                  name: "program",
+                  label: t('consultation.form.faculty'),
+                  required: true,
+                  options: [
+                    { value: "program1", label: t('consultation.form.programs.program1') },
+                    { value: "program2", label: t('consultation.form.programs.program2') },
+                    { value: "program3", label: t('consultation.form.programs.program3') },
+                  ],
+                },
+              ]}
+              inputWidth="w-full"
+            />
+
+            <PrimaryForm
+              label={t('consultation.form.phone')}
+              children={t('consultation.form.phonePlaceholder')}
+              className="w-full"
+              labelClassName="text-sm md:text-sm lg:text-base"
+            />
+
+            <FileForm
+              label={t('consultation.form.portfolio')}
+              children={t('consultation.form.upload')}
+              className="w-full"
+              labelClassName="text-sm md:text-sm lg:text-base"
+            />
           </div>
-          <div className="grid gap-4">
-            <Input label={contact.fields.name} placeholder="Айсулуу Т." />
-            <Input label={contact.fields.email} type="email" placeholder="name@email.com" />
-            <Input label={contact.fields.phone} type="tel" placeholder="+996 (___) ___ ___" />
-            <Input label={contact.fields.comment} textarea placeholder="Интересует факультет..." />
-          </div>
-          <Button className="w-full justify-center">{contact.submit}</Button>
-          <p className="text-xs text-gray-500">{contact.disclaimer}</p>
+     
+
+            <Button variant="secondary" className="!w-full" >
+              {t('consultation.form.submit')}
+            </Button>
+     
         </div>
+
       </div>
     </section>
   );
