@@ -1,75 +1,174 @@
-import { Button } from "../components/Button";
+import { useState, useEffect, useRef } from "react";
+import { FaArrowLeft, FaArrowRight, FaSearch } from "react-icons/fa";
+import img from "../assets/hero-img.png";
+import tracery from "../../src/assets/tracery.png";
 import { useTranslation } from "react-i18next";
+
 export default function HeroSection() {
   const { t } = useTranslation();
   const hero = t("hero");
-  const weekEvents = hero.weekEvents || [];
+
+  const slides = [img, img, img, img, img, img];
+  const [students, setStudents] = useState(0);
+  const [budget, setBudget] = useState(0);
+  const [paid, setPaid] = useState(0);
+
+  const numbersRef = useRef(null);
+  const started = useRef(false);
+
+  const animateNumber = (setter, endValue, duration) => {
+    let start = 0;
+    const stepTime = 10;
+    const increment = endValue / (duration / stepTime);
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= endValue) {
+        start = endValue;
+        clearInterval(timer);
+      }
+      setter(Math.floor(start));
+    }, stepTime);
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true;
+          animateNumber(setStudents, 4450000, 2000);
+          animateNumber(setBudget, 603413, 2300);
+          animateNumber(setPaid, 1730409, 2500);
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    if (numbersRef.current) observer.observe(numbersRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const nextSlide = () =>
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  const prevSlide = () =>
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="bg-hero-pattern bg-cover bg-center text-white">
-      <div className="container-edge flex flex-col gap-10 py-16 md:flex-row md:items-center md:py-24">
-        <div className="flex-1 space-y-6">
-          <div className="inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80">
-            {hero.pill}
-            <span className="h-2 w-2 rounded-full bg-accent"></span>
-            {hero.badge}
-          </div>
-          <h1 className="font-serif text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
-            {hero.heading}
-          </h1>
-          <p className="max-w-2xl text-lg text-white/80">{hero.subheading}</p>
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Button className="shadow-soft">{hero.primaryCta}</Button>
-            <Button variant="ghost" className="border-white/60">
-              {hero.secondaryCta}
-            </Button>
-          </div>
-          <div className="grid grid-cols-3 gap-4 pt-4">
-            {hero.stats.map((item) => (
-              <div key={item.label} className="rounded-2xl bg-white/10 p-4">
-                <div className="text-2xl font-semibold">{item.value}</div>
-                <p className="text-sm text-white/70">{item.label}</p>
+    <section className="mt-[160px] relative">
+      <div className="flex relative justify-between w-[1449px] mx-auto">
+
+        {/* LEFT SLIDER */}
+        <div className="bg-[#751715] w-[466px] h-[712px] p-12 ">
+          {/* slides nav */}
+          <div className="flex justify-between items-center text-white">
+            <button
+              onClick={prevSlide}
+              className="flex items-center justify-center h-10 w-10 border border-white rounded-full"
+            >
+              <FaArrowLeft size={14} />
+            </button>
+
+            <div className="flex items-center font-normal text-[18px] gap-2">
+              <p>
+                {String(currentSlide + 1).padStart(2, "0")}/
+                <span className="text-[12px] mt-1.5">20</span>
+              </p>
+              <div className="flex gap-1 ml-3">
+                {slides.map((_, i) => (
+                  <span
+                    key={i}
+                    className={`h-1.5 w-1.5 rounded-full ${i === currentSlide ? "bg-white" : "bg-white/40"
+                      }`}
+                  ></span>
+                ))}
               </div>
-            ))}
+            </div>
+
+            <button
+              onClick={nextSlide}
+              className="flex items-center justify-center h-10 w-10 border border-white rounded-full"
+            >
+              <FaArrowRight size={14} />
+            </button>
           </div>
+
+          <img
+            src={slides[currentSlide]}
+            alt="Slide"
+            className="w-[621px] h-[518px] object-cover absolute z-10 top-[131px] left-0"
+          />
         </div>
 
-        <div className="section-surface flex-1 border border-white/10 bg-white/90 text-dark shadow-soft backdrop-blur">
-          <div className="space-y-4 p-6">
-            <div className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.08em] text-primary">
-              {t("events.title")}
-              <span className="h-2 w-2 rounded-full bg-accent"></span>
+        {/* RIGHT CONTENT */}
+        <div className="flex flex-col justify-center gap-10">
+          <h1 className="font-serif text-[#751715] font-bold italic text-[65px] leading-tight w-[700px] flex-wrap">
+            {hero.title1} — <br /> {hero.title2}
+          </h1>
+
+          <div className="flex border rounded-lg h-14 shadow-sm overflow-hidden">
+            <div className="flex items-center gap-3 bg-[#F5F5F5] px-4 w-full">
+              <FaSearch className="text-gray-500 text-sm" />
+              <input
+                type="text"
+                placeholder={hero.searchPlaceholder}
+                className="bg-transparent outline-none w-full"
+              />
             </div>
-            <ul className="space-y-4 text-dark">
-              {weekEvents.map((event, idx) => (
-                <li
-                  key={event.title}
-                  className="flex items-start gap-3 rounded-2xl bg-light px-4 py-3"
-                >
-                  <div
-                    className={`mt-1 h-2 w-2 rounded-full ${idx % 2 === 0 ? "bg-primary" : "bg-accent"}`}
-                  ></div>
-                  <div>
-                    <p className="text-sm text-gray-500">{event.date}</p>
-                    <p className="text-base font-semibold">{event.title}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <div className="flex items-center justify-between rounded-2xl bg-dark px-4 py-3 text-white">
-              <div>
-                <p className="text-sm uppercase tracking-[0.14em] text-white/70">
-                  {hero.admission.label}
-                </p>
-                <p className="text-lg font-semibold">{hero.admission.deadline}</p>
-              </div>
-              <Button variant="primary" className="bg-white text-primary hover:opacity-90">
-                {hero.admission.cta}
-              </Button>
+
+            <button className="bg-[#3C3C3C] rounded-lg text-white px-14 font-semibold flex items-center gap-2">
+              {hero.next} <FaArrowRight size={16} />
+            </button>
+          </div>
+
+          {/* ⭐ Count-up section */}
+          <div className="flex text-center gap-4" ref={numbersRef}>
+            <div>
+              <p className="font-medium text-[30px]">
+                {(students / 1000000).toFixed(2)}
+              </p>
+              <p className="text-sm opacity-70">{hero.stat1}</p>
+            </div>
+
+            <hr className="w-[1px] h-[56px] bg-[#EEEEEE]" />
+
+            <div>
+              <p className="font-medium text-[30px]">{budget}</p>
+              <p className="text-sm opacity-70">{hero.stat2}</p>
+            </div>
+
+            <hr className="w-[1px] h-[56px] bg-[#EEEEEE]" />
+
+            <div>
+              <p className="font-medium text-[30px]">{paid}</p>
+              <p className="text-sm opacity-70">{hero.stat3}</p>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Scrolling ornament */}
+      <div className="relative w-full overflow-hidden">
+        <div className="flex scroll-animation gap-2">
+          <img className="h-[50px]" src={tracery} alt="ornament" />
+          <img className="h-[50px]" src={tracery} alt="ornament" />
+          <img className="h-[50px]" src={tracery} alt="ornament" />
+          <img className="h-[50px]" src={tracery} alt="ornament" />
+        </div>
+      </div>
+
+      <style>{`
+        @keyframes scrollLeft {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .scroll-animation {
+          display: flex;
+          width: calc(200%);
+          animation: scrollLeft 16s linear infinite;
+        }
+      `}</style>
+
     </section>
   );
 }
