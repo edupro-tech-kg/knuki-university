@@ -261,4 +261,23 @@ export default {
       { title: "Творческий вечер", buttonText: "Подробнее" },
     ],
   },
+  consultation: {
+  title: 'Запись на консультацию',
+  description: 'Менеджер свяжется с вами в ближайшее время!',
+  form: {
+    name: 'Имя и фамилия',
+    namePlaceholder: 'Баланчаев Баланча',
+    phone: 'Номер телефона',
+    phonePlaceholder: '+996 ',
+    faculty: 'Факультет',
+    programs: {
+      program1: 'Музыкальное искусство',
+      program2: 'Театр и кино',
+      program3: 'Хореография',
+    },
+    portfolio: 'Портфолио',
+    upload: 'Загрузить файл',
+    submit: 'Отправить',
+  }
+},
 };

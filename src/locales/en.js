@@ -203,4 +203,23 @@ export default {
       { title: "Creative Evening", buttonText: "More" },
     ],
   },
+  consultation: {
+  title: 'Sign up for a consultation',
+  description: 'The manager will contact you shortly!',
+  form: {
+    name: 'Full name',
+    namePlaceholder: 'Balanchaev Balancha',
+    phone: 'Phone',
+    phonePlaceholder: '+996 ',
+    faculty: 'Faculty ',
+    programs: {
+      program1: 'Music Arts',
+      program2: 'Theatre & Film',
+      program3: 'Choreography',
+    },
+    portfolio: 'Portfolio',
+    upload: 'Upload file',
+    submit: 'Submit application',
+  }
+},
 };

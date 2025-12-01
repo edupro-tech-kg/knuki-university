@@ -193,4 +193,23 @@ export default {
       { title: "Чыгармачыл кече", buttonText: "Кененирээк" },
     ],
   },
+  consultation: {
+  title: 'Консультацияга жазылуу',
+  description: 'Жакынкы аралыкта сиз менен менеджер чалып байланышат!',
+  form: {
+    name: 'Аты-жөнүңүз',
+    namePlaceholder: 'Баланчаев Баланча',
+    phone: 'Телефон',
+    phonePlaceholder: '+996 ',
+    faculty: 'Факультет',
+    programs: {
+      program1: 'Музыкалык искусство',
+      program2: 'Театр жана кино',
+      program3: 'Хореография',
+    },
+    portfolio: 'Портфолио',
+    upload: 'Файл жүктөө',
+    submit: 'Жиберүү',
+  }
+},
 };
