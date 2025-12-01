@@ -1,4 +1,4 @@
-import Calendar from "../components/calendar/Calendar";
+import Calendar from "../components/Calendar";
 import { useTranslation } from "react-i18next";
 import patterns from "../assets/patterns.svg";
 import LastNews from "../components/LastNews";

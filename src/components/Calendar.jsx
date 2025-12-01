@@ -4,13 +4,11 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import listPlugin from "@fullcalendar/list";
 import ruLocale from "@fullcalendar/core/locales/ru";
-import kyLocale from "../../data/locales/ky";
-
+import kyLocale from "../locales/ky.js";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-
-import { Icons } from "../../assets/svg/index.js";
-import "./calendar.css";
+import { Icons } from "../assets/svg/index.js";
+import "../styles/calendar.css";
 import { Tooltip } from "react-tooltip";
 
 export default function Calendar() {

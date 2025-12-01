@@ -246,10 +246,8 @@ export default function Header() {
           ref={dropdownRef}
           className="fixed bg-white rounded-lg shadow-lg border border-gray-200 w-32 z-[9999]"
           style={{
-            top:'3%',
-            left:'67%'
-            // top: dropdownPosition.top,
-            // left: dropdownPosition.left,
+            top: dropdownPosition.top,
+            left: dropdownPosition.left,
           }}
         >
           {languages.map((lang) => (

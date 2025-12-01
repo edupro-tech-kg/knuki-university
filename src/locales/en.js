@@ -200,20 +200,6 @@ export default {
     ],
     button: "Learn More",
   },
-  // history: {
-  //   eyebrow: "History",
-  //   title: "University legacy",
-  //   description: "Each growth milestone brings new stages, names and cultural impact.",
-  //   list: [
-  //     {
-  //       year: "1954",
-  //       text: "Founded as a conservatory with vocal and folk instrument departments.",
-  //     },
-  //     { year: "1996", text: "Expanded performing arts faculty and launched directing studio." },
-  //     { year: "2008", text: "Opened choreography building and major rehearsal complex." },
-  //     { year: "2023", text: "Upgraded media library and launched international internships." },
-  //   ],
-  // },
   gallery: {
     eyebrow: "Gallery",
     title: "Campus life",
