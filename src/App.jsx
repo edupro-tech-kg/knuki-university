@@ -7,7 +7,8 @@ import AdvantagesSection from "./sections/AdvantagesSection";
 import EventsPreview from "./sections/EventsPreview";
 import HistorySection from "./sections/HistorySection";
 import GallerySection from "./sections/GallerySection";
-// import ContactForm from "./sections/ContactForm";
+import ContactForm from "./sections/ContactForm";
+import MissionSection from "./sections/MissionSection";
 import QuickLinks from "./sections/QuickLinks";
 import NewsSection from "./sections/NewsSection";
 import ConsultationSection from "./sections/ConsultationSection";
@@ -19,13 +20,14 @@ function App() {
         <HeroSection />
         <NewsSection />
         <AboutShort />
+        <MissionSection/>
         <ProgramsSection />
         <AdvantagesSection />
         <EventsPreview />
         <QuickLinks />
         <HistorySection />
         <GallerySection />
-        {/* <ContactForm /> */}
+         <ContactForm /> 
         <ConsultationSection />
       </main>
       <Footer />

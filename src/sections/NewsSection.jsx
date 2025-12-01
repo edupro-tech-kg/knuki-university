@@ -2,20 +2,20 @@ import React, { useRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
-import ButtonPrimary from "../components/UI/ButtonPrimary";
+import ButtonPrimary from "../components/UI/Button";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 
-import ballerina from "../../src/assets/ballerina.png";
-import girlSinging from "../../src/assets/girlSinging.png";
-import delivery from "../../src/assets/delivery.png";
-import rehearsal from "../../src/assets/rehearsal.png";
-import audience from "../../src/assets/audience.png";
-import tracery from "../../src/assets/tracery.png";
-import traceryMobile from "../../src/assets/traceryMobile.png";
+import ballerina from "../../src/assets/img/ballerina.png";
+import girlSinging from "../../src/assets/img/girlSinging.png";
+import delivery from "../../src/assets/img/delivery.png";
+import rehearsal from "../../src/assets/img/rehearsal.png";
+import audience from "../../src/assets/img/audience.png";
+import tracery from "../../src/assets/img/tracery.png";
+import traceryMobile from "../../src/assets/img/traceryMobile.png";
 export default function NewsSection() {
   const { t } = useTranslation();
   const news = t("news", { returnObjects: true });
@@ -163,7 +163,7 @@ export default function NewsSection() {
                         </h4>
                       </div>
                       <div className="flex justify-center">
-                        <ButtonPrimary className="bg-transparent border-white text-white hover:bg-white hover:!text-black text-sm md:text-base py-2 px-4 md:py-3 md:px-6">
+                        <ButtonPrimary>
                           {slide.buttonText}
                         </ButtonPrimary>
                       </div>
