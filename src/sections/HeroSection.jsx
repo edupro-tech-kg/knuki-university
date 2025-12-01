@@ -55,11 +55,11 @@ export default function HeroSection() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="mt-[160px] relative">
-      <div className="flex relative justify-between w-[1449px] mx-auto">
+    <section className="lg:mt-[160px] mt-[200px] relative">
+      <div className="flex flex flex-col-reverse xl:flex-row relative justify-between w-full xl:w-[1449px] mx-auto px-4 lx:p-0">
 
         {/* LEFT SLIDER */}
-        <div className="bg-[#751715] w-[466px] h-[712px] p-12 ">
+        <div className="bg-[#751715] xl:w-[466px] w-full h-[295px] lg:h-[712px] p-6 xl:p-12 mb-10 xl:mb-0">
           {/* slides nav */}
           <div className="flex justify-between items-center text-white">
             <button
@@ -96,17 +96,17 @@ export default function HeroSection() {
           <img
             src={slides[currentSlide]}
             alt="Slide"
-            className="w-[621px] h-[518px] object-cover absolute z-10 top-[131px] left-0"
+            className="lg:w-[621px] lg:h-[518px] w-[284.125px] h-[237px] object-cover xl:absolute z-10 xl:top-[131px] xl:left-4 mx-auto"
           />
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="flex flex-col justify-center gap-10">
-          <h1 className="font-serif text-[#751715] font-bold italic text-[65px] leading-tight w-[700px] flex-wrap">
+        <div className="flex flex-col justify-center xl:items-start items-center xl:text-left text-center gap-10 mb-12 lx:mb-0">
+          <h1 className="font-serif text-[#751715] font-bold italic text-[35.41px] lg:text-[65px] leading-tight lg:w-[700px] flex-wrap mx-auto">
             {hero.title1} — <br /> {hero.title2}
           </h1>
 
-          <div className="flex border rounded-lg h-14 shadow-sm overflow-hidden">
+          <div className="flex border rounded-lg h-14 shadow-sm overflow-hidden  h-[45px] lg:h-[49px] w-full">
             <div className="flex items-center gap-3 bg-[#F5F5F5] px-4 w-full">
               <FaSearch className="text-gray-500 text-sm" />
               <input
@@ -116,7 +116,7 @@ export default function HeroSection() {
               />
             </div>
 
-            <button className="bg-[#3C3C3C] rounded-lg text-white px-14 font-semibold flex items-center gap-2">
+            <button className="bg-[#3C3C3C] rounded-lg text-white px-6 lg:px-14 font-semibold flex items-center gap-2">
               {hero.next} <FaArrowRight size={16} />
             </button>
           </div>
@@ -124,24 +124,24 @@ export default function HeroSection() {
           {/* ⭐ Count-up section */}
           <div className="flex text-center gap-4" ref={numbersRef}>
             <div>
-              <p className="font-medium text-[30px]">
+              <p className="font-medium text-[19px] lg:text-[30px]">
                 {(students / 1000000).toFixed(2)}
               </p>
-              <p className="text-sm opacity-70">{hero.stat1}</p>
+              <p className="lg:text-sm text-xs opacity-70">{hero.stat1}</p>
             </div>
 
             <hr className="w-[1px] h-[56px] bg-[#EEEEEE]" />
 
             <div>
-              <p className="font-medium text-[30px]">{budget}</p>
-              <p className="text-sm opacity-70">{hero.stat2}</p>
+              <p className="font-medium text-[19px] lg:text-[30px]">{budget}</p>
+              <p className="lg:text-sm text-xs opacity-70">{hero.stat2}</p>
             </div>
 
             <hr className="w-[1px] h-[56px] bg-[#EEEEEE]" />
 
             <div>
-              <p className="font-medium text-[30px]">{paid}</p>
-              <p className="text-sm opacity-70">{hero.stat3}</p>
+              <p className="font-medium text-[19px] lg:text-[30px]">{paid}</p>
+              <p className="lg:text-sm text-xs opacity-70">{hero.stat3}</p>
             </div>
           </div>
         </div>
