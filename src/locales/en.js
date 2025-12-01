@@ -291,7 +291,7 @@ export default {
 },
   history: {
     title: "HISTORY",
-    content: `General information. The Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has become the leading center of the republic for training highly qualified and comprehensively educated specialists for cultural and art institutions. It is the first musical and creative educational institution in the republic. Has a certificate of a legal entity registered with the Ministry of Justice of the Kyrgyz Republic (registration No. 13310-3301-U-e, OKPO code 02246840, series 0065533 GRP). State property, organizational and legal form - institution, located at: 720005 Bishkek, st. Zhantosheva, 113. In 1974, the educational institution was named after the outstanding Kyrgyz ballerina, People's Artist of the USSR B. Beishenalieva. The history of the Kyrgyz State University of Culture and Arts begins with the Decree of the Council of Ministers of the Kirghiz SSR of August 12, 1967 No. 482.`,
+    content: `General information. The Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has become the leading center of the republic for training highly qualified and comprehensively educated specialists for cultural and art institutions. It is the first musical and creative educational institution in the republic. Has a certificate of a legal entity registered with the Ministry of Justice of the Kyrgyz Republic (registration No. 13310-3301-U-e, OKPO code 02246840, series 0065533 GRP). `,
     readMore: "Read more",
     readLess: "Collapse",
     imageAlt: "Traditional dancers",
