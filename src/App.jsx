@@ -11,6 +11,7 @@ import ContactForm from "./sections/ContactForm";
 import MissionSection from "./sections/MissionSection";
 import QuickLinks from "./sections/QuickLinks";
 import NewsSection from "./sections/NewsSection";
+import CalendarEvents from "./sections/CalendarEvents";
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
         <HeroSection />
         <NewsSection />
         <AboutShort />
-        <MissionSection/>
+        <MissionSection />
         <ProgramsSection />
         <AdvantagesSection />
         <EventsPreview />
+        <CalendarEvents />
         <QuickLinks />
         <HistorySection />
         <GallerySection />

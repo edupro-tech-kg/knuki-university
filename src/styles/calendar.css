@@ -1,0 +1,48 @@
+.fc-daygrid-day {
+  height: 90px;
+}
+
+.event-pill {
+  background: #b02929;
+  color: white;
+  padding: 8px 8px;
+  font-size: 12px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 97px;
+  width: 100%;
+}
+.event-text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+
+  width: 100%;
+}
+
+.fc-daygrid-event {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.fc-toolbar-title {
+  font-size: 22px !important;
+  font-weight: 500;
+}
+.fc-event-main {
+  display: flex;
+  justify-content: center;
+}
+
+.fc-scroller {
+  overflow: visible !important;
+}
+
+.fc-view-harness {
+  height: 570px !important;
+}

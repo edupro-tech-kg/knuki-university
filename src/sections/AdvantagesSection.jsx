@@ -16,7 +16,7 @@ export default function AdvantagesSection() {
         />
 
         <div className="grid gap-6 md:grid-cols-2">
-          {advantages.list.map((item) => (
+          {advantages.list.map((item) => (       
             <Card key={item.title} className="bg-white/90">
               <div className="flex items-start gap-4">
                 <div className="mt-1 h-3 w-3 rounded-full bg-primary"></div>
