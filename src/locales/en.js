@@ -19,30 +19,17 @@ export default {
     placeholder: "Search",
     button: "Next",
   },
+
   hero: {
-    pill: "Art of the future",
-    badge: "Admissions 2025 open",
-    heading: "Kyrgyz National University of Culture & Arts",
-    subheading:
-      "Get world-class training while honoring Kyrgyz cultural roots and revealing your creative voice.",
-    primaryCta: "Apply now",
-    secondaryCta: "Explore programs",
-    stats: [
-      { value: "20+", label: "Faculties & departments" },
-      { value: "6k", label: "Students & alumni" },
-      { value: "150+", label: "Artists on the faculty" },
-    ],
-    weekEvents: [
-      { date: "September 14, 12:30", title: "Open house for the Arts Faculty" },
-      { date: "September 16, 18:00", title: "Diploma showcase “New Stage”" },
-      { date: "September 18, 15:00", title: "Ethno-jazz improvisation masterclass" },
-    ],
-    admission: {
-      label: "Admissions",
-      deadline: "until Sept 20",
-      cta: "Book a call",
-    },
+    title1: "ART",
+    title2: "PEAK OF THE NATIONAL SPIRIT",
+    searchPlaceholder: "Search",
+    next: "Next",
+    stat1: "million students",
+    stat2: "budget places",
+    stat3: "fee-paying places"
   },
+
   about: {
     eyebrow: "About",
     title: "Tradition and modernity in one space",
