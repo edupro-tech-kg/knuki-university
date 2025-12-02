@@ -9,8 +9,8 @@ function MissionSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full py-16 lg:py-24 relative overflow-x-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 relative z-10">
+    <section className="w-full pb-0 pt-16 lg:pt-24 relative overflow-x-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 relative z-10 pb-12">
         <div className="text-center mb-12">
           <h2 className="font-serif italic text-[24px] font-semibold leading-[1.1] text-text-primary md:text-[60px] md:leading-[1.05] md:font-medium">
             <Trans i18nKey="mission.title" components={{ br: <br /> }} />
@@ -60,6 +60,9 @@ function MissionSection() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-2">
+        <img src="/src/assets/svg/patterns.svg" alt="patterns" className="w-full" />
       </div>
     </section>
   );
