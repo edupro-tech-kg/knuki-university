@@ -1,14 +1,12 @@
+import { useState } from "react";
 import Calendar from "../components/Calendar";
-import { useTranslation } from "react-i18next";
 import patterns from "../assets/svg/patterns.svg";
 import LastNews from "../components/LastNews";
-import { useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function CalendarEvents() {
-  const { t } = useTranslation();
-  const calendar = t("calendar");
+  const [mobileView, setMobileView] = useState("calendar"); // calendar | news
 
   const [showNews, setShowNews] = useState(false);
 

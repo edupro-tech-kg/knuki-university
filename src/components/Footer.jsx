@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import facebook from "../assets/svg/facebook.svg";
 import instagram from "../assets/svg/instagram.svg";
 import letter from "../assets/svg/letter.svg";
-import Map from "../assets/svg/Map.svg";
-import Phone from "../assets/svg/Phone.svg";
+import Map from "../assets/svg/map.svg";
+import Phone from "../assets/svg/phone.svg";
 
 export default function Footer() {
   const { t } = useTranslation();
