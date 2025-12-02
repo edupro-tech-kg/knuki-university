@@ -14,8 +14,6 @@ import girlSinging from "../../src/assets/images/girlSinging.png";
 import delivery from "../../src/assets/images/delivery.png";
 import rehearsal from "../../src/assets/images/rehearsal.png";
 import audience from "../../src/assets/images/audience.png";
-import tracery from "../../src/assets/images/tracery.png";
-import traceryMobile from "../../src/assets/images/traceryMobile.png";
 export default function NewsSection() {
   const { t } = useTranslation();
   const news = t("news", { returnObjects: true });
@@ -72,20 +70,7 @@ export default function NewsSection() {
   }, [swiperInstance]);
 
   return (
-    <section className="pt-0 pb-8 md:pb-12 lg:pb-16 bg-gray-50">
-      <div className="">
-        <img
-          src={traceryMobile}
-          alt="decorative tracery"
-          className="w-full h-20 object-contain md:hidden"
-        />
-        <img
-          src={tracery}
-          alt="decorative tracery"
-          className="w-full h-20 object-contain hidden md:block"
-        />
-      </div>
-
+    <section>
       <div className="container mx-auto px-4">
         <h3 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 lg:mb-16 text-gray-800 ">
           {news?.title}

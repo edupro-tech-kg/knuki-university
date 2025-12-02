@@ -1,10 +1,8 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import MissionSectionImg from "../assets/images/missionImage.png";
 import Mission2 from "../assets/images/mission2image.png";
 import Mission3 from "../assets/images/mission3.png";
 import Button from "../components/UI/Button";
-import LongOrnament from "../assets/images/longOrnament.png";
 import { Trans } from "react-i18next";
 
 function MissionSection() {
@@ -61,16 +59,6 @@ function MissionSection() {
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="absolute left-0 right-0 bottom-0 h-[51px] w-full overflow-hidden">
-        <div className="w-full h-full">
-          <img
-            src={LongOrnament}
-            alt="Ornament"
-            className="w-full h-full object-cover min-w-full"
-          />
         </div>
       </div>
     </section>
