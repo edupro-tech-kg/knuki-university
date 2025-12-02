@@ -7,7 +7,6 @@ import ruLocale from "@fullcalendar/core/locales/ru";
 import kyLocale from "../locales/ky.js";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Icons } from "../assets/svg/index.js";
 import "../styles/calendar.css";
 import { Tooltip } from "react-tooltip";
 
@@ -27,65 +26,58 @@ export default function Calendar() {
     setActiveView(view);
   };
 
-  const btnBase = "py-[10px] px-[15px] border rounded-md flex items-center duration-150";
-  const btnActive = "bg-button-primary text-white";
-  const btnInactive = "text-black hover:bg-button-primary hover:text-white";
-  const iconClass = "px-[2.64px] mr-[2.64px]";
-
-  const viewButtons = [
-    { view: "timeGridDay", label: calendar.buttonText.day, Icon: Icons.btnDay },
-    { view: "timeGridWeek", label: calendar.buttonText.week, Icon: Icons.btnWeek },
-    { view: "dayGridMonth", label: calendar.buttonText.month, Icon: Icons.btnMonth },
-    { view: "listDay", label: calendar.buttonText.list, Icon: Icons.btnAgendas },
-  ];
-
   return (
-    <div className="flex flex-col font-sans">
-      <div className="flex justify-center mr-4 mb-6">
-        <h2 className="flex items-center text-text-accent font-serif italic font-bold 2xl:text-3xl md:text-2xl">
+    <div className="flex flex-col font-sans text-[#1f1f1f]">
+      <div className="flex justify-center mb-4 md:mb-6">
+        <h2 className="text-[#a12626] italic font-serif font-semibold text-xl md:text-2xl 2xl:text-[26px]">
           {currentTitle}
         </h2>
       </div>
 
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-1 max-w-52 w-full justify-between">
-          <div className="flex items-center">
-            <button
-              className="px-[22px] py-4 shrink-0 hover:bg-button-primary hover:text-white duration-150 rounded-md"
-              onClick={() => calendarRef.current.getApi().prev()}
-            >
-              <Icons.prev />
-            </button>
-
-            <button
-              className="px-[22px] py-4 shrink-0 hover:bg-button-primary hover:text-white duration-150 rounded-md"
-              onClick={() => calendarRef.current.getApi().next()}
-            >
-              <Icons.next />
-            </button>
-          </div>
-
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-5">
+        <div className="flex items-center gap-3">
+          <button
+            className="h-10 w-10 flex items-center justify-center rounded-md border border-[#d1d1d1] bg-white hover:bg-[#f5f5f5]"
+            onClick={() => calendarRef.current.getApi().prev()}
+          >
+            ‹
+          </button>
+          <button
+            className="h-10 w-10 flex items-center justify-center rounded-md border border-[#d1d1d1] bg-white hover:bg-[#f5f5f5]"
+            onClick={() => calendarRef.current.getApi().next()}
+          >
+            ›
+          </button>
           <button
             onClick={() => calendarRef.current.getApi().today()}
-            className={`${btnBase} ${btnInactive}`}
+            className="px-4 h-10 rounded-md border border-[#d1d1d1] bg-white hover:bg-[#f5f5f5] text-sm font-medium"
           >
             {calendar.buttonText.today}
           </button>
         </div>
 
-        <div className="flex items-center gap-[6px]">
-          {viewButtons.map(({ view, label, Icon }) => (
-            <button
-              key={view}
-              onClick={() => changeView(view)}
-              className={`${btnBase} ${activeView === view ? btnActive : btnInactive}`}
-            >
-              <span className={iconClass}>
-                <Icon />
-              </span>
-              {label}
-            </button>
-          ))}
+        <div className="flex items-center gap-2 flex-wrap">
+          {[
+            { view: "timeGridDay", label: calendar.buttonText.day },
+            { view: "timeGridWeek", label: calendar.buttonText.week },
+            { view: "dayGridMonth", label: calendar.buttonText.month },
+            { view: "listDay", label: calendar.buttonText.list },
+          ].map(({ view, label }) => {
+            const isActive = activeView === view;
+            return (
+              <button
+                key={view}
+                onClick={() => changeView(view)}
+                className={`px-4 h-10 rounded-md text-sm font-medium border ${
+                  isActive
+                    ? "bg-[#b02929] border-[#b02929] text-white"
+                    : "bg-white border-[#d1d1d1] text-[#1f1f1f] hover:bg-[#f5f5f5]"
+                }`}
+              >
+                {label}
+              </button>
+            );
+          })}
         </div>
       </div>
 
@@ -97,6 +89,7 @@ export default function Calendar() {
         headerToolbar={false}
         locales={[ruLocale, kyLocale]}
         locale={locale}
+        firstDay={1}
         datesSet={(info) => setCurrentTitle(info.view.title)}
         dayHeaderContent={(args) => {
           const dayIndex = args.date.getDay();

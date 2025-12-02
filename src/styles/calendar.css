@@ -2,6 +2,40 @@
   height: 90px;
 }
 
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: 1px solid #2f2f2f;
+}
+
+.fc .fc-scrollgrid {
+  border: 1px solid #2f2f2f;
+}
+
+.fc .fc-col-header {
+  background: #f7f7f7;
+}
+
+.fc .fc-col-header-cell-cushion {
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #363636;
+}
+
+.fc .fc-daygrid-day-number {
+  font-size: 12px;
+  color: #777777;
+  padding: 6px 8px;
+}
+
+.fc .fc-daygrid-day-frame {
+  padding: 6px;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background: #faf2f2;
+}
+
 .event-pill {
   background: #b02929;
   color: white;
@@ -39,10 +73,6 @@
   justify-content: center;
 }
 
-.fc-scroller {
-  overflow: visible !important;
-}
-
 .fc-view-harness {
-  height: 570px !important;
+  min-height: 570px !important;
 }

@@ -1,38 +1,79 @@
+import { useState } from "react";
 import Calendar from "../components/Calendar";
-import { useTranslation } from "react-i18next";
 import patterns from "../assets/svg/patterns.svg";
 import LastNews from "../components/LastNews";
 
 export default function CalendarEvents() {
-  const { t } = useTranslation();
-  const calendar = t("calendar");
+  const [mobileView, setMobileView] = useState("calendar"); // calendar | news
 
   return (
-    <>
-      <section className="min-h-screen font-serif">
-        <div>
-          <img src={patterns} alt="patterns" className="w-full" />
-        </div>
-        <div className="bg-primary py-24  ">
-          <div className="flex justify-center ">
-            <p className=" italic font-serif font-medium 2xl:text-6xl xl:text-5xl md:text-4xl text-white mb-24 text-2xl">
-              КАЛЕНДАРЬ СОБЫТИЙ
-            </p>
-          </div>
+    <section className="bg-primary min-h-screen font-serif pb-24">
+      <div>
+        <img src={patterns} alt="patterns" className="w-full" />
+      </div>
 
-          <div
-            className={` flex justify-between px-10   ter pb-20 relative z-10 w-full  h-full bg-no-repeat bg-top    pt-[84px]  min-h-screen 2xl:bg-[length:95%_90%]  xl:bg-[length:95%_70%] `}
-            style={{ backgroundImage: "url('/src/assets/images/lastFone.png')" }}
-          >
-            <div className=" w-[50%] pr-[55px] pl-[100px]">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-14">
+        <div className="flex justify-center">
+          <p className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl">
+            КАЛЕНДАРЬ СОБЫТИЙ
+          </p>
+        </div>
+
+        <div className="relative">
+          <div className="absolute inset-0 translate-x-6 translate-y-6 rounded-[6px] bg-white/80 rotate-[1deg] shadow-[0_18px_55px_rgba(0,0,0,0.22)]" />
+
+          <div className="relative bg-white rounded-[6px] shadow-[0_18px_55px_rgba(0,0,0,0.2)] border border-[#e6e6e6] overflow-hidden flex flex-col lg:flex-row">
+            <div className="hidden lg:block lg:w-[55%] px-4 sm:px-10 lg:px-12 py-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-[#e6e6e6]">
               <Calendar />
             </div>
-            <div className="w-[50%] pl-16 pr-20 pt-3">
+            <div className="hidden lg:block lg:w-[45%] px-6 sm:px-10 lg:px-12 py-10 lg:py-12">
               <LastNews />
+            </div>
+
+            {/* Mobile carousel-like toggle: calendar <-> news */}
+            <div className="lg:hidden w-full px-2 sm:px-4 pb-8 pt-2">
+              {mobileView === "calendar" ? (
+                <div className="rounded-lg border border-[#e6e6e6] bg-white shadow-sm">
+                  <div className="px-2 sm:px-3 py-4">
+                    <Calendar />
+                  </div>
+                </div>
+              ) : (
+                <div className="rounded-lg border border-[#e6e6e6] bg-white shadow-sm">
+                  <div className="px-3 py-4">
+                    <LastNews />
+                  </div>
+                </div>
+              )}
+
+              <div className="mt-6 flex items-center justify-center gap-4">
+                <button
+                  onClick={() => setMobileView("calendar")}
+                  className={`h-12 w-12 rounded-full border ${
+                    mobileView === "calendar"
+                      ? "border-[#b02929] text-[#b02929]"
+                      : "border-[#d1d1d1] text-[#444]"
+                  } flex items-center justify-center bg-white hover:bg-[#f8f8f8]`}
+                  aria-label="Показать календарь"
+                >
+                  ←
+                </button>
+                <button
+                  onClick={() => setMobileView("news")}
+                  className={`h-12 w-12 rounded-full border ${
+                    mobileView === "news"
+                      ? "border-[#b02929] text-[#b02929]"
+                      : "border-[#d1d1d1] text-[#444]"
+                  } flex items-center justify-center bg-white hover:bg-[#f8f8f8]`}
+                  aria-label="Показать события"
+                >
+                  →
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
