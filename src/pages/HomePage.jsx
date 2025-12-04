@@ -10,7 +10,7 @@ import ContactForm from "../sections/ContactForm";
 
 export default function HomePage() {
   return (
-    <div className="space-y-12">
+    <div className="grid grid-cols-1 gap-12">
       <HeroSection />
       <NewsSection />
       <ProgramsSection />

@@ -6,7 +6,7 @@ export default function CalendarEvents() {
   const [mobileView, setMobileView] = useState("calendar"); // calendar | news
 
   return (
-    <section className="bg-primary min-h-screen font-serif pb-24 pt-12 md:pt-16">
+    <section className="bg-primary font-serif pb-24 pt-12 md:pt-16">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-14">
         <div className="flex justify-center">
           <p className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl">
@@ -14,7 +14,7 @@ export default function CalendarEvents() {
           </p>
         </div>
 
-        <div className="relative mt-6 md:mt-10 lg:mt-14">
+        <div className="relative mt-1 md:mt-4 lg:mt-2">
           <div className="absolute inset-0 translate-x-6 translate-y-6 rounded-[6px] bg-white/80 rotate-[1deg] shadow-[0_18px_55px_rgba(0,0,0,0.22)]" />
 
           <div className="relative bg-white rounded-[6px] shadow-[0_18px_55px_rgba(0,0,0,0.2)] border border-[#e6e6e6] overflow-hidden flex flex-col lg:flex-row">
