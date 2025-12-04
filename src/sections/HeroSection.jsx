@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight, FaSearch } from "react-icons/fa";
 import img from "../assets/images/hero-img.png";
-import tracery from "../../src/assets/images/tracery.png";
 import { useTranslation } from "react-i18next";
+import AnimatedOrnament from "../components/AnimatedOrnament"; 
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -145,27 +145,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scrolling ornament */}
-      <div className="relative w-full overflow-hidden">
-        <div className="flex scroll-animation gap-2">
-          <img className="h-[50px]" src={tracery} alt="ornament" />
-          <img className="h-[50px]" src={tracery} alt="ornament" />
-          <img className="h-[50px]" src={tracery} alt="ornament" />
-          <img className="h-[50px]" src={tracery} alt="ornament" />
-        </div>
-      </div>
-
-      <style>{`
-        @keyframes scrollLeft {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .scroll-animation {
-          display: flex;
-          width: calc(200%);
-          animation: scrollLeft 16s linear infinite;
-        }
-      `}</style>
+      <AnimatedOrnament speed={16} height="50px" />
     </section>
   );
 }

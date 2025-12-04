@@ -4,6 +4,7 @@ import Mission2 from "../assets/images/mission2image.png";
 import Mission3 from "../assets/images/mission3.png";
 import Button from "../components/UI/Button";
 import { Trans } from "react-i18next";
+import AnimatedOrnament from "../components/AnimatedOrnament";
 
 function MissionSection() {
   const { t } = useTranslation();
@@ -61,9 +62,7 @@ function MissionSection() {
           </div>
         </div>
       </div>
-      <div className="mt-2">
-        <img src="/src/assets/svg/patterns.svg" alt="patterns" className="w-full" />
-      </div>
+      <AnimatedOrnament speed={15} height="40px" />
     </section>
   );
 }
