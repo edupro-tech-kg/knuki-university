@@ -1,5 +1,6 @@
 export default {
   locale: "en",
+  code: "en",
   navLinks: [
     { label: "Home", href: "#" },
     { label: "Programs", href: "#programs" },
@@ -27,7 +28,7 @@ export default {
     next: "Next",
     stat1: "million students",
     stat2: "budget places",
-    stat3: "fee-paying places"
+    stat3: "fee-paying places",
   },
 
   about: {
@@ -119,11 +120,7 @@ export default {
       day: "Day",
       list: "Agendas",
     },
-    allDayText: "All day",
-    moreLinkText(n) {
-      return `More ${n}`;
-    },
-    noEventsText: "There is no event",
+   
     dayHeaderFormat: {
       weekday: "short",
     },
@@ -258,24 +255,24 @@ export default {
     ],
   },
   consultation: {
-  title: 'Sign up for a consultation',
-  description: 'The manager will contact you shortly!',
-  form: {
-    name: 'Full name',
-    namePlaceholder: 'Balanchaev Balancha',
-    phone: 'Phone',
-    phonePlaceholder: '+996 ',
-    faculty: 'Faculty ',
-    programs: {
-      program1: 'Music Arts',
-      program2: 'Theatre & Film',
-      program3: 'Choreography',
+    title: "Sign up for a consultation",
+    description: "The manager will contact you shortly!",
+    form: {
+      name: "Full name",
+      namePlaceholder: "Balanchaev Balancha",
+      phone: "Phone",
+      phonePlaceholder: "+996 ",
+      faculty: "Faculty ",
+      programs: {
+        program1: "Music Arts",
+        program2: "Theatre & Film",
+        program3: "Choreography",
+      },
+      portfolio: "Portfolio",
+      upload: "Upload file",
+      submit: "Submit application",
     },
-    portfolio: 'Portfolio',
-    upload: 'Upload file',
-    submit: 'Submit application',
-  }
-},
+  },
   history: {
     title: "HISTORY",
     content: `General information. The Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has become the leading center of the republic for training highly qualified and comprehensively educated specialists for cultural and art institutions. It is the first musical and creative educational institution in the republic. Has a certificate of a legal entity registered with the Ministry of Justice of the Kyrgyz Republic (registration No. 13310-3301-U-e, OKPO code 02246840, series 0065533 GRP). `,
@@ -290,5 +287,34 @@ export default {
     imageDescription:
       "The opening ceremony of the X International Student Theater Festival 'New Names' took place. The solemn ceremony was attended by Vice Prime Minister of the Kyrgyz Republic Edil Baisalov, Deputy Minister of Culture, Information and Youth Policy Timurland Ajimaliev, as well as theater figures, foreign guests, students and theater lovers.",
     button: "Learn More",
+  },
+  week: {
+    dow: 1,
+    doy: 4,
+  },
+
+  buttonText: {
+    today: "Today",
+    month: "Month",
+    week: "Week",
+    day: "Day",
+    list: "Agenda",
+  },
+
+  allDayText: "All day",
+  moreLinkText(n) {
+    return `+${n} more`;
+  },
+  noEventsText: "No events",
+
+  weekText: "Wk",
+  weekTextLong: "Week",
+
+  dayNamesShort: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+
+  dayNames: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+
+  dayHeaderFormat: {
+    weekday: "short",
   },
 };

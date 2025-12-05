@@ -62,7 +62,11 @@ function MissionSection() {
         </div>
       </div>
       <div className="mt-2">
-        <img src="/src/assets/svg/patterns.svg" alt="patterns" className="w-full" />
+        <img
+          src="/src/assets/svg/patterns.svg"
+          alt="patterns"
+          className="object-cover h-12  w-[620px] sm:w-[1000px]   lg:h-auto lg:w-full"
+        />
       </div>
     </section>
   );
