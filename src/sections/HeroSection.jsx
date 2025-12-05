@@ -3,7 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import img from "../assets/images/hero-img.png";
 import tracery from "../../src/assets/images/tracery.png";
 import { useTranslation } from "react-i18next";
-import Search from "../components/UI/Search"; 
+import Search from "../components/UI/Search";
 export default function HeroSection() {
   const { t } = useTranslation();
   const hero = t("hero");
