@@ -66,7 +66,7 @@ export default function HistorySection() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen flex items-center justify-center py-10 md:py-20 overflow-hidden"
+      className="bg-background relative w-full min-h-screen flex items-center justify-center py-10 md:py-20 overflow-hidden"
       style={{ height: "150vh" }}
     >
       <div className="relative z-10 max-w-7xl w-full flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
