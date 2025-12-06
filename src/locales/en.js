@@ -248,7 +248,7 @@ export default {
     copyright: "© 2025 Kyrgyz National University of Culture & Arts",
   },
   news: {
-    title: "University News",
+    title: "News",
     items: [
       { title: "Ballet Evening", buttonText: "More" },
       { title: "Vocal Concert", buttonText: "More" },

@@ -84,7 +84,7 @@ export default function GallerySection() {
 
   return (
     <div>
-      <div className="flex justify-start gap-5 lg:gap-64 items-center">
+      <div className="bg-background flex justify-start gap-5 lg:gap-64 items-center">
         <img className="w-40 md:w-96" src={gallery} alt="" />
         <h2 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 lg:mb-16 text-gray-800 ">{t("gallery.eyebrow")}</h2>
       </div>
