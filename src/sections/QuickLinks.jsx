@@ -10,7 +10,7 @@ function QuickLinks() {
   const quickLinks = t("quickLinks", { returnObjects: true });
 
   return (
-    <section className="py-14 w-full">
+    <section className="bg-background py-14 w-full">
       <h2 className="text-center text-3xl md:text-4xl font-serif mb-10">{quickLinks.title}</h2>
 
       <div

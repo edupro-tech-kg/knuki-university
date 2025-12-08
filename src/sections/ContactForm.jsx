@@ -8,7 +8,7 @@ export default function ContactForm() {
   const { t } = useTranslation();
 
   return (
-    <section className="container mx-auto px-4 md:px-8 py-12 md:py-16 lg:py-20">
+    <section className="bg-background container mx-auto px-4 md:px-8 py-12 md:py-16 lg:py-20">
       <div className="grid lg:grid-cols-2 gap-16 lg:gap-8 items-start">
 
         <div className="pt-6">

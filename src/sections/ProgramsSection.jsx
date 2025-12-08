@@ -16,7 +16,7 @@ const directions = [
 export default function ProgramsSection() {
   const { t } = useTranslation();
   return (
-    <section className="bg-background min-h-screen flex items-center justify-center p-4 ">
+    <section className="bg-background flex items-center justify-center mt-20 container mx-auto">
       <div className="w-full mx-5">
         <h2 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-text-primary">
           {t("programs.eyebrow")}

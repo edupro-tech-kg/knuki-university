@@ -84,7 +84,7 @@ export default function GallerySection() {
 
   return (
     <div>
-      <div className="relative flex items-center w-full">
+      <div className="bg-background relative flex items-center w-full">
         <img className="w-40 md:w-96" src={gallery} alt="" />
         <h2
           className="absolute left-1/2 -translate-x-1/2 
