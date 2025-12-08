@@ -3,10 +3,13 @@ export default {
   code: "en",
   navLinks: [
     { label: "Home", href: "#" },
-    { label: "Programs", href: "#programs" },
-    { label: "Events", href: "#events" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
+    { label: "Management", href: "#" },
+    { label: "Faculties", href: "#" },
+    { label: "Students", href: "#" },
+    { label: "Applicants", href: "#" },
+    { label: "News", href: "#" },
+    { label: "Documents", href: "#" },
+    { label: "Contacts", href: "#" },
   ],
   header: {
     universityName:
@@ -120,7 +123,7 @@ export default {
       day: "Day",
       list: "Agendas",
     },
-   
+
     dayHeaderFormat: {
       weekday: "short",
     },

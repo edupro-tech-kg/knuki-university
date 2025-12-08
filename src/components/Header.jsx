@@ -170,16 +170,14 @@ export default function Header() {
   return (
     <header className="w-full z-50">
       <div className="w-full bg-[#751715] text-white fixed top-0 z-50">
-        <div className="max-w-[1440px] mx-auto px-6 h-[100px] flex items-center justify-between">
+        <div className="max-w-[1440px] mx-auto px-6 h-[100px] flex items-center justify-between relative">
           <a href="/" className="hidden md:flex items-center gap-4">
             <img src={Logo} className="h-14 w-14" />
           </a>
 
-          <div className="hidden md:flex flex-1 justify-center px-4">
-            <p className="text-xl font-inter font-semibold leading-tight max-w-xl text-center mx-auto">
-              {headerTranslations.universityName}
-            </p>
-          </div>
+          <p className="hidden md:flex lg:absolute lg:left-1/2 lg:-translate-x-1/2 text-xl font-inter font-semibold leading-tight text-center max-w-xl">
+            {headerTranslations.universityName}
+          </p>
 
           <div className="hidden md:flex items-center gap-4">
             <LanguageSelector />
@@ -216,7 +214,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="opacity-80 hover:opacity-100 transition hover:text-[#751715]/90"
+                className="opacity-80 hover:opacity-100 transition hover:text-[#751715]/90 text-[#0D0D0D]"
               >
                 {link.label}
               </a>

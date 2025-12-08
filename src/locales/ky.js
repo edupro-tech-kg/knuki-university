@@ -3,10 +3,13 @@ export default {
   code:'ky',
   navLinks: [
     { label: "Башкы бет", href: "#" },
-    { label: "Программалар", href: "#programs" },
-    { label: "Иш-чаралар", href: "#events" },
-    { label: "Галерея", href: "#gallery" },
-    { label: "Байланыш", href: "#contact" },
+    { label: "Жетекчилик", href: "#" },
+    { label: "Факультеттер", href: "#" },
+    { label: "Студенттер", href: "#" },
+    { label: "Абитуриенттер", href: "#" },
+    { label: "Жаңылыктар", href: "#" },
+    { label: "Документтер", href: "#" },
+    { label: "Байланыш", href: "#" },
   ],
   header: {
     universityName:

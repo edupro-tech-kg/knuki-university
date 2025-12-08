@@ -3,10 +3,13 @@ export default {
   code: "ru",
   navLinks: [
     { label: "Главная", href: "#" },
-    { label: "Программы", href: "#programs" },
-    { label: "Мероприятия", href: "#events" },
-    { label: "Галерея", href: "#gallery" },
-    { label: "Контакты", href: "#contact" },
+    { label: "Руководство", href: "#" },
+    { label: "Факультеты", href: "#" },
+    { label: "Студенты", href: "#" },
+    { label: "Абитуриенты", href: "#" },
+    { label: "Новости", href: "#" },
+    { label: "Документы", href: "#" },
+    { label: "Контакты", href: "#" },
   ],
   header: {
     universityName:
