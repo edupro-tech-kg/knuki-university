@@ -84,15 +84,19 @@ export default function GallerySection() {
 
   return (
     <div>
-      <div className="bg-background flex justify-start gap-5 lg:gap-64 items-center">
+      <div className="bg-background relative flex items-center w-full">
         <img className="w-40 md:w-96" src={gallery} alt="" />
-        <h2 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 lg:mb-16 text-gray-800 ">{t("gallery.eyebrow")}</h2>
+        <h2
+          className="absolute left-1/2 -translate-x-1/2 
+               uppercase font-serif italic 
+               text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 text-center"
+        >{t("gallery.eyebrow")}</h2>
+        </div>
+        <div style={{ width: "100%", overflow: "hidden", padding: 0, margin: 0 }}>
+          <Row reverse={false} />
+          <div style={{ marginTop: 0 }}><Row reverse={true} /></div>
+          <div style={{ marginTop: 0 }}><Row reverse={false} /></div>
+        </div>
       </div>
-      <div style={{ width: "100%", overflow: "hidden", padding: 0, margin: 0 }}>
-        <Row reverse={false} />
-        <div style={{ marginTop: 0 }}><Row reverse={true} /></div>
-        <div style={{ marginTop: 0 }}><Row reverse={false} /></div>
-      </div>
-    </div>
-  );
+      );
 }
