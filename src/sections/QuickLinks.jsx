@@ -35,14 +35,13 @@ function QuickLinks() {
               <img src={Ornament} alt="" className="w-16 h-16 -ml-4" />
               <img src={Ornament} alt="" className="w-16 h-16 rotate-90 -mr-4" />
             </div>
-
             <p className="text-lg font-semibold text-[#751715] min-h-[70px] flex items-center justify-center">
               {item.title}
             </p>
 
             <Button
-              variant="outline"
-              className="mt-6 w-full bg-white !text-black !border-black hover:bg-[#751715] hover:!text-white transition-colors"
+              variant="primaryIcon"
+              className="mt-6 w-full bg-white !text-black !border-black hover:bg-[#751715] hover:!text-black transition-colors"
             >
               {quickLinks.button}
             </Button>
