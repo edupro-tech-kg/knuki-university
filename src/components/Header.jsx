@@ -133,19 +133,20 @@ export default function Header() {
   return (
     <header className="w-full z-50">
       <div className="w-full bg-[#751715] text-white fixed top-0 z-50">
-        <div className=" mx-auto px-6 h-[100px] flex items-center justify-between">
+        <div className=" mx-auto px-12 pt-6 pb-7 h-[100px] flex items-center justify-between">
           <button
             className=" md:hidden w-10 h-10 flex items-center justify-center"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <img src={BurgerMenu} alt="Menu" className="w-6 h-6" />
           </button>
-          <a href="/" className="flex items-center gap-4">
+          <a href="/" className="flex items-center gap-4 ml-[50px] md:ml-0">
             <img src={Logo} className="h-14 w-14" />
           </a>
 
-          <div className="hidden md:flex flex-1 justify-center px-4">
-            <p className="text-xl font-inter font-semibold leading-tight max-w-xl text-center mx-auto">
+          <div className="hidden md:flex flex-1 justify-evenly px-4">
+            <div>{/* Нужен для центрирование текста */}</div>
+            <p className="text-xl font-inter font-semibold leading-tight max-w-xl text-center mr-10 ">
               {headerTranslations.universityName}s
             </p>
           </div>
