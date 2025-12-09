@@ -20,7 +20,6 @@ export default {
     placeholder: "Search",
     button: "Next",
   },
-
   hero: {
     title1: "ART",
     title2: "PEAK OF THE NATIONAL SPIRIT",
@@ -30,7 +29,6 @@ export default {
     stat2: "budget places",
     stat3: "fee-paying places",
   },
-
   about: {
     eyebrow: "About",
     title: "Tradition and modernity in one space",
@@ -96,7 +94,7 @@ export default {
     register: "Register",
     list: [
       { date: "Jan 12", title: "Winter student gala concert", location: "Grand Hall, KNUCA" },
-      { date: "Jan 26", title: "Premiere of the play “Muras”", location: "Theatre Stage" },
+      { date: "Jan 26", title: "Premiere of the play \"Muras\"", location: "Theatre Stage" },
       { date: "Feb 05", title: "Open masterclass on ethno-jazz", location: "Music Studio" },
     ],
   },
@@ -120,7 +118,6 @@ export default {
       day: "Day",
       list: "Agendas",
     },
-   
     dayHeaderFormat: {
       weekday: "short",
     },
@@ -232,7 +229,28 @@ export default {
     disclaimer: "By submitting you agree to personal data processing.",
   },
   footer: {
-    labels: { address: "ADDRESS", links: "QUICK LINKS" },
+    labels: { 
+      address: "ADDRESS", 
+      links: "QUICK LINKS" 
+    },
+    addressItems: [
+      "720005 Bishkek",
+      "Dzhantosheva St. 113",
+      "email:contact@kguki.kg",
+      "Office",
+      "Fax: +996 312 57 07 56",
+      "Tel.: +996 312 57 07 56"
+    ],
+    linkItems: [
+      "Home",
+      "Management",
+      "Faculties",
+      "For Students",
+      "For Applicants",
+      "News",
+      "Documents",
+      "Contacts"
+    ],
     about: "Where Kyrgyz artistic heritage meets contemporary creative practice.",
     download: "Download brochure",
     navTitle: "Navigation",
@@ -292,7 +310,6 @@ export default {
     dow: 1,
     doy: 4,
   },
-
   buttonText: {
     today: "Today",
     month: "Month",
@@ -300,20 +317,15 @@ export default {
     day: "Day",
     list: "Agenda",
   },
-
   allDayText: "All day",
   moreLinkText(n) {
     return `+${n} more`;
   },
   noEventsText: "No events",
-
   weekText: "Wk",
   weekTextLong: "Week",
-
   dayNamesShort: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-
   dayNames: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-
   dayHeaderFormat: {
     weekday: "short",
   },
