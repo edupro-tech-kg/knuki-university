@@ -1,9 +1,11 @@
 import { useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import FacultyHero from "../components/faculty/FacultyHero";
 import FacultyInfoBlocks from "../components/faculty/FacultyInfoBlocks";
 import FacultyStats from "../components/faculty/FacultyStats";
 import FacultyTeachersTabs from "../components/faculty/FacultyTeachersTabs";
+import FacultyTextTabs from "../components/faculty/FacultyTextTabs";
 import DocumentsSection from "../components/faculty/DocumentsSection";
 import SectionHeading from "../components/faculty/SectionHeading";
 import { getFacultyData } from "../data/faculties";
@@ -11,6 +13,7 @@ import { getFacultyData } from "../data/faculties";
 export default function FacultyPage() {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   const faculty = useMemo(() => getFacultyData(slug), [slug]);
 
@@ -28,6 +31,33 @@ export default function FacultyPage() {
     );
   }
 
+  const renderInfoBlocks = () => {
+    const useSecondary = faculty.programBlocksSecondary && activeTabIndex === 1;
+    const blocks = useSecondary ? faculty.programBlocksSecondary : faculty.programBlocks;
+    const heading = useSecondary
+      ? faculty.programHeadingSecondary
+      : faculty.programHeading;
+
+    if (!blocks?.length && !(faculty.infoColumns?.length)) return null;
+
+    return (
+      <FacultyInfoBlocks
+        infoColumns={faculty.infoColumns}
+        programBlocks={blocks}
+        programHeading={heading}
+        layout={faculty.infoLayout || "split"}
+      />
+    );
+  };
+
+  const textTabs = (
+    <FacultyTextTabs
+      tabs={faculty.textTabs}
+      activeIndex={activeTabIndex}
+      onTabChange={setActiveTabIndex}
+    />
+  );
+
   return (
     <div className="bg-light text-dark">
       <FacultyHero
@@ -38,12 +68,17 @@ export default function FacultyPage() {
         studyForms={faculty.studyForms}
         duration={faculty.duration}
       />
-      <FacultyInfoBlocks
-        infoColumns={faculty.infoColumns}
-        programBlocks={faculty.programBlocks}
-        programHeading={faculty.programHeading}
-        layout={faculty.infoLayout || "split"}
-      />
+      {faculty.infoAfterText ? (
+        <>
+          {textTabs}
+          {renderInfoBlocks()}
+        </>
+      ) : (
+        <>
+          {renderInfoBlocks()}
+          {textTabs}
+        </>
+      )}
       <FacultyStats stats={faculty.stats} heading={faculty.teachersTitle} />
       <FacultyTeachersTabs groups={faculty.teacherGroups || []} />
       <DocumentsSection documents={faculty.documents} />
