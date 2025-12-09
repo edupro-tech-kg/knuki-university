@@ -32,6 +32,28 @@ export default function Header() {
   const dropdownRef = useRef(null);
   const languageButtonRef = useRef(null);
   const mobileLanguageButtonRef = useRef(null);
+  const [headerSize, setHeaderSize] = useState(0);
+  const divRef = useRef(null);
+  
+
+  useEffect(() => {
+    if (!divRef.current) return;
+
+    const observer = new ResizeObserver(() => {
+      const newHeight = divRef.current.offsetHeight;
+      console.log(divRef.current.offsetHeight);
+      
+
+      setHeaderSize((prev) => {
+        if (prev !== newHeight) return newHeight;
+        return prev;
+      });
+    });
+
+    observer.observe(divRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   // Адрес университета
   const universityAddress =
@@ -131,85 +153,90 @@ export default function Header() {
   );
 
   return (
-    <header className="w-full z-50">
-      <div className="w-full bg-[#751715] text-white fixed top-0 z-50">
-        <div className=" mx-auto px-12 pt-6 pb-7 h-[100px] flex items-center justify-between">
-          <button
-            className=" md:hidden w-10 h-10 flex items-center justify-center"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <img src={BurgerMenu} alt="Menu" className="w-6 h-6" />
-          </button>
-          <a href="/" className="flex items-center gap-4 ml-[50px] md:ml-0">
-            <img src={Logo} className="h-14 w-14" />
-          </a>
+    <header style={{ height: `0.${headerSize}px`, }} className={` z-50   w-full`}>
+      <div ref={divRef} className="w-full fixed inset-0">
+        <div className="w-full bg-[#751715] text-white  top-0 z-50">
+          <div className=" mx-auto px-12 pt-6 pb-7  flex items-center justify-between">
+            <button
+              className=" md:hidden w-10 h-10 flex items-center justify-center"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <img src={BurgerMenu} alt="Menu" className="w-6 h-6" />
+            </button>
+            <div className="lg:max-w-[290px] md:max-w-[250px] w-full">
+              <a href="/" className="flex items-center gap-4 :ml-[50px] md:ml-0 ">
+                <img src={Logo} className="h-14 w-14" />
+              </a>
+            </div>
 
-          <div className="hidden md:flex flex-1 justify-evenly px-4">
-            <div>{/* Нужен для центрирование текста */}</div>
-            <p className="text-xl font-inter font-semibold leading-tight max-w-xl text-center mr-10 ">
-              {headerTranslations.universityName}s
-            </p>
-          </div>
+            <div className="hidden md:flex flex-1 justify-evenly px-4">
+              <p className="text-xl font-inter font-semibold leading-tight max-w-xl text-center  lg:text-lg">
+                {headerTranslations.universityName}
+              </p>
+            </div>
 
-          <div className=" flex items-center gap-4">
-            <LanguageSelector />
-            <div className="hidden md:flex">
-              <SocialIcons />
+            <div className=" flex items-center gap-4">
+              <LanguageSelector />
+              <div className="hidden md:flex">
+                <SocialIcons />
+              </div>
             </div>
           </div>
+
+          <div className="md:hidden px-6 text-center mt-2 pb-4">
+            <p className="text-sm font-inter font-semibold leading-relaxed max-w-xs mx-auto">
+              {headerTranslations.universityName}
+            </p>
+          </div>
         </div>
 
-        <div className="md:hidden px-6 text-center mt-2 pb-4">
-          <p className="text-sm font-inter font-semibold leading-relaxed max-w-xs mx-auto">
-            {headerTranslations.universityName}
-          </p>
+        <div className="hidden md:block w-full bg-white text-[#751715] shadow  top-[100px] z-40">
+          <div className="max-w-[1440px] mx-auto px-6 h-[56px] flex items-center justify-center">
+            <NavBar menu={false} />
+          </div>
         </div>
-      </div>
 
-      <div className="hidden md:block w-full bg-white text-[#751715] shadow fixed top-[100px] z-40">
-        <div className="max-w-[1440px] mx-auto px-6 h-[56px] flex items-center justify-center">
-          <NavBar menu={false} />
-        </div>
-      </div>
-
-      <div
-        className={clsx(
-          "fixed top-0 left-0 h-full w-80 bg-[#751715] shadow-xl z-50 transition-transform duration-300 md:hidden",
-          menuOpen ? "translate-x-0" : "-translate-x-full"
-        )}
-      >
-        <SideBar onClose={() => setMenuOpen(false)} />
-      </div>
-
-      {menuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
-          onClick={() => setMenuOpen(false)}
-        />
-      )}
-      {languageDropdownOpen && (
-        <div
-          ref={dropdownRef}
-          className="fixed bg-white rounded-lg shadow-lg border border-gray-200 w-32 z-[9999]"
-          style={{
-            top: 0,
-            left: 0,
-          }}
+          className={clsx(
+            "fixed top-0 left-0 h-full w-80 bg-[#751715] shadow-xl z-50 transition-transform duration-300 md:hidden",
+            menuOpen ? "translate-x-0" : "-translate-x-full"
+          )}
         >
-          {languages.map((lang) => (
-            <button
-              key={lang.code}
-              onClick={() => handleLanguageChange(lang.code)}
-              className={clsx(
-                "w-full text-left rounded-md px-4 py-2 text-sm font-inter font-medium",
-                locale === lang.code ? "bg-[#751715] text-white" : "text-gray-700 hover:bg-gray-100"
-              )}
-            >
-              {lang.label}
-            </button>
-          ))}
+          <SideBar onClose={() => setMenuOpen(false)} />
         </div>
-      )}
+
+        {menuOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+            onClick={() => setMenuOpen(false)}
+          />
+        )}
+        {languageDropdownOpen && (
+          <div
+            ref={dropdownRef}
+            className="fixed bg-white rounded-lg shadow-lg border border-gray-200 w-32 z-[9999]"
+            style={{
+              top: 0,
+              left: 0,
+            }}
+          >
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                onClick={() => handleLanguageChange(lang.code)}
+                className={clsx(
+                  "w-full text-left rounded-md px-4 py-2 text-sm font-inter font-medium",
+                  locale === lang.code
+                    ? "bg-[#751715] text-white"
+                    : "text-gray-700 hover:bg-gray-100"
+                )}
+              >
+                {lang.label}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
     </header>
   );
 }
