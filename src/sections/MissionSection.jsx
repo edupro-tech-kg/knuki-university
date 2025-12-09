@@ -34,8 +34,8 @@ function MissionSection() {
               </p>
 
               <Button
-                variant="outline"
-                className="bg-transparent !text-white !border-white hover:bg-[#751715] hover:!text-white w-[191px] h-12"
+                variant="primaryIcon"
+                 className="self-start"
               >
                 {t("mission.button")}
               </Button>
