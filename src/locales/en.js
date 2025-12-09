@@ -3,10 +3,15 @@ export default {
   code: "en",
   navLinks: [
     { label: "Home", href: "#" },
-    { label: "Programs", href: "#programs" },
-    { label: "Events", href: "#events" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
+    { label: "Administration", href: "#" },
+    { label: "Faculty", href: "#" },
+    { label: "Student", href: "#" },
+    { label: "Education", href: "#" },
+    { label: "Science", href: "#" },
+    { label: "News", href: "#" },
+    { label: "Documents", href: "#" },
+    { label: "Applicant", href: "#" },
+    { label: "Contacts", href: "#contact" },
   ],
   header: {
     universityName:

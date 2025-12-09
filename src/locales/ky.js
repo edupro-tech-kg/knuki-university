@@ -3,9 +3,14 @@ export default {
   code: "ky",
   navLinks: [
     { label: "Башкы бет", href: "#" },
-    { label: "Программалар", href: "#programs" },
-    { label: "Иш-чаралар", href: "#events" },
-    { label: "Галерея", href: "#gallery" },
+    { label: "Жетекчилик", href: "#" },
+    { label: "Факультет", href: "#" },
+    { label: "Студент", href: "#" },
+    { label: "Билим", href: "#" },
+    { label: "Илим", href: "#" },
+    { label: "Жаңылыктар", href: "#" },
+    { label: "Документ", href: "#" },
+    { label: "Абитуриент", href: "#" },
     { label: "Байланыш", href: "#contact" },
   ],
   header: {

@@ -3,9 +3,14 @@ export default {
   code: "ru",
   navLinks: [
     { label: "Главная", href: "#" },
-    { label: "Программы", href: "#programs" },
-    { label: "Мероприятия", href: "#events" },
-    { label: "Галерея", href: "#gallery" },
+    { label: "Руководство", href: "#" },
+    { label: "Факультет", href: "#" },
+    { label: "Студент", href: "#" },
+    { label: "Образование", href: "#" },
+    { label: "Наука", href: "#" },
+    { label: "Новости", href: "#" },
+    { label: "Документы", href: "#" },
+    { label: "Абитуриент", href: "#" },
     { label: "Контакты", href: "#contact" },
   ],
   header: {

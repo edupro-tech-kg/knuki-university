@@ -10,11 +10,13 @@ import Facebook from "../assets/svg/facebook.svg";
 import Instagram from "../assets/svg/instagram.svg";
 import ArrowDown from "../assets/svg/arrowDown.svg";
 import BurgerMenu from "../assets/svg/burger-menu.svg";
+import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
+import SideBar from "./SideBar";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
-  const [dropdownPosition, setDropdownPosition] = useState({ top: 0, left: 0 });
 
   const { t, i18n } = useTranslation();
   const locale = i18n.language;
@@ -25,7 +27,6 @@ export default function Header() {
     { code: "en", label: "EN" },
   ];
 
-  const navLinks = t("navLinks", { returnObjects: true });
   const headerTranslations = t("header", { returnObjects: true });
 
   const dropdownRef = useRef(null);
@@ -57,22 +58,22 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  useEffect(() => {
-    if (languageButtonRef.current && languageDropdownOpen && window.innerWidth >= 768) {
-      const rect = languageButtonRef.current.getBoundingClientRect();
-      setDropdownPosition({
-        top: rect.bottom + window.scrollY + 4,
-        left: rect.left + window.scrollX,
-      });
-    } else if (mobileLanguageButtonRef.current && languageDropdownOpen && window.innerWidth < 768) {
-      const rect = mobileLanguageButtonRef.current.getBoundingClientRect();
-      const dropdownWidth = 128;
-      setDropdownPosition({
-        top: rect.bottom + window.scrollY + 4,
-        left: rect.right + window.scrollX - dropdownWidth,
-      });
-    }
-  }, [languageDropdownOpen]);
+  // useEffect(() => {
+  //   if (languageButtonRef.current && languageDropdownOpen && window.innerWidth >= 768) {
+  //     const rect = languageButtonRef.current.getBoundingClientRect();
+  //     setDropdownPosition({
+  //       top: rect.bottom + window.scrollY + 4,
+  //       left: rect.left + window.scrollX,
+  //     });
+  //   } else if (mobileLanguageButtonRef.current && languageDropdownOpen && window.innerWidth < 768) {
+  //     const rect = mobileLanguageButtonRef.current.getBoundingClientRect();
+  //     const dropdownWidth = 128;
+  //     setDropdownPosition({
+  //       top: rect.bottom + window.scrollY + 4,
+  //       left: rect.right + window.scrollX - dropdownWidth,
+  //     });
+  //   }
+  // }, [languageDropdownOpen]);
 
   const getCurrentLanguageLabel = () =>
     languages.find((lang) => lang.code === locale)?.label || "KG";
@@ -86,31 +87,38 @@ export default function Header() {
 
   const SocialIcons = () => (
     <div className="flex items-center gap-3">
-      <img src={Mail} className="w-6 h-6 cursor-pointer hover:opacity-80" />
-      <img src={Phone} className="w-6 h-6 cursor-pointer hover:opacity-80" />
-      <a
+      <Link>
+        <img src={Mail} className="w-6 h-6 cursor-pointer hover:opacity-80" />
+      </Link>
+      <Link>
+        <img src={Phone} className="w-6 h-6 cursor-pointer hover:opacity-80" />
+      </Link>
+      <Link
         href={universityAddress}
         target="_blank"
         rel="noopener noreferrer"
         className="w-6 h-6 cursor-pointer hover:opacity-80"
       >
         <img src={Map} alt="Map" className="w-6 h-6" />
-      </a>
-      <img src={Facebook} className="w-6 h-6 cursor-pointer hover:opacity-80" />
-      <img src={Instagram} className="w-6 h-6 cursor-pointer hover:opacity-80" />
+      </Link>
+      <div className=" border-2 rounded-3xl h-6 border-[#FFFFFF3D]"></div>
+      <Link>
+        <img src={Facebook} className="w-6 h-6 cursor-pointer hover:opacity-80" />
+      </Link>
+      <Link>
+        <img src={Instagram} className="w-6 h-6 cursor-pointer hover:opacity-80" />
+      </Link>
     </div>
   );
 
-  const LanguageSelector = ({ isMobile = false }) => (
+  const LanguageSelector = () => (
     <div className="relative">
       <div
-        ref={isMobile ? mobileLanguageButtonRef : languageButtonRef}
         className="language-selector-button flex items-center gap-2 cursor-pointer px-3 py-1 rounded-lg hover:bg-white/10 transition-colors"
         onClick={toggleLanguageDropdown}
       >
         <img src={Language} alt="" className="w-5 h-5" />
         <span className="text-sm font-inter font-medium">{getCurrentLanguageLabel()}</span>
-
         <img
           src={ArrowDown}
           className={clsx(
@@ -122,83 +130,31 @@ export default function Header() {
     </div>
   );
 
-  const MenuContent = () => (
-    <div className="h-full flex flex-col">
-      <div className="flex items-center justify-between p-6 pb-4">
-        <div className="flex items-center gap-3">
-          <span className="font-inter font-semibold text-white">{headerTranslations.menu}</span>
-        </div>
-
-        <button
-          onClick={() => setMenuOpen(false)}
-          className="w-8 h-8 flex items-center justify-center text-white text-xl hover:bg-white/10 rounded-lg"
-        >
-          ×
-        </button>
-      </div>
-
-      <div className="flex-1 overflow-y-auto">
-        <nav className="p-6">
-          <div className="space-y-2">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="block text-base font-inter text-white py-3 px-4 hover:bg-white/10 rounded-lg"
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </nav>
-
-        <div className="px-6 pb-6">
-          <div className="pt-6 border-t border-white/30">
-            <p className="text-sm font-inter text-white/80 mb-4 text-center font-medium">
-              {headerTranslations.socialNetworks}
-            </p>
-            <div className="flex justify-center gap-4">
-              <SocialIcons />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-
   return (
     <header className="w-full z-50">
       <div className="w-full bg-[#751715] text-white fixed top-0 z-50">
-        <div className="max-w-[1440px] mx-auto px-6 h-[100px] flex items-center justify-between">
-          <a href="/" className="hidden md:flex items-center gap-4">
+        <div className=" mx-auto px-6 h-[100px] flex items-center justify-between">
+          <button
+            className=" md:hidden w-10 h-10 flex items-center justify-center"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <img src={BurgerMenu} alt="Menu" className="w-6 h-6" />
+          </button>
+          <a href="/" className="flex items-center gap-4">
             <img src={Logo} className="h-14 w-14" />
           </a>
 
           <div className="hidden md:flex flex-1 justify-center px-4">
             <p className="text-xl font-inter font-semibold leading-tight max-w-xl text-center mx-auto">
-              {headerTranslations.universityName}
+              {headerTranslations.universityName}s
             </p>
           </div>
 
-          <div className="hidden md:flex items-center gap-4">
+          <div className=" flex items-center gap-4">
             <LanguageSelector />
-            <SocialIcons />
-          </div>
-
-          <div className="md:hidden flex items-center justify-between w-full">
-            <button
-              className="w-10 h-10 flex items-center justify-center"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <img src={BurgerMenu} alt="Menu" className="w-6 h-6" />
-            </button>
-
-            <a href="/" className="flex items-center justify-center">
-              <img src={Logo} className="h-10 w-10" />
-            </a>
-
-            <LanguageSelector isMobile={true} />
+            <div className="hidden md:flex">
+              <SocialIcons />
+            </div>
           </div>
         </div>
 
@@ -211,17 +167,7 @@ export default function Header() {
 
       <div className="hidden md:block w-full bg-white text-[#751715] shadow fixed top-[100px] z-40">
         <div className="max-w-[1440px] mx-auto px-6 h-[56px] flex items-center justify-center">
-          <nav className="flex flex-1 justify-center items-center gap-8 text-sm font-medium font-inter">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="opacity-80 hover:opacity-100 transition hover:text-[#751715]/90"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          <NavBar menu={false} />
         </div>
       </div>
 
@@ -231,7 +177,7 @@ export default function Header() {
           menuOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
-        <MenuContent />
+        <SideBar onClose={() => setMenuOpen(false)} />
       </div>
 
       {menuOpen && (
@@ -240,14 +186,13 @@ export default function Header() {
           onClick={() => setMenuOpen(false)}
         />
       )}
-
       {languageDropdownOpen && (
         <div
           ref={dropdownRef}
           className="fixed bg-white rounded-lg shadow-lg border border-gray-200 w-32 z-[9999]"
           style={{
-            top: dropdownPosition.top,
-            left: dropdownPosition.left,
+            top: 0,
+            left: 0,
           }}
         >
           {languages.map((lang) => (
