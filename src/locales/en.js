@@ -45,7 +45,7 @@ export default {
   programs: {
     eyebrow: "KNUCA DIRECTIONS",
     faculty: "faculty",
-    buttonText: "Learn More",
+    buttonText: "More Details",
     list: [
       {
         id: 1,
@@ -62,6 +62,14 @@ export default {
       {
         id: 4,
         title: "Choreography and Cultural Activities",
+      },
+      {
+        id: 5,
+        title: "Faculty of folk music",
+      },
+      {
+        id: 6,
+        title: "Faculty of Choreography and Cultural Activity",
       },
     ],
   },
