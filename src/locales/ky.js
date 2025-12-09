@@ -1,6 +1,6 @@
 export default {
   locale: "ky",
-  code:'ky',
+  code: "ky",
   navLinks: [
     { label: "Башкы бет", href: "#" },
     { label: "Программалар", href: "#programs" },
@@ -268,8 +268,12 @@ export default {
       name: "Аты-жөнүңүз",
       namePlaceholder: "Баланчаев Баланча",
       phone: "Телефон",
-      phonePlaceholder: "+996 ",
+      phonePlaceholder: "+996 000 000 000",
       faculty: "Факультет",
+      note: {
+        label: "Эскертүү",
+        placeholder: "Эскертүү калтырыңыз",
+      },
       programs: {
         program1: "Музыкалык искусство",
         program2: "Театр жана кино",

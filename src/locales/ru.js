@@ -301,8 +301,12 @@ export default {
       name: "Имя и фамилия",
       namePlaceholder: "Баланчаев Баланча",
       phone: "Номер телефона",
-      phonePlaceholder: "+996 ",
+      phonePlaceholder: "+996 000 000 000",
       faculty: "Факультет",
+      note: {
+        label: "Примечание",
+        placeholder: "Оставьте примечание",
+      },
       programs: {
         program1: "Музыкальное искусство",
         program2: "Театр и кино",

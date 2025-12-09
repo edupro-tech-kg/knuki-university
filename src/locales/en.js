@@ -120,7 +120,7 @@ export default {
       day: "Day",
       list: "Agendas",
     },
-   
+
     dayHeaderFormat: {
       weekday: "short",
     },
@@ -261,8 +261,12 @@ export default {
       name: "Full name",
       namePlaceholder: "Balanchaev Balancha",
       phone: "Phone",
-      phonePlaceholder: "+996 ",
+      phonePlaceholder: "+996 000 000 000",
       faculty: "Faculty ",
+      note: {
+        label: "Note",
+        placeholder: "Leave a note",
+      },
       programs: {
         program1: "Music Arts",
         program2: "Theatre & Film",

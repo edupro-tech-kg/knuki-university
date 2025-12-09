@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const DropdownForm = ({ 
-  fields = [], 
-  className = "",
-  labelClassName = "",
-}) => {
+const DropdownForm = ({ fields = [], className = "", labelClassName = "" }) => {
   const [values, setValues] = useState(
     fields.reduce((acc, field) => {
       acc[field.name] = field.defaultValue || "";
@@ -14,8 +10,8 @@ const DropdownForm = ({
   );
 
   const handleChange = (name, value) => {
-    setValues(prev => ({ ...prev, [name]: value }));
-    const field = fields.find(f => f.name === name);
+    setValues((prev) => ({ ...prev, [name]: value }));
+    const field = fields.find((f) => f.name === name);
     if (field?.onChange) field.onChange(value);
   };
 
@@ -24,16 +20,12 @@ const DropdownForm = ({
       {fields.map((field) => (
         <div key={field.name} className="mb-4 w-full">
           {field.label && (
-            <label 
+            <label
               htmlFor={field.name}
               className={`block text-black font-medium mb-2 ${labelClassName}`}
             >
               {field.label}
-              {field.required && (
-                <span className="text-red-400 ml-1">
-                  {/* * */}
-                  </span>
-              )}
+              {field.required && <span className="text-red-400 ml-1">{/* * */}</span>}
             </label>
           )}
 
@@ -67,15 +59,11 @@ const DropdownForm = ({
               "
             >
               <option value="" disabled={field.required}>
-                {field.placeholder || "Select..."}
+                {field.placeholder || "Танданыз"}
               </option>
 
               {field.options?.map((opt) => (
-                <option 
-                  key={opt.value} 
-                  value={opt.value} 
-                  disabled={opt.disabled}
-                >
+                <option key={opt.value} value={opt.value} disabled={opt.disabled}>
                   {opt.label}
                 </option>
               ))}
