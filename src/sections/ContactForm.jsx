@@ -10,7 +10,7 @@ export default function ContactForm() {
   const { t } = useTranslation();
 
   return (
-    <section className=" bg-white container mx-auto px-4 md:px-8 py-12 md:py-16 lg:py-20">
+    <section id='contact' className=" bg-white container mx-auto px-4 md:px-8 py-12 md:py-16 lg:py-20">
       <div className="flex justify-between flex-wrap  lg:flex-nowrap gap-16 lg:gap-8 items-start">
         <div className="pt-6 max-w-[670px] w-full">
           <h1 className="2xl:text-6xl 2xl:font-bold md:text-xl lg:text-4xl font-semibold mb-4 font-serif uppercase italic ">

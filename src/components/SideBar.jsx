@@ -18,6 +18,11 @@ const SideBar = ({ onClose }) => {
           ×
         </button>
       </div>
+      <div className=" px-6 text-center mt-2 pb-4">
+        <p className="text-lg font-inter  text-white font-semibold leading-relaxed max-w-xs ">
+          {headerTranslations.universityName}
+        </p>
+      </div>
 
       <div className="flex-1 overflow-y-auto">
         <NavBar menu={true} />

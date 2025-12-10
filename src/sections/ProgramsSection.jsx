@@ -6,17 +6,15 @@ import mask from "../assets/svg/mask.svg";
 import projector from "../assets/svg/projector.svg";
 import ballerina from "../assets/svg/ballerina.svg";
 
-const directions = [
-  { icon: music, },
-  { icon: mask, },
-  { icon: projector, },
-  { icon: ballerina, },
-];
+const directions = [{ icon: music }, { icon: mask }, { icon: projector }, { icon: ballerina }];
 
 export default function ProgramsSection() {
   const { t } = useTranslation();
   return (
-    <section className="bg-background flex items-center justify-center mt-20 container mx-auto">
+    <section
+      id="programs"
+      className="bg-background flex items-center justify-center mt-20 container mx-auto"
+    >
       <div className="w-full mx-5">
         <h2 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-text-primary">
           {t("programs.eyebrow")}
@@ -36,20 +34,19 @@ export default function ProgramsSection() {
                 </h2>
 
                 <div className="mb-4 mt-10 flex justify-end">
-                  <div className="bg-primary p-4 transition-colors duration-300 group-hover:bg-text-primary
-      ">
+                  <div
+                    className="bg-primary p-4 transition-colors duration-300 group-hover:bg-text-primary
+      "
+                  >
                     <img src={dir.icon} alt="" className="w-20 h-20" />
                   </div>
                 </div>
 
                 <div className="mt-auto flex">
-                  <ButtonPrimary variant="primaryIcon">
-                    {t("programs.buttonText")}
-                  </ButtonPrimary>
+                  <ButtonPrimary variant="primaryIcon">{t("programs.buttonText")}</ButtonPrimary>
                 </div>
               </div>
             </div>
-
           ))}
         </div>
       </div>
