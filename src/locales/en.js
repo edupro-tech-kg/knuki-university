@@ -237,9 +237,9 @@ export default {
     disclaimer: "By submitting you agree to personal data processing.",
   },
   footer: {
-    labels: { 
-      address: "ADDRESS", 
-      links: "QUICK LINKS" 
+    labels: {
+      address: "ADDRESS",
+      links: "QUICK LINKS"
     },
     addressItems: [
       "720005 Bishkek",
@@ -298,6 +298,39 @@ export default {
       upload: "Upload file",
       submit: "Submit application",
     },
+  },
+  historyPage: {
+    title: "HISTORY",
+    timeline: [{
+      year: 1967,
+      title: "General information",
+      text: "The Kyrgyz State University of Culture and Arts named after B.Beyschenalieva became the first musical and creative educational institution in the republic, serving as a leading center for training highly qualified and well-rounded specialists for cultural and art institutions. It has a legal entity certificate registered with the Ministry of Justice of the Kyrgyz Republic (registration №13310-3301-U-e, OKPO code 02246840, series 0065533 GRP). State property, organizational-legal form — institution, address: 720005, Bishkek, ZhanTosheva St., 113.",
+      // img: Dansers,
+    },
+    {
+      year: 1974,
+      title: "In 1974, the institution was named after the outstanding Kyrgyz ballerina, People’s Artist of the USSR B.Beyschenalieva. The history of the Kyrgyz State University of Culture and Arts began with the Decree of the Council of Ministers of the Kyrgyz SSR dated August 12, 1967, No. 482 “On the Establishment of the Kyrgyz State Institute of Arts.”",
+      text: "The development of the institute was greatly influenced by the work of the prominent state figure, former Minister of Culture of the republic Külüypa Konduchalova. People’s Artist of the USSR B.Beyschenalieva was one of the leading ballet masters. Her creativity reflects the history of the formation of ballet art in Kyrgyzstan. She was one of the first dancers to lay the foundations of national choreography and largely determined the development of Kyrgyz classical ballet. The public recognizes B.Beyschenalieva’s art. Her path to greatness was through the most exquisite images created on the stage of Kyrgyz ballet, in a word, through a lifetime of diligent and passionate work dedicated to the most beautiful of arts — ballet art.",
+      // img: Dansers,
+    },
+    {
+      year: 1993,
+      title: "1993-year was a turning point for the university.",
+      text: "The university trained over 5,000 highly qualified specialists for Kyrgyzstan’s culture and arts sector. Among them were People’s Artists of the USSR and the Kyrgyz Republic, laureates of state awards of the USSR and the Kyrgyz Republic. Prominent figures in arts and culture of the republic also participated.Some graduates received high honors — Hero of Socialist Labor, the “Manas” Order, and others. Among the graduates are mid-level managers leading most cultural and art institutions in the republic, as well as theater and entertainment establishments.1993 was a turning point for the university: it was split into two institutions — the Kyrgyz State Institute of Arts named after B.Beyschenalieva and the Kyrgyz State Conservatory. Two KGI faculties became the foundation of the conservatory, and new faculties and specialties appeared, such as manager of socio-cultural events and head of a folk-ethnographic ensemble. The Choreographic Arts Department was opened.The institute began to train actors and directors of drama and cinematography, film directors, cinema economists, television and cinematography specialists, sound engineers, screenwriters, theater professionals, and later — television and radio directors."
+      // img: Dansers,
+    },
+    {
+      year: 1993,
+      title: "Kyrgyz State University of Culture and Arts named after B. Beishenalieva",
+      text: "From the very first days of the institution, prominent stars of Kyrgyz culture worked there. Among them were People’s Artist of the Kyrgyz Republic, laureate of the Toktogul State Prize, Professor M.Abdraev, head of the Department of Solo Singing and Opera Training, and People’s Artist of the USSR, Professor S.Kiizbaeva. Professors T.B. Musulmankulov, People’s Artist of the Kyrgyz SSR N. Davlesov, People’s Artists of the Kyrgyz Republic, USSR State Prize laureate U.O. Sarbagishev, People’s Artists of the Kyrgyz Republic S. Yusupov, K.I. Aliev, People’s Artists of the Kyrgyz Republic A.A. Asakeev, T.M. Murataliev, honored cultural figures, honored artists of the Kyrgyz Republic O. Abdyladaev, A. Ukurchinov, B. Mambetaliev, directors J. Moldobaev, E. Toktogulov, J. Abdyladaev — all these outstanding figures laid the foundation of the university and made a tremendous contribution to its continued development.By the Decree of the Government of the Kyrgyz Republic №470 dated August 28, 2013, the institute was transformed into the Kyrgyz State University of Culture and Arts named after B.Beyschenalieva to strengthen its material and technical base and improve the quality of specialist training for culture, arts, cinematography, and media institutions.",
+      // img: Dansers,
+    },
+    {
+      year: 2025,
+      title: "According to Presidential Decree of the Kyrgyz Republic S.N. Zhaparov №96 dated March 22, 2025, the KSCAU named after B.Beyschenalieva was granted national status. From now on, it is called the Kyrgyz National University of Culture and Arts named after B.Beyschenalieva.",
+      text: "Granting the “national” status to the Kyrgyz State University of Culture and Arts named after B.Beyschenalieva was in recognition of its significant contribution to the development and improvement of higher professional education in the field of culture and arts, guided by Article 71 of the Constitution of the Kyrgyz Republic: 1 Grant the Kyrgyz State University of Culture and Arts named after B.Beyschenalieva the status of “national” and henceforth call it “Kyrgyz National University of Culture and Arts named after B.Beyschenalieva.” 2 The Cabinet of Ministers of the Kyrgyz Republic shall align its decisions with this Decree. 3 Control over the execution of this Decree shall be entrusted to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Kyrgyz Republic under the Administration of the President. 4 This Decree shall enter into force seven days after its official publication.",
+      // img: Dansers,
+    },]
   },
   history: {
     title: "HISTORY",
