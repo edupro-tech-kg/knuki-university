@@ -153,7 +153,7 @@ export default function NewsSectionInfinite() {
   }, [swiperInstance, handleSlideChange]);
 
   return (
-    <section>
+    <section id='news'>
       <div className="bg-background container mx-auto px-4">
       
         <h3 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 lg:mb-16 text-gray-800 ">

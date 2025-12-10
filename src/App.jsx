@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import HistoryPage from "./pages/HistoryPage";
+import FacultyPage from "./pages/FacultyPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/history" element={<HistoryPage />} />
+            <Route path="/faculty/:slug" element={<FacultyPage />} />
           </Routes>
         </main>
         <Footer />
