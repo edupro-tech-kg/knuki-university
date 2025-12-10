@@ -2,11 +2,16 @@ export default {
   locale: "en",
   code: "en",
   navLinks: [
-    { label: "Home", href: "#" },
-    { label: "Programs", href: "#programs" },
-    { label: "Events", href: "#events" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "#", to: "home" },
+    { label: "Administration", href: "#", to: "" },
+    { label: "Faculty", href: "#", to: "" },
+    { label: "Student", href: "#", to: "" },
+    { label: "Education", href: "#", to: "" },
+    { label: "Science", href: "#", to: "" },
+    { label: "News", href: "#", to: "news" },
+    { label: "Documents", href: "#", to: "" },
+    { label: "Applicant", href: "#", to: "" },
+    { label: "Contacts", href: "#contact", to: "contact" },
   ],
   header: {
     universityName:
@@ -287,8 +292,12 @@ export default {
       name: "Full name",
       namePlaceholder: "Balanchaev Balancha",
       phone: "Phone",
-      phonePlaceholder: "+996 ",
+      phonePlaceholder: "+996 000 000 000",
       faculty: "Faculty ",
+      note: {
+        label: "Note",
+        placeholder: "Leave a note",
+      },
       programs: {
         program1: "Music Arts",
         program2: "Theatre & Film",

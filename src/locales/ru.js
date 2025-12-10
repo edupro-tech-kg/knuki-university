@@ -2,11 +2,16 @@ export default {
   locale: "ru",
   code: "ru",
   navLinks: [
-    { label: "Главная", href: "#" },
-    { label: "Программы", href: "#programs" },
-    { label: "Мероприятия", href: "#events" },
-    { label: "Галерея", href: "#gallery" },
-    { label: "Контакты", href: "#contact" },
+    { label: "Главная", href: "#", to: "home" },
+    { label: "Руководство", href: "#", to: "" },
+    { label: "Факультет", href: "#", to: "" },
+    { label: "Студент", href: "#", to: "" },
+    { label: "Образование", href: "#", to: "" },
+    { label: "Наука", href: "#", to: "" },
+    { label: "Новости", href: "#", to: "news" },
+    { label: "Документы", href: "#", to: "" },
+    { label: "Абитуриент", href: "#", to: "" },
+    { label: "Контакты", href: "#contact", to: "contact" },
   ],
   header: {
     universityName:
@@ -322,8 +327,12 @@ export default {
       name: "Имя и фамилия",
       namePlaceholder: "Баланчаев Баланча",
       phone: "Номер телефона",
-      phonePlaceholder: "+996 ",
+      phonePlaceholder: "+996 000 000 000",
       faculty: "Факультет",
+      note: {
+        label: "Примечание",
+        placeholder: "Оставьте примечание",
+      },
       programs: {
         program1: "Музыкальное искусство",
         program2: "Театр и кино",

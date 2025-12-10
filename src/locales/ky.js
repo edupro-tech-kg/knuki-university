@@ -2,11 +2,16 @@ export default {
   locale: "ky",
   code: "ky",
   navLinks: [
-    { label: "Башкы бет", href: "#" },
-    { label: "Программалар", href: "#programs" },
-    { label: "Иш-чаралар", href: "#events" },
-    { label: "Галерея", href: "#gallery" },
-    { label: "Байланыш", href: "#contact" },
+    { label: "Башкы бет", href: "#", to: "home" },
+    { label: "Жетекчилик", href: "#", to: "" },
+    { label: "Факультет", href: "#", to: "" },
+    { label: "Студент", href: "#", to: "" },
+    { label: "Билим", href: "#", to: "" },
+    { label: "Илим", href: "#", to: "" },
+    { label: "Жаңылыктар", href: "#", to: "news" },
+    { label: "Документ", href: "#", to: "" },
+    { label: "Абитуриент", href: "#", to: "" },
+    { label: "Байланыш", href: "#contact", to: "contact" },
   ],
   header: {
     universityName:
@@ -292,8 +297,12 @@ export default {
       name: "Аты-жөнүңүз",
       namePlaceholder: "Баланчаев Баланча",
       phone: "Телефон",
-      phonePlaceholder: "+996 ",
+      phonePlaceholder: "+996 000 000 000",
       faculty: "Факультет",
+      note: {
+        label: "Эскертүү",
+        placeholder: "Эскертүү калтырыңыз",
+      },
       programs: {
         program1: "Музыкалык искусство",
         program2: "Театр жана кино",
