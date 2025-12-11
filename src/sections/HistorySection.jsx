@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Dansers from "../assets/images/dancers.png";
 import Button from "../components/UI/Button";
+import { Link } from "react-router-dom";
 
 export default function HistoryPage() {
   const { t } = useTranslation();
@@ -82,10 +83,12 @@ export default function HistoryPage() {
           </div>
         );
       })}
-      <div className="w-72 md:w-96 mx-auto -mt-12 md:-mt-28">
-      <Button variant="secondary" className="w-full">
-        {t("history.moreButton")}
-      </Button>
+      <div className="w-72 md:w-96 mx-auto -mt-12 md:-mt-28 relative z-50">
+        <Link to='/history'>
+          <Button variant="secondary" className="w-full">
+            {t("history.moreButton")}
+          </Button>
+        </Link>
       </div>
     </div>
   );
