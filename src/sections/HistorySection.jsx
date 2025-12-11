@@ -83,7 +83,7 @@ export default function HistoryPage() {
           </div>
         );
       })}
-      <div className="w-72 md:w-96 mx-auto -mt-12 md:-mt-28 relative z-50">
+      <div className="w-72 md:w-96 mx-auto -mt-12 md:-mt-28 relative z-40">
         <Link to='/history'>
           <Button variant="secondary" className="w-full">
             {t("history.moreButton")}
