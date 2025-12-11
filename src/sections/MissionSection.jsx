@@ -4,7 +4,6 @@ import Mission2 from "../assets/images/mission2image.png";
 import Mission3 from "../assets/images/mission3.png";
 import Button from "../components/UI/Button";
 import { Trans } from "react-i18next";
-import AnimatedOrnament from "../components/AnimatedOrnament";
 
 function MissionSection() {
   const { t } = useTranslation();
@@ -62,7 +61,20 @@ function MissionSection() {
           </div>
         </div>
       </div>
-      <AnimatedOrnament speed={15} height="40px" />
+
+      <div className="relative w-full overflow-hidden">
+        <div className="flex gap-2">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <img
+              key={i}
+              src="/src/assets/svg/patterns.svg"
+              alt="ornament pattern"
+              className="flex-shrink-0"
+              style={{ height: "40px" }}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

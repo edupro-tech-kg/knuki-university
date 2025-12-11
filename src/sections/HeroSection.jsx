@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight, FaSearch } from "react-icons/fa";
 import img from "../assets/images/hero-img.png";
 import { useTranslation } from "react-i18next";
-import AnimatedOrnament from "../components/AnimatedOrnament"; 
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -104,7 +103,7 @@ export default function HeroSection() {
             {hero.title1} — <br /> {hero.title2}
           </h1>
 
-          <div className="flex border rounded-lg h-14 shadow-sm overflow-hidden  h-[45px] lg:h-[49px] w-full">
+          <div className="flex border rounded-lg h-14 shadow-sm overflow-hidden h-[45px] lg:h-[49px] w-full">
             <div className="flex items-center gap-3 bg-[#F5F5F5] px-4 w-full">
               <FaSearch className="text-gray-500 text-sm" />
               <input
@@ -145,7 +144,19 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <AnimatedOrnament speed={16} height="50px" />
+      <div className="relative w-full overflow-hidden">
+        <div className="flex gap-2">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <img
+              key={i}
+              src="/src/assets/svg/patterns.svg"
+              alt="ornament pattern"
+              className="flex-shrink-0"
+              style={{ height: "50px" }}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
