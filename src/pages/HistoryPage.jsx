@@ -26,12 +26,12 @@ export default function HistoryPage() {
   }, []);
 
   return (
-    <div className="relative mx-auto pt-24 md:pt-48 mr-3">
+    <div className="relative mx-auto pt-24 md:pt-10 mr-3">
       <h1 className="font-serif text-center text-3xl md:text-6xl font-bold mb-16 md:mb-24 text-[#751715] italic">
         {t("historyPage.title")}
       </h1>
 
-      <div className="hidden md:block absolute left-1/2 top-96 bottom-0 w-[3px] bg-gray-300 -translate-x-1/2 z-0"></div>
+      <div className="hidden md:block absolute left-1/2 top-60 bottom-0 w-[3px] bg-gray-300 h-[75%] -translate-x-1/2 z-0"></div>
 
       {timelineData.map((item, index) => {
         const isActive = index === activeIndex;

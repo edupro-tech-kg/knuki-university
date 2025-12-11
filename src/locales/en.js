@@ -343,10 +343,29 @@ export default {
   },
   history: {
     title: "HISTORY",
-    content: `General information. The Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has become the leading center of the republic for training highly qualified and comprehensively educated specialists for cultural and art institutions. It is the first musical and creative educational institution in the republic. Has a certificate of a legal entity registered with the Ministry of Justice of the Kyrgyz Republic (registration No. 13310-3301-U-e, OKPO code 02246840, series 0065533 GRP). `,
-    readMore: "Read more",
-    readLess: "Collapse",
-    imageAlt: "Traditional dancers",
+    moreButton: "Learn More",
+    SecTimeline: [
+      {
+        year: 1967,
+        text: "By the Decree of the Council of Ministers of the Kyrgyz SSR dated August 12, 1967, No. 771, the educational institution was established as the Kyrgyz State Institute of Arts.",
+      },
+      {
+        year: 1974,
+        text: "By the Decree No. 21 dated January 28, 1974, the educational institution was named after the outstanding Kyrgyz ballerina, People’s Artist of the USSR B.Beyschenalieva.",
+      },
+      {
+        year: 1993,
+        text: "In 1993, the Kyrgyz State Institute of Arts was split into two educational institutions — the Kyrgyz State Institute of Arts named after B.Beyschenalieva and the Kyrgyz State Conservatory named after K.Moldobasanov.",
+      },
+      {
+        year: 2013,
+        text: "By the Decree of the Government of the Kyrgyz Republic №470 dated August 28, 2013, the Kyrgyz State Institute of Arts named after B.Beyschenalieva was transformed into the Kyrgyz State University of Culture and Arts.",
+      },
+      {
+        year: 2025,
+        text: "According to Presidential Decree of the Kyrgyz Republic S.N. Zhaparov №96 dated March 22, 2025, the Kyrgyz State University of Culture and Arts named after B.Beyschenalieva was granted national status.",
+      }
+    ]
   },
   mission: {
     title: "The University's mission is culture and art",
