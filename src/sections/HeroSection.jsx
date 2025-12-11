@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import img from "../assets/images/hero-img.png";
-import tracery from "../../src/assets/images/tracery.png";
+import tracery from "../assets/images/tracery.png";
 import { useTranslation } from "react-i18next";
 import Search from "../components/UI/Search";
 export default function HeroSection() {
@@ -53,7 +53,7 @@ export default function HeroSection() {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section id='home' className="bg-background  relative">
+    <section id="home" className="bg-background  relative">
       <div className="flex  flex-col-reverse xl:flex-row relative justify-between w-full xl:w-[1449px] mx-auto px-4 lx:p-0">
         {/* LEFT SLIDER */}
         <div className=" xl:w-[466px] w-full h-[295px] lg:h-[712px] p-6 xl:p-12 mb-10 xl:mb-0 bg-[#751715]">
