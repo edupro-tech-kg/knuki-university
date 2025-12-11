@@ -28,12 +28,12 @@ export default function HistoryPage() {
   }, []);
 
   return (
-    <div className="relative mx-2 md:mx-auto  mr-3">
+    <div className="relative mx-3 md:mx-20  mr-3">
       <h1 className="font-serif text-center text-3xl md:text-6xl font-bold mb-16 md:mb-24 text-[#751715] italic">
         {t("history.title")}
       </h1>
 
-      <div className="hidden md:block absolute left-1/2 top-48 bottom-0 w-[3px] bg-gray-300 h-[76%] -translate-x-1/2 z-0"></div>
+      <div className="hidden md:block absolute left-1/2 top-48 bottom-0 w-[3px] bg-gray-300 h-[75%] -translate-x-1/2 z-0"></div>
 
       {timelineData.map((item, index) => {
         const isActive = index === activeIndex;
@@ -44,7 +44,7 @@ export default function HistoryPage() {
             key={index}
             data-index={index}
             ref={(el) => (refs.current[index] = el)}
-            className="relative py-12 md:py-32"
+            className="relative py-12 md:py-20"
           >
             <div className="absolute left-1/2 -top-12 mb-2 md:top-0 md:mb-0 -translate-x-1/2 z-20 transition-all duration-300">
               <div
@@ -77,13 +77,13 @@ export default function HistoryPage() {
                 className="w-full md:w-1/2 transition-all duration-500"
                 style={{ transform: isActive ? "translateY(-10%) scale(1.02)" : "translateY(0) scale(1)" }}
               >
-                <img src={Dansers} className="w-full h-[200px] md:h-[300px] object-contain rounded" />
+                <img src={Dansers} className="w-full h-[200px] md:h-[300px] object-cover rounded" />
               </div>
             </div>
           </div>
         );
       })}
-      <div className="w-72 md:w-96 mx-auto -mt-12 md:-mt-28 relative z-40">
+      <div className="w-72 md:w-96 mx-auto -mt-10 md:-mt-16 relative z-40">
         <Link to='/history'>
           <Button variant="secondary" className="w-full">
             {t("history.moreButton")}
