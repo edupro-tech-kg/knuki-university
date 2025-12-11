@@ -1,5 +1,8 @@
 .fc-daygrid-day {
   height: 90px;
+  @media (max-width: 600px) {
+    height: 70px;
+  }
 }
 
 .fc-theme-standard td,
@@ -75,4 +78,7 @@
 
 .fc-view-harness {
   min-height: 570px !important;
+}
+.fc .fc-timegrid-divider {
+  padding: 0px !important;
 }
