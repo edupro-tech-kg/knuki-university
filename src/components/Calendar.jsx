@@ -1,9 +1,9 @@
-/* eslint-disable no-unused-vars */
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import listPlugin from "@fullcalendar/list";
-import ruLocale from "@fullcalendar/core/locales/ru";
+import ruLocale from "../locales/ru.js";
+import enLocale from "../locales/en.js";
 import kyLocale from "../locales/ky.js";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -13,7 +13,7 @@ import { Tooltip } from "react-tooltip";
 export default function Calendar() {
   const [currentTitle, setCurrentTitle] = useState("");
   const [activeView, setActiveView] = useState("dayGridMonth");
-  const calendarRef = useRef(null);
+  const calendarRef = useRef();
 
   const { t } = useTranslation();
   const calendar = t("calendar");
@@ -83,11 +83,11 @@ export default function Calendar() {
 
       <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, listPlugin]}
-        initialView="dayGridMonth"
+        initialView={activeView}
         events={calendar.events}
         ref={calendarRef}
         headerToolbar={false}
-        locales={[ruLocale, kyLocale]}
+        locales={[ruLocale, kyLocale, enLocale]}
         locale={locale}
         firstDay={1}
         datesSet={(info) => setCurrentTitle(info.view.title)}

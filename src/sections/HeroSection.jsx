@@ -7,7 +7,7 @@ export default function HeroSection() {
   const { t } = useTranslation();
   const hero = t("hero");
 
-  const slides = [img, img, img, img, img, img];
+  const slides = [img];
   const [students, setStudents] = useState(0);
   const [budget, setBudget] = useState(0);
   const [paid, setPaid] = useState(0);
@@ -52,10 +52,10 @@ export default function HeroSection() {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="lg:mt-[160px] mt-[200px] relative">
-      <div className="flex flex flex-col-reverse xl:flex-row relative justify-between w-full xl:w-[1449px] mx-auto px-4 lx:p-0">
+    <section id='home' className="bg-background  relative">
+      <div className="flex  flex-col-reverse xl:flex-row relative justify-between w-full xl:w-[1449px] mx-auto px-4 lx:p-0">
         {/* LEFT SLIDER */}
-        <div className="bg-[#751715] xl:w-[466px] w-full h-[295px] lg:h-[712px] p-6 xl:p-12 mb-10 xl:mb-0">
+        <div className=" xl:w-[466px] w-full h-[295px] lg:h-[712px] p-6 xl:p-12 mb-10 xl:mb-0 bg-[#751715]">
           {/* slides nav */}
           <div className="flex justify-between items-center text-white">
             <button
@@ -68,7 +68,7 @@ export default function HeroSection() {
             <div className="flex items-center font-normal text-[18px] gap-2">
               <p>
                 {String(currentSlide + 1).padStart(2, "0")}/
-                <span className="text-[12px] mt-1.5">20</span>
+                <span className="text-[12px] mt-1.5">{slides.length}</span>
               </p>
               <div className="flex gap-1 ml-3">
                 {slides.map((_, i) => (
