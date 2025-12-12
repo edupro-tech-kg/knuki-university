@@ -398,4 +398,67 @@ export default {
   dayHeaderFormat: {
     weekday: "short",
   },
+  studentStructure: {
+    title: "Student self-government structure",
+    content: "The student self-governance structure at the B. Beishenalieva Kyrgyz National University of Culture and Arts is the Student Council. It was established based on the Decree of the President of the Kyrgyz Republic “On the Development of State Youth Policy of the Kyrgyz Republic,” as well as in accordance with the laws of the Kyrgyz Republic “On Education” and “On the Fundamentals of State Youth Policy,” the charter of KNKUCA, the education concept, and other regulatory legal acts, the Resolution of the Government of the Kyrgyz Republic, and Article 79 of the Constitution of the Kyrgyz Republic, guided by the Youth Policy Concept for 2020–2030. The Student Council is a structural unit within the university that implements state youth policy within its competence. In December 2023, a special regulation regarding the Chairperson of the Student Council and the Student Ombudsman was developed, and the structure’s leaders were elected. The structure’s leaders are elected annually and rotate."
+  },
+  studentsInfo: [
+    {
+      image: "/Nurai.png",
+      name: "Orozova Nurai",
+      content: "Chairperson of the Girls' Council"
+    },
+    {
+      image: "/Dastan.png",
+      name: "Janbolotov Dastan",
+      content: "Student Council Chairman"
+    },
+    {
+      image: " /Aktilek.png",
+      name: "Rahmatilla uulu Aktilek",
+      content: "Student ombudsman"
+    },
+    {
+      image: "/Nestan.png",
+      name: "Orozbekova Nestan",
+      content: "Deputy of the Student Council for Academic, Cultural, and Organizational Affairs"
+    },
+    {
+      image: "/Amina.png",
+      name: "Sheishenalieva Amina",
+      content: "Deputy Chairman of the Student Council for External Relations"
+    },
+    {
+      image: "/Askat.png",
+      name: "Bolotbek uulu Askat",
+      content: "Deputy Chairman of the Student Council for Health and Sports"
+    },
+    {
+      image: "/Venera.png",
+      name: "Ashyrkunova Venera",
+      content: "Deputy Chairman of the Student Council for Dormitory"
+    }
+  ],
+  chairmanCard: {
+    title: "Faculty Student Council Chairmen",
+    cards: [
+      {
+        id: 1,
+        name: "Orozobekova Nestan",
+        content: "Chairman of the Student Council of the Faculty of Choreography and Cultural Activities"
+      }, {
+        id: 2,
+        name: "Sheishenalieva Amina",
+        content: "Chairman of the Student Council of the Faculty of Arts"
+      }, {
+        id: 3,
+        name: "Bolotbek uulu Askat",
+        content: "Chairman of the Student Council of the Faculty of Theatre"
+      }, {
+        id: 4,
+        name: "Ashirakunova Venera",
+        content: "Chairman of the Film and Television Student Council “Altyn Nur” Folk Instrument Ensemble “Sonu” Pop Group “Asman Legenda” Shadow Theater"
+      },
+    ]
+  }
 };
