@@ -11,7 +11,6 @@ function ChairmanCard() {
                 {chairman.title}
             </h3>
 
-            {/* Мобильная адаптация: горизонтальный скролл */}
             <div className="flex gap-6 overflow-x-auto scrollbar-hide">
                 {chairman.cards.map((item) => (
                     <div
