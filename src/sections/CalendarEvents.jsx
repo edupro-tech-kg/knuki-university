@@ -6,18 +6,16 @@ export default function CalendarEvents() {
   const [mobileView, setMobileView] = useState("calendar"); // calendar | news
 
   return (
-    <section id='events' className="bg-primary font-serif pb-24 pt-12 md:pt-16">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-14">
+    <section id="events" className="bg-primary font-serif pb-24 pt-12 md:pt-16 ">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-14 overflow-hidden pb-9">
         <div className="flex justify-center">
           <p className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl">
             КАЛЕНДАРЬ СОБЫТИЙ
           </p>
         </div>
-
         <div className="relative mt-1 md:mt-4 lg:mt-2">
-          <div className="absolute inset-0 translate-x-6 translate-y-6 rounded-[6px] bg-white/80 rotate-[1deg] shadow-[0_18px_55px_rgba(0,0,0,0.22)]" />
-
-          <div className="relative bg-white rounded-[6px] shadow-[0_18px_55px_rgba(0,0,0,0.2)] border border-[#e6e6e6] overflow-hidden flex flex-col lg:flex-row">
+          <div className="absolute inset-0 pb-11  translate-x-6 translate-y-6 rounded-[6px] bg-white/80 rotate-[1deg] shadow-[0_18px_55px_rgba(0,0,0,0.22)]" />
+          <div className="relative bg-white rounded-[6px]  shadow-[0_18px_55px_rgba(0,0,0,0.2)] border border-[#e6e6e6] overflow-hidden flex flex-col lg:flex-row">
             <div className="hidden xl:block lg:w-[55%] px-4 sm:px-10 lg:px-12 py-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-[#e6e6e6]">
               <Calendar />
             </div>
