@@ -27,7 +27,7 @@ export default function Calendar() {
   };
 
   return (
-    <div className="flex flex-col font-sans text-[#1f1f1f]">
+    <div className="flex flex-col font-sans text-[#1f1f1f] ">
       <div className="flex justify-center mb-4 md:mb-6">
         <h2 className="text-[#a12626] italic font-serif font-semibold text-xl md:text-2xl 2xl:text-[26px]">
           {currentTitle}
