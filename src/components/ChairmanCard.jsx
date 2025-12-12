@@ -7,7 +7,7 @@ function ChairmanCard() {
     const chairman = t("chairmanCard", { returnObjects: true });
 
     return (
-        <div className="my-10 text-center">
+        <div className="container-edge my-10 text-center">
             <h3 className="text-2xl font-bold mb-6">
                 {chairman.title}
             </h3>
