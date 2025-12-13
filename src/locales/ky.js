@@ -1,5 +1,3 @@
-import { time } from "framer-motion"
-
 export default {
   locale: "ky",
   code: "ky",
