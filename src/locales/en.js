@@ -25,6 +25,354 @@ export default {
     placeholder: "Search",
     button: "Next",
   },
+  facultiesData: {
+    studyFormsLabel: "STUDY FORM:",
+    durationLabel: "DURATION:",
+    notFoundTitle: "Faculty not found",
+    notFoundBack: "Back to home",
+    items: {
+      "kino-tele": {
+        title: "Faculty of Film and Television",
+        description:
+          "The Faculty of Film and Television is the youngest unit of KNUCA. Until 2014 it was part of the Theatre and Film faculty; in 2015–2018 it was named Telecommunication. In 2018 the Academic Council assigned its current name. It now delivers education and creative practice with seasoned film and TV professionals across three departments. Dean — Tabyryk Rishatovna Yusupova, a director and producer with many years of experience.",
+        studyForms: "full-time and part-time",
+        duration: "full-time (5 years) · part-time (6 years)",
+        programHeading: "Specialties",
+        programBlocks: [
+          "570015 — Directing of feature and television film",
+          "570027 — Literary creativity (screenwriting)",
+          "570005 — Film studies",
+          "570015 — Directing",
+          "570013 — Sound directing for film and TV",
+          "570005 — Cinematography",
+        ],
+        infoColumns: [
+          {
+            title: "Film Department",
+            items: [
+              "Head: Zhordarbek Aruunovich Turumbekov",
+              "Founded in 1993 by the Union of Cinematographers of the Kyrgyz Republic",
+              "Trains directors, screenwriters, film scholars",
+              "Graduates: feature/TV director (teacher); screenwriter/dramatist (teacher); film scholar (teacher)",
+            ],
+          },
+          {
+            title: "TV and Radio Directing Department",
+            items: [
+              "Head: Gulnara Damir kyzy",
+              "Founded in 2006; key contributor — People’s Artist of KR Prof. Moldoseit Mambetakunov",
+              "Trains directors, sound engineers, designers, editors",
+              "Qualifications: TV and radio director (teacher); film/TV sound director (teacher)",
+            ],
+          },
+          {
+            title: "Cinematography Department",
+            items: [
+              "Head: Burush Kurmanbekovna Kurmanbekova",
+              "First cinematography workshop opened in 1993",
+              "Independent department since 2014",
+              "Specialty: 570005 — Cinematography; qualification — film and TV cameraman, teacher",
+            ],
+          },
+        ],
+        stats: [
+          { label: "Total staff", value: 41 },
+          { label: "Full-time lecturers", value: 29 },
+          { label: "Adjunct lecturers", value: 12 },
+        ],
+        teachersTitle: "Faculty members",
+        textTabs: [
+          {
+            title: "Overview",
+            content:
+              "The Faculty of Film and Television unites three departments and trains specialists for the film and TV industry. Full-time and part-time study: 5 years (full-time) and 6 years (part-time). Dean — Tabyryk Rishatovna Yusupova.",
+          },
+          {
+            title: "Film Department",
+            content:
+              "Founded in 1993 at the initiative of the Union of Cinematographers of the Kyrgyz Republic. Founder — film director, Prof. Karidin Sartbaevich Akmataliev. Specialties: 570015 Directing of feature and television film; 570027 Literary creativity (screenwriting); 570005 Film studies. Qualifications: feature/TV director (teacher); screenwriter, dramatist (teacher); film scholar (teacher).",
+          },
+          {
+            title: "TV/Radio Directing",
+            content:
+              "Established in 2006. Major contribution by People’s Artist of KR Prof. Moldoseit Mambetakunov. Trains directors, sound engineers, designers, editors for all regions. Specialties: 570015 — Directing; 570013 — Sound directing for film and TV. Qualifications: TV/radio director (teacher); film/TV sound director (teacher).",
+          },
+          {
+            title: "Cinematography",
+            content:
+              "The first cinematography workshop opened in 1993. Since 2014 the department has operated independently. Specialty: 570005 — Cinematography. Qualification: film and TV cameraman, teacher. Graduates work in Kyrgyzstan and abroad.",
+          },
+        ],
+        teacherGroups: [
+          {
+            title: "Film Department",
+            teachers: [
+              {
+                name: "Zhordarbek Aruunovich Turumbekov",
+                position: "Head of Department",
+                description:
+                  "Founded in 1993 by the Union of Cinematographers of the Kyrgyz Republic. Trains directors, screenwriters, and film scholars in specialties 570015, 570027, 570005. Qualifications: feature/TV director (teacher); screenwriter/dramatist (teacher); film scholar (teacher).",
+              },
+            ],
+          },
+          {
+            title: "TV and Radio Directing Department",
+            teachers: [
+              {
+                name: "Gulnara Damir kyzy",
+                position: "Head of Department",
+                description:
+                  "Opened in 2006. Trains directors, sound engineers, designers, and editors. Specialties: 570015 — Directing; 570013 — Sound directing for film and TV. Qualifications: TV and radio director (teacher); film/TV sound director (teacher).",
+              },
+            ],
+          },
+          {
+            title: "Cinematography Department",
+            teachers: [
+              {
+                name: "Burush Kurmanbekovna Kurmanbekova",
+                position: "Head of Department",
+                description:
+                  "The first cinematography workshop opened in 1993. Independent since 2014. Specialty: 570005 — Cinematography. Qualification: film and TV cameraman, teacher.",
+              },
+            ],
+          },
+        ],
+      },
+      theater: {
+        title: "Faculty of Theatre",
+        description:
+          "The Faculty of Theatre is the only institution in Kyrgyzstan that trains higher-education specialists for all theatre and performance venues nationwide. Founded on December 1, 1993, it prepares highly qualified directors and actors under People’s Artists and Honored Cultural Figures of the Kyrgyz Republic.",
+        studyForms: "full-time and part-time",
+        duration: "full-time (5 years) · part-time (6 years)",
+        programHeading: "Specialties",
+        programBlocks: [
+          "Dramatic actor, teacher",
+          "Drama director, teacher",
+          "Puppet theatre actor, teacher",
+          "Theatre studies, teacher",
+        ],
+        stats: [
+          { label: "Full-time lecturers", value: 20 },
+          { label: "Adjunct lecturers", value: 31 },
+          { label: "People’s Writers of KR", value: 1 },
+          { label: "People’s Artists of KR", value: 4 },
+          { label: "Honored Artists of KR", value: 5 },
+          { label: "Honored Cultural Figures of KR", value: 3 },
+          { label: "Presidential Honorary Certificate", value: 1 },
+          { label: "Excellence in Culture", value: 7 },
+        ],
+        teachersTitle: "Faculty members",
+        textTabs: [
+          {
+            title: "Overview",
+            content:
+              "The Faculty of Theatre trains specialists for every theatre and performance institution in Kyrgyzstan. Founded on December 1, 1993. Study forms: full-time (5 years) and part-time (6 years). Dean — Chynasyl Urmatbekovich Urmatbekov (b. 1992, Bokonbayev village), graduate with honors in Dramatic Acting (2015).",
+          },
+          {
+            title: "Directing and Acting",
+            content:
+              "Since 1993 the department has trained future stage professionals. Students stage productions across genres, make films, and study Kyrgyz and world classics to develop thinking and creative imagination. Head — Zamirbek uulu Chyngyz (student 2015–2020, Dramatic actor/teacher). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+          },
+          {
+            title: "Stage Speech Department",
+            content:
+              "Created in 2023 to build stage speech skills. Teaches vocal technique, overcomes public speaking fear, and develops memory, diction, and communication. Head — Anara Kaparbekovna Solpueva (education: KUMOZH named after M. Kurenkeev; Theatre College at T. Abdumomunov KADT; KNUCA Theatre Faculty, specialty “Dramatic actor”).",
+          },
+        ],
+        teacherGroups: [
+          {
+            title: "Dean of Theatre Faculty",
+            teachers: [
+              {
+                name: "Chynasyl Urmatbekovich Urmatbekov",
+                position: "Dean",
+                description:
+                  "Born 1992 in Bokonbayev village, Ton district, Issyk-Kul. Graduated with honors in 2015 from the Theatre Faculty (specialty “Dramatic actor”). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+              },
+            ],
+          },
+          {
+            title: "Directing and Acting Department",
+            teachers: [
+              {
+                name: "Zamirbek uulu Chyngyz",
+                position: "Head of Department",
+                description:
+                  "Since 1993 the department has trained future stage professionals. Students stage productions of various genres and make films, studying Kyrgyz and world classics. Head — Zamirbek uulu Chyngyz (student 2015–2020, specialty “Dramatic actor, teacher”). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+              },
+            ],
+          },
+          {
+            title: "Stage Speech Department",
+            teachers: [
+              {
+                name: "Anara Kaparbekovna Solpueva",
+                position: "Head of Department",
+                description:
+                  "Established in 2023 to develop stage speech. Teaches speech technique, overcomes public speaking fear, and builds memory, diction, and communication skills. Education: KUMOZH named after M. Kurenkeev; Theatre College at T. Abdumomunov KADT; KNUCA Theatre Faculty (distance), specialty “Dramatic actor”.",
+              },
+            ],
+          },
+        ],
+      },
+      choreography: { title: "Choreography Faculty" },
+      "estrada-music": {
+        title: "Faculty of Pop and Music Education",
+        description:
+          "The Faculty of Pop and Music Education was separated from the former Arts Faculty by Academic Council decision on 03.03.2025. It employs People’s Artists of the Kyrgyz Republic, Honored Cultural Figures, PhDs in cultural studies, and practicing creative professionals.",
+        studyForms: "full-time and part-time",
+        duration: "full-time (5 years) · part-time (6 years)",
+        programHeading: "Specialties",
+        programBlocks: [
+          "Pop singer, instrumentalist",
+          "Music education (music teacher, bachelor)",
+          "Music theory disciplines",
+        ],
+        stats: [
+          { label: "Total faculty", value: 54 },
+          { label: "Full-time", value: 30 },
+          { label: "Adjunct", value: 24 },
+          { label: "Professors", value: 1 },
+          { label: "People’s Artists", value: 2 },
+          { label: "Honored Figures of KR", value: 4 },
+          { label: "Associate Professors", value: 7 },
+          { label: "Best cultural workers", value: 4 },
+        ],
+        teachersTitle: "Faculty members",
+        textTabs: [
+          {
+            title: "Overview",
+            content:
+              "The faculty trains pop performers, music educators, and theorists. Full-time and part-time study: 5 and 6 years respectively. Dean — Arstanbek uulu Asylbek (b. 1993, village of Saruu, Jeti-Oguz district, Issyk-Kul), graduate of KNUCA named after B. Beishenalieva.",
+          },
+          {
+            title: "Pop Department",
+            content:
+              "Specialty: 570029 Social and cultural pedagogical activity. Qualification: pop ensemble/collective leader, instructor. Head: Orozov Bekzat Esenbaevich. The base specialty “Leader of pop ensemble and orchestra” opened in 1993 (full-time and part-time). Trains vocalists and instrumentalists.",
+          },
+          {
+            title: "Music Education Department",
+            content:
+              "Specialty: 550600 Art education. Qualification: music teacher. Head: Orunbaeva Nargiza Temirbekovna. The department dates back to 1996; major contribution by Honored Cultural Figure of KR, Prof. O.A. Abdyladaev.",
+          },
+          {
+            title: "Music Theory Department",
+            content:
+              "Founded in September 1993 by Honored Cultural Figure of KR, professor and composer Roman Vladimirovich. Head of department — Mariam Kerimalievna Korpobaeva, PhD in Cultural Studies.",
+          },
+        ],
+        teacherGroups: [
+          {
+            title: "Dean",
+            teachers: [
+              {
+                name: "Arstanbek uulu Asylbek",
+                position: "Dean",
+                description:
+                  "Born 1993 in Saruu, Jeti-Oguz district, Issyk-Kul region. Graduate of KNUCA named after B. Beishenalieva.",
+              },
+            ],
+          },
+          {
+            title: "Pop Department",
+            teachers: [
+              {
+                name: "Orozov Bekzat Esenbaevich",
+                position: "Head of Department",
+                description:
+                  "Specialty: 570029 Social and cultural pedagogical activity. Qualification: leader of a pop ensemble, instructor. Base specialty opened in 1993. Trains vocalists and instrumentalists.",
+              },
+            ],
+          },
+          {
+            title: "Music Education Department",
+            teachers: [
+              {
+                name: "Orunbaeva Nargiza Temirbekovna",
+                position: "Head of Department",
+                description:
+                  "Specialty: 550600 Art education. Qualification: music teacher. Opened in 1996; key contributor — Honored Cultural Figure of KR, Prof. O.A. Abdyladaev.",
+              },
+            ],
+          },
+          {
+            title: "Music Theory Department",
+            teachers: [
+              {
+                name: "Mariam Kerimalievna Korpobaeva",
+                position: "Head of Department, PhD (Cultural Studies)",
+                description:
+                  "Founded in September 1993 by Honored Cultural Figure of KR, professor and composer Roman Vladimirovich. Prepares specialists in music theory disciplines.",
+              },
+            ],
+          },
+        ],
+      },
+      "folk-music": {
+        title: "Faculty of Folk Music",
+        description:
+          "The Faculty of Folk Music trains specialists in Kyrgyz traditional music: instruments, folk vocals, and folklore. Founded in 1967 to study, preserve, and develop national musical heritage. Taught by renowned musicologists, folklorists, conductors, and performers.",
+        studyForms: "full-time and part-time",
+        duration: "full-time (5 years) · part-time (6 years)",
+        programHeading: "Programs",
+        programBlocks: ["Orchestral conducting", "Choral conducting", "Traditional music and folklore"],
+        stats: [
+          { label: "Full-time lecturers", value: 13 },
+          { label: "Adjunct lecturers", value: 44 },
+          { label: "Honored Cultural Figures of KR", value: 1 },
+          { label: "Honored Artists of KR", value: 4 },
+          { label: "Presidential Award laureates", value: 1 },
+          { label: "Best cultural workers", value: 12 },
+          { label: "Acting associate professors", value: 12 },
+          { label: "Associate professors", value: 2 },
+          { label: "Doctor of Science, Professor", value: 1 },
+          { label: "Candidates of Science", value: 1 },
+        ],
+        teachersTitle: "Faculty members",
+        textTabs: [
+          {
+            title: "Overview",
+            content:
+              "The faculty was founded in 1967 to study, preserve, and develop Kyrgyz folk music. Full-time and part-time study: 5 and 6 years respectively. Courses are led by honored artists of Kyrgyzstan and highly qualified specialists.",
+          },
+        ],
+      },
+      postgraduate: {
+        title: "Graduate and Postgraduate Studies",
+        description:
+          "The Graduate and Postgraduate Department trains highly qualified research and teaching staff. Established on September 2, 2024 (Rector’s order No.156-kb of August 30, 2024; license approval from the Ministry of Education and Science of the Kyrgyz Republic). Its goal is to organize training, drive research, and graduate competitive specialists.",
+        studyForms: "full-time and part-time",
+        duration: "Master’s: 2 years (full-time), 2.5 years (part-time) · PhD track: 3 years (full-time), 4 years (part-time)",
+        programHeading: "Master’s programs",
+        programBlocks: [
+          "550600 — Art Education: Music Education",
+          "570300 — Theatre Arts: Acting and Directing",
+          "570300 — Theatre Arts: Theatre Studies and Dramaturgy",
+          "570200 — Music Arts: Instrumental Performance",
+          "570200 — Music Arts: Ethnomusicology",
+          "570200 — Music Arts: Vocal Performance",
+        ],
+        programHeadingSecondary: "Postgraduate programs",
+        programBlocksSecondary: [
+          "17.00.02 — Music Arts",
+          "24.00.01 — History and Theory of Culture",
+        ],
+        textTabs: [
+          {
+            title: "Master’s",
+            content:
+              "The Master’s degree is a final academic stage focused on research and teaching. Goal: prepare culture and arts specialists with research, creative, and analytical skills. Requirements: follow the individual study plan, conduct research, pass teaching and research practicums, defend a Master’s thesis. Admission follows MoE regulations; bachelor’s degree holders with State Attestation Commission recommendation are admitted without competition (valid 3 years), others compete. Documents: application to the rector, ID copy, notarized diploma copy, eight 3×4 photos.",
+          },
+          {
+            title: "Postgraduate",
+            content:
+              "The postgraduate (PhD track) is the core pathway for training high-level research and teaching staff. Objectives: plan and organize training, monitor individual plans, coordinate with departments, and foster regional/international cooperation. Admission: citizens with specialist/Master’s degrees on a competitive basis; foreign applicants with recognized equivalency. Those who already completed a full postgraduate course cannot reapply. Applicants interview with a prospective supervisor. Documents: application to the rector, notarized specialist/Master’s diploma, list of publications (if any), work record copy, State Attestation recommendations (for honors), passport copy, personal record, three 3×4 photos, and a research abstract in the chosen specialty.",
+          },
+        ],
+      },
+    },
+  },
   hero: {
     title1: "ART",
     title2: "PEAK OF THE NATIONAL SPIRIT",
@@ -72,7 +420,7 @@ export default {
       },
       {
         id: 6,
-        title: "Faculty of Choreography and Cultural Activity",
+        title: "Postgraduate and Graduate Studies",
       },
     ],
   },

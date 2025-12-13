@@ -25,6 +25,20 @@ export default {
     placeholder: "Издөө",
     button: "Кийинки",
   },
+  facultiesData: {
+    studyFormsLabel: "ФАКУЛЬТЕТТИН ОКУУ ФОРМАСЫ:",
+    durationLabel: "ОКУУ МӨӨНӨТҮ:",
+    notFoundTitle: "Факультет табылган жок",
+    notFoundBack: "Башкы бетке кайтуу",
+    items: {
+      "kino-tele": { title: "“КИНО ЖАНА ТЕЛЕКӨРСӨТҮҮ” ФАКУЛЬТЕТИ" },
+      theater: { title: "ТЕАТР ФАКУЛЬТЕТИ" },
+      choreography: { title: "“ХОРЕОГРАФИЯ” ФАКУЛЬТЕТИ" },
+      "estrada-music": { title: "“ЭСТРАДА ЖАНА МУЗЫКА” ФАКУЛЬТЕТИ" },
+      "folk-music": { title: "ЭЛДИК МУЗЫКА ФАКУЛЬТЕТИ" },
+      postgraduate: { title: "МАГИСТРАТУРА ЖАНА АСПИРАНТУРА БӨЛҮМҮ" },
+    },
+  },
   hero: {
     title1: "ИСКУССТВО",
     title2: "ЭЛ РУХУНУН ЧОКУСУ",
@@ -72,7 +86,7 @@ export default {
       },
       {
         id: 6,
-        title: "Хореография жана маданий ишмердик факультети",
+        title: "Магистратура жана аспирантура",
       },
     ],
   },
