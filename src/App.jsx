@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import HistoryPage from "./pages/HistoryPage";
 import FacultyPage from "./pages/FacultyPage";
+import NewsPage from "./pages/NewsPage";
 import StudentsLife from "./pages/StudentsLife";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/history" element={<HistoryPage />} />
             <Route path="/faculty/:slug" element={<FacultyPage />} />
+            <Route path="/news" element={<NewsPage />} />
             <Route path="/studentsLife" element={<StudentsLife />} />
           </Routes>
         </main>

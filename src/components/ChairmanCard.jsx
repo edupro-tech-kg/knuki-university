@@ -16,7 +16,7 @@ function ChairmanCard() {
                 {chairman.cards.map((item) => (
                     <div
                         key={item.id}
-                        className="flex flex-col items-center gap-4 p-4 border border-gray-200 rounded-xl"
+                        className="flex flex-col items-center gap-4 p-3 border border-gray-200 rounded-xl"
                     >
                         <span className="w-12 h-12 rounded-full flex justify-center items-center text-xl font-semibold bg-[#BF211F] text-[#FFFFFF]">
                             {item.id}
