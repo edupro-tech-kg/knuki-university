@@ -74,5 +74,44 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.scrollbar-transparent': {
+          '&::-webkit-scrollbar': {
+            width: '0px',
+            height: '0px',
+            background: 'transparent',
+          },
+          '&::-webkit-scrollbar-track': {
+            background: 'transparent',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: 'transparent',
+          },
+          'scrollbar-width': 'none',
+          '-ms-overflow-style': 'none', 
+        },
+        '.scrollbar-subtle': {
+          '&::-webkit-scrollbar': {
+            width: '4px',
+            height: '4px',
+          },
+          '&::-webkit-scrollbar-track': {
+            background: 'transparent',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: 'rgba(0, 0, 0, 0.1)',
+            borderRadius: '2px',
+          },
+          '&::-webkit-scrollbar-thumb:hover': {
+            background: 'rgba(0, 0, 0, 0.2)',
+          },
+          'scrollbar-width': 'thin',
+          'scrollbar-color': 'rgba(0, 0, 0, 0.1) transparent',
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 };

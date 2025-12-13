@@ -8,8 +8,8 @@ export default function FacultyHero({
 }) {
   return (
     <section className="bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 mt-6 md:mt-36">
-        <div className="py-8 md:py-10 text-center">
+      <div className="max-w-[1200px] mx-auto px-4 pt-48 md:pt-24 lg:pt-36">
+        <div className="py-6 md:py-8 lg:py-10 text-center">
           <h1 className="text-[#751715] text-2xl md:text-4xl font-serif italic leading-tight">
             {title}
           </h1>
@@ -25,10 +25,14 @@ export default function FacultyHero({
         }}
       >
         <div className="absolute inset-0 bg-black/70" />
-        <div className="relative max-w-[1200px] mx-auto px-4 py-10 md:py-14 flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start">
-          <div className="bg-[#751715] rounded-sm shadow-lg p-6 md:p-8 w-full md:w-[420px] lg:w-[460px] flex justify-center">
-            <div className="h-64 w-64 md:h-72 md:w-72 rounded-full overflow-hidden border-[10px] border-white shadow-2xl bg-white">
-              <img src={heroImage} alt={title} className="h-full w-full object-cover" />
+        <div className="relative max-w-[1200px] mx-auto px-4 py-8 md:py-14 flex flex-col md:flex-row gap-6 md:gap-12 items-center md:items-start">
+          <div className="bg-[#751715] rounded-sm shadow-lg p-4 md:p-8 w-full md:w-[420px] lg:w-[460px] flex justify-center mt-4 md:mt-0">
+            <div className="h-56 w-56 md:h-96 md:w-96 rounded-full overflow-hidden border-[6px] md:border-[8px] border-white shadow-2xl bg-white">
+              <img 
+                src={heroImage} 
+                alt={title} 
+                className="h-full w-full object-cover" 
+              />
             </div>
           </div>
 
@@ -38,7 +42,7 @@ export default function FacultyHero({
             </p>
 
             {studyForms && (
-              <div className="mt-6 space-y-2 text-sm md:text-base">
+              <div className="mt-4 md:mt-6 space-y-2 text-sm md:text-base">
                 <p className="font-extrabold uppercase tracking-tight">
                   ФАКУЛЬТЕТТИН ОКУУ ФОРМАСЫ:
                 </p>
@@ -47,7 +51,7 @@ export default function FacultyHero({
             )}
 
             {duration && (
-              <div className="mt-4 space-y-2 text-sm md:text-base">
+              <div className="mt-3 md:mt-4 space-y-2 text-sm md:text-base">
                 <p className="font-extrabold uppercase tracking-tight">ОКУУ МӨӨНӨТҮ:</p>
                 <p className="text-white/90">{duration}</p>
               </div>
