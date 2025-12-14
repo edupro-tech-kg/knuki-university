@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import FacultyHero from "../components/faculty/FacultyHero";
 import FacultyInfoBlocks from "../components/faculty/FacultyInfoBlocks";
 import FacultyStats from "../components/faculty/FacultyStats";
@@ -13,19 +14,27 @@ import { getFacultyData } from "../data/faculties";
 export default function FacultyPage() {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
-  const faculty = useMemo(() => getFacultyData(slug), [slug]);
+  const localizedFaculties = useMemo(() => {
+    const lang = i18n.language;
+    return t("facultiesData.items", { returnObjects: true, lng: lang }) || {};
+  }, [t, i18n.language]);
+  const faculty = useMemo(
+    () => getFacultyData(slug, localizedFaculties),
+    [slug, localizedFaculties]
+  );
 
   if (!faculty) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-6">
-        <p className="text-xl font-semibold mb-4">Факультет табылган жок</p>
+        <p className="text-xl font-semibold mb-4">{t("facultiesData.notFoundTitle")}</p>
         <button
           onClick={() => navigate("/")}
           className="px-4 py-2 rounded bg-[#751715] text-white hover:bg-[#5f1112]"
         >
-          Башкы бетке кайтуу
+          {t("facultiesData.notFoundBack")}
         </button>
       </div>
     );

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useRef, useEffect, useState, useCallback, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation, Virtual } from "swiper/modules";
@@ -25,38 +25,41 @@ export default function NewsSectionInfinite() {
   const [isLoading, setIsLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
 
-  const slidesData = [
-    {
-      id: 1,
-      image: ballerina,
-      title: news?.items?.[0]?.title || "Ballerina Performance",
-      buttonText: news?.items?.[0]?.buttonText || "Learn More",
-    },
-    {
-      id: 2,
-      image: girlSinging,
-      title: news?.items?.[1]?.title || "Girl Singing",
-      buttonText: news?.items?.[1]?.buttonText || "View Details",
-    },
-    {
-      id: 3,
-      image: delivery,
-      title: news?.items?.[2]?.title || "Fast Delivery",
-      buttonText: news?.items?.[2]?.buttonText || "Order Now",
-    },
-    {
-      id: 4,
-      image: rehearsal,
-      title: news?.items?.[3]?.title || "Rehearsal",
-      buttonText: news?.items?.[3]?.buttonText || "Get Tickets",
-    },
-    {
-      id: 5,
-      image: audience,
-      title: news?.items?.[4]?.title || "Audience",
-      buttonText: news?.items?.[4]?.buttonText || "Join Event",
-    },
-  ];
+  const slidesData = useMemo(
+    () => [
+      {
+        id: 1,
+        image: ballerina,
+        title: news?.items?.[0]?.title || "Ballerina Performance",
+        buttonText: news?.items?.[0]?.buttonText || "Learn More",
+      },
+      {
+        id: 2,
+        image: girlSinging,
+        title: news?.items?.[1]?.title || "Girl Singing",
+        buttonText: news?.items?.[1]?.buttonText || "View Details",
+      },
+      {
+        id: 3,
+        image: delivery,
+        title: news?.items?.[2]?.title || "Fast Delivery",
+        buttonText: news?.items?.[2]?.buttonText || "Order Now",
+      },
+      {
+        id: 4,
+        image: rehearsal,
+        title: news?.items?.[3]?.title || "Rehearsal",
+        buttonText: news?.items?.[3]?.buttonText || "Get Tickets",
+      },
+      {
+        id: 5,
+        image: audience,
+        title: news?.items?.[4]?.title || "Audience",
+        buttonText: news?.items?.[4]?.buttonText || "Join Event",
+      },
+    ],
+    [news]
+  );
 
   const createInfiniteSlides = () => {
     const slides = [];
@@ -121,7 +124,7 @@ export default function NewsSectionInfinite() {
     } finally {
       setIsLoading(false);
     }
-  }, [slides.length, isLoading, hasMore, swiperInstance]);
+  }, [slides.length, isLoading, hasMore, swiperInstance, slidesData]);
 
 
   const handleSlideChange = useCallback((swiper) => {
@@ -153,7 +156,7 @@ export default function NewsSectionInfinite() {
   }, [swiperInstance, handleSlideChange]);
 
   return (
-    <section>
+    <section id='news'>
       <div className="bg-background container mx-auto px-4">
       
         <h3 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 lg:mb-16 text-gray-800 ">

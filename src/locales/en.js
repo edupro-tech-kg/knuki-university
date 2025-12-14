@@ -2,11 +2,16 @@ export default {
   locale: "en",
   code: "en",
   navLinks: [
-    { label: "Home", href: "#" },
-    { label: "Programs", href: "#programs" },
-    { label: "Events", href: "#events" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "#", to: "home" },
+    { label: "Administration", href: "#", to: "" },
+    { label: "Faculty", href: "#", to: "" },
+    { label: "Student", href: "#", to: "" },
+    { label: "Education", href: "#", to: "" },
+    { label: "Science", href: "#", to: "" },
+    { label: "News", href: "#", to: "news" },
+    { label: "Documents", href: "#", to: "" },
+    { label: "Applicant", href: "#", to: "" },
+    { label: "Contacts", href: "#contact", to: "contact" },
   ],
   header: {
     universityName:
@@ -19,6 +24,354 @@ export default {
   search: {
     placeholder: "Search",
     button: "Next",
+  },
+  facultiesData: {
+    studyFormsLabel: "STUDY FORM:",
+    durationLabel: "DURATION:",
+    notFoundTitle: "Faculty not found",
+    notFoundBack: "Back to home",
+    items: {
+      "kino-tele": {
+        title: "Faculty of Film and Television",
+        description:
+          "The Faculty of Film and Television is the youngest unit of KNUCA. Until 2014 it was part of the Theatre and Film faculty; in 2015–2018 it was named Telecommunication. In 2018 the Academic Council assigned its current name. It now delivers education and creative practice with seasoned film and TV professionals across three departments. Dean — Tabyryk Rishatovna Yusupova, a director and producer with many years of experience.",
+        studyForms: "full-time and part-time",
+        duration: "full-time (5 years) · part-time (6 years)",
+        programHeading: "Specialties",
+        programBlocks: [
+          "570015 — Directing of feature and television film",
+          "570027 — Literary creativity (screenwriting)",
+          "570005 — Film studies",
+          "570015 — Directing",
+          "570013 — Sound directing for film and TV",
+          "570005 — Cinematography",
+        ],
+        infoColumns: [
+          {
+            title: "Film Department",
+            items: [
+              "Head: Zhordarbek Aruunovich Turumbekov",
+              "Founded in 1993 by the Union of Cinematographers of the Kyrgyz Republic",
+              "Trains directors, screenwriters, film scholars",
+              "Graduates: feature/TV director (teacher); screenwriter/dramatist (teacher); film scholar (teacher)",
+            ],
+          },
+          {
+            title: "TV and Radio Directing Department",
+            items: [
+              "Head: Gulnara Damir kyzy",
+              "Founded in 2006; key contributor — People’s Artist of KR Prof. Moldoseit Mambetakunov",
+              "Trains directors, sound engineers, designers, editors",
+              "Qualifications: TV and radio director (teacher); film/TV sound director (teacher)",
+            ],
+          },
+          {
+            title: "Cinematography Department",
+            items: [
+              "Head: Burush Kurmanbekovna Kurmanbekova",
+              "First cinematography workshop opened in 1993",
+              "Independent department since 2014",
+              "Specialty: 570005 — Cinematography; qualification — film and TV cameraman, teacher",
+            ],
+          },
+        ],
+        stats: [
+          { label: "Total staff", value: 41 },
+          { label: "Full-time lecturers", value: 29 },
+          { label: "Adjunct lecturers", value: 12 },
+        ],
+        teachersTitle: "Faculty members",
+        textTabs: [
+          {
+            title: "Overview",
+            content:
+              "The Faculty of Film and Television unites three departments and trains specialists for the film and TV industry. Full-time and part-time study: 5 years (full-time) and 6 years (part-time). Dean — Tabyryk Rishatovna Yusupova.",
+          },
+          {
+            title: "Film Department",
+            content:
+              "Founded in 1993 at the initiative of the Union of Cinematographers of the Kyrgyz Republic. Founder — film director, Prof. Karidin Sartbaevich Akmataliev. Specialties: 570015 Directing of feature and television film; 570027 Literary creativity (screenwriting); 570005 Film studies. Qualifications: feature/TV director (teacher); screenwriter, dramatist (teacher); film scholar (teacher).",
+          },
+          {
+            title: "TV/Radio Directing",
+            content:
+              "Established in 2006. Major contribution by People’s Artist of KR Prof. Moldoseit Mambetakunov. Trains directors, sound engineers, designers, editors for all regions. Specialties: 570015 — Directing; 570013 — Sound directing for film and TV. Qualifications: TV/radio director (teacher); film/TV sound director (teacher).",
+          },
+          {
+            title: "Cinematography",
+            content:
+              "The first cinematography workshop opened in 1993. Since 2014 the department has operated independently. Specialty: 570005 — Cinematography. Qualification: film and TV cameraman, teacher. Graduates work in Kyrgyzstan and abroad.",
+          },
+        ],
+        teacherGroups: [
+          {
+            title: "Film Department",
+            teachers: [
+              {
+                name: "Zhordarbek Aruunovich Turumbekov",
+                position: "Head of Department",
+                description:
+                  "Founded in 1993 by the Union of Cinematographers of the Kyrgyz Republic. Trains directors, screenwriters, and film scholars in specialties 570015, 570027, 570005. Qualifications: feature/TV director (teacher); screenwriter/dramatist (teacher); film scholar (teacher).",
+              },
+            ],
+          },
+          {
+            title: "TV and Radio Directing Department",
+            teachers: [
+              {
+                name: "Gulnara Damir kyzy",
+                position: "Head of Department",
+                description:
+                  "Opened in 2006. Trains directors, sound engineers, designers, and editors. Specialties: 570015 — Directing; 570013 — Sound directing for film and TV. Qualifications: TV and radio director (teacher); film/TV sound director (teacher).",
+              },
+            ],
+          },
+          {
+            title: "Cinematography Department",
+            teachers: [
+              {
+                name: "Burush Kurmanbekovna Kurmanbekova",
+                position: "Head of Department",
+                description:
+                  "The first cinematography workshop opened in 1993. Independent since 2014. Specialty: 570005 — Cinematography. Qualification: film and TV cameraman, teacher.",
+              },
+            ],
+          },
+        ],
+      },
+      theater: {
+        title: "Faculty of Theatre",
+        description:
+          "The Faculty of Theatre is the only institution in Kyrgyzstan that trains higher-education specialists for all theatre and performance venues nationwide. Founded on December 1, 1993, it prepares highly qualified directors and actors under People’s Artists and Honored Cultural Figures of the Kyrgyz Republic.",
+        studyForms: "full-time and part-time",
+        duration: "full-time (5 years) · part-time (6 years)",
+        programHeading: "Specialties",
+        programBlocks: [
+          "Dramatic actor, teacher",
+          "Drama director, teacher",
+          "Puppet theatre actor, teacher",
+          "Theatre studies, teacher",
+        ],
+        stats: [
+          { label: "Full-time lecturers", value: 20 },
+          { label: "Adjunct lecturers", value: 31 },
+          { label: "People’s Writers of KR", value: 1 },
+          { label: "People’s Artists of KR", value: 4 },
+          { label: "Honored Artists of KR", value: 5 },
+          { label: "Honored Cultural Figures of KR", value: 3 },
+          { label: "Presidential Honorary Certificate", value: 1 },
+          { label: "Excellence in Culture", value: 7 },
+        ],
+        teachersTitle: "Faculty members",
+        textTabs: [
+          {
+            title: "Overview",
+            content:
+              "The Faculty of Theatre trains specialists for every theatre and performance institution in Kyrgyzstan. Founded on December 1, 1993. Study forms: full-time (5 years) and part-time (6 years). Dean — Chynasyl Urmatbekovich Urmatbekov (b. 1992, Bokonbayev village), graduate with honors in Dramatic Acting (2015).",
+          },
+          {
+            title: "Directing and Acting",
+            content:
+              "Since 1993 the department has trained future stage professionals. Students stage productions across genres, make films, and study Kyrgyz and world classics to develop thinking and creative imagination. Head — Zamirbek uulu Chyngyz (student 2015–2020, Dramatic actor/teacher). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+          },
+          {
+            title: "Stage Speech Department",
+            content:
+              "Created in 2023 to build stage speech skills. Teaches vocal technique, overcomes public speaking fear, and develops memory, diction, and communication. Head — Anara Kaparbekovna Solpueva (education: KUMOZH named after M. Kurenkeev; Theatre College at T. Abdumomunov KADT; KNUCA Theatre Faculty, specialty “Dramatic actor”).",
+          },
+        ],
+        teacherGroups: [
+          {
+            title: "Dean of Theatre Faculty",
+            teachers: [
+              {
+                name: "Chynasyl Urmatbekovich Urmatbekov",
+                position: "Dean",
+                description:
+                  "Born 1992 in Bokonbayev village, Ton district, Issyk-Kul. Graduated with honors in 2015 from the Theatre Faculty (specialty “Dramatic actor”). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+              },
+            ],
+          },
+          {
+            title: "Directing and Acting Department",
+            teachers: [
+              {
+                name: "Zamirbek uulu Chyngyz",
+                position: "Head of Department",
+                description:
+                  "Since 1993 the department has trained future stage professionals. Students stage productions of various genres and make films, studying Kyrgyz and world classics. Head — Zamirbek uulu Chyngyz (student 2015–2020, specialty “Dramatic actor, teacher”). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+              },
+            ],
+          },
+          {
+            title: "Stage Speech Department",
+            teachers: [
+              {
+                name: "Anara Kaparbekovna Solpueva",
+                position: "Head of Department",
+                description:
+                  "Established in 2023 to develop stage speech. Teaches speech technique, overcomes public speaking fear, and builds memory, diction, and communication skills. Education: KUMOZH named after M. Kurenkeev; Theatre College at T. Abdumomunov KADT; KNUCA Theatre Faculty (distance), specialty “Dramatic actor”.",
+              },
+            ],
+          },
+        ],
+      },
+      choreography: { title: "Choreography Faculty" },
+      "estrada-music": {
+        title: "Faculty of Pop and Music Education",
+        description:
+          "The Faculty of Pop and Music Education was separated from the former Arts Faculty by Academic Council decision on 03.03.2025. It employs People’s Artists of the Kyrgyz Republic, Honored Cultural Figures, PhDs in cultural studies, and practicing creative professionals.",
+        studyForms: "full-time and part-time",
+        duration: "full-time (5 years) · part-time (6 years)",
+        programHeading: "Specialties",
+        programBlocks: [
+          "Pop singer, instrumentalist",
+          "Music education (music teacher, bachelor)",
+          "Music theory disciplines",
+        ],
+        stats: [
+          { label: "Total faculty", value: 54 },
+          { label: "Full-time", value: 30 },
+          { label: "Adjunct", value: 24 },
+          { label: "Professors", value: 1 },
+          { label: "People’s Artists", value: 2 },
+          { label: "Honored Figures of KR", value: 4 },
+          { label: "Associate Professors", value: 7 },
+          { label: "Best cultural workers", value: 4 },
+        ],
+        teachersTitle: "Faculty members",
+        textTabs: [
+          {
+            title: "Overview",
+            content:
+              "The faculty trains pop performers, music educators, and theorists. Full-time and part-time study: 5 and 6 years respectively. Dean — Arstanbek uulu Asylbek (b. 1993, village of Saruu, Jeti-Oguz district, Issyk-Kul), graduate of KNUCA named after B. Beishenalieva.",
+          },
+          {
+            title: "Pop Department",
+            content:
+              "Specialty: 570029 Social and cultural pedagogical activity. Qualification: pop ensemble/collective leader, instructor. Head: Orozov Bekzat Esenbaevich. The base specialty “Leader of pop ensemble and orchestra” opened in 1993 (full-time and part-time). Trains vocalists and instrumentalists.",
+          },
+          {
+            title: "Music Education Department",
+            content:
+              "Specialty: 550600 Art education. Qualification: music teacher. Head: Orunbaeva Nargiza Temirbekovna. The department dates back to 1996; major contribution by Honored Cultural Figure of KR, Prof. O.A. Abdyladaev.",
+          },
+          {
+            title: "Music Theory Department",
+            content:
+              "Founded in September 1993 by Honored Cultural Figure of KR, professor and composer Roman Vladimirovich. Head of department — Mariam Kerimalievna Korpobaeva, PhD in Cultural Studies.",
+          },
+        ],
+        teacherGroups: [
+          {
+            title: "Dean",
+            teachers: [
+              {
+                name: "Arstanbek uulu Asylbek",
+                position: "Dean",
+                description:
+                  "Born 1993 in Saruu, Jeti-Oguz district, Issyk-Kul region. Graduate of KNUCA named after B. Beishenalieva.",
+              },
+            ],
+          },
+          {
+            title: "Pop Department",
+            teachers: [
+              {
+                name: "Orozov Bekzat Esenbaevich",
+                position: "Head of Department",
+                description:
+                  "Specialty: 570029 Social and cultural pedagogical activity. Qualification: leader of a pop ensemble, instructor. Base specialty opened in 1993. Trains vocalists and instrumentalists.",
+              },
+            ],
+          },
+          {
+            title: "Music Education Department",
+            teachers: [
+              {
+                name: "Orunbaeva Nargiza Temirbekovna",
+                position: "Head of Department",
+                description:
+                  "Specialty: 550600 Art education. Qualification: music teacher. Opened in 1996; key contributor — Honored Cultural Figure of KR, Prof. O.A. Abdyladaev.",
+              },
+            ],
+          },
+          {
+            title: "Music Theory Department",
+            teachers: [
+              {
+                name: "Mariam Kerimalievna Korpobaeva",
+                position: "Head of Department, PhD (Cultural Studies)",
+                description:
+                  "Founded in September 1993 by Honored Cultural Figure of KR, professor and composer Roman Vladimirovich. Prepares specialists in music theory disciplines.",
+              },
+            ],
+          },
+        ],
+      },
+      "folk-music": {
+        title: "Faculty of Folk Music",
+        description:
+          "The Faculty of Folk Music trains specialists in Kyrgyz traditional music: instruments, folk vocals, and folklore. Founded in 1967 to study, preserve, and develop national musical heritage. Taught by renowned musicologists, folklorists, conductors, and performers.",
+        studyForms: "full-time and part-time",
+        duration: "full-time (5 years) · part-time (6 years)",
+        programHeading: "Programs",
+        programBlocks: ["Orchestral conducting", "Choral conducting", "Traditional music and folklore"],
+        stats: [
+          { label: "Full-time lecturers", value: 13 },
+          { label: "Adjunct lecturers", value: 44 },
+          { label: "Honored Cultural Figures of KR", value: 1 },
+          { label: "Honored Artists of KR", value: 4 },
+          { label: "Presidential Award laureates", value: 1 },
+          { label: "Best cultural workers", value: 12 },
+          { label: "Acting associate professors", value: 12 },
+          { label: "Associate professors", value: 2 },
+          { label: "Doctor of Science, Professor", value: 1 },
+          { label: "Candidates of Science", value: 1 },
+        ],
+        teachersTitle: "Faculty members",
+        textTabs: [
+          {
+            title: "Overview",
+            content:
+              "The faculty was founded in 1967 to study, preserve, and develop Kyrgyz folk music. Full-time and part-time study: 5 and 6 years respectively. Courses are led by honored artists of Kyrgyzstan and highly qualified specialists.",
+          },
+        ],
+      },
+      postgraduate: {
+        title: "Graduate and Postgraduate Studies",
+        description:
+          "The Graduate and Postgraduate Department trains highly qualified research and teaching staff. Established on September 2, 2024 (Rector’s order No.156-kb of August 30, 2024; license approval from the Ministry of Education and Science of the Kyrgyz Republic). Its goal is to organize training, drive research, and graduate competitive specialists.",
+        studyForms: "full-time and part-time",
+        duration: "Master’s: 2 years (full-time), 2.5 years (part-time) · PhD track: 3 years (full-time), 4 years (part-time)",
+        programHeading: "Master’s programs",
+        programBlocks: [
+          "550600 — Art Education: Music Education",
+          "570300 — Theatre Arts: Acting and Directing",
+          "570300 — Theatre Arts: Theatre Studies and Dramaturgy",
+          "570200 — Music Arts: Instrumental Performance",
+          "570200 — Music Arts: Ethnomusicology",
+          "570200 — Music Arts: Vocal Performance",
+        ],
+        programHeadingSecondary: "Postgraduate programs",
+        programBlocksSecondary: [
+          "17.00.02 — Music Arts",
+          "24.00.01 — History and Theory of Culture",
+        ],
+        textTabs: [
+          {
+            title: "Master’s",
+            content:
+              "The Master’s degree is a final academic stage focused on research and teaching. Goal: prepare culture and arts specialists with research, creative, and analytical skills. Requirements: follow the individual study plan, conduct research, pass teaching and research practicums, defend a Master’s thesis. Admission follows MoE regulations; bachelor’s degree holders with State Attestation Commission recommendation are admitted without competition (valid 3 years), others compete. Documents: application to the rector, ID copy, notarized diploma copy, eight 3×4 photos.",
+          },
+          {
+            title: "Postgraduate",
+            content:
+              "The postgraduate (PhD track) is the core pathway for training high-level research and teaching staff. Objectives: plan and organize training, monitor individual plans, coordinate with departments, and foster regional/international cooperation. Admission: citizens with specialist/Master’s degrees on a competitive basis; foreign applicants with recognized equivalency. Those who already completed a full postgraduate course cannot reapply. Applicants interview with a prospective supervisor. Documents: application to the rector, notarized specialist/Master’s diploma, list of publications (if any), work record copy, State Attestation recommendations (for honors), passport copy, personal record, three 3×4 photos, and a research abstract in the chosen specialty.",
+          },
+        ],
+      },
+    },
   },
   hero: {
     title1: "ART",
@@ -67,7 +420,7 @@ export default {
       },
       {
         id: 6,
-        title: "Faculty of Choreography and Cultural Activity",
+        title: "Postgraduate and Graduate Studies",
       },
     ],
   },
@@ -237,9 +590,9 @@ export default {
     disclaimer: "By submitting you agree to personal data processing.",
   },
   footer: {
-    labels: { 
-      address: "ADDRESS", 
-      links: "QUICK LINKS" 
+    labels: {
+      address: "ADDRESS",
+      links: "QUICK LINKS"
     },
     addressItems: [
       "720005 Bishkek",
@@ -287,8 +640,12 @@ export default {
       name: "Full name",
       namePlaceholder: "Balanchaev Balancha",
       phone: "Phone",
-      phonePlaceholder: "+996 ",
+      phonePlaceholder: "+996 000 000 000",
       faculty: "Faculty ",
+      note: {
+        label: "Note",
+        placeholder: "Leave a note",
+      },
       programs: {
         program1: "Music Arts",
         program2: "Theatre & Film",
@@ -299,12 +656,64 @@ export default {
       submit: "Submit application",
     },
   },
+  historyPage: {
+    title: "HISTORY",
+    timeline: [{
+      year: 1967,
+      title: "General information",
+      text: "The Kyrgyz State University of Culture and Arts named after B.Beyschenalieva became the first musical and creative educational institution in the republic, serving as a leading center for training highly qualified and well-rounded specialists for cultural and art institutions. It has a legal entity certificate registered with the Ministry of Justice of the Kyrgyz Republic (registration №13310-3301-U-e, OKPO code 02246840, series 0065533 GRP). State property, organizational-legal form — institution, address: 720005, Bishkek, ZhanTosheva St., 113.",
+      // img: Dansers,
+    },
+    {
+      year: 1974,
+      title: "In 1974, the institution was named after the outstanding Kyrgyz ballerina, People’s Artist of the USSR B.Beyschenalieva. The history of the Kyrgyz State University of Culture and Arts began with the Decree of the Council of Ministers of the Kyrgyz SSR dated August 12, 1967, No. 482 “On the Establishment of the Kyrgyz State Institute of Arts.”",
+      text: "The development of the institute was greatly influenced by the work of the prominent state figure, former Minister of Culture of the republic Külüypa Konduchalova. People’s Artist of the USSR B.Beyschenalieva was one of the leading ballet masters. Her creativity reflects the history of the formation of ballet art in Kyrgyzstan. She was one of the first dancers to lay the foundations of national choreography and largely determined the development of Kyrgyz classical ballet. The public recognizes B.Beyschenalieva’s art. Her path to greatness was through the most exquisite images created on the stage of Kyrgyz ballet, in a word, through a lifetime of diligent and passionate work dedicated to the most beautiful of arts — ballet art.",
+      // img: Dansers,
+    },
+    {
+      year: 1993,
+      title: "1993-year was a turning point for the university.",
+      text: "The university trained over 5,000 highly qualified specialists for Kyrgyzstan’s culture and arts sector. Among them were People’s Artists of the USSR and the Kyrgyz Republic, laureates of state awards of the USSR and the Kyrgyz Republic. Prominent figures in arts and culture of the republic also participated.Some graduates received high honors — Hero of Socialist Labor, the “Manas” Order, and others. Among the graduates are mid-level managers leading most cultural and art institutions in the republic, as well as theater and entertainment establishments.1993 was a turning point for the university: it was split into two institutions — the Kyrgyz State Institute of Arts named after B.Beyschenalieva and the Kyrgyz State Conservatory. Two KGI faculties became the foundation of the conservatory, and new faculties and specialties appeared, such as manager of socio-cultural events and head of a folk-ethnographic ensemble. The Choreographic Arts Department was opened.The institute began to train actors and directors of drama and cinematography, film directors, cinema economists, television and cinematography specialists, sound engineers, screenwriters, theater professionals, and later — television and radio directors."
+      // img: Dansers,
+    },
+    {
+      year: 1993,
+      title: "Kyrgyz State University of Culture and Arts named after B. Beishenalieva",
+      text: "From the very first days of the institution, prominent stars of Kyrgyz culture worked there. Among them were People’s Artist of the Kyrgyz Republic, laureate of the Toktogul State Prize, Professor M.Abdraev, head of the Department of Solo Singing and Opera Training, and People’s Artist of the USSR, Professor S.Kiizbaeva. Professors T.B. Musulmankulov, People’s Artist of the Kyrgyz SSR N. Davlesov, People’s Artists of the Kyrgyz Republic, USSR State Prize laureate U.O. Sarbagishev, People’s Artists of the Kyrgyz Republic S. Yusupov, K.I. Aliev, People’s Artists of the Kyrgyz Republic A.A. Asakeev, T.M. Murataliev, honored cultural figures, honored artists of the Kyrgyz Republic O. Abdyladaev, A. Ukurchinov, B. Mambetaliev, directors J. Moldobaev, E. Toktogulov, J. Abdyladaev — all these outstanding figures laid the foundation of the university and made a tremendous contribution to its continued development.By the Decree of the Government of the Kyrgyz Republic №470 dated August 28, 2013, the institute was transformed into the Kyrgyz State University of Culture and Arts named after B.Beyschenalieva to strengthen its material and technical base and improve the quality of specialist training for culture, arts, cinematography, and media institutions.",
+      // img: Dansers,
+    },
+    {
+      year: 2025,
+      title: "According to Presidential Decree of the Kyrgyz Republic S.N. Zhaparov №96 dated March 22, 2025, the KSCAU named after B.Beyschenalieva was granted national status. From now on, it is called the Kyrgyz National University of Culture and Arts named after B.Beyschenalieva.",
+      text: "Granting the “national” status to the Kyrgyz State University of Culture and Arts named after B.Beyschenalieva was in recognition of its significant contribution to the development and improvement of higher professional education in the field of culture and arts, guided by Article 71 of the Constitution of the Kyrgyz Republic: 1 Grant the Kyrgyz State University of Culture and Arts named after B.Beyschenalieva the status of “national” and henceforth call it “Kyrgyz National University of Culture and Arts named after B.Beyschenalieva.” 2 The Cabinet of Ministers of the Kyrgyz Republic shall align its decisions with this Decree. 3 Control over the execution of this Decree shall be entrusted to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Kyrgyz Republic under the Administration of the President. 4 This Decree shall enter into force seven days after its official publication.",
+      // img: Dansers,
+    },]
+  },
   history: {
     title: "HISTORY",
-    content: `General information. The Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has become the leading center of the republic for training highly qualified and comprehensively educated specialists for cultural and art institutions. It is the first musical and creative educational institution in the republic. Has a certificate of a legal entity registered with the Ministry of Justice of the Kyrgyz Republic (registration No. 13310-3301-U-e, OKPO code 02246840, series 0065533 GRP). `,
-    readMore: "Read more",
-    readLess: "Collapse",
-    imageAlt: "Traditional dancers",
+    moreButton: "Learn More",
+    SecTimeline: [
+      {
+        year: 1967,
+        text: "By the Decree of the Council of Ministers of the Kyrgyz SSR dated August 12, 1967, No. 771, the educational institution was established as the Kyrgyz State Institute of Arts.",
+      },
+      {
+        year: 1974,
+        text: "By the Decree No. 21 dated January 28, 1974, the educational institution was named after the outstanding Kyrgyz ballerina, People’s Artist of the USSR B.Beyschenalieva.",
+      },
+      {
+        year: 1993,
+        text: "In 1993, the Kyrgyz State Institute of Arts was split into two educational institutions — the Kyrgyz State Institute of Arts named after B.Beyschenalieva and the Kyrgyz State Conservatory named after K.Moldobasanov.",
+      },
+      {
+        year: 2013,
+        text: "By the Decree of the Government of the Kyrgyz Republic №470 dated August 28, 2013, the Kyrgyz State Institute of Arts named after B.Beyschenalieva was transformed into the Kyrgyz State University of Culture and Arts.",
+      },
+      {
+        year: 2025,
+        text: "According to Presidential Decree of the Kyrgyz Republic S.N. Zhaparov №96 dated March 22, 2025, the Kyrgyz State University of Culture and Arts named after B.Beyschenalieva was granted national status.",
+      }
+    ]
   },
   mission: {
     title: "The University's mission is culture and art",
@@ -337,4 +746,146 @@ export default {
   dayHeaderFormat: {
     weekday: "short",
   },
+  newsPage: {
+    news: [
+      {
+        image: "/news.png",
+        title: "A delegation from the Arctic State Institute of Culture and Arts of Yakutia arrived at KUIMIU.",
+        content: "The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.",
+      }
+    ]
+  },
+  studentStructure: {
+    title: "Student self-government structure",
+    content: "The student self-governance structure at the B. Beishenalieva Kyrgyz National University of Culture and Arts is the Student Council. It was established based on the Decree of the President of the Kyrgyz Republic “On the Development of State Youth Policy of the Kyrgyz Republic,” as well as in accordance with the laws of the Kyrgyz Republic “On Education” and “On the Fundamentals of State Youth Policy,” the charter of KNKUCA, the education concept, and other regulatory legal acts, the Resolution of the Government of the Kyrgyz Republic, and Article 79 of the Constitution of the Kyrgyz Republic, guided by the Youth Policy Concept for 2020–2030. The Student Council is a structural unit within the university that implements state youth policy within its competence. In December 2023, a special regulation regarding the Chairperson of the Student Council and the Student Ombudsman was developed, and the structure’s leaders were elected. The structure’s leaders are elected annually and rotate."
+  },
+  studentsInfo: [
+    {
+      image: "/Nurai.png",
+      name: "Orozova Nurai",
+      content: "Chairperson of the Girls' Council"
+    },
+    {
+      image: "/Dastan.png",
+      name: "Janbolotov Dastan",
+      content: "Student Council Chairman"
+    },
+    {
+      image: " /Aktilek.png",
+      name: "Rahmatilla uulu Aktilek",
+      content: "Student ombudsman"
+    },
+    {
+      image: "/Nestan.png",
+      name: "Orozbekova Nestan",
+      content: "Deputy of the Student Council for Academic, Cultural, and Organizational Affairs"
+    },
+    {
+      image: "/Amina.png",
+      name: "Sheishenalieva Amina",
+      content: "Deputy Chairman of the Student Council for External Relations"
+    },
+    {
+      image: "/Askat.png",
+      name: "Bolotbek uulu Askat",
+      content: "Deputy Chairman of the Student Council for Health and Sports"
+    },
+    {
+      image: "/Venera.png",
+      name: "Ashyrkunova Venera",
+      content: "Deputy Chairman of the Student Council for Dormitory"
+    }
+  ],
+  chairmanCard: {
+    title: "Faculty Student Council Chairmen",
+    cards: [
+      {
+        id: 1,
+        name: "Orozobekova Nestan",
+        content: "Chairman of the Student Council of the Faculty of Choreography and Cultural Activities"
+      }, {
+        id: 2,
+        name: "Sheishenalieva Amina",
+        content: "Chairman of the Student Council of the Faculty of Arts"
+      }, {
+        id: 3,
+        name: "Bolotbek uulu Askat",
+        content: "Chairman of the Student Council of the Faculty of Theatre"
+      }, {
+        id: 4,
+        name: "Ashirakunova Venera",
+        content: "Chairman of the Film and Television Student Council “Altyn Nur” Folk Instrument Ensemble “Sonu” Pop Group “Asman Legenda” Shadow Theater"
+      },
+    ]
+  },
+  libraryDescription: {
+    title: "Scientific Library of KNUCA named after B. Beishenalieva",
+    content: "The Scientific Library of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva was established in 1967 on the basis of the Kyrgyz State Institute of Arts. As a structural unit of the university, the library includes scientific, educational-support, informational, and educational activities. The library serves as a spiritual and intellectual communication center for students and university staff, providing scientific-theoretical (according to the university profile), educational-methodological, musical notation, socio-political, domestic and foreign fiction literature, and contributes to the training of highly qualified specialists and the conduct of students' scientific research.",
+    cards: [
+      {
+        id: 1,
+        name: "Library Collection",
+        description: "Today, the library's book collection consists of 58,978 items. The collection includes scientific, educational, and fiction literature in Kyrgyz and Russian across all fields, including publications on the arts, books on cinema and theater, foreign literature and publications, musical literature, unique sheet music for musical instruments, abstracts, encyclopedic and reference editions."
+      },
+      {
+        id: 2,
+        name: "Library Departments",
+        description: "The library consists of a lending department for borrowing books for a specified period, a reading room for on-site use of materials, and a bibliographic department. The reading room regularly hosts exhibitions of newly acquired literature, as well as displays dedicated to notable and significant dates."
+      }
+    ]
+  },
+  libraryStructure: {
+    title: "Structure of Our Library:",
+    list: [
+      {
+        id: 1,
+        content: "Department of acquisition and processing of literature and catalogs."
+      },
+      {
+        id: 2,
+        content: "Storage and circulation of the book collection."
+      },
+      {
+        id: 3,
+        content: "— University reading room."
+      },
+      {
+        id: 4,
+        content: "— Reading room in the second building (film studio)."
+      },
+      {
+        id: 5,
+        content: "— Sheet music lending department and a special musical literature lending section."
+      },
+      {
+        id: 6,
+        content: "— General lending department."
+      },
+      {
+        id: 7,
+        content: "— Reading room in the dormitory."
+      }
+    ]
+  },
+  libraryTeam: {
+    title: "The library staff consists of 5 people:",
+    personality: [
+      {
+        name: "Isakova A.Zh.",
+        content: "librarian of the sheet music department;"
+      },
+      {
+        name: "Surapbaeva G.R.",
+        content: "librarian of the dormitory reading room."
+      },
+      {
+        name: "Belekova G.Z., Samieva Sh.T.",
+        content: "librarians of the fiction literature department;"
+      },
+      {
+        name: "Baichubakova U.K.",
+        content: "librarian of the film studio reading room."
+      }
+    ]
+  }
 };

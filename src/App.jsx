@@ -2,7 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
+import HistoryPage from "./pages/HistoryPage";
 import FacultyPage from "./pages/FacultyPage";
+import NewsPage from "./pages/NewsPage";
+import StudentsLife from "./pages/StudentsLife";
+import LibraryPage from "./pages/LibraryPage";
 
 function App() {
   return (
@@ -12,7 +16,11 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/history" element={<HistoryPage />} />
             <Route path="/faculty/:slug" element={<FacultyPage />} />
+            <Route path="/news" element={<NewsPage />} />
+            <Route path="/studentsLife" element={<StudentsLife />} />
+            <Route path="/library" element={<LibraryPage />} />
           </Routes>
         </main>
         <Footer />

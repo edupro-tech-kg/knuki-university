@@ -15,33 +15,35 @@ function QuickLinks() {
 
       <div
         className="
-          flex gap-6 overflow-x-auto px-4 md:px-0
-          md:grid md:grid-cols-2 md:gap-6 md:overflow-visible
-          lg:grid lg:grid-cols-4 lg:gap-8
-          max-w-[1440px] mx-auto md:max-w-3xl lg:max-w-[1440px]
+          flex gap-4 overflow-x-auto px-4 md:px-6
+          md:grid md:grid-cols-2 md:gap-4 md:overflow-visible
+          lg:grid lg:grid-cols-4 lg:gap-4
+          max-w-[1440px] mx-auto
         "
       >
         {quickLinks.cards.map((item) => (
           <div
             key={item.id}
             className="
-              border border-black p-6 w-64 md:w-[280px] lg:w-[299px] h-[400px] md:h-[380px] lg:h-[432px] flex-shrink-0
+              border border-black p-6 min-w-[280px] md:min-w-0 md:w-full
               flex flex-col justify-between items-center text-center
-              hover:shadow-lg transition-shadow bg-white
+              hover:shadow-lg transition-shadow duration-300 bg-white
+              h-[400px] md:h-[380px] lg:h-[432px]
               md:justify-self-center
             "
           >
             <div className="flex justify-between w-full mt-[-12px]">
-              <img src={Ornament} alt="" className="w-16 h-16 -ml-4" />
-              <img src={Ornament} alt="" className="w-16 h-16 rotate-90 -mr-4" />
+              <img src={Ornament} alt="" className="w-14 h-14 md:w-16 md:h-16 -ml-4" />
+              <img src={Ornament} alt="" className="w-14 h-14 md:w-16 md:h-16 rotate-90 -mr-4" />
             </div>
-            <p className="text-lg font-semibold text-[#751715] min-h-[70px] flex items-center justify-center">
+
+            <p className="text-lg font-semibold text-[#751715] min-h-[70px] flex items-center justify-center px-2">
               {item.title}
             </p>
 
             <Button
-              variant="primaryIcon"
-              className="mt-6 w-full bg-white !text-black !border-black hover:bg-[#751715] hover:!text-black transition-colors"
+              variant="secondary"
+              className="mt-6 w-full max-w-[200px] md:max-w-[240px] hover:bg-[#751715] active:scale-95 rounded-[90px]"
             >
               {quickLinks.button}
             </Button>

@@ -403,6 +403,51 @@ export const FACULTIES = [
   },
 ];
 
-export function getFacultyData(slug) {
-  return FACULTIES.find((f) => f.slug === slug);
+function mergeTeachers(base = [], override = []) {
+  return override.map((teacher, idx) => {
+    const baseTeacher = base[idx] || {};
+    return {
+      ...baseTeacher,
+      ...teacher,
+      photo: teacher.photo ?? baseTeacher.photo,
+    };
+  });
+}
+
+function mergeTeacherGroups(base = [], override = []) {
+  return override.map((group, idx) => {
+    const baseGroup = base[idx] || {};
+    const hasOverrideTeachers = Object.prototype.hasOwnProperty.call(group, "teachers");
+    const teachers = hasOverrideTeachers
+      ? mergeTeachers(baseGroup.teachers, group.teachers)
+      : baseGroup.teachers;
+
+    return {
+      ...baseGroup,
+      ...group,
+      teachers,
+    };
+  });
+}
+
+export function getFacultyData(slug, overridesBySlug = {}) {
+  const base = FACULTIES.find((f) => f.slug === slug);
+  if (!base) return undefined;
+
+  const overrides = overridesBySlug[slug] || {};
+  const hasTeacherGroups = Object.prototype.hasOwnProperty.call(overrides, "teacherGroups");
+
+  return {
+    ...base,
+    ...overrides,
+    stats: overrides.stats ?? base.stats,
+    infoColumns: overrides.infoColumns ?? base.infoColumns,
+    programBlocks: overrides.programBlocks ?? base.programBlocks,
+    programBlocksSecondary: overrides.programBlocksSecondary ?? base.programBlocksSecondary,
+    teacherGroups: hasTeacherGroups
+      ? mergeTeacherGroups(base.teacherGroups, overrides.teacherGroups || [])
+      : base.teacherGroups,
+    documents: overrides.documents ?? base.documents,
+    textTabs: overrides.textTabs ?? base.textTabs,
+  };
 }
