@@ -1,16 +1,15 @@
-import React from 'react'
-import LibraryDescription from '../components/LibraryDescription'
-import LibraryStructure from '../components/LibraryStructure'
-import LibraryTeam from '../components/LIbraryTeam'
+import LibraryDescription from "../components/LibraryDescription";
+import LibraryStructure from "../components/LibraryStructure";
+import LibraryTeam from "../components/LibraryTeam";
 
 function LibraryPage() {
-    return (
-        <div>
-            <LibraryDescription />
-            <LibraryStructure />
-            <LibraryTeam />
-        </div>
-    )
+  return (
+    <div>
+      <LibraryDescription />
+      <LibraryStructure />
+      <LibraryTeam />
+    </div>
+  );
 }
 
-export default LibraryPage
+export default LibraryPage;
