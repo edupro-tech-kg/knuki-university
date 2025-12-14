@@ -398,7 +398,7 @@ export default {
   dayHeaderFormat: {
     weekday: "short",
   },
-    newsPage: {
+  newsPage: {
     news: [
       {
         image: "/news.png",
@@ -469,5 +469,76 @@ export default {
         content: "Chairman of the Film and Television Student Council “Altyn Nur” Folk Instrument Ensemble “Sonu” Pop Group “Asman Legenda” Shadow Theater"
       },
     ]
+  },
+  libraryDescription: {
+    title: "Scientific Library of KNUCA named after B. Beishenalieva",
+    content: "The Scientific Library of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva was established in 1967 on the basis of the Kyrgyz State Institute of Arts. As a structural unit of the university, the library includes scientific, educational-support, informational, and educational activities. The library serves as a spiritual and intellectual communication center for students and university staff, providing scientific-theoretical (according to the university profile), educational-methodological, musical notation, socio-political, domestic and foreign fiction literature, and contributes to the training of highly qualified specialists and the conduct of students' scientific research.",
+    cards: [
+      {
+        id: 1,
+        name: "Library Collection",
+        description: "Today, the library's book collection consists of 58,978 items. The collection includes scientific, educational, and fiction literature in Kyrgyz and Russian across all fields, including publications on the arts, books on cinema and theater, foreign literature and publications, musical literature, unique sheet music for musical instruments, abstracts, encyclopedic and reference editions."
+      },
+      {
+        id: 2,
+        name: "Library Departments",
+        description: "The library consists of a lending department for borrowing books for a specified period, a reading room for on-site use of materials, and a bibliographic department. The reading room regularly hosts exhibitions of newly acquired literature, as well as displays dedicated to notable and significant dates."
+      }
+    ]
+  },
+  libraryStructure: {
+    title: "Structure of Our Library:",
+    list: [
+      {
+        id: 1,
+        content: "Department of acquisition and processing of literature and catalogs."
+      },
+      {
+        id: 2,
+        content: "Storage and circulation of the book collection."
+      },
+      {
+        id: 3,
+        content: "— University reading room."
+      },
+      {
+        id: 4,
+        content: "— Reading room in the second building (film studio)."
+      },
+      {
+        id: 5,
+        content: "— Sheet music lending department and a special musical literature lending section."
+      },
+      {
+        id: 6,
+        content: "— General lending department."
+      },
+      {
+        id: 7,
+        content: "— Reading room in the dormitory."
+      }
+    ]
+  },
+  libraryTeam: {
+    title: "The library staff consists of 5 people:",
+    personality: [
+      {
+        name: "Isakova A.Zh.",
+        content: "librarian of the sheet music department;"
+      },
+      {
+        name: "Surapbaeva G.R.",
+        content: "librarian of the dormitory reading room."
+      },
+      {
+        name: "Belekova G.Z., Samieva Sh.T.",
+        content: "librarians of the fiction literature department;"
+      },
+      {
+        name: "Baichubakova U.K.",
+        content: "librarian of the film studio reading room."
+      }
+    ]
   }
+
 };
