@@ -1,4 +1,4 @@
-import statsBg from "../../assets/images/mission2image.png";
+import statsBg from "../../assets/images/statsBg.png";
 import SectionHeading from "./SectionHeading";
 
 export default function FacultyStats({ stats, heading }) {
@@ -17,10 +17,23 @@ export default function FacultyStats({ stats, heading }) {
               {stats.map((stat, idx) => (
                 <div
                   key={idx}
-                  className="h-28 w-28 rounded-full border-2 border-white flex flex-col items-center justify-center text-white bg-black/30"
+                  className="
+                    h-28 w-28 md:h-32 md:w-32 lg:h-36 lg:w-36
+                    rounded-full border-2 border-white 
+                    flex flex-col items-center justify-center
+                    text-white bg-black/30
+                  "
                 >
-                  <span className="text-2xl font-semibold leading-none">{stat.value}</span>
-                  <span className="text-[11px] text-center px-3 mt-2 leading-tight">{stat.label}</span>
+                  <div className="flex-1 flex items-center justify-center min-h-[50%]">
+                    <span className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-none">
+                      {stat.value}
+                    </span>
+                  </div>
+                  <div className="flex-1 flex items-start justify-center min-h-[50%] px-2">
+                    <span className="text-[11px] sm:text-xs md:text-sm text-center leading-tight">
+                      {stat.label}
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>
