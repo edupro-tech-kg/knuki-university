@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 export default function FacultyHero({
   title,
   description,
@@ -6,6 +8,8 @@ export default function FacultyHero({
   studyForms,
   duration,
 }) {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-white">
       <div className="max-w-[1200px] mx-auto px-4 mt-6 md:mt-36">
@@ -40,7 +44,7 @@ export default function FacultyHero({
             {studyForms && (
               <div className="mt-6 space-y-2 text-sm md:text-base">
                 <p className="font-extrabold uppercase tracking-tight">
-                  ФАКУЛЬТЕТТИН ОКУУ ФОРМАСЫ:
+                  {t("facultiesData.studyFormsLabel")}
                 </p>
                 <p className="text-white/90">{studyForms}</p>
               </div>
@@ -48,7 +52,9 @@ export default function FacultyHero({
 
             {duration && (
               <div className="mt-4 space-y-2 text-sm md:text-base">
-                <p className="font-extrabold uppercase tracking-tight">ОКУУ МӨӨНӨТҮ:</p>
+                <p className="font-extrabold uppercase tracking-tight">
+                  {t("facultiesData.durationLabel")}
+                </p>
                 <p className="text-white/90">{duration}</p>
               </div>
             )}

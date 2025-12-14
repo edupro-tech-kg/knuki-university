@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useMemo } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import ButtonPrimary from "../components/UI/Button";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import music from "../assets/svg/music.svg";
@@ -8,12 +9,12 @@ import projector from "../assets/svg/projector.svg";
 import ballerina from "../assets/svg/ballerina.svg";
 
 const directions = [
-  { icon: music, id: 0 },
-  { icon: mask, id: 1 },
-  { icon: projector, id: 2 },
-  { icon: ballerina, id: 3 },
-  { icon: music, id: 4 },
-  { icon: mask, id: 5 },
+  { icon: music, slug: "estrada-music" },
+  { icon: mask, slug: "theater" },
+  { icon: projector, slug: "kino-tele" },
+  { icon: ballerina, slug: "choreography" },
+  { icon: music, slug: "folk-music" },
+  { icon: mask, slug: "postgraduate" },
 ];
 
 export default function ProgramsSection() {
@@ -70,6 +71,15 @@ export default function ProgramsSection() {
     }
   };
 
+  const facultiesTitles = useMemo(
+    () => t("facultiesData.items", { returnObjects: true }) || {},
+    [t]
+  );
+  const programList = useMemo(() => t("programs.list", { returnObjects: true }) || [], [t]);
+
+  const getTitle = (slug, index) =>
+    facultiesTitles?.[slug]?.title || programList?.[index]?.title || slug;
+
   return (
     <section
       id="programs"
@@ -91,8 +101,9 @@ export default function ProgramsSection() {
   `}
         >
           {directions.map((dir, index) => (
-            <div
-              key={index}
+            <Link
+              to={`/faculty/${dir.slug}`}
+              key={dir.slug}
               className={`
                 group 
                 ${!isDesktop ? "flex-shrink-0 w-[calc(100vw-80px)] snap-center" : ""}
@@ -108,7 +119,7 @@ export default function ProgramsSection() {
                 <div className="text-sm text-stroke mb-2">{t("programs.faculty")}</div>
 
                 <h2 className="font-sans text-2xl font-medium text-white mb-4">
-                  {t(`programs.list.${dir.id % 4}.title`)}
+                  {getTitle(dir.slug, index)}
                 </h2>
 
                 <div className="flex-grow"></div>
@@ -123,7 +134,7 @@ export default function ProgramsSection() {
                   <ButtonPrimary variant="primaryIcon">{t("programs.buttonText")}</ButtonPrimary>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
