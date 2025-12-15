@@ -7,7 +7,7 @@ import FacultyPage from "./pages/FacultyPage";
 import NewsPage from "./pages/NewsPage";
 import StudentsLife from "./pages/StudentsLife";
 import LibraryPage from "./pages/LibraryPage";
-
+import ManagementPage from './pages/ManagementPage'
 function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ function App() {
             <Route path="/news" element={<NewsPage />} />
             <Route path="/studentsLife" element={<StudentsLife />} />
             <Route path="/library" element={<LibraryPage />} />
+            <Route path="/management" element={<ManagementPage />} />
           </Routes>
         </main>
         <Footer />

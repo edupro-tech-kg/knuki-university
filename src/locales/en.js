@@ -887,5 +887,80 @@ export default {
         content: "librarian of the film studio reading room."
       }
     ]
+  },
+  managementInfo: {
+    title: "Management",
+    btn: "More",
+    person: [
+      {
+        name: "Koldoshov Tumonbay Rakhmanovich",
+        post: "Rector"
+      },
+      {
+        name: "Dzhakuypov Kubatbek Kulanchievich",
+        post: "Vice Rector for Academic Affairs"
+      },
+      {
+        name: "Imankulova Saadat Esenbaevna",
+        post: "Vice Rector for Research and International Relations"
+      },
+      {
+        name: "Turdaliev Ulanbek Matkarimovich",
+        post: "Vice Rector for State Language and Educational Work"
+      },
+      {
+        name: "Imanaliev Maksat Baktybekovich",
+        post: "Vice Rector for Administrative and Economic Affairs"
+      },
+      {
+        name: "Baktybekova Begai Baktybekovna",
+        post: "Head of Human Resources Department"
+      },
+      {
+        name: "Kyshtobaev Maksat Cherikbaevich",
+        post: "Chairman of the Trade Union Committee"
+      },
+      {
+        name: "Almanbet kyzy Zhanyl",
+        post: "Head of Academic Office"
+      },
+      {
+        name: "Ergeshova Kumarkan Tokoevna",
+        post: "Head of Practice and Career Department"
+      },
+      {
+        name: "Ybyraikunova Nazira Kubanychbekovna",
+        post: "Chief Accountant"
+      },
+      {
+        name: "Marazhapova Nurzhan Kenzhekulovna",
+        post: "Head of Postgraduate and Master's Department"
+      },
+      {
+        name: "Arstanbek uulu Asylbek",
+        post: "Dean of the Faculty of Pop and Music Education"
+      },
+      {
+        name: "Abdigaparov Nurtilik Abdigaparovich",
+        post: "Dean of the Faculty of Folk Music"
+      },
+      {
+        name: "Toktogulov Bakytbek Toktogulovich",
+        post: "Dean of the Faculty of Theatre"
+      },
+      {
+        name: "Sydykov Erkinbek Sydykovich",
+        post: "Dean of the Faculty of Cinema and Television"
+      },
+      {
+        name: "Asankulova Aigerim Toktobekovna",
+        post: "Dean of the Faculty of Choreography and Cultural Activities"
+      },
+      {
+        name: "Samieva Shairgul Turatovna",
+        post: "Head Librarian"
+      }
+    ]
   }
+
 };
