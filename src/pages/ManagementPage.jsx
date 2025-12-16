@@ -1,25 +1,21 @@
 import { useTranslation } from "react-i18next";
 import { useRef, useEffect, useState } from "react";
-import ManagementCard from '../components/ManagementCard';
-import ManagementModal from '../components/ManagementModal';
+import ManagementCard from "../components/ManagementCard";
+import ManagementModal from "../components/ManagementModal";
 
 function ManagementPage() {
   const { t, i18n } = useTranslation();
-  
+
   // Получаем данные из переводов
   const ManagementInfo = t("managementInfo", { returnObjects: true });
-  
-  console.log("ManagementInfo:", ManagementInfo); // Добавьте эту строку для дебага
-  console.log("Person data:", ManagementInfo?.person); // Проверьте данные
-  
+
   const [selectedPerson, setSelectedPerson] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
+
   const scrollContainerRef = useRef(null);
   const scrollIntervalRef = useRef(null);
 
   const handleOpenModal = (person) => {
-    console.log("Opening modal for:", person); // Для отладки
     setSelectedPerson(person);
     setIsModalOpen(true);
   };
@@ -29,9 +25,7 @@ function ManagementPage() {
     setTimeout(() => setSelectedPerson(null), 300);
   };
 
-  useEffect(() => {
-    console.log("i18n language:", i18n.language); // Проверьте язык
-  }, [i18n.language]);
+  useEffect(() => {}, [i18n.language]);
 
   useEffect(() => {
     const container = scrollContainerRef.current;
@@ -44,12 +38,12 @@ function ManagementPage() {
         if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
           container.scrollTo({
             left: 0,
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         } else {
           container.scrollBy({
             left: 280,
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         }
       }, 3000);
@@ -62,19 +56,19 @@ function ManagementPage() {
       }
     };
 
-    container.addEventListener('mouseenter', stopAutoScroll);
-    container.addEventListener('touchstart', stopAutoScroll);
-    container.addEventListener('mouseleave', startAutoScroll);
-    container.addEventListener('touchend', startAutoScroll);
+    container.addEventListener("mouseenter", stopAutoScroll);
+    container.addEventListener("touchstart", stopAutoScroll);
+    container.addEventListener("mouseleave", startAutoScroll);
+    container.addEventListener("touchend", startAutoScroll);
 
     startAutoScroll();
 
     return () => {
       stopAutoScroll();
-      container.removeEventListener('mouseenter', stopAutoScroll);
-      container.removeEventListener('touchstart', stopAutoScroll);
-      container.removeEventListener('mouseleave', startAutoScroll);
-      container.removeEventListener('touchend', startAutoScroll);
+      container.removeEventListener("mouseenter", stopAutoScroll);
+      container.removeEventListener("touchstart", stopAutoScroll);
+      container.removeEventListener("mouseleave", startAutoScroll);
+      container.removeEventListener("touchend", startAutoScroll);
     };
   }, []);
 
@@ -101,7 +95,7 @@ function ManagementPage() {
         </h1>
 
         <div className="relative">
-          <div 
+          <div
             ref={scrollContainerRef}
             className="flex md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-3 lg:gap-4 overflow-x-auto md:overflow-x-visible snap-x hide-scrollbar"
           >
@@ -132,11 +126,7 @@ function ManagementPage() {
         `}</style>
       </section>
 
-      <ManagementModal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        person={selectedPerson}
-      />
+      <ManagementModal isOpen={isModalOpen} onClose={handleCloseModal} person={selectedPerson} />
     </>
   );
 }

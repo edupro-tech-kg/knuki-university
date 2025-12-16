@@ -1,18 +1,18 @@
 export default {
   locale: "ru",
   code: "ru",
-  navLinks: [
-    { label: "Главная", href: "#", to: "home" },
-    { label: "Руководство", href: "#", to: "" },
-    { label: "Факультет", href: "#", to: "" },
-    { label: "Студент", href: "#", to: "" },
-    { label: "Образование", href: "#", to: "" },
-    { label: "Наука", href: "#", to: "" },
-    { label: "Новости", href: "#", to: "news" },
-    { label: "Документы", href: "#", to: "" },
-    { label: "Абитуриент", href: "#", to: "" },
-    { label: "Контакты", href: "#contact", to: "contact" },
-  ],
+  navLinks: {
+    home: "Главная",
+    management: "Руководство",
+    faculties: "Факультет",
+    students: "Студент",
+    education: "Образование",
+    science: "Наука",
+    news: "Новости",
+    documents: "Документы",
+    applicants: "Абитуриент",
+    contacts: "Контакты",
+  },
   header: {
     universityName:
       "Кыргызский национальный университет культуры и искусств имени Бюбюсары Бейшеналиевой",

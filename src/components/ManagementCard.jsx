@@ -1,17 +1,15 @@
 import Button from "./UI/Button";
 
 function ManagementCard({ name, post, onOpenModal, btnText }) {
-  console.log("ManagementCard props:", { name, post, btnText }); // Для отладки
-  
   const splitName = (fullName) => {
     if (!fullName) return { firstLine: "", secondLine: "" };
-    
+
     const words = fullName.trim().split(/\s+/);
-    
+
     if (words.length <= 2) {
       return {
         firstLine: fullName,
-        secondLine: ""
+        secondLine: "",
       };
     } else {
       const firstLine = words.slice(0, 2).join(" ");
@@ -39,7 +37,7 @@ function ManagementCard({ name, post, onOpenModal, btnText }) {
             </p>
           )}
         </div>
-        
+
         <div className="min-h-[2rem] sm:min-h-[3rem] mb-0.5 sm:mb-1 flex items-center justify-center">
           <p className="text-gray-600 text-xs sm:text-sm leading-tight line-clamp-2">
             {post || "Должность не указана"}

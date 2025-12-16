@@ -1,18 +1,18 @@
 export default {
   locale: "en",
   code: "en",
-  navLinks: [
-    { label: "Home", href: "#", to: "home" },
-    { label: "Administration", href: "#", to: "" },
-    { label: "Faculty", href: "#", to: "" },
-    { label: "Student", href: "#", to: "" },
-    { label: "Education", href: "#", to: "" },
-    { label: "Science", href: "#", to: "" },
-    { label: "News", href: "#", to: "news" },
-    { label: "Documents", href: "#", to: "" },
-    { label: "Applicant", href: "#", to: "" },
-    { label: "Contacts", href: "#contact", to: "contact" },
-  ],
+  navLinks: {
+    home: "Home",
+    management: "Administration",
+    faculties: "Faculty",
+    students: "Student",
+    education: "Education",
+    science: "Science",
+    news: "News",
+    documents: "Documents",
+    applicants: "Applicant",
+    contacts: "Contacts",
+  },
   header: {
     universityName:
       "Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva",

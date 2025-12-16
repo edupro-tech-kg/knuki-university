@@ -31,7 +31,6 @@ export default function Header() {
 
     const observer = new ResizeObserver(() => {
       const newHeight = divRef.current.offsetHeight;
-      console.log(divRef.current.offsetHeight);
 
       setHeaderSize((prev) => {
         if (prev !== newHeight) return newHeight;
@@ -174,8 +173,6 @@ export default function Header() {
               </div>
             </div>
           </div>
-
-          
         </div>
 
         <div className="hidden md:block w-full bg-white text-[#751715] shadow  top-[100px] z-40">

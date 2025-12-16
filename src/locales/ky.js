@@ -1,18 +1,18 @@
 export default {
   locale: "ky",
   code: "ky",
-  navLinks: [
-    { label: "Башкы бет", href: "#", to: "home" },
-    { label: "Жетекчилик", href: "#", to: "" },
-    { label: "Факультет", href: "#", to: "" },
-    { label: "Студент", href: "#", to: "" },
-    { label: "Билим", href: "#", to: "" },
-    { label: "Илим", href: "#", to: "" },
-    { label: "Жаңылыктар", href: "#", to: "news" },
-    { label: "Документ", href: "#", to: "" },
-    { label: "Абитуриент", href: "#", to: "" },
-    { label: "Байланыш", href: "#contact", to: "contact" },
-  ],
+  navLinks: {
+    home: "Башкы бет",
+    management: "Жетекчилик",
+    faculties: "Факультет",
+    students: "Студент",
+    education: "Билим берүү",
+    science: "Илим",
+    news: "Жаңылыктар",
+    documents: "Документ",
+    applicants: "Абитуриент",
+    contacts: "Байланыш",
+  },
   header: {
     universityName:
       "Бүбүсара Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университети",
