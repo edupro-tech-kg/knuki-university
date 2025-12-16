@@ -887,5 +887,99 @@ export default {
         content: "librarian of the film studio reading room."
       }
     ]
-  }
+  },
+ managementInfo: {
+  title: "Management",
+  btn: "More",
+  resume: "Resume",
+  close: "Close",
+  person: [
+    {
+      name: "Koldoshov Tumonbay Rakhmanovich",
+      post: "Rector",
+      details: "Doctor of Pedagogical Sciences, professor with 25 years of experience in higher education. Under his leadership, the university entered the top 20 creative universities in the country. Author of 15 monographs and over 100 scientific articles. Initiator of international partnerships with 10 foreign universities. Implemented a system of dual education and digitalization of the educational process. Honored Worker of Education of the Kyrgyz Republic, honorary doctor of three foreign universities. Regularly speaks at international conferences on pedagogy."
+    },
+    {
+      name: "Dzhakypov Kubatbek Kulanchievich",
+      post: "Vice-Rector for Academic Affairs",
+      details: "Candidate of Pedagogical Sciences, associate professor with 20 years of teaching experience. Supervises educational and methodological work of all faculties, monitors the quality of educational programs. Implemented an electronic document management system and online schedule. Organizes annual professional development courses for 150 teachers. Expert of the Ministry of Education and Science, author of the textbook 'Methodology of Teaching Creative Disciplines'. Leads the 'Digital University' project."
+    },
+    {
+      name: "Imankulova Saadat Esenbaevna",
+      post: "Vice-Rector for Science and International Relations",
+      details: "Doctor of Art History, professor, specialist in international cultural relations. Established partnerships with 30 universities in Europe and Asia. Coordinator of the Erasmus+ program at the university. Under her supervision, 12 candidate dissertations have been defended. Member of the International Association of Art Critics, laureate of the state prize in the field of culture. Organized 5 international scientific conferences. Supervises student exchange programs."
+    },
+    {
+      name: "Turdaliev Ulanbek Matkarimovich",
+      post: "Vice-Rector for State Language and Educational Work",
+      details: "Candidate of Philological Sciences, author of an innovative methodology for teaching the Kyrgyz language in creative universities. Developed a program for patriotic education of students. Organizer of the annual festival of national cultures. Supervises the work of student self-government and volunteer teams. Author of 3 textbooks on the Kyrgyz language for creative specialties. Awarded the medal 'For Contribution to the Development of the State Language'. Leader of the university's folk music ensemble."
+    },
+    {
+      name: "Imanaliev Maksat Baktybekovich",
+      post: "Vice-Rector for Administrative and Economic Affairs",
+      details: "Engineer-economist with 18 years of experience in university infrastructure management. Carried out reconstruction of 3 academic buildings and dormitories. Implemented an energy-saving system, reducing utility costs by 30%. Organized modern campus infrastructure. Excellent Worker of Education of the Kyrgyz Republic. Managed the construction of a new 500-seat concert hall. Implemented the 'Smart Campus' system with automated management."
+    },
+    {
+      name: "Baktybekova Begai Baktybekovna",
+      post: "Head of Human Resources Department",
+      details: "HR specialist with 15 years of experience in personnel management. Developed and implemented a system of motivation and evaluation of employees. Organized corporate training for administrative staff. Supervises issues of labor legislation and social guarantees for employees. Certified CIPD specialist. Reduced staff turnover by 25% over 3 years. Implemented an electronic personnel accounting system. Conducts regular professional development trainings."
+    },
+    {
+      name: "Kyshtobaev Maksat Cherikbaevich",
+      post: "Chairman of the Trade Union Committee",
+      details: "Experienced trade union leader with 12 years of experience. Protects social and labor rights of employees and students. Organized a system of social support for needy employees. Conducts regular consultations on labor issues. Coordinator of the employee health improvement program in sanatoriums. Organizer of cultural and mass events for the team. Established dialogue between administration and employees. Implemented a system of material assistance in difficult situations."
+    },
+    {
+      name: "Almanbet kyzy Zhanyl",
+      post: "Head of Academic Department",
+      details: "Specialist in educational and methodological work with 14 years of experience. Coordinates the work of faculty academic departments. Controls the maintenance of academic documentation. Organizes the process of compiling curricula and schedules. Implemented an electronic academic performance accounting system. Supervises work with academic debts. Conducts seminars on office work for secretaries. Ensures preparation of reports for the Ministry of Education."
+    },
+    {
+      name: "Ergeshova Kumarkan Tokoevna",
+      post: "Head of Practice and Career Department",
+      details: "Career counseling specialist with 10 years of experience. Organized partnerships with 50+ companies for student internships. Developed a graduate support program. Conducts annual job fairs. Supervises the student mentoring program. Organized a career center with counseling services. Established a system for tracking graduate employment. Conducts trainings on resume writing and interviews."
+    },
+    {
+      name: "Ybyraikunova Nazira Kubanychbekovna",
+      post: "Chief Accountant",
+      details: "Economist of the highest category with 20 years of experience in financial management. Heads the university's accounting service. Implemented an electronic budgeting and reporting system. Ensures financial discipline and cost optimization. Coordinates work with tax authorities and funds. Organized a system of internal financial control. Regularly undergoes professional development in accounting. Successfully passes annual audit checks."
+    },
+    {
+      name: "Marazhapova Nurzhan Kenzhekulovna",
+      post: "Head of Postgraduate and Master's Department",
+      details: "Candidate of Sciences, specialist in postgraduate education with 8 years of experience. Coordinates the work of postgraduate and master's studies. Developed programs for scientific supervision of postgraduate students. Organizes scientific seminars and conferences. Supervises the dissertation preparation process. Established cooperation with scientific institutes. Implemented an electronic document submission system. Conducts consultations on admission to postgraduate and master's programs."
+    },
+    {
+      name: "Arstanbek uulu Asylbek",
+      post: "Dean of the Faculty of Pop and Music Education",
+      details: "Honored Artist of the Kyrgyz Republic, professor. Graduate of the Moscow Conservatory. Has been leading the faculty for 10 years. Developed unique programs in pop vocals and contemporary music. Organized a student pop orchestra. Regularly conducts master classes with famous musicians. Students are laureates of international competitions. Author of a methodology for synthesizing folk and contemporary music."
+    },
+    {
+      name: "Abdigaparov Nurtilik Abdigaparovich",
+      post: "Dean of the Faculty of Folk Music",
+      details: "People's Artist of Kyrgyzstan, professor, virtuoso komuz player. Preserves and develops traditions of folk music. Founder of the folk instruments ensemble 'Kerme-Too'. Developed a program for studying all regional styles of Kyrgyz music. Organizes expeditions to collect folklore. Author of the textbook 'Theory of Kyrgyz Folk Music'. Has educated a galaxy of famous musicians. Regularly represents Kyrgyz music abroad."
+    },
+    {
+      name: "Toktogulov Bakytbek Toktogulovich",
+      post: "Dean of the Faculty of Theatre",
+      details: "Honored Art Worker, stage director. Graduate of GITIS. Has been leading the faculty for 12 years. Directed over 30 plays with students. Developed a program for integrating traditional and contemporary theater. Organized the student theater 'New Stage'. Students work in leading theaters of the country. Conducts international theater laboratories. Author of the book 'Acting in Kyrgyz Theater'."
+    },
+    {
+      name: "Sydykov Erkinbek Sydykovich",
+      post: "Dean of the Faculty of Cinema and Television",
+      details: "Film director, laureate of international film festivals. Graduate of VGIK. Has been leading the faculty for 8 years. Equipped the faculty with modern film equipment. Organized the annual student film festival 'First Frame'. Established partnerships with national film studios. Students participate in international projects. Developed a program on digital film production. Conducts master classes with famous filmmakers."
+    },
+    {
+      name: "Asankulova Aigerim Toktobekovna",
+      post: "Dean of the Faculty of Choreography and Cultural Activities",
+      details: "Honored Ballet Artist, choreographer. Graduate of the Academy of Russian Ballet. Has been leading the faculty for 7 years. Developed a program for synthesizing classical and folk dance. Organized the ensemble 'Zhastyk' that tours the country. Students are participants in international competitions. Author of a methodology for teaching choreography to different age groups. Conducts choreographic master classes. Supervises the program of city cultural events."
+    },
+    {
+      name: "Samieva Shairgul Turatovna",
+      post: "Head Librarian",
+      details: "Library specialist with 25 years of experience, candidate of pedagogical sciences. Modernized the library by implementing an electronic catalog and RFID system. Organized access to 20+ electronic databases. Created a media library and coworking zones. Conducts regular literary evenings and book presentations. Developed a program for information literacy of students. Established interlibrary exchange with other universities. Ensures preservation of the rare collection of antique editions."
+    }
+  ]
+}
+
 };
