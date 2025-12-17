@@ -9,6 +9,7 @@ import StudentsLife from "./pages/StudentsLife";
 import LibraryPage from "./pages/LibraryPage";
 import ManagementPage from "./pages/ManagementPage";
 import PracticeCareer from "./pages/PracticeCareer";
+import EducationPage from "./pages/EducationPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/library" element={<LibraryPage />} />
             <Route path="/management" element={<ManagementPage />} />
             <Route path="/practice-career" element={<PracticeCareer />} />
+            <Route path="/education" element={<EducationPage />} />
           </Routes>
         </main>
         <Footer />
