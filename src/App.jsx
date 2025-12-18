@@ -6,6 +6,7 @@ import HistoryPage from "./pages/HistoryPage";
 import FacultyPage from "./pages/FacultyPage";
 import NewsPage from "./pages/NewsPage";
 import StudentsLife from "./pages/StudentsLife";
+import Applicants from "./pages/Applicants";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/faculty/:slug" element={<FacultyPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/studentsLife" element={<StudentsLife />} />
+            <Route path="/applicants" element={<Applicants />} />
           </Routes>
         </main>
         <Footer />
