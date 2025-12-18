@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 import Ornament from "../assets/svg/ornament.svg";
 import Button from "../components/UI/Button";
 
+const QUICK_LINKS = [
+  { key: "about", link: "/about" },
+  { key: "science", link: "/science" },
+  { key: "ebilim", link: "/ebilim" },
+  { key: "documents", link: "/documents" },
+  { key: "practice", link: "/practice-career" },
+];
+
 function QuickLinks() {
   const { t } = useTranslation();
 
@@ -22,9 +30,9 @@ function QuickLinks() {
           max-w-[1440px] mx-auto
         "
       >
-        {quickLinks.cards.map((item) => (
+        {QUICK_LINKS.map((item) => (
           <div
-            key={item.id}
+            key={item.key}
             className="
               border border-black p-6 min-w-[280px] md:min-w-0 md:w-full
               flex flex-col justify-between items-center text-center
@@ -39,7 +47,7 @@ function QuickLinks() {
             </div>
 
             <p className="text-lg font-semibold text-[#751715] min-h-[70px] flex items-center justify-center px-2">
-              {item.title}
+              {quickLinks.cards?.[item.key] || item.key}
             </p>
 
             {item.link ? (

@@ -77,14 +77,14 @@ export default function Header() {
 
   const SocialIcons = () => (
     <div className="flex items-center gap-3">
-      <Link>
+      <Link to="mailto:kguki.art@mail.ru" target="_blank" rel="noopener noreferrer">
         <img src={Icons.mail} className="w-6 h-6 cursor-pointer hover:opacity-80" />
       </Link>
-      <Link>
+      <Link to="tel:+996312570379" target="_blank" rel="noopener noreferrer">
         <img src={Icons.phone} className="w-6 h-6 cursor-pointer hover:opacity-80" />
       </Link>
       <Link
-        href={universityAddress}
+        to={universityAddress}
         target="_blank"
         rel="noopener noreferrer"
         className="w-6 h-6 cursor-pointer hover:opacity-80"
@@ -92,10 +92,18 @@ export default function Header() {
         <img src={Icons.maps} alt="Map" className="w-6 h-6" />
       </Link>
       <div className=" border-2 rounded-3xl h-6 border-[#FFFFFF3D]"></div>
-      <Link>
+      <Link
+        to="https://www.facebook.com/share/1BniHdayHv/?mibextid=wwXIfr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={Icons.facebook} className="w-[18px] h-6 cursor-pointer hover:opacity-80" />
       </Link>
-      <Link>
+      <Link
+        to="https://www.instagram.com/knuki_kg?igsh=d3FlenBmdTFjcjNm&utm_source=qr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={Icons.instagram} className="w-6 h-6 cursor-pointer hover:opacity-80" />
       </Link>
     </div>

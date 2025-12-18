@@ -15,7 +15,7 @@ export default function PracticeCareer() {
 
   return (
     <div className="bg-white min-h-screen py-12 px-4 md:px-10">
-      <div className="w-full">
+      <div className="w-full max-w-7xl mx-auto">
         <div className="text-center">
           <h1 className="text-primary font-serif italic text-2xl md:text-3xl lg:text-4xl uppercase tracking-wide">
             {content.title}
@@ -36,7 +36,7 @@ export default function PracticeCareer() {
             </ul>
           </div>
 
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto flex justify-center">
             <table className="w-full max-w-4xl border-collapse text-left text-sm md:text-base border border-[#cfcfcf]">
               <thead>
                 <tr className="bg-[#f4efea] text-gray-900">
@@ -62,28 +62,31 @@ export default function PracticeCareer() {
               </tbody>
             </table>
           </div>
-
-          <ul className="list-disc pl-6 space-y-2">
-            {bullets.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
-            {practiceBullet && (
-              <li>
-                <strong>{content.practiceTitle}</strong>{" "}
-                {content.practiceDescription}
-              </li>
-            )}
-          </ul>
-
-          {content.totalGraduates && <p className="text-sm md:text-base">{content.totalGraduates}</p>}
-
-          <div className="space-y-3">
-            <p className="font-semibold">{content.employers?.title}</p>
+          <div className="max-w-6xl mx-auto">
             <ul className="list-disc pl-6 space-y-2">
-              {employers.map((item, idx) => (
+              {bullets.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
+              {practiceBullet && (
+                <li>
+                  <strong>{content.practiceTitle}</strong>{" "}
+                  {content.practiceDescription}
+                </li>
+              )}
             </ul>
+
+            {content.totalGraduates && (
+              <p className="text-sm md:text-base">{content.totalGraduates}</p>
+            )}
+
+            <div className="space-y-3">
+              <p className="font-semibold">{content.employers?.title}</p>
+              <ul className="list-disc pl-6 space-y-2">
+                {employers.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
