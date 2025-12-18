@@ -1075,4 +1075,67 @@ export default {
       },
     ],
   },
+
+  education: {
+    additionalPrograms: [
+      { id: 1, title: "Advanced Literary Courses (full-time, 2 years)" },
+      { id: 2, title: "Choreography (full-time, 72 hours)" },
+      { id: 3, title: "Musical Performance (by specialization) (full-time, 72 hours)" },
+      { id: 4, title: "Art Education (full-time, 72 hours)" },
+      { id: 5, title: "Music Teacher (full-time, 72 hours)" },
+      {
+        id: 6,
+        title:
+          "Professional Development Course for Culture and Arts Professionals in the field of “Socio-Cultural Activities” (full-time, 1 month)",
+      },
+      {
+        id: 7,
+        title:
+          "Courses of the Higher School of Kyrgyz Cinematography and Television Resources under the B. Beishenalieva Kyrgyz State University of Culture and Arts:",
+        list: [
+          "Theatre and Film Production Designer",
+          "Film and Television Producer",
+          "Costume Designer, Makeup Artist",
+          "Sound Directing",
+          "Cinematographer – Photo and TV Journalist",
+          "Film Studies",
+          "Screenwriting",
+          "Film Directing",
+        ],
+        footer: "(full-time, 10 months)",
+      },
+    ],
+    tables: [
+      {
+        title: "Higher Professional Education",
+        data: [
+          { id: 1, title: "550600 Art Education (Bachelor’s Degree)" },
+          { id: 2, title: "570002 Theatre Studies (Specialist Degree)" },
+          { id: 3, title: "570005 Film Studies (Specialist Degree)" },
+          { id: 4, title: "570027 Literary Creativity (Specialist Degree)" },
+          { id: 5, title: "570013 Sound Directing (by fields of application) (Specialist Degree)" },
+          { id: 6, title: "570014 Acting Arts (Specialist Degree)" },
+          { id: 7, title: "570015 Directing (by fields of application) (Specialist Degree)" },
+          { id: 8, title: "570006 Cinematography (Specialist Degree)" },
+          { id: 9, title: "570029 Socio-Cultural Activities (Specialist Degree)" },
+          { id: 10, title: "570019 Choreography Pedagogy (Specialist Degree)" },
+          {
+            id: 11,
+            title: "570031 Museum Studies and Protection of Cultural Heritage (Specialist Degree)",
+          },
+          { id: 12, title: "Folk Musical Arts (Experimental) (Specialist Degree)" },
+          { id: 13, title: "570200 Musical Arts (Master’s Degree)" },
+          { id: 14, title: "570300 Theatre Arts (Master’s Degree)" },
+          { id: 15, title: "550600 Art Education (Master’s Degree)" },
+        ],
+      },
+      {
+        title: "Postgraduate Professional Education",
+        data: [
+          { id: 17, title: "17.00.02 Musical Arts (Postgraduate Studies)" },
+          { id: 18, title: "24.00.01 History and Theory of Culture (Postgraduate Studies)" },
+        ],
+      },
+    ],
+  },
 };
