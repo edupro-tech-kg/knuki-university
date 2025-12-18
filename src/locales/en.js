@@ -543,13 +543,13 @@ export default {
   },
   quickLinks: {
     title: "Quick Links",
-    cards: [
-      { id: 1, title: "About the University" },
-      { id: 2, title: "Science & International Relations" },
-      { id: 3, title: "Ebilim" },
-      { id: 4, title: "Documents" },
-      { id: 5, title: "Practice & Career Department", link: "/practice-career" },
-    ],
+    cards: {
+      about: "About the University",
+      science: "Science & International Relations",
+      ebilim: "Ebilim",
+      documents: "Documents",
+      practice: "Practice & Career Department",
+    },
     button: "Learn More",
   },
   practiceCareer: {
@@ -1075,6 +1075,15 @@ export default {
           "Library specialist with 25 years of experience, candidate of pedagogical sciences. Modernized the library by implementing an electronic catalog and RFID system. Organized access to 20+ electronic databases. Created a media library and coworking zones. Conducts regular literary evenings and book presentations. Developed a program for information literacy of students. Established interlibrary exchange with other universities. Ensures preservation of the rare collection of antique editions.",
       },
     ],
+  },
+  ebilim: {
+    title: "ebilim",
+    subtitle: "Apply to university online!",
+    AIdescription: "Smart AI-powered services for applicants",
+    button: "Log in to the system",
+    advertisement: "Advertisement 0+",
+    description:
+      " is a modern Learning Management System (LMS) designed to optimize and simplify educational processes in educational institutions. EBILIM provides a wide range of tools for course management, assessment, interactive learning, analytics, and automation of the learning process, offering a convenient and efficient approach to education.",
   },
   education: {
     additionalPrograms: [

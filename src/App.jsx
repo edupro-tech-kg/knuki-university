@@ -12,6 +12,7 @@ import ManagementPage from "./pages/ManagementPage";
 import PracticeCareer from "./pages/PracticeCareer";
 import EducationPage from "./pages/EducationPage";
 import SeoTitle from "./components/SeoTitle";
+import EbilimPage from "./pages/EbilimPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/library" element={<LibraryPage />} />
             <Route path="/management" element={<ManagementPage />} />
             <Route path="/practice-career" element={<PracticeCareer />} />
+            <Route path="/ebilim" element={<EbilimPage />} />
             <Route path="/education" element={<EducationPage />} />
           </Routes>
         </main>
