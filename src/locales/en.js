@@ -1075,4 +1075,14 @@ export default {
       },
     ],
   },
+  ebilim: {
+    title: "ebilim",
+    subtitle: "Apply to university online!",
+    AIdescription: "Smart AI-powered services for applicants",
+    button: "Log in to the system",
+    advertisement: "Advertisement 0+",
+    description:
+      " is a modern Learning Management System (LMS) designed to optimize and simplify educational processes in educational institutions. EBILIM provides a wide range of tools for course management, assessment, interactive learning, analytics, and automation of the learning process, offering a convenient and efficient approach to education.",
+  }
+
 };

@@ -17,7 +17,7 @@ export default function PracticeCareer() {
     <div className="bg-white min-h-screen py-12 px-4 md:px-10">
       <div className="w-full">
         <div className="text-center">
-          <h1 className="text-[#8B1A1A] font-serif italic text-2xl md:text-3xl lg:text-4xl uppercase tracking-wide">
+          <h1 className="text-primary font-serif italic text-2xl md:text-3xl lg:text-4xl uppercase tracking-wide">
             {content.title}
           </h1>
 
