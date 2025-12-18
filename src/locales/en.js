@@ -167,17 +167,17 @@ export default {
           {
             title: "Overview",
             content:
-              "The Faculty of Theatre trains specialists for every theatre and performance institution in Kyrgyzstan. Founded on December 1, 1993. Study forms: full-time (5 years) and part-time (6 years). Dean — Chynasyl Urmatbekovich Urmatbekov (b. 1992, Bokonbayev village), graduate with honors in Dramatic Acting (2015).",
+              "The Faculty of Theatre is the only institution in Kyrgyzstan that trains specialists for all theatre and performance venues. Founded on December 1, 1993. Study forms: full-time (5 years) and part-time (6 years). Dean — Chynasyl Urmatbekovich Urmatbekov (b. 1992, Bokonbayev village, Ton district, Issyk-Kul), graduate with honors in Dramatic Acting (2015). Instagram: @teatrduinosu · Email: Akter.kg@inbox.ru · Phone: +996 700 18 63 92.",
           },
           {
             title: "Directing and Acting",
             content:
-              "Since 1993 the department has trained future stage professionals. Students stage productions across genres, make films, and study Kyrgyz and world classics to develop thinking and creative imagination. Head — Zamirbek uulu Chyngyz (student 2015–2020, Dramatic actor/teacher). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+              "Since 1993 the Directing and Acting Department has trained future stage professionals. Students stage productions across genres, shoot films, and study Kyrgyz and world classics to develop creative thinking. Head — Zamirbek uulu Chyngyz (b. Oct 1, 1995, Tokmok; studied 2015–2020 in the program “Dramatic actor, teacher”). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
           },
           {
             title: "Stage Speech Department",
             content:
-              "Created in 2023 to build stage speech skills. Teaches vocal technique, overcomes public speaking fear, and develops memory, diction, and communication. Head — Anara Kaparbekovna Solpueva (education: KUMOZH named after M. Kurenkeev; Theatre College at T. Abdumomunov KADT; KNUCA Theatre Faculty, specialty “Dramatic actor”).",
+              "Established in 2023 due to academic needs. Teaches stage speech technique, helps overcome public speaking anxiety, and develops memory, diction, and communication skills. Head — Anara Kaparbekovna Solpueva (b. 1986, Shamshy village, Kochkor district, Naryn; education: KUMOZH named after M. Kurenkeev; Theatre College at T. Abdumomunov KADT; KNUCA Theatre Faculty, distance program in “Dramatic actor”).",
           },
         ],
         teacherGroups: [
@@ -188,7 +188,7 @@ export default {
                 name: "Chynasyl Urmatbekovich Urmatbekov",
                 position: "Dean",
                 description:
-                  "Born 1992 in Bokonbayev village, Ton district, Issyk-Kul. Graduated with honors in 2015 from the Theatre Faculty (specialty “Dramatic actor”). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+                  "Born 1992 in Bokonbayev village, Ton district, Issyk-Kul. Graduated with honors in 2015 from the Theatre Faculty (specialty “Dramatic actor”). Specialty: Dramatic actor. Qualification: dramatic theatre actor. Instagram: @teatrduinosu · Email: Akter.kg@inbox.ru · Phone: +996 700 18 63 92.",
               },
             ],
           },
@@ -199,7 +199,7 @@ export default {
                 name: "Zamirbek uulu Chyngyz",
                 position: "Head of Department",
                 description:
-                  "Since 1993 the department has trained future stage professionals. Students stage productions of various genres and make films, studying Kyrgyz and world classics. Head — Zamirbek uulu Chyngyz (student 2015–2020, specialty “Dramatic actor, teacher”). Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
+                  "The department has trained future stage professionals since 1993. Students stage productions of various genres, shoot films, and study Kyrgyz and world classics. Studied 2015–2020 in “Dramatic actor, teacher”. Specialty: Dramatic actor. Qualification: dramatic theatre actor.",
               },
             ],
           },
@@ -210,7 +210,7 @@ export default {
                 name: "Anara Kaparbekovna Solpueva",
                 position: "Head of Department",
                 description:
-                  "Established in 2023 to develop stage speech. Teaches speech technique, overcomes public speaking fear, and builds memory, diction, and communication skills. Education: KUMOZH named after M. Kurenkeev; Theatre College at T. Abdumomunov KADT; KNUCA Theatre Faculty (distance), specialty “Dramatic actor”.",
+                  "Established in 2023. Teaches stage speech technique, helps overcome public speaking anxiety, and develops memory, diction, and communication. Education: KUMOZH named after M. Kurenkeev; Theatre College at T. Abdumomunov KADT; KNUCA Theatre Faculty (distance), specialty “Dramatic actor”.",
               },
             ],
           },
