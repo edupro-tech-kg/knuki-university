@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useMemo } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import ButtonPrimary from "../components/UI/Button";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import music from "../assets/svg/music.svg";
@@ -8,22 +9,30 @@ import projector from "../assets/svg/projector.svg";
 import ballerina from "../assets/svg/ballerina.svg";
 
 const directions = [
-  { icon: music, id: 0 },
-  { icon: mask, id: 1 },
-  { icon: projector, id: 2 },
-  { icon: ballerina, id: 3 },
-  { icon: music, id: 4 },
-  { icon: mask, id: 5 },
+  { icon: music, slug: "estrada-music" },
+  { icon: mask, slug: "theater" },
+  { icon: projector, slug: "kino-tele" },
+  { icon: ballerina, slug: "choreography" },
+  { icon: music, slug: "folk-music" },
+  { icon: mask, slug: "postgraduate" },
 ];
 
 export default function ProgramsSection() {
   const { t } = useTranslation();
   const containerRef = useRef(null);
   const [isDesktop, setIsDesktop] = useState(false);
+  const [showControls, setShowControls] = useState(false);
 
   useEffect(() => {
     const checkDesktop = () => {
-      setIsDesktop(window.innerWidth >= 768);
+      const desktop = window.innerWidth >= 768;
+      setIsDesktop(desktop);
+      
+      // Проверяем, нужны ли кнопки навигации (если контент не помещается)
+      if (containerRef.current && desktop) {
+        const container = containerRef.current;
+        setShowControls(container.scrollWidth > container.clientWidth);
+      }
     };
 
     checkDesktop();
@@ -37,7 +46,8 @@ export default function ProgramsSection() {
     const container = containerRef.current;
     const { scrollLeft, scrollWidth, clientWidth } = container;
     const cardWidth = container.children[0]?.offsetWidth || 320;
-    const scrollAmount = cardWidth * 1;
+    const gap = 24; // 6 * 4px (gap-6 = 1.5rem = 24px)
+    const scrollAmount = cardWidth + gap;
 
     if (scrollLeft + clientWidth + scrollAmount >= scrollWidth - 10) {
       container.scrollTo({ left: 0, behavior: "smooth" });
@@ -55,7 +65,8 @@ export default function ProgramsSection() {
     const container = containerRef.current;
     const { scrollLeft } = container;
     const cardWidth = container.children[0]?.offsetWidth || 320;
-    const scrollAmount = cardWidth * 1;
+    const gap = 24;
+    const scrollAmount = cardWidth + gap;
 
     if (scrollLeft - scrollAmount <= 10) {
       container.scrollTo({
@@ -70,77 +81,100 @@ export default function ProgramsSection() {
     }
   };
 
+  const facultiesTitles = useMemo(
+    () => t("facultiesData.items", { returnObjects: true }) || {},
+    [t]
+  );
+  const programList = useMemo(() => t("programs.list", { returnObjects: true }) || [], [t]);
+
+  const getTitle = (slug, index) =>
+    facultiesTitles?.[slug]?.title || programList?.[index]?.title || slug;
+
   return (
     <section
       id="programs"
-      className="bg-background flex items-center justify-center mt-20 container mx-auto"
+      className="bg-background flex items-center justify-center mt-20 container mx-auto px-4 sm:px-6 lg:px-8"
     >
-      <div className="w-full mx-5 relative">
-        <h2 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-text-primary">
+      <div className="w-full relative max-w-7xl">
+        <h2 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-text-primary">
           {t("programs.eyebrow")}
         </h2>
 
-        <div
-          ref={containerRef}
-          className={`
-    ${!isDesktop ? "flex gap-6 overflow-x-auto pl-5 pr-5 snap-x snap-mandatory scrollbar-hide pb-4" : ""}
-    ${isDesktop ? "md:flex md:overflow-x-auto md:gap-6 md:pb-4 md:scrollbar-hide" : ""}
-    [&::-webkit-scrollbar]:hidden  /* Скрыть в WebKit браузерах */
-    [-ms-overflow-style:none]      /* Скрыть в IE/Edge */
-    [scrollbar-width:none]         /* Скрыть в Firefox */
-  `}
-        >
-          {directions.map((dir, index) => (
-            <div
-              key={index}
-              className={`
-                group 
-                ${!isDesktop ? "flex-shrink-0 w-[calc(100vw-80px)] snap-center" : ""}
-                ${isDesktop ? "md:flex-shrink-0 md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]" : ""}
-                bg-text-primary transition-colors duration-300 
-                hover:bg-primary flex flex-col
-              `}
-              style={{
-                marginRight: !isDesktop ? "20px" : isDesktop ? "0" : "0",
-              }}
-            >
-              <div className="p-6 flex flex-col h-full">
-                <div className="text-sm text-stroke mb-2">{t("programs.faculty")}</div>
+        <div className="relative">
+          {/* Контейнер с паддингами для правильного скролла */}
+          <div
+            ref={containerRef}
+            className={`
+              ${!isDesktop 
+                ? "flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 pl-4 pr-4 md:pl-0 md:pr-0" 
+                : "md:flex md:overflow-x-auto md:gap-6 md:pb-4 md:scrollbar-hide md:px-1"
+              }
+              [&::-webkit-scrollbar]:hidden
+              [-ms-overflow-style:none]
+              [scrollbar-width:none]
+            `}
+          >
+            {directions.map((dir, index) => (
+              <Link
+                to={`/faculty/${dir.slug}`}
+                key={dir.slug}
+                className={`
+                  group 
+                  ${!isDesktop 
+                    ? "flex-shrink-0 w-[calc(100vw-64px)] md:w-[calc(50vw-48px)] snap-start" 
+                    : "md:flex-shrink-0 md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]"
+                  }
+                  bg-text-primary transition-all duration-300 
+                  hover:bg-primary flex flex-col
+                   overflow-hidden
+                  ${isDesktop ? "md:mx-0" : ""}
+                `}
+              >
+                <div className="p-6 flex flex-col h-full">
+                  <div className="text-sm text-stroke mb-2">{t("programs.faculty")}</div>
 
-                <h2 className="font-sans text-2xl font-medium text-white mb-4">
-                  {t(`programs.list.${dir.id % 4}.title`)}
-                </h2>
+                  <h2 className="font-sans text-2xl font-medium text-white mb-4">
+                    {getTitle(dir.slug, index)}
+                  </h2>
 
-                <div className="flex-grow"></div>
+                  <div className="flex-grow"></div>
 
-                <div className="mb-4 flex justify-end mt-auto">
-                  <div className="bg-primary p-4 transition-colors duration-300 group-hover:bg-text-primary">
-                    <img src={dir.icon} alt="" className="w-20 h-20" />
+                  <div className="mb-4 flex justify-end mt-auto">
+                    <div className="bg-primary p-4 transition-colors duration-300 group-hover:bg-text-primary">
+                      <img src={dir.icon} alt="" className="w-20 h-20" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <ButtonPrimary variant="primaryIcon">
+                      {t("programs.buttonText")}
+                    </ButtonPrimary>
                   </div>
                 </div>
+              </Link>
+            ))}
+          </div>
 
-                <div>
-                  <ButtonPrimary variant="primaryIcon">{t("programs.buttonText")}</ButtonPrimary>
-                </div>
-              </div>
-            </div>
-          ))}
+     
         </div>
 
-        {isDesktop && (
+        {/* Кнопки навигации - показываем только если контент не помещается */}
+        {isDesktop && showControls && (
           <div className="flex justify-center items-center gap-4 mt-8">
             <button
               onClick={handlePrev}
-              className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 px-5 md:px-4"
+              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5"
+              aria-label="Previous"
             >
-              <FaArrowLeftLong className="w-6 h-6 md:w-14" />
+              <FaArrowLeftLong className="w-5 h-5 md:w-6 md:h-6" />
             </button>
 
             <button
               onClick={handleNext}
-              className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 px-5 md:px-4"
+              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5"
+              aria-label="Next"
             >
-              <FaArrowRightLong className="w-6 h-6 md:w-14" />
+              <FaArrowRightLong className="w-5 h-5 md:w-6 md:h-6" />
             </button>
           </div>
         )}

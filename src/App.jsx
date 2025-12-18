@@ -7,11 +7,16 @@ import FacultyPage from "./pages/FacultyPage";
 import NewsPage from "./pages/NewsPage";
 import StudentsLife from "./pages/StudentsLife";
 import Applicants from "./pages/Applicants";
+import LibraryPage from "./pages/LibraryPage";
+import ManagementPage from "./pages/ManagementPage";
+import PracticeCareer from "./pages/PracticeCareer";
+import SeoTitle from "./components/SeoTitle";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-light text-dark flex flex-col">
+        <SeoTitle />
         <Header />
         <main className="flex-1">
           <Routes>
@@ -21,6 +26,9 @@ function App() {
             <Route path="/news" element={<NewsPage />} />
             <Route path="/studentsLife" element={<StudentsLife />} />
             <Route path="/applicants" element={<Applicants />} />
+            <Route path="/library" element={<LibraryPage />} />
+            <Route path="/management" element={<ManagementPage />} />
+            <Route path="/practice-career" element={<PracticeCareer />} />
           </Routes>
         </main>
         <Footer />

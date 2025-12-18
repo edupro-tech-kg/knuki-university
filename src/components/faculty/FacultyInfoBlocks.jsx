@@ -1,67 +1,144 @@
+import React from 'react';
+
 export default function FacultyInfoBlocks({
   infoColumns = [],
   programBlocks = [],
   programHeading,
-  layout = "split", // "split" (text + cards) or "cards"
+  layout = "split",
 }) {
   if (!infoColumns.length && !programBlocks.length) return null;
 
   const renderCard = (label, idx) => (
     <div
-      key={idx}
-      className="bg-[#751715] text-white rounded-sm shadow-md px-4 py-6 text-center border border-[#5f1112] flex flex-col items-center justify-center gap-3"
+      className="
+        bg-[#751715] text-white
+        rounded-sm border border-[#5f1112]
+        flex flex-col items-center
+        gap-2
+        min-h-28
+        px-4 py-4
+        w-full
+      "
     >
-      <span className="h-8 w-8 rounded-full bg-white text-[#751715] text-sm font-semibold flex items-center justify-center">
+      <span
+        className="
+          h-8 w-8
+          rounded-full
+          bg-white text-[#751715]
+          text-sm font-semibold
+          flex items-center justify-center
+          shrink-0
+        "
+      >
         {idx + 1}
       </span>
-      <p className="text-sm md:text-base leading-snug">{label}</p>
+
+      <p className="text-sm text-center leading-snug">
+        {label}
+      </p>
     </div>
   );
 
+  const renderCardsRow = () => (
+    <div className="
+      overflow-x-auto 
+      -mx-4 px-4
+      pb-1
+      touch-pan-x
+      md:overflow-x-visible
+      md:mx-0 md:px-0
+      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]
+    ">
+      <div className="
+        flex gap-3
+        min-w-max
+        md:min-w-0
+        md:flex-wrap
+        md:justify-center
+        md:gap-4
+      ">
+        {programBlocks.map((label, idx) => (
+          <div
+            key={`${label}-${idx}`}
+            className="
+              shrink-0
+              w-[85vw] max-w-[300px]
+              md:w-[calc(33.333%-1rem)] 
+              md:max-w-[280px]
+              md:shrink
+            "
+          >
+            {renderCard(label, idx)}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  /* ===== ТОЛЬКО КАРТОЧКИ ===== */
   if (layout === "cards" || (!infoColumns.length && programBlocks.length)) {
     return (
       <section className="bg-white">
-        <div className="max-w-[1200px] mx-auto px-4 py-8">
+        <div className="px-4 py-6 md:px-6 md:py-8">
           {programHeading && (
-            <h3 className="text-center text-base md:text-lg font-semibold mb-6 uppercase">
+            <h3 className="text-center text-base md:text-lg font-semibold mb-4 md:mb-6 uppercase">
               {programHeading}
             </h3>
           )}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {programBlocks.map((label, idx) => renderCard(label, idx))}
-          </div>
+          {renderCardsRow()}
         </div>
       </section>
     );
   }
 
+  /* ===== ТЕКСТ + КАРТОЧКИ ===== */
   return (
     <section className="bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10">
-          <div className="space-y-8">
+      <div className="px-4 py-6 md:px-6 md:py-8">
+        <div className="flex flex-col gap-6 md:grid md:grid-cols-[minmax(300px,2fr)_3fr] md:gap-8 lg:gap-12">
+          {/* текст */}
+          <div className="space-y-6">
             {infoColumns.map((col, idx) => (
-              <div key={idx} className="space-y-3">
+              <div 
+                key={`col-${idx}`} 
+                className="space-y-3"
+              >
                 {col.title && (
                   <h3 className="text-base md:text-lg font-semibold uppercase text-[#151515]">
                     {col.title}
                   </h3>
                 )}
                 {col.subtitle && (
-                  <p className="text-sm font-semibold text-[#151515]">{col.subtitle}</p>
+                  <p className="text-sm font-semibold text-[#151515]">
+                    {col.subtitle}
+                  </p>
                 )}
-                <ul className="space-y-1 text-sm leading-snug text-[#111] list-none">
-                  {col.items?.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
+                {col.items?.length > 0 && (
+                  <ul className="space-y-2 text-sm md:text-base leading-relaxed text-[#111]">
+                    {col.items.map((item, i) => (
+                      <li 
+                        key={i}
+                        className="flex items-start"
+                      >
+                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#751715] mt-2 mr-2 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>
 
+          {/* карточки */}
           {programBlocks.length > 0 && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
-              {programBlocks.map((label, idx) => renderCard(label, idx))}
+            <div className="md:pt-4">
+              {programHeading && (
+                <h3 className="text-base md:text-lg font-semibold mb-4 uppercase text-[#151515] md:hidden">
+                  {programHeading}
+                </h3>
+              )}
+              {renderCardsRow()}
             </div>
           )}
         </div>

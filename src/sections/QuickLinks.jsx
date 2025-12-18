@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 import Ornament from "../assets/svg/ornament.svg";
 import Button from "../components/UI/Button";
@@ -41,12 +42,23 @@ function QuickLinks() {
               {item.title}
             </p>
 
-            <Button
-              variant="secondary"
-              className="mt-6 w-full max-w-[200px] md:max-w-[240px] hover:bg-[#751715] active:scale-95 rounded-[90px]"
-            >
-              {quickLinks.button}
-            </Button>
+            {item.link ? (
+              <Link to={item.link} className="w-full flex justify-center">
+                <Button
+                  variant="secondary"
+                  className="mt-6 w-full max-w-[200px] md:max-w-[240px] hover:bg-[#751715] active:scale-95 rounded-[90px]"
+                >
+                  {quickLinks.button}
+                </Button>
+              </Link>
+            ) : (
+              <Button
+                variant="secondary"
+                className="mt-6 w-full max-w-[200px] md:max-w-[240px] hover:bg-[#751715] active:scale-95 rounded-[90px]"
+              >
+                {quickLinks.button}
+              </Button>
+            )}
           </div>
         ))}
       </div>
