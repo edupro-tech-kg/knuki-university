@@ -1311,5 +1311,17 @@ export default {
         "Копия трудовой книжки (для имеющих трудовой стаж).",
       ],
     },
+    contacts: {
+      phoneLabel: "Телефон",
+      phone: "+996 312 57 03 79",
+      whatsappLabel: "WhatsApp",
+      whatsapp: "+996 504 199 144",
+      emailLabel: "Email",
+      email: "kguki.art@mail.ru",
+      addressLabel: "Адрес",
+      address: "Бишкек, пр. Жибек Жолу 113",
+      hoursLabel: "Время работы",
+      hours: "Пн–Пт 09:00–18:00",
+    },
   },
 };

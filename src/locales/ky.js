@@ -1018,5 +1018,17 @@ export default {
         "Эмгек китепчесинин көчүрмөсү (эмгек стажы барлар үчүн).",
       ],
     },
+    contacts: {
+      phoneLabel: "Телефон",
+      phone: "+996 312 57 03 79",
+      whatsappLabel: "WhatsApp",
+      whatsapp: "+996 504 199 144",
+      emailLabel: "Email",
+      email: "kguki.art@mail.ru",
+      addressLabel: "Дарек",
+      address: "Бишкек ш., Жибек Жолу пр. 113",
+      hoursLabel: "Иш убактысы",
+      hours: "Дүйшөмбү–Жума 09:00–18:00",
+    },
   },
 };

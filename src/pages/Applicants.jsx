@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhoneVolume, FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BsClockFill } from "react-icons/bs";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 function Applicants() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const applicants = t("applicants", { returnObjects: true });
 
     return (
@@ -64,36 +64,36 @@ function Applicants() {
                         <div className="flex gap-4">
                             <FaWhatsapp className='w-[35px] h-[35px]' />
                             <div className="font-['Inter'] font-medium">
-                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>Телефон</p>
-                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">+996 312 57 03 79</p>
+                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>{applicants.contacts.phoneLabel}</p>
+                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">{applicants.contacts.phone}</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
                             <FaPhoneVolume className='w-[35px] h-[35px]' />
                             <div className="font-['Inter'] font-medium">
-                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>WhatsApp</p>
-                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">+996 504 199 144</p>
+                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>{applicants.contacts.whatsappLabel}</p>
+                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">{applicants.contacts.whatsapp}</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
                             <MdEmail className='w-[35px] h-[35px]' />
                             <div className="font-['Inter'] font-medium">
-                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>Email</p>
-                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">contact@kguki.kg</p>
+                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>{applicants.contacts.emailLabel}</p>
+                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">{applicants.contacts.email}</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
                             <FaMapLocationDot className='w-[35px] h-[35px]' />
                             <div className="font-['Inter'] font-medium">
-                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>Дарек</p>
-                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">Бишкек ш., Жибек Жолу пр. 113</p>
+                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>{applicants.contacts.addressLabel}</p>
+                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">{applicants.contacts.address}</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
                             <BsClockFill className='w-[35px] h-[35px]' />
                             <div className="font-['Inter'] font-medium">
-                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>Иш убактысы</p>
-                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">Дүйшөмбү–Жума 09:00–18:00</p>
+                                <p className=' leading-[120%] tracking-[-0.04em] text-[20px]'>{applicants.contacts.hoursLabel}</p>
+                                <p className=" leading-[100%] tracking-[-0.04em] text-[16px] text-[#898989]">{applicants.contacts.hours}</p>
                             </div>
                         </div>
                     </div>

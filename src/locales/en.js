@@ -1274,5 +1274,17 @@ export default {
         "Copy of work record book (for those with work experience).",
       ],
     },
+    contacts: {
+      phoneLabel: "Phone",
+      phone: "+996 312 57 03 79",
+      whatsappLabel: "WhatsApp",
+      whatsapp: "+996 504 199 144",
+      emailLabel: "Email",
+      email: "kguki.art@mail.ru",
+      addressLabel: "Address",
+      address: "Bishkek, Zhibek Zholu Ave. 113",
+      hoursLabel: "Working hours",
+      hours: "Mon–Fri 09:00–18:00",
+    },
   },
 };
