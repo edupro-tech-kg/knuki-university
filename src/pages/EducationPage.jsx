@@ -1,56 +1,8 @@
-export default function EducationPage() {
-  const programs = {
-    first: [
-      { id: 1, title: "550600 Көркөмдүк билим берүү (Бакалавриат)" },
-      { id: 2, title: "570002 Театр таануу (Адистик)" },
-      { id: 3, title: "570005 Кино таануу (Адистик)" },
-      { id: 4, title: "570027 Адабий чыгармачылык (Адистик)" },
-      { id: 5, title: "570013 Үн режиссурасы (колдонулуучу багыттары боюнча) (Адистик)" },
-      { id: 6, title: "570014 Актёрдук өнөр (Адистик)" },
-      { id: 7, title: "570015 Режиссура (колдонулуучу багыттары боюнча) (Адистик)" },
-      { id: 8, title: "570006 Кинооператорлук (Адистик)" },
-      { id: 9, title: "570029 Социалдык-маданий ишмердүүлүгү (Адистик)" },
-      { id: 10, title: "570019 Хореография педагогикасы (Адистик)" },
-      { id: 11, title: "570031 Музей иши жана эстеликтерди коргоо (Адистик)" },
-      { id: 12, title: "Элдик музыкалык искусство (Эксперимент.) (Адистик)" },
-      { id: 13, title: "570200 Музыкалык искусство (Магистратура)" },
-      { id: 14, title: "570300 Театралдык искусство (Магистратура)" },
-      { id: 15, title: "550600 Көркөмдүк билим берүү (Магистратура)" },
-    ],
-    second: [
-      { id: 17, title: "17.00.02 Музыкалык искусство (Аспирантура)" },
-      { id: 18, title: "24.00.01 Маданияттын тарыхы жана теориясы (Аспирантура)" },
-    ],
-  };
+import { useTranslation } from "react-i18next";
 
-  const additionalPrograms = [
-    { id: 1, title: "Жогорку адабий курс (күндүзгү, 2 жыл)" },
-    { id: 2, title: "Хореография (күндүзгү, 72 саат)" },
-    { id: 3, title: "Музыкалык аткаруучулук (түрлөрү боюнча) (күндүзгү, 72 саат)" },
-    { id: 4, title: "Көркөмдүк билим берүү (күндүзгү, 72 саат)" },
-    { id: 5, title: "Музыка мугалими (күндүзгү, 72 саат)" },
-    {
-      id: 6,
-      title:
-        "«Социалдык-маданий ишмердүүлүк» багыты боюнча маданият жана искусство чөйрөсүндө эмгектенген кызматкерлердин адистигин жогорулатуу курсу (күндүзгү, 1 ай)",
-    },
-    {
-      id: 7,
-      title:
-        "Б.Бейшеналиева атындагы КУМИУнун алдындагы Кыргыз кинематография жана телересурсу Жогорку мектебинин курстары:",
-      list: [
-        "Театр жана кино сүрөтчү-коюучу",
-        "Кино жана телересурстун кино-продюссери",
-        "Костюм боюнча сүрөтчү-коюучу, гримёр",
-        "Үн режиссурасы",
-        "Кинооператор – сүрөт-тележурналист",
-        "Кино таануу",
-        "Кинодраматургия",
-        "Кинорежиссура",
-      ],
-      footer: "(күндүзгү, 10 ай)",
-    },
-  ];
+export default function EducationPage() {
+  const { t } = useTranslation();
+  const edicationDate = t("education");
 
   const styles = {
     border: "border border-black",
@@ -59,17 +11,6 @@ export default function EducationPage() {
     center: "flex justify-center",
     cellPadding: "pt-7 pb-11 pl-6",
   };
-
-  const sections = [
-    {
-      title: "Жогорку кесиптик билим берүү",
-      data: programs.first,
-    },
-    {
-      title: "Жогорку окуу жайдан кийинки кесиптик билим берүү",
-      data: programs.second,
-    },
-  ];
 
   return (
     <div className="pb-28">
@@ -91,7 +32,7 @@ export default function EducationPage() {
               </tr>
             </thead>
             <tbody>
-              {sections.map((section) => (
+              {edicationDate.tables.map((section) => (
                 <>
                   <tr>
                     <td className={styles.border}></td>
@@ -124,7 +65,7 @@ export default function EducationPage() {
               </tr>
             </thead>
             <tbody>
-              {additionalPrograms.map((item) => (
+              {edicationDate.additionalPrograms.map((item) => (
                 <tr key={item.id} className={styles.border}>
                   <td className="pt-7 pb-11 px-6">
                     <p className={styles.text}>{item.title}</p>
