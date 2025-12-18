@@ -9,11 +9,13 @@ import StudentsLife from "./pages/StudentsLife";
 import LibraryPage from "./pages/LibraryPage";
 import ManagementPage from "./pages/ManagementPage";
 import PracticeCareer from "./pages/PracticeCareer";
+import SeoTitle from "./components/SeoTitle";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-light text-dark flex flex-col">
+        <SeoTitle />
         <Header />
         <main className="flex-1">
           <Routes>

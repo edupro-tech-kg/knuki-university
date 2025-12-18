@@ -1,6 +1,9 @@
 export default {
   locale: "ky",
   code: "ky",
+  seo: {
+    title: "КУМИУ — Кыргыз улуттук маданият жана искусство университети",
+  },
   navLinks: {
     home: "Башкы бет",
     management: "Жетекчилик",

@@ -1,6 +1,9 @@
 export default {
   locale: "ru",
   code: "ru",
+  seo: {
+    title: "КНУКИ — Кыргызский национальный университет культуры и искусств",
+  },
   navLinks: {
     home: "Главная",
     management: "Руководство",

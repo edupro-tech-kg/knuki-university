@@ -1,6 +1,9 @@
 export default {
   locale: "en",
   code: "en",
+  seo: {
+    title: "KNUCA — Kyrgyz National University of Culture and Arts",
+  },
   navLinks: {
     home: "Home",
     management: "Administration",
