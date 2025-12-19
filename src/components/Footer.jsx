@@ -13,43 +13,43 @@ export default function Footer() {
       id: "letter",
       src: letter,
       alt: "Email",
-      href: "mailto:contact@kguki.kg"
+      href: "mailto:kguki.art@mail.ru",
     },
     {
       id: "phone",
       src: phone,
       alt: "Phone",
-      href: "tel:+996312570756"
+      href: "tel:+996312570379",
     },
     {
       id: "map",
       src: map,
       alt: "Map",
-      href: "https://maps.google.com/?q=720005+г.+Бишкек+ул.+Джантошева+113"
+      href: "https://maps.google.com/?q=720005+г.+Бишкек+ул.+Джантошева+113",
     },
     {
       id: "facebook",
       src: facebook,
       alt: "Facebook",
-      href: "https://facebook.com"
+      href: "https://www.facebook.com/share/1BniHdayHv/?mibextid=wwXIfr",
     },
     {
       id: "instagram",
       src: instagram,
       alt: "Instagram",
-      href: "https://instagram.com"
-    }
+      href: "https://www.instagram.com/knuki_kg?igsh=d3FlenBmdTFjcjNm&utm_source=qr",
+    },
   ];
 
   const linkUrls = [
-    "/", 
+    "/",
     "/management",
-    "/faculties", 
-    "/students", 
+    "/faculties",
+    "/students",
     "/applicants",
-    "/news", 
-    "/documents", 
-    "/contacts" 
+    "/news",
+    "/documents",
+    "/contacts",
   ];
 
   return (
@@ -57,7 +57,6 @@ export default function Footer() {
       <div className="container-edge py-16">
         <div className="flex flex-col md:flex-row md:items-start gap-10">
           <div className="grid grid-cols-2 gap-6 w-full">
-
             {/* Адрес */}
             <div>
               <strong className="font-medium text-[14px] md:text-[16.57px] lg:text-[26px] block mb-3 md:mb-4">
@@ -69,14 +68,14 @@ export default function Footer() {
                   <li key={index}>
                     {item.includes("email:") ? (
                       <a
-                        href="mailto:contact@kguki.kg"
+                        href="mailto:kguki.art@mail.ru"
                         className="hover:border-b hover:border-white transition duration-200 leading-tight"
                       >
                         {item}
                       </a>
                     ) : item.includes("+996") ? (
                       <a
-                        href="tel:+996312570756"
+                        href="tel:+996312570379"
                         className="hover:border-b hover:border-white transition duration-200 leading-tight"
                       >
                         {item}
@@ -112,7 +111,7 @@ export default function Footer() {
 
           {/* Иконки — десктоп */}
           <div className="hidden md:flex items-start gap-5 ml-auto">
-            {icons.map(icon => (
+            {icons.map((icon) => (
               <a
                 key={icon.id}
                 href={icon.href}
@@ -120,21 +119,15 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="cursor-pointer hover:opacity-80 transition-opacity"
               >
-                <img
-                  className="w-6 md:w-7 lg:w-8 xl:w-9"
-                  src={icon.src}
-                  alt={icon.alt}
-                />
-
+                <img className="w-6 md:w-7 lg:w-8 xl:w-9" src={icon.src} alt={icon.alt} />
               </a>
             ))}
           </div>
-
         </div>
 
         {/* Иконки — мобильные */}
         <div className="flex md:hidden justify-center mt-10 gap-5">
-          {icons.map(icon => (
+          {icons.map((icon) => (
             <a
               key={icon.id}
               href={icon.href}
@@ -142,18 +135,11 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="cursor-pointer hover:opacity-80 transition-opacity"
             >
-              <img
-                className="w-6 md:w-7 lg:w-8 xl:w-9"
-                src={icon.src}
-                alt={icon.alt}
-              />
-
+              <img className="w-6 md:w-7 lg:w-8 xl:w-9" src={icon.src} alt={icon.alt} />
             </a>
           ))}
         </div>
-
       </div>
     </footer>
-
   );
 }

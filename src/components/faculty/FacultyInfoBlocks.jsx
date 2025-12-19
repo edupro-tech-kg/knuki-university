@@ -39,7 +39,7 @@ export default function FacultyInfoBlocks({
     </div>
   );
 
-  const CardsRow = () => (
+  const renderCardsRow = () => (
     <div className="
       overflow-x-auto 
       -mx-4 px-4
@@ -85,7 +85,7 @@ export default function FacultyInfoBlocks({
               {programHeading}
             </h3>
           )}
-          <CardsRow />
+          {renderCardsRow()}
         </div>
       </section>
     );
@@ -138,7 +138,7 @@ export default function FacultyInfoBlocks({
                   {programHeading}
                 </h3>
               )}
-              <CardsRow />
+              {renderCardsRow()}
             </div>
           )}
         </div>
