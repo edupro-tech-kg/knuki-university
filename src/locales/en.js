@@ -966,6 +966,7 @@ export default {
       }
     ]
   },
+
   qualificationDescription: {
     title: "Center for Advanced Training",
     firstCont: "Since the 2023–2024 academic year, the Kyrgyz National University of Culture and Arts named after B. Beishenalieva has been implementing additional education courses for teachers and staff who wish to improve their professional skills and pedagogical knowledge, based on the license of the Ministry of Education and Science of the Kyrgyz Republic No. LS230001045 and Appendix 1 to Registration No. 108. Course participants can receive training and upgrade their qualifications in the following specialties.",
@@ -1022,6 +1023,9 @@ export default {
         image: "/qualificationFunc6.png"
       }
     ]
+  },
+  qualificationGoal: {
+    goal: "Goal is an educational program that involves organizing and conducting seminars, trainings, and courses aimed at improving and retraining employees' qualifications, as well as teaching certain scientific disciplines or sections necessary for professional activities. Through this, participants gain additional knowledge, skills, and competencies. Upon completion of the qualification improvement, supplementary education, or additional vocational training, learners receive a Certificate confirming their right (qualification) to conduct professional activities in a specific field."
   },
   managementInfo: {
     title: "Management",

@@ -2,8 +2,11 @@ import React from 'react';
 import goalbg from "../assets/images/goalbg.png";
 import man from "../assets/images/goalman.png";
 import graybg from '../assets/images/graybg.png';
+import { useTranslation } from 'react-i18next';
 
 function Goal() {
+    const { t } = useTranslation();
+    
     return (
         <div className="container-edge relative overflow-visible">
 
@@ -12,7 +15,7 @@ function Goal() {
                 style={{ backgroundImage: `url(${graybg})` }}
             />
 
-            <div className="relative z-10 flex flex-col lg:flex-row justify-between items-start lg:items-stretch gap-8 lg:gap-14 ">
+            <div className="relative z-10 flex flex-col lg:flex-row justify-between items-start lg:items-stretch gap-8 lg:gap-14">
 
                 <div className="w-full lg:w-[50%] flex justify-center">
                     <img
@@ -23,11 +26,11 @@ function Goal() {
                 </div>
 
                 <div
-                    className="w-full lg:w-[40%] p-4 sm:p-6 lg:p-8 bg-no-repeat bg-cover bg-center  flex items-center justify-center my-28"
+                    className="w-full lg:w-[40%] p-4 sm:p-6 lg:p-8 bg-no-repeat bg-cover bg-center flex items-center justify-center my-28"
                     style={{ backgroundImage: `url(${goalbg})` }}
                 >
                     <p className="text-white text-xs sm:text-sm lg:text-base leading-relaxed">
-                        Максаты: адистердин квалификациясын жогорулатуу жана кесиптик кайра даярдоо боюнча семинарларды, тренингдерди, курстарды уюштуруу жана өткөрүү, кесиптик ишти аткаруу үчүн зарыл болгон илимдин айрым дисциплиналарын, бөлүмдөрүн окутууну караган билим берүү программалары боюнча алардын кошумча билимдерди, көндүмдөрдү жана көндүмдөрдү алуусу болуп саналат. Квалификацияны жогорулатуунун, кошумча билим берүүнүн жана кошумча кесиптик билим берүүнүн натыйжалары боюнча угуучулар белгилүү бир чөйрөдө кесиптик иш жүргүзүү укугун (квалификациясын) ырастоочу Сертификат алышат.
+                        {t('qualificationGoal.goal')}
                     </p>
                 </div>
 
