@@ -1296,4 +1296,44 @@ export default {
       hours: "Mon–Fri 09:00–18:00",
     },
   },
+  literaturePage: {
+    title: "HIGHER LITERARY COURSES AT THE KYRGYZ NATIONAL UNIVERSITY OF CULTURE AND ARTS NAMED AFTER B. BEISHENALIEVA",
+    theme: "The Higher Literary Courses (hereinafter – HLC) carry out educational activities in accordance with Paragraph 4 of Article 7 of the Law of the Kyrgyz Republic “On Education” dated August 11, 2023 No. 179. The curriculum and study programs are based on the “Regulation on Additional Professional Education of the Kyrgyz Republic” (Appendix 7), approved by Resolution No. 329 of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025. The courses were established in 2024 at the Kyrgyz National University of Culture and Arts named after B. Beishenalieva (hereinafter – KNUCA).",
+    infos: [
+      {
+        text: "There are no age restrictions for applicants. The duration of study is 2 years (4 semesters), full-time mode, specialization — literary creativity. Applicants should aim to deepen their professional knowledge and develop their creative activity at a new level. A higher education diploma of any specialization is acceptable; however, the applicant must already be recognized by the public as a writer. The program concludes with the defense of a diploma project based on individual creative work, after which a graduation diploma is issued. Admission is conducted under the following conditions:"
+      },
+      {
+        text: "Applicants must submit a copy of their higher education diploma (with transcript) and creative works, as well as other documents required by the admissions committee. Admission is based on a creative competition. Preference is given to original and published works, festival laureates, and competition winners. Reviews, critiques, and feedback are welcomed. Texts published in periodicals are also accepted. Manuscripts must be typed in the specified format."
+      },
+      {
+        text: "Documents are accepted from July 15 to September 1. Classes begin on September 15. Requirements for literary creativity include: 500 lines of poetic text, 50 pages of prose or dramatic text. For translation and translation studies — 50 pages of translated text (Word format, font size 14, 1.5 line spacing). Tuition fee — 50,000 KGS. Upon payment of 60%, an enrollment order is issued. Changes in tuition fees are made by decision of the Academic Council."
+      }
+    ],
+    name: "Disciplines taught in the literary creativity program:",
+    list: [
+      "Literary Creativity",
+      "Theory of Literature",
+      "Theory of Literary Criticism",
+      "Kyrgyz Language and Text",
+      "History of Kyrgyz Literature",
+      "History of Literary Criticism",
+      "Modern Kyrgyz Literature",
+      "Eastern Literature",
+      "Russian Literature",
+      "Foreign Literature",
+      "Poetry of Akyns",
+      "Kyrgyz Folklore",
+      "20th Century Kyrgyz Prose and Chingiz Aitmatov",
+      "Psychology of Literary Creativity",
+      "Theory and Typology of the Novel",
+      "Ancient Literature",
+      "Philosophy",
+      "Aesthetics",
+      "Foreign Language",
+      "Industrial Practice",
+      "Practice"
+    ]
+  }
+
 };
