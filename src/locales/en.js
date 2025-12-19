@@ -1296,4 +1296,54 @@ export default {
       hours: "Mon–Fri 09:00–18:00",
     },
   },
+  sciencePage: {
+    title: "SCIENCE AND INTERNATIONAL RELATIONS",
+    infos: [
+      {
+        text: "Information about the Department of Science and International Relations. The department of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit responsible for organizing, coordinating, and developing research activities at the university. The department is one of the key implementers of the university’s strategic goal to become a scientific and creative center contributing to the development of national and global arts."
+      },
+      {
+        text: "The Department supports the scientific activities of faculty members, master’s students, doctoral candidates, and students, aiming to enhance the university’s research potential and ensure the integration of science, education, and creative activity."
+      },
+      {
+        text: "The department implements the university’s research policy, improves the quality and effectiveness of research, ensures competitive scientific outcomes at national and international levels, and systematically develops research personnel training. In 2023, postgraduate programs were launched in 17.00.02 – Musical Art and 24.00.01 – History and Theory of Culture and Arts."
+      },
+      {
+        text: "The university annually hosts scientific and practical conferences, meetings, seminars, internships, master classes, and round tables. Faculty members actively publish articles in Scopus, Web of Science, RSCI, and national journals. University scholars produce textbooks, methodological materials, and scientific and creative works in music, cinema, and theater."
+      },
+      {
+        text: "Since 2015, the university has published the scientific journal “Bulletin of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.” The journal accepts articles from international and local scholars, doctoral candidates, master’s students, and postgraduate students in culture, arts, pedagogy, and humanities. Articles are published in Kyrgyz, Russian, and English, and the journal is issued quarterly."
+      },
+      {
+        text: "The main goal of the journal is to promote the results of theoretical and applied research in culture, arts, pedagogy, and humanities, and to attract international scholars for cooperation. The Department actively expands international partnerships through memorandums and agreements with educational, cultural, and scientific institutions worldwide."
+      }
+    ],
+    name: "Currently, the university cooperates with the following institutions:",
+    list: [
+      "Belgium, Brussels — Belgian International Education Center",
+      "Turkey, Çanakkale — Çanakkale Onsekiz Mart University",
+      "Russian Federation, Moscow — State Institute of Art Studies",
+      "Russian Federation, Yekaterinburg — Yekaterinburg State Theatre Institute",
+      "USA, Virginia — International Foundation for Electoral Systems (IFES), Kyrgyz Republic Office",
+      "Russian Federation, Moscow — S.A. Gerasimov All-Russian State University of Cinematography (VGIK)",
+      "Russian Federation — D.S. Likhachev Institute for Cultural and Natural Heritage",
+      "Azerbaijan, Baku — Azerbaijan State University of Culture and Arts",
+      "Republic of Karakalpakstan, Nukus — Nukus Branch of the State Institute of Arts and Culture of Uzbekistan",
+      "Russian Federation, Chelyabinsk — P.I. Tchaikovsky South Ural State Institute of Arts",
+      "Republic of Tatarstan, Kazan — Kazan State Institute of Culture",
+      "South Korea — Yewon Arts University",
+      "Republic of Kazakhstan, Almaty — T. Zhurgenov Kazakh National Academy of Arts",
+      "Republic of Uzbekistan — B. Zakirov National Institute of Pop Art",
+      "Republic of Kazakhstan, Astana — Kazakh National Academy of Choreography",
+      "Kyrgyz Republic — Eurasia KG Public Foundation",
+      "Kyrgyz Republic — National Broadcasting Corporation",
+      "Kyrgyz Republic — “Altyn Tüyün” National Children’s Engineering Academy",
+      "Kyrgyz Republic — Eurasian International University",
+      "Kyrgyz Republic — I. Arabayev Kyrgyz State University",
+      "Kyrgyz Republic — D. Sadyrbaev Kyrgyztelefilm Studio",
+      "Kyrgyz Republic — Institute of Journalism and Communication of J. Balasagyn Kyrgyz National University",
+      "Kyrgyz Republic — Niyazaly Osh State Music College"
+    ]
+  }
+
 };
