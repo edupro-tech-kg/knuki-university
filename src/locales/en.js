@@ -1,6 +1,7 @@
 export default {
   locale: "en",
   code: "en",
+
   seo: {
     title: "KNUCA — Kyrgyz National University of Culture and Arts",
   },
@@ -542,13 +543,13 @@ export default {
   },
   quickLinks: {
     title: "Quick Links",
-    cards: [
-      { id: 1, title: "About the University" },
-      { id: 2, title: "Science & International Relations" },
-      { id: 3, title: "Ebilim" },
-      { id: 4, title: "Documents" },
-      { id: 5, title: "Practice & Career Department", link: "/practice-career" },
-    ],
+    cards: {
+      about: "About the University",
+      science: "Science & International Relations",
+      ebilim: "Ebilim",
+      documents: "Documents",
+      practice: "Practice & Career Department",
+    },
     button: "Learn More",
   },
   practiceCareer: {
@@ -1133,4 +1134,224 @@ export default {
   ],
 }
 
+  ebilim: {
+    title: "ebilim",
+    subtitle: "Apply to university online!",
+    AIdescription: "Smart AI-powered services for applicants",
+    button: "Log in to the system",
+    advertisement: "Advertisement 0+",
+    description:
+      " is a modern Learning Management System (LMS) designed to optimize and simplify educational processes in educational institutions. EBILIM provides a wide range of tools for course management, assessment, interactive learning, analytics, and automation of the learning process, offering a convenient and efficient approach to education.",
+  },
+  education: {
+    additionalPrograms: [
+      { id: 1, title: "Advanced Literary Courses (full-time, 2 years)" },
+      { id: 2, title: "Choreography (full-time, 72 hours)" },
+      { id: 3, title: "Musical Performance (by specialization) (full-time, 72 hours)" },
+      { id: 4, title: "Art Education (full-time, 72 hours)" },
+      { id: 5, title: "Music Teacher (full-time, 72 hours)" },
+      {
+        id: 6,
+        title:
+          "Professional Development Course for Culture and Arts Professionals in the field of “Socio-Cultural Activities” (full-time, 1 month)",
+      },
+      {
+        id: 7,
+        title:
+          "Courses of the Higher School of Kyrgyz Cinematography and Television Resources under the B. Beishenalieva Kyrgyz State University of Culture and Arts:",
+        list: [
+          "Theatre and Film Production Designer",
+          "Film and Television Producer",
+          "Costume Designer, Makeup Artist",
+          "Sound Directing",
+          "Cinematographer – Photo and TV Journalist",
+          "Film Studies",
+          "Screenwriting",
+          "Film Directing",
+        ],
+        footer: "(full-time, 10 months)",
+      },
+    ],
+    tables: [
+      {
+        title: "Higher Professional Education",
+        data: [
+          { id: 1, title: "550600 Art Education (Bachelor’s Degree)" },
+          { id: 2, title: "570002 Theatre Studies (Specialist Degree)" },
+          { id: 3, title: "570005 Film Studies (Specialist Degree)" },
+          { id: 4, title: "570027 Literary Creativity (Specialist Degree)" },
+          { id: 5, title: "570013 Sound Directing (by fields of application) (Specialist Degree)" },
+          { id: 6, title: "570014 Acting Arts (Specialist Degree)" },
+          { id: 7, title: "570015 Directing (by fields of application) (Specialist Degree)" },
+          { id: 8, title: "570006 Cinematography (Specialist Degree)" },
+          { id: 9, title: "570029 Socio-Cultural Activities (Specialist Degree)" },
+          { id: 10, title: "570019 Choreography Pedagogy (Specialist Degree)" },
+          {
+            id: 11,
+            title: "570031 Museum Studies and Protection of Cultural Heritage (Specialist Degree)",
+          },
+          { id: 12, title: "Folk Musical Arts (Experimental) (Specialist Degree)" },
+          { id: 13, title: "570200 Musical Arts (Master’s Degree)" },
+          { id: 14, title: "570300 Theatre Arts (Master’s Degree)" },
+          { id: 15, title: "550600 Art Education (Master’s Degree)" },
+        ],
+      },
+      {
+        title: "Postgraduate Professional Education",
+        data: [
+          { id: 17, title: "17.00.02 Musical Arts (Postgraduate Studies)" },
+          { id: 18, title: "24.00.01 History and Theory of Culture (Postgraduate Studies)" },
+        ],
+      },
+    ],
+  },
+
+  applicants: {
+    title: "APPLICANTS",
+    title2: "Kyrgyz State University of Culture and Arts named after Bubuсаra Beishenalieva",
+    faculties: [
+      {
+        name: "FACULTY OF FOLK MUSIC",
+        infos: [
+          {
+            span: "Choir conductor, teacher:",
+            p: "Testing musicality and singing ability, colloquium;",
+          },
+          {
+            span: "Orchestra conductor, teacher:",
+            p: "Testing musical ability, playing a musical instrument, colloquium;",
+          },
+          {
+            span: "Soloist of folklore-ethnographic ensemble, teacher:",
+            p: "playing Kyrgyz folk instruments, singing, performing excerpts from epics, dastans and aitysh, etc.;",
+          },
+        ],
+      },
+      {
+        name: "FACULTY OF POP MUSIC AND MUSICAL EDUCATION",
+        infos: [
+          {
+            span: "Pop orchestra director, teacher:",
+            p: "Testing musicality, abilities and playing a musical instrument;",
+          },
+          {
+            span: "Pop ensemble director, soloist-teacher:",
+            p: "Testing musicality and singing ability. (Performing two-three songs of different genres in Kyrgyz, Russian, English);",
+          },
+          { span: "Music teacher:", p: "Testing musicality and singing ability." },
+        ],
+      },
+      {
+        name: "FACULTY OF CINEMA AND TELEVISION",
+        infos: [
+          {
+            span: "Television and radio broadcasting director, teacher:",
+            p: "writing a script, testing acting ability; colloquium",
+          },
+          {
+            span: "Cinema and television operator, teacher:",
+            p: "photo competition; photo reportage, testing knowledge in physics and chemistry through interview.",
+          },
+          {
+            span: "Sound director, teacher:",
+            p: "(Cinema and TV) colloquium in the specialty, testing musical abilities; interview in physics;",
+          },
+          {
+            span: "Film actor, teacher:",
+            p: "testing voice and speech skills, reading excerpts from literary works, testing musical-rhythmic ability;",
+          },
+          {
+            span: "Feature film and television film director, teacher:",
+            p: "writing a script, testing acting ability; colloquium",
+          },
+          {
+            span: "Film studies specialist, teacher:",
+            p: "analysis of a play and critical opinion, colloquium.",
+          },
+          {
+            span: "Literary creativity (screenwriter), teacher:",
+            p: "analysis of a play, colloquium.",
+          },
+        ],
+      },
+      {
+        name: "FACULTY OF CHOREOGRAPHY AND CULTURAL ACTIVITIES",
+        infos: [
+          {
+            span: "Manager of socio-cultural activities:",
+            p: "organizing socio-cultural work (in written form), colloquium in the specialty (oral);",
+          },
+          {
+            span: "Manager of choreographic collective, teacher:",
+            p: "performance skills (classical, folk-stage, historical-domestic dances), colloquium;",
+          },
+          { span: "Choreography teacher." },
+          { span: "Museum work and monument protection." },
+        ],
+      },
+      {
+        name: "THEATER FACULTY",
+        infos: [
+          {
+            span: "Drama actor, teacher:",
+            p: "testing voice and speech skills, reading excerpts from literary works, testing musical-rhythmic ability;",
+          },
+          {
+            span: "Drama director, teacher:",
+            p: "practical directing, analysis of a play, testing acting ability;",
+          },
+          { span: "Theater studies specialist, teacher:", p: "analysis of a play, colloquium." },
+        ],
+      },
+      {
+        name: "POSTGRADUATE STUDIES",
+        infos: [{ p: "Musical art;" }, { p: "History and theory of culture;" }],
+      },
+      {
+        name: "MASTER'S DEGREE",
+        infos: [
+          { p: "*Art education:" },
+          { p: "*Music education;" },
+          { p: "*Theater arts:" },
+          { p: "*Acting art and directing;" },
+          { p: "*Theater studies and dramaturgy;" },
+          { p: "*Musical art:" },
+          { p: "*Instrumental musical art;" },
+          { p: "*Ethnomusicology;" },
+          { p: "*Vocal art;" },
+        ],
+      },
+    ],
+    conditions: {
+      first:
+        "All applicants, in addition to entrance exams in their specialty, take a standardized test in Kyrgyz or Russian.",
+      all: [
+        "The certificate of the nationwide test is NOT REQUIRED for applicants to the university.",
+        "Applicants are admitted on the basis of state budget and contract.",
+        "Non-local students are provided with dormitory accommodation.",
+      ],
+    },
+    documents: {
+      name: "Required documents:",
+      all: [
+        "Certificate or diploma of secondary or secondary specialized education (original);",
+        "Medical certificate (form 0-86 У);",
+        "6 photos size 3x4;",
+        "Presents passport, military ID or registration certificate;",
+        "Copy of work record book (for those with work experience).",
+      ],
+    },
+    contacts: {
+      phoneLabel: "Phone",
+      phone: "+996 312 57 03 79",
+      whatsappLabel: "WhatsApp",
+      whatsapp: "+996 504 199 144",
+      emailLabel: "Email",
+      email: "kguki.art@mail.ru",
+      addressLabel: "Address",
+      address: "Bishkek, Zhibek Zholu Ave. 113",
+      hoursLabel: "Working hours",
+      hours: "Mon–Fri 09:00–18:00",
+    },
+  },
 };

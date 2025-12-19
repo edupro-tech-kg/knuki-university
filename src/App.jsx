@@ -6,11 +6,14 @@ import HistoryPage from "./pages/HistoryPage";
 import FacultyPage from "./pages/FacultyPage";
 import NewsPage from "./pages/NewsPage";
 import StudentsLife from "./pages/StudentsLife";
+import Applicants from "./pages/Applicants";
 import LibraryPage from "./pages/LibraryPage";
 import ManagementPage from "./pages/ManagementPage";
 import PracticeCareer from "./pages/PracticeCareer";
+import EducationPage from "./pages/EducationPage";
 import SeoTitle from "./components/SeoTitle";
 import HRdepartment from "./pages/HRdepartmentPage";
+import EbilimPage from "./pages/EbilimPage";
 
 function App() {
   return (
@@ -25,10 +28,13 @@ function App() {
             <Route path="/faculty/:slug" element={<FacultyPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/studentsLife" element={<StudentsLife />} />
+            <Route path="/applicants" element={<Applicants />} />
             <Route path="/library" element={<LibraryPage />} />
             <Route path="/management" element={<ManagementPage />} />
             <Route path="/practice-career" element={<PracticeCareer />} />
             <Route path="/HRdepartment" element={<HRdepartment/>} />
+            <Route path="/ebilim" element={<EbilimPage />} />
+            <Route path="/education" element={<EducationPage />} />
           </Routes>
         </main>
         <Footer />

@@ -4,6 +4,7 @@ import Mission2 from "../assets/images/mission2image.png";
 import Mission3 from "../assets/images/mission3.png";
 import Button from "../components/UI/Button";
 import { Trans } from "react-i18next";
+import Pattern from "../assets/svg/patterns.svg";
 
 function MissionSection() {
   const { t } = useTranslation();
@@ -33,10 +34,7 @@ function MissionSection() {
                 {t("mission.imageDescription")}
               </p>
 
-              <Button
-                variant="primaryIcon"
-                 className="self-start"
-              >
+              <Button variant="primaryIcon" className="self-start">
                 {t("mission.button")}
               </Button>
             </div>
@@ -63,7 +61,7 @@ function MissionSection() {
       </div>
       <div className="mt-2">
         <img
-          src="/src/assets/svg/patterns.svg"
+          src={Pattern}
           alt="patterns"
           className="object-cover h-12  w-[620px] sm:w-[1000px]   lg:h-auto lg:w-full"
         />
