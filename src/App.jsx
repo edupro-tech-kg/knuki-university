@@ -10,6 +10,7 @@ import LibraryPage from "./pages/LibraryPage";
 import ManagementPage from "./pages/ManagementPage";
 import PracticeCareer from "./pages/PracticeCareer";
 import SeoTitle from "./components/SeoTitle";
+import HRdepartment from "./pages/HRdepartmentPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/library" element={<LibraryPage />} />
             <Route path="/management" element={<ManagementPage />} />
             <Route path="/practice-career" element={<PracticeCareer />} />
+            <Route path="/HRdepartment" element={<HRdepartment/>} />
           </Routes>
         </main>
         <Footer />

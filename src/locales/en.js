@@ -1075,4 +1075,62 @@ export default {
       },
     ],
   },
+ HRdepartment: {
+  title: "human resources department",
+  subtitle:
+    "The Human Resources Department of KUMIU named after B. Beishenalieva is a structural unit of the university responsible for implementing personnel policy, staff recruitment, registration and employment, maintaining personnel records, concluding employment contracts, and addressing social and legal matters.",
+
+  mainMission: "Main responsibilities of the Human Resources Department:",
+  missions: [
+    "Hiring and dismissal of employees (vacancy announcements, interviews, candidate selection).",
+    "Maintenance and storage of personnel records (continuous work with the e-Kyzmat system, employment records, bilateral contracts).",
+    "Monitoring working hours, preparing employment contracts, and ensuring proper working conditions.",
+    "Monitoring professional development and qualification improvement of academic staff.",
+    "Providing legal support and advisory assistance on labor law issues.",
+    "Preparing statistical reports and providing data required for payroll calculations.",
+    "Managing personnel documentation related to students (orders, certificates).",
+  ],
+
+  listTitle: "HR Department Staff:",
+  disciplines: [
+    "B.B. Baktybekova — Head of the HR Department (0312 570354, 996 412829, begai02121990baktybekova@gmail.com)",
+    "Zh.Sh. Temirkanova — Leading Inspector (Student Affairs Division, Temircanova@mail.ru)",
+    "F.Sh. Momukulova — HR Inspector (farida.momukulova@gmail.com)",
+    "E.A. Imankulov, A.S. Suleimanov — Lawyers (erpolat91@mail.ru)",
+  ],
+
+  servicesTitle: "The Human Resources Department provides the following services:",
+  services: [
+    "Providing information on vacancies and accepting applications.",
+    "Informing about vacant positions and accepting resumes.",
+    "Verification and registration of employee documents.",
+    "Preparation of employment contracts.",
+    "Consultation on benefits, labor disputes, leave, and other legal matters.",
+    "Organization of internships, business trips, and workplaces (including for students).",
+    "Legal support and ensuring proper execution of contracts.",
+    "Services for employees and job applicants.",
+    "Support on issues related to leave, sick leave certificates, and social guarantees.",
+  ],
+
+  scheduleTitle: "Working hours:",
+  schedule: [
+    "Monday — Friday: 09:00 — 17:00",
+    "Lunch break: 12:00 — 13:00",
+  ],
+
+  employmentTitle: "List of documents required for employment:",
+  employment: [
+    "Application for employment (transfer or dismissal).",
+    "Employee personal record card (Form T-2).",
+    "Autobiography and resume; 4×5 photos — 3 copies.",
+    "Copy of passport (2 copies) and copies of education certificates.",
+    "Copies of documents confirming awards or incentives (if available).",
+    "Copy of employment record book; employment contract and job description (provided by the HR Department).",
+    "Certificates from PNDD and the Ministry of Internal Affairs (criminal record clearance).",
+    "Certificate from NDD.",
+    "Medical (sanitary) record book.",
+    "Copy of military ID (for men).",
+  ],
+}
+
 };
