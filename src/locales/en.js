@@ -887,5 +887,62 @@ export default {
         content: "librarian of the film studio reading room."
       }
     ]
+  },
+  qualificationDescription: {
+    title: "Center for Advanced Training",
+    firstCont: "Since the 2023–2024 academic year, the Kyrgyz National University of Culture and Arts named after B. Beishenalieva has been implementing additional education courses for teachers and staff who wish to improve their professional skills and pedagogical knowledge, based on the license of the Ministry of Education and Science of the Kyrgyz Republic No. LS230001045 and Appendix 1 to Registration No. 108. Course participants can receive training and upgrade their qualifications in the following specialties.",
+    secondCont: "The Center for Advanced Training of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit of the university that implements additional and additional professional education programs. The Center operates in accordance with the legislation of the Kyrgyz Republic, the University Charter, orders of the Rector, and the relevant Regulations."
+  },
+  target: {
+    title: "Main Objectives:",
+    cards: [
+      {
+        description: "— organization and implementation of advanced training for specialists, additional education courses, and professional retraining for all interested participants within licensed educational programs;"
+      },
+      {
+        description: "— meeting individual needs for knowledge about new achievements in science, culture, and arts, as well as advanced domestic and international best practices;"
+      },
+      {
+        description: "— providing conditions for continuous education of specialists from organizations and institutions regardless of their legal and organizational form, civil servants, dismissed employees, unemployed citizens, and unemployed specialists;"
+      },
+      {
+        description: "— expansion and deepening of professional education through mastering additional professional education programs within the framework of the acquired specialty."
+      }
+    ]
+  },
+  qualificationFunction: {
+    title: "Функции Центра повышения квалификации:",
+    cards: [
+      {
+        id: 1,
+        description: "Центр повышения квалификации реализует следующие виды дополнительного и дополнительного профессионального образования (с отрывом от основной работы, с частичным отрывом и по индивидуальным образовательным программам):",
+        image: "/qualificationFunc1.png"
+      },
+      {
+        id: 2,
+        description: "Обучающие тренинги/семинары продолжительностью 8, 16, 32 и 36 часов (по итогам выдается сертификат).",
+        image: "/qualificationFunc6.png"
+      },
+      {
+        id: 3,
+        description: "Курсы повышения квалификации объемом 72 и 180 часов (при успешном завершении выдается сертификат о краткосрочном повышении квалификации).",
+        image: "/qualificationFunc3.png"
+      },
+      {
+        id: 4,
+        description: "Для реализации учебного процесса на договорной основе с оплатой труда привлекаются преподаватели университета и профильные специалисты других образовательных и научных организаций.",
+        image: "/qualificationFunc4.png"
+      },
+      {
+        id: 5,
+        description: "Освоение образовательных программ Центра повышения квалификации завершается обязательной итоговой аттестацией, проводимой специальными комиссиями.",
+        image: "/qualificationFunc5.png"
+      },
+      {
+        id: 6,
+        description: "Периодичность повышения квалификации специалистов (по мере необходимости) определяется характером их профессиональной деятельности.",
+        image: "/qualificationFunc6.png"
+      }
+    ]
   }
 };

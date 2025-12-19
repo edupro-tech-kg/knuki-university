@@ -7,6 +7,7 @@ import FacultyPage from "./pages/FacultyPage";
 import NewsPage from "./pages/NewsPage";
 import StudentsLife from "./pages/StudentsLife";
 import LibraryPage from "./pages/LibraryPage";
+import QualificationPage from "./pages/QualificationPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/news" element={<NewsPage />} />
             <Route path="/studentsLife" element={<StudentsLife />} />
             <Route path="/library" element={<LibraryPage />} />
+            <Route path="/qualification" element={<QualificationPage />} />
           </Routes>
         </main>
         <Footer />
