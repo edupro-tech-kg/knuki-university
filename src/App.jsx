@@ -8,6 +8,7 @@ import NewsPage from "./pages/NewsPage";
 import StudentsLife from "./pages/StudentsLife";
 import Applicants from "./pages/Applicants";
 import LibraryPage from "./pages/LibraryPage";
+import QualificationPage from "./pages/QualificationPage";
 import ManagementPage from "./pages/ManagementPage";
 import PracticeCareer from "./pages/PracticeCareer";
 import EducationPage from "./pages/EducationPage";
@@ -29,6 +30,7 @@ function App() {
             <Route path="/studentsLife" element={<StudentsLife />} />
             <Route path="/applicants" element={<Applicants />} />
             <Route path="/library" element={<LibraryPage />} />
+            <Route path="/qualification" element={<QualificationPage />} />
             <Route path="/management" element={<ManagementPage />} />
             <Route path="/practice-career" element={<PracticeCareer />} />
             <Route path="/ebilim" element={<EbilimPage />} />
