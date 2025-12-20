@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import MissionSectionImg from "../assets/images/missionImage.png";
 import Mission2 from "../assets/images/mission2image.png";
 import Mission3 from "../assets/images/mission3.png";
-import Button from "../components/UI/Button";
+// import Button from "../components/UI/Button";
 import { Trans } from "react-i18next";
 import Pattern from "../assets/svg/patterns.svg";
 
@@ -34,27 +34,27 @@ function MissionSection() {
                 {t("mission.imageDescription")}
               </p>
 
-              <Button variant="primaryIcon" className="self-start mt-auto">
+              {/* <Button variant="primaryIcon" className="self-start mt-auto">
                 {t("mission.button")}
-              </Button>
+              </Button> */}
             </div>
 
           </div>
 
           <div className="flex flex-col gap-3">
-            <div className="w-full h-[319px] overflow-hidden">
+            <div className="w-full overflow-hidden">
               <img
                 src={Mission2}
                 alt="Secondary mission"
-                className="w-full h-full object-cover filter grayscale"
+                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter grayscale"
               />
             </div>
 
-            <div className="w-full h-[319px] overflow-hidden">
+            <div className="w-full overflow-hidden">
               <img
                 src={Mission3}
                 alt="Additional mission"
-                className="w-full h-full object-cover filter grayscale"
+                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter grayscale"
               />
             </div>
           </div>
