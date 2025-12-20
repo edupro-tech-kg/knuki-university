@@ -1147,6 +1147,9 @@ export default {
       " is a modern Learning Management System (LMS) designed to optimize and simplify educational processes in educational institutions. EBILIM provides a wide range of tools for course management, assessment, interactive learning, analytics, and automation of the learning process, offering a convenient and efficient approach to education.",
   },
   education: {
+    "title": "education",
+    "programTitle": "Education program name",
+    "additionalEducation": "Additional education",
     additionalPrograms: [
       { id: 1, title: "Advanced Literary Courses (full-time, 2 years)" },
       { id: 2, title: "Choreography (full-time, 72 hours)" },
