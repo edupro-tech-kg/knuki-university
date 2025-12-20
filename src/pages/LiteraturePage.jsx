@@ -7,7 +7,7 @@ function LiteraturePage() {
 
     return (
         <div className="container-edge my-12">
-            <h1 className="uppercase font-serif text-lg md:text-4xl font-bold mb-4 text-primary  text-center">
+            <h1 className="uppercase font-serif text-lg md:text-4xl font-bold mb-4 text-primary  text-center italic">
                 {data.title}
             </h1>
 
