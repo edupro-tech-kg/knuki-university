@@ -9,11 +9,11 @@ import projector from "../assets/svg/projector.svg";
 import ballerina from "../assets/svg/ballerina.svg";
 
 const directions = [
-  { icon: music, slug: "estrada-music" },
-  { icon: mask, slug: "theater" },
-  { icon: projector, slug: "kino-tele" },
-  { icon: ballerina, slug: "choreography" },
-  { icon: music, slug: "folk-music" },
+  { icon: music, slug: "choreography" },
+  { icon: mask, slug: "folk-music" },
+  { icon: projector, slug: "estrada-music" },
+  { icon: ballerina, slug: "theater" },
+  { icon: music, slug: "kino-tele" },
   { icon: mask, slug: "postgraduate" },
 ];
 
@@ -27,7 +27,7 @@ export default function ProgramsSection() {
     const checkDesktop = () => {
       const desktop = window.innerWidth >= 768;
       setIsDesktop(desktop);
-      
+
       // Проверяем, нужны ли кнопки навигации (если контент не помещается)
       if (containerRef.current && desktop) {
         const container = containerRef.current;
@@ -105,9 +105,10 @@ export default function ProgramsSection() {
           <div
             ref={containerRef}
             className={`
-              ${!isDesktop 
-                ? "flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 pl-4 pr-4 md:pl-0 md:pr-0" 
-                : "md:flex md:overflow-x-auto md:gap-6 md:pb-4 md:scrollbar-hide md:px-1"
+              ${
+                !isDesktop
+                  ? "flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 pl-4 pr-4 md:pl-0 md:pr-0"
+                  : "md:flex md:overflow-x-auto md:gap-6 md:pb-4 md:scrollbar-hide md:px-1"
               }
               [&::-webkit-scrollbar]:hidden
               [-ms-overflow-style:none]
@@ -120,9 +121,10 @@ export default function ProgramsSection() {
                 key={dir.slug}
                 className={`
                   group 
-                  ${!isDesktop 
-                    ? "flex-shrink-0 w-[calc(100vw-64px)] md:w-[calc(50vw-48px)] snap-start" 
-                    : "md:flex-shrink-0 md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]"
+                  ${
+                    !isDesktop
+                      ? "flex-shrink-0 w-[calc(100vw-64px)] md:w-[calc(50vw-48px)] snap-start"
+                      : "md:flex-shrink-0 md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]"
                   }
                   bg-text-primary transition-all duration-300 
                   hover:bg-primary flex flex-col
@@ -146,16 +148,12 @@ export default function ProgramsSection() {
                   </div>
 
                   <div>
-                    <ButtonPrimary variant="primaryIcon">
-                      {t("programs.buttonText")}
-                    </ButtonPrimary>
+                    <ButtonPrimary variant="primaryIcon">{t("programs.buttonText")}</ButtonPrimary>
                   </div>
                 </div>
               </Link>
             ))}
           </div>
-
-     
         </div>
 
         {/* Кнопки навигации - показываем только если контент не помещается */}
