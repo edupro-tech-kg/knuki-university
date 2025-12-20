@@ -15,6 +15,7 @@ import EducationPage from "./pages/EducationPage";
 import SeoTitle from "./components/SeoTitle";
 import HRdepartment from "./pages/HRdepartmentPage";
 import EbilimPage from "./pages/EbilimPage";
+import DocumentPage from "./pages/DocumentsPage";
 import SciencePage from "./pages/SciencePage";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <Route path="/HRdepartment" element={<HRdepartment/>} />
             <Route path="/ebilim" element={<EbilimPage />} />
             <Route path="/education" element={<EducationPage />} />
+            <Route path="/documents" element={<DocumentPage />} />
             <Route path="/science" element={<SciencePage />} />
           </Routes>
         </main>

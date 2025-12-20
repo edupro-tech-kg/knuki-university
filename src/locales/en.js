@@ -1418,6 +1418,86 @@ export default {
       hours: "Mon–Fri 09:00–18:00",
     },
   },
+
+  documentNLA: {
+    title: "NLA Documents of KR",
+    btnText: "More",
+    documents: [
+      "Resolution of the Government of the Kyrgyz Republic dated August 23, 2011 No. 496 “On the establishment of a two-level structure of higher professional education in the Kyrgyz Republic”.",
+      "Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated September 27, 2024 No. 590 “On approval of regulatory legal acts governing the activities of higher professional education institutions”.",
+      "Appendix 2 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated September 27, 2024 No. 590. REGULATION on the procedure for transfer, expulsion, reinstatement of students and granting academic leave in higher professional education institutions of the Kyrgyz Republic.",
+      "Appendix 2 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated September 27, 2024 No. 590. REGULATION on the procedure for transfer, expulsion, reinstatement of students and granting academic leave in higher professional education institutions of the Kyrgyz Republic.",
+      "Appendix 3 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated September 27, 2024 No. 590. REGULATION on current assessment and interim certification of students in higher professional education institutions of the Kyrgyz Republic.",
+      "Regulation on the AIS Diploma 2025 digital registry.",
+      "Resolution dated May 22, 2024 No. 258. REGULATION on IMA.",
+      "Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025 No. 329 “On approval of regulatory legal acts in the field of higher and secondary professional education”.",
+      "Appendix 1 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025 No. 329. REGULATION on higher professional and postgraduate education institutions of the Kyrgyz Republic.",
+      "Appendix 2 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025 No. 329. REGULATION on state educational standards of higher and secondary professional education of the Kyrgyz Republic.",
+      "Appendix 3 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025 No. 329. REGULATION on the educational and methodological association of higher and secondary professional education of the Kyrgyz Republic.",
+      "Appendix 4 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025 No. 329. REGULATION on the faculty and department of a higher professional education institution of the Kyrgyz Republic.",
+      "Appendix 5 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025 No. 329. REGULATION on the academic council of a higher professional education institution of the Kyrgyz Republic.",
+      "Appendix 6 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025 No. 329. REGULATION on the procedure for filling teaching staff positions in higher professional education institutions of the Kyrgyz Republic.",
+      "Appendix 7 to the Resolution of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025 No. 329. REGULATION on additional professional education in the Kyrgyz Republic.",
+      "Resolution of the Kyrgyz Republic dated May 10, 2024 No. 231 “On the procedure for financing state educational institutions of primary, secondary and higher professional education”."
+    ],
+
+    links: [
+      "https://cbd.minjust.gov.kg/7-14864/edition/19609/kg?editionCode=exact",
+      "https://cbd.minjust.gov.kg/7-33050/edition/17445/kg",
+      "https://cbd.minjust.gov.kg/230014839/edition/17452/kg?lang=kg",
+      "https://cbd.minjust.gov.kg/7-33051/edition/17455/kg?lang=kg",
+      "https://cbd.minjust.gov.kg/7-33051/edition/17455/kg?lang=kg",
+      "https://diplom.edu.gov.kg/diploma/",
+      "https://cbd.minjust.gov.kg/46-3664/edition/8733/ru",
+      "https://cbd.minjust.gov.kg/7-43071/edition/34437/kg",
+      "https://cbd.minjust.gov.kg/230029680/edition/35047/kg?lang=kg",
+      "https://cbd.minjust.gov.kg/230029723/edition/35177/kg?lang=kg",
+      "https://cbd.minjust.gov.kg/230029724/edition/35178/kg?lang=kg",
+      "https://cbd.minjust.gov.kg/230029726/edition/35180/kg?lang=kg",
+      "https://cbd.minjust.gov.kg/230029727/edition/35181/kg?lang=kg",
+      "https://cbd.minjust.gov.kg/230029728/edition/35182/kg?lang=k",
+      "https://cbd.minjust.gov.kg/230029729/edition/35183/kg?lang=kg",
+      "https://drive.google.com/file/d/10IJ84Fae5tIlB9Pwn0W_mG4hOyqK6I-Z/view"
+    ]
+  },
+  NLAkguki: {
+    title: "NLA Documents of KNUKI",
+    btnText: "More",
+    documents: [
+      "Resolution of the Council of Ministers of the Kyrgyz SSR dated August 30, 1967 No. 482 “On the establishment of the Kyrgyz State Institute of Arts” (KSIA).",
+      "Resolution of the Council of Ministers of the Kyrgyz SSR dated January 28, 1974 No. 21 “On assigning the official name Kyrgyz State Institute of Arts named after Bubusara Beyshenalieva”.",
+      "Resolution of the Government of the Kyrgyz Republic dated August 28, 2013 No. 470 “On the transformation of the Kyrgyz State Institute of Arts named after B. Beyshenalieva into the Kyrgyz State University of Culture and Arts named after B. Beyshenalieva”.",
+      "Decree of the President of the Kyrgyz Republic “On granting the status ‘National’ to the Kyrgyz State University of Culture and Arts named after B. Beyshenalieva”. No. 96 dated March 22, 2025.",
+      "Certificate of re-registration.",
+      "Charter of KSUCА (2025).",
+      "REGULATION on the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the educational and methodological association of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the faculty and department of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the Academic Council of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the procedure for filling teaching staff positions at the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on organizing the educational process using academic credits at the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the procedure for transfer, expulsion, reinstatement of students and granting academic leave at the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "Guidelines for applying the modular-rating teaching technology at the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the anti-corruption policy of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "STATE EDUCATIONAL STANDARD OF HIGHER PROFESSIONAL EDUCATION OF THE KYRGYZ REPUBLIC. Qualification: “Specialist” (approved by Order No. 1578/1 dated December 11, 2021). Fields of study: 570002 Theatre Studies, 570027 Literary Creativity, 570013 Sound Directing (by application areas), 570014 Acting Arts, 570015 Directing (by application areas), 570006 Cinematography, 570029 Socio-cultural Activities, 570019 Choreography Pedagogy, 550600 Art Education.",
+      "STATE EDUCATIONAL STANDARD OF HIGHER PROFESSIONAL EDUCATION OF THE KYRGYZ REPUBLIC. Qualification: “Master” (approved by Order No. 1815/1 dated September 21, 2024). Fields of study: 570200 Musical Arts, 570300 Theatre Arts, 550600 Art Education.",
+      "REGULATION on the basic educational program (BEP) of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the final state certification of graduates of KSUCА.",
+      "REGULATION on state educational documents of secondary and higher professional education and the procedure for their preparation, payment, storage, issuance and accounting. Appendix to the Order of the Ministry of Education and Science of the Kyrgyz Republic dated March 10, 2025 No. 249/1.",
+      "REGULATION on the trust box of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the Department of Education Quality Assurance, Licensing and Accreditation of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on the educational and methodological complex.",
+      "REGULATION on academic mobility.",
+      "REGULATION on the storage of musical instruments at the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on monitoring consumer satisfaction with the quality of education at the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on organizing and conducting internships at the university.",
+      "REGULATION on internships for master’s degree students.",
+      "REGULATION on the master’s thesis.",
+      "REGULATION on labor protection and ensuring safe conditions in the educational process at the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva.",
+      "REGULATION on elective courses for students of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva."
+    ],
+
+  },
   sciencePage: {
     title: "SCIENCE AND INTERNATIONAL RELATIONS",
     infos: [
@@ -1469,3 +1549,4 @@ export default {
   }
 
 };
+
