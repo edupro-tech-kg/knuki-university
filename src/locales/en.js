@@ -1497,7 +1497,7 @@ export default {
       "REGULATION on elective courses for students of the Kyrgyz National University of Culture and Arts named after B. Beyshenalieva."
     ],
 
-  }
+  },
   sciencePage: {
     title: "SCIENCE AND INTERNATIONAL RELATIONS",
     infos: [
