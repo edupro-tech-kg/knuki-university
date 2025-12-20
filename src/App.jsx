@@ -13,6 +13,7 @@ import ManagementPage from "./pages/ManagementPage";
 import PracticeCareer from "./pages/PracticeCareer";
 import EducationPage from "./pages/EducationPage";
 import SeoTitle from "./components/SeoTitle";
+import HRdepartment from "./pages/HRdepartmentPage";
 import EbilimPage from "./pages/EbilimPage";
 import SciencePage from "./pages/SciencePage";
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/qualification" element={<QualificationPage />} />
             <Route path="/management" element={<ManagementPage />} />
             <Route path="/practice-career" element={<PracticeCareer />} />
+            <Route path="/HRdepartment" element={<HRdepartment/>} />
             <Route path="/ebilim" element={<EbilimPage />} />
             <Route path="/education" element={<EducationPage />} />
             <Route path="/science" element={<SciencePage />} />
