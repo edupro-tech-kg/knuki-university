@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import NavBar from "./NavBar";
 
-const SideBar = ({ onClose, isOpen }) => {
+const SideBar = ({ onClose }) => {
   const { t } = useTranslation();
   const headerTranslations = t("header", { returnObjects: true });
   

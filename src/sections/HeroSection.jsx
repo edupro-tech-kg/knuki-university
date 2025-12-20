@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import img from "../assets/images/hero-img.png";
-import tracery from "../assets/images/tracery.png";
 import { useTranslation } from "react-i18next";
 import Search from "../components/UI/Search";
 import Pattern from "../assets/svg/patterns.svg";

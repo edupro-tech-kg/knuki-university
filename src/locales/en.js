@@ -665,13 +665,7 @@ export default {
       "Fax: +996 312 57 07 56",
       "Tel.: +996 312 57 07 56",
     ],
-    linkItems: [
-      "Home",
-      "Management",
-      "For Students",
-      "For Applicants",
-      "Documents",
-    ],
+    linkItems: ["Home", "Management", "For Students", "For Applicants", "Documents"],
     about: "Where Kyrgyz artistic heritage meets contemporary creative practice.",
     download: "Download brochure",
     navTitle: "Navigation",
@@ -827,69 +821,124 @@ export default {
       "The student self-governance structure at the B. Beishenalieva Kyrgyz National University of Culture and Arts is the Student Council. It was established based on the Decree of the President of the Kyrgyz Republic “On the Development of State Youth Policy of the Kyrgyz Republic,” as well as in accordance with the laws of the Kyrgyz Republic “On Education” and “On the Fundamentals of State Youth Policy,” the charter of KNKUCA, the education concept, and other regulatory legal acts, the Resolution of the Government of the Kyrgyz Republic, and Article 79 of the Constitution of the Kyrgyz Republic, guided by the Youth Policy Concept for 2020–2030. The Student Council is a structural unit within the university that implements state youth policy within its competence. In December 2023, a special regulation regarding the Chairperson of the Student Council and the Student Ombudsman was developed, and the structure’s leaders were elected. The structure’s leaders are elected annually and rotate.",
   },
   studentsInfo: [
+    { image: "/Nurai.png", name: "Orozova Nurai", content: "Chair of the student council" },
     {
-      image: "/Nurai.png",
-      name: "Orozova Nurai",
-      content: "Chairperson of the Girls' Council",
+      image: "/photo-placeholder.svg",
+      name: "Syimyk Abirov",
+      content: "Head of the student ombudsman office",
     },
     {
-      image: "/Dastan.png",
-      name: "Janbolotov Dastan",
-      content: "Student Council Chairman",
+      image: "/photo-placeholder.svg",
+      name: "Aitanshy Shabdanova",
+      content: "Chair of the Girls’ Council",
     },
     {
-      image: " /Aktilek.png",
-      name: "Rahmatilla uulu Aktilek",
-      content: "Student ombudsman",
+      image: "/photo-placeholder.svg",
+      name: "Esengul Akylbek uulu",
+      content: "First deputy for academic and cultural affairs",
     },
     {
-      image: "/Nestan.png",
-      name: "Orozbekova Nestan",
-      content: "Deputy of the Student Council for Academic, Cultural, and Organizational Affairs",
+      image: "/photo-placeholder.svg",
+      name: "Shailoobek Naralyev",
+      content: "Deputy for public and international relations",
     },
     {
-      image: "/Amina.png",
-      name: "Sheishenalieva Amina",
-      content: "Deputy Chairman of the Student Council for External Relations",
+      image: "/photo-placeholder.svg",
+      name: "Aliya Malikova",
+      content: "Head of sport and health sector",
     },
     {
-      image: "/Askat.png",
-      name: "Bolotbek uulu Askat",
-      content: "Deputy Chairman of the Student Council for Health and Sports",
+      image: "/photo-placeholder.svg",
+      name: "Almaz kyzy Tansuluu",
+      content: "Deputy for dormitory affairs",
     },
     {
-      image: "/Venera.png",
-      name: "Ashyrkunova Venera",
-      content: "Deputy Chairman of the Student Council for Dormitory",
+      image: "/photo-placeholder.svg",
+      name: "—",
+      content: "Chair, Pop and Music Education faculty student council",
+    },
+    {
+      image: "/photo-placeholder.svg",
+      name: "—",
+      content: "Chair, Choreography and Cultural Activities faculty student council",
+    },
+    {
+      image: "/photo-placeholder.svg",
+      name: "—",
+      content: "Chair, Folk Music faculty student council",
+    },
+    {
+      image: "/photo-placeholder.svg",
+      name: "—",
+      content: "Chair, Theatre faculty student council",
+    },
+    {
+      image: "/photo-placeholder.svg",
+      name: "—",
+      content: "Chair, Film and Television faculty student council",
     },
   ],
   chairmanCard: {
-    title: "Faculty Student Council Chairmen",
+    title: "Faculty student council leaders",
     cards: [
-      {
-        id: 1,
-        name: "Orozobekova Nestan",
-        content:
-          "Chairman of the Student Council of the Faculty of Choreography and Cultural Activities",
-      },
-      {
-        id: 2,
-        name: "Sheishenalieva Amina",
-        content: "Chairman of the Student Council of the Faculty of Arts",
-      },
-      {
-        id: 3,
-        name: "Bolotbek uulu Askat",
-        content: "Chairman of the Student Council of the Faculty of Theatre",
-      },
+      { id: 1, name: "Nestan Orozobekova", content: "Chair of the student council" },
+      { id: 2, name: "Syimyk Abirov", content: "Head of the student ombudsman office" },
+      { id: 3, name: "Aitanshy Shabdanova", content: "Chair of the women’s council" },
       {
         id: 4,
-        name: "Ashirakunova Venera",
-        content:
-          "Chairman of the Film and Television Student Council “Altyn Nur” Folk Instrument Ensemble “Sonu” Pop Group “Asman Legenda” Shadow Theater",
+        name: "Esengul Akylbek uulu",
+        content: "First deputy for academic and cultural affairs",
       },
+      { id: 5, name: "Shailoobek Naralyev", content: "Public and international relations sector" },
+      { id: 6, name: "Aliya Malikova", content: "Head of sport and health sector" },
+      { id: 7, name: "Almaz kyzy Tansuluu", content: "Deputy chair for dormitory affairs" },
     ],
   },
+  studentClubs: [
+    {
+      key: "altynNur",
+      name: "‘Altyn Nur’ folk instruments ensemble",
+      image: "/news.png",
+      description:
+        "Founded and led by Nurpeil Samarbekova in 2016. Includes 22 students (conducting majors). Winners of many contests, international participants. Perform Kyrgyz pieces and well-known film soundtracks.",
+    },
+    {
+      key: "sonun",
+      name: "‘Sonun’ pop group",
+      image: "/news.png",
+      description:
+        "Performing for 20+ years. Founder — head of the pop department Toktogulov Adbitalip Kochkorovich. Participants of national and international festivals, award winners, give concerts across the country.",
+    },
+    {
+      key: "asmanLegenda",
+      name: "‘Asman legenda’ shadow/puppet theatre",
+      image: "/news.png",
+      description:
+        "Led by Honored Artist of KR, Associate Professor Asel Turdalieva. Students of the puppet-theatre program perform shows in kindergartens, schools, and events, strengthening practical skills.",
+    },
+    {
+      key: "jetiMuun",
+      name: "‘Jeti muun’ ethno-folklore ensemble",
+      image: "/news.png",
+      description:
+        "Founded by Ismailbek uulu Akylbek in 2021. 8 instrumentalists and 2 vocalists. Play Kyrgyz string, wind, and percussion instruments; perform folk songs and kyui. Prizewinners in national contests and festivals.",
+    },
+    {
+      key: "erguu",
+      name: "‘Ergüü’ literary circle",
+      image: "/news.png",
+      description:
+        "Founder/leader — senior lecturer Kunduz Makeyeva. Unites students interested in prose, poetry, drama. Created the ‘Jash Talant’ magazine (since 2015) and take part in city and national literary evenings.",
+    },
+    {
+      key: "volunteers",
+      name: "Creative volunteer group",
+      image: "/news.png",
+      description:
+        "Founder/leader — lecturer Nurzat Keldibekova. Established 2017. Students of socio-cultural activity program. Organize university and national events, charity actions, promote volunteerism and patriotism among youth.",
+    },
+  ],
+
   libraryDescription: {
     title: "Scientific Library of KNUCA named after B. Beishenalieva",
     content:

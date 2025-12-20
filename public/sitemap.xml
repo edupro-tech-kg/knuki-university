@@ -37,19 +37,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.knuki.kg/faculty/kino-tele</loc>
-    <lastmod>2025-12-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.knuki.kg/faculty/theater</loc>
-    <lastmod>2025-12-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.knuki.kg/faculty/choreography</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.knuki.kg/faculty/folk-music</loc>
     <lastmod>2025-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -61,7 +55,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.knuki.kg/faculty/folk-music</loc>
+    <loc>https://www.knuki.kg/faculty/theater</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.knuki.kg/faculty/kino-tele</loc>
     <lastmod>2025-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
