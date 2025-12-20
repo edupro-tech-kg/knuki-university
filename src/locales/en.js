@@ -667,12 +667,9 @@ export default {
     linkItems: [
       "Home",
       "Management",
-      "Faculties",
       "For Students",
       "For Applicants",
-      "News",
       "Documents",
-      "Contacts",
     ],
     about: "Where Kyrgyz artistic heritage meets contemporary creative practice.",
     download: "Download brochure",
