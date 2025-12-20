@@ -36,7 +36,7 @@ function QuickLinks() {
               border border-text-secondary p-4 min-w-[280px] md:min-w-0 md:w-full
               flex flex-col justify-between items-center text-center
               duration-300 bg-white
-              h-56
+              h-64
               md:justify-self-center
             "
           >
