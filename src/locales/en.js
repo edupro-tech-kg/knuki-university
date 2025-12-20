@@ -787,7 +787,7 @@ export default {
     description:
       "is to train talented, creative, intellectual personnel in the field of culture and arts",
     imageDescription:
-      "The opening ceremony of the X International Student Theater Festival 'New Names' took place. The solemn ceremony was attended by Vice Prime Minister of the Kyrgyz Republic Edil Baisalov, Deputy Minister of Culture, Information and Youth Policy Timurland Ajimaliev, as well as theater figures, foreign guests, students and theater lovers.",
+      "The theatre festival “New Names” was first proposed in 2016 by Bolot Tentimishev, a lecturer at the B. Beishenalieva Kyrgyz National University of Culture and Arts and an Honored Artist of the Kyrgyz Republic, and in 2016 it was held at the republican level with the support of the Ministry of Culture, Information and Youth Policy of the Kyrgyz Republic and the Union of Theatre Workers of Kyrgyzstan.Starting from 2023, the festival reached the international level, and alongside Kyrgyzstan, students of theatrical educational institutions, young actors and directors from such countries as Turkey, Kazakhstan, Uzbekistan, Russia, and Azerbaijan have been participating in it.“New Names” is a platform that provides young theatrical talents with the opportunity to take their first professional steps, gain experience in the field of theatre and the arts, and establish international creative connections.In the years 2024–2025, the B. Beishenalieva Kyrgyz National University of Culture and Arts won the Grand Prix of the festival.",
     button: "Learn More",
   },
   week: {
