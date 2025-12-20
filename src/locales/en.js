@@ -544,11 +544,12 @@ export default {
   quickLinks: {
     title: "Quick Links",
     cards: {
-      about: "About the University",
-      science: "Science & International Relations",
-      ebilim: "Ebilim",
-      documents: "Documents",
-      practice: "Practice & Career Department",
+      ebilim: "EBILIM",
+      practic: "Practice & Career Department",
+      qualification: "DEPARTMENT OF QUALIFICATIONS ADVANCEMENT",
+      library: "LIBRARY",
+      literature: "HIGH LITERATURE COURSE",
+      department: "PERSONNEL DEPARTMENT",
     },
     button: "Learn More",
   },

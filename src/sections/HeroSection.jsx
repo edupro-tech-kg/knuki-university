@@ -4,6 +4,7 @@ import img from "../assets/images/hero-img.png";
 import tracery from "../assets/images/tracery.png";
 import { useTranslation } from "react-i18next";
 import Search from "../components/UI/Search";
+import Pattern from "../assets/svg/patterns.svg";
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -114,7 +115,7 @@ export default function HeroSection() {
           />
         </div>
 
-        
+
         <div
           className="
             flex flex-col justify-center
@@ -125,7 +126,7 @@ export default function HeroSection() {
             w-full
           "
         >
-          <h1 className="font-serif italic font-bold text-[#751715] text-2xl sm:text-3xl md:text-4xl lg:text-[50px] leading-tight max-w-4xl">
+          <h1 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-accent text-center italic mt-4">
             {hero.title1} <br /> {hero.title2}
           </h1>
 
@@ -136,7 +137,7 @@ export default function HeroSection() {
           {/* stats */}
           <div
             ref={numbersRef}
-            className="flex flex-col sm:flex-row w-full gap-6 text-center"
+            className="flex gap-1 md:gap-6 text-center"
           >
             <Stat
               value={`+${(students / 1_000_000).toFixed(2)}M`}
@@ -156,17 +157,12 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="relative w-full overflow-hidden">
-        <div className="flex gap-2">
-          {[...Array(12)].map((_, i) => (
-            <img
-              key={i}
-              src={tracery}
-              alt=""
-              className=" object-cover"
-            />
-          ))}
-        </div>
+      <div className="mt-2">
+        <img
+          src={Pattern}
+          alt="patterns"
+          className="object-cover h-12  w-[620px] sm:w-[1000px]   lg:h-auto lg:w-full"
+        />
       </div>
 
 
@@ -188,10 +184,10 @@ export default function HeroSection() {
 function Stat({ value, label }) {
   return (
     <div className="flex-1 px-2">
-      <p className="stat-number text-2xl sm:text-3xl font-medium text-[#751715]">
+      <p className="stat-number text-xl sm:text-3xl font-medium text-[#751715]">
         {value}
       </p>
-      <p className="text-sm opacity-70 mt-1">{label}</p>
+      <p className="text-xs opacity-70 mt-1">{label}</p>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function CalendarEvents() {
     <section id="events" className="bg-primary font-serif pb-24 pt-12 md:pt-16 ">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-14 overflow-hidden pb-9">
         <div className="flex justify-center">
-          <p className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl">
+          <p className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-2xl 2xl:text-4xl">
             КАЛЕНДАРЬ СОБЫТИЙ
           </p>
         </div>

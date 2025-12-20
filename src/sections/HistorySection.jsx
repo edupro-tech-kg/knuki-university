@@ -29,7 +29,7 @@ export default function HistoryPage() {
 
   return (
     <div className="relative mx-3 md:mx-20  mr-3">
-      <h1 className="font-serif text-center text-3xl md:text-6xl font-bold mb-16 md:mb-24 text-[#751715] italic">
+      <h1 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-14 text-text-accent text-center italic">
         {t("history.title")}
       </h1>
 

@@ -578,11 +578,12 @@ export default {
   quickLinks: {
     title: "Быстрые ссылки",
     cards: {
-      about: "Об университете",
-      science: "Наука и международные связи",
-      ebilim: "Ebilim",
-      documents: "Документы",
-      practice: "Отдел практики и карьеры",
+      ebilim: "EBILIM",
+      practic: "Отдел практики и карьеры",
+      qualification: "ОТДЕЛ ПОВЫШЕНИЯ КВАЛИФИКАЦИИ",
+      library: "БИБЛИОТЕКА",
+      literature: "КУРС ВЫСШЕЙ ЛИТЕРАТУРЫ",
+      department: "ОТДЕЛ КАДРОВ",
     },
     button: "Подробнее",
   },

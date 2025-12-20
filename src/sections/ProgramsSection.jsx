@@ -96,12 +96,11 @@ export default function ProgramsSection() {
       className="bg-background flex items-center justify-center mt-20 container mx-auto px-4 sm:px-6 lg:px-8"
     >
       <div className="w-full relative max-w-7xl">
-        <h2 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-text-primary">
+        <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
           {t("programs.eyebrow")}
         </h2>
 
         <div className="relative">
-          {/* Контейнер с паддингами для правильного скролла */}
           <div
             ref={containerRef}
             className={`
@@ -133,9 +132,9 @@ export default function ProgramsSection() {
                 <div className="p-6 flex flex-col h-full">
                   <div className="text-sm text-stroke mb-2">{t("programs.faculty")}</div>
 
-                  <h2 className="font-sans text-2xl font-medium text-white mb-4">
+                  <h3 className="font-sans text-xl font-medium text-white mb-4">
                     {getTitle(dir.slug, index)}
-                  </h2>
+                  </h3>
 
                   <div className="flex-grow"></div>
 
@@ -158,7 +157,6 @@ export default function ProgramsSection() {
      
         </div>
 
-        {/* Кнопки навигации - показываем только если контент не помещается */}
         {isDesktop && showControls && (
           <div className="flex justify-center items-center gap-4 mt-8">
             <button
