@@ -962,70 +962,82 @@ export default {
       },
       {
         name: "Baichubakova U.K.",
-        content: "librarian of the film studio reading room."
-      }
-    ]
+        content: "librarian of the film studio reading room.",
+      },
+    ],
   },
 
   qualificationDescription: {
     title: "Center for Advanced Training",
-    firstCont: "Since the 2023–2024 academic year, the Kyrgyz National University of Culture and Arts named after B. Beishenalieva has been implementing additional education courses for teachers and staff who wish to improve their professional skills and pedagogical knowledge, based on the license of the Ministry of Education and Science of the Kyrgyz Republic No. LS230001045 and Appendix 1 to Registration No. 108. Course participants can receive training and upgrade their qualifications in the following specialties.",
-    secondCont: "The Center for Advanced Training of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit of the university that implements additional and additional professional education programs. The Center operates in accordance with the legislation of the Kyrgyz Republic, the University Charter, orders of the Rector, and the relevant Regulations."
+    firstCont:
+      "Since the 2023–2024 academic year, the Kyrgyz National University of Culture and Arts named after B. Beishenalieva has been implementing additional education courses for teachers and staff who wish to improve their professional skills and pedagogical knowledge, based on the license of the Ministry of Education and Science of the Kyrgyz Republic No. LS230001045 and Appendix 1 to Registration No. 108. Course participants can receive training and upgrade their qualifications in the following specialties.",
+    secondCont:
+      "The Center for Advanced Training of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit of the university that implements additional and additional professional education programs. The Center operates in accordance with the legislation of the Kyrgyz Republic, the University Charter, orders of the Rector, and the relevant Regulations.",
   },
   target: {
     title: "Main Objectives:",
     cards: [
       {
-        description: "— organization and implementation of advanced training for specialists, additional education courses, and professional retraining for all interested participants within licensed educational programs;"
+        description:
+          "— organization and implementation of advanced training for specialists, additional education courses, and professional retraining for all interested participants within licensed educational programs;",
       },
       {
-        description: "— meeting individual needs for knowledge about new achievements in science, culture, and arts, as well as advanced domestic and international best practices;"
+        description:
+          "— meeting individual needs for knowledge about new achievements in science, culture, and arts, as well as advanced domestic and international best practices;",
       },
       {
-        description: "— providing conditions for continuous education of specialists from organizations and institutions regardless of their legal and organizational form, civil servants, dismissed employees, unemployed citizens, and unemployed specialists;"
+        description:
+          "— providing conditions for continuous education of specialists from organizations and institutions regardless of their legal and organizational form, civil servants, dismissed employees, unemployed citizens, and unemployed specialists;",
       },
       {
-        description: "— expansion and deepening of professional education through mastering additional professional education programs within the framework of the acquired specialty."
-      }
-    ]
+        description:
+          "— expansion and deepening of professional education through mastering additional professional education programs within the framework of the acquired specialty.",
+      },
+    ],
   },
   qualificationFunction: {
     title: "Функции Центра повышения квалификации:",
     cards: [
       {
         id: 1,
-        description: "Центр повышения квалификации реализует следующие виды дополнительного и дополнительного профессионального образования (с отрывом от основной работы, с частичным отрывом и по индивидуальным образовательным программам):",
-        image: "/qualificationFunc1.png"
+        description:
+          "Центр повышения квалификации реализует следующие виды дополнительного и дополнительного профессионального образования (с отрывом от основной работы, с частичным отрывом и по индивидуальным образовательным программам):",
+        image: "/qualificationFunc1.png",
       },
       {
         id: 2,
-        description: "Обучающие тренинги/семинары продолжительностью 8, 16, 32 и 36 часов (по итогам выдается сертификат).",
-        image: "/qualificationFunc6.png"
+        description:
+          "Обучающие тренинги/семинары продолжительностью 8, 16, 32 и 36 часов (по итогам выдается сертификат).",
+        image: "/qualificationFunc6.png",
       },
       {
         id: 3,
-        description: "Курсы повышения квалификации объемом 72 и 180 часов (при успешном завершении выдается сертификат о краткосрочном повышении квалификации).",
-        image: "/qualificationFunc3.png"
+        description:
+          "Курсы повышения квалификации объемом 72 и 180 часов (при успешном завершении выдается сертификат о краткосрочном повышении квалификации).",
+        image: "/qualificationFunc3.png",
       },
       {
         id: 4,
-        description: "Для реализации учебного процесса на договорной основе с оплатой труда привлекаются преподаватели университета и профильные специалисты других образовательных и научных организаций.",
-        image: "/qualificationFunc4.png"
+        description:
+          "Для реализации учебного процесса на договорной основе с оплатой труда привлекаются преподаватели университета и профильные специалисты других образовательных и научных организаций.",
+        image: "/qualificationFunc4.png",
       },
       {
         id: 5,
-        description: "Освоение образовательных программ Центра повышения квалификации завершается обязательной итоговой аттестацией, проводимой специальными комиссиями.",
-        image: "/qualificationFunc5.png"
+        description:
+          "Освоение образовательных программ Центра повышения квалификации завершается обязательной итоговой аттестацией, проводимой специальными комиссиями.",
+        image: "/qualificationFunc5.png",
       },
       {
         id: 6,
-        description: "Периодичность повышения квалификации специалистов (по мере необходимости) определяется характером их профессиональной деятельности.",
-        image: "/qualificationFunc6.png"
-      }
-    ]
+        description:
+          "Периодичность повышения квалификации специалистов (по мере необходимости) определяется характером их профессиональной деятельности.",
+        image: "/qualificationFunc6.png",
+      },
+    ],
   },
   qualificationGoal: {
-    goal: "Goal is an educational program that involves organizing and conducting seminars, trainings, and courses aimed at improving and retraining employees' qualifications, as well as teaching certain scientific disciplines or sections necessary for professional activities. Through this, participants gain additional knowledge, skills, and competencies. Upon completion of the qualification improvement, supplementary education, or additional vocational training, learners receive a Certificate confirming their right (qualification) to conduct professional activities in a specific field."
+    goal: "Goal is an educational program that involves organizing and conducting seminars, trainings, and courses aimed at improving and retraining employees' qualifications, as well as teaching certain scientific disciplines or sections necessary for professional activities. Through this, participants gain additional knowledge, skills, and competencies. Upon completion of the qualification improvement, supplementary education, or additional vocational training, learners receive a Certificate confirming their right (qualification) to conduct professional activities in a specific field.",
   },
   managementInfo: {
     title: "Management",
@@ -1175,10 +1187,7 @@ export default {
     ],
 
     scheduleTitle: "Working hours:",
-    schedule: [
-      "Monday — Friday: 09:00 — 17:00",
-      "Lunch break: 12:00 — 13:00",
-    ],
+    schedule: ["Monday — Friday: 09:00 — 17:00", "Lunch break: 12:00 — 13:00"],
 
     employmentTitle: "List of documents required for employment:",
     employment: [
@@ -1205,9 +1214,9 @@ export default {
       " is a modern Learning Management System (LMS) designed to optimize and simplify educational processes in educational institutions. EBILIM provides a wide range of tools for course management, assessment, interactive learning, analytics, and automation of the learning process, offering a convenient and efficient approach to education.",
   },
   education: {
-    "title": "education",
-    "programTitle": "Education program name",
-    "additionalEducation": "Additional education",
+    title: "education",
+    programTitle: "Education program name",
+    additionalEducation: "Additional education",
     additionalPrograms: [
       { id: 1, title: "Advanced Literary Courses (full-time, 2 years)" },
       { id: 2, title: "Choreography (full-time, 72 hours)" },
@@ -1419,18 +1428,20 @@ export default {
     },
   },
   literaturePage: {
-    title: "HIGHER LITERARY COURSES AT THE KYRGYZ NATIONAL UNIVERSITY OF CULTURE AND ARTS NAMED AFTER B. BEISHENALIEVA",
-    theme: "The Higher Literary Courses (hereinafter – HLC) carry out educational activities in accordance with Paragraph 4 of Article 7 of the Law of the Kyrgyz Republic “On Education” dated August 11, 2023 No. 179. The curriculum and study programs are based on the “Regulation on Additional Professional Education of the Kyrgyz Republic” (Appendix 7), approved by Resolution No. 329 of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025. The courses were established in 2024 at the Kyrgyz National University of Culture and Arts named after B. Beishenalieva (hereinafter – KNUCA).",
+    title:
+      "HIGHER LITERARY COURSES AT THE KYRGYZ NATIONAL UNIVERSITY OF CULTURE AND ARTS NAMED AFTER B. BEISHENALIEVA",
+    theme:
+      "The Higher Literary Courses (hereinafter – HLC) carry out educational activities in accordance with Paragraph 4 of Article 7 of the Law of the Kyrgyz Republic “On Education” dated August 11, 2023 No. 179. The curriculum and study programs are based on the “Regulation on Additional Professional Education of the Kyrgyz Republic” (Appendix 7), approved by Resolution No. 329 of the Cabinet of Ministers of the Kyrgyz Republic dated June 10, 2025. The courses were established in 2024 at the Kyrgyz National University of Culture and Arts named after B. Beishenalieva (hereinafter – KNUCA).",
     infos: [
       {
-        text: "There are no age restrictions for applicants. The duration of study is 2 years (4 semesters), full-time mode, specialization — literary creativity. Applicants should aim to deepen their professional knowledge and develop their creative activity at a new level. A higher education diploma of any specialization is acceptable; however, the applicant must already be recognized by the public as a writer. The program concludes with the defense of a diploma project based on individual creative work, after which a graduation diploma is issued. Admission is conducted under the following conditions:"
+        text: "There are no age restrictions for applicants. The duration of study is 2 years (4 semesters), full-time mode, specialization — literary creativity. Applicants should aim to deepen their professional knowledge and develop their creative activity at a new level. A higher education diploma of any specialization is acceptable; however, the applicant must already be recognized by the public as a writer. The program concludes with the defense of a diploma project based on individual creative work, after which a graduation diploma is issued. Admission is conducted under the following conditions:",
       },
       {
-        text: "Applicants must submit a copy of their higher education diploma (with transcript) and creative works, as well as other documents required by the admissions committee. Admission is based on a creative competition. Preference is given to original and published works, festival laureates, and competition winners. Reviews, critiques, and feedback are welcomed. Texts published in periodicals are also accepted. Manuscripts must be typed in the specified format."
+        text: "Applicants must submit a copy of their higher education diploma (with transcript) and creative works, as well as other documents required by the admissions committee. Admission is based on a creative competition. Preference is given to original and published works, festival laureates, and competition winners. Reviews, critiques, and feedback are welcomed. Texts published in periodicals are also accepted. Manuscripts must be typed in the specified format.",
       },
       {
-        text: "Documents are accepted from July 15 to September 1. Classes begin on September 15. Requirements for literary creativity include: 500 lines of poetic text, 50 pages of prose or dramatic text. For translation and translation studies — 50 pages of translated text (Word format, font size 14, 1.5 line spacing). Tuition fee — 50,000 KGS. Upon payment of 60%, an enrollment order is issued. Changes in tuition fees are made by decision of the Academic Council."
-      }
+        text: "Documents are accepted from July 15 to September 1. Classes begin on September 15. Requirements for literary creativity include: 500 lines of poetic text, 50 pages of prose or dramatic text. For translation and translation studies — 50 pages of translated text (Word format, font size 14, 1.5 line spacing). Tuition fee — 50,000 KGS. Upon payment of 60%, an enrollment order is issued. Changes in tuition fees are made by decision of the Academic Council.",
+      },
     ],
     name: "Disciplines taught in the literary creativity program:",
     list: [
@@ -1454,28 +1465,30 @@ export default {
       "Aesthetics",
       "Foreign Language",
       "Industrial Practice",
-      "Practice"
+      "Practice",
+    ],
+  },
   sciencePage: {
     title: "SCIENCE AND INTERNATIONAL RELATIONS",
     infos: [
       {
-        text: "Information about the Department of Science and International Relations. The department of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit responsible for organizing, coordinating, and developing research activities at the university. The department is one of the key implementers of the university’s strategic goal to become a scientific and creative center contributing to the development of national and global arts."
+        text: "Information about the Department of Science and International Relations. The department of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit responsible for organizing, coordinating, and developing research activities at the university. The department is one of the key implementers of the university’s strategic goal to become a scientific and creative center contributing to the development of national and global arts.",
       },
       {
-        text: "The Department supports the scientific activities of faculty members, master’s students, doctoral candidates, and students, aiming to enhance the university’s research potential and ensure the integration of science, education, and creative activity."
+        text: "The Department supports the scientific activities of faculty members, master’s students, doctoral candidates, and students, aiming to enhance the university’s research potential and ensure the integration of science, education, and creative activity.",
       },
       {
-        text: "The department implements the university’s research policy, improves the quality and effectiveness of research, ensures competitive scientific outcomes at national and international levels, and systematically develops research personnel training. In 2023, postgraduate programs were launched in 17.00.02 – Musical Art and 24.00.01 – History and Theory of Culture and Arts."
+        text: "The department implements the university’s research policy, improves the quality and effectiveness of research, ensures competitive scientific outcomes at national and international levels, and systematically develops research personnel training. In 2023, postgraduate programs were launched in 17.00.02 – Musical Art and 24.00.01 – History and Theory of Culture and Arts.",
       },
       {
-        text: "The university annually hosts scientific and practical conferences, meetings, seminars, internships, master classes, and round tables. Faculty members actively publish articles in Scopus, Web of Science, RSCI, and national journals. University scholars produce textbooks, methodological materials, and scientific and creative works in music, cinema, and theater."
+        text: "The university annually hosts scientific and practical conferences, meetings, seminars, internships, master classes, and round tables. Faculty members actively publish articles in Scopus, Web of Science, RSCI, and national journals. University scholars produce textbooks, methodological materials, and scientific and creative works in music, cinema, and theater.",
       },
       {
-        text: "Since 2015, the university has published the scientific journal “Bulletin of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.” The journal accepts articles from international and local scholars, doctoral candidates, master’s students, and postgraduate students in culture, arts, pedagogy, and humanities. Articles are published in Kyrgyz, Russian, and English, and the journal is issued quarterly."
+        text: "Since 2015, the university has published the scientific journal “Bulletin of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.” The journal accepts articles from international and local scholars, doctoral candidates, master’s students, and postgraduate students in culture, arts, pedagogy, and humanities. Articles are published in Kyrgyz, Russian, and English, and the journal is issued quarterly.",
       },
       {
-        text: "The main goal of the journal is to promote the results of theoretical and applied research in culture, arts, pedagogy, and humanities, and to attract international scholars for cooperation. The Department actively expands international partnerships through memorandums and agreements with educational, cultural, and scientific institutions worldwide."
-      }
+        text: "The main goal of the journal is to promote the results of theoretical and applied research in culture, arts, pedagogy, and humanities, and to attract international scholars for cooperation. The Department actively expands international partnerships through memorandums and agreements with educational, cultural, and scientific institutions worldwide.",
+      },
     ],
     name: "Currently, the university cooperates with the following institutions:",
     list: [
@@ -1501,8 +1514,7 @@ export default {
       "Kyrgyz Republic — I. Arabayev Kyrgyz State University",
       "Kyrgyz Republic — D. Sadyrbaev Kyrgyztelefilm Studio",
       "Kyrgyz Republic — Institute of Journalism and Communication of J. Balasagyn Kyrgyz National University",
-      "Kyrgyz Republic — Niyazaly Osh State Music College"
-    ]
-  }
-
+      "Kyrgyz Republic — Niyazaly Osh State Music College",
+    ],
+  },
 };
