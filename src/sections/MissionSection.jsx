@@ -10,13 +10,13 @@ function MissionSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="mission" className="bg-background w-full relative overflow-x-hidden mt-28">
+    <section id="mission" className="bg-background w-full relative overflow-x-hidden mt-12">
       <div className="max-w-[1440px] mx-auto px-4 relative z-10 pb-12">
         <div className="text-center mb-12">
-          <h2 className="font-serif italic text-[24px] font-semibold leading-[1.1] text-text-primary md:text-[60px] md:leading-[1.05] md:font-medium">
+          <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
             <Trans i18nKey="mission.title" components={{ br: <br /> }} />
           </h2>
-          <p className="mt-4 text-[12px] font-normal leading-[1.4] text-text-primary md:text-[20px] md:font-normal md:leading-[1.4] md:mx-auto md:max-w-3xl">
+          <p className="mt-4 text-base font-normal leading-[1.4] text-text-primary md:text-lg md:font-normal md:leading-[1.4] md:mx-auto md:max-w-2xl">
             {t("mission.description")}
           </p>
         </div>
@@ -29,15 +29,16 @@ function MissionSection() {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 mt-[100px] bg-black bg-opacity-40 flex flex-col justify-start pt-8 px-6">
-              <p className="text-white w-[250px] text-sm md:text-base mb-6 max-w-[80%]">
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col p-10">
+              <p className="text-white text-sm md:text-base mb-6 overflow-y-auto scrollbar-transparent max-h-[600px]">
                 {t("mission.imageDescription")}
               </p>
 
-              <Button variant="primaryIcon" className="self-start">
+              <Button variant="primaryIcon" className="self-start mt-auto">
                 {t("mission.button")}
               </Button>
             </div>
+
           </div>
 
           <div className="flex flex-col gap-3">
