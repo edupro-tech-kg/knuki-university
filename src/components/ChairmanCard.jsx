@@ -26,7 +26,7 @@ function ChairmanCard() {
                             <h4 className="text-lg font-semibold">
                                 {item.name}
                             </h4>
-                            <p className="text-gray-600 mt-1 w-72">
+                            <p className="text-gray-600 mt-1 w-64">
                                 {item.content}
                             </p>
                         </div>
