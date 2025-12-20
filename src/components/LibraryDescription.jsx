@@ -9,7 +9,7 @@ function LibraryDescription() {
     return (
         <div className="container-edge my-10 font-sans">
             <div className="text-center mb-8">
-                <h2 className="uppercase font-serif text-4xl font-bold mb-4 text-primary">
+                <h2 className="uppercase font-serif text-4xl font-bold mb-4 text-primary italic">
                     {library.title}
                 </h2>
                 <p className="text-text-primary text-left">
