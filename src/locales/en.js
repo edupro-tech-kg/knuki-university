@@ -962,9 +962,70 @@ export default {
       },
       {
         name: "Baichubakova U.K.",
-        content: "librarian of the film studio reading room.",
+        content: "librarian of the film studio reading room."
+      }
+    ]
+  },
+
+  qualificationDescription: {
+    title: "Center for Advanced Training",
+    firstCont: "Since the 2023–2024 academic year, the Kyrgyz National University of Culture and Arts named after B. Beishenalieva has been implementing additional education courses for teachers and staff who wish to improve their professional skills and pedagogical knowledge, based on the license of the Ministry of Education and Science of the Kyrgyz Republic No. LS230001045 and Appendix 1 to Registration No. 108. Course participants can receive training and upgrade their qualifications in the following specialties.",
+    secondCont: "The Center for Advanced Training of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit of the university that implements additional and additional professional education programs. The Center operates in accordance with the legislation of the Kyrgyz Republic, the University Charter, orders of the Rector, and the relevant Regulations."
+  },
+  target: {
+    title: "Main Objectives:",
+    cards: [
+      {
+        description: "— organization and implementation of advanced training for specialists, additional education courses, and professional retraining for all interested participants within licensed educational programs;"
       },
-    ],
+      {
+        description: "— meeting individual needs for knowledge about new achievements in science, culture, and arts, as well as advanced domestic and international best practices;"
+      },
+      {
+        description: "— providing conditions for continuous education of specialists from organizations and institutions regardless of their legal and organizational form, civil servants, dismissed employees, unemployed citizens, and unemployed specialists;"
+      },
+      {
+        description: "— expansion and deepening of professional education through mastering additional professional education programs within the framework of the acquired specialty."
+      }
+    ]
+  },
+  qualificationFunction: {
+    title: "Функции Центра повышения квалификации:",
+    cards: [
+      {
+        id: 1,
+        description: "Центр повышения квалификации реализует следующие виды дополнительного и дополнительного профессионального образования (с отрывом от основной работы, с частичным отрывом и по индивидуальным образовательным программам):",
+        image: "/qualificationFunc1.png"
+      },
+      {
+        id: 2,
+        description: "Обучающие тренинги/семинары продолжительностью 8, 16, 32 и 36 часов (по итогам выдается сертификат).",
+        image: "/qualificationFunc6.png"
+      },
+      {
+        id: 3,
+        description: "Курсы повышения квалификации объемом 72 и 180 часов (при успешном завершении выдается сертификат о краткосрочном повышении квалификации).",
+        image: "/qualificationFunc3.png"
+      },
+      {
+        id: 4,
+        description: "Для реализации учебного процесса на договорной основе с оплатой труда привлекаются преподаватели университета и профильные специалисты других образовательных и научных организаций.",
+        image: "/qualificationFunc4.png"
+      },
+      {
+        id: 5,
+        description: "Освоение образовательных программ Центра повышения квалификации завершается обязательной итоговой аттестацией, проводимой специальными комиссиями.",
+        image: "/qualificationFunc5.png"
+      },
+      {
+        id: 6,
+        description: "Периодичность повышения квалификации специалистов (по мере необходимости) определяется характером их профессиональной деятельности.",
+        image: "/qualificationFunc6.png"
+      }
+    ]
+  },
+  qualificationGoal: {
+    goal: "Goal is an educational program that involves organizing and conducting seminars, trainings, and courses aimed at improving and retraining employees' qualifications, as well as teaching certain scientific disciplines or sections necessary for professional activities. Through this, participants gain additional knowledge, skills, and competencies. Upon completion of the qualification improvement, supplementary education, or additional vocational training, learners receive a Certificate confirming their right (qualification) to conduct professional activities in a specific field."
   },
   managementInfo: {
     title: "Management",
@@ -1076,6 +1137,64 @@ export default {
       },
     ],
   },
+  HRdepartment: {
+    title: "human resources department",
+    subtitle:
+      "The Human Resources Department of KUMIU named after B. Beishenalieva is a structural unit of the university responsible for implementing personnel policy, staff recruitment, registration and employment, maintaining personnel records, concluding employment contracts, and addressing social and legal matters.",
+
+    mainMission: "Main responsibilities of the Human Resources Department:",
+    missions: [
+      "Hiring and dismissal of employees (vacancy announcements, interviews, candidate selection).",
+      "Maintenance and storage of personnel records (continuous work with the e-Kyzmat system, employment records, bilateral contracts).",
+      "Monitoring working hours, preparing employment contracts, and ensuring proper working conditions.",
+      "Monitoring professional development and qualification improvement of academic staff.",
+      "Providing legal support and advisory assistance on labor law issues.",
+      "Preparing statistical reports and providing data required for payroll calculations.",
+      "Managing personnel documentation related to students (orders, certificates).",
+    ],
+
+    listTitle: "HR Department Staff:",
+    disciplines: [
+      "B.B. Baktybekova — Head of the HR Department (0312 570354, 996 412829, begai02121990baktybekova@gmail.com)",
+      "Zh.Sh. Temirkanova — Leading Inspector (Student Affairs Division, Temircanova@mail.ru)",
+      "F.Sh. Momukulova — HR Inspector (farida.momukulova@gmail.com)",
+      "E.A. Imankulov, A.S. Suleimanov — Lawyers (erpolat91@mail.ru)",
+    ],
+
+    servicesTitle: "The Human Resources Department provides the following services:",
+    services: [
+      "Providing information on vacancies and accepting applications.",
+      "Informing about vacant positions and accepting resumes.",
+      "Verification and registration of employee documents.",
+      "Preparation of employment contracts.",
+      "Consultation on benefits, labor disputes, leave, and other legal matters.",
+      "Organization of internships, business trips, and workplaces (including for students).",
+      "Legal support and ensuring proper execution of contracts.",
+      "Services for employees and job applicants.",
+      "Support on issues related to leave, sick leave certificates, and social guarantees.",
+    ],
+
+    scheduleTitle: "Working hours:",
+    schedule: [
+      "Monday — Friday: 09:00 — 17:00",
+      "Lunch break: 12:00 — 13:00",
+    ],
+
+    employmentTitle: "List of documents required for employment:",
+    employment: [
+      "Application for employment (transfer or dismissal).",
+      "Employee personal record card (Form T-2).",
+      "Autobiography and resume; 4×5 photos — 3 copies.",
+      "Copy of passport (2 copies) and copies of education certificates.",
+      "Copies of documents confirming awards or incentives (if available).",
+      "Copy of employment record book; employment contract and job description (provided by the HR Department).",
+      "Certificates from PNDD and the Ministry of Internal Affairs (criminal record clearance).",
+      "Certificate from NDD.",
+      "Medical (sanitary) record book.",
+      "Copy of military ID (for men).",
+    ],
+  },
+
   ebilim: {
     title: "ebilim",
     subtitle: "Apply to university online!",
@@ -1086,6 +1205,9 @@ export default {
       " is a modern Learning Management System (LMS) designed to optimize and simplify educational processes in educational institutions. EBILIM provides a wide range of tools for course management, assessment, interactive learning, analytics, and automation of the learning process, offering a convenient and efficient approach to education.",
   },
   education: {
+    "title": "education",
+    "programTitle": "Education program name",
+    "additionalEducation": "Additional education",
     additionalPrograms: [
       { id: 1, title: "Advanced Literary Courses (full-time, 2 years)" },
       { id: 2, title: "Choreography (full-time, 72 hours)" },
@@ -1376,5 +1498,55 @@ export default {
     ],
 
   }
+  sciencePage: {
+    title: "SCIENCE AND INTERNATIONAL RELATIONS",
+    infos: [
+      {
+        text: "Information about the Department of Science and International Relations. The department of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit responsible for organizing, coordinating, and developing research activities at the university. The department is one of the key implementers of the university’s strategic goal to become a scientific and creative center contributing to the development of national and global arts."
+      },
+      {
+        text: "The Department supports the scientific activities of faculty members, master’s students, doctoral candidates, and students, aiming to enhance the university’s research potential and ensure the integration of science, education, and creative activity."
+      },
+      {
+        text: "The department implements the university’s research policy, improves the quality and effectiveness of research, ensures competitive scientific outcomes at national and international levels, and systematically develops research personnel training. In 2023, postgraduate programs were launched in 17.00.02 – Musical Art and 24.00.01 – History and Theory of Culture and Arts."
+      },
+      {
+        text: "The university annually hosts scientific and practical conferences, meetings, seminars, internships, master classes, and round tables. Faculty members actively publish articles in Scopus, Web of Science, RSCI, and national journals. University scholars produce textbooks, methodological materials, and scientific and creative works in music, cinema, and theater."
+      },
+      {
+        text: "Since 2015, the university has published the scientific journal “Bulletin of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.” The journal accepts articles from international and local scholars, doctoral candidates, master’s students, and postgraduate students in culture, arts, pedagogy, and humanities. Articles are published in Kyrgyz, Russian, and English, and the journal is issued quarterly."
+      },
+      {
+        text: "The main goal of the journal is to promote the results of theoretical and applied research in culture, arts, pedagogy, and humanities, and to attract international scholars for cooperation. The Department actively expands international partnerships through memorandums and agreements with educational, cultural, and scientific institutions worldwide."
+      }
+    ],
+    name: "Currently, the university cooperates with the following institutions:",
+    list: [
+      "Belgium, Brussels — Belgian International Education Center",
+      "Turkey, Çanakkale — Çanakkale Onsekiz Mart University",
+      "Russian Federation, Moscow — State Institute of Art Studies",
+      "Russian Federation, Yekaterinburg — Yekaterinburg State Theatre Institute",
+      "USA, Virginia — International Foundation for Electoral Systems (IFES), Kyrgyz Republic Office",
+      "Russian Federation, Moscow — S.A. Gerasimov All-Russian State University of Cinematography (VGIK)",
+      "Russian Federation — D.S. Likhachev Institute for Cultural and Natural Heritage",
+      "Azerbaijan, Baku — Azerbaijan State University of Culture and Arts",
+      "Republic of Karakalpakstan, Nukus — Nukus Branch of the State Institute of Arts and Culture of Uzbekistan",
+      "Russian Federation, Chelyabinsk — P.I. Tchaikovsky South Ural State Institute of Arts",
+      "Republic of Tatarstan, Kazan — Kazan State Institute of Culture",
+      "South Korea — Yewon Arts University",
+      "Republic of Kazakhstan, Almaty — T. Zhurgenov Kazakh National Academy of Arts",
+      "Republic of Uzbekistan — B. Zakirov National Institute of Pop Art",
+      "Republic of Kazakhstan, Astana — Kazakh National Academy of Choreography",
+      "Kyrgyz Republic — Eurasia KG Public Foundation",
+      "Kyrgyz Republic — National Broadcasting Corporation",
+      "Kyrgyz Republic — “Altyn Tüyün” National Children’s Engineering Academy",
+      "Kyrgyz Republic — Eurasian International University",
+      "Kyrgyz Republic — I. Arabayev Kyrgyz State University",
+      "Kyrgyz Republic — D. Sadyrbaev Kyrgyztelefilm Studio",
+      "Kyrgyz Republic — Institute of Journalism and Communication of J. Balasagyn Kyrgyz National University",
+      "Kyrgyz Republic — Niyazaly Osh State Music College"
+    ]
+  }
+
 };
 
