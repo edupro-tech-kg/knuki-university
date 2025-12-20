@@ -14,6 +14,7 @@ import PracticeCareer from "./pages/PracticeCareer";
 import EducationPage from "./pages/EducationPage";
 import SeoTitle from "./components/SeoTitle";
 import EbilimPage from "./pages/EbilimPage";
+import SciencePage from "./pages/SciencePage";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="/practice-career" element={<PracticeCareer />} />
             <Route path="/ebilim" element={<EbilimPage />} />
             <Route path="/education" element={<EducationPage />} />
+            <Route path="/science" element={<SciencePage />} />
           </Routes>
         </main>
         <Footer />
