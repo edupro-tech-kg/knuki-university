@@ -44,12 +44,12 @@ export default function Footer() {
   const linkUrls = [
     "/",
     "/management",
-    "/faculties",
+    // "/faculties",
     "/students",
     "/applicants",
-    "/news",
+    // "/news",
     "/documents",
-    "/contacts",
+    // "/contacts",
   ];
 
   return (

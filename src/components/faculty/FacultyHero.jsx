@@ -12,9 +12,9 @@ export default function FacultyHero({
 
   return (
     <section className="bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 pt-48 md:pt-24 lg:pt-36">
-        <div className="py-6 md:py-8 lg:py-10 text-center">
-          <h1 className="text-[#751715] text-2xl md:text-4xl font-serif italic leading-tight">
+      <div className="max-w-[1200px] mx-auto px-4 ">
+        <div className="py-8 text-center">
+          <h1 className="text-[#751715] text-2xl md:text-4xl font-serif italic uppercase leading-tight">
             {title}
           </h1>
         </div>
