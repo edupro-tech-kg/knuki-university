@@ -20,7 +20,6 @@ export default {
   header: {
     universityName:
       "Кыргызский национальный университет культуры и искусств имени Бюбюсары Бейшеналиевой",
-    menu: "Меню",
     brandTop: "Kyrgyz National",
     brandName: "Cultural & Arts University",
     apply: "Подать заявку",

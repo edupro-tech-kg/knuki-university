@@ -17,7 +17,7 @@ const NAV_LINKS = [
   { key: "contacts", to: "contact", type: "scroll" },
 ];
 
-const NavBar = ({ menu }) => {
+const NavBar = ({ menu, onItemClick }) => {
   const { t } = useTranslation();
   const location = useLocation();
   const labels = t("navLinks", { returnObjects: true });
@@ -37,12 +37,27 @@ const NavBar = ({ menu }) => {
     [t]
   );
 
+  const handleLinkClick = () => {
+    if (showDropdown) {
+      setShowDropdown(false);
+    }
+    
+    if (onItemClick) {
+      onItemClick();
+    }
+  };
+
   const renderScrollOrRoute = (link, label) => {
     if (link.type === "scroll") {
       // On non-home pages, route back to home anchor
       if (!isHome) {
         return (
-          <Link key={link.key} to={`/#${link.to}`} className={linkClass}>
+          <Link 
+            key={link.key} 
+            to={`/#${link.to}`} 
+            className={linkClass}
+            onClick={handleLinkClick}
+          >
             {label}
           </Link>
         );
@@ -55,6 +70,7 @@ const NavBar = ({ menu }) => {
           duration={400}
           offset={-120}
           className={linkClass}
+          onClick={handleLinkClick}
         >
           {label}
         </ScrollLink>
@@ -62,7 +78,12 @@ const NavBar = ({ menu }) => {
     }
 
     return (
-      <Link key={link.key} to={link.to} className={linkClass}>
+      <Link 
+        key={link.key} 
+        to={link.to} 
+        className={linkClass}
+        onClick={handleLinkClick}
+      >
         {label}
       </Link>
     );
@@ -87,6 +108,7 @@ const NavBar = ({ menu }) => {
                 type="button"
                 className={`${linkClass} ${menu ? "" : "flex items-center gap-1"}`}
                 onClick={() => setShowDropdown((prev) => !prev)}
+                aria-expanded={showDropdown}
               >
                 {label}
                 <span className="text-xs">▾</span>
@@ -101,7 +123,10 @@ const NavBar = ({ menu }) => {
                         <Link
                           to={`/faculty/${item.slug}`}
                           className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
-                          onClick={() => setShowDropdown(false)}
+                          onClick={() => {
+                            setShowDropdown(false);
+                            if (onItemClick) onItemClick();
+                          }}
                         >
                           {item.label}
                         </Link>

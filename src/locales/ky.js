@@ -19,7 +19,6 @@ export default {
   header: {
     universityName:
       "Бүбүсара Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университети",
-    menu: "Меню",
     brandTop: "Kyrgyz National",
     brandName: "Cultural & Arts University",
     apply: "Кабыл алууга өтүү",
