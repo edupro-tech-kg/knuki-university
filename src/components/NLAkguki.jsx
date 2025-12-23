@@ -1,68 +1,90 @@
 import { useTranslation } from "react-i18next";
 import Button from "../components/UI/Button";
 
+const NLA_KGUKI_ITEMS = [
+  "Постановление Совета Министров Киргизской ССР № 482 от 30 августа 1967 года «Об организации Киргизского государственного института искусств» (КГИИ).",
+  "Постановление Совета Министров Киргизской ССР № 21 от 28 января 1974 года, об официальном наименовании КГИИ, как «Киргизский государственный институт искусств имени Бубусары Бейшеналиевой».",
+  "Постановление Правительства КР №470 от 28.08.2013 года, о преобразовании Кыргызского государственного института искусств имени Б.Бейшеналиевой в Кыргызский государственный университет культуры и искусств имени Бубусары Бейшеналиевой.",
+  "КРнын Президентинин Жарлыгы. Бубусара Бейшеналиева атындагы Кыргыз мамлекеттик маданият жана искусство университетине “улуттук” статусту ыйгаруу жөнүндө. №96, 22.03.2025.",
+  "Кайра каттоо күбөлүгү / Свидетельство о государственной перерегистрации (2025)",
+  "КУМИУнун Уставы (2025) / Устав КНУКИ (2025);",
+  "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университети жөнүндө ЖОБО.",
+  "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинин окуу-усулдук бирикмеси жөнүндөгү ЖОБОсу",
+  "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинин факультет жана кафедра жөнүндө ЖОБОсу",
+  "Б. Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинин Окумуштуулар Кеңеши жөнүндөгү ЖОБОсу",
+  "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинин профессордук-окутуучулук курамдын кызмат орундарын ээлөө тартиби жөнүндөгү ЖОБОсу",
+  "Б.Бейшеналиева атындагы КУМИУда академиялык кредиттерди колдонуу менен окуу процессин уюштуруу жөнүндөгү ЖОБО",
+  "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинде билим алуучуларын которуу, окуудан чыгаруу, окууга калыбына келтирүү жана академиялык өргүү берүү тартиби жөнүндөгү ЖОБО",
+  "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинде окутуунун модулдук-рейтингдик технологиясын колдонуу боюнча НУСКАМА (И Н С Т Р У К Ц И Я)",
+  "Бейшеналиева ат. КУМИУнин коррупцияга каршы саясаты жөнүндөгү ЖОБОсу.",
+  'КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ЖОГОРКУ КЕСИПТИК БИЛИМ БЕРҮҮНҮН МАМЛЕКЕТТИК БИЛИМ БЕРҮҮ СТАНДАРТЫ. Квалификация: "Специалист" (2021-жылдын 11-декабрындагы №1578/1 буйругу менен бекитилген.) 570002 Театр таануу 570027 Адабий чыгармачылык 570013 Үн режиссурасы (колдонулуучу багыттары боюнча) 570014 Актердук өнөр 570015 Режиссура (колдонулуучу багыттары боюнча) 570006 Кинооператорлук 570029 Социалдык-маданий ишмердүүлүк 570019 Хореография педагогикасы 550600 Көркөмдүк билим берүү',
+  'КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ЖОГОРКУ КЕСИПТИК БИЛИМ БЕРҮҮНҮН МАМЛЕКЕТТИК БИЛИМ БЕРҮҮ СТАНДАРТЫ. Квалификация: "магистр" (2024-жылдын 21-сентябрындагы №1815/1 буйругу менен бекитилген.) 570200 Музыкалык искусство 570300 Театралдык искусство 550600 Көркөмдүк билим берүү',
+  "Положение об основной образовательной программе (ООП) Кыргызского национального университета культуры и искусств им. Б. Бейшеналиевой",
+  "КУМИУнун бүтүрүүчүлөрүн жыйынтыктоочу мам.аттестациялоо ж-до Жобосу",
+  "Положение о документах о среднем и высшем профессиональном образовании государственного образца, порядке их изготовления, оплаты, хранения, выдачи и учета. Приложение к приказу МОН КР от 10.03.2025 года №249/1.",
+  "Положение о ящике доверия КНУКИ им. Б.Бейшеналиевой",
+  "Положение об отделе качества образования, лицензирования и аккредитации Кыргызского национального университета культуры и искусств им. Б. Бейшеналиевой",
+  "Положение об УМК",
+  "Положение об академической мобильности",
+  "Б.БЕЙШЕНАЛИЕВА АТ. КУМИУнун МУЗЫКАЛЫК АСПАПТАРДЫ САКТОО ЖӨНҮНДӨ ЖОБОСУ",
+  "Положение о мониторинге удовлетворенности качеством образования потребителей КНУКИ им. Б.Бейшеналиевой",
+  "Университеттин практиканы уюштурууга жана өткөрүү жөнүндө жобосу",
+  "Магистрантдардын практикаларды өтөө жөнүндө жобо",
+  "МАГИСТРДИК ДИССЕРТАЦИЯ БОЮНЧА ЖОБО",
+  "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинде ун эмгекти коргоо жана билим беруу процесссинде коопсуз шарттарды камсыз кылуу тууралуу ЖОБО",
+  "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетиндеги студенттердин тандоо курстары жөнүндө ЖОБО",
+];
+
 export default function NLAkguki() {
-    const { t } = useTranslation();
-    const documents = t("NLAkguki.documents", { returnObjects: true });
-    
-    return (
-        <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-4 sm:py-8">
-            <h1 className="font-serif text-primary text-2xl sm:text-3xl md:text-4xl text-center py-6 sm:py-9 uppercase italic">
-                {t("NLAkguki.title")}
-            </h1>
+  const { t } = useTranslation();
 
-            <div className="block md:hidden space-y-4">
-                {documents.map((text, index) => (
-                    <div 
-                        key={index} 
-                        className="bg-white border border-black rounded-lg p-4"
-                    >
-                        <div className="flex items-start gap-3 mb-3">
-                            <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-gray-100 rounded text-sm font-medium">
-                                {index + 1}
-                            </span>
-                            <p className="text-sm text-gray-700">
-                                {text}
-                            </p>
-                        </div>
-                        <div className="flex justify-end">
-                            <Button
-                                variant="secondary"
-                                className="px-4 py-2 text-sm w-full"
-                            >
-                                {t("documentNLA.btnText")}
-                            </Button>
-                        </div>
-                    </div>
-                ))}
-            </div>
+  return (
+    <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-4 sm:py-8">
+      <h1 className="font-serif text-primary text-2xl sm:text-3xl md:text-4xl text-center py-6 sm:py-9 uppercase italic">
+        НПА КНУКИ
+      </h1>
 
-            <div className="hidden md:block overflow-x-auto">
-                <table className="min-w-full border border-black">
-                    <tbody>
-                        {documents.map((text, index) => (
-                            <tr key={index} className="border-b border-black last:border-b-0">
-                                <td className="w-16 px-4 py-3 text-center text-base font-medium text-gray-900 border-r border-black">
-                                    {index + 1}
-                                </td>
-                                <td className="px-4 py-3 text-base text-gray-700">
-                                    {text}
-                                </td>
-                                <td className="w-48 px-4 py-3">
-                                    <div className="flex justify-end">
-                                        <Button
-                                            variant="secondary"
-                                            className="px-6 py-2 text-sm"
-                                        >
-                                            {t("documentNLA.btnText")}
-                                        </Button>
-                                    </div>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+      <div className="block md:hidden space-y-4">
+        {NLA_KGUKI_ITEMS.map((text, index) => (
+          <div key={index} className="bg-white border border-black rounded-lg p-4">
+            <div className="flex items-start gap-3 mb-3">
+              <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-gray-100 rounded text-sm font-medium">
+                {index + 1}
+              </span>
+              <p className="text-sm text-gray-700">{text}</p>
             </div>
-        </section>
-    );
+            <div className="flex justify-end">
+              <Button variant="secondary" className="px-4 py-2 text-sm w-full">
+                {t("documentNLA.btnText")}
+              </Button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="hidden md:block overflow-x-auto">
+        <table className="min-w-full border border-black">
+          <tbody>
+            {NLA_KGUKI_ITEMS.map((text, index) => (
+              <tr key={index} className="border-b border-black last:border-b-0">
+                <td className="w-16 px-4 py-3 text-center text-base font-medium text-gray-900 border-r border-black">
+                  {index + 1}
+                </td>
+                <td className="px-4 py-3 text-base text-gray-700">
+                  {text}
+                </td>
+                <td className="w-48 px-4 py-3">
+                  <div className="flex justify-end">
+                    <Button variant="secondary" className="px-6 py-2 text-sm">
+                      {t("documentNLA.btnText")}
+                    </Button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
 }
