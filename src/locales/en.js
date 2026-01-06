@@ -402,10 +402,10 @@ export default {
   },
   hero: {
     title1: "ART",
-    title2: "PEAK OF THE NATIONAL SPIRIT",
+    title2: "STARTS WITH US",
     searchPlaceholder: "Search",
     next: "Next",
-    stat1: "million students",
+    stat1: "students",
     stat2: "budget places",
     stat3: "fee-paying places",
   },
@@ -487,6 +487,7 @@ export default {
     ],
   },
   calendar: {
+    eyebrow: "CALENDAR OF EVENTS",
     label: "Calendar",
     month: "September 2025",
     legend: "Events",

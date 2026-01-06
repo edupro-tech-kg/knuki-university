@@ -1,17 +1,19 @@
 import { useState } from "react";
 import Calendar from "../components/Calendar";
 import LastNews from "../components/LastNews";
+import { useTranslation } from "react-i18next";
 
 export default function CalendarEvents() {
+  const { t } = useTranslation();
   const [mobileView, setMobileView] = useState("calendar"); // calendar | news
 
   return (
     <section id="events" className="bg-primary font-serif pb-24 pt-12 md:pt-16 ">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-14 overflow-hidden pb-9">
         <div className="flex justify-center">
-          <p className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-2xl 2xl:text-4xl">
-            КАЛЕНДАРЬ СОБЫТИЙ
-          </p>
+          <h2 className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-2xl 2xl:text-4xl">
+            {t("calendar.eyebrow")}
+          </h2>
         </div>
         <div className="relative mt-1 md:mt-4 lg:mt-2">
           <div className="absolute inset-0 pb-11  translate-x-6 translate-y-6 rounded-[6px] bg-white/80 rotate-[1deg] shadow-[0_18px_55px_rgba(0,0,0,0.22)]" />
