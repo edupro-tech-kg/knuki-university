@@ -845,7 +845,7 @@ export default {
   studentsInfo: [
     {
       image: "/photo-placeholder.svg",
-      name: "Orozova Nurai",
+      name: "Nestan Orozobekova",
       content: "Student Council Chairwoman"
     },
     {
