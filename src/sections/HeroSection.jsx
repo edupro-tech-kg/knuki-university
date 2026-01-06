@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import img from "../assets/images/hero-img.png";
+import img1 from "../assets/images/heroImage1.jpg";
+import img2 from "../assets/images/heroImage2.jpg"; 
+import img3 from "../assets/images/heroImage3.jpg";
+import img4 from "../assets/images/heroImage4.jpg";
+import img5 from "../assets/images/heroImage5.jpg";
+import img6 from "../assets/images/heroImage6.jpg";
 import { useTranslation } from "react-i18next";
 import Search from "../components/UI/Search";
 import Pattern from "../assets/svg/patterns.svg";
@@ -9,7 +15,7 @@ export default function HeroSection() {
   const { t } = useTranslation();
   const hero = t("hero");
 
-  const slides = [img];
+  const slides = [img, img1, img2, img3, img4, img5, img6];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const [students, setStudents] = useState(0);
@@ -107,7 +113,7 @@ export default function HeroSection() {
             alt="Slide"
             className="
               w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl
-              h-auto object-cover
+              h-96 object-cover
               xl:absolute xl:top-28 xl:left-4
               z-10 mx-auto mt-6 xl:mt-0
             "
