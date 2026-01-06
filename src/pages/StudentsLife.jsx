@@ -9,7 +9,7 @@ function StudentsLife() {
     <div>
       <StudentStructure />
       <StudentsInfo />
-      {/* <ChairmanCard /> */}
+      <ChairmanCard />
       <StudentClubs />
     </div>
   );
