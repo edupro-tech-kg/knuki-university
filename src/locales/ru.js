@@ -404,9 +404,9 @@ export default {
     title2: "НАЧИНАЕТСЯ С НАС",
     searchPlaceholder: "Поиск",
     next: "Далее",
-    stat1: "млн студентов",
+    stat1: "студентов",
     stat2: "бюджетных мест",
-    stat3: "платных мест",
+    stat3: "контрактных мест",
   },
   about: {
     eyebrow: "О университете",

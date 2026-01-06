@@ -42,9 +42,9 @@ export default function HeroSection() {
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
           started.current = true;
-          animateNumber(setStudents, 4450000, 1800);
-          animateNumber(setBudget, 603413, 2000);
-          animateNumber(setPaid, 1730409, 2200);
+          animateNumber(setStudents, 1599, 2000);
+          animateNumber(setBudget, 393, 2000);
+          animateNumber(setPaid, 1206, 2200);
         }
       },
       { threshold: 0.4 }
@@ -145,7 +145,7 @@ export default function HeroSection() {
             className="flex gap-1 md:gap-6 text-center"
           >
             <Stat
-              value={`+${(students / 1_000_000).toFixed(2)}M`}
+              value={`+${students.toLocaleString("en-US")}`}
               label={hero.stat1}
             />
             <Divider />

@@ -405,7 +405,7 @@ export default {
     title2: "STARTS WITH US",
     searchPlaceholder: "Search",
     next: "Next",
-    stat1: "million students",
+    stat1: "students",
     stat2: "budget places",
     stat3: "fee-paying places",
   },
