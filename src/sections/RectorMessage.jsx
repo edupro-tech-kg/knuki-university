@@ -19,7 +19,7 @@ const baseParagraphs = [
 ];
 
 const baseSignature = [
-  "Түмөнбай КОЛДОШОВ,",
+  "ТҮМӨНБАЙ КОЛДОШОВ,",
   "Б.Бейшеналиева атындагы КУМИУнун ректору,",
   "филология илимдеринин кандидаты, доцент",
 ];
@@ -40,10 +40,7 @@ export default function RectorMessage() {
 
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#751715]">
-            {t("rector.eyebrow")}
-          </p>
-          <h2 className="mt-3 font-serif text-2xl md:text-4xl font-bold italic text-text-primary">
+          <h2 className="mt-3 font-serif text-2xl md:text-4xl font-bold italic text-text-primary uppercase">
             {t("rector.title")}
           </h2>
         </div>
@@ -61,7 +58,7 @@ export default function RectorMessage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#751715]">
                   {t("rector.eyebrow")}
                 </p>
-                <p className="text-base font-serif italic text-text-primary">
+                <p className="text-base font-serif italic text-text-primary uppercase">
                   {t("rector.title")}
                 </p>
               </div>
@@ -71,10 +68,7 @@ export default function RectorMessage() {
           <div className="relative overflow-hidden rounded-3xl bg-white/85 p-6 md:p-8 shadow-soft ring-1 ring-gray-100 backdrop-blur">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#751715]">
-                  {t("rector.eyebrow")}
-                </p>
-                <h3 className="mt-3 font-serif text-2xl md:text-3xl font-bold italic text-text-primary">
+                <h3 className="mt-3 font-serif text-2xl md:text-3xl font-bold italic text-text-primary ">
                   {t("rector.title")}
                 </h3>
               </div>
