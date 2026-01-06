@@ -7,6 +7,7 @@ import QuickLinks from "../sections/QuickLinks";
 import HistorySection from "../sections/HistorySection";
 import GallerySection from "../sections/GallerySection";
 import ContactForm from "../sections/ContactForm";
+import RectorMessage from "../sections/RectorMessage";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <NewsSection />
       <ProgramsSection />
       <MissionSection />
+      <RectorMessage />
       <CalendarEvents />
       <QuickLinks />
       <HistorySection />
