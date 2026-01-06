@@ -835,12 +835,20 @@ export default {
     ],
   },
   studentStructure: {
-    title: "Student self-government structure",
-    content:
-      "The student self-governance structure at the B. Beishenalieva Kyrgyz National University of Culture and Arts is the Student Council. It was established based on the Decree of the President of the Kyrgyz Republic “On the Development of State Youth Policy of the Kyrgyz Republic,” as well as in accordance with the laws of the Kyrgyz Republic “On Education” and “On the Fundamentals of State Youth Policy,” the charter of KNKUCA, the education concept, and other regulatory legal acts, the Resolution of the Government of the Kyrgyz Republic, and Article 79 of the Constitution of the Kyrgyz Republic, guided by the Youth Policy Concept for 2020–2030. The Student Council is a structural unit within the university that implements state youth policy within its competence. In December 2023, a special regulation regarding the Chairperson of the Student Council and the Student Ombudsman was developed, and the structure’s leaders were elected. The structure’s leaders are elected annually and rotate.",
+    title: "Student Self-Government Structure",
+    content: [
+      "The student self-government structure of students and youth at the Kyrgyz National University of Culture and Arts named after B. Beyshenaliyeva is the Student Council.",
+      "The Student Council was established based on the Decree of the President of the Kyrgyz Republic 'On the Development of the State Youth Policy of the Kyrgyz Republic' and carries out its activities in strict accordance with the Constitution of the Kyrgyz Republic, the Laws of the Kyrgyz Republic 'On Education', 'On the Basics of State Youth Policy', the Charter of the Kyrgyz National University of Culture and Arts named after B. Beyshenaliyeva, the concept of educational work, other regulatory legal acts, as well as the Resolution of the Government of the Kyrgyz Republic dated October 16, 2014 No. 601 'On the Basics of State Youth Policy' and the concept of the state youth policy of the Kyrgyz Republic for 2020–2030.",
+      "Within its competence, the Student Council is a structural unit of the university, ensuring the implementation of state youth policy within the educational organization.",
+      "In December 2023, a special Regulation on the Chairperson of the Student Council and the Student Ombudsman was developed and approved, according to which the elections of the structure's leaders were held."
+    ]
   },
   studentsInfo: [
-    { image: "/Nurai.png", name: "Orozova Nurai", content: "Chair of the student council" },
+    {
+      image: "/photo-placeholder.svg",
+      name: "Nestan Orozobekova",
+      content: "Student Council Chairwoman"
+    },
     {
       image: "/photo-placeholder.svg",
       name: "Syimyk Abirov",
@@ -854,47 +862,47 @@ export default {
     {
       image: "/photo-placeholder.svg",
       name: "Esengul Akylbek uulu",
-      content: "First deputy for academic and cultural affairs",
+      content: "First Deputy Chairperson for Educational and Cultural Information Affairs",
     },
     {
       image: "/photo-placeholder.svg",
       name: "Shailoobek Naralyev",
-      content: "Deputy for public and international relations",
+      content: "Head of the Public and International Relations Sector",
     },
     {
       image: "/photo-placeholder.svg",
       name: "Aliya Malikova",
-      content: "Head of sport and health sector",
+      content: "Head of the Sports and Health Sector",
     },
     {
       image: "/photo-placeholder.svg",
       name: "Almaz kyzy Tansuluu",
-      content: "Deputy for dormitory affairs",
+      content: "Deputy for Student Dormitory Affairs",
     },
     {
       image: "/photo-placeholder.svg",
       name: "—",
-      content: "Chair, Pop and Music Education faculty student council",
+      content: "Chairperson of the Faculty of Choreography and Cultural Events",
     },
     {
       image: "/photo-placeholder.svg",
       name: "—",
-      content: "Chair, Choreography and Cultural Activities faculty student council",
+      content: "Chairperson of the Faculty of Folk Music",
     },
     {
       image: "/photo-placeholder.svg",
       name: "—",
-      content: "Chair, Folk Music faculty student council",
+      content: "Chairperson of the Faculty of Theatre",
     },
     {
       image: "/photo-placeholder.svg",
       name: "—",
-      content: "Chair, Theatre faculty student council",
+      content: "Chairperson of the Faculty of Film and Television",
     },
     {
       image: "/photo-placeholder.svg",
       name: "—",
-      content: "Chair, Film and Television faculty student council",
+      content: "Chairperson of the Faculty of Pop Music and Musical Education",
     },
   ],
   chairmanCard: {
