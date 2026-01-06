@@ -833,19 +833,21 @@ export default {
       },
     ],
   },
-studentStructure: {
-  title: "Student Self-Governance Structure",
-  content: [
-    "The student youth self-governance structure of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is the Student Council. It was established on the basis of the Decree of the President of the Kyrgyz Republic “On the Development of State Youth Policy of the Kyrgyz Republic” and operates in accordance with the Laws of the Kyrgyz Republic “On Education”, “On the Fundamentals of State Youth Policy”, the Charter of KNUCA, the educational (upbringing) concept, and other regulatory legal acts, as well as the decision dated October 16, 2014,",
-    "No. 601 “On the Fundamentals of State Youth Policy”, in accordance with Article 79 of the Constitution of the Kyrgyz Republic and the Resolution of the Government of the Kyrgyz Republic, and based on the Youth Policy Concept for 2020–2030, the Student Council is considered a structural unit of the university that implements state youth policy within its competence.",
-    "In December 2023, a special regulation on the Chairperson of the Student Council and the Student Ombudsman was developed, and the leaders of the structure were elected."
-  ]
-},
-
+  studentStructure: {
+    title: "Student Self-Government Structure",
+    content: [
+      "The student self-government structure of students and youth at the Kyrgyz National University of Culture and Arts named after B. Beyshenaliyeva is the Student Council.",
+      "The Student Council was established based on the Decree of the President of the Kyrgyz Republic 'On the Development of the State Youth Policy of the Kyrgyz Republic' and carries out its activities in strict accordance with the Constitution of the Kyrgyz Republic, the Laws of the Kyrgyz Republic 'On Education', 'On the Basics of State Youth Policy', the Charter of the Kyrgyz National University of Culture and Arts named after B. Beyshenaliyeva, the concept of educational work, other regulatory legal acts, as well as the Resolution of the Government of the Kyrgyz Republic dated October 16, 2014 No. 601 'On the Basics of State Youth Policy' and the concept of the state youth policy of the Kyrgyz Republic for 2020–2030.",
+      "Within its competence, the Student Council is a structural unit of the university, ensuring the implementation of state youth policy within the educational organization.",
+      "In December 2023, a special Regulation on the Chairperson of the Student Council and the Student Ombudsman was developed and approved, according to which the elections of the structure's leaders were held."
+    ]
+  },
   studentsInfo: [
-    { image: "/photo-placeholder.svg",
-       name: "Orozova Nurai", 
-       content: "Student Council Chairwoman" },
+    {
+      image: "/photo-placeholder.svg",
+      name: "Orozova Nurai",
+      content: "Student Council Chairwoman"
+    },
     {
       image: "/photo-placeholder.svg",
       name: "Syimyk Abirov",
