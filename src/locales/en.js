@@ -1689,7 +1689,7 @@ export default {
       "KNUCA invites you to live while feeling the vivid colors of life.",
     ],
     signature: [
-      "Tumenbay KOLDOSHOV,",
+      "Tumenbay Koldoshev,",
       "Rector of KNUCA named after B. Beishenalieva,",
       "Candidate of Philological Sciences, Associate Professor",
     ],
