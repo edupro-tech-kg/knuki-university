@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 function ChairmanCard() {
     const { t } = useTranslation();
-
     const chairman = t("chairmanCard", { returnObjects: true });
 
     return (
@@ -12,17 +11,20 @@ function ChairmanCard() {
                 {chairman.title}
             </h3>
 
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-6 px-4">
                 {chairman.cards.map((item) => (
                     <div
                         key={item.id}
-                        className="flex flex-col items-center gap-4 p-6 border border-gray-200 rounded-[24px] shadow-sm w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-[320px] bg-white"
+                        className="flex flex-col items-center gap-4 p-6 border border-gray-200 
+                                 rounded-[24px] shadow-sm bg-white w-full sm:w-[288px] lg:w-[300px] 
+                                 xl:w-[320px] flex-shrink-0"
                     >
-                        <span className="w-14 h-14 rounded-full flex justify-center items-center text-xl font-semibold bg-[#BF211F] text-[#FFFFFF]">
+                        <span className="w-14 h-14 rounded-full flex justify-center items-center 
+                                       text-xl font-semibold bg-[#BF211F] text-white">
                             {item.id}
                         </span>
 
-                        <div>
+                        <div className="text-center">
                             <h4 className="text-lg font-semibold">
                                 {item.name}
                             </h4>
