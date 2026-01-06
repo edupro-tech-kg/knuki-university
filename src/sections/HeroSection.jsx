@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import img from "../assets/images/hero-img.png";
 import img1 from "../assets/images/heroImage1.jpg";
-import img2 from "../assets/images/heroImage2.jpg"; 
+import img2 from "../assets/images/heroImage2.jpg";
 import img3 from "../assets/images/heroImage3.jpg";
 import img4 from "../assets/images/heroImage4.jpg";
 import img5 from "../assets/images/heroImage5.jpg";
@@ -59,11 +59,17 @@ export default function HeroSection() {
   const prevSlide = () =>
     setCurrentSlide((p) => (p - 1 + slides.length) % slides.length);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
     <section id="home" className="bg-background relative overflow-hidden ">
       <div className="flex flex-col-reverse xl:flex-row gap-8 xl:gap-12 w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
-
-
         <div
           className="
             relative bg-[#751715]
@@ -74,7 +80,6 @@ export default function HeroSection() {
            
           "
         >
-          {/* slider nav */}
           <div className="flex justify-between items-center text-white z-20 relative">
             <button
               onClick={prevSlide}
@@ -82,7 +87,6 @@ export default function HeroSection() {
             >
               <FaArrowLeft size={14} />
             </button>
-
             <div className="flex items-center gap-2 text-base sm:text-lg">
               <p>
                 {String(currentSlide + 1).padStart(2, "0")}/
@@ -98,7 +102,6 @@ export default function HeroSection() {
                 ))}
               </div>
             </div>
-
             <button
               onClick={nextSlide}
               className="flex items-center justify-center h-10 w-10 border border-white rounded-full"
@@ -106,21 +109,21 @@ export default function HeroSection() {
               <FaArrowRight size={14} />
             </button>
           </div>
-
-          {/* image */}
-          <img
-            src={slides[currentSlide]}
-            alt="Slide"
-            className="
-              w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl
-              h-96 object-cover
-              xl:absolute xl:top-28 xl:left-4
-              z-10 mx-auto mt-6 xl:mt-0
-            "
-          />
+          <div >
+            {slides.map((slide, i) => (
+              <img
+                key={i}
+                src={slide}
+                alt="Slide"
+                className={`
+                  w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-96 object-cover xl:absolute xl:top-28 xl:left-4 z-10 mx-auto mt-6
+        transition-opacity duration-700 ease-in-out
+        ${i === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"}
+      `}
+              />
+            ))}
+          </div>
         </div>
-
-
         <div
           className="
             flex flex-col justify-center
@@ -131,15 +134,12 @@ export default function HeroSection() {
             w-full
           "
         >
-          <h1 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-accent text-center italic mt-4">
+          <h1 className="uppercase font-serif text-2xl md:text-6xl font-bold mb-4 text-text-accent text-left italic mt-4">
             {hero.title1} <br /> {hero.title2}
           </h1>
-
           <div className="w-full max-w-3xl">
             <Search />
           </div>
-
-          {/* stats */}
           <div
             ref={numbersRef}
             className="flex gap-1 md:gap-6 text-center"
@@ -161,7 +161,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
       <div className="mt-2">
         <img
           src={Pattern}
@@ -169,8 +168,6 @@ export default function HeroSection() {
           className="object-cover h-12  w-[620px] sm:w-[1000px]   lg:h-auto lg:w-full"
         />
       </div>
-
-
       <style>{`
         .stat-number {
           font-variant-numeric: tabular-nums;

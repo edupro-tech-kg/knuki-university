@@ -135,7 +135,7 @@ export default function ProgramsSection() {
                   <div className="text-sm text-stroke mb-2">{t("programs.faculty")}</div>
 
                   <h3 className="font-sans text-xl font-medium text-white mb-4">
-                    {getTitle(dir.slug, index)}
+                    {getTitle(dir, index)}
                   </h3>
 
                   <div className="flex-grow"></div>

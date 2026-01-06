@@ -401,7 +401,7 @@ export default {
   },
   hero: {
     title1: "ИСКУССТВО",
-    title2: "ПИК НАРОДНОГО ДУХА",
+    title2: "НАЧИНАЕТСЯ С НАС",
     searchPlaceholder: "Поиск",
     next: "Далее",
     stat1: "млн студентов",
@@ -500,6 +500,7 @@ export default {
     ],
   },
   calendar: {
+    eyebrow: "КАЛЕНДАРЬ СОБЫТИЙ",
     label: "Календарь",
     month: "Сентябрь 2025",
     legend: "События",
