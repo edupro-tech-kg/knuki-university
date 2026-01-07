@@ -1355,152 +1355,190 @@ export default {
 
   applicants: {
     title: "APPLICANTS",
-    title2: "Kyrgyz State University of Culture and Arts named after Bubuсаra Beishenalieva",
+    title2: "Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva",
     faculties: [
       {
         name: "FACULTY OF FOLK MUSIC",
         infos: [
           {
             span: "Choir conductor, teacher:",
-            p: "Testing musicality and singing ability, colloquium;",
+            p: "Testing musical aptitude and vocal abilities, colloquium;"
           },
           {
             span: "Orchestra conductor, teacher:",
-            p: "Testing musical ability, playing a musical instrument, colloquium;",
+            p: "Testing musical abilities, playing a musical instrument, colloquium;"
           },
           {
             span: "Soloist of folklore-ethnographic ensemble, teacher:",
-            p: "playing Kyrgyz folk instruments, singing, performing excerpts from epics, dastans and aitysh, etc.;",
-          },
-        ],
+            p: "performance on Kyrgyz folk instruments, singing, performing excerpts from epics, dastans and aitysh, etc.;"
+          }
+        ]
       },
       {
         name: "FACULTY OF POP MUSIC AND MUSICAL EDUCATION",
         infos: [
           {
             span: "Pop orchestra director, teacher:",
-            p: "Testing musicality, abilities and playing a musical instrument;",
+            p: "Testing musical aptitude, abilities and playing a musical instrument;"
           },
           {
             span: "Pop ensemble director, soloist-teacher:",
-            p: "Testing musicality and singing ability. (Performing two-three songs of different genres in Kyrgyz, Russian, English);",
+            p: "Testing musical aptitude and vocal abilities (Performance of 2–3 songs of various genres in Kyrgyz, Russian, and English);"
           },
-          { span: "Music teacher:", p: "Testing musicality and singing ability." },
+          {
+            span: "Music teacher:",
+            p: "Testing musical aptitude and vocal abilities."
+          }
         ],
+        note: "Applicants with secondary specialized music education, enrolling in the following specialties: choir conductor, orchestra conductor, soloist of folklore-ethnographic ensemble, music teacher, pop orchestra director, soloist of pop ensemble, take entrance exams in conducting, music theory, and solfeggio."
       },
       {
         name: "FACULTY OF CINEMA AND TELEVISION",
         infos: [
           {
             span: "Television and radio broadcasting director, teacher:",
-            p: "writing a script, testing acting ability; colloquium",
+            p: "writing a script, testing acting abilities, colloquium"
           },
           {
             span: "Cinema and television operator, teacher:",
-            p: "photo competition; photo reportage, testing knowledge in physics and chemistry through interview.",
+            p: "photography competition; photo reportage, interview in physics and chemistry."
           },
           {
-            span: "Sound director, teacher:",
-            p: "(Cinema and TV) colloquium in the specialty, testing musical abilities; interview in physics;",
+            span: "Sound director (Cinema and TV), teacher:",
+            p: "colloquium in the specialty, testing musical abilities, interview in physics;"
           },
           {
             span: "Film actor, teacher:",
-            p: "testing voice and speech skills, reading excerpts from literary works, testing musical-rhythmic ability;",
+            p: "testing voice and speech, reading excerpts from literary works, testing musical-rhythmic abilities;"
           },
           {
             span: "Feature film and television film director, teacher:",
-            p: "writing a script, testing acting ability; colloquium",
+            p: "writing a script, testing acting abilities, colloquium"
           },
           {
-            span: "Film studies specialist, teacher:",
-            p: "analysis of a play and critical opinion, colloquium.",
+            span: "Film scholar, teacher:",
+            p: "analysis of a play and critical opinion, colloquium."
           },
           {
             span: "Literary creativity (screenwriter), teacher:",
-            p: "analysis of a play, colloquium.",
-          },
-        ],
+            p: "analysis of a play, colloquium."
+          }
+        ]
       },
       {
         name: "FACULTY OF CHOREOGRAPHY AND CULTURAL ACTIVITIES",
         infos: [
           {
             span: "Manager of socio-cultural activities:",
-            p: "organizing socio-cultural work (in written form), colloquium in the specialty (oral);",
+            p: "organization of socio-cultural work (in written form), colloquium in the specialty (oral);"
           },
           {
             span: "Manager of choreographic collective, teacher:",
-            p: "performance skills (classical, folk-stage, historical-domestic dances), colloquium;",
+            p: "performance skills (classical, folk-stage, historical-domestic dance), colloquium;"
           },
-          { span: "Choreography teacher." },
-          { span: "Museum work and monument protection." },
-        ],
+          {
+            span: "Choreography teacher."
+          },
+          {
+            span: "Museum work and monument protection."
+          }
+        ]
       },
       {
         name: "THEATER FACULTY",
         infos: [
           {
             span: "Drama actor, teacher:",
-            p: "testing voice and speech skills, reading excerpts from literary works, testing musical-rhythmic ability;",
+            p: "testing voice and stage speech, reading literary excerpts, testing musical-rhythmic abilities;"
           },
           {
             span: "Drama director, teacher:",
-            p: "practical directing, analysis of a play, testing acting ability;",
+            p: "practical directing, analysis of a play, testing acting abilities;"
           },
-          { span: "Theater studies specialist, teacher:", p: "analysis of a play, colloquium." },
-        ],
+          {
+            span: "Theater scholar, teacher:",
+            p: "analysis of a play, colloquium."
+          }
+        ]
       },
       {
         name: "POSTGRADUATE STUDIES",
-        infos: [{ p: "Musical art;" }, { p: "History and theory of culture;" }],
+        infos: [
+          {
+            p: "Musical art;"
+          },
+          {
+            p: "History and theory of culture;"
+          }
+        ]
       },
       {
         name: "MASTER'S DEGREE",
         infos: [
-          { p: "*Art education:" },
-          { p: "*Music education;" },
-          { p: "*Theater arts:" },
-          { p: "*Acting art and directing;" },
-          { p: "*Theater studies and dramaturgy;" },
-          { p: "*Musical art:" },
-          { p: "*Instrumental musical art;" },
-          { p: "*Ethnomusicology;" },
-          { p: "*Vocal art;" },
-        ],
-      },
+          {
+            p: "Art education:"
+          },
+          {
+            p: "Music education;"
+          },
+          {
+            p: "Theater arts:"
+          },
+          {
+            p: "Acting art and directing;"
+          },
+          {
+            p: "Theater studies and dramaturgy;"
+          },
+          {
+            p: "Musical art:"
+          },
+          {
+            p: "Instrumental musical art;"
+          },
+          {
+            p: "Ethnomusicology;"
+          },
+          {
+            p: "*Vocal art;"
+          }
+        ]
+      }
     ],
     conditions: {
-      first:
-        "All applicants, in addition to entrance exams in their specialty, take a standardized test in Kyrgyz or Russian.",
+      first: "All applicants, in addition to specialized exams, take a standardized test in Kyrgyz or Russian.",
       all: [
-        "The certificate of the nationwide test is NOT REQUIRED for applicants to the university.",
-        "Applicants are admitted on the basis of state budget and contract.",
-        "Non-local students are provided with dormitory accommodation.",
-      ],
+        "The certificate of the General Republican Test (GRT) is NOT REQUIRED.",
+        "Admission is carried out on a state-funded and contract basis.",
+        "Students arriving from remote regions are provided with accommodation in student dormitories."
+      ]
     },
     documents: {
       name: "Required documents:",
       all: [
         "Certificate or diploma of secondary or secondary specialized education (original);",
-        "Medical certificate (form 0-86 У);",
-        "6 photos size 3x4;",
-        "Presents passport, military ID or registration certificate;",
-        "Copy of work record book (for those with work experience).",
-      ],
+        "Medical certificate (form 086-У);",
+        "6 photos size 3×4;",
+        "Passport, military ID or registration certificate;",
+        "Copy of work record book (if having work experience)."
+      ]
     },
     contacts: {
       phoneLabel: "Phone",
-      phone: "+996 312 57 03 79",
-      whatsappLabel: "WhatsApp",
-      whatsapp: "+996 504 199 144",
+      phone: "0312 57-03-79",
+      instagramLabel: "Instagram",
+      instagram: "@knuki_kg",
+      websiteLabel: "Website",
+      website: "www.knuki.kg",
       emailLabel: "Email",
-      email: "kguki.art@mail.ru",
+      email: "kgukiart@mail.ru",
       addressLabel: "Address",
-      address: "Bishkek, Zhibek Zholu Ave. 113",
+      address: "Bishkek, Zhantoshev St. 113",
       hoursLabel: "Working hours",
-      hours: "Mon–Fri 09:00–18:00",
-    },
+      hours: "Mon–Fri 09:00–18:00"
+    }
   },
+
   literaturePage: {
     title:
       "HIGHER LITERARY COURSES AT THE KYRGYZ NATIONAL UNIVERSITY OF CULTURE AND ARTS NAMED AFTER B. BEISHENALIEVA",

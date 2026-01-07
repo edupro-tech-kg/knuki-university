@@ -73,18 +73,6 @@ function Applicants() {
                         </div>
                         
                         <div className="flex gap-2 md:gap-3 items-center">
-                            <FaPhoneVolume className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                            <div className="font-['Inter'] font-medium">
-                                <p className="leading-snug tracking-tight text-sm md:text-base">
-                                    {applicants.contacts.whatsappLabel}
-                                </p>
-                                <p className="leading-none tracking-tight text-xs md:text-sm text-[#898989]">
-                                    {applicants.contacts.whatsapp}
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div className="flex gap-2 md:gap-3 items-center">
                             <MdEmail className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
                             <div className="font-['Inter'] font-medium">
                                 <p className="leading-snug tracking-tight text-sm md:text-base">
