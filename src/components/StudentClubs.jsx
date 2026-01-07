@@ -11,7 +11,7 @@ function ClubGroup({ items }) {
 
         {/* Tabs */}
         <div className="bg-[#A62623] p-2 rounded-xl border border-[#751715]">
-          <div className="flex gap-2 overflow-x-auto scrollbar-hide px-1 pb-1 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0">
+          <div className="grid md:grid-cols-3  gap-2 px-1 pb-1 sm:px-0 sm:pb-0">
             {items.map((club, idx) => (
               <button
                 key={club.key || club.name}
