@@ -1127,13 +1127,13 @@ export default {
       },
       {
         name: "Dzhakypov Kubatbek Kulanchievich",
-        post: "Vice-Rector for Academic Affairs",
+        post: "Vice-Rector for Academic Work",
         details:
           "Candidate of Pedagogical Sciences, associate professor with 20 years of teaching experience. Supervises educational and methodological work of all faculties, monitors the quality of educational programs. Implemented an electronic document management system and online schedule. Organizes annual professional development courses for 150 teachers. Expert of the Ministry of Education and Science, author of the textbook 'Methodology of Teaching Creative Disciplines'. Leads the 'Digital University' project.",
       },
       {
         name: "Imankulova Saadat Esenbaevna",
-        post: "Vice-Rector for Science and International Relations",
+        post: "Vice-Rector for Research and International Relations",
         details:
           "Doctor of Art History, professor, specialist in international cultural relations. Established partnerships with 30 universities in Europe and Asia. Coordinator of the Erasmus+ program at the university. Under her supervision, 12 candidate dissertations have been defended. Member of the International Association of Art Critics, laureate of the state prize in the field of culture. Organized 5 international scientific conferences. Supervises student exchange programs.",
       },
@@ -1145,13 +1145,13 @@ export default {
       },
       {
         name: "Imanaliev Maksat Baktybekovich",
-        post: "Vice-Rector for Administrative and Economic Affairs",
+        post: "Vice-Rector for Administrative and Economic Work",
         details:
           "Engineer-economist with 18 years of experience in university infrastructure management. Carried out reconstruction of 3 academic buildings and dormitories. Implemented an energy-saving system, reducing utility costs by 30%. Organized modern campus infrastructure. Excellent Worker of Education of the Kyrgyz Republic. Managed the construction of a new 500-seat concert hall. Implemented the 'Smart Campus' system with automated management.",
       },
       {
         name: "Baktybekova Begai Baktybekovna",
-        post: "Head of Human Resources Department",
+        post: "Head of HR Department",
         details:
           "HR specialist with 15 years of experience in personnel management. Developed and implemented a system of motivation and evaluation of employees. Organized corporate training for administrative staff. Supervises issues of labor legislation and social guarantees for employees. Certified CIPD specialist. Reduced staff turnover by 25% over 3 years. Implemented an electronic personnel accounting system. Conducts regular professional development trainings.",
       },
@@ -1174,7 +1174,7 @@ export default {
           "Career counseling specialist with 10 years of experience. Organized partnerships with 50+ companies for student internships. Developed a graduate support program. Conducts annual job fairs. Supervises the student mentoring program. Organized a career center with counseling services. Established a system for tracking graduate employment. Conducts trainings on resume writing and interviews.",
       },
       {
-        name: "Ybyraikunova Nazira Kubanychbekovna",
+        name: "Ybyrayakunova Nazira Kubanychbekovna",
         post: "Chief Accountant",
         details:
           "Economist of the highest category with 20 years of experience in financial management. Heads the university's accounting service. Implemented an electronic budgeting and reporting system. Ensures financial discipline and cost optimization. Coordinates work with tax authorities and funds. Organized a system of internal financial control. Regularly undergoes professional development in accounting. Successfully passes annual audit checks.",
@@ -1198,22 +1198,22 @@ export default {
           "People's Artist of Kyrgyzstan, professor, virtuoso komuz player. Preserves and develops traditions of folk music. Founder of the folk instruments ensemble 'Kerme-Too'. Developed a program for studying all regional styles of Kyrgyz music. Organizes expeditions to collect folklore. Author of the textbook 'Theory of Kyrgyz Folk Music'. Has educated a galaxy of famous musicians. Regularly represents Kyrgyz music abroad.",
       },
       {
-        name: "Toktogulov Bakytbek Toktogulovich",
-        post: "Dean of the Faculty of Theatre",
+        name: "Urmatbekov Chynasyl Urmatbekovich",
+        post: "Dean of the Theatre Faculty",
         details:
           "Honored Art Worker, stage director. Graduate of GITIS. Has been leading the faculty for 12 years. Directed over 30 plays with students. Developed a program for integrating traditional and contemporary theater. Organized the student theater 'New Stage'. Students work in leading theaters of the country. Conducts international theater laboratories. Author of the book 'Acting in Kyrgyz Theater'.",
       },
       {
-        name: "Sydykov Erkinbek Sydykovich",
-        post: "Dean of the Faculty of Cinema and Television",
-        details:
-          "Film director, laureate of international film festivals. Graduate of VGIK. Has been leading the faculty for 8 years. Equipped the faculty with modern film equipment. Organized the annual student film festival 'First Frame'. Established partnerships with national film studios. Students participate in international projects. Developed a program on digital film production. Conducts master classes with famous filmmakers.",
-      },
-      {
-        name: "Asankulova Aigerim Toktobekovna",
+        name: "Baktybek uulu Isabek",
         post: "Dean of the Faculty of Choreography and Cultural Activities",
         details:
           "Honored Ballet Artist, choreographer. Graduate of the Academy of Russian Ballet. Has been leading the faculty for 7 years. Developed a program for synthesizing classical and folk dance. Organized the ensemble 'Zhastyk' that tours the country. Students are participants in international competitions. Author of a methodology for teaching choreography to different age groups. Conducts choreographic master classes. Supervises the program of city cultural events.",
+      },
+      {
+        name: "Yusupova Taberik Dilshatovna",
+        post: "Dean of the Faculty of Cinema and Television",
+        details:
+          "Film director, laureate of international film festivals. Graduate of VGIK. Has been leading the faculty for 8 years. Equipped the faculty with modern film equipment. Organized the annual student film festival 'First Frame'. Established partnerships with national film studios. Students participate in international projects. Developed a program on digital film production. Conducts master classes with famous filmmakers.",
       },
       {
         name: "Samieva Shairgul Turatovna",
