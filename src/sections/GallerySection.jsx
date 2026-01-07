@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import "swiper/css";
+
 import gallery from "../assets/images/gallery.png";
 import gallery1 from "../assets/images/gallery1.png";
 import gallery2 from "../assets/images/gallery2.png";
@@ -16,6 +17,19 @@ import gallery9 from "../assets/images/gallery9.png";
 import gallery10 from "../assets/images/gallery10.png";
 import gallery11 from "../assets/images/gallery11.png";
 import gallery12 from "../assets/images/gallery12.png";
+import gallery13 from "../assets/images/gallery13.jpg";
+import gallery14 from "../assets/images/gallery14.jpg";
+import gallery15 from "../assets/images/gallery15.jpg";
+import gallery16 from "../assets/images/gallery16.jpg";
+import gallery17 from "../assets/images/gallery17.jpg";
+import gallery18 from "../assets/images/gallery18.jpg";
+import gallery19 from "../assets/images/gallery19.jpg";
+import gallery20 from "../assets/images/gallery20.jpg";
+import gallery21 from "../assets/images/gallery21.jpg";
+import gallery22 from "../assets/images/gallery22.jpg";
+import gallery23 from "../assets/images/gallery23.jpg";
+import gallery24 from "../assets/images/gallery24.jpg";
+import gallery25 from "../assets/images/gallery25.jpg";
 
 const images = [
   gallery1,
@@ -30,54 +44,61 @@ const images = [
   gallery10,
   gallery11,
   gallery12,
+  gallery13,
+  gallery14,
+  gallery15,
+  gallery16,
+  gallery17,
+  gallery18,
+  gallery19,
+  gallery20,
+  gallery21,
+  gallery22,
+  gallery23,
+  gallery24,
+  gallery25,
 ];
+const row1Images = images.slice(0, 9);
+const row2Images = images.slice(9, 17);
+const row3Images = images.slice(17);
 
-const Row = ({ reverse }) => (
-  <Swiper
-    modules={[Autoplay]}
-    loop={true}
-    spaceBetween={0}
-    slidesPerView={5}
-    speed={5000}
-    autoplay={{
-      delay: 0,
-      disableOnInteraction: false,
-      reverseDirection: reverse,
-    }}
-    style={{
-      padding: 0,
-      margin: 0,
-    }}
-    breakpoints={{
-      320: { slidesPerView: 2 },
-      480: { slidesPerView: 3 },
-      768: { slidesPerView: 4 },
-      1024: { slidesPerView: 5 },
-    }}
-  >
-    {images.map((img, i) => (
-      <SwiperSlide
-        key={i}
-        style={{
-          margin: 0,
-          padding: 0,
-        }}
-      >
-        <img
-          src={img}
-          style={{
-            width: "100%",
-            height: "150px",
-            objectFit: "cover",
-            borderRadius: "0px",
-            display: "block",
-          }}
-          alt=""
-        />
-      </SwiperSlide>
-    ))}
-  </Swiper>
-);
+const Row = ({ images, reverse }) => {
+  return (
+    <Swiper
+      modules={[Autoplay]}
+      loop={true}
+      spaceBetween={0}
+      slidesPerView={5}
+      speed={5000}
+      autoplay={{
+        delay: 0,
+        disableOnInteraction: false,
+        reverseDirection: reverse,
+      }}
+      breakpoints={{
+        320: { slidesPerView: 2 },
+        480: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        1024: { slidesPerView: 5 },
+      }}
+    >
+      {images.map((img, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={img}
+            alt=""
+            style={{
+              width: "100%",
+              height: "150px",
+              objectFit: "cover",
+              display: "block",
+            }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
 
 export default function GallerySection() {
   const { t } = useTranslation();
@@ -87,14 +108,16 @@ export default function GallerySection() {
       <div className="bg-background relative flex items-center w-full">
         <img className="w-40 md:w-96" src={gallery} alt="" />
         <h2
-          className="absolute left-1/2 -translate-x-1/2 
-              uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic"
-        >{t("gallery.eyebrow")}</h2>
+          className="absolute left-1/2 -translate-x-1/2 uppercase font-serif text-2xl md:text-4xl font-bold text-text-primary text-center italic"
+        >
+          {t("gallery.eyebrow")}
+        </h2>
       </div>
-      <div style={{ width: "100%", overflow: "hidden", padding: 0, margin: 0 }}>
-        <Row reverse={false} />
-        <div style={{ marginTop: 0 }}><Row reverse={true} /></div>
-        <div style={{ marginTop: 0 }}><Row reverse={false} /></div>
+
+      <div style={{ width: "100%", overflow: "hidden" }}>
+        <Row images={row1Images} reverse={false} />
+        <Row images={row2Images} reverse={true} />
+        <Row images={row3Images} reverse={false} />
       </div>
     </div>
   );
