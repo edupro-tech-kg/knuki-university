@@ -11,12 +11,12 @@ function ClubGroup({ items }) {
 
         {/* Tabs */}
         <div className="bg-[#A62623] p-2 rounded-xl border border-[#751715]">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide px-1 pb-1 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0">
             {items.map((club, idx) => (
               <button
                 key={club.key || club.name}
                 onClick={() => setActiveIndex(idx)}
-                className={`flex-1 min-w-[140px] md:min-w-[160px] px-4 py-3 rounded-md text-sm font-medium transition-colors border text-center
+                className={`flex-1 min-w-[180px] sm:min-w-[160px] px-4 py-3 rounded-md text-sm font-medium transition-colors border text-center
                 ${idx === activeIndex
                     ? "bg-white text-[#751715] border-[#751715] shadow-sm"
                     : "bg-[#751715] text-white border-[#A62623] hover:bg-[#8c1f1f] hover:border-[#8c1f1f]"}
@@ -36,15 +36,15 @@ function ClubGroup({ items }) {
             >
 
               {/* Photo */}
-              <div className="md:w-48 lg:w-56 flex md:flex-none p-5 md:p-7">
-                <div className="w-[30%] md:w-full h-[220px] md:h-[240px] lg:h-[260px] border-2 border-white rounded-md overflow-hidden">
+              <div className="w-full md:w-48 lg:w-56 flex-shrink-0 p-5 md:p-7">
+                <div className="w-full h-56 md:h-[240px] lg:h-[260px] border-2 border-white rounded-md overflow-hidden">
                   <img
                     src={activeClub.image}
                     alt={activeClub.name}
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
-                <p className="pl-5 w-[60%] flex md:hidden text-xl font-semibold leading-snug">{activeClub.name}</p>
+                <p className="mt-4 md:hidden text-xl font-semibold leading-snug">{activeClub.name}</p>
               </div>
 
               {/* Content */}

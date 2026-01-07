@@ -1,16 +1,23 @@
+import { useTranslation } from "react-i18next";
 import StudentStructure from "../components/StudentStructure";
 import StudentsInfo from "../components/StudentsInfo";
-import ChairmanCard from "../components/ChairmanCard";
 import StudentClubs from "../components/StudentClubs";
-import Scholars from "../components/Scolars";
+import ScholarsCarousel from "../components/ScholarsCarousel";
 
 function StudentsLife() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <StudentStructure />
       <StudentsInfo />
-      <Scholars />
-      <ChairmanCard />
+      <div className="text-center mt-10 mb-6">
+        <h2 className="text-3xl font-bold text-gray-900 uppercase italic font-serif">
+          {t("scholars.title")}
+        </h2>
+      </div>
+      <ScholarsCarousel variant="national" />
+      <ScholarsCarousel variant="presidential" />
       <StudentClubs />
     </div>
   );

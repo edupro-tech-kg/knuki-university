@@ -905,22 +905,6 @@ export default {
       content: "Chairperson of the Faculty of Pop Music and Musical Education",
     },
   ],
-  chairmanCard: {
-    title: "Faculty student council leaders",
-    cards: [
-      { id: 1, name: "Nestan Orozobekova", content: "Chair of the student council" },
-      { id: 2, name: "Syimyk Abirov", content: "Head of the student ombudsman office" },
-      { id: 3, name: "Aitanshy Shabdanova", content: "Chair of the women’s council" },
-      {
-        id: 4,
-        name: "Esengul Akylbek uulu",
-        content: "First deputy for academic and cultural affairs",
-      },
-      { id: 5, name: "Shailoobek Naralyev", content: "Public and international relations sector" },
-      { id: 6, name: "Aliya Malikova", content: "Head of sport and health sector" },
-      { id: 7, name: "Almaz kyzy Tansuluu", content: "Deputy chair for dormitory affairs" },
-    ],
-  },
   studentClubs: [
     {
       key: "altynNur",
