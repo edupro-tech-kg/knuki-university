@@ -6,69 +6,76 @@ function ClubGroup({ items }) {
   const activeClub = items[activeIndex] || items[0];
 
   return (
-    <div className="bg-[#7a1d1d] text-white border-2 border-[#a62623] overflow-hidden">
-      <div className="bg-[#a62623] flex items-center justify-center p-2 sm:p-4 overflow-x-auto">
-        <div className="flex flex-nowrap gap-2 sm:gap-3 items-center justify-center min-w-min">
-          {items.map((club, idx) => (
-            <button
-              key={club.key || club.name}
-              onClick={() => setActiveIndex(idx)}
-              className={`
-                flex-shrink-0 rounded-xl border-2 font-semibold 
-                transition-colors flex items-center justify-center text-center
-                px-4 sm:px-6 py-3 h-[60px] whitespace-nowrap
-                ${idx === activeIndex
-                  ? "bg-white text-black border-white"
-                  : "bg-[#7a1d1d] text-white border-[#902321] hover:bg-[#8c1f1f]" 
-                }
-              `}
-              style={{
-                fontSize: "clamp(0.75rem, 2vw, 1rem)", 
-              }}
-            >
-              {club.name}
-            </button>
-          ))}
-        </div>
-      </div>
+    <section className="w-full bg-[#751715] py-10">
+      <div className="max-w-[1200px] mx-auto px-4 space-y-8">
 
-      {activeClub && (
-        <div className="p-4 sm:p-8">
-          <div className="grid lg:grid-cols-[1fr_1.4fr] gap-6 lg:gap-12 items-center">
-            <div className="w-full flex justify-center">
-              <div
-                className="bg-white rounded-lg overflow-hidden border-4 border-white"
-                style={{
-                  aspectRatio: "691/458", 
-                  width: "100%",
-                  maxWidth: "min(691px, 100%)", 
-                }}
+        {/* Tabs */}
+        <div className="bg-[#A62623] p-2 rounded-xl border border-[#751715]">
+          <div className="flex flex-wrap gap-2">
+            {items.map((club, idx) => (
+              <button
+                key={club.key || club.name}
+                onClick={() => setActiveIndex(idx)}
+                className={`flex-1 min-w-[140px] md:min-w-[160px] px-4 py-3 rounded-md text-sm font-medium transition-colors border text-center
+                ${idx === activeIndex
+                    ? "bg-white text-[#751715] border-[#751715] shadow-sm"
+                    : "bg-[#751715] text-white border-[#A62623] hover:bg-[#8c1f1f] hover:border-[#8c1f1f]"}
+              `}
               >
-                {activeClub.image ? (
+                <span className="line-clamp-2">{club.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Teacher Cards */}
+        <div className="space-y-6">
+          {activeClub && (
+            <div
+              className="bg-[#A62623] text-white border border-[#751715] rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden"
+            >
+
+              {/* Photo */}
+              <div className="md:w-48 lg:w-56 flex md:flex-none p-5 md:p-7">
+                <div className="w-[30%] md:w-full h-[220px] md:h-[240px] lg:h-[260px] border-2 border-white rounded-md overflow-hidden">
                   <img
                     src={activeClub.image}
                     alt={activeClub.name}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
+                    className="w-full h-full object-cover object-top"
                   />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-gray-800 text-white/70 text-sm">
-                    {activeClub.name}
+                </div>
+                <p className="pl-5 w-[60%] flex md:hidden text-xl font-semibold leading-snug">{activeClub.name}</p>
+              </div>
+
+              {/* Content */}
+              <div className="flex-1 p-5 md:p-7 flex flex-col min-h-0">
+                {/* Основной контент, который занимает доступное пространство */}
+                <div className="space-y-3 flex-1">
+                  <p className="hidden md:flex text-xl font-semibold leading-snug">{activeClub.name}</p>
+
+                  {activeClub.position && (
+                    <p className="text-sm font-medium text-white/90">{activeClub.position}</p>
+                  )}
+
+                  {activeClub.description && (
+                    <p className="text-sm leading-relaxed text-white/90 whitespace-pre-line">{activeClub.description}</p>
+                  )}
+                </div>
+
+                {/* Подзаголовок всегда снизу */}
+                {activeClub.subtitle && (
+                  <div className="mt-4 pt-4 border-t border-white/20">
+                    <p className="text-sm font-medium text-gray-300">{activeClub.subtitle}</p>
                   </div>
                 )}
               </div>
-            </div>
 
-            <div className="space-y-4 sm:space-y-6">
-              <h4 className="text-xl sm:text-2xl font-semibold">{activeClub.name}</h4>
-              <p className="text-base sm:text-lg leading-relaxed whitespace-pre-line">
-                {activeClub.description}
-              </p>
             </div>
-          </div>
+          )}
         </div>
-      )}
-    </div>
+
+      </div>
+    </section>
   );
 }
 
@@ -86,7 +93,7 @@ export default function StudentClubs() {
 
   return (
     <section className="mt-8 sm:mt-12 lg:mt-16 space-y-8 sm:space-y-12 mb-12 sm:mb-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
+      <div className="mx-auto ">
         {groups.map((group, idx) => (
           <ClubGroup key={`club-group-${idx}`} items={group} />
         ))}

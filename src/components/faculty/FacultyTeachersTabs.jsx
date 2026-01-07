@@ -39,21 +39,22 @@ export default function FacultyTeachersTabs({ groups }) {
             >
 
               {/* Photo */}
-              <div className="md:w-48 lg:w-56 flex-none p-5 md:p-7">
-                <div className="w-full h-[220px] md:h-[240px] lg:h-[260px] border-2 border-white rounded-md overflow-hidden">
+              <div className="md:w-48 lg:w-56 flex md:flex-none p-5 md:p-7">
+                <div className="w-[30%] md:w-full h-[220px] md:h-[240px] lg:h-[260px] border-2 border-white rounded-md overflow-hidden">
                   <img
                     src={teacher.photo}
                     alt={teacher.name}
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
+                <p className="pl-5 w-[60%] flex md:hidden text-xl font-semibold leading-snug">{teacher.name}</p>
               </div>
 
               {/* Content */}
               <div className="flex-1 p-5 md:p-7 flex flex-col min-h-0">
                 {/* Основной контент, который занимает доступное пространство */}
                 <div className="space-y-3 flex-1">
-                  <p className="text-xl font-semibold leading-snug">{teacher.name}</p>
+                  <p className="hidden md:flex text-xl font-semibold leading-snug">{teacher.name}</p>
 
                   {teacher.position && (
                     <p className="text-sm font-medium text-white/90">{teacher.position}</p>
