@@ -40,8 +40,8 @@ export default function RectorMessage() {
 
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="mt-3 font-serif text-2xl md:text-4xl font-bold italic text-text-primary uppercase">
-            {t("rector.title")}
+          <h2 className="-mt-6 md:-mt-9 mb-4 font-serif text-2xl md:text-4xl font-bold italic text-text-primary uppercase">
+            {t("rector.eyebrow")}
           </h2>
         </div>
 
@@ -55,12 +55,11 @@ export default function RectorMessage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 flex flex-col gap-2 rounded-xl bg-white/85 px-4 py-3 shadow-soft backdrop-blur">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#751715]">
-                  {t("rector.eyebrow")}
-                </p>
-                <p className="text-base font-serif italic text-text-primary uppercase">
-                  {t("rector.title")}
-                </p>
+                <div className="text-sm font-medium text-text-secondary">
+                  {signature.map((line, index) => (
+                    <p key={index}>{line}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -88,11 +87,7 @@ export default function RectorMessage() {
               </div>
             </div>
 
-            <div className="mt-8 border-t border-gray-200 pt-4 text-sm font-medium text-text-secondary">
-              {signature.map((line, index) => (
-                <p key={index}>{line}</p>
-              ))}
-            </div>
+
           </div>
         </div>
       </div>
