@@ -196,7 +196,7 @@ export default function NLAkguki() {
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-4 sm:py-8">
       <h2 className="font-serif text-primary text-2xl sm:text-3xl md:text-4xl text-center py-6 sm:py-9 uppercase italic">
-        кнукинин чуа документтери
+        документ НПА КР
       </h2>
 
       <div className="block md:hidden space-y-4">
