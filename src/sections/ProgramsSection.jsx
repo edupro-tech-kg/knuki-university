@@ -132,9 +132,8 @@ export default function ProgramsSection() {
                 `}
               >
                 <div className="p-6 flex flex-col h-full">
-                  <div className="text-sm text-stroke mb-2">{t("programs.faculty")}</div>
 
-                  <h3 className="font-sans text-xl font-medium text-white mb-4">
+                  <h3 className="font-sans text-xl font-medium text-white mb-4 mt-4">
                     {getTitle(dir, index)}
                   </h3>
 
