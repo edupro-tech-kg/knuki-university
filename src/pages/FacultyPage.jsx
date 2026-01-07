@@ -1,3 +1,4 @@
+// FacultyPage.jsx
 import { useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -21,6 +22,7 @@ export default function FacultyPage() {
     const lang = i18n.language;
     return t("facultiesData.items", { returnObjects: true, lng: lang }) || {};
   }, [t, i18n.language]);
+  
   const faculty = useMemo(
     () => getFacultyData(slug, localizedFaculties),
     [slug, localizedFaculties]
@@ -69,14 +71,17 @@ export default function FacultyPage() {
 
   return (
     <div className="bg-light text-dark">
+      {/* Передаем sliderImages в FacultyHero */}
       <FacultyHero
         title={faculty.title}
         description={faculty.description}
         heroImage={faculty.heroImage}
+        sliderImages={faculty.sliderImages} // Новое поле
         heroBackground={faculty.heroBackground}
         studyForms={faculty.studyForms}
         duration={faculty.duration}
       />
+      
       {faculty.infoAfterText ? (
         <>
           {textTabs}
@@ -88,6 +93,7 @@ export default function FacultyPage() {
           {textTabs}
         </>
       )}
+      
       <FacultyStats stats={faculty.stats} heading={faculty.teachersTitle} />
       <FacultyTeachersTabs groups={faculty.teacherGroups || []} />
       <DocumentsSection documents={faculty.documents} />

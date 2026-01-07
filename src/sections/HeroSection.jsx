@@ -1,5 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import Search from "../components/UI/Search";
+import ReusableSlider from "../components/UI/ReusableSlider";
+import Pattern from "../assets/svg/patterns.svg";
 import img from "../assets/images/hero-img.png";
 import img1 from "../assets/images/heroImage1.jpg";
 import img2 from "../assets/images/heroImage2.jpg";
@@ -7,16 +11,20 @@ import img3 from "../assets/images/heroImage3.jpg";
 import img4 from "../assets/images/heroImage4.jpg";
 import img5 from "../assets/images/heroImage5.jpg";
 import img6 from "../assets/images/heroImage6.jpg";
-import { useTranslation } from "react-i18next";
-import Search from "../components/UI/Search";
-import Pattern from "../assets/svg/patterns.svg";
 
 export default function HeroSection() {
   const { t } = useTranslation();
   const hero = t("hero");
 
-  const slides = [img, img1, img2, img3, img4, img5, img6];
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    { src: img, alt: "University building" },
+    { src: img1, alt: "Students in campus" },
+    { src: img2, alt: "University building" },
+    { src: img3, alt: "Students in campus" },
+    { src: img4, alt: "University building" },
+    { src: img5, alt: "Students in campus" },
+    { src: img6, alt: "Students in campus" },
+  ];
 
   const [students, setStudents] = useState(0);
   const [budget, setBudget] = useState(0);
@@ -54,96 +62,47 @@ export default function HeroSection() {
     return () => observer.disconnect();
   }, []);
 
-  const nextSlide = () =>
-    setCurrentSlide((p) => (p + 1) % slides.length);
-  const prevSlide = () =>
-    setCurrentSlide((p) => (p - 1 + slides.length) % slides.length);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
   return (
-    <section id="home" className="bg-background relative overflow-hidden ">
+    <section id="home" className="bg-background relative overflow-hidden">
       <div className="flex flex-col-reverse xl:flex-row gap-8 xl:gap-12 w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+
         <div
           className="
-            relative bg-[#751715]
-            w-full
-            xl:flex-[1.5]
-            min-h-[320px] lg:min-h-[580px]
-            p-4 sm:p-6 xl:p-8 2xl:p-12
-           
-          "
+    relative bg-[#751715]
+    w-full
+    xl:flex-[1.2]          /* короче по ширине на desktop */
+    min-h-[450px] lg:min-h-[500px]
+    p-4 sm:p-6
+    xl:-ml-[100vw]         /* уводим фон влево */
+    xl:pl-[100vw]          /* возвращаем контент */
+  "
         >
-          <div className="flex justify-between items-center text-white z-20 relative">
-            <button
-              onClick={prevSlide}
-              className="flex items-center justify-center h-10 w-10 border border-white rounded-full"
-            >
-              <FaArrowLeft size={14} />
-            </button>
-            <div className="flex items-center gap-2 text-base sm:text-lg">
-              <p>
-                {String(currentSlide + 1).padStart(2, "0")}/
-                <span className="text-xs sm:text-sm">{slides.length}</span>
-              </p>
-              <div className="flex gap-1 ml-3">
-                {slides.map((_, i) => (
-                  <span
-                    key={i}
-                    className={`h-1.5 w-1.5 rounded-full ${i === currentSlide ? "bg-white" : "bg-white/40"
-                      }`}
-                  />
-                ))}
-              </div>
-            </div>
-            <button
-              onClick={nextSlide}
-              className="flex items-center justify-center h-10 w-10 border border-white rounded-full"
-            >
-              <FaArrowRight size={14} />
-            </button>
-          </div>
-          <div >
-            {slides.map((slide, i) => (
-              <img
-                key={i}
-                src={slide}
-                alt="Slide"
-                className={`
-                  w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-96 object-cover xl:absolute xl:top-28 xl:left-4 z-10 mx-auto mt-6
-        transition-opacity duration-700 ease-in-out
-        ${i === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"}
-      `}
-              />
-            ))}
-          </div>
+  <ReusableSlider
+            images={slides}
+            type="default"
+            showArrows={true}
+            showNumbers={true}
+            showDots={true}
+            autoplay={true}
+            autoplayInterval={2000}
+            overlap={true} 
+            className="w-full h-full"
+            imageClassName="
+             w-full
+             max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
+              h-96
+              object-cover"
+            mobilePosition="top"
+          />
         </div>
-        <div
-          className="
-            flex flex-col justify-center
-            xl:flex-[1]
-            items-center xl:items-start
-            text-center xl:text-left
-            gap-6 lg:gap-8
-            w-full
-          "
-        >
+        <div className="flex flex-col justify-center xl:flex-[1] items-center xl:items-start text-center xl:text-left gap-6 lg:gap-8 w-full">
           <h1 className="uppercase font-serif text-2xl md:text-6xl font-bold mb-4 text-text-accent text-left italic mt-4">
             {hero.title1} <br /> {hero.title2}
           </h1>
           <div className="w-full max-w-3xl">
             <Search />
           </div>
-          <div
-            ref={numbersRef}
-            className="flex gap-1 md:gap-6 text-center"
-          >
+          <div ref={numbersRef} className="flex gap-1 md:gap-6 text-center">
             <Stat
               value={`+${students.toLocaleString("en-US")}`}
               label={hero.stat1}
@@ -161,13 +120,15 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="mt-2">
+      <div className="mt-8 sm:mt-5">
         <img
           src={Pattern}
           alt="patterns"
-          className="object-cover h-12  w-[620px] sm:w-[1000px]   lg:h-auto lg:w-full"
+          className="object-cover h-12 w-[620px] sm:w-[1000px] lg:h-auto lg:w-full"
         />
       </div>
+
+
       <style>{`
         .stat-number {
           font-variant-numeric: tabular-nums;
