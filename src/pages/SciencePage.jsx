@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import photo1 from "../assets/images/faculties/education/education1.jpg";
-import photo2 from "../assets/images/faculties/education/education2.jpg";
-import photo3 from "../assets/images/faculties/education/education3.jpg";
+import photo1 from "../assets/images/faculties/science/science1.jpg";
+import photo2 from "../assets/images/faculties/science/science2.jpg";
+import photo3 from "../assets/images/faculties/science/science3.jpg";
 function ImageTextBlock({ src, float, text1, text2 }) {
   const isRight = float === "right";
   
