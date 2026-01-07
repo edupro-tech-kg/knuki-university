@@ -908,38 +908,38 @@ export default {
   studentClubs: [
     {
       key: "altynNur",
-      name: "‘Altyn Nur’ folk instruments ensemble",
+      name: "«Altyn Nur» folk instruments ensemble",
       image: "/news.png",
       description:
         "Founded and led by Nurpeil Samarbekova in 2016. Includes 22 students (conducting majors). Winners of many contests, international participants. Perform Kyrgyz pieces and well-known film soundtracks.",
     },
     {
       key: "sonun",
-      name: "‘Sonun’ pop group",
+      name: "«Sonun» pop group",
       image: "/news.png",
       description:
         "Performing for 20+ years. Founder — head of the pop department Toktogulov Adbitalip Kochkorovich. Participants of national and international festivals, award winners, give concerts across the country.",
     },
     {
       key: "asmanLegenda",
-      name: "‘Asman legenda’ shadow/puppet theatre",
+      name: "«Asman legenda» shadow/puppet theatre",
       image: "/news.png",
       description:
         "Led by Honored Artist of KR, Associate Professor Asel Turdalieva. Students of the puppet-theatre program perform shows in kindergartens, schools, and events, strengthening practical skills.",
     },
     {
       key: "jetiMuun",
-      name: "‘Jeti muun’ ethno-folklore ensemble",
+      name: "«Jeti muun» ethno-folklore ensemble",
       image: "/news.png",
       description:
         "Founded by Ismailbek uulu Akylbek in 2021. 8 instrumentalists and 2 vocalists. Play Kyrgyz string, wind, and percussion instruments; perform folk songs and kyui. Prizewinners in national contests and festivals.",
     },
     {
       key: "erguu",
-      name: "‘Ergüü’ literary circle",
+      name: "«Erguu» literary circle",
       image: "/news.png",
       description:
-        "Founder/leader — senior lecturer Kunduz Makeyeva. Unites students interested in prose, poetry, drama. Created the ‘Jash Talant’ magazine (since 2015) and take part in city and national literary evenings.",
+        "Founder/leader — senior lecturer Kunduz Makeyeva. Unites students interested in prose, poetry, drama. Created the «Jash Talant» magazine (since 2015) and take part in city and national literary evenings.",
     },
     {
       key: "volunteers",
