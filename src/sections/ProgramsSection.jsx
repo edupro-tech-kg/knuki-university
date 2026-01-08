@@ -28,7 +28,6 @@ export default function ProgramsSection() {
       const desktop = window.innerWidth >= 768;
       setIsDesktop(desktop);
 
-      // Проверяем, нужны ли кнопки навигации (если контент не помещается)
       if (containerRef.current && desktop) {
         const container = containerRef.current;
         setShowControls(container.scrollWidth > container.clientWidth);
@@ -40,22 +39,41 @@ export default function ProgramsSection() {
     return () => window.removeEventListener("resize", checkDesktop);
   }, []);
 
+  const getScrollAmount = () => {
+    if (!containerRef.current) return { cardWidth: 320, gap: 24 };
+    
+    const container = containerRef.current;
+    const firstCard = container.children[0];
+    if (!firstCard) return { cardWidth: 320, gap: 24 };
+    
+    const cardWidth = firstCard.getBoundingClientRect().width;
+    const containerStyle = window.getComputedStyle(container);
+    const gap = parseFloat(containerStyle.gap) || 24;
+    
+    return { cardWidth, gap, scrollAmount: cardWidth + gap };
+  };
+
   const handleNext = () => {
     if (!containerRef.current || !isDesktop) return;
 
     const container = containerRef.current;
     const { scrollLeft, scrollWidth, clientWidth } = container;
-    const cardWidth = container.children[0]?.offsetWidth || 320;
-    const gap = 24; // 6 * 4px (gap-6 = 1.5rem = 24px)
-    const scrollAmount = cardWidth + gap;
-
-    if (scrollLeft + clientWidth + scrollAmount >= scrollWidth - 10) {
-      container.scrollTo({ left: 0, behavior: "smooth" });
+    const { scrollAmount } = getScrollAmount();
+    
+    const newScrollLeft = scrollLeft + scrollAmount;
+    
+    if (newScrollLeft >= scrollWidth - clientWidth - 1) {
+      const endScrollLeft = scrollWidth - clientWidth;
+      container.scrollTo({ left: endScrollLeft, behavior: "smooth" });
+      
+      setTimeout(() => {
+        container.scrollTo({ left: 0, behavior: "auto" });
+        setTimeout(() => {
+          container.scrollTo({ left: scrollAmount, behavior: "smooth" });
+        }, 50);
+      }, 300);
     } else {
-      container.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
     }
   };
 
@@ -63,21 +81,58 @@ export default function ProgramsSection() {
     if (!containerRef.current || !isDesktop) return;
 
     const container = containerRef.current;
-    const { scrollLeft } = container;
-    const cardWidth = container.children[0]?.offsetWidth || 320;
-    const gap = 24;
-    const scrollAmount = cardWidth + gap;
+    const { scrollLeft, scrollWidth, clientWidth } = container;
+    const { scrollAmount } = getScrollAmount();
+    
+    const newScrollLeft = scrollLeft - scrollAmount;
+    
+    if (newScrollLeft < 0) {
+      container.scrollTo({ left: 0, behavior: "smooth" });
+      
+      setTimeout(() => {
+        const endScrollLeft = scrollWidth - clientWidth;
+        container.scrollTo({ left: endScrollLeft, behavior: "auto" });
+        setTimeout(() => {
+          container.scrollTo({ left: endScrollLeft - scrollAmount, behavior: "smooth" });
+        }, 50);
+      }, 300);
+    } else {
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
+    }
+  };
 
-    if (scrollLeft - scrollAmount <= 10) {
-      container.scrollTo({
-        left: container.scrollWidth - container.clientWidth,
-        behavior: "smooth",
+  const handleNextSimple = () => {
+    if (!containerRef.current || !isDesktop) return;
+
+    const container = containerRef.current;
+    const { scrollLeft, scrollWidth, clientWidth } = container;
+    const { scrollAmount } = getScrollAmount();
+    
+    const newScrollLeft = scrollLeft + scrollAmount;
+    const maxScroll = scrollWidth - clientWidth;
+    
+    if (newScrollLeft > maxScroll + 10) {
+      container.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
+    }
+  };
+
+  const handlePrevSimple = () => {
+    if (!containerRef.current || !isDesktop) return;
+
+    const container = containerRef.current;
+    const { scrollLeft, scrollWidth, clientWidth } = container;
+    const { scrollAmount } = getScrollAmount();
+    
+    const newScrollLeft = scrollLeft - scrollAmount;
+    if (newScrollLeft < -10) {
+      container.scrollTo({ 
+        left: scrollWidth - clientWidth, 
+        behavior: "smooth" 
       });
     } else {
-      container.scrollBy({
-        left: -scrollAmount,
-        behavior: "smooth",
-      });
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
     }
   };
 
@@ -132,9 +187,8 @@ export default function ProgramsSection() {
                 `}
               >
                 <div className="p-6 flex flex-col h-full">
-                  <div className="text-sm text-stroke mb-2">{t("programs.faculty")}</div>
 
-                  <h3 className="font-sans text-xl font-medium text-white mb-4">
+                  <h3 className="font-sans text-xl font-medium text-white mb-4 mt-4">
                     {getTitle(dir, index)}
                   </h3>
 
@@ -158,16 +212,16 @@ export default function ProgramsSection() {
         {isDesktop && showControls && (
           <div className="flex justify-center items-center gap-4 mt-8">
             <button
-              onClick={handlePrev}
-              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5"
+              onClick={handlePrevSimple} 
+              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5 hover:scale-105 active:scale-95"
               aria-label="Previous"
             >
               <FaArrowLeftLong className="w-5 h-5 md:w-6 md:h-6" />
             </button>
 
             <button
-              onClick={handleNext}
-              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5"
+              onClick={handleNextSimple} 
+              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5 hover:scale-105 active:scale-95"
               aria-label="Next"
             >
               <FaArrowRightLong className="w-5 h-5 md:w-6 md:h-6" />
