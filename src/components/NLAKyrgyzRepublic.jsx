@@ -77,7 +77,7 @@ export default function NLAKyrgyzRepublic() {
       </h1>
 
       <div className="md:hidden space-y-4">
-        {documentList.map((item, index) => (
+        {STATIC_ITEMS.map((item, index) => (
           <div
             key={index}
             className="bg-white border border-black rounded-lg p-4 shadow-sm"
@@ -106,7 +106,7 @@ export default function NLAKyrgyzRepublic() {
       <div className="hidden md:block overflow-x-auto">
         <table className="min-w-full border border-black">
           <tbody>
-            {documentList.map((item, index) => (
+            {STATIC_ITEMS.map((item, index) => (
               <tr
                 key={index}
                 className="border-b border-black last:border-b-0 hover:bg-gray-50 transition-colors"

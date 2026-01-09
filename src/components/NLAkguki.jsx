@@ -33,11 +33,10 @@ import doc28 from "../assets/pdf/doc28.pdf";
 import doc29 from "../assets/pdf/doc29.pdf";
 import doc30 from "../assets/pdf/doc30.pdf";
 import doc31 from "../assets/pdf/doc31.pdf";
-import doc32 from "../assets/pdf/doc32.pdf";
 
 const nlaKgukiPdfs = {
   doc1, doc2, doc3, doc4, doc5, doc6, doc7, doc8, doc9, doc10, doc11, doc12, doc13, doc14, doc15, doc16, doc17, doc18, doc19, doc20, doc21, doc22, doc23, doc24, doc25,
-  doc26, doc27, doc28, doc29, doc30, doc31, doc32,
+  doc26, doc27, doc28, doc29, doc30, doc31,
 };
 const nlaKgukiDocuments = [
   {
@@ -105,7 +104,7 @@ const nlaKgukiDocuments = [
     id: "doc16",
   },
   {
-    text: 'КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ЖОГОРКУ КЕСИПТИК БИЛИМ БЕРҮҮНҮН МАМЛЕКЕТТИК БИЛИМ БЕРҮҮ СТАНДАРТЫ. Квалификация: "магистр" (2024-жылдын 21-сентябрындагы №1815/1 буйругу менен бекитилген.) 570200 Музыкалык искусство 570300 Театралдык искусство 550600 Көркөмдүк билим берүү',
+    text: "КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ЖОГОРКУ КЕСИПТИК БИЛИМ БЕРҮҮНҮН МАМЛЕКЕТТИК БИЛИМ БЕРҮҮ СТАНДАРТЫ. Квалификация: \"магистр\" (2024-жылдын 21-сентябрындагы №1815/1 буйругу менен бекитилген.) 570200 Музыкалык искусство 570300 Театралдык искусство 550600 Көркөмдүк билим берүү",
     id: "doc17",
   },
   {
