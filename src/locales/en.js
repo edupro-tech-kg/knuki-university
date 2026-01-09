@@ -697,14 +697,34 @@ export default {
     copyright: "© 2025 Kyrgyz National University of Culture & Arts",
   },
   news: {
-    title: "News",
+    title: "NEWS",
     items: [
-      { title: "Ballet Evening", buttonText: "More" },
-      { title: "Vocal Concert", buttonText: "More" },
-      { title: "Educational Services", buttonText: "More" },
-      { title: "Creative Laboratory", buttonText: "More" },
-      { title: "Creative Evening", buttonText: "More" },
-    ],
+      {
+        id: "makam",
+        title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
+        buttonText: "more"
+      },
+      {
+        id: "gym",
+        title: " NEW SPORTS HALL COMMISSIONED AT KNUCA",
+        buttonText: "more"
+      },
+      {
+        id: "building",
+        title: "CONSTRUCTION OF A NEW ACADEMIC BUILDING AT KNUCA HAS BEGUN",
+        buttonText: "more"
+      },
+      {
+        id: "students",
+        title: "КУМИУНУН 2 СТУДЕНТИ ПРЕЗИДЕНТТИК СТИПЕНДИЯГА ЭЭ БОЛУШТУ",
+        buttonText: "more"
+      },
+      {
+        id: "instruments",
+        title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
+        buttonText: "more"
+      }
+    ]
   },
   consultation: {
     title: "Sign up for a consultation",
@@ -826,29 +846,27 @@ export default {
   newsPage: {
     news: [
       {
-        image: "/news.png",
-        title:
-          "A delegation from the Arctic State Institute of Culture and Arts of Yakutia arrived at KUIMIU.",
-        content:
-          "The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.The KUIMIU named after B. Beishenalieva was visited on an official working trip by the Vice-Rector of the Arctic State Institute of Culture and Arts of Yakutia, S. S. Ivanov, and the Head of the Department of Library and Information Technologies, M. V. Andreeva. The guests were received by Cholpon Turumbaeva, the Vice-Rector for Scientific Work and International Relations of the institution. During the meeting, the parties discussed the prospects for bilateral cooperation, possible opportunities, and what conditions would be created for students if an agreement is signed.",
-      },
-      {
-        image: "",
+        id: "makam",
         title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
         content: "In accordance with Decree No. 96 of the President of the Kyrgyz Republic, Sadyr Japarov, dated March 22, 2025, the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has been granted the status of “National”. From now on, it will be officially named the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. In order to grant the “National” status to the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva, for its significant contribution to the development and improvement of higher professional education in the field of culture and arts, and guided by Article 71 of the Constitution of the Kyrgyz Republic, it is decreed: 1. To grant the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva the status of “National” and hereinafter name it the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. 2. To instruct the Cabinet of Ministers of the Kyrgyz Republic to bring its decisions into compliance with this Decree. 3. To assign control over the implementation of this Decree to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Presidential Administration of the Kyrgyz Republic. 4. This Decree shall enter into force seven days after its official publication."
       },
       {
-        image: "",
+        id: "gym",
         title: "NEW SPORTS HALL COMMISSIONED AT KNUCA",
         content: "On September 17, 2025, the Chairman of the State Committee for National Security of the Kyrgyz Republic took part in the official opening ceremony of the sports hall at the Kyrgyz National University of Culture and Arts named after B. Beishenalieva. Deputy Chairman of the Cabinet of Ministers and Chairman of the State Committee for National Security of the Kyrgyz Republic, Colonel General K.K. Tashiev, attended the event. It should be recalled that on January 16 of this year, during a meeting with heads of higher education institutions, the Rector of KNUCA, Tumonbay Koldoshov, requested assistance in the construction of a sports hall for the university. Since its establishment in 1967, the university had not had its own sports hall, and physical education classes were conducted without proper conditions. Following the instructions of Colonel General K.K. Tashiev, construction began in April 2025, and within a short period of 3.5 months, a modern sports hall was built, fully meeting the necessary requirements and equipped for comprehensive student training as well as for use by the faculty and teaching staff. Students and faculty members, including People’s Artists, Honored Artists, and Honored Workers of Culture and Education of the Kyrgyz Republic, attended the opening ceremony and expressed their gratitude to the country’s leadership for its special attention to the development of culture and education."
       },
       {
-        image: "",
+        id: "building",
         title: "CONSTRUCTION OF A NEW ACADEMIC BUILDING AT KNUCA HAS BEGUN",
         content: "By order of President Sadyr Japarov and on the initiative of the Chairman of the State Committee for National Security, Kamchybek Tashiev, excavation works have begun for the foundation of a new academic building of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva. Earthworks started today, October 16. The university’s faculty conducted a traditional blessing ceremony (tülöö), giving their blessing to the beginning of the new project. Colonel General Kamchybek Tashiev announced during the opening of the sports complex built for the university by the State Committee for National Security that the construction of the new academic building will be completed by the beginning of the 2026 academic year."
       },
       {
-        image: "",
+        id: "students",
+        title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
+        content: "Fourth-year students of the Faculty of Choreography and Cultural Activities of KNUCA, Erbolot Urmatbek uulu and Maria Dubanaeva, have been awarded Presidential Scholarships for outstanding academic achievements. On October 31, 2025, President Sadyr Japarov personally presented Presidential Scholarships to the best students of higher education institutions."
+      },
+      {
+        id: "instruments",
         title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
         content: "Fourth-year students of the Faculty of Choreography and Cultural Activities of KNUCA, Erbolot Urmatbek uulu and Maria Dubanaeva, have been awarded Presidential Scholarships for outstanding academic achievements. On October 31, 2025, President Sadyr Japarov personally presented Presidential Scholarships to the best students of higher education institutions."
       }
