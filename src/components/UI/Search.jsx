@@ -1,11 +1,13 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import searchIcon from "../../assets/images/search.svg";
+import { IoClose } from "react-icons/io5";
 
 function Search() {
   const { t } = useTranslation();
   const [value, setValue] = useState("");
   const [results, setResults] = useState([]);
+  const [open, setOpen] = useState(false);
 
   const documents = useMemo(() => {
     const docs = [];
@@ -135,72 +137,132 @@ function Search() {
       .slice(0, 8);
 
     setResults(filtered);
+    setOpen(true);
   };
+
+  const close = useCallback(() => {
+    setOpen(false);
+    setResults([]);
+    setValue("");
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setOpen(true);
     runSearch(value);
   };
 
-  return (
-    <div className="w-full flex justify-center">
-      <div className="w-full max-w-[690px] relative">
-        <form onSubmit={handleSubmit} className="w-full">
-          <div className="flex items-center w-full h-[49px] relative">
-            <div className="flex items-center w-full bg-white rounded-md shadow-sm border border-transparent focus-within:border-black transition">
-              <div className="ml-4 mr-2">
-                <img src={searchIcon} alt="Search" className="w-5 h-5" />
-              </div>
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "Escape") {
+        close();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [close]);
 
+  return (
+    <>
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-[690px] relative">
+          <form onSubmit={handleSubmit} className="w-full">
+            <div className="flex items-center w-full h-[49px]">
+              <div className="flex items-center w-full bg-white rounded-md shadow-sm border border-transparent focus-within:border-black transition px-4">
+                <div className="mr-2">
+                  <img src={searchIcon} alt="Search" className="w-5 h-5" />
+                </div>
+
+                <input
+                  type="text"
+                  value={value}
+                  onChange={(e) => runSearch(e.target.value)}
+                  onFocus={() => setOpen(true)}
+                  placeholder={t("search.placeholder")}
+                  className={`w-full h-[45px] bg-transparent outline-none placeholder:text-gray-400 ${
+                    value ? "text-black" : "text-gray-600"
+                  }`}
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      {open && (
+        <div
+          className="fixed inset-0 z-[999] flex items-start justify-center bg-black/40 backdrop-blur-sm"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              close();
+            }
+          }}
+        >
+          <div className="mt-20 w-full max-w-3xl bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+            <div className="flex items-center gap-3 px-4 py-3 border-b border-gray-100">
+              <img src={searchIcon} alt="Search" className="w-5 h-5" />
               <input
-                type="text"
+                autoFocus
                 value={value}
                 onChange={(e) => runSearch(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    handleSubmit(e);
+                  }
+                }}
                 placeholder={t("search.placeholder")}
-                className={`w-full h-[45px] bg-transparent outline-none placeholder:text-gray-400 ${
-                  value ? "text-black" : "text-gray-600"
-                }`}
+                className="w-full h-10 outline-none placeholder:text-gray-400"
               />
-
               <button
-                type="submit"
-                className="w-[200px] h-[49px] bg-black text-white px-6 rounded-md flex items-center justify-center gap-2 text-lg"
+                type="button"
+                onClick={close}
+                className="p-2 rounded-full hover:bg-gray-100 transition"
+                aria-label="Close search"
               >
-                {t("search.button")}
-                <span className="text-white">→</span>
+                <IoClose className="w-5 h-5 text-gray-600" />
               </button>
             </div>
-          </div>
-        </form>
 
-        {value.trim().length >= 2 && (
-          <div className="absolute left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-soft overflow-hidden z-20">
-            {results.length === 0 && (
-              <div className="px-4 py-3 text-sm text-gray-600">
-                {t("search.noResults", { defaultValue: "No matches found" })}
-              </div>
-            )}
+            <div className="max-h-[60vh] overflow-y-auto">
+              {value.trim().length < 2 && (
+                <div className="px-4 py-4 text-sm text-gray-600">
+                  {t("search.minChars", { defaultValue: "Type at least 2 characters" })}
+                </div>
+              )}
 
-            {results.length > 0 && (
-              <ul className="divide-y divide-gray-100 max-h-80 overflow-y-auto">
-                {results.map((res) => (
-                  <li key={res.id}>
-                    <a
-                      className="px-4 py-3 block hover:bg-gray-50 transition"
-                      href={res.path || "#"}
-                    >
-                      <p className="text-sm font-semibold text-gray-900">{res.title}</p>
-                      {res.subtitle && <p className="text-xs text-gray-600 mt-1">{res.subtitle}</p>}
-                      <p className="text-[10px] uppercase text-gray-400 mt-1 tracking-wide">{res.type}</p>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
+              {value.trim().length >= 2 && results.length === 0 && (
+                <div className="px-4 py-4 text-sm text-gray-600">
+                  {t("search.noResults", { defaultValue: "No matches found" })}
+                </div>
+              )}
+
+              {results.length > 0 && (
+                <ul className="divide-y divide-gray-100">
+                  {results.map((res) => (
+                    <li key={res.id}>
+                      <a
+                        className="px-4 py-3 block hover:bg-gray-50 transition"
+                        href={res.path || "#"}
+                        onClick={close}
+                      >
+                        <p className="text-sm font-semibold text-gray-900">{res.title}</p>
+                        {res.subtitle && (
+                          <p className="text-xs text-gray-600 mt-1">{res.subtitle}</p>
+                        )}
+                        <p className="text-[10px] uppercase text-gray-400 mt-1 tracking-wide">
+                          {t(`search.type.${res.type}`, { defaultValue: res.type })}
+                        </p>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
-        )}
-      </div>
-    </div>
+        </div>
+      )}
+    </>
   );
 }
 

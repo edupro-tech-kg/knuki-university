@@ -27,7 +27,16 @@ export default {
   },
   search: {
     placeholder: "Search",
-    button: "Next",
+    noResults: "No matches found",
+    minChars: "Type at least 2 characters",
+    type: {
+      news: "news",
+      management: "management",
+      scholar: "scholarship",
+      club: "club",
+      faculty: "faculty",
+      page: "page",
+    },
   },
   pageTitles: {
     home: "Home",

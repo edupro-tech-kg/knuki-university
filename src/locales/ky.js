@@ -25,7 +25,16 @@ export default {
   },
   search: {
     placeholder: "Издөө",
-    button: "Кийинки",
+    noResults: "Эч нерсе табылган жок",
+    minChars: "Кеминде 2 тамга териңиз",
+    type: {
+      news: "жаңылык",
+      management: "жетекчилик",
+      scholar: "стипендия",
+      club: "клуб",
+      faculty: "факультет",
+      page: "барак",
+    },
   },
   pageTitles: {
     home: "Башкы бет",

@@ -26,7 +26,16 @@ export default {
   },
   search: {
     placeholder: "Поиск",
-    button: "Далее",
+    noResults: "Ничего не найдено",
+    minChars: "Введите минимум 2 символа",
+    type: {
+      news: "новость",
+      management: "руководство",
+      scholar: "стипендия",
+      club: "клуб",
+      faculty: "факультет",
+      page: "страница",
+    },
   },
   pageTitles: {
     home: "Главная",
