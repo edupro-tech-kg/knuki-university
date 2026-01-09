@@ -47,7 +47,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/history" element={<HistoryPage />} />
             <Route path="/faculty/:slug" element={<FacultyPage />} />
-            <Route path="/news" element={<NewsPage />} />
+            <Route path="/news/:id" element={<NewsPage />} />
             <Route path="/studentsLife" element={<StudentsLife />} />
             <Route path="/applicants" element={<Applicants />} />
             <Route path="/library" element={<LibraryPage />} />
