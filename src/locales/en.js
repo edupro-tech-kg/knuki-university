@@ -55,6 +55,18 @@ export default {
     documents: "Documents",
     science: "Science",
     faculty: "Faculty",
+    consultation: "Consultation",
+  },
+  consultationPage: {
+    contact: {
+      title: "Contacts",
+      items: [
+        { type: "phone", label: "Phone", value: "+996 312 57 03 79", href: "tel:+996312570379" },
+        { type: "email", label: "Email", value: "contact@kguki.kg", href: "mailto:contact@kguki.kg" },
+        { type: "address", label: "Address", value: "720005, Bishkek, Zhantosheva St. 113" },
+        { type: "hours", label: "Working hours", value: "Mon–Sat 08:00–18:00" },
+      ],
+    },
   },
   facultiesData: {
     studyFormsLabel: "STUDY FORM:",
@@ -720,7 +732,7 @@ export default {
     description: "The manager will contact you shortly!",
     form: {
       name: "Full name",
-      namePlaceholder: "Balanchaev Balancha",
+      namePlaceholder: "Askar Kanybekov",
       phone: "Phone",
       phonePlaceholder: "+996 000 000 000",
       faculty: "Faculty ",

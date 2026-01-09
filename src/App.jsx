@@ -19,6 +19,7 @@ import EbilimPage from "./pages/EbilimPage";
 import LiteraturePage from "./pages/LiteraturePage";
 import DocumentPage from "./pages/DocumentsPage";
 import SciencePage from "./pages/SciencePage";
+import ConsultationPage from "./pages/ConsultationPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation(); 
@@ -59,6 +60,7 @@ function App() {
             <Route path="/literature" element={<LiteraturePage />} />
             <Route path="/documents" element={<DocumentPage />} />
             <Route path="/science" element={<SciencePage />} />
+            <Route path="/consultation" element={<ConsultationPage />} />
           </Routes>
         </main>
         <Footer />

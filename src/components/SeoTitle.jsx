@@ -25,6 +25,7 @@ export default function SeoTitle() {
       "/literature": t("pageTitles.literature"),
       "/documents": t("pageTitles.documents"),
       "/science": t("pageTitles.science"),
+      "/consultation": t("pageTitles.consultation"),
     };
     return map[cleanPath] || "";
   }, [pathname, t]);

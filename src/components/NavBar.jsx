@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { key: "news", to: "news", type: "scroll" },
   { key: "documents", to: "/documents", type: "route" },
   { key: "applicants", to: "/applicants", type: "route" },
-  { key: "contacts", to: "contact", type: "scroll" },
+  { key: "contacts", to: "/consultation", type: "route" },
 ];
 
 const NavBar = ({ menu, onItemClick }) => {
@@ -41,7 +41,7 @@ const NavBar = ({ menu, onItemClick }) => {
     if (showDropdown) {
       setShowDropdown(false);
     }
-    
+
     if (onItemClick) {
       onItemClick();
     }
@@ -52,12 +52,7 @@ const NavBar = ({ menu, onItemClick }) => {
       // On non-home pages, route back to home anchor
       if (!isHome) {
         return (
-          <Link 
-            key={link.key} 
-            to={`/#${link.to}`} 
-            className={linkClass}
-            onClick={handleLinkClick}
-          >
+          <Link key={link.key} to={`/#${link.to}`} className={linkClass} onClick={handleLinkClick}>
             {label}
           </Link>
         );
@@ -78,12 +73,7 @@ const NavBar = ({ menu, onItemClick }) => {
     }
 
     return (
-      <Link 
-        key={link.key} 
-        to={link.to} 
-        className={linkClass}
-        onClick={handleLinkClick}
-      >
+      <Link key={link.key} to={link.to} className={linkClass} onClick={handleLinkClick}>
         {label}
       </Link>
     );

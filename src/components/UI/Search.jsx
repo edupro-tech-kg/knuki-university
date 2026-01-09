@@ -104,6 +104,7 @@ function Search() {
       literature: "/literature",
       documents: "/documents",
       science: "/science",
+      consultation: "/consultation",
     };
     Object.entries(pageTitles).forEach(([key, title]) => {
       if (title && pagePathMap[key]) {

@@ -53,6 +53,18 @@ export default {
     documents: "Документтер",
     science: "Илим",
     faculty: "Факультет",
+    consultation: "Консультация",
+  },
+  consultationPage: {
+    contact: {
+      title: "Байланыш",
+      items: [
+        { type: "phone", label: "Телефон", value: "+996 312 57 03 79", href: "tel:+996312570379" },
+        { type: "email", label: "Email", value: "contact@kguki.kg", href: "mailto:contact@kguki.kg" },
+        { type: "address", label: "Дарек", value: "720005, Бишкек ш., Жантошева көч. 113" },
+        { type: "hours", label: "Иштөө сааттары", value: "Дүйшөмбү–ишемби 08:00–18:00" },
+      ],
+    },
   },
   facultiesData: {
     studyFormsLabel: "ФАКУЛЬТЕТТИН ОКУУ ФОРМАСЫ:",
@@ -465,7 +477,7 @@ export default {
     description: "Жакынкы аралыкта сиз менен менеджер чалып байланышат!",
     form: {
       name: "Аты-жөнүңүз",
-      namePlaceholder: "Баланчаев Баланча",
+      namePlaceholder: "Аскар Каныбеков",
       phone: "Телефон",
       phonePlaceholder: "+996 000 000 000",
       faculty: "Факультет",

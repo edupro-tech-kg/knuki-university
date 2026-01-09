@@ -54,6 +54,18 @@ export default {
     documents: "Документы",
     science: "Наука",
     faculty: "Факультет",
+    consultation: "Консультация",
+  },
+  consultationPage: {
+    contact: {
+      title: "Контакты",
+      items: [
+        { type: "phone", label: "Телефон", value: "+996 312 57 03 79", href: "tel:+996312570379" },
+        { type: "email", label: "Email", value: "contact@kguki.kg", href: "mailto:contact@kguki.kg" },
+        { type: "address", label: "Адрес", value: "720005, г. Бишкек, ул. Джантошева 113" },
+        { type: "hours", label: "Режим работы", value: "Пн–Сб 08:00–18:00" },
+      ],
+    },
   },
   facultiesData: {
     studyFormsLabel: "ФОРМЫ ОБУЧЕНИЯ:",
@@ -759,7 +771,7 @@ export default {
     description: "Менеджер свяжется с вами в ближайшее время!",
     form: {
       name: "Имя и фамилия",
-      namePlaceholder: "Баланчаев Баланча",
+      namePlaceholder: "Аскар Каныбеков",
       phone: "Номер телефона",
       phonePlaceholder: "+996 000 000 000",
       faculty: "Факультет",
