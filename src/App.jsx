@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import HistoryPage from "./pages/HistoryPage";
 import FacultyPage from "./pages/FacultyPage";
 import NewsPage from "./pages/NewsPage";
+import NewsList from "./pages/NewsList";
 import StudentsLife from "./pages/StudentsLife";
 import Applicants from "./pages/Applicants";
 import LibraryPage from "./pages/LibraryPage";
@@ -47,6 +48,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/history" element={<HistoryPage />} />
             <Route path="/faculty/:slug" element={<FacultyPage />} />
+            <Route path="/news" element={<NewsList />} />
             <Route path="/news/:id" element={<NewsPage />} />
             <Route path="/studentsLife" element={<StudentsLife />} />
             <Route path="/applicants" element={<Applicants />} />

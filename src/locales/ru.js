@@ -758,6 +758,7 @@ export default {
   },
   news: {
     title: "НОВОСТИ",
+    pageHeading: "Новости и события",
     items: [
       {
         id: "makam",

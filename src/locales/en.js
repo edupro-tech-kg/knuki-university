@@ -719,6 +719,7 @@ export default {
   },
   news: {
     title: "NEWS",
+    pageHeading: "News and updates",
     items: [
       {
         id: "makam",

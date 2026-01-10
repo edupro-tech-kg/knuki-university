@@ -231,6 +231,15 @@ export default function NewsSectionInfinite() {
                           : "perspective(1000px) rotateY(8deg)",
                     transformStyle: "preserve-3d",
                   }}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      navigate(`/news/${slide.slug ?? slide.id}`);
+                    }
+                  }}
                 >
                   <img
                     src={slide.image}

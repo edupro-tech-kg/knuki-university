@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { key: "students", to: "/studentsLife", type: "route" },
   { key: "education", to: "/education", type: "route" },
   { key: "science", to: "/science", type: "route" },
-  { key: "news", to: "news", type: "scroll" },
+  { key: "news", to: "/news", type: "route" },
   { key: "documents", to: "/documents", type: "route" },
   { key: "applicants", to: "/applicants", type: "route" },
   { key: "contacts", to: "/consultation", type: "route" },

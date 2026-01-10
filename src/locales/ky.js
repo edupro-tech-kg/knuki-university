@@ -464,6 +464,7 @@ export default {
   },
   news: {
     title: "Жаңылыктар",
+    pageHeading: "Жаңылыктар жана иш-чаралар",
     items: [
       {
         id: "makam",

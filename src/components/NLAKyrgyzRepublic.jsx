@@ -73,22 +73,17 @@ export default function NLAKyrgyzRepublic() {
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-3">
       <h1 className="font-serif text-primary text-2xl sm:text-3xl md:text-4xl text-center py-6 md:py-9 uppercase italic">
-        документ НПА КНУКИ
+        НПА КНУКИ
       </h1>
 
       <div className="md:hidden space-y-4">
         {STATIC_ITEMS.map((item, index) => (
-          <div
-            key={index}
-            className="bg-white border border-black rounded-lg p-4 shadow-sm"
-          >
+          <div key={index} className="bg-white border border-black rounded-lg p-4 shadow-sm">
             <div className="flex items-start gap-3 mb-3">
               <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-sm font-medium">
                 {index + 1}
               </span>
-              <p className="text-sm sm:text-base text-gray-700 flex-1">
-                {item.text}
-              </p>
+              <p className="text-sm sm:text-base text-gray-700 flex-1">{item.text}</p>
             </div>
             <div className="flex justify-end">
               <Button
