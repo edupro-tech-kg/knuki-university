@@ -9,6 +9,7 @@ import Pattern from "../assets/svg/patterns.svg";
 function MissionSection() {
   const { t } = useTranslation();
 
+  
   return (
     <section id="mission" className="bg-background w-full relative overflow-x-hidden mt-12">
       <div className="max-w-[1440px] mx-auto px-4 relative z-10 pb-12">
