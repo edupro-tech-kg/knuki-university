@@ -448,27 +448,27 @@ export default {
     list: [
       {
         id: 1,
-        title: "Variety Arts and Music",
+        title: "Choreography faculty",
       },
       {
         id: 2,
-        title: "Theatre Arts",
-      },
-      {
-        id: 3,
-        title: "Film and Television",
-      },
-      {
-        id: 4,
-        title: "Choreography and Cultural Activities",
-      },
-      {
-        id: 5,
         title: "Faculty of folk music",
       },
       {
+        id: 3,
+        title: "Faculty of pop and music education",
+      },
+      {
+        id: 4,
+        title: "Faculty of theatre",
+      },
+      {
+        id: 5,
+        title: "Faculty of film and television",
+      },
+      {
         id: 6,
-        title: "Postgraduate and Graduate Studies",
+        title: "Graduate and postgraduate studies",
       },
     ],
   },
