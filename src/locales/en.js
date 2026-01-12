@@ -1183,6 +1183,17 @@ export default {
     },
     person: [
       {
+        name: "Koldoshov Tүmөnbai Rakhmanovich",
+        post: "Rector",
+        additionalInfo: {
+          academicDegree: "Postgraduate and Master's, KNUKI named after B.Beishenalieva. Bishkek.",
+          education: "Higher education, graduated with honors from the Faculty of Kyrgyz Philology of OshSU (diploma No. CD090149423) 2009. \n Candidate of Philological Sciences (No. 1 1k-1/31. IKD No. 001143 01/29/2015), \n Associate Professor (No. 6dc-2/9. DA No.002177 06/25/2019).\n Graduated from the Law Faculty of OshSU (diploma No. UB 190197452 2019).",
+          workExperience: "2012-2016 Music School No.5, Bishkek. \n 2016-2025 KUMI named after B.Beishenalieva, Bishkek. \n Since 2023 Chairman of the trade union organization of KUMI named after B.Beishenalieva. \n Since 2024 KNUKI, Bishkek, Head of the Department of Traditional Music and Folklore, Senior Lecturer.",
+          computerSkills: "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, internet.",
+          languages: "Kyrgyz (native), Russian (fluent)",
+        }
+      },
+      {
         name: "Abdigaparov Nurtilek Abdigaparovich",
         post: "Dean of the Faculty of Folk Music",
         additionalInfo: {
@@ -1199,8 +1210,8 @@ export default {
         },
       },
       {
-        name: "KYSHTOBAEV MAKSAT CHERIKBAEVICH",
-        post: "Dean of the Faculty of Folk Music",
+        name: "Kyshtobaev Maksat Cherikbaevich",
+        post: "Chairman of the trade union",
         additionalInfo: {
           birthDatePlace: "01/28/1989, Issyk-Kul",
           residence: "Bishkek, Kyrgyzstan",
@@ -1216,7 +1227,7 @@ export default {
       },
       {
         name: "Imankulova Saadat Esenbaevna",
-        post: "Vice-Rector for Scientific Work and International Relations of KNUKI named after B.Beishenalieva",
+        post: "Vice-Rector for Research",
         additionalInfo: {
           birthDatePlace: "05/21/1985",
           contact: "+996770241531",
@@ -1229,20 +1240,10 @@ export default {
           publications: "More than 40 scientific works published, including:\n – Textbook 'Fundamentals of Pedagogical Skills' (co-authored);\n – Methodological manual 'Fundamentals of Using Didactic Games in Primary Classes';\n – Textbook 'Current Problems of Science and Education' (co-authored).",
         }
       },
+      
       {
-        name: "Koldoshov Tүmөnbai Rakhmanovich",
-        post: "Teacher of Kyrgyz Language and Literature.",
-        additionalInfo: {
-          academicDegree: "Postgraduate and Master's, KNUKI named after B.Beishenalieva. Bishkek.",
-          education: "Higher education, graduated with honors from the Faculty of Kyrgyz Philology of OshSU (diploma No. CD090149423) 2009. \n Candidate of Philological Sciences (No. 1 1k-1/31. IKD No. 001143 01/29/2015), \n Associate Professor (No. 6dc-2/9. DA No.002177 06/25/2019).\n Graduated from the Law Faculty of OshSU (diploma No. UB 190197452 2019).",
-          workExperience: "2012-2016 Music School No.5, Bishkek. \n 2016-2025 KUMI named after B.Beishenalieva, Bishkek. \n Since 2023 Chairman of the trade union organization of KUMI named after B.Beishenalieva. \n Since 2024 KNUKI, Bishkek, Head of the Department of Traditional Music and Folklore, Senior Lecturer.",
-          computerSkills: "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, internet.",
-          languages: "Kyrgyz (native), Russian (fluent)",
-        }
-      },
-      {
-        name: "ALMANBET KYZY ZHANYL",
-        post: "KNUKI, Bishkek, Head of the Academic Department, Senior Lecturer of the Department of Socio-Humanitarian Disciplines.",
+        name: "Almanbet kyzy Zhanyl",
+        post: "Head of the Academic Department",
         additionalInfo: {
           birthDatePlace: "02/15/1994",
           residence: "Bishkek, Ak Ordo 3 microdistrict",
@@ -1253,8 +1254,8 @@ export default {
         }
       },
       {
-        name: "URMATBEKOV CHYNASYL URMATBEKOVICH",
-        post: "Manager (socio-cultural activity and teacher)",
+        name: "Urmatbekov Chynasyl Urmatbekovich",
+        post: "Dean of the Faculty of Theatre",
         additionalInfo: {
           birthDatePlace: "12/22/1992",
           residence: "Bishkek, Tөrөkul Aitmatov St. 221",
@@ -1270,7 +1271,7 @@ export default {
       },
       {
         name: "Baktybek uulu Isabek",
-        post: "KNUKI, Bishkek, Dean of the KhMI Faculty, Lecturer at the Department of Music Education.",
+        post: "Dean of the Faculty of Choreography and Cultural Activities",
         additionalInfo: {
           birthDatePlace: "01/07/1999",
           residence: "Alamüdün district, Leninskoe village, Novoselskaya St. 3",
@@ -1286,7 +1287,7 @@ export default {
       },
       {
         name: "Baktybekova Begai Baktybekovna",
-        post: "Dean of the Faculty of Folk Music",
+        post: "HR Department Head",
         additionalInfo: {
           birthDatePlace: "12/02/1990",
           residence: "Bishkek, Kyrgyzstan",
@@ -1303,7 +1304,7 @@ export default {
       },
       {
         name: "Marazhapova Nurzhan Kenjekulovna",
-        post: "Dean of the Faculty of Folk Music",
+        post: "Head of the Postgraduate and Master's Studies Department",
         additionalInfo: {
           birthDatePlace: "1972, October 4, Osh Region, Kara-Kuljinsky district",
           residence: "Bishkek, Sadyrbaev St., 1/5, apt. 152 B",
@@ -1325,7 +1326,7 @@ export default {
       },
       {
         name: "Turdaliev Ulanbek Matkarimovich",
-        post: "Philologist – teacher",
+        post: "Vice-Rector for State Language and Educational Affairs",
         additionalInfo: {
           birthDatePlace: "May 25, 1978",
           residence: "Bishkek, 1st Maysky district\n- Kalyz Ordo-7/66 microdistrict",
@@ -1339,7 +1340,7 @@ export default {
       },
       {
         name: "Jakybov Kubatbek Kulanchievich",
-        post: "Vice-Rector for Academic Affairs, Associate Professor",
+        post: "Vice-Rector for Academic Affairs",
         additionalInfo: {
           birthDatePlace: "March 18, 1966",
           residence: "Alamüdün district, Karazhygach village. T.Buzurmankul St. 3/1",
@@ -1376,6 +1377,26 @@ export default {
           awards: "Scholarship recipient of composer K.Osmonov. (2022) \n 'Teacher of the Year' in the nomination 'Best Young Specialist'. (2024)\nCertificate of honor from the Tash-Moynok aiyl okmotu in the nomination 'For Contribution to the Creative Sphere and Youth Education'. (2025)",
         },
       },
+      {
+        name: "Ergesheva Kumarkan Tokoevna",
+        post: "Head of the Career Department",
+        additionalInfo: {
+          birthDatePlace: "21.05.1985",
+          residence: "Bishkek, Alamudun District, Bektoo Dacha, 13th line, house 4",
+          contact: "+996708771171",
+          email: "kumar.ergesheva2@gmail.com",
+          education: "1979–1983 — Bishkek, M. Kurenkeev KGMU. Qualification: teacher of bass kyak class, conductor of national instruments orchestra.\n1983–1988 — B. Beyshenalieva KGII. Qualification: concert performer, teacher of bass kyak class, conductor of national instruments orchestra.",
+          workExperience: "1988–2012 — P. F. Shubin Central Music School, Bishkek — komuz class teacher.\n2012–Feb 2024 — Social worker, Public Association “Center for Child Protection”.\n2016–2018 — Project coordinator FSDS, PA “Center for Child Protection”.\n2018–2020 — Project coordinator, Association of NGOs for the Promotion of Children’s Rights and Interests in Kyrgyzstan: \"Promoting access of children of internal and labor migrants to state services according to their needs\".\n2018–2020 — Member of the Working Group of the Jogorku Kenesh for monitoring the implementation of the Law on Social Benefits of the Kyrgyz Republic.\n2019–2021 — Project coordinator UNICEF \"Social Mobilization for Immunization in New Settlements\", PA “Center for Child Protection”.\nSince 2024 — Head of Practice and Career Department, KNUKI named after B. Beyshenalieva.\n2010 — Hotline operator for the Soros Foundation and Crisis Center “Sezim” project on June events in the south.\n2010 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.\n2011 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.",
+          courses: "2005–2011 — Trainings by NGO “Arish”.\n2009 — Certificate from INTRAC CA for active participation in three-module training project \"From Self-Help to Leadership: Developing Youth and Women’s Leadership\".\n2007–2009 — Certificate, ACT-Development project “Strengthening NGOs for the Development of Self-Help Movement”.\nJune 2011 — Training “Budget Practicum on the Example of the Local Budget of Bishkek”, Issyk-Kul, PA “Center for Child Protection”.\nSeptember 2011 — Certificate for participation in the forum “Development of Women’s Leadership in Kyrgyzstan and Capacity Building”, NGO LEGACY INTERNATIONAL and International Center Interbilim.\n2014 — Training “Psycho-Social Assistance to Children in Difficult Life Situations”.\n2017 — Certificate for participation in the training “Leadership School”, Women’s Learning Partnership (WLP).\n2018 — Certificate for participation in the training “Civic Education of Youth through Arts Elements”, Youth Development Institute.\n2018 — Certificate for participation in the training “SMM in NGO Development”, ARGO.\n2021–2022 — Certificate for completing the qualification improvement course “Social Work: Paralegal Activity”, MUK.\n2022 — UNICEF training “Prevention of Sexual Exploitation and Abuse (PSEA)”.\n2021 — Certificate for participation in the training “Promoting Initiatives in the Field of Culture”, OF “Music Without Borders”.",
+          publications: "2009 — Presentation on \"Development of GSP Leadership\" at the 2nd GSP Social Fair, Republic of Tajikistan.\n7–8 Dec 2011 — Presentation on \"Problems of Coverage and Accessibility of Basic Education\" at the National Forum \"Social Pedagogy in Kyrgyzstan: Problems and Perspectives\".\n2025 — Presentation on \"Contemporary Challenges of Traditional Music in Kyrgyzstan\" at the International Scientific-Theoretical Conference \"Actual Issues of Art Studies: Tradition and Modernity\".\n2004 — Author of the textbook “Collection of New Rhythm Melodies”.",
+          computerSkills: "Confident PC user.",
+          professionalSkills: "Experience in conducting trainings.\nExtensive experience working in residential areas and with families in difficult life situations, Bishkek.",
+          personalQualities: "Leadership, openness, communicativeness, principled, stress-resistant, tolerant.",
+          languages: "Kyrgyz — native, Russian — fluent, Turkish — conversational, English — basic.",
+          awards: "2009 — Excellent in Education.\n2009 — Excellent in Culture of the Kyrgyz Republic.\nLetter of Appreciation, USAID “Quality Education” project.\n2022 — Certificate of Honor, Ministry of Labor and Social Development of the Kyrgyz Republic."
+        }
+      }
+
     ],
   },
   HRdepartment: {
