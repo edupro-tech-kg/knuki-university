@@ -738,12 +738,12 @@ export default {
       },
       {
         id: "students",
-        title: "КУМИУНУН 2 СТУДЕНТИ ПРЕЗИДЕНТТИК СТИПЕНДИЯГА ЭЭ БОЛУШТУ",
+        title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
         buttonText: "more"
       },
       {
         id: "instruments",
-        title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
+        title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
         buttonText: "more"
       }
     ]
