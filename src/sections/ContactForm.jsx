@@ -43,6 +43,9 @@ export default function ContactForm() {
                       { value: "program1", label: t("consultation.form.programs.program1") },
                       { value: "program2", label: t("consultation.form.programs.program2") },
                       { value: "program3", label: t("consultation.form.programs.program3") },
+                      { value: "program3", label: t("consultation.form.programs.program4") },
+                      { value: "program3", label: t("consultation.form.programs.program5") },
+                      { value: "program3", label: t("consultation.form.programs.program6") },
                     ],
                   },
                 ]}
