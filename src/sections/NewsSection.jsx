@@ -170,7 +170,7 @@ export default function NewsSectionInfinite() {
           {newsTitle}
         </h2>
         <div className="relative">
-          <div className="">
+          <div>
             <Swiper
               effect={"coverflow"}
               grabCursor={true}
