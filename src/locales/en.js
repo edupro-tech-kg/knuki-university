@@ -1010,7 +1010,9 @@ export default {
         "Founder/leader — lecturer Nurzat Keldibekova. Established 2017. Students of socio-cultural activity program. Organize university and national events, charity actions, promote volunteerism and patriotism among youth.",
     },
   ],
-
+  studentsLife: {
+    numbersTitle: "We in Numbers"
+  },
   libraryDescription: {
     title: "Scientific Library of KNUCA named after B. Beishenalieva",
     content:
