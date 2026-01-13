@@ -1397,7 +1397,6 @@ export default {
     listTitle: "HR Department Staff:",
     disciplines: [
       "B.B. Baktybekova — Head of the HR Department (0312 570354, 996 412829, begai02121990baktybekova@gmail.com)",
-      "Zh.Sh. Temirkanova — Leading Inspector (Student Affairs Division, Temircanova@mail.ru)",
       "F.Sh. Momukulova — HR Inspector (farida.momukulova@gmail.com)",
       "E.A. Imankulov, A.S. Suleimanov — Lawyers (erpolat91@mail.ru)",
     ],
