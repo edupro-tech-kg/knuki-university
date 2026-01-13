@@ -711,37 +711,37 @@ export default {
     list: [
       {
         id: 1,
-        content: "Department of acquisition and processing of literature and catalogs.",
+        content: "Department of acquisition and processing of literature and catalogs",
       },
       {
         id: 2,
-        content: "Storage and circulation of the book collection.",
+        content: "Storage and circulation of the book collection",
       },
       {
         id: 3,
-        content: "— University reading room.",
+        content: "University reading room",
       },
       {
         id: 4,
-        content: "— Reading room in the second building (film studio).",
+        content: "Reading room in the second building (film studio)",
       },
       {
         id: 5,
         content:
-          "— Sheet music lending department and a special musical literature lending section.",
+          "Sheet music lending department and a special musical literature lending section",
       },
       {
         id: 6,
-        content: "— General lending department.",
+        content: "General lending department",
       },
       {
         id: 7,
-        content: "— Reading room in the dormitory.",
+        content: "Reading room in the dormitory",
       },
     ],
   },
   libraryTeam: {
-    title: "The library staff consists of 5 people:",
+    title: "The library consists:",
     personality: [
       {
         name: "Isakova A.Zh.",
@@ -752,11 +752,11 @@ export default {
         content: "librarian of the dormitory reading room.",
       },
       {
-        name: "Belekova G.Z., Samieva Sh.T.",
+        name: "Belekova G.Z.",
         content: "librarians of the fiction literature department;",
       },
       {
-        name: "Baichubakova U.K.",
+        name: "Samieva Sh.T.",
         content: "librarian of the film studio reading room.",
       },
     ],
