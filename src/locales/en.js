@@ -762,14 +762,20 @@ export default {
         placeholder: "Leave a note",
       },
       programs: {
-        program1: "Music Arts",
-        program2: "Theatre & Film",
-        program3: "Choreography",
+        program1: "Faculty of Film and Television",
+        program2: "Faculty of Theatre",
+        program3: "Choreography Faculty",
+        program4: "Faculty of Pop and Music Education",
+        program5: "Faculty of Folk Music",
+        program6: "Graduate and Postgraduate Studies",
       },
       portfolio: "Portfolio",
       upload: "Upload file",
       submit: "Submit application",
     },
+  },
+  dropdownForm: {
+    select: "Choose"
   },
   historyPage: {
     title: "HISTORY",
