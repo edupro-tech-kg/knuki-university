@@ -448,27 +448,27 @@ export default {
     list: [
       {
         id: 1,
-        title: "Variety Arts and Music",
+        title: "Choreography faculty",
       },
       {
         id: 2,
-        title: "Theatre Arts",
-      },
-      {
-        id: 3,
-        title: "Film and Television",
-      },
-      {
-        id: 4,
-        title: "Choreography and Cultural Activities",
-      },
-      {
-        id: 5,
         title: "Faculty of folk music",
       },
       {
+        id: 3,
+        title: "Faculty of pop and music education",
+      },
+      {
+        id: 4,
+        title: "Faculty of theatre",
+      },
+      {
+        id: 5,
+        title: "Faculty of film and television",
+      },
+      {
         id: 6,
-        title: "Postgraduate and Graduate Studies",
+        title: "Graduate and postgraduate studies",
       },
     ],
   },
@@ -739,12 +739,12 @@ export default {
       },
       {
         id: "students",
-        title: "КУМИУНУН 2 СТУДЕНТИ ПРЕЗИДЕНТТИК СТИПЕНДИЯГА ЭЭ БОЛУШТУ",
+        title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
         buttonText: "more"
       },
       {
         id: "instruments",
-        title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
+        title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
         buttonText: "more"
       }
     ]
@@ -836,9 +836,9 @@ export default {
     ],
   },
   mission: {
-    title: "The University's mission is culture and art",
+    title: "The University's mission",
     description:
-      "is to train talented, creative, intellectual personnel in the field of culture and arts",
+      "Culture and Art is to develop talented, creative, and intellectual personnel in the field of culture and art.",
     imageDescription:
       "The theatre festival “New Names” was first proposed in 2016 by Bolot Tentimishev, a lecturer at the B. Beishenalieva Kyrgyz National University of Culture and Arts and an Honored Artist of the Kyrgyz Republic, and in 2016 it was held at the republican level with the support of the Ministry of Culture, Information and Youth Policy of the Kyrgyz Republic and the Union of Theatre Workers of Kyrgyzstan.Starting from 2023, the festival reached the international level, and alongside Kyrgyzstan, students of theatrical educational institutions, young actors and directors from such countries as Turkey, Kazakhstan, Uzbekistan, Russia, and Azerbaijan have been participating in it.“New Names” is a platform that provides young theatrical talents with the opportunity to take their first professional steps, gain experience in the field of theatre and the arts, and establish international creative connections.In the years 2024–2025, the B. Beishenalieva Kyrgyz National University of Culture and Arts won the Grand Prix of the festival.",
     button: "Learn More",
@@ -871,7 +871,11 @@ export default {
       {
         id: "makam",
         title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
-        content: "In accordance with Decree No. 96 of the President of the Kyrgyz Republic, Sadyr Japarov, dated March 22, 2025, the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has been granted the status of “National”. From now on, it will be officially named the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. In order to grant the “National” status to the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva, for its significant contribution to the development and improvement of higher professional education in the field of culture and arts, and guided by Article 71 of the Constitution of the Kyrgyz Republic, it is decreed: 1. To grant the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva the status of “National” and hereinafter name it the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. 2. To instruct the Cabinet of Ministers of the Kyrgyz Republic to bring its decisions into compliance with this Decree. 3. To assign control over the implementation of this Decree to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Presidential Administration of the Kyrgyz Republic. 4. This Decree shall enter into force seven days after its official publication."
+        content: `In accordance with Decree No. 96 of the President of the Kyrgyz Republic, Sadyr Japarov, dated March 22, 2025, the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has been granted the status of “National”. From now on, it will be officially named the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. In order to grant the “National” status to the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva, for its significant contribution to the development and improvement of higher professional education in the field of culture and arts, and guided by Article 71 of the Constitution of the Kyrgyz Republic, it is decreed:
+        1. To grant the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva the status of “National” and hereinafter name it the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. 
+        2. To instruct the Cabinet of Ministers of the Kyrgyz Republic to bring its decisions into compliance with this Decree.
+        3. To assign control over the implementation of this Decree to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Presidential Administration of the Kyrgyz Republic. 
+        4. This Decree shall enter into force seven days after its official publication.`
       },
       {
         id: "gym",
@@ -971,47 +975,49 @@ export default {
     {
       key: "altynNur",
       name: "«Altyn Nur» folk instruments ensemble",
-      image: "/news.png",
+      image: "/altynNur.png",
       description:
         "Founded and led by Nurpeil Samarbekova in 2016. Includes 22 students (conducting majors). Winners of many contests, international participants. Perform Kyrgyz pieces and well-known film soundtracks.",
     },
     {
       key: "sonun",
       name: "«Sonun» pop group",
-      image: "/news.png",
+      image: "/sonun.png",
       description:
         "Performing for 20+ years. Founder — head of the pop department Toktogulov Adbitalip Kochkorovich. Participants of national and international festivals, award winners, give concerts across the country.",
     },
     {
       key: "asmanLegenda",
       name: "«Asman legenda» shadow/puppet theatre",
-      image: "/news.png",
+      image: "/asmanLegend.png",
       description:
         "Led by Honored Artist of KR, Associate Professor Asel Turdalieva. Students of the puppet-theatre program perform shows in kindergartens, schools, and events, strengthening practical skills.",
     },
     {
       key: "jetiMuun",
       name: "«Jeti muun» ethno-folklore ensemble",
-      image: "/news.png",
+      image: "/jetiMuun.png",
       description:
         "Founded by Ismailbek uulu Akylbek in 2021. 8 instrumentalists and 2 vocalists. Play Kyrgyz string, wind, and percussion instruments; perform folk songs and kyui. Prizewinners in national contests and festivals.",
     },
     {
       key: "erguu",
       name: "«Erguu» literary circle",
-      image: "/news.png",
+      image: "/erguu.png",
       description:
         "Founder/leader — senior lecturer Kunduz Makeyeva. Unites students interested in prose, poetry, drama. Created the «Jash Talant» magazine (since 2015) and take part in city and national literary evenings.",
     },
     {
       key: "volunteers",
       name: "Creative volunteer group",
-      image: "/news.png",
+      image: "/creativeVolunteers.png",
       description:
         "Founder/leader — lecturer Nurzat Keldibekova. Established 2017. Students of socio-cultural activity program. Organize university and national events, charity actions, promote volunteerism and patriotism among youth.",
     },
   ],
-
+  studentsLife: {
+    numbersTitle: "We in Numbers"
+  },
   libraryDescription: {
     title: "Scientific Library of KNUCA named after B. Beishenalieva",
     content:
@@ -1184,6 +1190,17 @@ export default {
     },
     person: [
       {
+        name: "Koldoshov Tүmөnbai Rakhmanovich",
+        post: "Rector",
+        additionalInfo: {
+          academicDegree: "Postgraduate and Master's, KNUKI named after B.Beishenalieva. Bishkek.",
+          education: "Higher education, graduated with honors from the Faculty of Kyrgyz Philology of OshSU (diploma No. CD090149423) 2009. \n Candidate of Philological Sciences (No. 1 1k-1/31. IKD No. 001143 01/29/2015), \n Associate Professor (No. 6dc-2/9. DA No.002177 06/25/2019).\n Graduated from the Law Faculty of OshSU (diploma No. UB 190197452 2019).",
+          workExperience: "2012-2016 Music School No.5, Bishkek. \n 2016-2025 KUMI named after B.Beishenalieva, Bishkek. \n Since 2023 Chairman of the trade union organization of KUMI named after B.Beishenalieva. \n Since 2024 KNUKI, Bishkek, Head of the Department of Traditional Music and Folklore, Senior Lecturer.",
+          computerSkills: "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, internet.",
+          languages: "Kyrgyz (native), Russian (fluent)",
+        }
+      },
+      {
         name: "Abdigaparov Nurtilek Abdigaparovich",
         post: "Dean of the Faculty of Folk Music",
         additionalInfo: {
@@ -1200,8 +1217,8 @@ export default {
         },
       },
       {
-        name: "KYSHTOBAEV MAKSAT CHERIKBAEVICH",
-        post: "Dean of the Faculty of Folk Music",
+        name: "Kyshtobaev Maksat Cherikbaevich",
+        post: "Chairman of the trade union",
         additionalInfo: {
           birthDatePlace: "01/28/1989, Issyk-Kul",
           residence: "Bishkek, Kyrgyzstan",
@@ -1217,7 +1234,7 @@ export default {
       },
       {
         name: "Imankulova Saadat Esenbaevna",
-        post: "Vice-Rector for Scientific Work and International Relations of KNUKI named after B.Beishenalieva",
+        post: "Vice-Rector for Research",
         additionalInfo: {
           birthDatePlace: "05/21/1985",
           contact: "+996770241531",
@@ -1230,20 +1247,10 @@ export default {
           publications: "More than 40 scientific works published, including:\n – Textbook 'Fundamentals of Pedagogical Skills' (co-authored);\n – Methodological manual 'Fundamentals of Using Didactic Games in Primary Classes';\n – Textbook 'Current Problems of Science and Education' (co-authored).",
         }
       },
+      
       {
-        name: "Koldoshov Tүmөnbai Rakhmanovich",
-        post: "Teacher of Kyrgyz Language and Literature.",
-        additionalInfo: {
-          academicDegree: "Postgraduate and Master's, KNUKI named after B.Beishenalieva. Bishkek.",
-          education: "Higher education, graduated with honors from the Faculty of Kyrgyz Philology of OshSU (diploma No. CD090149423) 2009. \n Candidate of Philological Sciences (No. 1 1k-1/31. IKD No. 001143 01/29/2015), \n Associate Professor (No. 6dc-2/9. DA No.002177 06/25/2019).\n Graduated from the Law Faculty of OshSU (diploma No. UB 190197452 2019).",
-          workExperience: "2012-2016 Music School No.5, Bishkek. \n 2016-2025 KUMI named after B.Beishenalieva, Bishkek. \n Since 2023 Chairman of the trade union organization of KUMI named after B.Beishenalieva. \n Since 2024 KNUKI, Bishkek, Head of the Department of Traditional Music and Folklore, Senior Lecturer.",
-          computerSkills: "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, internet.",
-          languages: "Kyrgyz (native), Russian (fluent)",
-        }
-      },
-      {
-        name: "ALMANBET KYZY ZHANYL",
-        post: "KNUKI, Bishkek, Head of the Academic Department, Senior Lecturer of the Department of Socio-Humanitarian Disciplines.",
+        name: "Almanbet kyzy Zhanyl",
+        post: "Head of the Academic Department",
         additionalInfo: {
           birthDatePlace: "02/15/1994",
           residence: "Bishkek, Ak Ordo 3 microdistrict",
@@ -1254,8 +1261,8 @@ export default {
         }
       },
       {
-        name: "URMATBEKOV CHYNASYL URMATBEKOVICH",
-        post: "Manager (socio-cultural activity and teacher)",
+        name: "Urmatbekov Chynasyl Urmatbekovich",
+        post: "Dean of the Faculty of Theatre",
         additionalInfo: {
           birthDatePlace: "12/22/1992",
           residence: "Bishkek, Tөrөkul Aitmatov St. 221",
@@ -1271,7 +1278,7 @@ export default {
       },
       {
         name: "Baktybek uulu Isabek",
-        post: "KNUKI, Bishkek, Dean of the KhMI Faculty, Lecturer at the Department of Music Education.",
+        post: "Dean of the Faculty of Choreography and Cultural Activities",
         additionalInfo: {
           birthDatePlace: "01/07/1999",
           residence: "Alamüdün district, Leninskoe village, Novoselskaya St. 3",
@@ -1287,7 +1294,7 @@ export default {
       },
       {
         name: "Baktybekova Begai Baktybekovna",
-        post: "Dean of the Faculty of Folk Music",
+        post: "HR Department Head",
         additionalInfo: {
           birthDatePlace: "12/02/1990",
           residence: "Bishkek, Kyrgyzstan",
@@ -1304,7 +1311,7 @@ export default {
       },
       {
         name: "Marazhapova Nurzhan Kenjekulovna",
-        post: "Dean of the Faculty of Folk Music",
+        post: "Head of the Postgraduate and Master's Studies Department",
         additionalInfo: {
           birthDatePlace: "1972, October 4, Osh Region, Kara-Kuljinsky district",
           residence: "Bishkek, Sadyrbaev St., 1/5, apt. 152 B",
@@ -1326,7 +1333,7 @@ export default {
       },
       {
         name: "Turdaliev Ulanbek Matkarimovich",
-        post: "Philologist – teacher",
+        post: "Vice-Rector for State Language and Educational Affairs",
         additionalInfo: {
           birthDatePlace: "May 25, 1978",
           residence: "Bishkek, 1st Maysky district\n- Kalyz Ordo-7/66 microdistrict",
@@ -1340,7 +1347,7 @@ export default {
       },
       {
         name: "Jakybov Kubatbek Kulanchievich",
-        post: "Vice-Rector for Academic Affairs, Associate Professor",
+        post: "Vice-Rector for Academic Affairs",
         additionalInfo: {
           birthDatePlace: "March 18, 1966",
           residence: "Alamüdün district, Karazhygach village. T.Buzurmankul St. 3/1",
@@ -1377,6 +1384,26 @@ export default {
           awards: "Scholarship recipient of composer K.Osmonov. (2022) \n 'Teacher of the Year' in the nomination 'Best Young Specialist'. (2024)\nCertificate of honor from the Tash-Moynok aiyl okmotu in the nomination 'For Contribution to the Creative Sphere and Youth Education'. (2025)",
         },
       },
+      {
+        name: "Ergesheva Kumarkan Tokoevna",
+        post: "Head of the Career Department",
+        additionalInfo: {
+          birthDatePlace: "21.05.1985",
+          residence: "Bishkek, Alamudun District, Bektoo Dacha, 13th line, house 4",
+          contact: "+996708771171",
+          email: "kumar.ergesheva2@gmail.com",
+          education: "1979–1983 — Bishkek, M. Kurenkeev KGMU. Qualification: teacher of bass kyak class, conductor of national instruments orchestra.\n1983–1988 — B. Beyshenalieva KGII. Qualification: concert performer, teacher of bass kyak class, conductor of national instruments orchestra.",
+          workExperience: "1988–2012 — P. F. Shubin Central Music School, Bishkek — komuz class teacher.\n2012–Feb 2024 — Social worker, Public Association “Center for Child Protection”.\n2016–2018 — Project coordinator FSDS, PA “Center for Child Protection”.\n2018–2020 — Project coordinator, Association of NGOs for the Promotion of Children’s Rights and Interests in Kyrgyzstan: \"Promoting access of children of internal and labor migrants to state services according to their needs\".\n2018–2020 — Member of the Working Group of the Jogorku Kenesh for monitoring the implementation of the Law on Social Benefits of the Kyrgyz Republic.\n2019–2021 — Project coordinator UNICEF \"Social Mobilization for Immunization in New Settlements\", PA “Center for Child Protection”.\nSince 2024 — Head of Practice and Career Department, KNUKI named after B. Beyshenalieva.\n2010 — Hotline operator for the Soros Foundation and Crisis Center “Sezim” project on June events in the south.\n2010 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.\n2011 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.",
+          courses: "2005–2011 — Trainings by NGO “Arish”.\n2009 — Certificate from INTRAC CA for active participation in three-module training project \"From Self-Help to Leadership: Developing Youth and Women’s Leadership\".\n2007–2009 — Certificate, ACT-Development project “Strengthening NGOs for the Development of Self-Help Movement”.\nJune 2011 — Training “Budget Practicum on the Example of the Local Budget of Bishkek”, Issyk-Kul, PA “Center for Child Protection”.\nSeptember 2011 — Certificate for participation in the forum “Development of Women’s Leadership in Kyrgyzstan and Capacity Building”, NGO LEGACY INTERNATIONAL and International Center Interbilim.\n2014 — Training “Psycho-Social Assistance to Children in Difficult Life Situations”.\n2017 — Certificate for participation in the training “Leadership School”, Women’s Learning Partnership (WLP).\n2018 — Certificate for participation in the training “Civic Education of Youth through Arts Elements”, Youth Development Institute.\n2018 — Certificate for participation in the training “SMM in NGO Development”, ARGO.\n2021–2022 — Certificate for completing the qualification improvement course “Social Work: Paralegal Activity”, MUK.\n2022 — UNICEF training “Prevention of Sexual Exploitation and Abuse (PSEA)”.\n2021 — Certificate for participation in the training “Promoting Initiatives in the Field of Culture”, OF “Music Without Borders”.",
+          publications: "2009 — Presentation on \"Development of GSP Leadership\" at the 2nd GSP Social Fair, Republic of Tajikistan.\n7–8 Dec 2011 — Presentation on \"Problems of Coverage and Accessibility of Basic Education\" at the National Forum \"Social Pedagogy in Kyrgyzstan: Problems and Perspectives\".\n2025 — Presentation on \"Contemporary Challenges of Traditional Music in Kyrgyzstan\" at the International Scientific-Theoretical Conference \"Actual Issues of Art Studies: Tradition and Modernity\".\n2004 — Author of the textbook “Collection of New Rhythm Melodies”.",
+          computerSkills: "Confident PC user.",
+          professionalSkills: "Experience in conducting trainings.\nExtensive experience working in residential areas and with families in difficult life situations, Bishkek.",
+          personalQualities: "Leadership, openness, communicativeness, principled, stress-resistant, tolerant.",
+          languages: "Kyrgyz — native, Russian — fluent, Turkish — conversational, English — basic.",
+          awards: "2009 — Excellent in Education.\n2009 — Excellent in Culture of the Kyrgyz Republic.\nLetter of Appreciation, USAID “Quality Education” project.\n2022 — Certificate of Honor, Ministry of Labor and Social Development of the Kyrgyz Republic."
+        }
+      }
+
     ],
   },
   HRdepartment: {
@@ -1398,7 +1425,6 @@ export default {
     listTitle: "HR Department Staff:",
     disciplines: [
       "B.B. Baktybekova — Head of the HR Department (0312 570354, 996 412829, begai02121990baktybekova@gmail.com)",
-      "Zh.Sh. Temirkanova — Leading Inspector (Student Affairs Division, Temircanova@mail.ru)",
       "F.Sh. Momukulova — HR Inspector (farida.momukulova@gmail.com)",
       "E.A. Imankulov, A.S. Suleimanov — Lawyers (erpolat91@mail.ru)",
     ],

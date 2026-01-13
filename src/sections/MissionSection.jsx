@@ -9,6 +9,7 @@ import Pattern from "../assets/svg/patterns.svg";
 function MissionSection() {
   const { t } = useTranslation();
 
+  
   return (
     <section id="mission" className="bg-background w-full relative overflow-x-hidden mt-12">
       <div className="max-w-[1440px] mx-auto px-4 relative z-10 pb-12">
@@ -46,7 +47,7 @@ function MissionSection() {
               <img
                 src={Mission2}
                 alt="Secondary mission"
-                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter grayscale"
+                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter"
               />
             </div>
 
@@ -54,7 +55,7 @@ function MissionSection() {
               <img
                 src={Mission3}
                 alt="Additional mission"
-                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter grayscale"
+                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter"
               />
             </div>
           </div>

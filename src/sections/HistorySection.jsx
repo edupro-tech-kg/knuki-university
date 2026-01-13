@@ -33,7 +33,7 @@ export default function HistoryPage() {
         {t("history.title")}
       </h1>
 
-      <div className="hidden md:block absolute left-1/2 top-48 bottom-0 w-[3px] bg-gray-300 h-[75%] -translate-x-1/2 z-0"></div>
+      <div className="hidden md:block absolute left-1/2 top-36 bottom-0 w-[3px] bg-gray-300 h-[75%] -translate-x-1/2 z-0"></div>
 
       {timelineData.map((item, index) => {
         const isActive = index === activeIndex;

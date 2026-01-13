@@ -166,120 +166,114 @@ export default function NewsSectionInfinite() {
   return (
     <section id='news'>
       <div className="bg-background container mx-auto px-4">
-
         <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
           {newsTitle}
         </h2>
-
         <div className="relative">
-          <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            spaceBetween={40}
-            initialSlide={10}
-            onSwiper={setSwiperInstance}
-            modules={[EffectCoverflow, Navigation, Virtual]}
-            className="w-full pb-16"
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2,
-              slideShadows: false,
-            }}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-            breakpoints={{
-              320: {
-                spaceBetween: 20,
-                coverflowEffect: {
-                  depth: 50,
-                }
-              },
-              768: {
-                spaceBetween: 30,
-              },
-              1024: {
-                spaceBetween: 40,
-              },
-            }}
-            virtual={{
-              enabled: true,
-              addSlidesBefore: 2,
-              addSlidesAfter: 2,
-            }}
-          >
-            {slides.map((slide, index) => (
-              <SwiperSlide
-                key={slide.id}
-                virtualIndex={index}
-                className="!w-64 !h-80 md:!w-72 md:!h-96 lg:!w-80 lg:!h-[28rem]"
-              >
-                <div
-                  className={`relative w-full h-full rounded-xl overflow-hidden shadow-xl transition-all duration-500 ${index === activeSlideIndex ? "scale-100" : "scale-95"
-                    }`}
-                  style={{
-                    transform:
-                      index === activeSlideIndex
-                        ? "perspective(1000px) rotateY(0deg)"
-                        : index < activeSlideIndex
-                          ? "perspective(1000px) rotateY(-8deg)"
-                          : "perspective(1000px) rotateY(8deg)",
-                    transformStyle: "preserve-3d",
-                  }}
-                  role="button"
-                  tabIndex={0}
-                  onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") {
-                      e.preventDefault();
-                      navigate(`/news/${slide.slug ?? slide.id}`);
-                    }
-                  }}
+          <div>
+            <Swiper
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView={"auto"}
+              spaceBetween={40}
+              initialSlide={10}
+              onSwiper={setSwiperInstance}
+              modules={[EffectCoverflow, Navigation, Virtual]}
+              className="w-full pb-16"
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: false,
+              }}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              breakpoints={{
+                320: {
+                  spaceBetween: 20,
+                  coverflowEffect: {
+                    depth: 50,
+                  }
+                },
+                768: {
+                  spaceBetween: 30,
+                },
+                1024: {
+                  spaceBetween: 40,
+                },
+              }}
+              virtual={{
+                enabled: true,
+                addSlidesBefore: 2,
+                addSlidesAfter: 2,
+              }}
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide
+                  key={slide.id}
+                  virtualIndex={index}
+                  className="!h-72 md:!w-72 md:!h-96 lg:!w-80 lg:!h-[28rem]"
                 >
-                  <img
-                    src={slide.image}
-                    alt={slide.title}
-                    className={`w-full h-full object-cover transition-all duration-500 ${index === activeSlideIndex ? "filter-none" : "grayscale"
+                  <div
+                    className={`relative w-full h-full rounded-xl overflow-hidden shadow-xl transition-all duration-500 ${index === activeSlideIndex ? "scale-100" : "scale-95"
                       }`}
-                    loading="lazy"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80" />
-
-                  {index === activeSlideIndex && (
-                    <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6 text-white">
-                      <div className="text-center mb-4">
-
-                        <h4 className="text-lg md:text-xl font-bold mb-2 line-clamp-1">
-                          {slide.title}
-                        </h4>
+                    style={{
+                      transform:
+                        index === activeSlideIndex
+                          ? "perspective(1000px) rotateY(0deg)"
+                          : index < activeSlideIndex
+                            ? "perspective(1000px) rotateY(-8deg)"
+                            : "perspective(1000px) rotateY(8deg)",
+                      transformStyle: "preserve-3d",
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        navigate(`/news/${slide.slug ?? slide.id}`);
+                      }
+                    }}
+                  >
+                    <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className={`w-full h-full object-cover transition-all duration-500 ${index === activeSlideIndex ? "filter-none" : "grayscale"
+                        }`}
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80" />
+                    {index === activeSlideIndex && (
+                      <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6 text-white">
+                        <div className="text-center mb-4">
+                          <h4 className="text-lg md:text-xl font-bold mb-2 line-clamp-1">
+                            {slide.title}
+                          </h4>
+                        </div>
+                        <div className="flex justify-center">
+                          <ButtonPrimary onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}>
+                            {slide.buttonText}
+                          </ButtonPrimary>
+                        </div>
                       </div>
-                      <div className="flex justify-center">
-
-                        <ButtonPrimary onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}>
-                          {slide.buttonText}
-                        </ButtonPrimary>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          <div className="absolute py-3 left-1/2 transform -translate-x-1/2 flex items-center gap-4 z-10">
+                    )}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className="hidden absolute py-3 left-1/2 transform -translate-x-1/2 md:flex items-center gap-4 z-10">
             <button
               ref={prevRef}
               className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 px-5 md:px-4"
             >
               <FaArrowLeftLong className="w-6 h-6 md:w-14" />
             </button>
-
             <button
               ref={nextRef}
               className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 px-5 md:px-4"
