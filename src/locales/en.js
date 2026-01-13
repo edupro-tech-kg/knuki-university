@@ -738,12 +738,12 @@ export default {
       },
       {
         id: "students",
-        title: "КУМИУНУН 2 СТУДЕНТИ ПРЕЗИДЕНТТИК СТИПЕНДИЯГА ЭЭ БОЛУШТУ",
+        title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
         buttonText: "more"
       },
       {
         id: "instruments",
-        title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
+        title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
         buttonText: "more"
       }
     ]
@@ -870,7 +870,11 @@ export default {
       {
         id: "makam",
         title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
-        content: "In accordance with Decree No. 96 of the President of the Kyrgyz Republic, Sadyr Japarov, dated March 22, 2025, the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has been granted the status of “National”. From now on, it will be officially named the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. In order to grant the “National” status to the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva, for its significant contribution to the development and improvement of higher professional education in the field of culture and arts, and guided by Article 71 of the Constitution of the Kyrgyz Republic, it is decreed: 1. To grant the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva the status of “National” and hereinafter name it the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. 2. To instruct the Cabinet of Ministers of the Kyrgyz Republic to bring its decisions into compliance with this Decree. 3. To assign control over the implementation of this Decree to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Presidential Administration of the Kyrgyz Republic. 4. This Decree shall enter into force seven days after its official publication."
+        content: `In accordance with Decree No. 96 of the President of the Kyrgyz Republic, Sadyr Japarov, dated March 22, 2025, the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva has been granted the status of “National”. From now on, it will be officially named the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. In order to grant the “National” status to the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva, for its significant contribution to the development and improvement of higher professional education in the field of culture and arts, and guided by Article 71 of the Constitution of the Kyrgyz Republic, it is decreed:
+        1. To grant the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva the status of “National” and hereinafter name it the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. 
+        2. To instruct the Cabinet of Ministers of the Kyrgyz Republic to bring its decisions into compliance with this Decree.
+        3. To assign control over the implementation of this Decree to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Presidential Administration of the Kyrgyz Republic. 
+        4. This Decree shall enter into force seven days after its official publication.`
       },
       {
         id: "gym",
