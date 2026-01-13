@@ -21,19 +21,20 @@ import LiteraturePage from "./pages/LiteraturePage";
 import DocumentPage from "./pages/DocumentsPage";
 import SciencePage from "./pages/SciencePage";
 import ConsultationPage from "./pages/ConsultationPage";
+import CouncilPage from "./pages/CouncilPage";
 
 function ScrollToTop() {
-  const { pathname } = useLocation(); 
+  const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "smooth" 
+      behavior: "smooth"
     });
-  }, [pathname]); 
+  }, [pathname]);
 
-  return null; 
+  return null;
 }
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-light text-dark flex flex-col">
         <SeoTitle />
-        <ScrollToTop /> 
+        <ScrollToTop />
         <Header />
         <main className="flex-1">
           <Routes>
@@ -63,6 +64,7 @@ function App() {
             <Route path="/documents" element={<DocumentPage />} />
             <Route path="/science" element={<SciencePage />} />
             <Route path="/consultation" element={<ConsultationPage />} />
+            <Route path="/council" element={<CouncilPage />} />
           </Routes>
         </main>
         <Footer />

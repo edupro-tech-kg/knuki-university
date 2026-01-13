@@ -590,6 +590,7 @@ export default {
       library: "LIBRARY",
       literature: "HIGH LITERATURE COURSE",
       department: "PERSONNEL DEPARTMENT",
+      council: "Academic Council of KGUKI named after B. Beishenalieva",
     },
     button: "Learn More",
   },
@@ -1903,5 +1904,52 @@ export default {
       { name: "URMATBEK UULU ERBOLOT", year: "2025 year" },
       { name: "MARIYA DUBANAEVA", year: "2025 year" },
     ],
+  },
+  council: {
+    title: "Academic Council of KGUKI named after B. Beishenalieva",
+    subtitle: `The Academic Council of the Kyrgyz State University of Culture and Arts named after B. Beishenalieva is a permanent collegial governing body established in accordance with the University's Charter, the Law of the Kyrgyz Republic "On Education, " the Model Regulation on Educational Organizations of the Kyrgyz Republic, and the Regulation on the Academic Council. The Council determines the personnel and educational strategy of the university and makes strategic decisions aimed at developing the scientific, educational-methodological, innovative, cultural, and managerial activities of the institution.` ,
+      functionTitle: "Main Functions of the Academic Council",
+      function: [
+        {
+          name: "1. Strategic Management and Development:",
+          functions: [
+            "approves the university's development strategy, main directions of educational and scientific policy;",
+            "reviews the university's mission, development concept, and education quality assurance system."
+          ]
+        },
+        {
+          name: "2. Educational and Scientific Activities:",
+          functions: [
+            "approves curriculum, educational programs, and regulations for organizing the educational process;",
+            "reports on teachers' research and teaching-methodological work;",
+            "approves dissertation research topics and appoints scientific supervisors;",
+            "considers recommendations for awarding academic degrees and titles."
+          ]
+        },
+        {
+          name: "3. Personnel Policy:",
+          functions: [
+            "submits proposals for the appointment of teachers and staff, their career advancement and incentives;",
+            "considers issues related to the opening of new departments, faculties, and scientific centers."
+          ]
+        },
+        {
+          name: "4. Academic Ethics and Integrity:",
+          functions: [
+            "monitors compliance with academic ethics standards, scientific integrity, and prevention of plagiarism;",
+            "reviews disciplinary and academic matters and develops relevant recommendations."
+          ]
+        },
+        {
+          name: "5. Cultural, Educational and Social Activities:",
+          functions: [
+            "supports programs for creative, educational, and cultural activities of the university;",
+            "considers directions for developing international relations and cooperation."
+          ]
+        }
+      ],
+      compositionProcedure: "Composition and Operating Procedure of the Academic Council",
+      composition: "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
+      procedure: "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation."
   },
 };
