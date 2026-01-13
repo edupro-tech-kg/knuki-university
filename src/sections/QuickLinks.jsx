@@ -12,6 +12,7 @@ const QUICK_LINKS = [
   { key: "library", link: "/library" },
   { key: "literature", link: "/literature" },
   { key: "department", link: "/HRdepartment" },
+  { key: "council", link: "/council" },
 ];
 function QuickLinks() {
   const { t } = useTranslation();
@@ -41,11 +42,11 @@ function QuickLinks() {
             "
           >
             <div className="flex justify-between w-full -mt-6">
-              <img src={Ornament} alt="" className="w-20 h-20 md:w-24 md:h-24 -ml-6" />
-              <img src={Ornament} alt="" className="w-20 h-20 md:w-24 md:h-24 rotate-90 -mr-6" />
+              <img src={Ornament} alt="" className="w-20 h-20 md:w-22 md:h-22 -ml-6" />
+              <img src={Ornament} alt="" className="w-20 h-20 md:w-22 md:h-22 rotate-90 -mr-6" />
             </div>
 
-            <p className="uppercase text-xl font-bold text-button-primary flex items-center justify-center px-2 w-64">
+            <p className="uppercase text-xl font-bold text-button-primary flex items-center justify-center px-1 w-64 mb-1">
               {quickLinks.cards?.[item.key] || item.key}
             </p>
 

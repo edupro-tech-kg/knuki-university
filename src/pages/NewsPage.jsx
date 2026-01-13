@@ -24,28 +24,28 @@ export default function NewsPage() {
   const { id } = useParams();
   const { t } = useTranslation();
 
-    const newsItems = t("news.items", { returnObjects: true }) || [];
+  const newsItems = t("news.items", { returnObjects: true }) || [];
   const newsPage = t("newsPage", { returnObjects: true }) || {};
 
   const NEWS_IMAGES = {
     makam: [
       makam
-        ],
-        students: [
-            grand1,
-            grand2
-        ],
-        gym: [
-            newGym,
-            newGym1,
-            newGym2,
-            newGym3,
-            newGym4
-        ],
-        building: [
-            construction1,
-            construction2
-        ],
+    ],
+    students: [
+      grand1,
+      grand2
+    ],
+    gym: [
+      newGym,
+      newGym1,
+      newGym2,
+      newGym3,
+      newGym4
+    ],
+    building: [
+      construction1,
+      construction2
+    ],
     instruments: [
       instrument1,
       instrument2,
@@ -56,21 +56,21 @@ export default function NewsPage() {
 
   let pageData = null;
 
-    if (!isNaN(idNum) && newsItems.length > 0) {
-        const idx = ((idNum - 1) % newsItems.length + newsItems.length) % newsItems.length;
-        const item = newsItems[idx] || {};
-        const key = item.id;
+  if (!isNaN(idNum) && newsItems.length > 0) {
+    const idx = ((idNum - 1) % newsItems.length + newsItems.length) % newsItems.length;
+    const item = newsItems[idx] || {};
+    const key = item.id;
 
-        pageData = (key && newsPage[key]) || (Array.isArray(newsPage.news) && newsPage.news[idx]) || item;
-    } else {
-        pageData = newsPage[id] || (Array.isArray(newsPage.news) && newsPage.news.find((n) => n.id === id)) || null;
+    pageData = (key && newsPage[key]) || (Array.isArray(newsPage.news) && newsPage.news[idx]) || item;
+  } else {
+    pageData = newsPage[id] || (Array.isArray(newsPage.news) && newsPage.news.find((n) => n.id === id)) || null;
 
-        if (!pageData && Array.isArray(newsItems)) {
-            const idx = newsItems.findIndex((it) => String(it.id) === String(id));
-            if (idx !== -1 && Array.isArray(newsPage.news) && newsPage.news[idx]) {
-                pageData = newsPage.news[idx];
-            }
-        }
+    if (!pageData && Array.isArray(newsItems)) {
+      const idx = newsItems.findIndex((it) => String(it.id) === String(id));
+      if (idx !== -1 && Array.isArray(newsPage.news) && newsPage.news[idx]) {
+        pageData = newsPage.news[idx];
+      }
+    }
   }
 
   const title = pageData?.title || "";
@@ -126,7 +126,7 @@ export default function NewsPage() {
           <article className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8 space-y-5">
             {paragraphs.length > 0 ? (
               paragraphs.map((para, idx) => (
-                <p key={idx} className="text-base md:text-lg leading-7 text-gray-800">
+                <p style={{ whiteSpace: "pre-line" }} key={idx} className="text-base md:text-lg leading-7 text-gray-800">
                   {para}
                 </p>
               ))
