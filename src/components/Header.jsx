@@ -71,6 +71,14 @@ export default function Header() {
   const handleLanguageChange = (langCode) => {
     i18n.changeLanguage(langCode);
     setLanguageDropdownOpen(false);
+    
+    // Сохраняем выбранный язык в localStorage для сохранения при перезагрузке
+    localStorage.setItem('preferred-language', langCode);
+    
+    // Отправляем событие об изменении языка для других компонентов
+    window.dispatchEvent(new CustomEvent('languageChanged', { 
+      detail: { language: langCode } 
+    }));
   };
 
   const toggleLanguageDropdown = () => setLanguageDropdownOpen(!languageDropdownOpen);
