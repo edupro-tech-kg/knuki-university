@@ -47,7 +47,7 @@ function MissionSection() {
               <img
                 src={Mission2}
                 alt="Secondary mission"
-                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter grayscale"
+                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter"
               />
             </div>
 
@@ -55,7 +55,7 @@ function MissionSection() {
               <img
                 src={Mission3}
                 alt="Additional mission"
-                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter grayscale"
+                className="w-full h-auto aspect-[4/2] md:aspect-auto md:h-[319px] object-cover filter"
               />
             </div>
           </div>
