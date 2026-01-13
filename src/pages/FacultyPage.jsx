@@ -1,4 +1,3 @@
-// FacultyPage.jsx
 import { useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -9,7 +8,6 @@ import FacultyStats from "../components/faculty/FacultyStats";
 import FacultyTeachersTabs from "../components/faculty/FacultyTeachersTabs";
 import FacultyTextTabs from "../components/faculty/FacultyTextTabs";
 import DocumentsSection from "../components/faculty/DocumentsSection";
-import SectionHeading from "../components/faculty/SectionHeading";
 import { getFacultyData } from "../data/faculties";
 
 export default function FacultyPage() {
@@ -18,14 +16,29 @@ export default function FacultyPage() {
   const { t, i18n } = useTranslation();
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
-  const localizedFaculties = useMemo(() => {
+  const getCurrentLanguageCode = () => {
     const lang = i18n.language;
-    return t("facultiesData.items", { returnObjects: true, lng: lang }) || {};
+    if (lang === "kg" || lang === "ky") return "kg";
+    if (lang === "ru") return "ru";
+    if (lang === "en") return "en";
+    return "kg"; 
+  };
+
+  const currentLanguage = getCurrentLanguageCode();
+
+  const localizedFaculties = useMemo(() => {
+    try {
+      const lang = i18n.language;
+      return t("facultiesData.items", { returnObjects: true, lng: lang }) || {};
+    } catch (error) {
+      console.warn("Could not load localized faculties data:", error);
+      return {};
+    }
   }, [t, i18n.language]);
-  
+
   const faculty = useMemo(
-    () => getFacultyData(slug, localizedFaculties),
-    [slug, localizedFaculties]
+    () => getFacultyData(slug, localizedFaculties, currentLanguage),
+    [slug, localizedFaculties, currentLanguage, i18n.language] 
   );
 
   if (!faculty) {
@@ -45,11 +58,9 @@ export default function FacultyPage() {
   const renderInfoBlocks = () => {
     const useSecondary = faculty.programBlocksSecondary && activeTabIndex === 1;
     const blocks = useSecondary ? faculty.programBlocksSecondary : faculty.programBlocks;
-    const heading = useSecondary
-      ? faculty.programHeadingSecondary
-      : faculty.programHeading;
+    const heading = useSecondary ? faculty.programHeadingSecondary : faculty.programHeading;
 
-    if (!blocks?.length && !(faculty.infoColumns?.length)) return null;
+    if (!blocks?.length && !faculty.infoColumns?.length) return null;
 
     return (
       <FacultyInfoBlocks
@@ -71,17 +82,16 @@ export default function FacultyPage() {
 
   return (
     <div className="bg-light text-dark">
-      {/* Передаем sliderImages в FacultyHero */}
       <FacultyHero
         title={faculty.title}
         description={faculty.description}
         heroImage={faculty.heroImage}
-        sliderImages={faculty.sliderImages} // Новое поле
+        sliderImages={faculty.sliderImages}
         heroBackground={faculty.heroBackground}
         studyForms={faculty.studyForms}
         duration={faculty.duration}
       />
-      
+
       {faculty.infoAfterText ? (
         <>
           {textTabs}
@@ -93,7 +103,7 @@ export default function FacultyPage() {
           {textTabs}
         </>
       )}
-      
+
       <FacultyStats stats={faculty.stats} heading={faculty.teachersTitle} />
       <FacultyTeachersTabs groups={faculty.teacherGroups || []} />
       <DocumentsSection documents={faculty.documents} />
