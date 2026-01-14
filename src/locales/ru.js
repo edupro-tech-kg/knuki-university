@@ -732,6 +732,9 @@ export default {
   studentsLife: {
     numbersTitle: "Мы в цифрах"
   },
+   studentsMoments: {
+    title: "Моменты из жизни студентов",
+  },
   libraryDescription: {
     title: "Научная библиотека КГУКИ им. Б. Бейшеналиевой",
     content:

@@ -693,6 +693,9 @@ export default {
   studentsLife: {
     numbersTitle: "We in Numbers"
   },
+   studentsMoments: {
+    title: "Moments from the lives of students",
+  },
   libraryDescription: {
     title: "Scientific Library of KNUCA named after B. Beishenalieva",
     content:

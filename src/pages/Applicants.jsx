@@ -4,7 +4,7 @@ import { FaPhoneVolume, FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BsClockFill } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
-
+import ApplicantsSwiper from "../components/ApplicantsSwiper.jsx";
 function Applicants() {
     const { t } = useTranslation();
     const applicants = t("applicants", { returnObjects: true });
@@ -13,13 +13,14 @@ function Applicants() {
         <section className="w-full px-4 sm:px-6 lg:px-16 py-6 sm:py-10 lg:py-12">
             <div className="max-w-7xl mx-auto flex flex-col gap-4 sm:gap-6 lg:gap-8">
           
-                <h1 className="font-['Cormorant_Garamond'] font-bold italic text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-snug tracking-tight text-center uppercase text-[#751715]">
+                <h1 className="font-['Cormorant_Garamond'] font-bold italic text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-snug tracking-tight text-center uppercase text-text-accent">
                     {applicants.title}
                 </h1>
 
                 <h2 className="font-['Inter'] font-bold text-base sm:text-lg md:text-xl lg:text-xl leading-snug tracking-wide text-center text-[#0D0D0D] mb-4 md:mb-6">
                     {applicants.title2}
                 </h2>
+                <ApplicantsSwiper />
 
                 <div className="space-y-6 md:space-y-8 lg:space-y-10 text-sm md:text-base lg:text-lg">
                     {applicants.faculties?.map((i, id) => (
