@@ -690,6 +690,9 @@ export default {
   studentsLife: {
     numbersTitle: "Биз сандарда",
   },
+  studentsMoments: {
+    title: "Студенттердин жашоосунан учурлар",
+  },
   libraryDescription: {
     title: "Б.Бейшеналиева атындагы КУМИУнун илимий китепканасы",
     content:
