@@ -22,6 +22,7 @@ import DocumentPage from "./pages/DocumentsPage";
 import SciencePage from "./pages/SciencePage";
 import ConsultationPage from "./pages/ConsultationPage";
 import CouncilPage from "./pages/CouncilPage";
+import Accounting from "./pages/Accounting.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -65,6 +66,7 @@ function App() {
             <Route path="/science" element={<SciencePage />} />
             <Route path="/consultation" element={<ConsultationPage />} />
             <Route path="/council" element={<CouncilPage />} />
+            <Route path="/accounting" element={<Accounting />} />
           </Routes>
         </main>
         <Footer />
