@@ -8,9 +8,7 @@ export default function LastNews() {
 
   return (
     <div className="font-sans text-[#1f1f1f]">
-      <h2 className="mb-5 font-semibold text-lg sm:text-xl lg:text-2xl">
-        {lastNews.title}
-      </h2>
+      <h2 className="mb-5 font-semibold text-lg sm:text-xl lg:text-2xl">{lastNews.title}</h2>
       <div className="flex flex-col pr-10">
         {lastNews.newsData?.map((item, index) => (
           <Fragment key={index}>

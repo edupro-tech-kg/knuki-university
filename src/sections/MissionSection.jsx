@@ -57,6 +57,7 @@ function MissionSection() {
               src={MissionSectionImg}
               alt="Main mission"
               className="w-full h-full object-cover"
+              decoding="async"
             />
 
             <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col p-10">
@@ -107,6 +108,7 @@ function MissionSection() {
                         slot.kind === "wide" ? "animate-[fadeIn_250ms_ease-out]" : ""
                       }`}
                       loading="lazy"
+                      decoding="async"
                       draggable={false}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
@@ -122,6 +124,8 @@ function MissionSection() {
           src={Pattern}
           alt="patterns"
           className="object-cover h-12  w-[620px] sm:w-[1000px]   lg:h-auto lg:w-full"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </section>

@@ -88,20 +88,16 @@ export default function NewsSectionInfinite() {
   const [slides, setSlides] = useState(createInfiniteSlides());
   const [activeSlideIndex, setActiveSlideIndex] = useState(10);
 
-
   const loadMoreSlides = useCallback(async () => {
     if (isLoading || !hasMore) return;
 
     setIsLoading(true);
 
     try {
-
-      await new Promise(resolve => setTimeout(resolve, 300));
-
+      await new Promise((resolve) => setTimeout(resolve, 300));
 
       const newSlides = [];
       const currentLength = slides.length;
-
 
       for (let i = 0; i < 10; i++) {
         const globalIndex = currentLength + i;
@@ -114,19 +110,16 @@ export default function NewsSectionInfinite() {
         });
       }
 
-      setSlides(prev => [...prev, ...newSlides]);
-
+      setSlides((prev) => [...prev, ...newSlides]);
 
       if (swiperInstance) {
         swiperInstance.update();
         swiperInstance.virtual.update();
       }
 
-
       if (slides.length + newSlides.length >= 50) {
         setHasMore(false);
       }
-
     } catch (error) {
       console.error("Ошибка при загрузке слайдов:", error);
     } finally {
@@ -134,17 +127,17 @@ export default function NewsSectionInfinite() {
     }
   }, [slides.length, isLoading, hasMore, swiperInstance, slidesData]);
 
+  const handleSlideChange = useCallback(
+    (swiper) => {
+      const realIndex = swiper.activeIndex;
+      setActiveSlideIndex(realIndex);
 
-  const handleSlideChange = useCallback((swiper) => {
-    const realIndex = swiper.activeIndex;
-    setActiveSlideIndex(realIndex);
-
-
-    if (realIndex >= slides.length - 6 && hasMore && !isLoading) {
-      loadMoreSlides();
-    }
-  }, [slides.length, hasMore, isLoading, loadMoreSlides]);
-
+      if (realIndex >= slides.length - 6 && hasMore && !isLoading) {
+        loadMoreSlides();
+      }
+    },
+    [slides.length, hasMore, isLoading, loadMoreSlides]
+  );
 
   useEffect(() => {
     if (swiperInstance && prevRef.current && nextRef.current) {
@@ -164,7 +157,7 @@ export default function NewsSectionInfinite() {
   }, [swiperInstance, handleSlideChange]);
 
   return (
-    <section id='news'>
+    <section id="news">
       <div className="bg-background container mx-auto px-4">
         <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
           {newsTitle}
@@ -197,7 +190,7 @@ export default function NewsSectionInfinite() {
                   spaceBetween: 20,
                   coverflowEffect: {
                     depth: 50,
-                  }
+                  },
                 },
                 768: {
                   spaceBetween: 30,
@@ -219,8 +212,9 @@ export default function NewsSectionInfinite() {
                   className="!h-72 md:!w-72 md:!h-96 lg:!w-80 lg:!h-[28rem]"
                 >
                   <div
-                    className={`relative w-full h-full rounded-xl overflow-hidden shadow-xl transition-all duration-500 ${index === activeSlideIndex ? "scale-100" : "scale-95"
-                      }`}
+                    className={`relative w-full h-full rounded-xl overflow-hidden shadow-xl transition-all duration-500 ${
+                      index === activeSlideIndex ? "scale-100" : "scale-95"
+                    }`}
                     style={{
                       transform:
                         index === activeSlideIndex
@@ -243,8 +237,9 @@ export default function NewsSectionInfinite() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className={`w-full h-full object-cover transition-all duration-500 ${index === activeSlideIndex ? "filter-none" : "grayscale"
-                        }`}
+                      className={`w-full h-full object-cover transition-all duration-500 ${
+                        index === activeSlideIndex ? "filter-none" : "grayscale"
+                      }`}
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80" />
@@ -256,7 +251,9 @@ export default function NewsSectionInfinite() {
                           </h4>
                         </div>
                         <div className="flex justify-center">
-                          <ButtonPrimary onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}>
+                          <ButtonPrimary
+                            onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}
+                          >
                             {slide.buttonText}
                           </ButtonPrimary>
                         </div>

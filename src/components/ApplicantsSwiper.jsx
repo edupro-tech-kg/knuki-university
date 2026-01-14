@@ -31,9 +31,24 @@ export default function ApplicantsSwiper() {
   const [isMobile, setIsMobile] = useState(false);
 
   const slides = [
-    slide1, slide2, slide3, slide4, slide5, slide6,
-    slide7, slide8, slide9, slide10, slide11, slide12,
-    slide13, slide14, slide15, slide16, slide17, slide18
+    slide1,
+    slide2,
+    slide3,
+    slide4,
+    slide5,
+    slide6,
+    slide7,
+    slide8,
+    slide9,
+    slide10,
+    slide11,
+    slide12,
+    slide13,
+    slide14,
+    slide15,
+    slide16,
+    slide17,
+    slide18,
   ];
 
   useEffect(() => {
@@ -79,8 +94,8 @@ export default function ApplicantsSwiper() {
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
                 <div className="relative w-full h-full">
-                  <img 
-                    src={slide} 
+                  <img
+                    src={slide}
                     alt={`Slide ${index + 1}`}
                     className="w-full h-full object-cover"
                     loading="lazy"

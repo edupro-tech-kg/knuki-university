@@ -71,14 +71,16 @@ export default function Header() {
   const handleLanguageChange = (langCode) => {
     i18n.changeLanguage(langCode);
     setLanguageDropdownOpen(false);
-    
+
     // Сохраняем выбранный язык в localStorage для сохранения при перезагрузке
-    localStorage.setItem('preferred-language', langCode);
-    
+    localStorage.setItem("preferred-language", langCode);
+
     // Отправляем событие об изменении языка для других компонентов
-    window.dispatchEvent(new CustomEvent('languageChanged', { 
-      detail: { language: langCode } 
-    }));
+    window.dispatchEvent(
+      new CustomEvent("languageChanged", {
+        detail: { language: langCode },
+      })
+    );
   };
 
   const toggleLanguageDropdown = () => setLanguageDropdownOpen(!languageDropdownOpen);
@@ -208,10 +210,7 @@ export default function Header() {
             menuOpen ? "translate-x-0" : "-translate-x-full"
           )}
         >
-          <SideBar 
-            onClose={handleCloseSidebar} 
-            isOpen={menuOpen}
-          />
+          <SideBar onClose={handleCloseSidebar} isOpen={menuOpen} />
         </div>
 
         {menuOpen && (

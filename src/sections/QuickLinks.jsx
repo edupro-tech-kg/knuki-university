@@ -22,7 +22,9 @@ function QuickLinks() {
 
   return (
     <section className="bg-background py-14 w-full">
-      <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">{quickLinks.title}</h2>
+      <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
+        {quickLinks.title}
+      </h2>
       <div
         className="
           flex gap-4 overflow-x-auto px-4 md:px-6
@@ -53,18 +55,12 @@ function QuickLinks() {
 
             {item.link ? (
               <Link to={item.link} className="w-full flex justify-center">
-                <Button
-                  variant="primaryIcon"
-                  className="!border-text-primary !text-text-primary"
-                >
+                <Button variant="primaryIcon" className="!border-text-primary !text-text-primary">
                   {quickLinks.button}
                 </Button>
               </Link>
             ) : (
-              <Button
-                variant="primaryIcon"
-                className="!border-text-primary !text-text-primary"
-              >
+              <Button variant="primaryIcon" className="!border-text-primary !text-text-primary">
                 {quickLinks.button}
               </Button>
             )}

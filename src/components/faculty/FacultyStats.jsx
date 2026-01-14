@@ -1,4 +1,4 @@
-import statsBg from "../../assets/images/statsBg.png";
+import statsBg from "../../assets/images/statsBg.jpg";
 import SectionHeading from "./SectionHeading";
 
 export default function FacultyStats({ stats, heading }) {
@@ -7,10 +7,7 @@ export default function FacultyStats({ stats, heading }) {
   return (
     <section className="bg-white">
       <SectionHeading text={heading} />
-      <div
-        className="bg-cover bg-center"
-        style={{ backgroundImage: `url(${statsBg})` }}
-      >
+      <div className="bg-cover bg-center" style={{ backgroundImage: `url(${statsBg})` }}>
         <div className="bg-black/70">
           <div className="max-w-[1200px] mx-auto px-4 py-8">
             <div className="flex flex-wrap justify-center gap-6 md:gap-8">

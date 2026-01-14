@@ -107,9 +107,7 @@ export default function GallerySection() {
     <div>
       <div className="bg-background relative flex items-center w-full">
         <img className="w-40 md:w-96" src={gallery} alt="" />
-        <h2
-          className="absolute left-1/2 -translate-x-1/2 uppercase font-serif text-2xl md:text-4xl font-bold text-text-primary text-center italic"
-        >
+        <h2 className="absolute left-1/2 -translate-x-1/2 uppercase font-serif text-2xl md:text-4xl font-bold text-text-primary text-center italic">
           {t("gallery.eyebrow")}
         </h2>
       </div>

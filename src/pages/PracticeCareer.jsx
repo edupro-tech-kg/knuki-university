@@ -69,8 +69,7 @@ export default function PracticeCareer() {
               ))}
               {practiceBullet && (
                 <li>
-                  <strong>{content.practiceTitle}</strong>{" "}
-                  {content.practiceDescription}
+                  <strong>{content.practiceTitle}</strong> {content.practiceDescription}
                 </li>
               )}
             </ul>

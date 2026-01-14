@@ -16,6 +16,7 @@ i18n
     fallbackLng: "ky",
     interpolation: { escapeValue: false },
     returnObjects: true,
+    initImmediate: false,
   })
   .catch((err) => console.error("i18n init error", err));
 

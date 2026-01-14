@@ -29,9 +29,7 @@ export default function EducationPage() {
             <table className={`${styles.border} border-collapse w-full text-xs sm:text-sm`}>
               <thead>
                 <tr>
-                  <th className={`${styles.border} px-1 sm:px-2 md:px-3 py-2 sm:py-3`}>
-                    №
-                  </th>
+                  <th className={`${styles.border} px-1 sm:px-2 md:px-3 py-2 sm:py-3`}>№</th>
                   <th className={`${styles.border} py-3 sm:py-4 md:py-5`}>
                     <h2 className={`${styles.heading} text-center px-2`}>
                       {t("education.programTitle")}
@@ -54,9 +52,7 @@ export default function EducationPage() {
                     {section.data.map((item) => (
                       <tr key={item.id} className={styles.border}>
                         <td className="w-8 sm:w-10 md:w-12 bg-gray-50">
-                          <div className={`${styles.center} h-full ${styles.text}`}>
-                            {item.id}
-                          </div>
+                          <div className={`${styles.center} h-full ${styles.text}`}>{item.id}</div>
                         </td>
                         <td className={`${styles.border} ${styles.cellPadding}`}>
                           <p className={styles.text}>{item.title}</p>

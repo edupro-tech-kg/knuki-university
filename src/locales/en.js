@@ -398,14 +398,14 @@ export default {
       {
         id: "students",
         title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
-        buttonText: "more"
+        buttonText: "more",
       },
       {
         id: "instruments",
         title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
-        buttonText: "more"
-      }
-    ]
+        buttonText: "more",
+      },
+    ],
   },
   consultation: {
     title: "Sign up for a consultation",
@@ -434,7 +434,7 @@ export default {
     },
   },
   dropdownForm: {
-    select: "Choose"
+    select: "Choose",
   },
   historyPage: {
     title: "HISTORY",
@@ -539,7 +539,7 @@ export default {
         1. To grant the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva the status of “National” and hereinafter name it the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. 
         2. To instruct the Cabinet of Ministers of the Kyrgyz Republic to bring its decisions into compliance with this Decree.
         3. To assign control over the implementation of this Decree to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Presidential Administration of the Kyrgyz Republic. 
-        4. This Decree shall enter into force seven days after its official publication.`
+        4. This Decree shall enter into force seven days after its official publication.`,
       },
       {
         id: "gym",
@@ -683,9 +683,9 @@ export default {
     },
   ],
   studentsLife: {
-    numbersTitle: "We in Numbers"
+    numbersTitle: "We in Numbers",
   },
-   studentsMoments: {
+  studentsMoments: {
     title: "Moments from the lives of students",
   },
   libraryDescription: {
@@ -728,8 +728,7 @@ export default {
       },
       {
         id: 5,
-        content:
-          "Sheet music lending department and a special musical literature lending section",
+        content: "Sheet music lending department and a special musical literature lending section",
       },
       {
         id: 6,
@@ -864,11 +863,13 @@ export default {
         post: "Rector",
         additionalInfo: {
           academicDegree: "Postgraduate and Master's, KNUKI named after B.Beishenalieva. Bishkek.",
-          education: "Higher education, graduated with honors from the Faculty of Kyrgyz Philology of OshSU (diploma No. CD090149423) 2009. \n Candidate of Philological Sciences (No. 1 1k-1/31. IKD No. 001143 01/29/2015), \n Associate Professor (No. 6dc-2/9. DA No.002177 06/25/2019).\n Graduated from the Law Faculty of OshSU (diploma No. UB 190197452 2019).",
-          workExperience: "2012-2016 Music School No.5, Bishkek. \n 2016-2025 KUMI named after B.Beishenalieva, Bishkek. \n Since 2023 Chairman of the trade union organization of KUMI named after B.Beishenalieva. \n Since 2024 KNUKI, Bishkek, Head of the Department of Traditional Music and Folklore, Senior Lecturer.",
+          education:
+            "Higher education, graduated with honors from the Faculty of Kyrgyz Philology of OshSU (diploma No. CD090149423) 2009. \n Candidate of Philological Sciences (No. 1 1k-1/31. IKD No. 001143 01/29/2015), \n Associate Professor (No. 6dc-2/9. DA No.002177 06/25/2019).\n Graduated from the Law Faculty of OshSU (diploma No. UB 190197452 2019).",
+          workExperience:
+            "2012-2016 Music School No.5, Bishkek. \n 2016-2025 KUMI named after B.Beishenalieva, Bishkek. \n Since 2023 Chairman of the trade union organization of KUMI named after B.Beishenalieva. \n Since 2024 KNUKI, Bishkek, Head of the Department of Traditional Music and Folklore, Senior Lecturer.",
           computerSkills: "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, internet.",
           languages: "Kyrgyz (native), Russian (fluent)",
-        }
+        },
       },
       {
         name: "Abdigaparov Nurtilek Abdigaparovich",
@@ -1114,18 +1115,25 @@ export default {
           residence: "Bishkek, Alamudun District, Bektoo Dacha, 13th line, house 4",
           contact: "+996708771171",
           email: "kumar.ergesheva2@gmail.com",
-          education: "1979–1983 — Bishkek, M. Kurenkeev KGMU. Qualification: teacher of bass kyak class, conductor of national instruments orchestra.\n1983–1988 — B. Beyshenalieva KGII. Qualification: concert performer, teacher of bass kyak class, conductor of national instruments orchestra.",
-          workExperience: "1988–2012 — P. F. Shubin Central Music School, Bishkek — komuz class teacher.\n2012–Feb 2024 — Social worker, Public Association “Center for Child Protection”.\n2016–2018 — Project coordinator FSDS, PA “Center for Child Protection”.\n2018–2020 — Project coordinator, Association of NGOs for the Promotion of Children’s Rights and Interests in Kyrgyzstan: \"Promoting access of children of internal and labor migrants to state services according to their needs\".\n2018–2020 — Member of the Working Group of the Jogorku Kenesh for monitoring the implementation of the Law on Social Benefits of the Kyrgyz Republic.\n2019–2021 — Project coordinator UNICEF \"Social Mobilization for Immunization in New Settlements\", PA “Center for Child Protection”.\nSince 2024 — Head of Practice and Career Department, KNUKI named after B. Beyshenalieva.\n2010 — Hotline operator for the Soros Foundation and Crisis Center “Sezim” project on June events in the south.\n2010 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.\n2011 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.",
-          courses: "2005–2011 — Trainings by NGO “Arish”.\n2009 — Certificate from INTRAC CA for active participation in three-module training project \"From Self-Help to Leadership: Developing Youth and Women’s Leadership\".\n2007–2009 — Certificate, ACT-Development project “Strengthening NGOs for the Development of Self-Help Movement”.\nJune 2011 — Training “Budget Practicum on the Example of the Local Budget of Bishkek”, Issyk-Kul, PA “Center for Child Protection”.\nSeptember 2011 — Certificate for participation in the forum “Development of Women’s Leadership in Kyrgyzstan and Capacity Building”, NGO LEGACY INTERNATIONAL and International Center Interbilim.\n2014 — Training “Psycho-Social Assistance to Children in Difficult Life Situations”.\n2017 — Certificate for participation in the training “Leadership School”, Women’s Learning Partnership (WLP).\n2018 — Certificate for participation in the training “Civic Education of Youth through Arts Elements”, Youth Development Institute.\n2018 — Certificate for participation in the training “SMM in NGO Development”, ARGO.\n2021–2022 — Certificate for completing the qualification improvement course “Social Work: Paralegal Activity”, MUK.\n2022 — UNICEF training “Prevention of Sexual Exploitation and Abuse (PSEA)”.\n2021 — Certificate for participation in the training “Promoting Initiatives in the Field of Culture”, OF “Music Without Borders”.",
-          publications: "2009 — Presentation on \"Development of GSP Leadership\" at the 2nd GSP Social Fair, Republic of Tajikistan.\n7–8 Dec 2011 — Presentation on \"Problems of Coverage and Accessibility of Basic Education\" at the National Forum \"Social Pedagogy in Kyrgyzstan: Problems and Perspectives\".\n2025 — Presentation on \"Contemporary Challenges of Traditional Music in Kyrgyzstan\" at the International Scientific-Theoretical Conference \"Actual Issues of Art Studies: Tradition and Modernity\".\n2004 — Author of the textbook “Collection of New Rhythm Melodies”.",
+          education:
+            "1979–1983 — Bishkek, M. Kurenkeev KGMU. Qualification: teacher of bass kyak class, conductor of national instruments orchestra.\n1983–1988 — B. Beyshenalieva KGII. Qualification: concert performer, teacher of bass kyak class, conductor of national instruments orchestra.",
+          workExperience:
+            '1988–2012 — P. F. Shubin Central Music School, Bishkek — komuz class teacher.\n2012–Feb 2024 — Social worker, Public Association “Center for Child Protection”.\n2016–2018 — Project coordinator FSDS, PA “Center for Child Protection”.\n2018–2020 — Project coordinator, Association of NGOs for the Promotion of Children’s Rights and Interests in Kyrgyzstan: "Promoting access of children of internal and labor migrants to state services according to their needs".\n2018–2020 — Member of the Working Group of the Jogorku Kenesh for monitoring the implementation of the Law on Social Benefits of the Kyrgyz Republic.\n2019–2021 — Project coordinator UNICEF "Social Mobilization for Immunization in New Settlements", PA “Center for Child Protection”.\nSince 2024 — Head of Practice and Career Department, KNUKI named after B. Beyshenalieva.\n2010 — Hotline operator for the Soros Foundation and Crisis Center “Sezim” project on June events in the south.\n2010 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.\n2011 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.',
+          courses:
+            '2005–2011 — Trainings by NGO “Arish”.\n2009 — Certificate from INTRAC CA for active participation in three-module training project "From Self-Help to Leadership: Developing Youth and Women’s Leadership".\n2007–2009 — Certificate, ACT-Development project “Strengthening NGOs for the Development of Self-Help Movement”.\nJune 2011 — Training “Budget Practicum on the Example of the Local Budget of Bishkek”, Issyk-Kul, PA “Center for Child Protection”.\nSeptember 2011 — Certificate for participation in the forum “Development of Women’s Leadership in Kyrgyzstan and Capacity Building”, NGO LEGACY INTERNATIONAL and International Center Interbilim.\n2014 — Training “Psycho-Social Assistance to Children in Difficult Life Situations”.\n2017 — Certificate for participation in the training “Leadership School”, Women’s Learning Partnership (WLP).\n2018 — Certificate for participation in the training “Civic Education of Youth through Arts Elements”, Youth Development Institute.\n2018 — Certificate for participation in the training “SMM in NGO Development”, ARGO.\n2021–2022 — Certificate for completing the qualification improvement course “Social Work: Paralegal Activity”, MUK.\n2022 — UNICEF training “Prevention of Sexual Exploitation and Abuse (PSEA)”.\n2021 — Certificate for participation in the training “Promoting Initiatives in the Field of Culture”, OF “Music Without Borders”.',
+          publications:
+            '2009 — Presentation on "Development of GSP Leadership" at the 2nd GSP Social Fair, Republic of Tajikistan.\n7–8 Dec 2011 — Presentation on "Problems of Coverage and Accessibility of Basic Education" at the National Forum "Social Pedagogy in Kyrgyzstan: Problems and Perspectives".\n2025 — Presentation on "Contemporary Challenges of Traditional Music in Kyrgyzstan" at the International Scientific-Theoretical Conference "Actual Issues of Art Studies: Tradition and Modernity".\n2004 — Author of the textbook “Collection of New Rhythm Melodies”.',
           computerSkills: "Confident PC user.",
-          professionalSkills: "Experience in conducting trainings.\nExtensive experience working in residential areas and with families in difficult life situations, Bishkek.",
-          personalQualities: "Leadership, openness, communicativeness, principled, stress-resistant, tolerant.",
-          languages: "Kyrgyz — native, Russian — fluent, Turkish — conversational, English — basic.",
-          awards: "2009 — Excellent in Education.\n2009 — Excellent in Culture of the Kyrgyz Republic.\nLetter of Appreciation, USAID “Quality Education” project.\n2022 — Certificate of Honor, Ministry of Labor and Social Development of the Kyrgyz Republic."
-        }
-      }
-
+          professionalSkills:
+            "Experience in conducting trainings.\nExtensive experience working in residential areas and with families in difficult life situations, Bishkek.",
+          personalQualities:
+            "Leadership, openness, communicativeness, principled, stress-resistant, tolerant.",
+          languages:
+            "Kyrgyz — native, Russian — fluent, Turkish — conversational, English — basic.",
+          awards:
+            "2009 — Excellent in Education.\n2009 — Excellent in Culture of the Kyrgyz Republic.\nLetter of Appreciation, USAID “Quality Education” project.\n2022 — Certificate of Honor, Ministry of Labor and Social Development of the Kyrgyz Republic.",
+        },
+      },
     ],
   },
   HRdepartment: {
@@ -1637,8 +1645,8 @@ export default {
         name: "1. Strategic Management and Development:",
         functions: [
           "approves the university's development strategy, main directions of educational and scientific policy;",
-          "reviews the university's mission, development concept, and education quality assurance system."
-        ]
+          "reviews the university's mission, development concept, and education quality assurance system.",
+        ],
       },
       {
         name: "2. Educational and Scientific Activities:",
@@ -1646,198 +1654,201 @@ export default {
           "approves curriculum, educational programs, and regulations for organizing the educational process;",
           "reports on teachers' research and teaching-methodological work;",
           "approves dissertation research topics and appoints scientific supervisors;",
-          "considers recommendations for awarding academic degrees and titles."
-        ]
+          "considers recommendations for awarding academic degrees and titles.",
+        ],
       },
       {
         name: "3. Personnel Policy:",
         functions: [
           "submits proposals for the appointment of teachers and staff, their career advancement and incentives;",
-          "considers issues related to the opening of new departments, faculties, and scientific centers."
-        ]
+          "considers issues related to the opening of new departments, faculties, and scientific centers.",
+        ],
       },
       {
         name: "4. Academic Ethics and Integrity:",
         functions: [
           "monitors compliance with academic ethics standards, scientific integrity, and prevention of plagiarism;",
-          "reviews disciplinary and academic matters and develops relevant recommendations."
-        ]
+          "reviews disciplinary and academic matters and develops relevant recommendations.",
+        ],
       },
       {
         name: "5. Cultural, Educational and Social Activities:",
         functions: [
           "supports programs for creative, educational, and cultural activities of the university;",
-          "considers directions for developing international relations and cooperation."
-        ]
-      }
+          "considers directions for developing international relations and cooperation.",
+        ],
+      },
     ],
     compositionProcedure: "Composition and Operating Procedure of the Academic Council",
-    composition: "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
-    procedure: "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation."
-  }, "firstAccounting": {
-    "title": "Duration of study: 6 years (extramural form)",
-    "price": "Tuition fee (KGS)",
-    "specialty": "Specialty",
-    "code": "Code",
-    "courses": ["1 year", "2 year", "3 year", "4 year", "5 year", "6 year"],
-    "rows": [
+    composition:
+      "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
+    procedure:
+      "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation.",
+  },
+  firstAccounting: {
+    title: "Duration of study: 6 years (extramural form)",
+    price: "Tuition fee (KGS)",
+    specialty: "Specialty",
+    code: "Code",
+    courses: ["1 year", "2 year", "3 year", "4 year", "5 year", "6 year"],
+    rows: [
       {
-        "id": 1,
-        "name": "Acting",
-        "code": "570014",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 1,
+        name: "Acting",
+        code: "570014",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 2,
-        "name": "Sound Engineering (by fields of application)",
-        "code": "570013",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 2,
+        name: "Sound Engineering (by fields of application)",
+        code: "570013",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 3,
-        "name": "Directing (by fields of application)",
-        "code": "570015",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 3,
+        name: "Directing (by fields of application)",
+        code: "570015",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 4,
-        "name": "Cinematography (Camera Operator)",
-        "code": "570006",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 4,
+        name: "Cinematography (Camera Operator)",
+        code: "570006",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 5,
-        "name": "Fine Arts Education (Bachelor’s degree)",
-        "code": "550600",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000"]
+        id: 5,
+        name: "Fine Arts Education (Bachelor’s degree)",
+        code: "550600",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000"],
       },
       {
-        "id": 6,
-        "name": "Choreography Pedagogy",
-        "code": "570019",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 6,
+        name: "Choreography Pedagogy",
+        code: "570019",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 7,
-        "name": "Literary Creativity",
-        "code": "570027",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 7,
+        name: "Literary Creativity",
+        code: "570027",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 8,
-        "name": "Socio-cultural Activities",
-        "code": "570029",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 8,
+        name: "Socio-cultural Activities",
+        code: "570029",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 9,
-        "name": "Pop Ensemble Performer (vocalist, instrumentalist), teacher",
-        "code": "",
-        "prices": [
+        id: 9,
+        name: "Pop Ensemble Performer (vocalist, instrumentalist), teacher",
+        code: "",
+        prices: [
           ["60 000 soloist", "40 000 instrumentalist"],
           "32 000",
           "32 000",
           "32 000",
           "32 000",
-          "32 000"
-        ]
+          "32 000",
+        ],
       },
       {
-        "id": 10,
-        "name": "Folk Orchestra Conductor, teacher",
-        "code": "",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 10,
+        name: "Folk Orchestra Conductor, teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 11,
-        "name": "Folk Choir Conductor, teacher",
-        "code": "",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 11,
+        name: "Folk Choir Conductor, teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 12,
-        "name": "Traditional Music and Folklore (vocalist, instrumentalist), teacher",
-        "code": "",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 12,
+        name: "Traditional Music and Folklore (vocalist, instrumentalist), teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 13,
-        "name": "Film Studies",
-        "code": "570005",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+        id: 13,
+        name: "Film Studies",
+        code: "570005",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
       },
       {
-        "id": 14,
-        "name": "Theatre Studies",
-        "code": "570002",
-        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
-      }
-    ]
+        id: 14,
+        name: "Theatre Studies",
+        code: "570002",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+    ],
   },
-  "accounting": {
-    "service": "Service name",
-    "amount": "Amount",
-    "rows": [
+  accounting: {
+    service: "Service name",
+    amount: "Amount",
+    rows: [
       {
-        "id": 1,
-        "name": "For admission of applicants and processing of documents",
-        "price": "480-00"
+        id: 1,
+        name: "For admission of applicants and processing of documents",
+        price: "480-00",
       },
       {
-        "id": 2,
-        "name": "Dormitory accommodation fee for students (per month)",
-        "price": "1300-00"
+        id: 2,
+        name: "Dormitory accommodation fee for students (per month)",
+        price: "1300-00",
       },
       {
-        "id": 3,
-        "name": "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m (part-time employees)",
-        "price": "13000-00"
+        id: 3,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m (part-time employees)",
+        price: "13000-00",
       },
       {
-        "id": 4,
-        "name": "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
-        "price": "11000-00"
+        id: 4,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
+        price: "11000-00",
       },
       {
-        "id": 5,
-        "name": "Dormitory accommodation fee for educational institution employees (per month) 30 sq.m (part-time employees)",
-        "price": "9000-00"
+        id: 5,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 30 sq.m (part-time employees)",
+        price: "9000-00",
       },
       {
-        "id": 6,
-        "name": "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m",
-        "price": "6000-00"
+        id: 6,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m",
+        price: "6000-00",
       },
       {
-        "id": 7,
-        "name": "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
-        "price": "5000-00"
+        id: 7,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
+        price: "5000-00",
       },
       {
-        "id": 8,
-        "name": "Transfer and reinstatement of studies",
-        "price": "800-00"
+        id: 8,
+        name: "Transfer and reinstatement of studies",
+        price: "800-00",
       },
       {
-        "id": 9,
-        "name": "Transfer and reinstatement of studies (for foreign students)",
-        "price": "1600-00"
+        id: 9,
+        name: "Transfer and reinstatement of studies (for foreign students)",
+        price: "1600-00",
       },
       {
-        "id": 10,
-        "name": "Academic certificate",
-        "price": "250-00"
+        id: 10,
+        name: "Academic certificate",
+        price: "250-00",
       },
       {
-        "id": 11,
-        "name": "For passing subject differences when transferring students from other educational institutions",
-        "price": "300-00"
+        id: 11,
+        name: "For passing subject differences when transferring students from other educational institutions",
+        price: "300-00",
       },
       {
-        "id": 12,
-        "name": "Professional development course",
-        "price": "10000-00"
-      }
-    ]
-  }
+        id: 12,
+        name: "Professional development course",
+        price: "10000-00",
+      },
+    ],
+  },
 };

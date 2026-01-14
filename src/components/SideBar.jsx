@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 const SideBar = ({ onClose }) => {
   const { t } = useTranslation();
   const headerTranslations = t("header", { returnObjects: true });
-  
+
   return (
     <div className="h-full flex flex-col">
       <div className="flex items-center justify-between p-6 pb-4">
@@ -20,7 +20,7 @@ const SideBar = ({ onClose }) => {
           ×
         </button>
       </div>
-      
+
       <div className="px-6 text-center mt-2 pb-4">
         <p className="text-lg font-inter text-white font-semibold leading-relaxed max-w-xs">
           {headerTranslations.universityName}
