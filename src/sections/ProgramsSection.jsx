@@ -1,13 +1,20 @@
 import React, { useRef, useEffect, useState, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import ButtonPrimary from "../components/UI/Button";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import music from "../assets/svg/music.svg";
+import mask from "../assets/svg/mask.svg";
+import projector from "../assets/svg/projector.svg";
+import ballerina from "../assets/svg/ballerina.svg";
 
 const directions = [
-  { slug: "socio-cultural" },
-  { slug: "choreography" },
-  { slug: "music-performance" },
-  { slug: "music-teacher" },
+  { icon: music, slug: "choreography" },
+  { icon: mask, slug: "folk-music" },
+  { icon: projector, slug: "estrada-music" },
+  { icon: ballerina, slug: "theater" },
+  { icon: music, slug: "kino-tele" },
+  { icon: mask, slug: "postgraduate" },
 ];
 
 export default function ProgramsSection() {
@@ -46,6 +53,54 @@ export default function ProgramsSection() {
     return { cardWidth, gap, scrollAmount: cardWidth + gap };
   };
 
+  const handleNext = () => {
+    if (!containerRef.current || !isDesktop) return;
+
+    const container = containerRef.current;
+    const { scrollLeft, scrollWidth, clientWidth } = container;
+    const { scrollAmount } = getScrollAmount();
+
+    const newScrollLeft = scrollLeft + scrollAmount;
+
+    if (newScrollLeft >= scrollWidth - clientWidth - 1) {
+      const endScrollLeft = scrollWidth - clientWidth;
+      container.scrollTo({ left: endScrollLeft, behavior: "smooth" });
+
+      setTimeout(() => {
+        container.scrollTo({ left: 0, behavior: "auto" });
+        setTimeout(() => {
+          container.scrollTo({ left: scrollAmount, behavior: "smooth" });
+        }, 50);
+      }, 300);
+    } else {
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
+    }
+  };
+
+  const handlePrev = () => {
+    if (!containerRef.current || !isDesktop) return;
+
+    const container = containerRef.current;
+    const { scrollLeft, scrollWidth, clientWidth } = container;
+    const { scrollAmount } = getScrollAmount();
+
+    const newScrollLeft = scrollLeft - scrollAmount;
+
+    if (newScrollLeft < 0) {
+      container.scrollTo({ left: 0, behavior: "smooth" });
+
+      setTimeout(() => {
+        const endScrollLeft = scrollWidth - clientWidth;
+        container.scrollTo({ left: endScrollLeft, behavior: "auto" });
+        setTimeout(() => {
+          container.scrollTo({ left: endScrollLeft - scrollAmount, behavior: "smooth" });
+        }, 50);
+      }, 300);
+    } else {
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
+    }
+  };
+
   const handleNextSimple = () => {
     if (!containerRef.current || !isDesktop) return;
 
@@ -81,7 +136,14 @@ export default function ProgramsSection() {
     }
   };
 
+  const facultiesTitles = useMemo(
+    () => t("facultiesData.items", { returnObjects: true }) || {},
+    [t]
+  );
   const programList = useMemo(() => t("programs.list", { returnObjects: true }) || [], [t]);
+
+  const getTitle = (slug, index) =>
+    facultiesTitles?.[slug]?.title || programList?.[index]?.title || slug;
 
   return (
     <section
@@ -89,7 +151,7 @@ export default function ProgramsSection() {
       className="bg-background flex items-center justify-center mt-20 container mx-auto px-4 sm:px-6 lg:px-8"
     >
       <div className="w-full relative max-w-7xl">
-        <h2 className="uppercase mt-10 font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
+        <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
           {t("programs.eyebrow")}
         </h2>
 
@@ -99,7 +161,7 @@ export default function ProgramsSection() {
             className={`
               ${
                 !isDesktop
-                  ? "flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 pl-4 pr-4 md:pl-0 md:pr-0"
+                  ? "flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 pl-4 pr-4 md:pl-0 md:pr-0"
                   : "md:flex md:overflow-x-auto md:gap-6 md:pb-4 md:scrollbar-hide md:px-1"
               }
               [&::-webkit-scrollbar]:hidden
@@ -107,10 +169,10 @@ export default function ProgramsSection() {
               [scrollbar-width:none]
             `}
           >
-            {programList.map((program, index) => (
+            {directions.map((dir, index) => (
               <Link
-                to={`/program/${program.id}`}
-                key={program.id}
+                to={`/faculty/${dir.slug}`}
+                key={dir.slug}
                 className={`
                   group 
                   ${
@@ -118,52 +180,55 @@ export default function ProgramsSection() {
                       ? "flex-shrink-0 w-[calc(100vw-64px)] md:w-[calc(50vw-48px)] snap-start"
                       : "md:flex-shrink-0 md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]"
                   }
-                  bg-white transition-all duration-300 
-                  hover:shadow-lg flex flex-col
-                  overflow-hidden
+                  bg-text-primary transition-all duration-300 
+                  hover:bg-primary flex flex-col
+                   overflow-hidden
                   ${isDesktop ? "md:mx-0" : ""}
                 `}
               >
                 <div className="p-6 flex flex-col h-full">
-                  <div
-                    className="
-                    bg-[#751715] text-white
-                    rounded-sm border border-[#5f1112]
-                    flex flex-col items-center
-                    gap-2
-                    min-h-28
-                    px-4 py-4
-                    mb-6
-                    justify-center
-                  "
-                  >
-                    <span
-                      className="
-                        h-8 w-8
-                        rounded-full
-                        bg-white text-[#751715]
-                        text-sm font-semibold
-                        flex items-center justify-center
-                        shrink-0
-                      "
-                    >
-                      {program.id}
-                    </span>
+                  <h3 className="font-sans text-xl font-medium text-white mb-4 mt-4">
+                    {getTitle(dir.slug, index)}
+                  </h3>
 
-                    <p className="text-sm text-center leading-snug">{program.title}</p>
+                  <div className="flex-grow"></div>
+
+                  <div className="mb-4 flex justify-end mt-auto">
+                    <div className="bg-primary p-4 transition-colors duration-300 group-hover:bg-text-primary">
+                      <img src={dir.icon} alt="" className="w-20 h-20" />
+                    </div>
                   </div>
 
-                  <div className="mb-4">
-                    <p className="text-sm text-gray-600">
-                      {t(`programs.descriptions.${program.id}`, { defaultValue: "" })}
-                    </p>
+                  <div>
+                    <ButtonPrimary variant="primaryIcon">{t("programs.buttonText")}</ButtonPrimary>
                   </div>
                 </div>
               </Link>
             ))}
           </div>
         </div>
+
+        {isDesktop && showControls && (
+          <div className="flex justify-center items-center gap-4 mt-8">
+            <button
+              onClick={handlePrevSimple}
+              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5 hover:scale-105 active:scale-95"
+              aria-label="Previous"
+            >
+              <FaArrowLeftLong className="w-5 h-5 md:w-6 md:h-6" />
+            </button>
+
+            <button
+              onClick={handleNextSimple}
+              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5 hover:scale-105 active:scale-95"
+              aria-label="Next"
+            >
+              <FaArrowRightLong className="w-5 h-5 md:w-6 md:h-6" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
 }
+
