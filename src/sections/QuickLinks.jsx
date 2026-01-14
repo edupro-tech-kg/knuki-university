@@ -13,6 +13,7 @@ const QUICK_LINKS = [
   { key: "literature", link: "/literature" },
   { key: "department", link: "/HRdepartment" },
   { key: "council", link: "/council" },
+  { key: "accounting", link: "/accounting" },
 ];
 function QuickLinks() {
   const { t } = useTranslation();
@@ -26,7 +27,7 @@ function QuickLinks() {
         className="
           flex gap-4 overflow-x-auto px-4 md:px-6
           md:grid md:grid-cols-2 md:gap-4 md:overflow-visible
-          lg:grid lg:grid-cols-3 lg:gap-4 scrollbar-transparent
+          lg:grid lg:grid-cols-4 lg:gap-4 scrollbar-transparent
           max-w-[1440px] mx-auto
         "
       >

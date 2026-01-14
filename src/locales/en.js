@@ -257,6 +257,7 @@ export default {
       literature: "HIGH LITERATURE COURSE",
       department: "PERSONNEL DEPARTMENT",
       council: "Academic Council of KGUKI named after B. Beishenalieva",
+      accounting: "ACCOUNTING",
     },
     button: "Learn More",
   },
@@ -935,7 +936,7 @@ export default {
             "More than 40 scientific works published, including:\n – Textbook 'Fundamentals of Pedagogical Skills' (co-authored);\n – Methodological manual 'Fundamentals of Using Didactic Games in Primary Classes';\n – Textbook 'Current Problems of Science and Education' (co-authored).",
         },
       },
-      
+
       {
         name: "Almanbet kyzy Zhanyl",
         post: "Head of the Academic Department",
@@ -1635,49 +1636,214 @@ export default {
   },
   council: {
     title: "Academic Council of KGUKI named after B. Beishenalieva",
-    subtitle: `The Academic Council of the Kyrgyz State University of Culture and Arts named after B. Beishenalieva is a permanent collegial governing body established in accordance with the University's Charter, the Law of the Kyrgyz Republic "On Education, " the Model Regulation on Educational Organizations of the Kyrgyz Republic, and the Regulation on the Academic Council. The Council determines the personnel and educational strategy of the university and makes strategic decisions aimed at developing the scientific, educational-methodological, innovative, cultural, and managerial activities of the institution.` ,
-      functionTitle: "Main Functions of the Academic Council",
-      function: [
-        {
-          name: "1. Strategic Management and Development:",
-          functions: [
-            "approves the university's development strategy, main directions of educational and scientific policy;",
-            "reviews the university's mission, development concept, and education quality assurance system."
-          ]
-        },
-        {
-          name: "2. Educational and Scientific Activities:",
-          functions: [
-            "approves curriculum, educational programs, and regulations for organizing the educational process;",
-            "reports on teachers' research and teaching-methodological work;",
-            "approves dissertation research topics and appoints scientific supervisors;",
-            "considers recommendations for awarding academic degrees and titles."
-          ]
-        },
-        {
-          name: "3. Personnel Policy:",
-          functions: [
-            "submits proposals for the appointment of teachers and staff, their career advancement and incentives;",
-            "considers issues related to the opening of new departments, faculties, and scientific centers."
-          ]
-        },
-        {
-          name: "4. Academic Ethics and Integrity:",
-          functions: [
-            "monitors compliance with academic ethics standards, scientific integrity, and prevention of plagiarism;",
-            "reviews disciplinary and academic matters and develops relevant recommendations."
-          ]
-        },
-        {
-          name: "5. Cultural, Educational and Social Activities:",
-          functions: [
-            "supports programs for creative, educational, and cultural activities of the university;",
-            "considers directions for developing international relations and cooperation."
-          ]
-        }
-      ],
-      compositionProcedure: "Composition and Operating Procedure of the Academic Council",
-      composition: "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
-      procedure: "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation."
+    subtitle: `The Academic Council of the Kyrgyz State University of Culture and Arts named after B. Beishenalieva is a permanent collegial governing body established in accordance with the University's Charter, the Law of the Kyrgyz Republic "On Education, " the Model Regulation on Educational Organizations of the Kyrgyz Republic, and the Regulation on the Academic Council. The Council determines the personnel and educational strategy of the university and makes strategic decisions aimed at developing the scientific, educational-methodological, innovative, cultural, and managerial activities of the institution.`,
+    functionTitle: "Main Functions of the Academic Council",
+    function: [
+      {
+        name: "1. Strategic Management and Development:",
+        functions: [
+          "approves the university's development strategy, main directions of educational and scientific policy;",
+          "reviews the university's mission, development concept, and education quality assurance system."
+        ]
+      },
+      {
+        name: "2. Educational and Scientific Activities:",
+        functions: [
+          "approves curriculum, educational programs, and regulations for organizing the educational process;",
+          "reports on teachers' research and teaching-methodological work;",
+          "approves dissertation research topics and appoints scientific supervisors;",
+          "considers recommendations for awarding academic degrees and titles."
+        ]
+      },
+      {
+        name: "3. Personnel Policy:",
+        functions: [
+          "submits proposals for the appointment of teachers and staff, their career advancement and incentives;",
+          "considers issues related to the opening of new departments, faculties, and scientific centers."
+        ]
+      },
+      {
+        name: "4. Academic Ethics and Integrity:",
+        functions: [
+          "monitors compliance with academic ethics standards, scientific integrity, and prevention of plagiarism;",
+          "reviews disciplinary and academic matters and develops relevant recommendations."
+        ]
+      },
+      {
+        name: "5. Cultural, Educational and Social Activities:",
+        functions: [
+          "supports programs for creative, educational, and cultural activities of the university;",
+          "considers directions for developing international relations and cooperation."
+        ]
+      }
+    ],
+    compositionProcedure: "Composition and Operating Procedure of the Academic Council",
+    composition: "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
+    procedure: "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation."
+  }, "firstAccounting": {
+    "title": "Duration of study: 6 years (extramural form)",
+    "price": "Tuition fee (KGS)",
+    "specialty": "Specialty",
+    "code": "Code",
+    "courses": ["1 year", "2 year", "3 year", "4 year", "5 year", "6 year"],
+    "rows": [
+      {
+        "id": 1,
+        "name": "Acting",
+        "code": "570014",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 2,
+        "name": "Sound Engineering (by fields of application)",
+        "code": "570013",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 3,
+        "name": "Directing (by fields of application)",
+        "code": "570015",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 4,
+        "name": "Cinematography (Camera Operator)",
+        "code": "570006",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 5,
+        "name": "Fine Arts Education (Bachelor’s degree)",
+        "code": "550600",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000"]
+      },
+      {
+        "id": 6,
+        "name": "Choreography Pedagogy",
+        "code": "570019",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 7,
+        "name": "Literary Creativity",
+        "code": "570027",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 8,
+        "name": "Socio-cultural Activities",
+        "code": "570029",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 9,
+        "name": "Pop Ensemble Performer (vocalist, instrumentalist), teacher",
+        "code": "",
+        "prices": [
+          ["60 000 soloist", "40 000 instrumentalist"],
+          "32 000",
+          "32 000",
+          "32 000",
+          "32 000",
+          "32 000"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Folk Orchestra Conductor, teacher",
+        "code": "",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 11,
+        "name": "Folk Choir Conductor, teacher",
+        "code": "",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 12,
+        "name": "Traditional Music and Folklore (vocalist, instrumentalist), teacher",
+        "code": "",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 13,
+        "name": "Film Studies",
+        "code": "570005",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      },
+      {
+        "id": 14,
+        "name": "Theatre Studies",
+        "code": "570002",
+        "prices": ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"]
+      }
+    ]
   },
+  "accounting": {
+    "service": "Service name",
+    "amount": "Amount",
+    "rows": [
+      {
+        "id": 1,
+        "name": "For admission of applicants and processing of documents",
+        "price": "480-00"
+      },
+      {
+        "id": 2,
+        "name": "Dormitory accommodation fee for students (per month)",
+        "price": "1300-00"
+      },
+      {
+        "id": 3,
+        "name": "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m (part-time employees)",
+        "price": "13000-00"
+      },
+      {
+        "id": 4,
+        "name": "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
+        "price": "11000-00"
+      },
+      {
+        "id": 5,
+        "name": "Dormitory accommodation fee for educational institution employees (per month) 30 sq.m (part-time employees)",
+        "price": "9000-00"
+      },
+      {
+        "id": 6,
+        "name": "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m",
+        "price": "6000-00"
+      },
+      {
+        "id": 7,
+        "name": "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
+        "price": "5000-00"
+      },
+      {
+        "id": 8,
+        "name": "Transfer and reinstatement of studies",
+        "price": "800-00"
+      },
+      {
+        "id": 9,
+        "name": "Transfer and reinstatement of studies (for foreign students)",
+        "price": "1600-00"
+      },
+      {
+        "id": 10,
+        "name": "Academic certificate",
+        "price": "250-00"
+      },
+      {
+        "id": 11,
+        "name": "For passing subject differences when transferring students from other educational institutions",
+        "price": "300-00"
+      },
+      {
+        "id": 12,
+        "name": "Professional development course",
+        "price": "10000-00"
+      }
+    ]
+  }
 };
