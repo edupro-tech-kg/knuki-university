@@ -107,37 +107,27 @@ export default {
     ],
     badge: "Live stage at KNUCA",
   },
-  programs: {
-    eyebrow: "KNUCA DIRECTIONS",
-    faculty: "faculty",
-    buttonText: "More Details",
-    list: [
-      {
-        id: 1,
-        title: "Choreography faculty",
-      },
-      {
-        id: 2,
-        title: "Faculty of folk music",
-      },
-      {
-        id: 3,
-        title: "Faculty of pop and music education",
-      },
-      {
-        id: 4,
-        title: "Faculty of theatre",
-      },
-      {
-        id: 5,
-        title: "Faculty of film and television",
-      },
-      {
-        id: 6,
-        title: "Graduate and postgraduate studies",
-      },
-    ],
-  },
+    "programs": {
+      "eyebrow": "DIRECTIONS",
+      "list": [
+        {
+          "id": 1,
+          "title": "Socio-cultural activities"
+        },
+        {
+          "id": 2,
+          "title": "Choreography"
+        },
+        {
+          "id": 3,
+          "title": "Musical performance (by type)"
+        },
+        {
+          "id": 4,
+          "title": "Music teacher"
+        }
+      ]
+    },
   advantages: {
     eyebrow: "Why us",
     title: "University strengths",
