@@ -406,14 +406,14 @@ export default {
       {
         id: "students",
         title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
-        buttonText: "more"
+        buttonText: "more",
       },
       {
         id: "instruments",
         title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
-        buttonText: "more"
-      }
-    ]
+        buttonText: "more",
+      },
+    ],
   },
   consultation: {
     title: "Sign up for a consultation",
@@ -442,7 +442,7 @@ export default {
     },
   },
   dropdownForm: {
-    select: "Choose"
+    select: "Choose",
   },
   historyPage: {
     title: "HISTORY",
@@ -547,7 +547,7 @@ export default {
         1. To grant the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva the status of “National” and hereinafter name it the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. 
         2. To instruct the Cabinet of Ministers of the Kyrgyz Republic to bring its decisions into compliance with this Decree.
         3. To assign control over the implementation of this Decree to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Presidential Administration of the Kyrgyz Republic. 
-        4. This Decree shall enter into force seven days after its official publication.`
+        4. This Decree shall enter into force seven days after its official publication.`,
       },
       {
         id: "gym",
@@ -691,7 +691,7 @@ export default {
     },
   ],
   studentsLife: {
-    numbersTitle: "We in Numbers"
+    numbersTitle: "We in Numbers",
   },
   libraryDescription: {
     title: "Scientific Library of KNUCA named after B. Beishenalieva",
@@ -733,8 +733,7 @@ export default {
       },
       {
         id: 5,
-        content:
-          "Sheet music lending department and a special musical literature lending section",
+        content: "Sheet music lending department and a special musical literature lending section",
       },
       {
         id: 6,
@@ -869,11 +868,13 @@ export default {
         post: "Rector",
         additionalInfo: {
           academicDegree: "Postgraduate and Master's, KNUKI named after B.Beishenalieva. Bishkek.",
-          education: "Higher education, graduated with honors from the Faculty of Kyrgyz Philology of OshSU (diploma No. CD090149423) 2009. \n Candidate of Philological Sciences (No. 1 1k-1/31. IKD No. 001143 01/29/2015), \n Associate Professor (No. 6dc-2/9. DA No.002177 06/25/2019).\n Graduated from the Law Faculty of OshSU (diploma No. UB 190197452 2019).",
-          workExperience: "2012-2016 Music School No.5, Bishkek. \n 2016-2025 KUMI named after B.Beishenalieva, Bishkek. \n Since 2023 Chairman of the trade union organization of KUMI named after B.Beishenalieva. \n Since 2024 KNUKI, Bishkek, Head of the Department of Traditional Music and Folklore, Senior Lecturer.",
+          education:
+            "Higher education, graduated with honors from the Faculty of Kyrgyz Philology of OshSU (diploma No. CD090149423) 2009. \n Candidate of Philological Sciences (No. 1 1k-1/31. IKD No. 001143 01/29/2015), \n Associate Professor (No. 6dc-2/9. DA No.002177 06/25/2019).\n Graduated from the Law Faculty of OshSU (diploma No. UB 190197452 2019).",
+          workExperience:
+            "2012-2016 Music School No.5, Bishkek. \n 2016-2025 KUMI named after B.Beishenalieva, Bishkek. \n Since 2023 Chairman of the trade union organization of KUMI named after B.Beishenalieva. \n Since 2024 KNUKI, Bishkek, Head of the Department of Traditional Music and Folklore, Senior Lecturer.",
           computerSkills: "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, internet.",
           languages: "Kyrgyz (native), Russian (fluent)",
-        }
+        },
       },
       {
         name: "Abdigaparov Nurtilek Abdigaparovich",
@@ -935,7 +936,7 @@ export default {
             "More than 40 scientific works published, including:\n – Textbook 'Fundamentals of Pedagogical Skills' (co-authored);\n – Methodological manual 'Fundamentals of Using Didactic Games in Primary Classes';\n – Textbook 'Current Problems of Science and Education' (co-authored).",
         },
       },
-      
+
       {
         name: "Almanbet kyzy Zhanyl",
         post: "Head of the Academic Department",
@@ -1119,18 +1120,25 @@ export default {
           residence: "Bishkek, Alamudun District, Bektoo Dacha, 13th line, house 4",
           contact: "+996708771171",
           email: "kumar.ergesheva2@gmail.com",
-          education: "1979–1983 — Bishkek, M. Kurenkeev KGMU. Qualification: teacher of bass kyak class, conductor of national instruments orchestra.\n1983–1988 — B. Beyshenalieva KGII. Qualification: concert performer, teacher of bass kyak class, conductor of national instruments orchestra.",
-          workExperience: "1988–2012 — P. F. Shubin Central Music School, Bishkek — komuz class teacher.\n2012–Feb 2024 — Social worker, Public Association “Center for Child Protection”.\n2016–2018 — Project coordinator FSDS, PA “Center for Child Protection”.\n2018–2020 — Project coordinator, Association of NGOs for the Promotion of Children’s Rights and Interests in Kyrgyzstan: \"Promoting access of children of internal and labor migrants to state services according to their needs\".\n2018–2020 — Member of the Working Group of the Jogorku Kenesh for monitoring the implementation of the Law on Social Benefits of the Kyrgyz Republic.\n2019–2021 — Project coordinator UNICEF \"Social Mobilization for Immunization in New Settlements\", PA “Center for Child Protection”.\nSince 2024 — Head of Practice and Career Department, KNUKI named after B. Beyshenalieva.\n2010 — Hotline operator for the Soros Foundation and Crisis Center “Sezim” project on June events in the south.\n2010 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.\n2011 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.",
-          courses: "2005–2011 — Trainings by NGO “Arish”.\n2009 — Certificate from INTRAC CA for active participation in three-module training project \"From Self-Help to Leadership: Developing Youth and Women’s Leadership\".\n2007–2009 — Certificate, ACT-Development project “Strengthening NGOs for the Development of Self-Help Movement”.\nJune 2011 — Training “Budget Practicum on the Example of the Local Budget of Bishkek”, Issyk-Kul, PA “Center for Child Protection”.\nSeptember 2011 — Certificate for participation in the forum “Development of Women’s Leadership in Kyrgyzstan and Capacity Building”, NGO LEGACY INTERNATIONAL and International Center Interbilim.\n2014 — Training “Psycho-Social Assistance to Children in Difficult Life Situations”.\n2017 — Certificate for participation in the training “Leadership School”, Women’s Learning Partnership (WLP).\n2018 — Certificate for participation in the training “Civic Education of Youth through Arts Elements”, Youth Development Institute.\n2018 — Certificate for participation in the training “SMM in NGO Development”, ARGO.\n2021–2022 — Certificate for completing the qualification improvement course “Social Work: Paralegal Activity”, MUK.\n2022 — UNICEF training “Prevention of Sexual Exploitation and Abuse (PSEA)”.\n2021 — Certificate for participation in the training “Promoting Initiatives in the Field of Culture”, OF “Music Without Borders”.",
-          publications: "2009 — Presentation on \"Development of GSP Leadership\" at the 2nd GSP Social Fair, Republic of Tajikistan.\n7–8 Dec 2011 — Presentation on \"Problems of Coverage and Accessibility of Basic Education\" at the National Forum \"Social Pedagogy in Kyrgyzstan: Problems and Perspectives\".\n2025 — Presentation on \"Contemporary Challenges of Traditional Music in Kyrgyzstan\" at the International Scientific-Theoretical Conference \"Actual Issues of Art Studies: Tradition and Modernity\".\n2004 — Author of the textbook “Collection of New Rhythm Melodies”.",
+          education:
+            "1979–1983 — Bishkek, M. Kurenkeev KGMU. Qualification: teacher of bass kyak class, conductor of national instruments orchestra.\n1983–1988 — B. Beyshenalieva KGII. Qualification: concert performer, teacher of bass kyak class, conductor of national instruments orchestra.",
+          workExperience:
+            '1988–2012 — P. F. Shubin Central Music School, Bishkek — komuz class teacher.\n2012–Feb 2024 — Social worker, Public Association “Center for Child Protection”.\n2016–2018 — Project coordinator FSDS, PA “Center for Child Protection”.\n2018–2020 — Project coordinator, Association of NGOs for the Promotion of Children’s Rights and Interests in Kyrgyzstan: "Promoting access of children of internal and labor migrants to state services according to their needs".\n2018–2020 — Member of the Working Group of the Jogorku Kenesh for monitoring the implementation of the Law on Social Benefits of the Kyrgyz Republic.\n2019–2021 — Project coordinator UNICEF "Social Mobilization for Immunization in New Settlements", PA “Center for Child Protection”.\nSince 2024 — Head of Practice and Career Department, KNUKI named after B. Beyshenalieva.\n2010 — Hotline operator for the Soros Foundation and Crisis Center “Sezim” project on June events in the south.\n2010 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.\n2011 — Project coordinator, BC “Buchur”, USAID “Quality Education” project.',
+          courses:
+            '2005–2011 — Trainings by NGO “Arish”.\n2009 — Certificate from INTRAC CA for active participation in three-module training project "From Self-Help to Leadership: Developing Youth and Women’s Leadership".\n2007–2009 — Certificate, ACT-Development project “Strengthening NGOs for the Development of Self-Help Movement”.\nJune 2011 — Training “Budget Practicum on the Example of the Local Budget of Bishkek”, Issyk-Kul, PA “Center for Child Protection”.\nSeptember 2011 — Certificate for participation in the forum “Development of Women’s Leadership in Kyrgyzstan and Capacity Building”, NGO LEGACY INTERNATIONAL and International Center Interbilim.\n2014 — Training “Psycho-Social Assistance to Children in Difficult Life Situations”.\n2017 — Certificate for participation in the training “Leadership School”, Women’s Learning Partnership (WLP).\n2018 — Certificate for participation in the training “Civic Education of Youth through Arts Elements”, Youth Development Institute.\n2018 — Certificate for participation in the training “SMM in NGO Development”, ARGO.\n2021–2022 — Certificate for completing the qualification improvement course “Social Work: Paralegal Activity”, MUK.\n2022 — UNICEF training “Prevention of Sexual Exploitation and Abuse (PSEA)”.\n2021 — Certificate for participation in the training “Promoting Initiatives in the Field of Culture”, OF “Music Without Borders”.',
+          publications:
+            '2009 — Presentation on "Development of GSP Leadership" at the 2nd GSP Social Fair, Republic of Tajikistan.\n7–8 Dec 2011 — Presentation on "Problems of Coverage and Accessibility of Basic Education" at the National Forum "Social Pedagogy in Kyrgyzstan: Problems and Perspectives".\n2025 — Presentation on "Contemporary Challenges of Traditional Music in Kyrgyzstan" at the International Scientific-Theoretical Conference "Actual Issues of Art Studies: Tradition and Modernity".\n2004 — Author of the textbook “Collection of New Rhythm Melodies”.',
           computerSkills: "Confident PC user.",
-          professionalSkills: "Experience in conducting trainings.\nExtensive experience working in residential areas and with families in difficult life situations, Bishkek.",
-          personalQualities: "Leadership, openness, communicativeness, principled, stress-resistant, tolerant.",
-          languages: "Kyrgyz — native, Russian — fluent, Turkish — conversational, English — basic.",
-          awards: "2009 — Excellent in Education.\n2009 — Excellent in Culture of the Kyrgyz Republic.\nLetter of Appreciation, USAID “Quality Education” project.\n2022 — Certificate of Honor, Ministry of Labor and Social Development of the Kyrgyz Republic."
-        }
-      }
-
+          professionalSkills:
+            "Experience in conducting trainings.\nExtensive experience working in residential areas and with families in difficult life situations, Bishkek.",
+          personalQualities:
+            "Leadership, openness, communicativeness, principled, stress-resistant, tolerant.",
+          languages:
+            "Kyrgyz — native, Russian — fluent, Turkish — conversational, English — basic.",
+          awards:
+            "2009 — Excellent in Education.\n2009 — Excellent in Culture of the Kyrgyz Republic.\nLetter of Appreciation, USAID “Quality Education” project.\n2022 — Certificate of Honor, Ministry of Labor and Social Development of the Kyrgyz Republic.",
+        },
+      },
     ],
   },
   HRdepartment: {
@@ -1498,52 +1506,42 @@ export default {
   },
   sciencePage: {
     title: "SCIENCE AND INTERNATIONAL RELATIONS",
-    infos: [
-      {
-        text: "Information about the Department of Science and International Relations. The department of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit responsible for organizing, coordinating, and developing research activities at the university. The department is one of the key implementers of the university’s strategic goal to become a scientific and creative center contributing to the development of national and global arts.",
-      },
-      {
-        text: "The Department supports the scientific activities of faculty members, master’s students, doctoral candidates, and students, aiming to enhance the university’s research potential and ensure the integration of science, education, and creative activity.",
-      },
-      {
-        text: "The department implements the university’s research policy, improves the quality and effectiveness of research, ensures competitive scientific outcomes at national and international levels, and systematically develops research personnel training. In 2023, postgraduate programs were launched in 17.00.02 – Musical Art and 24.00.01 – History and Theory of Culture and Arts.",
-      },
-      {
-        text: "The university annually hosts scientific and practical conferences, meetings, seminars, internships, master classes, and round tables. Faculty members actively publish articles in Scopus, Web of Science, RSCI, and national journals. University scholars produce textbooks, methodological materials, and scientific and creative works in music, cinema, and theater.",
-      },
-      {
-        text: "Since 2015, the university has published the scientific journal “Bulletin of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.” The journal accepts articles from international and local scholars, doctoral candidates, master’s students, and postgraduate students in culture, arts, pedagogy, and humanities. Articles are published in Kyrgyz, Russian, and English, and the journal is issued quarterly.",
-      },
-      {
-        text: "The main goal of the journal is to promote the results of theoretical and applied research in culture, arts, pedagogy, and humanities, and to attract international scholars for cooperation. The Department actively expands international partnerships through memorandums and agreements with educational, cultural, and scientific institutions worldwide.",
-      },
-    ],
-    name: "Currently, the university cooperates with the following institutions:",
-    list: [
-      "Belgium, Brussels — Belgian International Education Center",
-      "Turkey, Çanakkale — Çanakkale Onsekiz Mart University",
-      "Russian Federation, Moscow — State Institute of Art Studies",
-      "Russian Federation, Yekaterinburg — Yekaterinburg State Theatre Institute",
-      "USA, Virginia — International Foundation for Electoral Systems (IFES), Kyrgyz Republic Office",
-      "Russian Federation, Moscow — S.A. Gerasimov All-Russian State University of Cinematography (VGIK)",
-      "Russian Federation — D.S. Likhachev Institute for Cultural and Natural Heritage",
-      "Azerbaijan, Baku — Azerbaijan State University of Culture and Arts",
-      "Republic of Karakalpakstan, Nukus — Nukus Branch of the State Institute of Arts and Culture of Uzbekistan",
-      "Russian Federation, Chelyabinsk — P.I. Tchaikovsky South Ural State Institute of Arts",
-      "Republic of Tatarstan, Kazan — Kazan State Institute of Culture",
-      "South Korea — Yewon Arts University",
-      "Republic of Kazakhstan, Almaty — T. Zhurgenov Kazakh National Academy of Arts",
-      "Republic of Uzbekistan — B. Zakirov National Institute of Pop Art",
-      "Republic of Kazakhstan, Astana — Kazakh National Academy of Choreography",
-      "Kyrgyz Republic — Eurasia KG Public Foundation",
-      "Kyrgyz Republic — National Broadcasting Corporation",
-      "Kyrgyz Republic — “Altyn Tüyün” National Children’s Engineering Academy",
-      "Kyrgyz Republic — Eurasian International University",
-      "Kyrgyz Republic — I. Arabayev Kyrgyz State University",
-      "Kyrgyz Republic — D. Sadyrbaev Kyrgyztelefilm Studio",
-      "Kyrgyz Republic — Institute of Journalism and Communication of J. Balasagyn Kyrgyz National University",
-      "Kyrgyz Republic — Niyazaly Osh State Music College",
-    ],
+    heroDescription:
+      "The Department of Science and International Relations of B. Beishenalieva Kyrgyz National University of Culture and Arts is a structure that ensures the organization, coordination and development of research activities at the university.",
+    scienceTitle: "Information about research activities",
+    scienceContent1:
+      "At the B. Beishenalieva Kyrgyz National University of Culture and Arts, research activities are an integral part of the educational process and are aimed at developing national culture, art and humanitarian knowledge. The university considers conducting scientific research as one of the priorities that provides a scientifically based analysis of current problems of national and world art, as well as the integration of science and creative activity.",
+    scienceContent2:
+      "The research activities of the university are carried out with the active participation of faculty, graduate students, doctoral students and students. Scientific work is carried out on the basis of fundamental and applied research, the results of which are integrated into the educational process, creative practice and cultural policy.",
+    scienceContent3:
+      "The university annually holds scientific and practical conferences, meetings, seminars, internships, master classes and round tables aimed at developing research activities. Faculty actively publishes scientific articles in publications indexed in Scopus, Web of Science, RSCI databases, as well as in scientific journals of the Kyrgyz Republic. University scientists create textbooks, teaching aids, as well as scientific and creative works in the fields of music, film and theater.",
+    scienceContent4:
+      "The qualitative composition of the faculty is at a high level: the university employs 7 doctors of science, 17 candidates of science, 5 professors and 14 associate professors. In 2023, the university opened graduate programs in specialties 17.00.02 ‒ Musical Art and 24.00.01 ‒ History and Theory of Culture and Art. The opening of graduate programs has become an important stage in expanding the university's research activities, developing scientific schools and training highly qualified scientific and scientific-pedagogical personnel. The number of graduate students increases annually, currently 20 graduate students are studying.",
+    scienceContent5:
+      "The 'Young Scientists' Council, formed from graduate and doctoral students, actively functions at KNUCAI, making a significant contribution to the development of the university's research activities.",
+    scienceContent6:
+      "Since 2015, the university has been publishing the scientific journal 'Bulletin of the B. Beishenalieva Kyrgyz National University of Culture and Arts'. The journal accepts articles from foreign and domestic scientists, doctoral students, graduate students and undergraduates in the fields of culture, art, pedagogy and humanities. The scientific journal publishes articles in Kyrgyz, Russian and English and is published four times a year.",
+    scienceContent7:
+      "The main goal of the scientific journal 'Bulletin of the B. Beishenalieva Kyrgyz National University of Culture and Arts' is to popularize the results of theoretical and applied scientific research and scientific discoveries in the fields of culture, art, pedagogy and humanities, as well as to attract scientists to international scientific cooperation. In general, the research activities of the university are aimed at integration into the national and international scientific space and ensure sustainable development in the interconnection of science, education, culture and art.",
+    internationalTitle: "Information about international relations",
+    internationalContent1:
+      "At the B. Beishenalieva Kyrgyz National University of Culture and Arts, international activities are carried out in accordance with the laws and regulations of the Kyrgyz Republic.",
+    internationalContent2:
+      "The university actively develops international cooperation with foreign higher educational institutions, scientific organizations and cultural institutions, concluding cooperation agreements. These agreements are aimed at exchanging experience in the fields of education, research and creative activities, implementing joint projects and expanding academic ties.",
+    internationalContent3:
+      "Currently, the university cooperates with more than 50 foreign partners, including: Republic of Kazakhstan - Aktobe Regional Philharmonic named after Gaziz Zhubanov; Republic of Uzbekistan - National Institute of Variety Art named after B. Zakirov; Russian Federation - Yekaterinburg State Theater Institute; Republic of Kazakhstan - West Kazakhstan University named after M. Utemisov; Kingdom of Belgium, Brussels - Belgian International Education Center; Republic of Turkey - Canakkale Onsekiz Mart University; Russian Federation - State Institute of Art History; Republic of Uzbekistan - Uzbek National Institute of Musical Art named after Yunus Rajabi; Republic of Kazakhstan - Kazakh National Academy of Choreography; Republic of Uzbekistan, Republic of Karakalpakstan, Nukus - Nukus branch of the State Institute of Art and Culture of Uzbekistan; Republic of Azerbaijan - Azerbaijan State University of Culture and Arts; Russian Federation, Republic of Tatarstan, Kazan - Kazan State Institute of Culture; Republic of Korea - Evon Art University; Republic of Kazakhstan - Kazakh National Academy of Arts named after Temirbek Zhurgenov, Eurasia KG Foundation, Chinese Art Center, etc.",
+    internationalContent4:
+      "Within the framework of international agreements, joint scientific research is conducted, international conferences, seminars, master classes and creative events are organized. University faculty are regularly invited as jury members to international competitions and festivals.",
+    internationalContent5:
+      "Academic mobility is one of the key areas of the university's international cooperation. Students, graduate students, doctoral students and faculty have the opportunity to study, teach and undergo scientific internships at foreign universities within the framework of academic exchange programs.",
+    internationalContent6:
+      "Academic mobility contributes to improving the quality of education, mastering international experience and strengthening the university's competitiveness at the international level.",
+    internationalContent7:
+      "The university actively participates in international educational and research projects, as well as cultural and creative programs. International projects are aimed at introducing innovative educational technologies, developing scientific and creative potential and increasing the international prestige of the university.",
+    internationalContent8:
+      "Within the framework of projects, joint research, creative projects, concert programs, exhibitions and training seminars are implemented with the participation of foreign partners.",
+    internationalContent9:
+      "The university actively participates in international conferences, forums, symposiums, festivals and creative competitions, and also acts as an organizer. These events contribute to the promotion of the university's scientific and creative achievements in the international community.",
   },
   rector: {
     eyebrow: "Rector’s Address",
@@ -1635,49 +1633,51 @@ export default {
   },
   council: {
     title: "Academic Council of KGUKI named after B. Beishenalieva",
-    subtitle: `The Academic Council of the Kyrgyz State University of Culture and Arts named after B. Beishenalieva is a permanent collegial governing body established in accordance with the University's Charter, the Law of the Kyrgyz Republic "On Education, " the Model Regulation on Educational Organizations of the Kyrgyz Republic, and the Regulation on the Academic Council. The Council determines the personnel and educational strategy of the university and makes strategic decisions aimed at developing the scientific, educational-methodological, innovative, cultural, and managerial activities of the institution.` ,
-      functionTitle: "Main Functions of the Academic Council",
-      function: [
-        {
-          name: "1. Strategic Management and Development:",
-          functions: [
-            "approves the university's development strategy, main directions of educational and scientific policy;",
-            "reviews the university's mission, development concept, and education quality assurance system."
-          ]
-        },
-        {
-          name: "2. Educational and Scientific Activities:",
-          functions: [
-            "approves curriculum, educational programs, and regulations for organizing the educational process;",
-            "reports on teachers' research and teaching-methodological work;",
-            "approves dissertation research topics and appoints scientific supervisors;",
-            "considers recommendations for awarding academic degrees and titles."
-          ]
-        },
-        {
-          name: "3. Personnel Policy:",
-          functions: [
-            "submits proposals for the appointment of teachers and staff, their career advancement and incentives;",
-            "considers issues related to the opening of new departments, faculties, and scientific centers."
-          ]
-        },
-        {
-          name: "4. Academic Ethics and Integrity:",
-          functions: [
-            "monitors compliance with academic ethics standards, scientific integrity, and prevention of plagiarism;",
-            "reviews disciplinary and academic matters and develops relevant recommendations."
-          ]
-        },
-        {
-          name: "5. Cultural, Educational and Social Activities:",
-          functions: [
-            "supports programs for creative, educational, and cultural activities of the university;",
-            "considers directions for developing international relations and cooperation."
-          ]
-        }
-      ],
-      compositionProcedure: "Composition and Operating Procedure of the Academic Council",
-      composition: "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
-      procedure: "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation."
+    subtitle: `The Academic Council of the Kyrgyz State University of Culture and Arts named after B. Beishenalieva is a permanent collegial governing body established in accordance with the University's Charter, the Law of the Kyrgyz Republic "On Education, " the Model Regulation on Educational Organizations of the Kyrgyz Republic, and the Regulation on the Academic Council. The Council determines the personnel and educational strategy of the university and makes strategic decisions aimed at developing the scientific, educational-methodological, innovative, cultural, and managerial activities of the institution.`,
+    functionTitle: "Main Functions of the Academic Council",
+    function: [
+      {
+        name: "1. Strategic Management and Development:",
+        functions: [
+          "approves the university's development strategy, main directions of educational and scientific policy;",
+          "reviews the university's mission, development concept, and education quality assurance system.",
+        ],
+      },
+      {
+        name: "2. Educational and Scientific Activities:",
+        functions: [
+          "approves curriculum, educational programs, and regulations for organizing the educational process;",
+          "reports on teachers' research and teaching-methodological work;",
+          "approves dissertation research topics and appoints scientific supervisors;",
+          "considers recommendations for awarding academic degrees and titles.",
+        ],
+      },
+      {
+        name: "3. Personnel Policy:",
+        functions: [
+          "submits proposals for the appointment of teachers and staff, their career advancement and incentives;",
+          "considers issues related to the opening of new departments, faculties, and scientific centers.",
+        ],
+      },
+      {
+        name: "4. Academic Ethics and Integrity:",
+        functions: [
+          "monitors compliance with academic ethics standards, scientific integrity, and prevention of plagiarism;",
+          "reviews disciplinary and academic matters and develops relevant recommendations.",
+        ],
+      },
+      {
+        name: "5. Cultural, Educational and Social Activities:",
+        functions: [
+          "supports programs for creative, educational, and cultural activities of the university;",
+          "considers directions for developing international relations and cooperation.",
+        ],
+      },
+    ],
+    compositionProcedure: "Composition and Operating Procedure of the Academic Council",
+    composition:
+      "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
+    procedure:
+      "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation.",
   },
 };
