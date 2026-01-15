@@ -1527,52 +1527,42 @@ export default {
   },
   sciencePage: {
     title: "SCIENCE AND INTERNATIONAL RELATIONS",
-    infos: [
-      {
-        text: "Information about the Department of Science and International Relations. The department of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit responsible for organizing, coordinating, and developing research activities at the university. The department is one of the key implementers of the university’s strategic goal to become a scientific and creative center contributing to the development of national and global arts.",
-      },
-      {
-        text: "The Department supports the scientific activities of faculty members, master’s students, doctoral candidates, and students, aiming to enhance the university’s research potential and ensure the integration of science, education, and creative activity.",
-      },
-      {
-        text: "The department implements the university’s research policy, improves the quality and effectiveness of research, ensures competitive scientific outcomes at national and international levels, and systematically develops research personnel training. In 2023, postgraduate programs were launched in 17.00.02 – Musical Art and 24.00.01 – History and Theory of Culture and Arts.",
-      },
-      {
-        text: "The university annually hosts scientific and practical conferences, meetings, seminars, internships, master classes, and round tables. Faculty members actively publish articles in Scopus, Web of Science, RSCI, and national journals. University scholars produce textbooks, methodological materials, and scientific and creative works in music, cinema, and theater.",
-      },
-      {
-        text: "Since 2015, the university has published the scientific journal “Bulletin of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.” The journal accepts articles from international and local scholars, doctoral candidates, master’s students, and postgraduate students in culture, arts, pedagogy, and humanities. Articles are published in Kyrgyz, Russian, and English, and the journal is issued quarterly.",
-      },
-      {
-        text: "The main goal of the journal is to promote the results of theoretical and applied research in culture, arts, pedagogy, and humanities, and to attract international scholars for cooperation. The Department actively expands international partnerships through memorandums and agreements with educational, cultural, and scientific institutions worldwide.",
-      },
-    ],
-    name: "Currently, the university cooperates with the following institutions:",
-    list: [
-      "Belgium, Brussels — Belgian International Education Center",
-      "Turkey, Çanakkale — Çanakkale Onsekiz Mart University",
-      "Russian Federation, Moscow — State Institute of Art Studies",
-      "Russian Federation, Yekaterinburg — Yekaterinburg State Theatre Institute",
-      "USA, Virginia — International Foundation for Electoral Systems (IFES), Kyrgyz Republic Office",
-      "Russian Federation, Moscow — S.A. Gerasimov All-Russian State University of Cinematography (VGIK)",
-      "Russian Federation — D.S. Likhachev Institute for Cultural and Natural Heritage",
-      "Azerbaijan, Baku — Azerbaijan State University of Culture and Arts",
-      "Republic of Karakalpakstan, Nukus — Nukus Branch of the State Institute of Arts and Culture of Uzbekistan",
-      "Russian Federation, Chelyabinsk — P.I. Tchaikovsky South Ural State Institute of Arts",
-      "Republic of Tatarstan, Kazan — Kazan State Institute of Culture",
-      "South Korea — Yewon Arts University",
-      "Republic of Kazakhstan, Almaty — T. Zhurgenov Kazakh National Academy of Arts",
-      "Republic of Uzbekistan — B. Zakirov National Institute of Pop Art",
-      "Republic of Kazakhstan, Astana — Kazakh National Academy of Choreography",
-      "Kyrgyz Republic — Eurasia KG Public Foundation",
-      "Kyrgyz Republic — National Broadcasting Corporation",
-      "Kyrgyz Republic — “Altyn Tüyün” National Children’s Engineering Academy",
-      "Kyrgyz Republic — Eurasian International University",
-      "Kyrgyz Republic — I. Arabayev Kyrgyz State University",
-      "Kyrgyz Republic — D. Sadyrbaev Kyrgyztelefilm Studio",
-      "Kyrgyz Republic — Institute of Journalism and Communication of J. Balasagyn Kyrgyz National University",
-      "Kyrgyz Republic — Niyazaly Osh State Music College",
-    ],
+    heroDescription:
+      "The Department of Science and International Relations of B. Beishenalieva Kyrgyz National University of Culture and Arts is a structure that ensures the organization, coordination and development of research activities at the university.",
+    scienceTitle: "Information about research activities",
+    scienceContent1:
+      "At the B. Beishenalieva Kyrgyz National University of Culture and Arts, research activities are an integral part of the educational process and are aimed at developing national culture, art and humanitarian knowledge. The university considers conducting scientific research as one of the priorities that provides a scientifically based analysis of current problems of national and world art, as well as the integration of science and creative activity.",
+    scienceContent2:
+      "The research activities of the university are carried out with the active participation of faculty, graduate students, doctoral students and students. Scientific work is carried out on the basis of fundamental and applied research, the results of which are integrated into the educational process, creative practice and cultural policy.",
+    scienceContent3:
+      "The university annually holds scientific and practical conferences, meetings, seminars, internships, master classes and round tables aimed at developing research activities. Faculty actively publishes scientific articles in publications indexed in Scopus, Web of Science, RSCI databases, as well as in scientific journals of the Kyrgyz Republic. University scientists create textbooks, teaching aids, as well as scientific and creative works in the fields of music, film and theater.",
+    scienceContent4:
+      "The qualitative composition of the faculty is at a high level: the university employs 7 doctors of science, 17 candidates of science, 5 professors and 14 associate professors. In 2023, the university opened graduate programs in specialties 17.00.02 ‒ Musical Art and 24.00.01 ‒ History and Theory of Culture and Art. The opening of graduate programs has become an important stage in expanding the university's research activities, developing scientific schools and training highly qualified scientific and scientific-pedagogical personnel. The number of graduate students increases annually, currently 20 graduate students are studying.",
+    scienceContent5:
+      "The 'Young Scientists' Council, formed from graduate and doctoral students, actively functions at KNUCAI, making a significant contribution to the development of the university's research activities.",
+    scienceContent6:
+      "Since 2015, the university has been publishing the scientific journal 'Bulletin of the B. Beishenalieva Kyrgyz National University of Culture and Arts'. The journal accepts articles from foreign and domestic scientists, doctoral students, graduate students and undergraduates in the fields of culture, art, pedagogy and humanities. The scientific journal publishes articles in Kyrgyz, Russian and English and is published four times a year.",
+    scienceContent7:
+      "The main goal of the scientific journal 'Bulletin of the B. Beishenalieva Kyrgyz National University of Culture and Arts' is to popularize the results of theoretical and applied scientific research and scientific discoveries in the fields of culture, art, pedagogy and humanities, as well as to attract scientists to international scientific cooperation. In general, the research activities of the university are aimed at integration into the national and international scientific space and ensure sustainable development in the interconnection of science, education, culture and art.",
+    internationalTitle: "Information about international relations",
+    internationalContent1:
+      "At the B. Beishenalieva Kyrgyz National University of Culture and Arts, international activities are carried out in accordance with the laws and regulations of the Kyrgyz Republic.",
+    internationalContent2:
+      "The university actively develops international cooperation with foreign higher educational institutions, scientific organizations and cultural institutions, concluding cooperation agreements. These agreements are aimed at exchanging experience in the fields of education, research and creative activities, implementing joint projects and expanding academic ties.",
+    internationalContent3:
+      "Currently, the university cooperates with more than 50 foreign partners, including: Republic of Kazakhstan - Aktobe Regional Philharmonic named after Gaziz Zhubanov; Republic of Uzbekistan - National Institute of Variety Art named after B. Zakirov; Russian Federation - Yekaterinburg State Theater Institute; Republic of Kazakhstan - West Kazakhstan University named after M. Utemisov; Kingdom of Belgium, Brussels - Belgian International Education Center; Republic of Turkey - Canakkale Onsekiz Mart University; Russian Federation - State Institute of Art History; Republic of Uzbekistan - Uzbek National Institute of Musical Art named after Yunus Rajabi; Republic of Kazakhstan - Kazakh National Academy of Choreography; Republic of Uzbekistan, Republic of Karakalpakstan, Nukus - Nukus branch of the State Institute of Art and Culture of Uzbekistan; Republic of Azerbaijan - Azerbaijan State University of Culture and Arts; Russian Federation, Republic of Tatarstan, Kazan - Kazan State Institute of Culture; Republic of Korea - Evon Art University; Republic of Kazakhstan - Kazakh National Academy of Arts named after Temirbek Zhurgenov, Eurasia KG Foundation, Chinese Art Center, etc.",
+    internationalContent4:
+      "Within the framework of international agreements, joint scientific research is conducted, international conferences, seminars, master classes and creative events are organized. University faculty are regularly invited as jury members to international competitions and festivals.",
+    internationalContent5:
+      "Academic mobility is one of the key areas of the university's international cooperation. Students, graduate students, doctoral students and faculty have the opportunity to study, teach and undergo scientific internships at foreign universities within the framework of academic exchange programs.",
+    internationalContent6:
+      "Academic mobility contributes to improving the quality of education, mastering international experience and strengthening the university's competitiveness at the international level.",
+    internationalContent7:
+      "The university actively participates in international educational and research projects, as well as cultural and creative programs. International projects are aimed at introducing innovative educational technologies, developing scientific and creative potential and increasing the international prestige of the university.",
+    internationalContent8:
+      "Within the framework of projects, joint research, creative projects, concert programs, exhibitions and training seminars are implemented with the participation of foreign partners.",
+    internationalContent9:
+      "The university actively participates in international conferences, forums, symposiums, festivals and creative competitions, and also acts as an organizer. These events contribute to the promotion of the university's scientific and creative achievements in the international community.",
   },
   rector: {
     eyebrow: "Rector’s Address",
@@ -1710,6 +1700,7 @@ export default {
       "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
     procedure:
       "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation.",
+    buttonText: "Academic Council Regulations",
   },
   firstAccounting: {
     title: "Duration of study: 6 years (extramural form)",
