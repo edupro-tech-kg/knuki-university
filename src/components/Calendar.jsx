@@ -30,9 +30,9 @@ export default function Calendar({
   const [activeView, setActiveView] = useState("dayGridMonth");
   const calendarRef = useRef();
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const calendar = t("calendar");
-  const locale = t("locale");
+  const locale = i18n.language;
 
   const dayNamesShort = calendar.days.dayNamesShort;
   const events = overrideEvents ?? calendar.events ?? [];
@@ -114,6 +114,7 @@ export default function Calendar({
       </div>
 
       <FullCalendar
+        key={locale}
         plugins={[dayGridPlugin, timeGridPlugin, listPlugin]}
         initialView={activeView}
         initialDate={initialDate ?? new Date()}
@@ -146,11 +147,16 @@ export default function Calendar({
             arg.el.setAttribute("title", holidayTitle);
             // Add a visible label inside the day cell (month view).
             const frame = arg.el.querySelector(".fc-daygrid-day-frame");
-            if (frame && !frame.querySelector(".holiday-label")) {
-              const label = document.createElement("div");
-              label.className = "holiday-label";
-              label.textContent = holidayTitle;
-              frame.appendChild(label);
+            if (frame) {
+              const existing = frame.querySelector(".holiday-label");
+              if (existing) {
+                existing.textContent = holidayTitle;
+              } else {
+                const label = document.createElement("div");
+                label.className = "holiday-label";
+                label.textContent = holidayTitle;
+                frame.appendChild(label);
+              }
             }
           }
         }}
