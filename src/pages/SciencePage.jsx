@@ -98,7 +98,7 @@ function ScienceHero({ title, description, heroBackground }) {
           </div>
 
           <div className="flex-1 text-white">
-            <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+            <p className="text-sm md:text-base leading-relaxed whitespace-pre-line mt-44">
               {description}
             </p>
           </div>
