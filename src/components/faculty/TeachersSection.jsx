@@ -9,12 +9,16 @@ export default function TeachersSection({ teachers }) {
             key={idx}
             className="bg-[#751715] text-white border border-[#5f1112] rounded-sm shadow-md flex flex-col md:flex-row"
           >
-            <div className="md:w-36 lg:w-40 shrink-0">
-              <img
-                src={teacher.photo}
-                alt={teacher.name}
-                className="h-full w-full object-cover md:min-h-[200px]"
-              />
+            <div className="w-full md:w-36 lg:w-40 shrink-0">
+              <div className="w-full h-56 md:h-full md:min-h-[200px] overflow-hidden bg-black/10">
+                <img
+                  src={teacher.photo}
+                  alt={teacher.name}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
             <div className="flex-1 p-4 md:p-6 space-y-3">
               <div className="flex flex-wrap gap-2">

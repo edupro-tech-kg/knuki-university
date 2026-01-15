@@ -3,7 +3,7 @@ import StudentStructure from "../components/StudentStructure";
 import StudentsInfo from "../components/StudentsInfo";
 import StudentClubs from "../components/StudentClubs";
 import ScholarsCarousel from "../components/ScholarsCarousel";
-import AnimatedStats from "../components/AnimatedStats"; 
+import AnimatedStats from "../components/AnimatedStats";
 
 function StudentsLife() {
   const { t } = useTranslation();
@@ -11,7 +11,7 @@ function StudentsLife() {
   return (
     <div>
       <StudentStructure />
-      <AnimatedStats /> 
+      <AnimatedStats />
       <StudentsInfo />
       <div className="text-center mt-10 mb-6">
         <h2 className="text-3xl font-bold text-gray-900 uppercase italic font-serif">

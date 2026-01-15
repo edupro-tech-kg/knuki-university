@@ -1,4 +1,3 @@
-
 import { useTranslation } from "react-i18next";
 import Search from "../components/UI/Search";
 import ReusableSlider from "../components/UI/ReusableSlider";

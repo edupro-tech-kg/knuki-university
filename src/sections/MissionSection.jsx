@@ -12,9 +12,11 @@ import Mission9 from "../assets/images/mission9.jpg";
 import { Trans } from "react-i18next";
 import Pattern from "../assets/svg/patterns.svg";
 import { useEffect, useMemo, useState } from "react";
+import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion";
 
 function MissionSection() {
   const { t } = useTranslation();
+  const prefersReducedMotion = usePrefersReducedMotion();
   const images = useMemo(
     () => [
       MissionSectionImg,
@@ -30,19 +32,14 @@ function MissionSection() {
     []
   );
   const [activeMainIndex, setActiveMainIndex] = useState(0);
-  const [fadeKey, setFadeKey] = useState(0);
 
   useEffect(() => {
-    if (images.length <= 1) return;
+    if (prefersReducedMotion || images.length <= 1) return;
     const id = window.setInterval(() => {
       setActiveMainIndex((prev) => (prev + 1) % images.length);
     }, 9000);
     return () => window.clearInterval(id);
-  }, [images.length]);
-
-  useEffect(() => {
-    setFadeKey((v) => v + 1);
-  }, [activeMainIndex]);
+  }, [images.length, prefersReducedMotion]);
 
   return (
     <section id="mission" className="bg-background w-full relative overflow-x-hidden mt-12">
@@ -59,10 +56,10 @@ function MissionSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[544px_1fr] gap-5 items-start">
           <div className="relative w-full max-w-[544px] h-[650px] overflow-hidden">
             <img
-              src={images[activeMainIndex]}
+              src={MissionSectionImg}
               alt="Main mission"
-              className="w-full h-full object-cover animate-[fadeIn_250ms_ease-out]"
-              key={fadeKey}
+              className="w-full h-full object-cover"
+              decoding="async"
             />
 
             <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col p-10">
@@ -77,23 +74,25 @@ function MissionSection() {
           </div>
 
           {(() => {
-            const prevIndex = (activeMainIndex - 1 + images.length) % images.length;
             const nextIndices = [];
-            for (let i = 1; nextIndices.length < 3 && i <= images.length; i += 1) {
+            for (let i = 1; nextIndices.length < 2 && i <= images.length; i += 1) {
               const idx = (activeMainIndex + i) % images.length;
-              if (idx !== activeMainIndex && idx !== prevIndex) nextIndices.push(idx);
+              if (idx !== activeMainIndex) nextIndices.push(idx);
             }
+            const prevIndex = (activeMainIndex - 1 + images.length) % images.length;
 
-            const slots = [
-              ...nextIndices.map((idx, i) => ({ idx, kind: "small", mobileHidden: i >= 2 })),
-              { idx: prevIndex, kind: "wide", mobileHidden: false },
+            const slotsByPosition = [
+              { idx: nextIndices[0] ?? prevIndex, kind: "small", mobileHidden: false },
+              { idx: nextIndices[1] ?? prevIndex, kind: "small", mobileHidden: false },
+              { idx: prevIndex, kind: "small", mobileHidden: true },
+              { idx: activeMainIndex, kind: "wide", mobileHidden: false },
             ];
 
             return (
               <div className="grid grid-cols-2 gap-3 lg:grid-cols-3 lg:grid-rows-2 lg:h-[650px]">
-                {slots.map((slot, pos) => (
+                {slotsByPosition.map((slot, pos) => (
                   <button
-                    key={`${slot.idx}-${pos}`}
+                    key={pos}
                     type="button"
                     onClick={() => setActiveMainIndex(slot.idx)}
                     className={[
@@ -104,13 +103,16 @@ function MissionSection() {
                         : "h-[160px] md:h-[200px] lg:row-start-1 lg:h-full",
                     ].join(" ")}
                   >
-                  <img
-                    src={images[slot.idx]}
-                    alt={`Mission ${slot.idx + 1}`}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    loading="lazy"
-                    draggable={false}
-                  />
+                    <img
+                      src={images[slot.idx]}
+                      alt={`Mission ${slot.idx + 1}`}
+                      className={`absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105 ${
+                        slot.kind === "wide" ? "animate-[fadeIn_250ms_ease-out]" : ""
+                      }`}
+                      loading="lazy"
+                      decoding="async"
+                      draggable={false}
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                   </button>
                 ))}
@@ -124,6 +126,8 @@ function MissionSection() {
           src={Pattern}
           alt="patterns"
           className="object-cover h-12  w-[620px] sm:w-[1000px]   lg:h-auto lg:w-full"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </section>

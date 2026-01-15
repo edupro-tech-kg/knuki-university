@@ -47,28 +47,19 @@ const AnimatedStats = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-gray-900 uppercase italic font-serif">
           {studentsLife.numbersTitle}
         </h2>
-        
-        <div 
-          ref={numbersRef} 
+
+        <div
+          ref={numbersRef}
           className="flex flex-col sm:flex-row gap-6 md:gap-8 justify-center items-center"
         >
-          <Stat
-            value={`+${students.toLocaleString("en-US")}`}
-            label={hero.stat1}
-          />
+          <Stat value={`+${students.toLocaleString("en-US")}`} label={hero.stat1} />
           <Divider />
-          <Stat
-            value={`+${budget.toLocaleString("en-US")}`}
-            label={hero.stat2}
-          />
+          <Stat value={`+${budget.toLocaleString("en-US")}`} label={hero.stat2} />
           <Divider />
-          <Stat
-            value={`+${paid.toLocaleString("en-US")}`}
-            label={hero.stat3}
-          />
+          <Stat value={`+${paid.toLocaleString("en-US")}`} label={hero.stat3} />
         </div>
       </div>
-      
+
       <style>{`
         .stat-number {
           font-variant-numeric: tabular-nums;

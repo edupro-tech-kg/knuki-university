@@ -82,3 +82,69 @@
 .fc .fc-timegrid-divider {
   padding: 0px !important;
 }
+
+/* Highlight days that have news */
+.fc .fc-daygrid-day.has-news-day:not(.fc-day-today) {
+  background: rgba(176, 41, 41, 0.08);
+}
+
+.fc .fc-daygrid-day.has-holiday-day:not(.fc-day-today) {
+  background: rgba(245, 158, 11, 0.10);
+}
+
+.fc .fc-daygrid-day.has-news-day .fc-daygrid-day-number::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  margin-left: 6px;
+  background: #b02929;
+  opacity: 0.9;
+  vertical-align: middle;
+}
+
+.fc .fc-daygrid-day.has-holiday-day .fc-daygrid-day-number::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  margin-right: 6px;
+  background: #f59e0b;
+  opacity: 0.9;
+  vertical-align: middle;
+}
+
+.fc .holiday-label {
+  font-size: 10px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: #92400e;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 6px;
+  padding: 2px 6px;
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  pointer-events: none;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 640px) {
+  .fc .holiday-label {
+    display: none;
+  }
+}
+
+/* Selected day outline */
+.fc .fc-daygrid-day.selected-day {
+  outline: 2px solid #b02929;
+  outline-offset: -2px;
+}

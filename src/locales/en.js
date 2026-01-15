@@ -11,7 +11,7 @@ export default {
     faculties: "Faculty",
     students: "Student",
     education: "Education",
-    science: "Science",
+    science: "Science and International Relations",
     news: "News",
     documents: "Documents",
     applicants: "Applicant",
@@ -107,35 +107,26 @@ export default {
     ],
     badge: "Live stage at KNUCA",
   },
+  specialties: {
+    eyebrow: "DIRECTIONS",
+    list: [
+      { id: 1, title: "Socio-cultural activities" },
+      { id: 2, title: "Choreography" },
+      { id: 3, title: "Musical performance (by type)" },
+      { id: 4, title: "Music teacher" },
+    ],
+  },
   programs: {
     eyebrow: "KNUCA DIRECTIONS",
     faculty: "faculty",
     buttonText: "More Details",
     list: [
-      {
-        id: 1,
-        title: "Choreography faculty",
-      },
-      {
-        id: 2,
-        title: "Faculty of folk music",
-      },
-      {
-        id: 3,
-        title: "Faculty of pop and music education",
-      },
-      {
-        id: 4,
-        title: "Faculty of theatre",
-      },
-      {
-        id: 5,
-        title: "Faculty of film and television",
-      },
-      {
-        id: 6,
-        title: "Graduate and postgraduate studies",
-      },
+      { id: 1, title: "Choreography faculty" },
+      { id: 2, title: "Faculty of folk music" },
+      { id: 3, title: "Faculty of pop and music education" },
+      { id: 4, title: "Faculty of theatre" },
+      { id: 5, title: "Faculty of film and television" },
+      { id: 6, title: "Graduate and postgraduate studies" },
     ],
   },
   advantages: {
@@ -197,16 +188,37 @@ export default {
     dayHeaderFormat: {
       weekday: "short",
     },
+    holidays: [
+      { monthDay: "01-01", title: "New Year" },
+      { monthDay: "01-07", title: "Orthodox Christmas" },
+      { monthDay: "02-23", title: "Defender of the Fatherland Day" },
+      { date: "2025-03-01", title: "Ramadan begins" },
+      { monthDay: "03-08", title: "International Women's Day" },
+      { monthDay: "03-21", title: "Nooruz" },
+      { date: "2025-03-31", title: "Eid al-Fitr" },
+      { monthDay: "05-01", title: "Labour Day" },
+      { monthDay: "05-05", title: "Constitution Day" },
+      { monthDay: "05-09", title: "Victory Day" },
+      { date: "2025-06-07", title: "Eid al-Adha" },
+      { monthDay: "08-31", title: "Independence Day" },
+      { monthDay: "11-07", title: "Days of History and Memory of Ancestors" },
+      { monthDay: "11-08", title: "Days of History and Memory of Ancestors" },
+      { date: "2026-02-18", title: "Ramadan begins" },
+      { date: "2026-03-20", title: "Eid al-Fitr" },
+      { date: "2026-05-27", title: "Eid al-Adha" },
+    ],
     events: [
       { id: 1, title: "Congratulations on White Hat Day.", date: "2025-11-05" },
       { id: 2, title: "The rector congratulated the veteran women of KMMIU", date: "2025-11-08" },
-      { id: 3, title: "Uzbekistan", data: "2025-11-13" },
+      { id: 3, title: "Uzbekistan", date: "2025-11-13" },
       { id: 4, title: "KMMU and Bishkek City Drama Theater collaborate", date: "2025-11-12" },
       { id: 5, title: "Dance lesson", date: "2025-11-15" },
       { id: 6, title: "Ankara", date: "2025-11-22" },
     ],
     lastNews: {
       title: "Latest News",
+      empty: "No news for the selected day.",
+      clearFilter: "Show all",
       newsData: [
         {
           desc: "A KUMIU student took 3rd place in an international competition",
@@ -257,6 +269,7 @@ export default {
       literature: "HIGH LITERATURE COURSE",
       department: "PERSONNEL DEPARTMENT",
       council: "Academic Council of KGUKI named after B. Beishenalieva",
+      accounting: "ACCOUNTING",
     },
     button: "Learn More",
   },
@@ -390,30 +403,35 @@ export default {
     items: [
       {
         id: "makam",
+        date: "2025-03-22",
         title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
         buttonText: "more",
       },
       {
         id: "gym",
+        date: "2025-09-17",
         title: " NEW SPORTS HALL COMMISSIONED AT KNUCA",
         buttonText: "more",
       },
       {
         id: "building",
+        date: "2025-10-01",
         title: "CONSTRUCTION OF A NEW ACADEMIC BUILDING AT KNUCA HAS BEGUN",
         buttonText: "more",
       },
       {
         id: "students",
+        date: "2025-04-22",
         title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
-        buttonText: "more"
+        buttonText: "more",
       },
       {
         id: "instruments",
+        date: "2025-04-09",
         title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
-        buttonText: "more"
-      }
-    ]
+        buttonText: "more",
+      },
+    ],
   },
   consultation: {
     title: "Sign up for a consultation",
@@ -442,7 +460,7 @@ export default {
     },
   },
   dropdownForm: {
-    select: "Choose"
+    select: "Choose",
   },
   historyPage: {
     title: "HISTORY",
@@ -547,7 +565,7 @@ export default {
         1. To grant the Kyrgyz State University of Culture and Arts named after Bubusara Beishenalieva the status of “National” and hereinafter name it the Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva. 
         2. To instruct the Cabinet of Ministers of the Kyrgyz Republic to bring its decisions into compliance with this Decree.
         3. To assign control over the implementation of this Decree to the Department for Monitoring the Implementation of Decisions of the President and the Cabinet of Ministers of the Presidential Administration of the Kyrgyz Republic. 
-        4. This Decree shall enter into force seven days after its official publication.`
+        4. This Decree shall enter into force seven days after its official publication.`,
       },
       {
         id: "gym",
@@ -691,7 +709,10 @@ export default {
     },
   ],
   studentsLife: {
-    numbersTitle: "We in Numbers"
+    numbersTitle: "We in Numbers",
+  },
+  studentsMoments: {
+    title: "Moments from the lives of students",
   },
   libraryDescription: {
     title: "Scientific Library of KNUCA named after B. Beishenalieva",
@@ -733,8 +754,7 @@ export default {
       },
       {
         id: 5,
-        content:
-          "Sheet music lending department and a special musical literature lending section",
+        content: "Sheet music lending department and a special musical literature lending section",
       },
       {
         id: 6,
@@ -1545,53 +1565,47 @@ export default {
     btnText: "More",
   },
   sciencePage: {
+    tabs: {
+      science: "SCIENCE",
+      international: "INTERNATIONAL RELATIONS",
+    },
     title: "SCIENCE AND INTERNATIONAL RELATIONS",
-    infos: [
-      {
-        text: "Information about the Department of Science and International Relations. The department of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva is a structural unit responsible for organizing, coordinating, and developing research activities at the university. The department is one of the key implementers of the university’s strategic goal to become a scientific and creative center contributing to the development of national and global arts.",
-      },
-      {
-        text: "The Department supports the scientific activities of faculty members, master’s students, doctoral candidates, and students, aiming to enhance the university’s research potential and ensure the integration of science, education, and creative activity.",
-      },
-      {
-        text: "The department implements the university’s research policy, improves the quality and effectiveness of research, ensures competitive scientific outcomes at national and international levels, and systematically develops research personnel training. In 2023, postgraduate programs were launched in 17.00.02 – Musical Art and 24.00.01 – History and Theory of Culture and Arts.",
-      },
-      {
-        text: "The university annually hosts scientific and practical conferences, meetings, seminars, internships, master classes, and round tables. Faculty members actively publish articles in Scopus, Web of Science, RSCI, and national journals. University scholars produce textbooks, methodological materials, and scientific and creative works in music, cinema, and theater.",
-      },
-      {
-        text: "Since 2015, the university has published the scientific journal “Bulletin of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.” The journal accepts articles from international and local scholars, doctoral candidates, master’s students, and postgraduate students in culture, arts, pedagogy, and humanities. Articles are published in Kyrgyz, Russian, and English, and the journal is issued quarterly.",
-      },
-      {
-        text: "The main goal of the journal is to promote the results of theoretical and applied research in culture, arts, pedagogy, and humanities, and to attract international scholars for cooperation. The Department actively expands international partnerships through memorandums and agreements with educational, cultural, and scientific institutions worldwide.",
-      },
-    ],
-    name: "Currently, the university cooperates with the following institutions:",
-    list: [
-      "Belgium, Brussels — Belgian International Education Center",
-      "Turkey, Çanakkale — Çanakkale Onsekiz Mart University",
-      "Russian Federation, Moscow — State Institute of Art Studies",
-      "Russian Federation, Yekaterinburg — Yekaterinburg State Theatre Institute",
-      "USA, Virginia — International Foundation for Electoral Systems (IFES), Kyrgyz Republic Office",
-      "Russian Federation, Moscow — S.A. Gerasimov All-Russian State University of Cinematography (VGIK)",
-      "Russian Federation — D.S. Likhachev Institute for Cultural and Natural Heritage",
-      "Azerbaijan, Baku — Azerbaijan State University of Culture and Arts",
-      "Republic of Karakalpakstan, Nukus — Nukus Branch of the State Institute of Arts and Culture of Uzbekistan",
-      "Russian Federation, Chelyabinsk — P.I. Tchaikovsky South Ural State Institute of Arts",
-      "Republic of Tatarstan, Kazan — Kazan State Institute of Culture",
-      "South Korea — Yewon Arts University",
-      "Republic of Kazakhstan, Almaty — T. Zhurgenov Kazakh National Academy of Arts",
-      "Republic of Uzbekistan — B. Zakirov National Institute of Pop Art",
-      "Republic of Kazakhstan, Astana — Kazakh National Academy of Choreography",
-      "Kyrgyz Republic — Eurasia KG Public Foundation",
-      "Kyrgyz Republic — National Broadcasting Corporation",
-      "Kyrgyz Republic — “Altyn Tüyün” National Children’s Engineering Academy",
-      "Kyrgyz Republic — Eurasian International University",
-      "Kyrgyz Republic — I. Arabayev Kyrgyz State University",
-      "Kyrgyz Republic — D. Sadyrbaev Kyrgyztelefilm Studio",
-      "Kyrgyz Republic — Institute of Journalism and Communication of J. Balasagyn Kyrgyz National University",
-      "Kyrgyz Republic — Niyazaly Osh State Music College",
-    ],
+    heroDescription:
+      "The Department of Science and International Relations of B. Beishenalieva Kyrgyz National University of Culture and Arts is a structure that ensures the organization, coordination and development of research activities at the university.",
+    scienceTitle: "Information about research activities",
+    scienceContent1:
+      "At the B. Beishenalieva Kyrgyz National University of Culture and Arts, research activities are an integral part of the educational process and are aimed at developing national culture, art and humanitarian knowledge. The university considers conducting scientific research as one of the priorities that provides a scientifically based analysis of current problems of national and world art, as well as the integration of science and creative activity.",
+    scienceContent2:
+      "The research activities of the university are carried out with the active participation of faculty, graduate students, doctoral students and students. Scientific work is carried out on the basis of fundamental and applied research, the results of which are integrated into the educational process, creative practice and cultural policy.",
+    scienceContent3:
+      "The university annually holds scientific and practical conferences, meetings, seminars, internships, master classes and round tables aimed at developing research activities. Faculty actively publishes scientific articles in publications indexed in Scopus, Web of Science, RSCI databases, as well as in scientific journals of the Kyrgyz Republic. University scientists create textbooks, teaching aids, as well as scientific and creative works in the fields of music, film and theater.",
+    scienceContent4:
+      "The qualitative composition of the faculty is at a high level: the university employs 7 doctors of science, 17 candidates of science, 5 professors and 14 associate professors. In 2023, the university opened graduate programs in specialties 17.00.02 ‒ Musical Art and 24.00.01 ‒ History and Theory of Culture and Art. The opening of graduate programs has become an important stage in expanding the university's research activities, developing scientific schools and training highly qualified scientific and scientific-pedagogical personnel. The number of graduate students increases annually, currently 20 graduate students are studying.",
+    scienceContent5:
+      "The 'Young Scientists' Council, formed from graduate and doctoral students, actively functions at KNUCAI, making a significant contribution to the development of the university's research activities.",
+    scienceContent6:
+      "Since 2015, the university has been publishing the scientific journal 'Bulletin of the B. Beishenalieva Kyrgyz National University of Culture and Arts'. The journal accepts articles from foreign and domestic scientists, doctoral students, graduate students and undergraduates in the fields of culture, art, pedagogy and humanities. The scientific journal publishes articles in Kyrgyz, Russian and English and is published four times a year.",
+    scienceContent7:
+      "The main goal of the scientific journal 'Bulletin of the B. Beishenalieva Kyrgyz National University of Culture and Arts' is to popularize the results of theoretical and applied scientific research and scientific discoveries in the fields of culture, art, pedagogy and humanities, as well as to attract scientists to international scientific cooperation. In general, the research activities of the university are aimed at integration into the national and international scientific space and ensure sustainable development in the interconnection of science, education, culture and art.",
+    internationalTitle: "Information about international relations",
+    internationalContent1:
+      "At the B. Beishenalieva Kyrgyz National University of Culture and Arts, international activities are carried out in accordance with the laws and regulations of the Kyrgyz Republic.",
+    internationalContent2:
+      "The university actively develops international cooperation with foreign higher educational institutions, scientific organizations and cultural institutions, concluding cooperation agreements. These agreements are aimed at exchanging experience in the fields of education, research and creative activities, implementing joint projects and expanding academic ties.",
+    internationalContent3:
+      "Currently, the university cooperates with more than 50 foreign partners, including: Republic of Kazakhstan - Aktobe Regional Philharmonic named after Gaziz Zhubanov; Republic of Uzbekistan - National Institute of Variety Art named after B. Zakirov; Russian Federation - Yekaterinburg State Theater Institute; Republic of Kazakhstan - West Kazakhstan University named after M. Utemisov; Kingdom of Belgium, Brussels - Belgian International Education Center; Republic of Turkey - Canakkale Onsekiz Mart University; Russian Federation - State Institute of Art History; Republic of Uzbekistan - Uzbek National Institute of Musical Art named after Yunus Rajabi; Republic of Kazakhstan - Kazakh National Academy of Choreography; Republic of Uzbekistan, Republic of Karakalpakstan, Nukus - Nukus branch of the State Institute of Art and Culture of Uzbekistan; Republic of Azerbaijan - Azerbaijan State University of Culture and Arts; Russian Federation, Republic of Tatarstan, Kazan - Kazan State Institute of Culture; Republic of Korea - Evon Art University; Republic of Kazakhstan - Kazakh National Academy of Arts named after Temirbek Zhurgenov, Eurasia KG Foundation, Chinese Art Center, etc.",
+    internationalContent4:
+      "Within the framework of international agreements, joint scientific research is conducted, international conferences, seminars, master classes and creative events are organized. University faculty are regularly invited as jury members to international competitions and festivals.",
+    internationalContent5:
+      "Academic mobility is one of the key areas of the university's international cooperation. Students, graduate students, doctoral students and faculty have the opportunity to study, teach and undergo scientific internships at foreign universities within the framework of academic exchange programs.",
+    internationalContent6:
+      "Academic mobility contributes to improving the quality of education, mastering international experience and strengthening the university's competitiveness at the international level.",
+    internationalContent7:
+      "The university actively participates in international educational and research projects, as well as cultural and creative programs. International projects are aimed at introducing innovative educational technologies, developing scientific and creative potential and increasing the international prestige of the university.",
+    internationalContent8:
+      "Within the framework of projects, joint research, creative projects, concert programs, exhibitions and training seminars are implemented with the participation of foreign partners.",
+    internationalContent9:
+      "The university actively participates in international conferences, forums, symposiums, festivals and creative competitions, and also acts as an organizer. These events contribute to the promotion of the university's scientific and creative achievements in the international community.",
   },
   rector: {
     eyebrow: "Rector’s Address",
@@ -1706,26 +1720,194 @@ export default {
         name: "3. Personnel Policy:",
         functions: [
           "submits proposals for the appointment of teachers and staff, their career advancement and incentives;",
-          "considers issues related to the opening of new departments, faculties, and scientific centers."
-        ]
+          "considers issues related to the opening of new departments, faculties, and scientific centers.",
+        ],
       },
       {
         name: "4. Academic Ethics and Integrity:",
         functions: [
           "monitors compliance with academic ethics standards, scientific integrity, and prevention of plagiarism;",
-          "reviews disciplinary and academic matters and develops relevant recommendations."
-        ]
+          "reviews disciplinary and academic matters and develops relevant recommendations.",
+        ],
       },
       {
         name: "5. Cultural, Educational and Social Activities:",
         functions: [
           "supports programs for creative, educational, and cultural activities of the university;",
-          "considers directions for developing international relations and cooperation."
-        ]
-      }
+          "considers directions for developing international relations and cooperation.",
+        ],
+      },
     ],
     compositionProcedure: "Composition and Operating Procedure of the Academic Council",
-    composition: "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
-    procedure: "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation."
+    composition:
+      "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
+    procedure:
+      "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation.",
+  },
+  firstAccounting: {
+    title: "Duration of study: 6 years (extramural form)",
+    price: "Tuition fee (KGS)",
+    specialty: "Specialty",
+    code: "Code",
+    courses: ["1 year", "2 year", "3 year", "4 year", "5 year", "6 year"],
+    rows: [
+      {
+        id: 1,
+        name: "Acting",
+        code: "570014",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 2,
+        name: "Sound Engineering (by fields of application)",
+        code: "570013",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 3,
+        name: "Directing (by fields of application)",
+        code: "570015",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 4,
+        name: "Cinematography (Camera Operator)",
+        code: "570006",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 5,
+        name: "Fine Arts Education (Bachelor’s degree)",
+        code: "550600",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000"],
+      },
+      {
+        id: 6,
+        name: "Choreography Pedagogy",
+        code: "570019",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 7,
+        name: "Literary Creativity",
+        code: "570027",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 8,
+        name: "Socio-cultural Activities",
+        code: "570029",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 9,
+        name: "Pop Ensemble Performer (vocalist, instrumentalist), teacher",
+        code: "",
+        prices: [
+          ["60 000 soloist", "40 000 instrumentalist"],
+          "32 000",
+          "32 000",
+          "32 000",
+          "32 000",
+          "32 000",
+        ],
+      },
+      {
+        id: 10,
+        name: "Folk Orchestra Conductor, teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 11,
+        name: "Folk Choir Conductor, teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 12,
+        name: "Traditional Music and Folklore (vocalist, instrumentalist), teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 13,
+        name: "Film Studies",
+        code: "570005",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 14,
+        name: "Theatre Studies",
+        code: "570002",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+    ],
+  },
+  accounting: {
+    service: "Service name",
+    amount: "Amount",
+    rows: [
+      {
+        id: 1,
+        name: "For admission of applicants and processing of documents",
+        price: "480-00",
+      },
+      {
+        id: 2,
+        name: "Dormitory accommodation fee for students (per month)",
+        price: "1300-00",
+      },
+      {
+        id: 3,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m (part-time employees)",
+        price: "13000-00",
+      },
+      {
+        id: 4,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
+        price: "11000-00",
+      },
+      {
+        id: 5,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 30 sq.m (part-time employees)",
+        price: "9000-00",
+      },
+      {
+        id: 6,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m",
+        price: "6000-00",
+      },
+      {
+        id: 7,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
+        price: "5000-00",
+      },
+      {
+        id: 8,
+        name: "Transfer and reinstatement of studies",
+        price: "800-00",
+      },
+      {
+        id: 9,
+        name: "Transfer and reinstatement of studies (for foreign students)",
+        price: "1600-00",
+      },
+      {
+        id: 10,
+        name: "Academic certificate",
+        price: "250-00",
+      },
+      {
+        id: 11,
+        name: "For passing subject differences when transferring students from other educational institutions",
+        price: "300-00",
+      },
+      {
+        id: 12,
+        name: "Professional development course",
+        price: "10000-00",
+      },
+    ],
   },
 };

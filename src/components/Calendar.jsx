@@ -10,16 +10,48 @@ import { useTranslation } from "react-i18next";
 import "../styles/calendar.css";
 import { Tooltip } from "react-tooltip";
 
-export default function Calendar() {
+function toLocalDateString(date) {
+  if (!date || typeof date.getFullYear !== "function") return "";
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+export default function Calendar({
+  events: overrideEvents,
+  highlightDates,
+  holidays,
+  selectedDate,
+  onSelectDate,
+  initialDate,
+}) {
   const [currentTitle, setCurrentTitle] = useState("");
   const [activeView, setActiveView] = useState("dayGridMonth");
   const calendarRef = useRef();
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const calendar = t("calendar");
-  const locale = t("locale");
+  const locale = i18n.language;
 
   const dayNamesShort = calendar.days.dayNamesShort;
+  const events = overrideEvents ?? calendar.events ?? [];
+  const highlightSet =
+    highlightDates instanceof Set ? highlightDates : new Set(highlightDates || []);
+  const holidayList = holidays ?? calendar.holidays ?? [];
+  const holidayByMonthDay = new Map();
+  const holidayByDate = new Map();
+
+  (Array.isArray(holidayList) ? holidayList : []).forEach((holiday) => {
+    if (!holiday?.title) return;
+    if (holiday.date) {
+      holidayByDate.set(holiday.date, holiday.title);
+      return;
+    }
+    if (holiday.monthDay) {
+      holidayByMonthDay.set(holiday.monthDay, holiday.title);
+    }
+  });
 
   const changeView = (view) => {
     calendarRef.current.getApi().changeView(view);
@@ -82,15 +114,52 @@ export default function Calendar() {
       </div>
 
       <FullCalendar
+        key={locale}
         plugins={[dayGridPlugin, timeGridPlugin, listPlugin]}
         initialView={activeView}
-        events={calendar.events}
+        initialDate={initialDate ?? new Date()}
+        events={events}
         ref={calendarRef}
         headerToolbar={false}
         locales={[ruLocale, kyLocale, enLocale]}
         locale={locale}
         firstDay={1}
         datesSet={(info) => setCurrentTitle(info.view.title)}
+        dateClick={(info) => {
+          if (onSelectDate) onSelectDate(info.dateStr);
+        }}
+        dayCellClassNames={(arg) => {
+          const dateStr = toLocalDateString(arg?.date);
+          const classes = [];
+          if (dateStr && highlightSet.has(dateStr)) classes.push("has-news-day");
+          const monthDay = dateStr ? dateStr.slice(5) : "";
+          if (holidayByDate.has(dateStr) || holidayByMonthDay.has(monthDay)) {
+            classes.push("has-holiday-day");
+          }
+          if (selectedDate && dateStr === selectedDate) classes.push("selected-day");
+          return classes;
+        }}
+        dayCellDidMount={(arg) => {
+          const dateStr = toLocalDateString(arg?.date);
+          const monthDay = dateStr ? dateStr.slice(5) : "";
+          const holidayTitle = holidayByDate.get(dateStr) ?? holidayByMonthDay.get(monthDay);
+          if (holidayTitle) {
+            arg.el.setAttribute("title", holidayTitle);
+            // Add a visible label inside the day cell (month view).
+            const frame = arg.el.querySelector(".fc-daygrid-day-frame");
+            if (frame) {
+              const existing = frame.querySelector(".holiday-label");
+              if (existing) {
+                existing.textContent = holidayTitle;
+              } else {
+                const label = document.createElement("div");
+                label.className = "holiday-label";
+                label.textContent = holidayTitle;
+                frame.appendChild(label);
+              }
+            }
+          }
+        }}
         dayHeaderContent={(args) => {
           const dayIndex = args.date.getDay();
           return dayNamesShort[dayIndex === 0 ? 6 : dayIndex - 1];

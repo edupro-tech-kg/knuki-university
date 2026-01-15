@@ -21,7 +21,7 @@ export default function FacultyPage() {
     if (lang === "kg" || lang === "ky") return "kg";
     if (lang === "ru") return "ru";
     if (lang === "en") return "en";
-    return "kg"; 
+    return "kg";
   };
 
   const currentLanguage = getCurrentLanguageCode();
@@ -38,7 +38,7 @@ export default function FacultyPage() {
 
   const faculty = useMemo(
     () => getFacultyData(slug, localizedFaculties, currentLanguage),
-    [slug, localizedFaculties, currentLanguage, i18n.language] 
+    [slug, localizedFaculties, currentLanguage, i18n.language]
   );
 
   if (!faculty) {

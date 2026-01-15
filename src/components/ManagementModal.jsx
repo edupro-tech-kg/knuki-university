@@ -59,10 +59,9 @@ function ManagementModal({ isOpen, onClose, person }) {
   const { firstLine, secondLine } = splitName(person.name);
 
   // Проверяем наличие дополнительной информации
-  const hasAdditionalInfo = person.additionalInfo && 
-    Object.values(person.additionalInfo).some(value => 
-      value && value.toString().trim() !== ""
-    );
+  const hasAdditionalInfo =
+    person.additionalInfo &&
+    Object.values(person.additionalInfo).some((value) => value && value.toString().trim() !== "");
 
   // Определенный порядок разделов
   const sectionOrder = [
@@ -89,13 +88,17 @@ function ManagementModal({ isOpen, onClose, person }) {
     if (!hasAdditionalInfo) return null;
 
     return sectionOrder
-      .filter(section => person.additionalInfo?.[section.key] && 
-             person.additionalInfo[section.key].toString().trim() !== "")
+      .filter(
+        (section) =>
+          person.additionalInfo?.[section.key] &&
+          person.additionalInfo[section.key].toString().trim() !== ""
+      )
       .map((section, index) => (
-        <div key={section.key} className={`mb-4 ${index > 0 ? 'pt-3 border-t border-gray-100' : ''}`}>
-          <h5 className="font-bold text-base mb-1 text-gray-800">
-            {section.label}:
-          </h5>
+        <div
+          key={section.key}
+          className={`mb-4 ${index > 0 ? "pt-3 border-t border-gray-100" : ""}`}
+        >
+          <h5 className="font-bold text-base mb-1 text-gray-800">{section.label}:</h5>
           <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-line">
             {person.additionalInfo[section.key]}
           </p>
@@ -119,7 +122,6 @@ function ManagementModal({ isOpen, onClose, person }) {
         </button>
 
         <div className="bg-white rounded-lg w-full max-h-[90vh] md:max-h-[85vh] flex flex-col md:flex-row overflow-hidden shadow-2xl">
-          
           <div className="md:hidden w-full flex flex-col flex-1 min-h-0">
             <div className="w-full flex-shrink-0">
               <div className="w-1/3 mt-4 mx-auto aspect-[3/4] bg-gray-100 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
@@ -148,12 +150,10 @@ function ManagementModal({ isOpen, onClose, person }) {
                   <div className="text-gray-700 text-sm leading-relaxed mb-4">
                     <p className="whitespace-pre-line">{person.details}</p>
                   </div>
-                  
+
                   {hasAdditionalInfo && (
                     <div className="mt-4 pt-4 border-t border-gray-200">
-                      <div className="space-y-3">
-                        {renderAdditionalInfo()}
-                      </div>
+                      <div className="space-y-3">{renderAdditionalInfo()}</div>
                     </div>
                   )}
                 </div>
@@ -194,18 +194,14 @@ function ManagementModal({ isOpen, onClose, person }) {
                   </h4>
 
                   <div className="text-gray-700 text-base leading-relaxed">
-              
                     {hasAdditionalInfo && (
                       <div className="mt-8 pt-8 border-t border-gray-200">
-                        
-                        <div className="space-y-6">
-                          {renderAdditionalInfo()}
-                        </div>
+                        <div className="space-y-6">{renderAdditionalInfo()}</div>
                       </div>
                     )}
                   </div>
                 </div>
-                
+
                 <div className="pb-6"></div>
               </div>
             </div>

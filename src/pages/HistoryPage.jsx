@@ -65,9 +65,14 @@ export default function HistoryPage() {
             >
               <div
                 className="w-full md:w-1/2 mx-8 transition-all duration-500 border rounded p-4"
-                style={{ transform: isActive ? "translateY(-10px)" : "translateY(0)", opacity: isActive ? 1 : 0.8 }}
+                style={{
+                  transform: isActive ? "translateY(-10px)" : "translateY(0)",
+                  opacity: isActive ? 1 : 0.8,
+                }}
               >
-                <h3 className="text-md md:text-xl text-primary-text font-semibold mb-2">{item.title}</h3>
+                <h3 className="text-md md:text-xl text-primary-text font-semibold mb-2">
+                  {item.title}
+                </h3>
                 <p className="font-sans text-gray-700 leading-relaxed text-sm md:text-base">
                   {item.text}
                 </p>
@@ -75,7 +80,9 @@ export default function HistoryPage() {
 
               <div
                 className="w-full md:w-1/2 transition-all duration-500"
-                style={{ transform: isActive ? "translateY(-20px) scale(1.02)" : "translateY(0) scale(1)" }}
+                style={{
+                  transform: isActive ? "translateY(-20px) scale(1.02)" : "translateY(0) scale(1)",
+                }}
               >
                 <img src={Dansers} className="w-full h-[300px] md:h-[500px] object-cover rounded" />
               </div>

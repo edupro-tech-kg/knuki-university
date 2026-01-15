@@ -13,6 +13,7 @@ const QUICK_LINKS = [
   { key: "literature", link: "/literature" },
   { key: "department", link: "/HRdepartment" },
   { key: "council", link: "/council" },
+  { key: "accounting", link: "/accounting" },
 ];
 function QuickLinks() {
   const { t } = useTranslation();
@@ -21,12 +22,14 @@ function QuickLinks() {
 
   return (
     <section className="bg-background py-14 w-full">
-      <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">{quickLinks.title}</h2>
+      <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
+        {quickLinks.title}
+      </h2>
       <div
         className="
           flex gap-4 overflow-x-auto px-4 md:px-6
           md:grid md:grid-cols-2 md:gap-4 md:overflow-visible
-          lg:grid lg:grid-cols-3 lg:gap-4 scrollbar-transparent
+          lg:grid lg:grid-cols-4 lg:gap-4 scrollbar-transparent
           max-w-[1440px] mx-auto
         "
       >
@@ -52,18 +55,12 @@ function QuickLinks() {
 
             {item.link ? (
               <Link to={item.link} className="w-full flex justify-center">
-                <Button
-                  variant="primaryIcon"
-                  className="!border-text-primary !text-text-primary"
-                >
+                <Button variant="primaryIcon" className="!border-text-primary !text-text-primary">
                   {quickLinks.button}
                 </Button>
               </Link>
             ) : (
-              <Button
-                variant="primaryIcon"
-                className="!border-text-primary !text-text-primary"
-              >
+              <Button variant="primaryIcon" className="!border-text-primary !text-text-primary">
                 {quickLinks.button}
               </Button>
             )}
