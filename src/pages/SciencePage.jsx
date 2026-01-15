@@ -85,8 +85,8 @@ function ScienceHero({ title, description, heroBackground }) {
                         onClick={() => goToSlide(index)}
                         className={`transition-all duration-300 rounded-full ${
                           index === currentSlide
-                            ? "bg-white w-2 h-2"
-                            : "bg-white/50 hover:bg-white/75 w-1 h-1"
+                            ? "bg-white w-1.5 h-1.5"
+                            : "bg-white/50 hover:bg-white/75 w-1.5 h-1.5"
                         }`}
                         aria-label={`Go to photo ${index + 1}`}
                       />
