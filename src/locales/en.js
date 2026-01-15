@@ -11,7 +11,7 @@ export default {
     faculties: "Faculty",
     students: "Student",
     education: "Education",
-    science: "Science",
+    science: "Science and International Relations",
     news: "News",
     documents: "Documents",
     applicants: "Applicant",
@@ -1526,6 +1526,10 @@ export default {
     btnText: "More",
   },
   sciencePage: {
+    tabs: {
+      science: "SCIENCE",
+      international: "INTERNATIONAL RELATIONS",
+    },
     title: "SCIENCE AND INTERNATIONAL RELATIONS",
     heroDescription:
       "The Department of Science and International Relations of B. Beishenalieva Kyrgyz National University of Culture and Arts is a structure that ensures the organization, coordination and development of research activities at the university.",
