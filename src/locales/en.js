@@ -771,19 +771,19 @@ export default {
     personality: [
       {
         name: "Isakova A.Zh.",
-        content: "librarian of the sheet music department;",
+        content: "librarian of the sheet music department",
       },
       {
         name: "Surapbaeva G.R.",
-        content: "librarian of the dormitory reading room.",
+        content: "librarian of the dormitory reading room",
       },
       {
         name: "Belekova G.Z.",
-        content: "librarians of the fiction literature department;",
+        content: "librarians of the fiction literature department",
       },
       {
         name: "Samieva Sh.T.",
-        content: "librarian of the film studio reading room.",
+        content: "librarian of the film studio reading room",
       },
     ],
   },
