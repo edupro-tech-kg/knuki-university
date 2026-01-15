@@ -28,42 +28,28 @@ export default function NewsPage() {
   const newsPage = t("newsPage", { returnObjects: true }) || {};
 
   const NEWS_IMAGES = {
-    makam: [
-      makam
-    ],
-    students: [
-      grand1,
-      grand2
-    ],
-    gym: [
-      newGym,
-      newGym1,
-      newGym2,
-      newGym3,
-      newGym4
-    ],
-    building: [
-      construction1,
-      construction2
-    ],
-    instruments: [
-      instrument1,
-      instrument2,
-      instrument3
-    ],
+    makam: [makam],
+    students: [grand1, grand2],
+    gym: [newGym, newGym1, newGym2, newGym3, newGym4],
+    building: [construction1, construction2],
+    instruments: [instrument1, instrument2, instrument3],
   };
   const idNum = parseInt(id, 10);
 
   let pageData = null;
 
   if (!isNaN(idNum) && newsItems.length > 0) {
-    const idx = ((idNum - 1) % newsItems.length + newsItems.length) % newsItems.length;
+    const idx = (((idNum - 1) % newsItems.length) + newsItems.length) % newsItems.length;
     const item = newsItems[idx] || {};
     const key = item.id;
 
-    pageData = (key && newsPage[key]) || (Array.isArray(newsPage.news) && newsPage.news[idx]) || item;
+    pageData =
+      (key && newsPage[key]) || (Array.isArray(newsPage.news) && newsPage.news[idx]) || item;
   } else {
-    pageData = newsPage[id] || (Array.isArray(newsPage.news) && newsPage.news.find((n) => n.id === id)) || null;
+    pageData =
+      newsPage[id] ||
+      (Array.isArray(newsPage.news) && newsPage.news.find((n) => n.id === id)) ||
+      null;
 
     if (!pageData && Array.isArray(newsItems)) {
       const idx = newsItems.findIndex((it) => String(it.id) === String(id));
@@ -112,7 +98,9 @@ export default function NewsPage() {
             </Swiper>
           ) : (
             <div className="relative w-full h-[240px] md:h-[340px] lg:h-[420px] overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 text-gray-500 text-sm flex items-center justify-center">
-              <div className="absolute inset-0 flex items-center justify-center">{t("news.title")}</div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                {t("news.title")}
+              </div>
             </div>
           )}
           {title ? (
@@ -126,7 +114,11 @@ export default function NewsPage() {
           <article className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8 space-y-5">
             {paragraphs.length > 0 ? (
               paragraphs.map((para, idx) => (
-                <p style={{ whiteSpace: "pre-line" }} key={idx} className="text-base md:text-lg leading-7 text-gray-800">
+                <p
+                  style={{ whiteSpace: "pre-line" }}
+                  key={idx}
+                  className="text-base md:text-lg leading-7 text-gray-800"
+                >
                   {para}
                 </p>
               ))
@@ -143,7 +135,10 @@ export default function NewsPage() {
                 </h3>
                 <div className="grid grid-cols-2 gap-3">
                   {images.map((img, idx) => (
-                    <div key={idx} className="w-full overflow-hidden rounded-xl border border-gray-100">
+                    <div
+                      key={idx}
+                      className="w-full overflow-hidden rounded-xl border border-gray-100"
+                    >
                       <img
                         src={img}
                         alt={`${title} ${idx + 1}`}

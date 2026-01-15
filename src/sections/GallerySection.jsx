@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import "swiper/css";
+import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion";
 
 import gallery from "../assets/images/gallery.png";
 import gallery1 from "../assets/images/gallery1.png";
@@ -63,18 +64,24 @@ const row2Images = images.slice(9, 17);
 const row3Images = images.slice(17);
 
 const Row = ({ images, reverse }) => {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
   return (
     <Swiper
-      modules={[Autoplay]}
+      modules={prefersReducedMotion ? [] : [Autoplay]}
       loop={true}
       spaceBetween={0}
       slidesPerView={5}
       speed={5000}
-      autoplay={{
-        delay: 0,
-        disableOnInteraction: false,
-        reverseDirection: reverse,
-      }}
+      autoplay={
+        prefersReducedMotion
+          ? false
+          : {
+              delay: 0,
+              disableOnInteraction: false,
+              reverseDirection: reverse,
+            }
+      }
       breakpoints={{
         320: { slidesPerView: 2 },
         480: { slidesPerView: 3 },
@@ -106,10 +113,8 @@ export default function GallerySection() {
   return (
     <div>
       <div className="bg-background relative flex items-center w-full">
-        <img className="w-40 md:w-96" src={gallery} alt="" />
-        <h2
-          className="absolute left-1/2 -translate-x-1/2 uppercase font-serif text-2xl md:text-4xl font-bold text-text-primary text-center italic"
-        >
+        <img className="h-16 w-auto md:h-24 lg:h-28" src={gallery} alt="" decoding="async" />
+        <h2 className="absolute left-1/2 -translate-x-1/2 uppercase font-serif text-2xl md:text-4xl font-bold text-text-primary text-center italic">
           {t("gallery.eyebrow")}
         </h2>
       </div>

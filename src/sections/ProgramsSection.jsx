@@ -41,15 +41,15 @@ export default function ProgramsSection() {
 
   const getScrollAmount = () => {
     if (!containerRef.current) return { cardWidth: 320, gap: 24 };
-    
+
     const container = containerRef.current;
     const firstCard = container.children[0];
     if (!firstCard) return { cardWidth: 320, gap: 24 };
-    
+
     const cardWidth = firstCard.getBoundingClientRect().width;
     const containerStyle = window.getComputedStyle(container);
     const gap = parseFloat(containerStyle.gap) || 24;
-    
+
     return { cardWidth, gap, scrollAmount: cardWidth + gap };
   };
 
@@ -59,13 +59,13 @@ export default function ProgramsSection() {
     const container = containerRef.current;
     const { scrollLeft, scrollWidth, clientWidth } = container;
     const { scrollAmount } = getScrollAmount();
-    
+
     const newScrollLeft = scrollLeft + scrollAmount;
-    
+
     if (newScrollLeft >= scrollWidth - clientWidth - 1) {
       const endScrollLeft = scrollWidth - clientWidth;
       container.scrollTo({ left: endScrollLeft, behavior: "smooth" });
-      
+
       setTimeout(() => {
         container.scrollTo({ left: 0, behavior: "auto" });
         setTimeout(() => {
@@ -83,12 +83,12 @@ export default function ProgramsSection() {
     const container = containerRef.current;
     const { scrollLeft, scrollWidth, clientWidth } = container;
     const { scrollAmount } = getScrollAmount();
-    
+
     const newScrollLeft = scrollLeft - scrollAmount;
-    
+
     if (newScrollLeft < 0) {
       container.scrollTo({ left: 0, behavior: "smooth" });
-      
+
       setTimeout(() => {
         const endScrollLeft = scrollWidth - clientWidth;
         container.scrollTo({ left: endScrollLeft, behavior: "auto" });
@@ -107,10 +107,10 @@ export default function ProgramsSection() {
     const container = containerRef.current;
     const { scrollLeft, scrollWidth, clientWidth } = container;
     const { scrollAmount } = getScrollAmount();
-    
+
     const newScrollLeft = scrollLeft + scrollAmount;
     const maxScroll = scrollWidth - clientWidth;
-    
+
     if (newScrollLeft > maxScroll + 10) {
       container.scrollTo({ left: 0, behavior: "smooth" });
     } else {
@@ -124,12 +124,12 @@ export default function ProgramsSection() {
     const container = containerRef.current;
     const { scrollLeft, scrollWidth, clientWidth } = container;
     const { scrollAmount } = getScrollAmount();
-    
+
     const newScrollLeft = scrollLeft - scrollAmount;
     if (newScrollLeft < -10) {
-      container.scrollTo({ 
-        left: scrollWidth - clientWidth, 
-        behavior: "smooth" 
+      container.scrollTo({
+        left: scrollWidth - clientWidth,
+        behavior: "smooth",
       });
     } else {
       container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
@@ -187,9 +187,8 @@ export default function ProgramsSection() {
                 `}
               >
                 <div className="p-6 flex flex-col h-full">
-
                   <h3 className="font-sans text-xl font-medium text-white mb-4 mt-4">
-                    {getTitle(dir, index)}
+                    {getTitle(dir.slug, index)}
                   </h3>
 
                   <div className="flex-grow"></div>
@@ -212,7 +211,7 @@ export default function ProgramsSection() {
         {isDesktop && showControls && (
           <div className="flex justify-center items-center gap-4 mt-8">
             <button
-              onClick={handlePrevSimple} 
+              onClick={handlePrevSimple}
               className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5 hover:scale-105 active:scale-95"
               aria-label="Previous"
             >
@@ -220,7 +219,7 @@ export default function ProgramsSection() {
             </button>
 
             <button
-              onClick={handleNextSimple} 
+              onClick={handleNextSimple}
               className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5 hover:scale-105 active:scale-95"
               aria-label="Next"
             >

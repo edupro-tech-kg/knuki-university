@@ -4,7 +4,7 @@ import ReusableSlider from "../UI/ReusableSlider";
 export default function FacultyHero({
   title,
   description,
-  heroImage, 
+  heroImage,
   sliderImages,
   heroBackground,
   studyForms,

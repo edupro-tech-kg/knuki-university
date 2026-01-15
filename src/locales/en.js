@@ -107,35 +107,26 @@ export default {
     ],
     badge: "Live stage at KNUCA",
   },
+  specialties: {
+    eyebrow: "DIRECTIONS",
+    list: [
+      { id: 1, title: "Socio-cultural activities" },
+      { id: 2, title: "Choreography" },
+      { id: 3, title: "Musical performance (by type)" },
+      { id: 4, title: "Music teacher" },
+    ],
+  },
   programs: {
     eyebrow: "KNUCA DIRECTIONS",
     faculty: "faculty",
     buttonText: "More Details",
     list: [
-      {
-        id: 1,
-        title: "Choreography faculty",
-      },
-      {
-        id: 2,
-        title: "Faculty of folk music",
-      },
-      {
-        id: 3,
-        title: "Faculty of pop and music education",
-      },
-      {
-        id: 4,
-        title: "Faculty of theatre",
-      },
-      {
-        id: 5,
-        title: "Faculty of film and television",
-      },
-      {
-        id: 6,
-        title: "Graduate and postgraduate studies",
-      },
+      { id: 1, title: "Choreography faculty" },
+      { id: 2, title: "Faculty of folk music" },
+      { id: 3, title: "Faculty of pop and music education" },
+      { id: 4, title: "Faculty of theatre" },
+      { id: 5, title: "Faculty of film and television" },
+      { id: 6, title: "Graduate and postgraduate studies" },
     ],
   },
   advantages: {
@@ -197,16 +188,37 @@ export default {
     dayHeaderFormat: {
       weekday: "short",
     },
+    holidays: [
+      { monthDay: "01-01", title: "New Year" },
+      { monthDay: "01-07", title: "Orthodox Christmas" },
+      { monthDay: "02-23", title: "Defender of the Fatherland Day" },
+      { date: "2025-03-01", title: "Ramadan begins" },
+      { monthDay: "03-08", title: "International Women's Day" },
+      { monthDay: "03-21", title: "Nooruz" },
+      { date: "2025-03-31", title: "Eid al-Fitr" },
+      { monthDay: "05-01", title: "Labour Day" },
+      { monthDay: "05-05", title: "Constitution Day" },
+      { monthDay: "05-09", title: "Victory Day" },
+      { date: "2025-06-07", title: "Eid al-Adha" },
+      { monthDay: "08-31", title: "Independence Day" },
+      { monthDay: "11-07", title: "Days of History and Memory of Ancestors" },
+      { monthDay: "11-08", title: "Days of History and Memory of Ancestors" },
+      { date: "2026-02-18", title: "Ramadan begins" },
+      { date: "2026-03-20", title: "Eid al-Fitr" },
+      { date: "2026-05-27", title: "Eid al-Adha" },
+    ],
     events: [
       { id: 1, title: "Congratulations on White Hat Day.", date: "2025-11-05" },
       { id: 2, title: "The rector congratulated the veteran women of KMMIU", date: "2025-11-08" },
-      { id: 3, title: "Uzbekistan", data: "2025-11-13" },
+      { id: 3, title: "Uzbekistan", date: "2025-11-13" },
       { id: 4, title: "KMMU and Bishkek City Drama Theater collaborate", date: "2025-11-12" },
       { id: 5, title: "Dance lesson", date: "2025-11-15" },
       { id: 6, title: "Ankara", date: "2025-11-22" },
     ],
     lastNews: {
       title: "Latest News",
+      empty: "No news for the selected day.",
+      clearFilter: "Show all",
       newsData: [
         {
           desc: "A KUMIU student took 3rd place in an international competition",
@@ -257,6 +269,7 @@ export default {
       literature: "HIGH LITERATURE COURSE",
       department: "PERSONNEL DEPARTMENT",
       council: "Academic Council of KGUKI named after B. Beishenalieva",
+      accounting: "ACCOUNTING",
     },
     button: "Learn More",
   },
@@ -390,26 +403,31 @@ export default {
     items: [
       {
         id: "makam",
+        date: "2025-03-22",
         title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
         buttonText: "more",
       },
       {
         id: "gym",
+        date: "2025-09-17",
         title: " NEW SPORTS HALL COMMISSIONED AT KNUCA",
         buttonText: "more",
       },
       {
         id: "building",
+        date: "2025-10-01",
         title: "CONSTRUCTION OF A NEW ACADEMIC BUILDING AT KNUCA HAS BEGUN",
         buttonText: "more",
       },
       {
         id: "students",
+        date: "2025-04-22",
         title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
         buttonText: "more",
       },
       {
         id: "instruments",
+        date: "2025-04-09",
         title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
         buttonText: "more",
       },
@@ -692,6 +710,9 @@ export default {
   ],
   studentsLife: {
     numbersTitle: "We in Numbers",
+  },
+  studentsMoments: {
+    title: "Moments from the lives of students",
   },
   libraryDescription: {
     title: "Scientific Library of KNUCA named after B. Beishenalieva",
@@ -1679,5 +1700,171 @@ export default {
       "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
     procedure:
       "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation.",
+  },
+  firstAccounting: {
+    title: "Duration of study: 6 years (extramural form)",
+    price: "Tuition fee (KGS)",
+    specialty: "Specialty",
+    code: "Code",
+    courses: ["1 year", "2 year", "3 year", "4 year", "5 year", "6 year"],
+    rows: [
+      {
+        id: 1,
+        name: "Acting",
+        code: "570014",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 2,
+        name: "Sound Engineering (by fields of application)",
+        code: "570013",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 3,
+        name: "Directing (by fields of application)",
+        code: "570015",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 4,
+        name: "Cinematography (Camera Operator)",
+        code: "570006",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 5,
+        name: "Fine Arts Education (Bachelor’s degree)",
+        code: "550600",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000"],
+      },
+      {
+        id: 6,
+        name: "Choreography Pedagogy",
+        code: "570019",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 7,
+        name: "Literary Creativity",
+        code: "570027",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 8,
+        name: "Socio-cultural Activities",
+        code: "570029",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 9,
+        name: "Pop Ensemble Performer (vocalist, instrumentalist), teacher",
+        code: "",
+        prices: [
+          ["60 000 soloist", "40 000 instrumentalist"],
+          "32 000",
+          "32 000",
+          "32 000",
+          "32 000",
+          "32 000",
+        ],
+      },
+      {
+        id: 10,
+        name: "Folk Orchestra Conductor, teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 11,
+        name: "Folk Choir Conductor, teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 12,
+        name: "Traditional Music and Folklore (vocalist, instrumentalist), teacher",
+        code: "",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 13,
+        name: "Film Studies",
+        code: "570005",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+      {
+        id: 14,
+        name: "Theatre Studies",
+        code: "570002",
+        prices: ["40 000", "31 000", "29 000", "28 000", "28 000", "28 000"],
+      },
+    ],
+  },
+  accounting: {
+    service: "Service name",
+    amount: "Amount",
+    rows: [
+      {
+        id: 1,
+        name: "For admission of applicants and processing of documents",
+        price: "480-00",
+      },
+      {
+        id: 2,
+        name: "Dormitory accommodation fee for students (per month)",
+        price: "1300-00",
+      },
+      {
+        id: 3,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m (part-time employees)",
+        price: "13000-00",
+      },
+      {
+        id: 4,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
+        price: "11000-00",
+      },
+      {
+        id: 5,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 30 sq.m (part-time employees)",
+        price: "9000-00",
+      },
+      {
+        id: 6,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 17 sq.m",
+        price: "6000-00",
+      },
+      {
+        id: 7,
+        name: "Dormitory accommodation fee for educational institution employees (per month) 13 sq.m",
+        price: "5000-00",
+      },
+      {
+        id: 8,
+        name: "Transfer and reinstatement of studies",
+        price: "800-00",
+      },
+      {
+        id: 9,
+        name: "Transfer and reinstatement of studies (for foreign students)",
+        price: "1600-00",
+      },
+      {
+        id: 10,
+        name: "Academic certificate",
+        price: "250-00",
+      },
+      {
+        id: 11,
+        name: "For passing subject differences when transferring students from other educational institutions",
+        price: "300-00",
+      },
+      {
+        id: 12,
+        name: "Professional development course",
+        price: "10000-00",
+      },
+    ],
   },
 };

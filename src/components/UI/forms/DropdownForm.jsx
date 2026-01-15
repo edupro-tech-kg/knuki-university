@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const DropdownForm = ({ fields = [], className = "", labelClassName = "" }) => {
   const { t } = useTranslation();
-  const select = t("dropdownForm.select")
+  const select = t("dropdownForm.select");
 
   const [values, setValues] = useState(
     fields.reduce((acc, field) => {

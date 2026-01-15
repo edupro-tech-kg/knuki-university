@@ -8,7 +8,6 @@ function ClubGroup({ items }) {
   return (
     <section className="w-full bg-[#751715] py-6 sm:py-8 md:py-10">
       <div className="max-w-[1200px] mx-auto px-4 space-y-6 md:space-y-8">
-
         {/* Tabs */}
         <div className="bg-[#A62623] p-2 rounded-xl border border-[#751715]">
           <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-2 px-1 pb-1 sm:px-0 sm:pb-0">
@@ -17,9 +16,11 @@ function ClubGroup({ items }) {
                 key={club.key || club.name}
                 onClick={() => setActiveIndex(idx)}
                 className={`flex-1 px-4 py-3 rounded-md text-sm font-medium transition-colors border text-center
-                ${idx === activeIndex
+                ${
+                  idx === activeIndex
                     ? "bg-white text-[#751715] border-[#751715] shadow-sm"
-                    : "bg-[#751715] text-white border-[#A62623] hover:bg-[#8c1f1f] hover:border-[#8c1f1f]"}
+                    : "bg-[#751715] text-white border-[#A62623] hover:bg-[#8c1f1f] hover:border-[#8c1f1f]"
+                }
               `}
               >
                 <span className="line-clamp-2">{club.name}</span>
@@ -32,7 +33,6 @@ function ClubGroup({ items }) {
         <div className="space-y-6">
           {activeClub && (
             <div className="bg-[#A62623] text-white border border-[#751715] rounded-lg shadow-md flex flex-col md:flex-row overflow-hidden">
-              
               {/* Фото контейнер с горизонтальными прямоугольными пропорциями */}
               <div className="w-full md:w-2/5 lg:w-2/5 flex-shrink-0">
                 <div className="p-4 sm:p-5 md:p-6 lg:p-7 h-full flex flex-col">
@@ -82,7 +82,6 @@ function ClubGroup({ items }) {
             </div>
           )}
         </div>
-
       </div>
     </section>
   );
