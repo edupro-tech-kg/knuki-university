@@ -216,7 +216,7 @@ export const FACULTIES_KG = [
     description:
       "Эстрада-музыкалык билим берүү факультети мурдагы Искусство факультетинин түзүмүнөн бөлүнүп чыгып, 2025-жылдын 3-мартында Университеттин Окумуштуулар кеңешинин чечими менен өз алдынча түзүлгөн.Факультетте жогорку квалификациялуу илимий-педагогикалык кадрлар эмгектенет: Кыргыз Республикасынын эл артисттери, эмгек сиңирген искусство ишмерлери, маданият таануу боюнча кандидаттар жана кесипкөй чыгармачыл инсандар.  Факультеттин деканы Арстанбек уулу Асылбек. Ысык-Көл облусуна караштуу Жети-Өгүз районунун Саруу айылында 1993-жылы 18-ноябрында жарык дүйнөгө келген.  Б.Бейшеналиева атындагы КУМИУнун эки багыты боюнча бүтүрүүчүсү. ",
     heroImage: estrada1,
-    heroBackground: estrada1,
+    heroBackground: estrada7,
     sliderImages: [
       { src: estrada1, alt: "Эстрадное пение" },
       { src: estrada2, alt: "Музыкальное образование" },
@@ -291,7 +291,7 @@ export const FACULTIES_KG = [
     description:
       "Театр факультети – Кыргызстандагы баардык театр оюн-зоок мекемелерин жогорку билимдүү адис менен камсыз кылган жападан жалгыз окуу жай болуп саналат. Алгач 1993-жылдын  1-декабрында ачылып,  Ошондон тартып КРнын эл артисттери, эмгек сиңирген артисттери жогорку квалификациядагы режиссерлорду, актёрлорду даярдоо боюнча иш алып барып келет.",
     heroImage: theater1,
-    heroBackground: theater1,
+    heroBackground: theater5,
     sliderImages: [
       { src: theater1, alt: "Театральная постановка" },
       { src: theater2, alt: "Актёрское мастерство" },
@@ -356,7 +356,7 @@ export const FACULTIES_KG = [
     description:
       "Кино жана Телекөрсөтүү” факультети - окуу жайдагы эң жаш факультет. 2014-жылга чейин «Театр жана кино» факультетинин курамында болуп, кийин 2015-2018-жыл аралыгында «Телекоммуникация» - деп аталган. 2018-жылы Б.Бейшеналиева атындагы КММИУнин Окумуштуулар кеңеши жана ректораттын чечими менен «Кино жана телекөрсөтүү» факультети - деп аталып, ишмердүүлүгүн жүргүзүп келет. Факультетте жогорку квалификациялуу кино жана телекөрсөтүү жаатында тажрыйбасы мол илимий-педагогикалык кадрлар эмгектенишет. Факультет 3 кафедраны камтыйт.",
     heroImage: kino1,
-    heroBackground: kino1,
+    heroBackground: kino3,
     sliderImages: [
       { src: kino1, alt: "Киносъемка на площадке" },
       { src: kino2, alt: "Студенты на занятии по режиссуре" },
@@ -662,7 +662,7 @@ export const FACULTIES_RU = [
     description:
       "Факультет эстрадно-музыкального образования выделился из структуры бывшего Факультета искусств и был создан самостоятельно 3 марта 2025 года решением Ученого совета Университета.На факультете работают высококвалифицированные научно-педагогические кадры: народные артисты Кыргызской Республики, заслуженные деятели искусств, кандидаты культурологии и профессиональные творческие личности.  Декан факультета Асылбек Арстанбек уулу. Родился 18 ноября 1993 года в селе Саруу Джети-Огузского района Иссык-Кульской области.  Выпускник КУМИУ им. Б.Бейшеналиевой по двум направлениям.",
     heroImage: estrada1,
-    heroBackground: estrada1,
+    heroBackground: estrada7,
     sliderImages: [
       { src: estrada1, alt: "Эстрадное пение" },
       { src: estrada2, alt: "Музыкальное образование" },
@@ -736,7 +736,7 @@ export const FACULTIES_RU = [
     description:
       "Театральный факультет – единственное учебное заведение в Кыргызстане, обеспечивающее все театрально-зрелищные учреждения высокообразованными специалистами. Впервые открыт 1 декабря 1993 года, и с тех пор ведет работу по подготовке высококвалифицированных режиссеров и актеров, народных артистов, заслуженных артистов Кыргызской Республики.",
     heroImage: theater1,
-    heroBackground: theater1,
+    heroBackground: theater5,
     sliderImages: [
       { src: theater1, alt: "Театральная постановка" },
       { src: theater2, alt: "Актёрское мастерство" },
@@ -801,7 +801,7 @@ export const FACULTIES_RU = [
     description:
       "Факультет «Кино и Телевещание» - самый молодой факультет в учебном заведении. До 2014 года входил в состав факультета «Театр и кино», затем в 2015-2018 годах назывался «Телекоммуникации». В 2018 году решением Ученого совета и ректората КММИУ им. Б.Бейшеналиевой был переименован в факультет «Кино и телевещание» и продолжает свою деятельность. На факультете работают высококвалифицированные научно-педагогические кадры с большим опытом в области кино и телевещания. Факультет включает 3 кафедры.",
     heroImage: kino1,
-    heroBackground: kino1,
+    heroBackground: kino3,
     sliderImages: [
       { src: kino1, alt: "Киносъемка на площадке" },
       { src: kino2, alt: "Студенты на занятии по режиссуре" },
@@ -1103,7 +1103,7 @@ export const FACULTIES_EN = [
     description:
       "The Faculty of Estrada and Music Education separated from the structure of the former Faculty of Arts and was established independently on March 3, 2025 by the decision of the University Academic Council.The faculty employs highly qualified scientific and pedagogical staff: People's Artists of the Kyrgyz Republic, Honored Art Workers, Candidates of Cultural Studies, and professional creative personalities.  Dean of the faculty Asylbek Arstanbek uulu. Born on November 18, 1993 in the village of Saruu, Jeti-Oguz district, Issyk-Kul region.  Graduate of KUMIU named after B. Beishenalieva in two fields.",
     heroImage: estrada1,
-    heroBackground: estrada1,
+    heroBackground: estrada7,
     sliderImages: [
       { src: estrada1, alt: "Estrada singing" },
       { src: estrada2, alt: "Music education" },
@@ -1178,7 +1178,7 @@ export const FACULTIES_EN = [
     description:
       "The Theater Faculty is the only educational institution in Kyrgyzstan that provides all theater and entertainment institutions with highly educated specialists. First opened on December 1, 1993, and since then has been engaged in the training of highly qualified directors and actors, People's Artists, Honored Artists of the Kyrgyz Republic.",
     heroImage: theater1,
-    heroBackground: theater1,
+    heroBackground: theater5,
     sliderImages: [
       { src: theater1, alt: "Theater production" },
       { src: theater2, alt: "Acting skills" },
@@ -1243,7 +1243,7 @@ export const FACULTIES_EN = [
     description:
       "The Faculty of Cinema and Television is the youngest faculty in the educational institution. Until 2014, it was part of the Faculty of Theater and Cinema, then in 2015-2018 it was called Telecommunications. In 2018, by the decision of the Academic Council and the Rectorate of KMMIU named after B. Beishenalieva, it was renamed the Faculty of Cinema and Television and continues its activities. The faculty employs highly qualified scientific and pedagogical staff with extensive experience in the field of cinema and television. The faculty includes 3 departments.",
     heroImage: kino1,
-    heroBackground: kino1,
+    heroBackground: kino3,
     sliderImages: [
       { src: kino1, alt: "Film shooting on set" },
       { src: kino2, alt: "Students in directing class" },
