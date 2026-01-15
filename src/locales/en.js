@@ -1700,7 +1700,7 @@ export default {
       "The Academic Council includes: the rector (chairperson), vice-rectors, deans of faculties, heads of departments, scientific staff, representatives of the professorial-teaching staff, as well as representatives of the student council.",
     procedure:
       "The Academic Council meets once a month in accordance with the approved work plan. Decisions are made by open vote with a simple majority. Elections for vacant positions are conducted by secret ballot. The decisions of the Academic Council are put into effect by order of the rector and are mandatory for implementation.",
-    buttonText: "Academic Council Regulations",
+    buttonText: "Academic council regulations",
   },
   firstAccounting: {
     title: "Duration of study: 6 years (extramural form)",
