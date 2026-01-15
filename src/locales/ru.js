@@ -11,7 +11,7 @@ export default {
     faculties: "Факультет",
     students: "Студент",
     education: "Образование",
-    science: "Наука и международные отношения",
+    science: "Наука и Международные Связи",
     news: "Новости",
     documents: "Документы",
     applicants: "Абитуриент",
