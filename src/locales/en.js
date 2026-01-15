@@ -188,16 +188,37 @@ export default {
     dayHeaderFormat: {
       weekday: "short",
     },
+    holidays: [
+      { monthDay: "01-01", title: "New Year" },
+      { monthDay: "01-07", title: "Orthodox Christmas" },
+      { monthDay: "02-23", title: "Defender of the Fatherland Day" },
+      { date: "2025-03-01", title: "Ramadan begins" },
+      { monthDay: "03-08", title: "International Women's Day" },
+      { monthDay: "03-21", title: "Nooruz" },
+      { date: "2025-03-31", title: "Eid al-Fitr" },
+      { monthDay: "05-01", title: "Labour Day" },
+      { monthDay: "05-05", title: "Constitution Day" },
+      { monthDay: "05-09", title: "Victory Day" },
+      { date: "2025-06-07", title: "Eid al-Adha" },
+      { monthDay: "08-31", title: "Independence Day" },
+      { monthDay: "11-07", title: "Days of History and Memory of Ancestors" },
+      { monthDay: "11-08", title: "Days of History and Memory of Ancestors" },
+      { date: "2026-02-18", title: "Ramadan begins" },
+      { date: "2026-03-20", title: "Eid al-Fitr" },
+      { date: "2026-05-27", title: "Eid al-Adha" },
+    ],
     events: [
       { id: 1, title: "Congratulations on White Hat Day.", date: "2025-11-05" },
       { id: 2, title: "The rector congratulated the veteran women of KMMIU", date: "2025-11-08" },
-      { id: 3, title: "Uzbekistan", data: "2025-11-13" },
+      { id: 3, title: "Uzbekistan", date: "2025-11-13" },
       { id: 4, title: "KMMU and Bishkek City Drama Theater collaborate", date: "2025-11-12" },
       { id: 5, title: "Dance lesson", date: "2025-11-15" },
       { id: 6, title: "Ankara", date: "2025-11-22" },
     ],
     lastNews: {
       title: "Latest News",
+      empty: "No news for the selected day.",
+      clearFilter: "Show all",
       newsData: [
         {
           desc: "A KUMIU student took 3rd place in an international competition",
@@ -382,26 +403,31 @@ export default {
     items: [
       {
         id: "makam",
+        date: "2025-03-22",
         title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
         buttonText: "more",
       },
       {
         id: "gym",
+        date: "2025-09-17",
         title: " NEW SPORTS HALL COMMISSIONED AT KNUCA",
         buttonText: "more",
       },
       {
         id: "building",
+        date: "2025-10-01",
         title: "CONSTRUCTION OF A NEW ACADEMIC BUILDING AT KNUCA HAS BEGUN",
         buttonText: "more",
       },
       {
         id: "students",
+        date: "2025-04-22",
         title: "TWO KNUCA STUDENTS AWARDED PRESIDENTIAL SCHOLARSHIPS",
         buttonText: "more",
       },
       {
         id: "instruments",
+        date: "2025-04-09",
         title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
         buttonText: "more",
       },

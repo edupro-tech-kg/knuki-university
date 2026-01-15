@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion";
 import slide1 from "../assets/images/applicants/slide1.jpg";
 import slide2 from "../assets/images/applicants/slide2.jpg";
 import slide3 from "../assets/images/applicants/slide3.jpg";
@@ -29,6 +30,7 @@ export default function ApplicantsSwiper() {
   const { t } = useTranslation();
   const studentsMoments = t("studentsMoments", { returnObjects: true });
   const [isMobile, setIsMobile] = useState(false);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   const slides = [
     slide1,
@@ -82,13 +84,21 @@ export default function ApplicantsSwiper() {
               dynamicBullets: true,
             }}
             navigation={!isMobile}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
+            autoplay={
+              prefersReducedMotion
+                ? false
+                : {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }
+            }
             speed={800}
             loop={true}
-            modules={[EffectCube, Pagination, Autoplay, Navigation]}
+            modules={
+              prefersReducedMotion
+                ? [EffectCube, Pagination, Navigation]
+                : [EffectCube, Pagination, Autoplay, Navigation]
+            }
             className="h-full rounded-xl overflow-hidden shadow-2xl [&_.swiper-button-next]:hidden [&_.swiper-button-prev]:hidden"
           >
             {slides.map((slide, index) => (

@@ -12,9 +12,11 @@ import Mission9 from "../assets/images/mission9.jpg";
 import { Trans } from "react-i18next";
 import Pattern from "../assets/svg/patterns.svg";
 import { useEffect, useMemo, useState } from "react";
+import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion";
 
 function MissionSection() {
   const { t } = useTranslation();
+  const prefersReducedMotion = usePrefersReducedMotion();
   const images = useMemo(
     () => [
       MissionSectionImg,
@@ -32,12 +34,12 @@ function MissionSection() {
   const [activeMainIndex, setActiveMainIndex] = useState(0);
 
   useEffect(() => {
-    if (images.length <= 1) return;
+    if (prefersReducedMotion || images.length <= 1) return;
     const id = window.setInterval(() => {
       setActiveMainIndex((prev) => (prev + 1) % images.length);
     }, 9000);
     return () => window.clearInterval(id);
-  }, [images.length]);
+  }, [images.length, prefersReducedMotion]);
 
   return (
     <section id="mission" className="bg-background w-full relative overflow-x-hidden mt-12">

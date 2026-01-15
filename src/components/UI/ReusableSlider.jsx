@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import PropTypes from "prop-types";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 
 const ReusableSlider = ({
   images = [],
@@ -17,19 +18,20 @@ const ReusableSlider = ({
   mobilePosition = "top",
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % images.length);
 
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
   useEffect(() => {
-    if (!autoplay || images.length <= 1) return;
+    if (prefersReducedMotion || !autoplay || images.length <= 1) return;
 
     const interval = setInterval(() => {
       nextSlide();
     }, autoplayInterval);
 
     return () => clearInterval(interval);
-  }, [autoplay, autoplayInterval, images.length, currentSlide]);
+  }, [autoplay, autoplayInterval, images.length, currentSlide, prefersReducedMotion]);
 
   if (!images.length) return null;
 
