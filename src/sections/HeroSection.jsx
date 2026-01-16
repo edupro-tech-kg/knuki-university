@@ -9,6 +9,12 @@ import img3 from "../assets/images/heroImage3.jpg";
 import img4 from "../assets/images/heroImage4.jpg";
 import img5 from "../assets/images/heroImage5.jpg";
 import img6 from "../assets/images/heroImage6.jpg";
+import img7 from "../assets/images/heroImage7.jpg";
+import img8 from "../assets/images/heroImage8.jpg";
+import img9 from "../assets/images/heroImage9.jpg";
+import img10 from "../assets/images/faculties/estrada-music/slide8.jpg";
+import img11 from "../assets/images/faculties/folk-music/slide7.jpg";
+import img12 from "../assets/images/faculties/kino-tele/slide4.jpg";
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -22,6 +28,12 @@ export default function HeroSection() {
     { src: img4, alt: "University building" },
     { src: img5, alt: "Students in campus" },
     { src: img6, alt: "Students in campus" },
+    { src: img7, alt: "Students playing komuz and singing on stage" },
+    { src: img8, alt: "Students playing instrument and singing on stage" },
+    { src: img9, alt: "Students singing choral music outdoors" },
+    { src: img10, alt: "Students performing on stage" },
+    { src: img11, alt: "Girl playing traditional instrument" },
+    { src: img12, alt: "Taking film footage" },
   ];
 
   return (
