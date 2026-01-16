@@ -58,9 +58,8 @@ const ReusableSlider = ({
                   {images.map((_, i) => (
                     <span
                       key={i}
-                      className={`h-1.5 w-1.5 rounded-full ${
-                        i === currentSlide ? "bg-white" : "bg-white/40"
-                      }`}
+                      className={`h-1.5 w-1.5 rounded-full ${i === currentSlide ? "bg-white" : "bg-white/40"
+                        }`}
                     />
                   ))}
                 </div>
@@ -86,9 +85,8 @@ const ReusableSlider = ({
                 key={i}
                 src={image.src}
                 alt={image.alt || `Slide ${i + 1}`}
-                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out ${
-                  i === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out ${i === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+                  }`}
               />
             ))}
           </div>
@@ -98,9 +96,8 @@ const ReusableSlider = ({
               {images.map((_, i) => (
                 <span
                   key={i}
-                  className={`h-1.5 w-1.5 rounded-full ${
-                    i === currentSlide ? "bg-white" : "bg-white/40"
-                  }`}
+                  className={`h-1.5 w-1.5 rounded-full ${i === currentSlide ? "bg-white" : "bg-white/40"
+                    }`}
                 />
               ))}
             </div>
