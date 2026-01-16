@@ -1,19 +1,27 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/UI/Button";
+import PdfModal from "../components/UI/PdfModal";
 import okumushtuularKengeshi from "../assets/pdf/okumushtuular-kengeshi.pdf";
 
 export default function CouncilPage() {
   const { t } = useTranslation();
   const functions = t("council.function", { returnObjects: true });
 
-  const handleOpenPdf = () => {
-    const pdfUrl =
-      typeof okumushtuularKengeshi === "string"
-        ? okumushtuularKengeshi
-        : okumushtuularKengeshi?.default || okumushtuularKengeshi;
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
 
-    window.open(pdfUrl, "_blank");
+  const handleOpenPdf = () => {
+    setIsPdfModalOpen(true);
   };
+
+  const handleClosePdfModal = () => {
+    setIsPdfModalOpen(false);
+  };
+
+  const pdfUrl =
+    typeof okumushtuularKengeshi === "string"
+      ? okumushtuularKengeshi
+      : okumushtuularKengeshi?.default || okumushtuularKengeshi;
 
   return (
     <section className="w-full px-4 sm:px-6 lg:px-16 py-8 sm:py-12">
@@ -33,9 +41,10 @@ export default function CouncilPage() {
             </h2>
 
             <Button
-              variant="secondary"
+              variant="primaryIcon"
               onClick={handleOpenPdf}
-              className="whitespace-nowrap min-w-[200px] text-center"
+              className="whitespace-nowrap min-w-[200px] text-center 
+            !border-black !text-black hover:!border-black hover:!text-black hover:!bg-transparent"
             >
               {t("council.buttonText")}
             </Button>
@@ -66,6 +75,13 @@ export default function CouncilPage() {
           </ul>
         </div>
       </div>
+      {isPdfModalOpen && (
+        <PdfModal
+          pdf={pdfUrl}
+          onClose={handleClosePdfModal}
+          title={t("council.buttonText") || "Документ"}
+        />
+      )}
     </section>
   );
 }
