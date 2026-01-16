@@ -268,7 +268,7 @@ export default {
       library: "LIBRARY",
       literature: "HIGH LITERATURE COURSE",
       department: "PERSONNEL DEPARTMENT",
-      council: "Academic Council of KGUKI named after B. Beishenalieva",
+      council: "Academic Council",
       accounting: "ACCOUNTING",
     },
     button: "Learn More",
@@ -894,8 +894,7 @@ export default {
             "Higher education. Graduated from Osh State University, Faculty of Kyrgyz Philology with honors in 2009.\nCandidate of Philological Sciences (2015).\nAssociate Professor (2019).\nGraduated from the Faculty of Law, Osh State University (2019).",
           workExperience:
             "2012–2016 — Music School No.5, Bishkek.\n2016–2025 — KSUCА.\nSince 2023 — Chairman of the Trade Union.\nSince 2024 — Head of the Department of Traditional Music and Folklore.",
-          computerSkills:
-            "Microsoft Office, Excel, PowerPoint, Internet.",
+          computerSkills: "Microsoft Office, Excel, PowerPoint, Internet.",
           languages: "Kyrgyz (native), Russian (fluent)",
         },
       },
@@ -904,28 +903,21 @@ export default {
         post: "Vice-Rector for Academic Affairs",
         additionalInfo: {
           birthDatePlace: "March 18, 1966",
-          residence:
-            "Alamudun district, Kara-Zhygach village, T. Buzurmankul St. 3/1",
+          residence: "Alamudun district, Kara-Zhygach village, T. Buzurmankul St. 3/1",
           contact: "+996500 708 561",
           email: "abdigaparov.nur93@gmail.com",
-          academicDegree:
-            "Postgraduate and Master's Department, KSUCА, Bishkek.",
+          academicDegree: "Postgraduate and Master's Department, KSUCА, Bishkek.",
           academicTitle: "Associate Professor",
           education:
             "1982–1984 — Pop studio at the National Philharmonic.\n1984–1990 — KSII, Orchestra Conductor.\n2003–2006 — Master’s degree in Pedagogy.\nCandidate of Pedagogical Sciences.\nAdvanced training courses (1996–2008).\n1985–1987 — Military service.",
           workExperience:
             "1990 — Music teacher.\n1991–2023 — Kyrgyz State University.\nDeputy Dean, Head of Department, Dean.\nAuthor of university anthems.\nSince July 19, 2023 — Vice-Rector for Academic Affairs.",
-          courses:
-            "2011 — Certificate in 'En Belgi' method.",
-          publications:
-            "More than 10 books, audio and video publications, music collections.",
+          courses: "2011 — Certificate in 'En Belgi' method.",
+          publications: "More than 10 books, audio and video publications, music collections.",
           computerSkills: "Microsoft Word",
-          professionalSkills:
-            "Documentation, computer skills, vocal performance, pedagogy",
-          personalQualities:
-            "Communicative, responsible, decisive, accurate",
-          awards:
-            "Honored Educator of the Kyrgyz Republic and numerous state awards",
+          professionalSkills: "Documentation, computer skills, vocal performance, pedagogy",
+          personalQualities: "Communicative, responsible, decisive, accurate",
+          awards: "Honored Educator of the Kyrgyz Republic and numerous state awards",
           maritalStatus: "Married, one son and three daughters",
         },
       },
@@ -942,10 +934,8 @@ export default {
             "2003–2008 — Kyrgyz State University.\n2008–2011 — Postgraduate studies.\n2011–2014 — Master's degree in Psychology (with honors).",
           workExperience:
             "Since November 2025 — Vice-Rector for Research and International Relations.\n2009–2025 — Lecturer and Associate Professor.\n2008–2009 — School teacher.",
-          courses:
-            "2023–2025 — Courses in pedagogy, digital education, PISA, AI.",
-          publications:
-            "More than 40 scientific publications and manuals.",
+          courses: "2023–2025 — Courses in pedagogy, digital education, PISA, AI.",
+          publications: "More than 40 scientific publications and manuals.",
         },
       },
       {
@@ -953,14 +943,12 @@ export default {
         post: "Vice-Rector for State Language and Educational Affairs",
         additionalInfo: {
           birthDatePlace: "May 25, 1978",
-          residence:
-            "Bishkek city, Pervomaisky district\nKalys Ordo microdistrict, 7/66",
+          residence: "Bishkek city, Pervomaisky district\nKalys Ordo microdistrict, 7/66",
           contact: "+996778-155-544",
           email: "ulanbekturdaliev1978@gmail.com",
           academicDegree:
             "Postgraduate and Master's Department, KSUCА named after B. Beishenalieva, Bishkek",
-          education:
-            "Kyrgyz National University named after J. Balasagyn",
+          education: "Kyrgyz National University named after J. Balasagyn",
           workExperience:
             "2005–2006 — Lecturer and Deputy Dean, Faculty of Kyrgyz Philology.\n2006–2008 — Head of Youth and Student Self-Government Committee.\n2008–2009 — Deputy Vice-Rector for Youth and Social Policy.\n2010 — Director of Student Campus.\n2010–2021 — Deputy Director, Institute of Targeted Teacher Training.\n2022 — Deputy Director for State Language and Educational Affairs.\n2022–2024 — Director of T. Ermatov Music Pedagogical College.\n2024–2025 — Senior Lecturer.\nSince 2025 — Vice-Rector at KSUCА.",
           languages: "Kyrgyz (native), Russian (fluent)",
@@ -971,20 +959,17 @@ export default {
         post: "Vice-Rector for Administrative and Economic Affairs",
         additionalInfo: {
           birthDatePlace: "June 10, 2004",
-          residence:
-            "Chui region, Alamudun district, Besh-Kungey village, Sarbagysheva St., No.26",
+          residence: "Chui region, Alamudun district, Besh-Kungey village, Sarbagysheva St., No.26",
           contact: "+996500727971",
           email: "abdigaparov.nur93@gmail.com",
-          academicDegree:
-            "Postgraduate and Master's Department, KSUCА, Bishkek",
+          academicDegree: "Postgraduate and Master's Department, KSUCА, Bishkek",
           education:
             "T. Ermatov Music Pedagogical College (full-time).\nKyrgyz National University of Culture and Arts (part-time, incomplete).\n2021 — Opera and chamber singer, teacher.\nVocal and Choral Faculty, Kyrgyz National Conservatory.\nPostgraduate studies since 2024 — Music Art (17.00.02).",
           workExperience:
             "2022–2024 — Music teacher.\n2024–2025 — Assistant to the Rector.\nSince November 1, 2025 — Vice-Rector.",
           courses:
             "2023 — Competency-based lesson planning.\n2025 — Accreditation of educational programs.",
-          professionalSkills:
-            "Playing musical instruments, stress management",
+          professionalSkills: "Playing musical instruments, stress management",
           languages: "Kyrgyz (native), Russian (fluent)",
           personalQualities:
             "Responsible, honest, punctual, disciplined, stress-resistant, team-oriented",
@@ -1000,16 +985,13 @@ export default {
           residence: "Bishkek, Kyrgyz Republic",
           contact: "+996550282129",
           email: "m.kyshtobaev@mail.ru",
-          academicDegree:
-            "Postgraduate and Master's Department, KSUCА, Bishkek",
+          academicDegree: "Postgraduate and Master's Department, KSUCА, Bishkek",
           education:
             "2009 — Pop and folklore studio at the National Philharmonic.\n2014 — Folk Singing Department, National Conservatory.",
           workExperience:
             "2012–2016 — Music School No.5.\n2016–2025 — KSUCА.\nSince 2023 — Trade Union Chairman.\nSince 2024 — Head of Traditional Music and Folklore Department.",
-          professionalSkills:
-            "Documentation, computer skills, consulting, negotiations",
-          personalQualities:
-            "Communicative, independent, responsible, decisive, creative",
+          professionalSkills: "Documentation, computer skills, consulting, negotiations",
+          personalQualities: "Communicative, independent, responsible, decisive, creative",
           awards:
             "Honored Cultural Worker.\nWinner and participant of international and national competitions.",
         },
@@ -1018,35 +1000,24 @@ export default {
         name: "Marazhapova Nurzhan Kenzhekulovna",
         post: "Head of Postgraduate and Master's Department",
         additionalInfo: {
-          birthDatePlace:
-            "October 4, 1972, Osh region, Kara-Kulja district",
-          residence:
-            "Bishkek, Sadyrbaev St., 1/5, apt. 152B",
+          birthDatePlace: "October 4, 1972, Osh region, Kara-Kulja district",
+          residence: "Bishkek, Sadyrbaev St., 1/5, apt. 152B",
           contact: "+996704041072",
           email: "nurjan.kenjekulovna@gmail.com",
-          academicDegree:
-            "Associate Professor (2010), Professor of RTTIA (2020)",
-          academicTitle:
-            "Candidate of Philological Sciences, Associate Professor, Professor",
+          academicDegree: "Associate Professor (2010), Professor of RTTIA (2020)",
+          academicTitle: "Candidate of Philological Sciences, Associate Professor, Professor",
           education:
             "1990–1995 — Osh State University, Philology.\n1996–2001 — Postgraduate studies.\n2004–2007 — Law Institute.",
           workExperience:
             "1996–2003 — OshTU: Lecturer, Head of Department.\n2004–2015 — Osh Law Institute: Dean, Director.\n2015–2022 — Head of Passport and Registration Departments.\n2022 — Director of Encyclopedia and Terminology Center.\n2023 — Academic Secretary.\nSince 2024 — Head of Department at KSUCА.",
-          courses:
-            "2024 — Educational Program Accreditation (NIARS/IARC).",
-          publications:
-            "PhD dissertation on modern Kyrgyz household vocabulary.",
+          courses: "2024 — Educational Program Accreditation (NIARS/IARC).",
+          publications: "PhD dissertation on modern Kyrgyz household vocabulary.",
           computerSkills: "MS Office, Internet",
-          professionalSkills:
-            "Documentation, computer literacy, pedagogy",
-          languages:
-            "Kyrgyz (native), Russian (fluent), Uzbek and English (with dictionary)",
-          personalQualities:
-            "Responsible, accurate, polite",
-          awards:
-            "Multiple honorary certificates and state awards.",
-          maritalStatus:
-            "Married, one daughter and one son",
+          professionalSkills: "Documentation, computer literacy, pedagogy",
+          languages: "Kyrgyz (native), Russian (fluent), Uzbek and English (with dictionary)",
+          personalQualities: "Responsible, accurate, polite",
+          awards: "Multiple honorary certificates and state awards.",
+          maritalStatus: "Married, one daughter and one son",
         },
       },
       {
@@ -1060,8 +1031,8 @@ export default {
           workExperience:
             "2016–2018 — Secondary School No. 87, Bishkek, Geography Teacher.\n2018–2019 — Special General Education Boarding School of the Kyrgyz Republic, Bishkek, Educator.\n2019–2022 — T. Ermatov Bishkek Pedagogical College, Bishkek, Academic Affairs Inspector, Geography Teacher, Deputy Director.\n2022–2023 — T. Ermatov Bishkek Pedagogical College, Bishkek, Deputy Director, Geography Teacher.\nSince 2023 — KUMIU, Bishkek, Head of the Academic Affairs Department, Senior Lecturer of the Department of Social and Humanitarian Disciplines.",
           education:
-            "2016 — Bachelor’s degree in Geography (Physical Geography), Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek.\n2020 — Master’s degree in Geography (Economic, Social and Political Geography), Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek.\nSince 2023 — 2nd-year PhD student in specialty 25.00.24 — Economic, Social, Political and Recreational Geography, Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek."
-        }
+            "2016 — Bachelor’s degree in Geography (Physical Geography), Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek.\n2020 — Master’s degree in Geography (Economic, Social and Political Geography), Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek.\nSince 2023 — 2nd-year PhD student in specialty 25.00.24 — Economic, Social, Political and Recreational Geography, Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek.",
+        },
       },
       {
         name: "Baktybekova Begai Baktybekovna",
@@ -1083,9 +1054,8 @@ export default {
             "Conducts a master’s research study and prepares scientific articles on the topic “Psychological Climate in the Family and Its Influence on Personality Development”.",
           computerSkills:
             "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, Internet, Canva",
-          languages:
-            "Kyrgyz (native), Russian (fluent), English"
-        }
+          languages: "Kyrgyz (native), Russian (fluent), English",
+        },
       },
       {
         name: "Ybyrayakunova Nazira Kubanychbekovna",
@@ -1098,11 +1068,9 @@ export default {
             "1993–1995 — Bishkek Financial and Economic Technical School. Specialty: Accounting, Control and Analysis of Economic Activity.\n2004–2008 — International Academy of Management, Law, Finance and Business. Specialty: Accounting, Analysis and Audit.",
           workExperience:
             "March 19, 1996 – October 28, 2000 — Cashier at the Republican Children’s Clinical Hospital.\nMay 2, 2001 – December 31, 2003 — Cashier at BADT.\nDecember 31, 2003 – March 17, 2014 — Acting Chief Accountant at BADT.\nMarch 17, 2014 – July 1, 2024 — Payroll Accountant at BADK.\nJuly 1, 2024 – February 14, 2025 — Accountant at Arashan Ayil Okmotu.\nSince February 17, 2025 — Chief Accountant of KNUKI named after B. Beishenalieva.",
-          professionalSkills:
-            "Advanced PC user: MS Office (Word, Excel), Internet, 1C Accounting",
-          maritalStatus:
-            "Married, two children"
-        }
+          professionalSkills: "Advanced PC user: MS Office (Word, Excel), Internet, 1C Accounting",
+          maritalStatus: "Married, two children",
+        },
       },
       {
         name: "Ergeshova Kumarkan Tokoyevna",
@@ -1120,8 +1088,7 @@ export default {
             "2005–2011 — Participation in trainings conducted by the NGO “Arysh”.\n2009 — Certificate for active participation in the three-module educational project “Leadership through Self-Support — Youth and Women Leadership Development” organized by INTRAC CA.\n2007–2009 — Certificate for participation in the ACT-Development project “Strengthening NGOs for the Development of the Self-Help Movement”.\nJune 2011 — Participation in the training “Budget Practicum on the Example of the Local Budget of Bishkek City” organized by the Public Association “Baldardy Korgoo Borboru”, Issyk-Kul.\nSeptember 2011 — Certificate for participation in the forum “Development and Capacity Building of Women’s Leadership in Kyrgyzstan” organized by LEGACY INTERNATIONAL and the International Center Interbilim.\n2014 — Participation in the training “Psychosocial Support for Children in Difficult Life Situations”.\n2017 — Certificate for participation in the “Leadership School” training organized by Women’s Learning Partnership (WLP).\n2018 — Certificate for participation in the training “Teaching Youth Civic Literacy through Art” organized by the Youth Development Institute.\n2018 — Certificate for participation in the training “Teaching Youth Civic Literacy through Elements of Art” organized by the Youth Development Institute.\n2018 — Certificate for participation in the training “SMM for NGO Development” organized by ARGO.\n2021–2022 — Certificate of completion of the professional development course “Social Work: Paralegal Activity” at MUK.\n2022 — Participation in the UNICEF training “Prevention of Sexual Exploitation and Abuse (PSEA)”.\n2021 — Certificate for participation in the training “Promoting Initiatives in the Cultural Sector” organized by the “Music Without Borders” Public Foundation.\nJune 2011 — Participation in the seminar “Budget Practicum on the Example of the Local Budget of Bishkek City”, Issyk-Kul.\n2018 — Participation in the UNICEF National Forum in Bishkek: “Access to Education for Children in Difficult Life Conditions”.\n2018 — Participation in an experience exchange event under UNICEF in Tbilisi, Georgia.",
           publications:
             "2009 — Presentation on the topic “Development of CSP Leadership” at the 2nd CSP Social Fair in the Republic of Tajikistan.\nDecember 7–8, 2011 — Presentation at the national forum “Social Pedagogy: Problems and Prospects” in Kyrgyzstan on the topic “Issues of Coverage and Accessibility of Basic Education”.\n2025 — Presentation at the international scientific and theoretical conference “Current Issues of Art Studies: Tradition and Modernity” on the topic “Modern Challenges to Traditional Music of Kyrgyzstan”.\n2004 — Author of the educational manual “Collection of New Kyuu Melodies”.",
-          computerSkills:
-            "Confident and proficient computer user.",
+          computerSkills: "Confident and proficient computer user.",
           professionalSkills:
             "Experience in conducting trainings.\nExtensive experience working with families in new settlements of Bishkek city and in difficult life situations.",
           personalQualities:
@@ -1129,8 +1096,8 @@ export default {
           languages:
             "Kyrgyz — native, Russian — fluent, Turkish — for everyday communication, English — basic level.",
           awards:
-            "2009 — Excellence in Education Award.\n2009 — Excellence in Culture of the Kyrgyz Republic Award.\nLetter of Appreciation from the USAID “Quality Education” project.\n2022 — Awarded with a Certificate of Appreciation by the Ministry of Labor and Social Development of the Kyrgyz Republic."
-        }
+            "2009 — Excellence in Education Award.\n2009 — Excellence in Culture of the Kyrgyz Republic Award.\nLetter of Appreciation from the USAID “Quality Education” project.\n2022 — Awarded with a Certificate of Appreciation by the Ministry of Labor and Social Development of the Kyrgyz Republic.",
+        },
       },
       {
         name: "Urmatbekov Chynasyl Urmatbekovich",
@@ -1150,8 +1117,8 @@ export default {
           professionalSkills:
             "Work with official documentation;\ncomputer proficiency;\nconsulting and assisting people;\nnegotiation skills.",
           personalQualities:
-            "Easily establishes communication;\nindependence in performing official duties;\nresponsibility;\ndecisiveness;\ncreativity."
-        }
+            "Easily establishes communication;\nindependence in performing official duties;\nresponsibility;\ndecisiveness;\ncreativity.",
+        },
       },
       {
         name: "Bakytbek uulu Isabek",
@@ -1172,8 +1139,8 @@ export default {
           professionalSkills:
             "Work with documentation;\ncomputer skills;\ninstrumental performance (accordion);\nteaching expertise.",
           personalQualities:
-            "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate."
-        }
+            "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate.",
+        },
       },
       {
         name: "Abdigaparov Nurtilek Abdigaparovich",
@@ -1194,8 +1161,8 @@ export default {
           professionalSkills:
             "Work with documentation;\ncomputer proficiency;\nvocal performance;\nteaching skills.",
           personalQualities:
-            "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate."
-        }
+            "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate.",
+        },
       },
       {
         name: "Abdyrahmanova Gulzada Abdyrahmanovna",
@@ -1217,9 +1184,7 @@ export default {
           workExperience:
             "Sep 2025 – present — Kyrgyz National University of Culture and Arts named after B. Beishenalieva — Press Secretary\nSep 2023 – Aug 2024 — Kyrgyz National “Manas” Theatre — Akyn-Manaschi\nMar 2023 – Jul 2023 — Ministry of Culture, Information, Sports and Youth Policy, National Cultural Center — Chief Specialist\nJan 2022 – Jan 2023 — “7 Kanal” TV — Presenter, Reporter\nMay 2022 – Nov 2022 — I. Arabaev Kyrgyz State University — Press Secretary\nApr 2018 – Jun 2020 — “NewTV” — Reporter, Editor",
         },
-      }
-
-
+      },
     ],
   },
   HRdepartment: {
@@ -1725,8 +1690,8 @@ export default {
         name: "1. Strategic Management and Development:",
         functions: [
           "approves the university's development strategy, main directions of educational and scientific policy;",
-          "reviews the university's mission, development concept, and education quality assurance system."
-        ]
+          "reviews the university's mission, development concept, and education quality assurance system.",
+        ],
       },
       {
         name: "2. Educational and Scientific Activities:",
@@ -1734,8 +1699,8 @@ export default {
           "approves curriculum, educational programs, and regulations for organizing the educational process;",
           "reports on teachers' research and teaching-methodological work;",
           "approves dissertation research topics and appoints scientific supervisors;",
-          "considers recommendations for awarding academic degrees and titles."
-        ]
+          "considers recommendations for awarding academic degrees and titles.",
+        ],
       },
       {
         name: "3. Personnel Policy:",

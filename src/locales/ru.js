@@ -301,7 +301,7 @@ export default {
       library: "БИБЛИОТЕКА",
       literature: "КУРС ВЫСШЕЙ ЛИТЕРАТУРЫ",
       department: "ОТДЕЛ КАДРОВ",
-      council: "Учёный совет КГУКИ имени Б.Бейшеналиевой",
+      council: "Учёный совет",
       accounting: "БУХГАЛТЕРИЯ",
     },
     button: "Подробнее",
