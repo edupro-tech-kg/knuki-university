@@ -1196,6 +1196,27 @@ export default {
           personalQualities:
             "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate."
         }
+      },
+      {
+        name: "Abdyrahmanova Gulzada Abdyrahmanovna",
+        post: "Press Secretary",
+        additionalInfo: {
+          birthDatePlace:
+            "August 27, 1996\nJalal-Abad region, Aksy district, Zherge-Tal rural municipality, Bospiek village\nPersonal number: 12708199600474\nNationality: Kyrgyz\nCitizenship: Kyrgyzstan",
+          residence: "Bishkek, 8th microdistrict, 7/61",
+          contact: "+996 507 270 896",
+          email: "aksygulzada@gmail.com",
+          education:
+            "Education: Bachelor’s degree\n2014–2018 — Kyrgyz-Turkish Manas University, Office Management\n2018–2021 — I. Arabaev Kyrgyz State University, Management\nSpecialty: Manager",
+          computerSkills:
+            "Confident PC user (MS Office, Canva, Photoshop, Adobe Premiere Pro, CapCut, iMovie)",
+          languages: "Turkish, Russian",
+          personalQualities: "Not a member of any political party",
+          awards:
+            "Letter of Appreciation — State Committee for National Security of the Kyrgyz Republic;\nLetter of Appreciation — Jogorku Kenesh of the Kyrgyz Republic",
+          workExperience:
+            "Sep 2025 – present — Kyrgyz National University of Culture and Arts named after B. Beishenalieva — Press Secretary\nSep 2023 – Aug 2024 — Kyrgyz National “Manas” Theatre — Akyn-Manaschi\nMar 2023 – Jul 2023 — Ministry of Culture, Information, Sports and Youth Policy, National Cultural Center — Chief Specialist\nJan 2022 – Jan 2023 — “7 Kanal” TV — Presenter, Reporter\nMay 2022 – Nov 2022 — I. Arabaev Kyrgyz State University — Press Secretary\nApr 2018 – Jun 2020 — “NewTV” — Reporter, Editor",
+        },
       }
 
 
