@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Button from "../components/UI/Button";
+import PdfModal from "../components/UI/PdfModal";
+import DocumentTable from "../components/UI/DocumentTable";
+
 
 import doc1 from "../assets/pdf/doc1.pdf";
 import doc2 from "../assets/pdf/doc2.pdf";
@@ -67,12 +69,13 @@ const nlaKgukiPdfs = {
   doc30,
   doc31,
 };
+
 const nlaKgukiDocuments = [
   {
     text: "Постановление Совета Министров Киргизской ССР № 482 от 30 августа 1967 года «Об организации Киргизского государственного института искусств» (КГИИ).",
     id: "doc1",
   },
-  {
+   {
     text: "Постановление Совета Министров Киргизской ССР № 21 от 28 января 1974 года, об официальном наименовании КГИИ, как «Киргизский государственный институт искусств имени Бубусары Бейшеналиевой».",
     id: "doc2",
   },
@@ -117,7 +120,7 @@ const nlaKgukiDocuments = [
     id: "doc12",
   },
   {
-    text: "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинде билим алуучуларын которуу, окуудан чыгаруу, окууга калыбына келтирүү жана академиялык өргүү берүү тартиби жөнүндөгү ЖОБО",
+    text: "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетинде билим алуучуларын которуу, окуудан чыгаруу, окууга калыбына келтиру жана академиялык өргүү берүү тартиби жөнүндөгү ЖОБО",
     id: "doc13",
   },
   {
@@ -129,7 +132,7 @@ const nlaKgukiDocuments = [
     id: "doc15",
   },
   {
-    text: 'КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ЖОГОРКУ КЕСИПТИК БИЛИМ БЕРҮҮНҮН МАМЛЕКЕТТИК БИЛИМ БЕРҮҮ СТАНДАРТЫ. Квалификация: "Специалист" (2021-жылдын 11-декабрындагы №1578/1 буйругу менен бекитилген.) 570002 Театр таануу 570027 Адабий чыгармачылык 570013 Үн режиссурасы (колдонулуучу багыттары боюнча) 570014 Актердук өнөр 570015 Режиссура (колдонулуучу багыттары боюнча) 570006 Кинооператорлук 570029 Социалдык-маданий ишмердүүлүк 570019 Хореография педагогикасы 550600 Көркөмдүк билим берүۈ',
+    text: 'КЫРГЫЗ РЕСПУБЛИКАСЫНЫН ЖОГОРКУ КЕСИПТИК БИЛИМ БЕРҮҮНҮН МАМЛЕКЕТТИК БИЛИМ БЕРҮҮ СТАНДАРТЫ. Квалификация: "Специалист" (2021-жылдын 11-декабрындагы №1578/1 буйругу менен бекитилген.) 570002 Театр таануу 570027 Адабий чыгармачылык 570013 Үн режиссурасы (колдонулуучу багыттары боюнча) 570014 Актердук өнөр 570015 Режиссура (колдонулуучу багыттары боюнча) 570006 Кинооператорлук 570029 Социалдык-маданий ишмердүүлүк 570019 Хореография педагогикасы 550600 Көркөмдүк билим берү',
     id: "doc16",
   },
   {
@@ -194,22 +197,35 @@ const nlaKgukiDocuments = [
   },
 ];
 
-function PdfModal({ pdf, onClose }) {
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-      <div className="bg-white w-11/12 md:w-3/4 h-5/6 rounded-lg overflow-hidden relative">
-        <button className="absolute top-2 right-2 bg-gray-200 px-3 py-1 rounded" onClick={onClose}>
-          x
-        </button>
-        <iframe src={pdf} className="w-full h-full" title="Документ" />
-      </div>
-    </div>
-  );
-}
-
 export default function NLAkguki() {
   const { t } = useTranslation();
-  const [activePdf, setActivePdf] = useState(null);
+  const [modalState, setModalState] = useState({
+    isOpen: false,
+    pdf: null,
+    title: "",
+  });
+
+  const tableData = nlaKgukiDocuments.map((item, index) => ({
+    id: index + 1, 
+    docId: item.id, 
+    text: item.text,
+    pdf: nlaKgukiPdfs[item.id],
+    displayIndex: index + 1,
+  }));
+
+  const openPdfModal = (item) => {
+    if (item.pdf) {
+      setModalState({ 
+        isOpen: true, 
+        pdf: item.pdf, 
+        title: item.text 
+      });
+    }
+  };
+
+  const closePdfModal = () => {
+    setModalState({ isOpen: false, pdf: null, title: "" });
+  };
 
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-4 sm:py-8">
@@ -217,53 +233,36 @@ export default function NLAkguki() {
         НПА КР
       </h2>
 
-      <div className="block md:hidden space-y-4">
-        {nlaKgukiDocuments.map((item, index) => (
-          <div key={item.id} className="bg-white border border-black rounded-lg p-4">
-            <div className="flex items-start gap-3 mb-4">
-              <span className="w-8 h-8 flex items-center justify-center bg-gray-100 rounded text-sm font-medium">
-                {index + 1}
-              </span>
-              <p className="text-sm text-gray-700">{item.text}</p>
-            </div>
-            <Button
-              variant="secondary"
-              className="w-full px-4 py-2 text-sm"
-              onClick={() => setActivePdf(nlaKgukiPdfs[item.id])}
-            >
-              {t("NLAkguki.btnText")}
-            </Button>
-          </div>
-        ))}
-      </div>
+      <DocumentTable
+        data={tableData}
+        config={{
+          hasIndexColumn: true,
+          hasActionColumn: true,
+          actionType: "pdf",
+          indexColumnWidth: "w-16",
+          actionColumnWidth: "w-48",
+          textColumnClass: "px-4 py-3 text-base text-gray-700",
+          borderClass: "border border-black border-collapse",
+          rowBorderClass: "border-b border-black last:border-b-0",
+          hoverEffect: true,
+          itemTextKey: "text",
+          itemIdKey: "displayIndex", 
+          buttonVariant: "secondary",
+          buttonClassName: "px-6 py-2 text-sm",
+          showButtonIfNoAction: false,
+        }}
+        buttonText={t("NLAkguki.btnText") || "Открыть PDF"}
+        onActionClick={openPdfModal}
+        mobileView="cards"
+      />
 
-      <div className="hidden md:block overflow-x-auto">
-        <table className="min-w-full border border-black">
-          <tbody>
-            {nlaKgukiDocuments.map((item, index) => (
-              <tr key={item.id} className="border-b border-black last:border-b-0">
-                <td className="w-16 px-4 py-3 text-center font-medium border-r border-black">
-                  {index + 1}
-                </td>
-                <td className="px-4 py-3 text-gray-700">{item.text}</td>
-                <td className="w-48 px-4 py-3">
-                  <div className="flex justify-end">
-                    <Button
-                      variant="secondary"
-                      className="px-6 py-2 text-sm"
-                      onClick={() => setActivePdf(nlaKgukiPdfs[item.id])}
-                    >
-                      {t("NLAkguki.btnText")}
-                    </Button>
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {activePdf && <PdfModal pdf={activePdf} onClose={() => setActivePdf(null)} />}
+      {modalState.isOpen && (
+        <PdfModal
+          pdf={modalState.pdf}
+          title={modalState.title}
+          onClose={closePdfModal}
+        />
+      )}
     </section>
   );
 }
