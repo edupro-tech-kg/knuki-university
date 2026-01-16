@@ -1227,8 +1227,8 @@ export default {
   },
   education: {
     title: "education",
-    programTitle: "Education program name",
     additionalEducation: "Additional education",
+    viewPdf: "More",
     additionalPrograms: [
       { id: 1, title: "Advanced Literary Courses (full-time, 2 years)" },
       { id: 2, title: "Choreography (full-time, 72 hours)" },

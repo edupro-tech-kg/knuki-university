@@ -1281,8 +1281,8 @@ export default {
   },
   education: {
     title: "билим",
-    programTitle: "Билим берүү программасынын аталышы",
     additionalEducation: "Кошумча билим берүү",
+     viewPdf: "Кененирээк",
     additionalPrograms: [
       { id: 1, title: "Жогорку адабий курс (күндүзгү, 2 жыл)" },
       { id: 2, title: "Хореография (күндүзгү, 72 саат)" },

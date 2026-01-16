@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Button from "../components/UI/Button";
-import PdfModal from "../components/UI/PdfModal"; // Импортируем переиспользуемый компонент
+import PdfModal from "../components/UI/PdfModal";
+import DocumentTable from "../components/UI/DocumentTable";
 
-// Импорты PDF файлов
+
 import doc1 from "../assets/pdf/doc1.pdf";
 import doc2 from "../assets/pdf/doc2.pdf";
 import doc3 from "../assets/pdf/doc3.pdf";
@@ -36,7 +36,6 @@ import doc29 from "../assets/pdf/doc29.pdf";
 import doc30 from "../assets/pdf/doc30.pdf";
 import doc31 from "../assets/pdf/doc31.pdf";
 
-// Объект с PDF файлами
 const nlaKgukiPdfs = {
   doc1,
   doc2,
@@ -71,13 +70,12 @@ const nlaKgukiPdfs = {
   doc31,
 };
 
-// Массив документов
 const nlaKgukiDocuments = [
   {
     text: "Постановление Совета Министров Киргизской ССР № 482 от 30 августа 1967 года «Об организации Киргизского государственного института искусств» (КГИИ).",
     id: "doc1",
   },
-  {
+   {
     text: "Постановление Совета Министров Киргизской ССР № 21 от 28 января 1974 года, об официальном наименовании КГИИ, как «Киргизский государственный институт искусств имени Бубусары Бейшеналиевой».",
     id: "doc2",
   },
@@ -207,22 +205,26 @@ export default function NLAkguki() {
     title: "",
   });
 
-  // Функция открытия модалки
-  const openPdfModal = (pdf, title) => {
-    setModalState({
-      isOpen: true,
-      pdf,
-      title,
-    });
+  const tableData = nlaKgukiDocuments.map((item, index) => ({
+    id: index + 1, 
+    docId: item.id, 
+    text: item.text,
+    pdf: nlaKgukiPdfs[item.id],
+    displayIndex: index + 1,
+  }));
+
+  const openPdfModal = (item) => {
+    if (item.pdf) {
+      setModalState({ 
+        isOpen: true, 
+        pdf: item.pdf, 
+        title: item.text 
+      });
+    }
   };
 
-  // Функция закрытия модалки
   const closePdfModal = () => {
-    setModalState({
-      isOpen: false,
-      pdf: null,
-      title: "",
-    });
+    setModalState({ isOpen: false, pdf: null, title: "" });
   };
 
   return (
@@ -231,57 +233,31 @@ export default function NLAkguki() {
         НПА КР
       </h2>
 
-      {/* Мобильная версия */}
-      <div className="block md:hidden space-y-4">
-        {nlaKgukiDocuments.map((item, index) => (
-          <div key={item.id} className="bg-white border border-black rounded-lg p-4">
-            <div className="flex items-start gap-3 mb-4">
-              <span className="w-8 h-8 flex items-center justify-center bg-gray-100 rounded text-sm font-medium">
-                {index + 1}
-              </span>
-              <p className="text-sm text-gray-700">{item.text}</p>
-            </div>
-            <Button
-              variant="secondary"
-              className="w-full px-4 py-2 text-sm"
-              onClick={() => openPdfModal(nlaKgukiPdfs[item.id], item.text)}
-            >
-              {t("NLAkguki.btnText")}
-            </Button>
-          </div>
-        ))}
-      </div>
+      <DocumentTable
+        data={tableData}
+        config={{
+          hasIndexColumn: true,
+          hasActionColumn: true,
+          actionType: "pdf",
+          indexColumnWidth: "w-16",
+          actionColumnWidth: "w-48",
+          textColumnClass: "px-4 py-3 text-base text-gray-700",
+          borderClass: "border border-black border-collapse",
+          rowBorderClass: "border-b border-black last:border-b-0",
+          hoverEffect: true,
+          itemTextKey: "text",
+          itemIdKey: "displayIndex", 
+          buttonVariant: "secondary",
+          buttonClassName: "px-6 py-2 text-sm",
+          showButtonIfNoAction: false,
+        }}
+        buttonText={t("NLAkguki.btnText") || "Открыть PDF"}
+        onActionClick={openPdfModal}
+        mobileView="cards"
+      />
 
-      {/* Десктопная версия */}
-      <div className="hidden md:block overflow-x-auto">
-        <table className="min-w-full border border-black">
-          <tbody>
-            {nlaKgukiDocuments.map((item, index) => (
-              <tr key={item.id} className="border-b border-black last:border-b-0">
-                <td className="w-16 px-4 py-3 text-center font-medium border-r border-black">
-                  {index + 1}
-                </td>
-                <td className="px-4 py-3 text-gray-700">{item.text}</td>
-                <td className="w-48 px-4 py-3">
-                  <div className="flex justify-end">
-                    <Button
-                      variant="secondary"
-                      className="px-6 py-2 text-sm"
-                      onClick={() => openPdfModal(nlaKgukiPdfs[item.id], item.text)}
-                    >
-                      {t("NLAkguki.btnText")}
-                    </Button>
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {/* Переиспользуемая модалка */}
       {modalState.isOpen && (
-        <PdfModal 
+        <PdfModal
           pdf={modalState.pdf}
           title={modalState.title}
           onClose={closePdfModal}

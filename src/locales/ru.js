@@ -1265,8 +1265,8 @@ export default {
   },
   education: {
     title: "образование",
-    programTitle: "Название образовательной программы",
     additionalEducation: "Дополнительное образование",
+    viewPdf: "Подробнее",
     additionalPrograms: [
       { id: 1, title: "Высшие литературные курсы (очная форма, 2 года)" },
       { id: 2, title: "Хореография (очная форма, 72 часа)" },
