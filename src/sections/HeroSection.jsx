@@ -31,11 +31,12 @@ export default function HeroSection() {
           className="
             relative bg-[#751715]
             w-full
-            xl:flex-[1.2]
+            xl:flex-[0.7]
             min-h-[450px] lg:min-h-[500px]
             p-4 sm:p-6
             xl:-ml-[100vw]
             xl:pl-[100vw]
+            mr-40
           "
         >
           <ReusableSlider
@@ -49,9 +50,11 @@ export default function HeroSection() {
             overlap={true}
             className="w-full h-full"
             imageClassName="
-              w-full
+              w-[120%]
               max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
-              h-96
+              xl:h-[120%]
+              md:h-[99%]
+              h-[120%]
               object-cover"
             mobilePosition="top"
           />
