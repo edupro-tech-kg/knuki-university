@@ -723,15 +723,16 @@ export default {
         id: 1,
         name: "Library Collection",
         description:
-          "Today, the library's book collection consists of 58,978 items. The collection includes scientific, educational, and fiction literature in Kyrgyz and Russian across all fields, including publications on the arts, books on cinema and theater, foreign literature and publications, musical literature, unique sheet music for musical instruments, abstracts, encyclopedic and reference editions.",
+          "The library collection currently consists of 58,978 items. \n The structure of the collection includes: \n - scientific, educational, and fiction literature; \n - books in the Kyrgyz and Russian languages covering all fields, including publications in the fields of art, cinema, and theatre; \n - foreign literature; \n - foreign publications and musical literature; \n - unique musical scores intended for musical instruments; \n - abstracts; \n - encyclopedic and reference publications;",
       },
       {
         id: 2,
         name: "Library Departments",
         description:
-          "The library consists of a lending department for borrowing books for a specified period, a reading room for on-site use of materials, and a bibliographic department. The reading room regularly hosts exhibitions of newly acquired literature, as well as displays dedicated to notable and significant dates.",
+          "The library includes: \n - a lending department that issues books for a specified period; \n - a reading room for on-site use of relevant literature and a bibliographic department; \n In the library reading room, exhibitions of newly acquired literature, as well as displays dedicated to commemorative and particularly significant dates, are regularly organized.",
       },
     ],
+
   },
   libraryStructure: {
     title: "Structure of Our Library:",
@@ -767,26 +768,50 @@ export default {
     ],
   },
   libraryTeam: {
-    title: "The library consists:",
+    title: "Library Staff:",
     personality: [
       {
-        name: "Isakova A.Zh.",
-        content: "librarian of the sheet music department",
-      },
-      {
-        name: "Surapbaeva G.R.",
-        content: "librarian of the dormitory reading room",
-      },
-      {
-        name: "Belekova G.Z.",
-        content: "librarians of the fiction literature department",
-      },
-      {
         name: "Samieva Sh.T.",
-        content: "librarian of the film studio reading room",
+        content: "Head of the Library",
+      },
+      {
+        name: "Isakova A. Zh.",
+        content: "Sheet Music Department Librarian",
+      },
+      {
+        name: "Surapbaeva G. R.",
+        content: "Dormitory Reading Room Librarian",
+      },
+      {
+        name: "Bakir kyzy Nurperi",
+        content: "Fiction Department Librarian",
       },
     ],
   },
+  libraryUsers: {
+    title: "The readership includes:",
+    users: [
+      {
+        name: "teaching and academic staff",
+      },
+      {
+        name: "part-time instructors",
+      },
+      {
+        name: "accompanists",
+      },
+      {
+        name: "employees",
+      },
+      {
+        name: "postgraduate students",
+      },
+      {
+        name: "full-time and part-time students",
+      },
+    ],
+  },
+
 
   qualificationDescription: {
     title: "Center for Advanced Training",
