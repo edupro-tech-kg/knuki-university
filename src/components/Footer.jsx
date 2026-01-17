@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import facebook from "../assets/svg/facebook.svg";
 import instagram from "../assets/svg/instagram.svg";
 import letter from "../assets/svg/letter.svg";
@@ -44,12 +45,12 @@ export default function Footer() {
   const linkUrls = [
     "/",
     "/management",
-    "/faculties",
-    "/students",
+    // "/faculties",
+    "/studentsLife",
     "/applicants",
-    "/news",
+    // "/news",
     "/documents",
-    "/contacts",
+    // "/contacts",
   ];
 
   return (
@@ -97,12 +98,16 @@ export default function Footer() {
               <ul className="font-light text-[10px] md:text-[12.74px] lg:text-[20px] tracking-[-0.04em] space-y-1 md:space-y-2">
                 {footer.linkItems?.map((item, index) => (
                   <li key={index}>
-                    <a
-                      href={linkUrls[index] || "#"}
-                      className="hover:border-b hover:border-white transition duration-200 leading-tight inline-block"
-                    >
-                      {item}
-                    </a>
+                    {linkUrls[index] ? (
+                      <Link
+                        to={linkUrls[index]}
+                        className="hover:border-b hover:border-white transition duration-200 leading-tight inline-block"
+                      >
+                        {item}
+                      </Link>
+                    ) : (
+                      <span className="leading-tight inline-block">{item}</span>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -119,7 +124,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="cursor-pointer hover:opacity-80 transition-opacity"
               >
-                <img className="w-6 md:w-7 lg:w-8 xl:w-9" src={icon.src} alt={icon.alt} />
+                <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9" src={icon.src} alt={icon.alt} />
               </a>
             ))}
           </div>
@@ -135,7 +140,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="cursor-pointer hover:opacity-80 transition-opacity"
             >
-              <img className="w-6 md:w-7 lg:w-8 xl:w-9" src={icon.src} alt={icon.alt} />
+              <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9" src={icon.src} alt={icon.alt} />
             </a>
           ))}
         </div>

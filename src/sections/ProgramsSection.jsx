@@ -9,11 +9,11 @@ import projector from "../assets/svg/projector.svg";
 import ballerina from "../assets/svg/ballerina.svg";
 
 const directions = [
-  { icon: music, slug: "estrada-music" },
-  { icon: mask, slug: "theater" },
-  { icon: projector, slug: "kino-tele" },
-  { icon: ballerina, slug: "choreography" },
-  { icon: music, slug: "folk-music" },
+  { icon: music, slug: "choreography" },
+  { icon: mask, slug: "folk-music" },
+  { icon: projector, slug: "estrada-music" },
+  { icon: ballerina, slug: "theater" },
+  { icon: music, slug: "kino-tele" },
   { icon: mask, slug: "postgraduate" },
 ];
 
@@ -27,8 +27,7 @@ export default function ProgramsSection() {
     const checkDesktop = () => {
       const desktop = window.innerWidth >= 768;
       setIsDesktop(desktop);
-      
-      // Проверяем, нужны ли кнопки навигации (если контент не помещается)
+
       if (containerRef.current && desktop) {
         const container = containerRef.current;
         setShowControls(container.scrollWidth > container.clientWidth);
@@ -40,22 +39,41 @@ export default function ProgramsSection() {
     return () => window.removeEventListener("resize", checkDesktop);
   }, []);
 
+  const getScrollAmount = () => {
+    if (!containerRef.current) return { cardWidth: 320, gap: 24 };
+
+    const container = containerRef.current;
+    const firstCard = container.children[0];
+    if (!firstCard) return { cardWidth: 320, gap: 24 };
+
+    const cardWidth = firstCard.getBoundingClientRect().width;
+    const containerStyle = window.getComputedStyle(container);
+    const gap = parseFloat(containerStyle.gap) || 24;
+
+    return { cardWidth, gap, scrollAmount: cardWidth + gap };
+  };
+
   const handleNext = () => {
     if (!containerRef.current || !isDesktop) return;
 
     const container = containerRef.current;
     const { scrollLeft, scrollWidth, clientWidth } = container;
-    const cardWidth = container.children[0]?.offsetWidth || 320;
-    const gap = 24; // 6 * 4px (gap-6 = 1.5rem = 24px)
-    const scrollAmount = cardWidth + gap;
+    const { scrollAmount } = getScrollAmount();
 
-    if (scrollLeft + clientWidth + scrollAmount >= scrollWidth - 10) {
-      container.scrollTo({ left: 0, behavior: "smooth" });
+    const newScrollLeft = scrollLeft + scrollAmount;
+
+    if (newScrollLeft >= scrollWidth - clientWidth - 1) {
+      const endScrollLeft = scrollWidth - clientWidth;
+      container.scrollTo({ left: endScrollLeft, behavior: "smooth" });
+
+      setTimeout(() => {
+        container.scrollTo({ left: 0, behavior: "auto" });
+        setTimeout(() => {
+          container.scrollTo({ left: scrollAmount, behavior: "smooth" });
+        }, 50);
+      }, 300);
     } else {
-      container.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
     }
   };
 
@@ -63,21 +81,58 @@ export default function ProgramsSection() {
     if (!containerRef.current || !isDesktop) return;
 
     const container = containerRef.current;
-    const { scrollLeft } = container;
-    const cardWidth = container.children[0]?.offsetWidth || 320;
-    const gap = 24;
-    const scrollAmount = cardWidth + gap;
+    const { scrollLeft, scrollWidth, clientWidth } = container;
+    const { scrollAmount } = getScrollAmount();
 
-    if (scrollLeft - scrollAmount <= 10) {
+    const newScrollLeft = scrollLeft - scrollAmount;
+
+    if (newScrollLeft < 0) {
+      container.scrollTo({ left: 0, behavior: "smooth" });
+
+      setTimeout(() => {
+        const endScrollLeft = scrollWidth - clientWidth;
+        container.scrollTo({ left: endScrollLeft, behavior: "auto" });
+        setTimeout(() => {
+          container.scrollTo({ left: endScrollLeft - scrollAmount, behavior: "smooth" });
+        }, 50);
+      }, 300);
+    } else {
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
+    }
+  };
+
+  const handleNextSimple = () => {
+    if (!containerRef.current || !isDesktop) return;
+
+    const container = containerRef.current;
+    const { scrollLeft, scrollWidth, clientWidth } = container;
+    const { scrollAmount } = getScrollAmount();
+
+    const newScrollLeft = scrollLeft + scrollAmount;
+    const maxScroll = scrollWidth - clientWidth;
+
+    if (newScrollLeft > maxScroll + 10) {
+      container.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
+    }
+  };
+
+  const handlePrevSimple = () => {
+    if (!containerRef.current || !isDesktop) return;
+
+    const container = containerRef.current;
+    const { scrollLeft, scrollWidth, clientWidth } = container;
+    const { scrollAmount } = getScrollAmount();
+
+    const newScrollLeft = scrollLeft - scrollAmount;
+    if (newScrollLeft < -10) {
       container.scrollTo({
-        left: container.scrollWidth - container.clientWidth,
+        left: scrollWidth - clientWidth,
         behavior: "smooth",
       });
     } else {
-      container.scrollBy({
-        left: -scrollAmount,
-        behavior: "smooth",
-      });
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
     }
   };
 
@@ -96,18 +151,18 @@ export default function ProgramsSection() {
       className="bg-background flex items-center justify-center mt-20 container mx-auto px-4 sm:px-6 lg:px-8"
     >
       <div className="w-full relative max-w-7xl">
-        <h2 className="uppercase mt-10 font-serif italic text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-text-primary">
+        <h2 className="uppercase font-serif text-2xl md:text-4xl font-bold mb-4 text-text-primary text-center italic">
           {t("programs.eyebrow")}
         </h2>
 
         <div className="relative">
-          {/* Контейнер с паддингами для правильного скролла */}
           <div
             ref={containerRef}
             className={`
-              ${!isDesktop 
-                ? "flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 pl-4 pr-4 md:pl-0 md:pr-0" 
-                : "md:flex md:overflow-x-auto md:gap-6 md:pb-4 md:scrollbar-hide md:px-1"
+              ${
+                !isDesktop
+                  ? "flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 pl-4 pr-4 md:pl-0 md:pr-0"
+                  : "md:flex md:overflow-x-auto md:gap-6 md:pb-4 md:scrollbar-hide md:px-1"
               }
               [&::-webkit-scrollbar]:hidden
               [-ms-overflow-style:none]
@@ -120,9 +175,10 @@ export default function ProgramsSection() {
                 key={dir.slug}
                 className={`
                   group 
-                  ${!isDesktop 
-                    ? "flex-shrink-0 w-[calc(100vw-64px)] md:w-[calc(50vw-48px)] snap-start" 
-                    : "md:flex-shrink-0 md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]"
+                  ${
+                    !isDesktop
+                      ? "flex-shrink-0 w-[calc(100vw-64px)] md:w-[calc(50vw-48px)] snap-start"
+                      : "md:flex-shrink-0 md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]"
                   }
                   bg-text-primary transition-all duration-300 
                   hover:bg-primary flex flex-col
@@ -131,11 +187,9 @@ export default function ProgramsSection() {
                 `}
               >
                 <div className="p-6 flex flex-col h-full">
-                  <div className="text-sm text-stroke mb-2">{t("programs.faculty")}</div>
-
-                  <h2 className="font-sans text-2xl font-medium text-white mb-4">
+                  <h3 className="font-sans text-xl font-medium text-white mb-4 mt-4">
                     {getTitle(dir.slug, index)}
-                  </h2>
+                  </h3>
 
                   <div className="flex-grow"></div>
 
@@ -146,32 +200,27 @@ export default function ProgramsSection() {
                   </div>
 
                   <div>
-                    <ButtonPrimary variant="primaryIcon">
-                      {t("programs.buttonText")}
-                    </ButtonPrimary>
+                    <ButtonPrimary variant="primaryIcon">{t("programs.buttonText")}</ButtonPrimary>
                   </div>
                 </div>
               </Link>
             ))}
           </div>
-
-     
         </div>
 
-        {/* Кнопки навигации - показываем только если контент не помещается */}
         {isDesktop && showControls && (
           <div className="flex justify-center items-center gap-4 mt-8">
             <button
-              onClick={handlePrev}
-              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5"
+              onClick={handlePrevSimple}
+              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5 hover:scale-105 active:scale-95"
               aria-label="Previous"
             >
               <FaArrowLeftLong className="w-5 h-5 md:w-6 md:h-6" />
             </button>
 
             <button
-              onClick={handleNext}
-              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5"
+              onClick={handleNextSimple}
+              className="bg-white hover:bg-gray-100 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 shadow-sm hover:shadow-md px-4 md:px-5 hover:scale-105 active:scale-95"
               aria-label="Next"
             >
               <FaArrowRightLong className="w-5 h-5 md:w-6 md:h-6" />

@@ -28,8 +28,6 @@ const PrimaryForm = ({
           >
             {label}
           </label>
-
-
         )}
 
         <div className="relative w-full">

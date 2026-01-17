@@ -27,12 +27,9 @@ const FileForm = ({
   return (
     <div className={`w-full ${className}`}>
       <div className="mb-4 w-full">
-      {label && (
-          <label className={`block text-black font-medium mb-2 ${labelClassName}`}>
-            {label}
-          </label>
+        {label && (
+          <label className={`block text-black font-medium mb-2 ${labelClassName}`}>{label}</label>
         )}
-
 
         <label
           className="

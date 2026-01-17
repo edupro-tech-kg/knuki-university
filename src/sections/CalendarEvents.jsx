@@ -1,26 +1,63 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Calendar from "../components/Calendar";
 import LastNews from "../components/LastNews";
+import { useTranslation } from "react-i18next";
 
 export default function CalendarEvents() {
+  const { t } = useTranslation();
   const [mobileView, setMobileView] = useState("calendar"); // calendar | news
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const newsItems = t("news.items", { returnObjects: true }) || [];
+  const holidays = t("calendar.holidays", { returnObjects: true }) || [];
+
+  const newsAsCalendarEvents = useMemo(() => {
+    return (Array.isArray(newsItems) ? newsItems : [])
+      .filter((item) => item?.date && item?.title)
+      .map((item) => ({
+        id: `news-${item.id}`,
+        title: item.title,
+        date: item.date,
+        extendedProps: { type: "news", newsId: item.id },
+      }));
+  }, [newsItems]);
+
+  const initialDate = useMemo(() => new Date(), []);
+
+  const highlightedDates = useMemo(() => {
+    const dates = new Set();
+    (Array.isArray(newsItems) ? newsItems : []).forEach((item) => {
+      if (item?.date) dates.add(item.date);
+    });
+    return dates;
+  }, [newsItems]);
 
   return (
     <section id="events" className="bg-primary font-serif pb-24 pt-12 md:pt-16 ">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-14 overflow-hidden pb-9">
         <div className="flex justify-center">
-          <p className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl">
-            КАЛЕНДАРЬ СОБЫТИЙ
-          </p>
+          <h2 className="italic font-serif font-medium text-white mb-14 sm:mb-20 text-2xl md:text-2xl 2xl:text-4xl">
+            {t("calendar.eyebrow")}
+          </h2>
         </div>
         <div className="relative mt-1 md:mt-4 lg:mt-2">
           <div className="absolute inset-0 pb-11  translate-x-6 translate-y-6 rounded-[6px] bg-white/80 rotate-[1deg] shadow-[0_18px_55px_rgba(0,0,0,0.22)]" />
           <div className="relative bg-white rounded-[6px]  shadow-[0_18px_55px_rgba(0,0,0,0.2)] border border-[#e6e6e6] overflow-hidden flex flex-col lg:flex-row">
             <div className="hidden xl:block lg:w-[55%] px-4 sm:px-10 lg:px-12 py-8 lg:py-12 border-b lg:border-b-0 lg:border-r border-[#e6e6e6]">
-              <Calendar />
+              <Calendar
+                events={newsAsCalendarEvents}
+                highlightDates={highlightedDates}
+                holidays={holidays}
+                selectedDate={selectedDate}
+                onSelectDate={(dateStr) => setSelectedDate((prev) => (prev === dateStr ? null : dateStr))}
+                initialDate={initialDate}
+              />
             </div>
             <div className="hidden xl:block lg:w-[45%] px-6 sm:px-10 lg:px-12 py-10 lg:py-12">
-              <LastNews />
+              <LastNews
+                selectedDate={selectedDate}
+                onClearFilter={() => setSelectedDate(null)}
+              />
             </div>
 
             {/* Mobile carousel-like toggle: calendar <-> news */}
@@ -28,13 +65,23 @@ export default function CalendarEvents() {
               {mobileView === "calendar" ? (
                 <div className="rounded-lg border border-[#e6e6e6] bg-white shadow-sm">
                   <div className="px-2 sm:px-3 py-4">
-                    <Calendar />
+                    <Calendar
+                      events={newsAsCalendarEvents}
+                      highlightDates={highlightedDates}
+                      holidays={holidays}
+                      selectedDate={selectedDate}
+                      onSelectDate={(dateStr) => setSelectedDate((prev) => (prev === dateStr ? null : dateStr))}
+                      initialDate={initialDate}
+                    />
                   </div>
                 </div>
               ) : (
                 <div className="rounded-lg border border-[#e6e6e6] bg-white shadow-sm">
                   <div className="px-3 py-4">
-                    <LastNews />
+                    <LastNews
+                      selectedDate={selectedDate}
+                      onClearFilter={() => setSelectedDate(null)}
+                    />
                   </div>
                 </div>
               )}

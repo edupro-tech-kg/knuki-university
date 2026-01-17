@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function FacultyInfoBlocks({
   infoColumns = [],
@@ -33,14 +33,13 @@ export default function FacultyInfoBlocks({
         {idx + 1}
       </span>
 
-      <p className="text-sm text-center leading-snug">
-        {label}
-      </p>
+      <p className="text-sm text-center leading-snug">{label}</p>
     </div>
   );
 
   const renderCardsRow = () => (
-    <div className="
+    <div
+      className="
       overflow-x-auto 
       -mx-4 px-4
       pb-1
@@ -48,25 +47,29 @@ export default function FacultyInfoBlocks({
       md:overflow-x-visible
       md:mx-0 md:px-0
       [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]
-    ">
-      <div className="
-        flex gap-3
-        min-w-max
-        md:min-w-0
-        md:flex-wrap
-        md:justify-center
-        md:gap-4
-      ">
+    "
+    >
+      <div
+        className="
+  flex gap-3 items-stretch
+  min-w-max
+  md:min-w-0
+  md:flex-wrap
+  md:justify-center
+  md:gap-4
+"
+      >
         {programBlocks.map((label, idx) => (
           <div
             key={`${label}-${idx}`}
             className="
-              shrink-0
-              w-[85vw] max-w-[300px]
-              md:w-[calc(33.333%-1rem)] 
-              md:max-w-[280px]
-              md:shrink
-            "
+        shrink-0
+        w-[85vw] max-w-[300px]
+        md:w-[calc(33.333%-1rem)] 
+        md:max-w-[280px]
+        md:shrink
+        flex  {/* добавляем flex, чтобы stretch работал */}
+      "
           >
             {renderCard(label, idx)}
           </div>
@@ -99,27 +102,19 @@ export default function FacultyInfoBlocks({
           {/* текст */}
           <div className="space-y-6">
             {infoColumns.map((col, idx) => (
-              <div 
-                key={`col-${idx}`} 
-                className="space-y-3"
-              >
+              <div key={`col-${idx}`} className="space-y-3">
                 {col.title && (
                   <h3 className="text-base md:text-lg font-semibold uppercase text-[#151515]">
                     {col.title}
                   </h3>
                 )}
                 {col.subtitle && (
-                  <p className="text-sm font-semibold text-[#151515]">
-                    {col.subtitle}
-                  </p>
+                  <p className="text-sm font-semibold text-[#151515]">{col.subtitle}</p>
                 )}
                 {col.items?.length > 0 && (
                   <ul className="space-y-2 text-sm md:text-base leading-relaxed text-[#111]">
                     {col.items.map((item, i) => (
-                      <li 
-                        key={i}
-                        className="flex items-start"
-                      >
+                      <li key={i} className="flex items-start">
                         <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#751715] mt-2 mr-2 flex-shrink-0" />
                         <span>{item}</span>
                       </li>

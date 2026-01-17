@@ -11,13 +11,13 @@ const NAV_LINKS = [
   { key: "students", to: "/studentsLife", type: "route" },
   { key: "education", to: "/education", type: "route" },
   { key: "science", to: "/science", type: "route" },
-  { key: "news", to: "news", type: "scroll" },
+  { key: "news", to: "/news", type: "route" },
   { key: "documents", to: "/documents", type: "route" },
   { key: "applicants", to: "/applicants", type: "route" },
-  { key: "contacts", to: "contact", type: "scroll" },
+  { key: "contacts", to: "/consultation", type: "route" },
 ];
 
-const NavBar = ({ menu }) => {
+const NavBar = ({ menu, onItemClick }) => {
   const { t } = useTranslation();
   const location = useLocation();
   const labels = t("navLinks", { returnObjects: true });
@@ -37,12 +37,22 @@ const NavBar = ({ menu }) => {
     [t]
   );
 
+  const handleLinkClick = () => {
+    if (showDropdown) {
+      setShowDropdown(false);
+    }
+
+    if (onItemClick) {
+      onItemClick();
+    }
+  };
+
   const renderScrollOrRoute = (link, label) => {
     if (link.type === "scroll") {
       // On non-home pages, route back to home anchor
       if (!isHome) {
         return (
-          <Link key={link.key} to={`/#${link.to}`} className={linkClass}>
+          <Link key={link.key} to={`/#${link.to}`} className={linkClass} onClick={handleLinkClick}>
             {label}
           </Link>
         );
@@ -55,6 +65,7 @@ const NavBar = ({ menu }) => {
           duration={400}
           offset={-120}
           className={linkClass}
+          onClick={handleLinkClick}
         >
           {label}
         </ScrollLink>
@@ -62,7 +73,7 @@ const NavBar = ({ menu }) => {
     }
 
     return (
-      <Link key={link.key} to={link.to} className={linkClass}>
+      <Link key={link.key} to={link.to} className={linkClass} onClick={handleLinkClick}>
         {label}
       </Link>
     );
@@ -87,6 +98,7 @@ const NavBar = ({ menu }) => {
                 type="button"
                 className={`${linkClass} ${menu ? "" : "flex items-center gap-1"}`}
                 onClick={() => setShowDropdown((prev) => !prev)}
+                aria-expanded={showDropdown}
               >
                 {label}
                 <span className="text-xs">▾</span>
@@ -101,7 +113,10 @@ const NavBar = ({ menu }) => {
                         <Link
                           to={`/faculty/${item.slug}`}
                           className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
-                          onClick={() => setShowDropdown(false)}
+                          onClick={() => {
+                            setShowDropdown(false);
+                            if (onItemClick) onItemClick();
+                          }}
                         >
                           {item.label}
                         </Link>

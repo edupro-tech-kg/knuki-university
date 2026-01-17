@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { IoIosArrowDown } from "react-icons/io";
 
 const DropdownForm = ({ fields = [], className = "", labelClassName = "" }) => {
+  const { t } = useTranslation();
+  const select = t("dropdownForm.select");
+
   const [values, setValues] = useState(
     fields.reduce((acc, field) => {
       acc[field.name] = field.defaultValue || "";
@@ -59,7 +63,7 @@ const DropdownForm = ({ fields = [], className = "", labelClassName = "" }) => {
               "
             >
               <option value="" disabled={field.required}>
-                {field.placeholder || "Танданыз"}
+                {field.placeholder || select}
               </option>
 
               {field.options?.map((opt) => (

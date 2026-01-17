@@ -71,9 +71,23 @@ export default function Header() {
   const handleLanguageChange = (langCode) => {
     i18n.changeLanguage(langCode);
     setLanguageDropdownOpen(false);
+
+    // Сохраняем выбранный язык в localStorage для сохранения при перезагрузке
+    localStorage.setItem("preferred-language", langCode);
+
+    // Отправляем событие об изменении языка для других компонентов
+    window.dispatchEvent(
+      new CustomEvent("languageChanged", {
+        detail: { language: langCode },
+      })
+    );
   };
 
   const toggleLanguageDropdown = () => setLanguageDropdownOpen(!languageDropdownOpen);
+
+  const handleCloseSidebar = () => {
+    setMenuOpen(false);
+  };
 
   const SocialIcons = () => (
     <div className="flex items-center gap-3">
@@ -129,34 +143,35 @@ export default function Header() {
   );
 
   return (
-    <header style={{ height: headerSize }} className={` z-50   w-full`}>
+    <header style={{ height: headerSize }} className={`z-50 w-full`}>
       <div ref={divRef} className="w-full fixed inset-0 h-fit">
-        <div className="w-full bg-[#751715] text-white  top-0 z-50">
-          <div className=" mx-auto px-12 pt-6 pb-7  flex items-center justify-between">
+        <div className="w-full bg-[#751715] text-white top-0 z-50">
+          <div className="mx-auto px-12 pt-6 pb-7 flex items-center justify-between">
             <button
-              className=" md:hidden w-10 h-10 flex items-center justify-center"
+              className="md:hidden w-10 h-10 flex items-center justify-center"
               onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Open menu"
             >
               <img src={Icons.burgerMenu} alt="Menu" className="w-6 h-6" />
             </button>
 
-            <div className="flex justify-end max-w-[90px] w-full lg:max-w-[290px] md:justify-start ">
-              <a href="/" className="flex items-center gap-4 :ml-[50px] md:ml-0 ">
-                <img src={Icons.logo} className="h-14 w-14" />
+            <div className="flex justify-end max-w-[90px] w-full lg:max-w-[290px] md:justify-start">
+              <a href="/" className="flex items-center gap-4 :ml-[50px] md:ml-0">
+                <img src={Icons.logo} className="h-14 w-14" alt="University logo" />
               </a>
             </div>
 
             <div className="flex justify-between md:w-full">
               <div className="hidden md:flex flex-1 justify-center px-4">
-                <p className="text-xl font-inter font-semibold leading-tight max-w-xl text-center  lg:text-lg">
+                <p className="text-xl font-inter font-semibold leading-tight max-w-xl text-center lg:text-lg">
                   {headerTranslations.universityName}
                 </p>
               </div>
 
-              <div className=" flex items-center gap-4 relative">
+              <div className="flex items-center gap-4 relative">
                 <div
                   ref={dropdownRef}
-                  className={` ${languageDropdownOpen ? " absolute bg-white rounded-lg shadow-lg border border-gray-200 w-32 z-[9999] top-10  md:top-3/4 duration-100" : "absolute    bg-white top-4  opacity-0 rounded-lg shadow-lg border pointer-events-none w-32 border-gray-200 duration-100"}`}
+                  className={`${languageDropdownOpen ? "absolute bg-white rounded-lg shadow-lg border border-gray-200 w-32 z-[9999] top-10 md:top-3/4 duration-100" : "absolute bg-white top-4 opacity-0 rounded-lg shadow-lg border pointer-events-none w-32 border-gray-200 duration-100"}`}
                 >
                   {languages.map((lang) => (
                     <button
@@ -183,7 +198,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="hidden md:block w-full bg-white text-[#751715] shadow  top-[100px] z-40">
+        <div className="hidden md:block w-full bg-white text-[#751715] shadow top-[100px] z-40">
           <div className="max-w-[1440px] mx-auto px-6 h-[56px] flex items-center justify-center">
             <NavBar menu={false} />
           </div>
@@ -195,13 +210,13 @@ export default function Header() {
             menuOpen ? "translate-x-0" : "-translate-x-full"
           )}
         >
-          <SideBar onClose={() => setMenuOpen(false)} />
+          <SideBar onClose={handleCloseSidebar} isOpen={menuOpen} />
         </div>
 
         {menuOpen && (
           <div
             className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
-            onClick={() => setMenuOpen(false)}
+            onClick={handleCloseSidebar}
           />
         )}
       </div>
