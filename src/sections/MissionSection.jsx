@@ -66,10 +66,6 @@ function MissionSection() {
               <p className="text-white text-sm md:text-base mb-6 overflow-y-auto scrollbar-transparent max-h-[600px]">
                 {t("mission.imageDescription")}
               </p>
-
-              {/* <Button variant="primaryIcon" className="self-start mt-auto">
-                {t("mission.button")}
-              </Button> */}
             </div>
           </div>
 
