@@ -1,6 +1,6 @@
 import Button from "./UI/Button";
 
-function ManagementCard({ name, post, onOpenModal, btnText }) {
+function ManagementCard({ name, post, onOpenModal, btnText, showButton }) {
   const splitName = (fullName) => {
     if (!fullName) return { firstLine: "", secondLine: "" };
 
@@ -44,15 +44,18 @@ function ManagementCard({ name, post, onOpenModal, btnText }) {
           </p>
         </div>
 
-        <div className="mt-auto pt-1 sm:pt-1.5">
-          <Button
-            variant="secondary"
-            onClick={onOpenModal}
-            className="w-full py-1 sm:py-2 text-xs sm:text-sm"
-          >
-            {btnText || "Подробнее"}
-          </Button>
-        </div>
+        {/* 🔴 КНОПКА ТОЛЬКО ЕСЛИ ЕСТЬ additionalInfo */}
+        {showButton && (
+          <div className="mt-auto pt-1 sm:pt-1.5">
+            <Button
+              variant="secondary"
+              onClick={onOpenModal}
+              className="w-full py-1 sm:py-2 text-xs sm:text-sm"
+            >
+              {btnText || "Подробнее"}
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );

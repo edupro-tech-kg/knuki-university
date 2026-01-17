@@ -889,14 +889,54 @@ export default {
         post: "Rector",
         additionalInfo: {
           academicDegree:
-            "Postgraduate and Master's Department, Kyrgyz State University of Culture and Arts named after B. Beishenalieva, Bishkek.",
+            "Postgraduate and Master’s Department, B. Beishenalieva Kyrgyz University of Culture and Arts, Bishkek.",
           education:
-            "Higher education. Graduated from Osh State University, Faculty of Kyrgyz Philology with honors in 2009.\nCandidate of Philological Sciences (2015).\nAssociate Professor (2019).\nGraduated from the Faculty of Law, Osh State University (2019).",
+            "Higher education — graduated with honors from the Faculty of Kyrgyz Philology of Osh State University (Diploma No. CD090149423), 2009.\n" +
+            "Candidate of Philological Sciences (No. 1 1k-1/31, IKD No. 001143 dated January 29, 2015).\n" +
+            "Associate Professor (No. 6dc-2/9, DA No. 002177 dated June 25, 2019).\n" +
+            "Graduated from the Faculty of Law of Osh State University (Diploma No. UB 190197452, 2019).",
           workExperience:
-            "2012–2016 — Music School No.5, Bishkek.\n2016–2025 — KSUCА.\nSince 2023 — Chairman of the Trade Union.\nSince 2024 — Head of the Department of Traditional Music and Folklore.",
-          computerSkills: "Microsoft Office, Excel, PowerPoint, Internet.",
-          languages: "Kyrgyz (native), Russian (fluent)",
-        },
+            "2005–2008 — Methodologist at the Ala-Buka Humanitarian and Pedagogical Institute of the Osh Kyrgyz-Uzbek University.\n" +
+            "Since 2008 — Teacher of Kyrgyz language and literature and music at Gymnasiums No. 39 and No. 18 in Osh city.\n" +
+            "Since 2009 — Chairman of the Youth Committee and Lecturer at the Department of Kyrgyz Language and Literature of the Osh Humanitarian and Pedagogical Institute.\n" +
+            "In 2012 — Director of the R. Abdykadyrov Cultural and Aesthetic Center of Osh State University and Associate Professor of the Department of Kyrgyz Literature.\n" +
+            "From March 1, 2017 — Vice-Rector for Social and Educational Affairs of Osh State University.\n" +
+            "From November 13, 2019 — Vice-Rector for the State Language of Osh State University and Associate Professor of the Department of Kyrgyz Literature.\n" +
+            "From July 7, 2020 — Director of the T. Ermatov Bishkek Music and Pedagogical College.\n" +
+            "From September 2022 — Deputy Minister of Culture, Information, Sports and Youth Policy of the Kyrgyz Republic.",
+          computerSkills:
+            "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, Internet",
+          languages:
+            "Kyrgyz (native), Russian (fluent)",
+          awards:
+            "Grand Prix winner of the “Altyn Un–2008” competition organized by ELTR, awarded a First Degree Diploma.\n" +
+            "Badge “Excellent Worker of Culture”, October 19, 2016, No. 528.\n" +
+            "Honorary Certificate of the Kyrgyz Republic, December 31, 2018, PJ No. 260.\n" +
+            "Honorary Citizen of Ala-Buka District, March 27, 2019, No. 32.\n" +
+            "Honorary Certificate of the Jogorku Kenesh of the Kyrgyz Republic, March 31, 2025, No. 33-ӨК/АГ.",
+          maritalStatus:
+            "Married",
+          residence:
+            "Bishkek city, house 12",
+          contact:
+            "0 (312) 57 03 79, 0 (700) 11 20 28 13",
+          email:
+            "Tumonbai33@gmail.com",
+          publications:
+            "“Tangdagi Kyyaldanuu” — collection of poems and short stories. Osh, 2007, 68 pages.\n" +
+            "“Teaching Oral Folk Art in Uzbek Schools” — methodological manual (co-authored with K. Akmatov). Osh, 2009, 64 pages.\n" +
+            "“Joomart and the Literature Lesson” — methodological manual (co-authored with K. Akmatov). Osh, 2010, 64 pages.\n" +
+            "“Life Lessons and Sanats”. Osh, 2011, 70 pages.\n" +
+            "“Kyrgyz Elegies” — educational anthology. Osh, 2012, 120 pages.\n" +
+            "“Technologies of Teaching Literature” (co-authored with K. Akmatov and E. Abdibaliev). Osh, 2013, 168 pages.\n" +
+            "“I Discover the World with My Mother” — song collection. Bishkek, 2015, 85 pages.\n" +
+            "“Poetics of the Kyrgyz Elegy” — study guide. Bishkek, 2018, 132 pages.\n" +
+            "“Genre Features of the Elegy and the History of Its Study” — study guide. Bishkek, 2018, 90 pages.\n" +
+            "“Kyrgyz Elegies” — educational anthology, second edition. Osh, 2018, 156 pages.\n" +
+            "“Formation and Development of the Elegy Genre in Kyrgyz Poetry” — monograph. Bishkek, 2018, 182 pages.\n" +
+            "“Kyrgyz Song Heritage in a Historical and Cultural Context” — monograph. Bishkek, 2025, 348 pages.\n" +
+            "Author of more than fifty musical works and scientific articles."
+        }
       },
       {
         name: "Dzhakuypov Kubatbek Kulanchievich",
@@ -1100,6 +1140,43 @@ export default {
         },
       },
       {
+        name: "Samieva Shairgul Turatovna",
+        post: "Head of the Library",
+        additionalInfo: {
+          birthDatePlace:
+            "February 6, 1969",
+          residence:
+            "Bishkek city, Ch. Aitmatov Avenue 299/1",
+          contact:
+            "0553 42 00 36",
+          maritalStatus:
+            "Married",
+          education:
+            "1986–1996 — Kyrgyz National Agrarian University, specialty: Agroecologist, Certified Agronomist.\n" +
+            "Courses:\n" +
+            "1. Moscow Higher School “Economics and Law”, Moscow.\n" +
+            "2. Advanced training courses for librarians of the Kyrgyz Republican Association of Public Libraries at the National Library of the Kyrgyz Republic named after A. Osmonov, Bishkek.",
+          workExperience:
+            "September 1992 – February 1995 — Biology Teacher, Secondary School No. 11, Tash-Kumyr.\n" +
+            "March 1995 – May 1996 — Human Resources Inspector, Small Enterprise “Kelechek”.\n" +
+            "May 1996 – August 1996 — Records Manager, Osh Regional State Administration.\n" +
+            "September 1999 – October 2000 — Human Resources Inspector, Osh Branch of KGNU.\n" +
+            "September 2002 – September 2004 — Ecology Lecturer, Osh State University.",
+          professionalSkills:
+            "Advanced PC user: MS Word, Excel, Internet, 1C Accounting, PowerPoint, Canva.\n" +
+            "ABBYY FineReader — scanning, OCR, cleaning and editing PDF files.\n" +
+            "ScanTailor / ScanTailor Advanced — cropping, cleaning and post-processing scanned pages.\n" +
+            "Adobe Acrobat Pro — merging, splitting and editing PDF files.\n" +
+            "DJVU Small / WinDjView — working with DJVU formats.\n" +
+            "Calibre — conversion of e-books (EPUB, MOBI, PDF).\n" +
+            "Adobe Photoshop / GIMP — image cleaning, correction and processing.",
+          additionalInfo:
+            "Communicative and active.\n" +
+            "Goal-oriented life position.\n" +
+            "Strong motivation for development and professional growth."
+        }
+      },
+      {
         name: "Urmatbekov Chynasyl Urmatbekovich",
         post: "Dean of the Faculty of Theatre",
         additionalInfo: {
@@ -1163,6 +1240,67 @@ export default {
           personalQualities:
             "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate.",
         },
+      },
+      {
+        name: "Arstanbek uulu Asylbek",
+        post: "Dean of the Faculty of Pop Music and Musical Education",
+        additionalInfo: {}
+      },
+      {
+        name: "Yusupova Taberik Rishatovna",
+        post: "Dean of the Faculty of Cinema and Television",
+        additionalInfo: {
+          education:
+            "2020–present — Kyrgyz-Russian Slavic University named after B. Yeltsin, Master’s program, Master of Business Administration.\n" +
+            "2009–2014 — B. Beishenalieva University of Culture and Arts, Film and Television Directing.\n" +
+            "2003–2006 — Bishkek State University of Economics and Entrepreneurship, Accountant-Economist.",
+          workExperience:
+            "PRODUCER / FILM DIRECTOR:\n" +
+            "2025 — Feature film “The Magic Pitcher”, National Film Studio “Kyrgyzfilm”, “Lendokfilm”, Russia.\n" +
+            "2025 — Short film “Cholpongo Belek”, National Film Studio “Kyrgyzfilm”.\n" +
+            "2025 — Short film “Satkankul”, National Film Studio “Kyrgyzfilm”.\n" +
+            "2023 — Documentary film “Zhel Kyyak”, National Film Studio “Kyrgyzfilm”.\n" +
+            "2023 — Feature film “My Mom Becomes a Student Again”, Rocket Media Production.\n" +
+            "2021 — Serial anthology “2020”, Citylab Production Studio.\n" +
+            "2020 — Short film “Humility”.\n" +
+            "2019 — Short film “Indigo”.\n" +
+            "2018 — Documentary “The Master’s Testament. Ch. Aitmatov”, National Film Studio “Kyrgyzfilm”.\n" +
+            "2017 — Feature film “Ramen Kyuite”, L’Espace Vision, Japan–Kyrgyzstan.\n" +
+            "2015 — Feature film “Munabiya”, National Film Studio “Kyrgyzfilm”.\n" +
+            "2013 — Short film “The Killers”.\n" +
+            "DIRECTOR:\n" +
+            "2022 — Short film “Kindik Ene”, National Film Studio “Kyrgyzfilm”.\n" +
+            "2021 — Serial anthology “2020”, Citylab Production Studio.\n" +
+            "2016 — TV program “I Invest in Kyrgyzstan”, 16 episodes.\n" +
+            "2014 — Short film “Juma”.\n" +
+            "2013 — Short film “Umut”.\n" +
+            "SECOND DIRECTOR:\n" +
+            "2025 — Feature film “Aizhamal-2”, Director: Ch. Sultanov, Bizlab Prod Studio.\n" +
+            "2024 — Feature film “Aizhamal”, Director: M. Mukhambetimin, Bizlab Prod Studio.\n" +
+            "2024 — Feature film “Bakyt Bulak”, Director: Ch. Tursunova, Cholpon TV Studio.\n" +
+            "2023 — Feature film “Mergen”, Director: Ch. Narynov, National Film Studio “Kyrgyzfilm”.\n" +
+            "2021 — Feature film “House for Sale”, Director: T. Kulmendeev, National Film Studio “Kyrgyzfilm”.\n" +
+            "2019 — Short film “What Did I Forget?”, Director: T. Abylkasymov, National Film Studio “Kyrgyzfilm”.\n" +
+            "2018 — Feature film “Where the People Wander”, Director: Sh. Japarov, National Film Studio “Kyrgyzfilm”.\n" +
+            "2017 — Feature film “Kol”, Oymo Studio.\n" +
+            "2016 — Feature film “Olzho”, Director: B. Taalaibek uulu, National Film Studio “Kyrgyzfilm”.\n" +
+            "2012 — Feature film “A Theatrical Story”, Director: B. Sarygulov.\n" +
+            "CASTING DIRECTOR:\n" +
+            "2020 — Feature film “The Nature of Things”, Director: P. Baranowski, Rohstoff Films, Germany.\n" +
+            "2019 — Feature film “Dovlatov”, Director: M. Muzaffar, Sugdsinamo, Tajikistan.\n" +
+            "2018 — Feature film “On the Distant Frontiers”, Director: M. Dashkin, Victoria Films, Russia.\n" +
+            "2017 — Short film “Nanny”, Director: B. Odurakaev, National Film Studio “Kyrgyzfilm”.\n" +
+            "2016 — Feature film “Aurora”, Director: B. Pirmatov, Top-Tash Production Studio.\n" +
+            "2015 — Feature film “Father’s Testament”, Directors: B. Mukul, D. Japar uulu, National Film Studio “Kyrgyzfilm”.\n" +
+            "2014 — Feature film “Kokzhal”, Director: A. Toktobekova.\n" +
+            "2006–2007 — Secretary, Lead Human Resources Specialist, Oktyabrsky District Department of the Social Fund of the Kyrgyz Republic.\n" +
+            "2008 — Make-up and Hair Artist, Kyrgyz State Opera and Ballet Theatre named after A. Maldybaev.",
+          awards:
+            "2015 — Special Jury Prize of the International Youth Film Forum “UMUT”.\n" +
+            "2021 — Honorary Certificate of the Minister of Culture, Information, Sports and Youth Policy of the Kyrgyz Republic for contribution to the development of national cinematography.\n" +
+            "2023 — Grand Prize for the film “Kindik Ene” at the V Film Forum of Women Directors of Kyrgyzstan.\n" +
+            "2023 — Film Critics’ Prize for the film “Kindik Ene” at the V Film Forum of Women Directors of Kyrgyzstan."
+        }
       },
       {
         name: "Abdyrahmanova Gulzada Abdyrahmanovna",

@@ -25,7 +25,7 @@ function ManagementPage() {
     setTimeout(() => setSelectedPerson(null), 300);
   };
 
-  useEffect(() => {}, [i18n.language]);
+  useEffect(() => { }, [i18n.language]);
 
   useEffect(() => {
     const container = scrollContainerRef.current;
@@ -99,19 +99,28 @@ function ManagementPage() {
             ref={scrollContainerRef}
             className="flex md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-3 lg:gap-4 overflow-x-auto md:overflow-x-visible snap-x hide-scrollbar"
           >
-            {ManagementInfo.person.map((item, index) => (
-              <div
-                key={`management-${index}`}
-                className="flex-shrink-0 w-[70%] sm:w-[60%] md:w-full snap-start"
-              >
-                <ManagementCard
-                  name={item.name}
-                  post={item.post}
-                  onOpenModal={() => handleOpenModal(item)}
-                  btnText={ManagementInfo.btn}
-                />
-              </div>
-            ))}
+            {ManagementInfo.person.map((item, index) => {
+              const hasAdditionalInfo =
+                item.additionalInfo && Object.keys(item.additionalInfo).length > 0;
+
+              return (
+                <div
+                  key={`management-${index}`}
+                  className="flex-shrink-0 w-[70%] sm:w-[60%] md:w-full snap-start"
+                >
+                  <ManagementCard
+                    name={item.name}
+                    post={item.post}
+                    btnText={ManagementInfo.btn}
+                    showButton={hasAdditionalInfo}
+                    onOpenModal={
+                      hasAdditionalInfo ? () => handleOpenModal(item) : undefined
+                    }
+                  />
+                </div>
+              );
+            })}
+
           </div>
         </div>
 
