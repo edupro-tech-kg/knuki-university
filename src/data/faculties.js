@@ -173,7 +173,11 @@ export const FACULTIES_KG = [
     teachersTitle: "ПРОФЕССОРДУК-ОКУТУУЧУЛУК КУРАМ",
     programHeading: "ФАКУЛЬТЕТТЕ ҮЧ АДИСТИК БАР:",
     infoLayout: "cards",
-    programBlocks: ["«Фольклордук-этнографиялык ансамблдин менеджери, педагог»;", " «Хор жамаатынын менеджери, педагог»;", " «Оркестр жамаатынын менеджери, педагог»."],
+    programBlocks: [
+      "Фольклордук-этнографиялык ансамблдин менеджери, педагог",
+      "Хор жамаатынын менеджери, педагог",
+      "Оркестр жамаатынын менеджери, педагог",
+    ],
     stats: [
       { label: "Бардыгы", value: 57 },
       { label: "Штаттагы окутуучулар", value: 13 },
@@ -415,10 +419,10 @@ export const FACULTIES_KG = [
     ],
     programBlocks: [
       "Режиссер",
-      "Адабият чыгармалары",
+      "Адабий чыгармачылык",
       "Кино таануу",
       "Режиссер",
-      "Кино жана телевидение режиссурасы",
+      "Кино жана телекөрсөтүү үн режиссеру",
       "Кинооператор чеберчилиги",
     ],
     stats: [
@@ -648,7 +652,7 @@ export const FACULTIES_RU = [
             position: "",
             description:
               "Одна из первых кафедр института. С 1971 года начала работать специальная секция, ориентированная на подготовку дирижеров, солистов-педагогов и профессиональных руководителей народного оркестра. Ряд деятелей искусства, таких как Феферман Б.В., Асакеев А.А., Давлесов Н., Токтоналиев Ш.Т., внесли большой вклад в развитие кафедры.Сегодня кафедра активно работает в творческом, научном и методическом направлениях.",
-              subtitle: "Заведующий отделением: Кадыркулова Паризат Озубековна",
+            subtitle: "Заведующий отделением: Кадыркулова Паризат Озубековна",
             photo: personPlaceholder,
           },
         ],
@@ -1087,7 +1091,11 @@ In 2023, the departments of Languages and Literature and Physical Education were
     teachersTitle: "PROFESSOR-TEACHING STAFF",
     programHeading: "THE FACULTY HAS THREE SPECIALTIES:",
     infoLayout: "cards",
-    programBlocks: ["Folklore and Ethnographic Ensemble Manager, Teacher", "Choral Group Manager, Teacher", "Orchestra Group Manager, Teacher"],
+    programBlocks: [
+      "Folklore and Ethnographic Ensemble Manager, Teacher",
+      "Choral Group Manager, Teacher",
+      "Orchestra Group Manager, Teacher",
+    ],
     stats: [
       { label: "Total", value: 57 },
       { label: "Full-time teachers", value: 13 },
@@ -1102,7 +1110,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             position: "",
             description:
               "One of the first departments of the institute. Since 1971, a special section began working, focused on training conductors, soloist-teachers, and professional leaders of folk orchestras. A number of art figures such as Feferman B.V., Asakeev A.A., Davlesov N., Toktonaliev Sh.T. made a great contribution to the development of the department.Today the department actively works in creative, scientific and methodological directions.",
-              subtitle: "Head of the Department: Kadyrkulova Parizat Ozubekovna",
+            subtitle: "Head of the Department: Kadyrkulova Parizat Ozubekovna",
             photo: personPlaceholder,
           },
         ],
