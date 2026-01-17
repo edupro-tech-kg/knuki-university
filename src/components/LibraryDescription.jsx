@@ -24,9 +24,10 @@ function LibraryDescription() {
               {card.name}
             </h4>
 
-            <p className="text-text-primary whitespace-pre-line">
+            <p className="text-text-primary whitespace-pre-line leading-relaxed">
               {card.description}
             </p>
+
           </div>
         ))}
       </div>
