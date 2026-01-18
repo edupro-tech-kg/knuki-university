@@ -60,11 +60,10 @@ export default function FacultyPage() {
     const blocks = useSecondary ? faculty.programBlocksSecondary : faculty.programBlocks;
     const heading = useSecondary ? faculty.programHeadingSecondary : faculty.programHeading;
 
-    if (!blocks?.length && !faculty.infoColumns?.length) return null;
+    if (!blocks?.length) return null;
 
     return (
       <FacultyInfoBlocks
-        infoColumns={faculty.infoColumns}
         programBlocks={blocks}
         programHeading={heading}
         layout={faculty.infoLayout || "split"}

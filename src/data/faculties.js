@@ -386,42 +386,12 @@ export const FACULTIES_KG = [
     studyForms: "күндүзгү жана сырттан окуу",
     duration: "күндүзгү (5 жыл) сырттан окуу (6 жыл)",
     teachersTitle: "ПРОФЕССОРДУК-ОКУТУУЧУЛУК КУРАМ",
-    programHeading: "ФАКУЛЬТЕТТЕ ТӨРТ АДИСТИК БАР:",
+    programHeading: "ФАКУЛЬТЕТТЕ БЕШ АДИСТИК БАР:",
     infoLayout: "split",
-    infoColumns: [
-      {
-        title: "КИНО КАФЕДРАСЫ ДИСЦИПЛИНА:",
-        items: [
-          "Калипсовка",
-          "Кино жана телевидение режиссеры, редактор",
-          "Сценарист, музыкант",
-          "Критика, автор, Киножурналист, Кинодраматург",
-        ],
-      },
-      {
-        title: "ТЕЛЕЖУРНАЛИСТИКА ЖАНА РАДИО УТКРУУ РЕЖИССЕРЛИГИ КАФЕДРАСЫ ДИСЦИПЛИНА:",
-        items: [
-          "Тележурналистика",
-          "Радио репортаж",
-          "Кино жана телевидение уткуруу режиссеры, редактор",
-          "Кино жана телевидение уткуруу режиссеры",
-        ],
-      },
-      {
-        title: "ОПЕРАТОР ЧЕБЕРЧИЛИГИ КАФЕДРАСЫ ДИСЦИПЛИНА:",
-        items: [
-          "Калипсовка",
-          "Оператор, кино жана телевидение уткуруу режиссеры, редактор",
-          "Кино жана телевидение уткуруу режиссеры, оператор",
-          "Оператор, редактор",
-        ],
-      },
-    ],
     programBlocks: [
       "Режиссер",
       "Адабий чыгармачылык",
       "Кино таануу",
-      "Режиссер",
       "Кино жана телекөрсөтүү үн режиссеру",
       "Кинооператор чеберчилиги",
     ],
@@ -845,37 +815,8 @@ export const FACULTIES_RU = [
     studyForms: "очная и заочная",
     duration: "очная (5 лет) заочная (6 лет)",
     teachersTitle: "ПРОФЕССОРСКО-ПРЕПОДАВАТЕЛЬСКИЙ СОСТАВ",
-    programHeading: "НА ФАКУЛЬТЕТЕ ЧЕТЫРЕ СПЕЦИАЛЬНОСТИ:",
+    programHeading: "НА ФАКУЛЬТЕТЕ ПЯТЬ СПЕЦИАЛЬНОСТИ:",
     infoLayout: "split",
-    infoColumns: [
-      {
-        title: "ДИСЦИПЛИНЫ КАФЕДРЫ КИНО:",
-        items: [
-          "Калибровка",
-          "Режиссер кино и телевидения, редактор",
-          "Сценарист, музыкант",
-          "Критика, автор, Киножурналист, Кинодраматург",
-        ],
-      },
-      {
-        title: "ДИСЦИПЛИНЫ КАФЕДРЫ ТЕЛЕЖУРНАЛИСТИКИ И РЕЖИССУРЫ РАДИОВЕЩАНИЯ:",
-        items: [
-          "Тележурналистика",
-          "Радиорепортаж",
-          "Режиссер, редактор кино и телевизионных передач",
-          "Режиссер кино и телевизионных передач",
-        ],
-      },
-      {
-        title: "ДИСЦИПЛИНЫ КАФЕДРЫ ОПЕРАТОРСКОГО МАСТЕРСТВА:",
-        items: [
-          "Калибровка",
-          "Оператор, режиссер, редактор кино и телевизионных передач",
-          "Режиссер, оператор кино и телевизионных передач",
-          "Оператор, редактор",
-        ],
-      },
-    ],
     programBlocks: [
       "Режиссер",
       "Литературные произведения",
@@ -885,9 +826,9 @@ export const FACULTIES_RU = [
       "Кинооператорское мастерство",
     ],
     stats: [
-      { label: "Всего", value: 39 },
-      { label: "Штатные преподаватели", value: 25 },
-      { label: "Совместители", value: 14 },
+      { label: "Всего", value: 41 },
+      { label: "Штатные преподаватели", value: 29 },
+      { label: "Совместители", value: 12 },
     ],
     teacherGroups: [
       {
@@ -1304,37 +1245,8 @@ In 2023, the departments of Languages and Literature and Physical Education were
     studyForms: "full-time and part-time",
     duration: "full-time (5 years) part-time (6 years)",
     teachersTitle: "PROFESSOR-TEACHING STAFF",
-    programHeading: "THE FACULTY HAS FOUR SPECIALTIES:",
+    programHeading: "THE FACULTY HAS FIVE SPECIALTIES:",
     infoLayout: "split",
-    infoColumns: [
-      {
-        title: "DISCIPLINES OF THE CINEMA DEPARTMENT:",
-        items: [
-          "Calibration",
-          "Film and television director, editor",
-          "Screenwriter, musician",
-          "Criticism, author, Film journalist, Film dramatist",
-        ],
-      },
-      {
-        title: "DISCIPLINES OF THE TELEJOURNALISM AND RADIO BROADCAST DIRECTING DEPARTMENT:",
-        items: [
-          "Television journalism",
-          "Radio report",
-          "Film and television broadcast director, editor",
-          "Film and television broadcast director",
-        ],
-      },
-      {
-        title: "DISCIPLINES OF THE CAMERA OPERATOR SKILLS DEPARTMENT:",
-        items: [
-          "Calibration",
-          "Camera operator, film and television broadcast director, editor",
-          "Film and television broadcast director, camera operator",
-          "Camera operator, editor",
-        ],
-      },
-    ],
     programBlocks: [
       "Director",
       "Literary works",
@@ -1344,9 +1256,9 @@ In 2023, the departments of Languages and Literature and Physical Education were
       "Cinematography",
     ],
     stats: [
-      { label: "Total", value: 39 },
-      { label: "Full-time teachers", value: 25 },
-      { label: "Part-time teachers", value: 14 },
+      { label: "Total", value: 41 },
+      { label: "Full-time teachers", value: 29 },
+      { label: "Part-time teachers", value: 12 },
     ],
     teacherGroups: [
       {
@@ -1509,7 +1421,6 @@ export function getFacultyData(slug, overridesBySlug = {}, language = "kg") {
     ...base,
     ...overrides,
     stats: overrides.stats ?? base.stats,
-    infoColumns: overrides.infoColumns ?? base.infoColumns,
     programBlocks: overrides.programBlocks ?? base.programBlocks,
     programBlocksSecondary: overrides.programBlocksSecondary ?? base.programBlocksSecondary,
     teacherGroups: hasTeacherGroups
