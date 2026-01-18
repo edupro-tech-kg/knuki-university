@@ -3,6 +3,7 @@ import { useEffect, lazy, Suspense } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SeoTitle from "./components/SeoTitle";
+import ChunkLoadErrorBoundary from "./components/ChunkLoadErrorBoundary";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const HistoryPage = lazy(() => import("./pages/HistoryPage"));
@@ -57,33 +58,35 @@ function App() {
         <SeoTitle />
         <ScrollToTop />
         <Header />
-        <Suspense fallback={<RouteLoadingFallback />}>
-          <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/history" element={<HistoryPage />} />
-              <Route path="/faculty/:slug" element={<FacultyPage />} />
-              <Route path="/news" element={<NewsList />} />
-              <Route path="/news/:id" element={<NewsPage />} />
-              <Route path="/studentsLife" element={<StudentsLife />} />
-              <Route path="/applicants" element={<Applicants />} />
-              <Route path="/library" element={<LibraryPage />} />
-              <Route path="/qualification" element={<QualificationPage />} />
-              <Route path="/management" element={<ManagementPage />} />
-              <Route path="/practice-career" element={<PracticeCareer />} />
-              <Route path="/HRdepartment" element={<HRdepartment />} />
-              <Route path="/ebilim" element={<EbilimPage />} />
-              <Route path="/education" element={<EducationPage />} />
-              <Route path="/literature" element={<LiteraturePage />} />
-              <Route path="/documents" element={<DocumentPage />} />
-              <Route path="/science" element={<SciencePage />} />
-              <Route path="/consultation" element={<ConsultationPage />} />
-              <Route path="/council" element={<CouncilPage />} />
-              <Route path="/accounting" element={<Accounting />} />
-            </Routes>
-          </main>
-          <Footer />
-        </Suspense>
+        <ChunkLoadErrorBoundary>
+          <Suspense fallback={<RouteLoadingFallback />}>
+            <main className="flex-1">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/history" element={<HistoryPage />} />
+                <Route path="/faculty/:slug" element={<FacultyPage />} />
+                <Route path="/news" element={<NewsList />} />
+                <Route path="/news/:id" element={<NewsPage />} />
+                <Route path="/studentsLife" element={<StudentsLife />} />
+                <Route path="/applicants" element={<Applicants />} />
+                <Route path="/library" element={<LibraryPage />} />
+                <Route path="/qualification" element={<QualificationPage />} />
+                <Route path="/management" element={<ManagementPage />} />
+                <Route path="/practice-career" element={<PracticeCareer />} />
+                <Route path="/HRdepartment" element={<HRdepartment />} />
+                <Route path="/ebilim" element={<EbilimPage />} />
+                <Route path="/education" element={<EducationPage />} />
+                <Route path="/literature" element={<LiteraturePage />} />
+                <Route path="/documents" element={<DocumentPage />} />
+                <Route path="/science" element={<SciencePage />} />
+                <Route path="/consultation" element={<ConsultationPage />} />
+                <Route path="/council" element={<CouncilPage />} />
+                <Route path="/accounting" element={<Accounting />} />
+              </Routes>
+            </main>
+            <Footer />
+          </Suspense>
+        </ChunkLoadErrorBoundary>
       </div>
     </Router>
   );
