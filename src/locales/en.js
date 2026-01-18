@@ -732,7 +732,6 @@ export default {
           "The library includes: \n - a lending department that issues books for a specified period; \n - a reading room for on-site use of relevant literature and a bibliographic department; \n In the library reading room, exhibitions of newly acquired literature, as well as displays dedicated to commemorative and particularly significant dates, are regularly organized.",
       },
     ],
-
   },
   libraryStructure: {
     title: "Structure of Our Library:",
@@ -811,7 +810,6 @@ export default {
       },
     ],
   },
-
 
   qualificationDescription: {
     title: "Center for Advanced Training",
@@ -929,24 +927,18 @@ export default {
             "From November 13, 2019 — Vice-Rector for the State Language of Osh State University and Associate Professor of the Department of Kyrgyz Literature.\n" +
             "From July 7, 2020 — Director of the T. Ermatov Bishkek Music and Pedagogical College.\n" +
             "From September 2022 — Deputy Minister of Culture, Information, Sports and Youth Policy of the Kyrgyz Republic.",
-          computerSkills:
-            "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, Internet",
-          languages:
-            "Kyrgyz (native), Russian (fluent)",
+          computerSkills: "Microsoft Office, Microsoft Excel, Microsoft PowerPoint, Internet",
+          languages: "Kyrgyz (native), Russian (fluent)",
           awards:
             "Grand Prix winner of the “Altyn Un–2008” competition organized by ELTR, awarded a First Degree Diploma.\n" +
             "Badge “Excellent Worker of Culture”, October 19, 2016, No. 528.\n" +
             "Honorary Certificate of the Kyrgyz Republic, December 31, 2018, PJ No. 260.\n" +
             "Honorary Citizen of Ala-Buka District, March 27, 2019, No. 32.\n" +
             "Honorary Certificate of the Jogorku Kenesh of the Kyrgyz Republic, March 31, 2025, No. 33-ӨК/АГ.",
-          maritalStatus:
-            "Married",
-          residence:
-            "Bishkek city, house 12",
-          contact:
-            "0 (312) 57 03 79, 0 (700) 11 20 28 13",
-          email:
-            "Tumonbai33@gmail.com",
+          maritalStatus: "Married",
+          residence: "Bishkek city, house 12",
+          contact: "0 (312) 57 03 79, 0 (700) 11 20 28 13",
+          email: "Tumonbai33@gmail.com",
           publications:
             "“Tangdagi Kyyaldanuu” — collection of poems and short stories. Osh, 2007, 68 pages.\n" +
             "“Teaching Oral Folk Art in Uzbek Schools” — methodological manual (co-authored with K. Akmatov). Osh, 2009, 64 pages.\n" +
@@ -960,8 +952,8 @@ export default {
             "“Kyrgyz Elegies” — educational anthology, second edition. Osh, 2018, 156 pages.\n" +
             "“Formation and Development of the Elegy Genre in Kyrgyz Poetry” — monograph. Bishkek, 2018, 182 pages.\n" +
             "“Kyrgyz Song Heritage in a Historical and Cultural Context” — monograph. Bishkek, 2025, 348 pages.\n" +
-            "Author of more than fifty musical works and scientific articles."
-        }
+            "Author of more than fifty musical works and scientific articles.",
+        },
       },
       {
         name: "Dzhakuypov Kubatbek Kulanchievich",
@@ -1168,14 +1160,10 @@ export default {
         name: "Samieva Shairgul Turatovna",
         post: "Head of the Library",
         additionalInfo: {
-          birthDatePlace:
-            "February 6, 1969",
-          residence:
-            "Bishkek city, Ch. Aitmatov Avenue 299/1",
-          contact:
-            "0553 42 00 36",
-          maritalStatus:
-            "Married",
+          birthDatePlace: "February 6, 1969",
+          residence: "Bishkek city, Ch. Aitmatov Avenue 299/1",
+          contact: "0553 42 00 36",
+          maritalStatus: "Married",
           education:
             "1986–1996 — Kyrgyz National Agrarian University, specialty: Agroecologist, Certified Agronomist.\n" +
             "Courses:\n" +
@@ -1198,8 +1186,8 @@ export default {
           additionalInfo:
             "Communicative and active.\n" +
             "Goal-oriented life position.\n" +
-            "Strong motivation for development and professional growth."
-        }
+            "Strong motivation for development and professional growth.",
+        },
       },
       {
         name: "Urmatbekov Chynasyl Urmatbekovich",
@@ -1269,7 +1257,7 @@ export default {
       {
         name: "Arstanbek uulu Asylbek",
         post: "Dean of the Faculty of Pop Music and Musical Education",
-        additionalInfo: {}
+        additionalInfo: {},
       },
       {
         name: "Yusupova Taberik Rishatovna",
@@ -1324,8 +1312,8 @@ export default {
             "2015 — Special Jury Prize of the International Youth Film Forum “UMUT”.\n" +
             "2021 — Honorary Certificate of the Minister of Culture, Information, Sports and Youth Policy of the Kyrgyz Republic for contribution to the development of national cinematography.\n" +
             "2023 — Grand Prize for the film “Kindik Ene” at the V Film Forum of Women Directors of Kyrgyzstan.\n" +
-            "2023 — Film Critics’ Prize for the film “Kindik Ene” at the V Film Forum of Women Directors of Kyrgyzstan."
-        }
+            "2023 — Film Critics’ Prize for the film “Kindik Ene” at the V Film Forum of Women Directors of Kyrgyzstan.",
+        },
       },
       {
         name: "Abdyrahmanova Gulzada Abdyrahmanovna",
@@ -1731,7 +1719,7 @@ export default {
     scienceContent4:
       "The qualitative composition of the faculty is at a high level: the university employs 7 doctors of science, 17 candidates of science, 5 professors and 14 associate professors. In 2023, the university opened graduate programs in specialties 17.00.02 ‒ Musical Art and 24.00.01 ‒ History and Theory of Culture and Art. The opening of graduate programs has become an important stage in expanding the university's research activities, developing scientific schools and training highly qualified scientific and scientific-pedagogical personnel. The number of graduate students increases annually, currently 20 graduate students are studying.",
     scienceContent5:
-      "The 'Young Scientists' Council, formed from graduate and doctoral students, actively functions at KNUCAI, making a significant contribution to the development of the university's research activities.",
+      "The 'Young Scientists' Council, formed from graduate and doctoral students, actively functions at KNUCA, making a significant contribution to the development of the university's research activities.",
     scienceContent6:
       "Since 2015, the university has been publishing the scientific journal 'Bulletin of the B. Beishenalieva Kyrgyz National University of Culture and Arts'. The journal accepts articles from foreign and domestic scientists, doctoral students, graduate students and undergraduates in the fields of culture, art, pedagogy and humanities. The scientific journal publishes articles in Kyrgyz, Russian and English and is published four times a year.",
     scienceContent7:
@@ -2119,13 +2107,7 @@ export default {
         id: 9,
         name: "Performer of a pop group (vocalist, instrumentalist), teacher",
         code: "",
-        prices: [
-          ["50 000 soloist", "40 000 instrument"],
-          "32 000",
-          "32 000",
-          "32 000",
-          "32 000",
-        ],
+        prices: [["50 000 soloist", "40 000 instrument"], "32 000", "32 000", "32 000", "32 000"],
       },
       {
         id: 10,
@@ -2244,7 +2226,11 @@ export default {
         code: "",
         prices: [
           ["65 000 soloist", "60 000 instrument"],
-          "52 000", "42 000", "42 000", "42 000", "40 000"
+          "52 000",
+          "42 000",
+          "42 000",
+          "42 000",
+          "40 000",
         ],
       },
       {
@@ -2302,5 +2288,5 @@ export default {
         prices: ["75 000", "72 000"],
       },
     ],
-  }
+  },
 };
