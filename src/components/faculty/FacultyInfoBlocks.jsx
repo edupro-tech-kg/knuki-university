@@ -1,12 +1,9 @@
-import React from "react";
-
 export default function FacultyInfoBlocks({
-  infoColumns = [],
   programBlocks = [],
   programHeading,
   layout = "split",
 }) {
-  if (!infoColumns.length && !programBlocks.length) return null;
+  if (!programBlocks.length) return null;
 
   const renderCard = (label, idx) => (
     <div
@@ -79,7 +76,7 @@ export default function FacultyInfoBlocks({
   );
 
   /* ===== ТОЛЬКО КАРТОЧКИ ===== */
-  if (layout === "cards" || (!infoColumns.length && programBlocks.length)) {
+  if (layout === "cards" || programBlocks.length) {
     return (
       <section className="bg-white">
         <div className="px-4 py-6 md:px-6 md:py-8">
@@ -99,32 +96,6 @@ export default function FacultyInfoBlocks({
     <section className="bg-white">
       <div className="px-4 py-6 md:px-6 md:py-8">
         <div className="flex flex-col gap-6 md:grid md:grid-cols-[minmax(300px,2fr)_3fr] md:gap-8 lg:gap-12">
-          {/* текст */}
-          <div className="space-y-6">
-            {infoColumns.map((col, idx) => (
-              <div key={`col-${idx}`} className="space-y-3">
-                {col.title && (
-                  <h3 className="text-base md:text-lg font-semibold uppercase text-[#151515]">
-                    {col.title}
-                  </h3>
-                )}
-                {col.subtitle && (
-                  <p className="text-sm font-semibold text-[#151515]">{col.subtitle}</p>
-                )}
-                {col.items?.length > 0 && (
-                  <ul className="space-y-2 text-sm md:text-base leading-relaxed text-[#111]">
-                    {col.items.map((item, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#751715] mt-2 mr-2 flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
-
           {/* карточки */}
           {programBlocks.length > 0 && (
             <div className="md:pt-4">
