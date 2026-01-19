@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import PdfModal from "../components/UI/PdfModal";
 import DocumentTable from "../components/UI/DocumentTable";
 
-
 import doc1 from "../assets/pdf/doc1.pdf";
 import doc2 from "../assets/pdf/doc2.pdf";
 import doc3 from "../assets/pdf/doc3.pdf";
@@ -75,7 +74,7 @@ const nlaKgukiDocuments = [
     text: "Постановление Совета Министров Киргизской ССР № 482 от 30 августа 1967 года «Об организации Киргизского государственного института искусств» (КГИИ).",
     id: "doc1",
   },
-   {
+  {
     text: "Постановление Совета Министров Киргизской ССР № 21 от 28 января 1974 года, об официальном наименовании КГИИ, как «Киргизский государственный институт искусств имени Бубусары Бейшеналиевой».",
     id: "doc2",
   },
@@ -206,8 +205,8 @@ export default function NLAkguki() {
   });
 
   const tableData = nlaKgukiDocuments.map((item, index) => ({
-    id: index + 1, 
-    docId: item.id, 
+    id: index + 1,
+    docId: item.id,
     text: item.text,
     pdf: nlaKgukiPdfs[item.id],
     displayIndex: index + 1,
@@ -215,10 +214,10 @@ export default function NLAkguki() {
 
   const openPdfModal = (item) => {
     if (item.pdf) {
-      setModalState({ 
-        isOpen: true, 
-        pdf: item.pdf, 
-        title: item.text 
+      setModalState({
+        isOpen: true,
+        pdf: item.pdf,
+        title: item.text,
       });
     }
   };
@@ -230,7 +229,7 @@ export default function NLAkguki() {
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-4 sm:py-8">
       <h2 className="font-serif text-primary text-2xl sm:text-3xl md:text-4xl text-center py-6 sm:py-9 uppercase italic">
-        НПА КР
+        НПА КНУКИ
       </h2>
 
       <DocumentTable
@@ -246,7 +245,7 @@ export default function NLAkguki() {
           rowBorderClass: "border-b border-black last:border-b-0",
           hoverEffect: true,
           itemTextKey: "text",
-          itemIdKey: "displayIndex", 
+          itemIdKey: "displayIndex",
           buttonVariant: "secondary",
           buttonClassName: "px-6 py-2 text-sm",
           showButtonIfNoAction: false,
@@ -257,11 +256,7 @@ export default function NLAkguki() {
       />
 
       {modalState.isOpen && (
-        <PdfModal
-          pdf={modalState.pdf}
-          title={modalState.title}
-          onClose={closePdfModal}
-        />
+        <PdfModal pdf={modalState.pdf} title={modalState.title} onClose={closePdfModal} />
       )}
     </section>
   );
