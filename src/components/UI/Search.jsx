@@ -105,6 +105,8 @@ function Search() {
       documents: "/documents",
       science: "/science",
       consultation: "/consultation",
+      profsouz: "/profsouz",
+      okuuBolumu: "/okuu-bolumu",
     };
     Object.entries(pageTitles).forEach(([key, title]) => {
       if (title && pagePathMap[key]) {
