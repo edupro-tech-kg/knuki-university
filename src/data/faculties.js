@@ -63,6 +63,10 @@ import personPlaceholder from "/person-placeholder.jpeg";
 import filmmakingDepartment from "../assets/images/filmmakingSkills-department.png";
 import televisionDepartment from "../assets/images/televisionRadio-department.png";
 
+import Meerim_Beishenalieva from "../assets/images/faculties/choreography/Meerim_Beishenalieva.jpg";
+import Zamira_Majenova from "../assets/images/faculties/choreography/Zamira_Majenova.jpg";
+import Nurzada_Seytalieva from "../assets/images/faculties/choreography/Nurzada_Seytalieva.jpg";
+
 export const FACULTIES_KG = [
   {
     slug: "choreography",
@@ -112,7 +116,7 @@ export const FACULTIES_KG = [
 
 Кафедрада ар кандай типтеги маданият мекемелеринде директор, жетекчи, көркөм жетекчи, маданият жана эс алуу мекемелеринин, илимий-методикалык борборлордун, чыгармачыл бирикмелердин жана коллективдердин бөлүм башчысы, райондук методикалык борборлордун усулчусу, социалдык-маданий иштерин методикалык жактан камсыз кылуучу тиешелүү аймактын маданият мекемелеринин ишин ишке ашырууда практиктерге чыгармачылык жардам көрсөтүү үчүн жогорку квалификациялуу педагогдор эмгектенишет.`,
             subtitle: "Кафедра башчысы, доценттин м.а. — Бейшеналиева Мерим Искендеровна",
-            photo: personPlaceholder,
+            photo: Meerim_Beishenalieva,
           },
         ],
       },
@@ -128,7 +132,7 @@ export const FACULTIES_KG = [
 
 Кафедранын бүтүрүүчүлөрү конкурстар жана фестивалдардын лауреаты балет артисттеринин эл аралык конкурстарынын дипломанттары Кыргызстанда, Казакстанда, Россия, Тажикстанда, Мексикада, Канадада, Түштүк Кореяда  жана башка мамлекеттерде үзүрлүү эмгектенип жатышат.`,
             subtitle: "Кафедра башчысы, улук окутуучу - Маженова Замира Турарбековна",
-            photo: personPlaceholder,
+            photo: Zamira_Majenova,
           },
         ],
       },
@@ -144,7 +148,7 @@ export const FACULTIES_KG = [
 
 2023-жылы кафедрага Тилдер жана адабият кафедрасы менен Дене тарбия кафедрасы бириктирилген. Бул кафедралар университет негизделген күндөн бери иштеп келет. Кыргыз Республикасынын Эгемендүүлүгүнүн жарыяланышына байланыштуу тилдерди (кыргыз, орус, англис) кыйла олуттуу окутуунун зарылдыгы пайда болду. Тилдерди окутууда таанып-билүүчүлүк-практикалык тапшырмаларга өзгөчө көңүл бурулат: сөздүк, чыгармачылык, жазуу, түшүндүрүү, тил тарыхы боюнча, жеке жана топтук ж.б.`,
             subtitle: "Кафедра башчысы, улук окутуучу – Сейталиева Нурзада Түгөлбековна",
-            photo: personPlaceholder,
+            photo: Nurzada_Seytalieva,
           },
         ],
       },
@@ -553,7 +557,7 @@ export const FACULTIES_RU = [
 
 На кафедре работают высококвалифицированные педагоги, оказывающие практическую и методическую поддержку специалистам учреждений культуры: директору, руководителю, художественному руководителю, заведующему отделом творческих объединений и коллективов, научно-методических центров, а также методистам районных методических центров.`,
             subtitle: "Заведующая кафедрой, и.о. доцента — Бейшеналиева Мерим Искендеровна",
-            photo: personPlaceholder,
+            photo: Meerim_Beishenalieva,
           },
         ],
       },
@@ -569,7 +573,7 @@ export const FACULTIES_RU = [
 
 Выпускники кафедры — лауреаты конкурсов и фестивалей, дипломанты международных конкурсов балетных артистов — успешно работают в Кыргызстане, Казахстане, России, Таджикистане, Мексике, Канаде, Южной Корее и других странах.`,
             subtitle: "Заведующая кафедрой, старший преподаватель — Маженова Замира Турарбековна",
-            photo: personPlaceholder,
+            photo: Zamira_Majenova,
           },
         ],
       },
@@ -586,7 +590,7 @@ export const FACULTIES_RU = [
 В 2023 году к кафедре были объединены кафедра языков и литературы, а также кафедра физической культуры. Необходимость более углублённого изучения языков (кыргызского, русского, английского) усилилась после провозглашения независимости Кыргызской Республики; в обучении особое внимание уделяется познавательно-практическим заданиям.`,
             subtitle:
               "Заведующая кафедрой, старший преподаватель — Сейталиева Нурзада Түгөлбековна",
-            photo: personPlaceholder,
+            photo: Nurzada_Seytalieva,
           },
         ],
       },
@@ -995,7 +999,7 @@ Since 2001, the department has been training graduates in the new specialty “S
 
 The department employs highly qualified teachers who provide practical and methodological support to professionals working in cultural institutions: directors, managers, artistic directors, heads of departments in creative associations and ensembles, scientific-methodological centers, and district methodological centers.`,
             subtitle: "Acting Head of Department (Assoc. Prof.) — Beishenalieva Merim Iskenderovna",
-            photo: personPlaceholder,
+            photo: Meerim_Beishenalieva,
           },
         ],
       },
@@ -1011,7 +1015,7 @@ The first head of the department was R. Kh. Urazgildeev, Academician of the Publ
 
 Graduates of the department — winners of competitions and festivals and diploma holders of international ballet competitions — successfully work in Kyrgyzstan, Kazakhstan, Russia, Tajikistan, Mexico, Canada, South Korea, and other countries.`,
             subtitle: "Head of Department (Senior Lecturer) — Mazhenova Zamira Turarbekovna",
-            photo: personPlaceholder,
+            photo: Zamira_Majenova,
           },
         ],
       },
@@ -1027,7 +1031,7 @@ During the period when the department was led by D. S. Zhaparov, Candidate of Ph
 
 In 2023, the departments of Languages and Literature and Physical Education were merged into this department. After the declaration of independence of the Kyrgyz Republic, the need for more advanced language learning (Kyrgyz, Russian, English) increased; particular attention is paid to cognitive-practical tasks in teaching.`,
             subtitle: "Head of Department (Senior Lecturer) — Seytaliyeva Nurzada Tugolbekovna",
-            photo: personPlaceholder,
+            photo: Nurzada_Seytalieva,
           },
         ],
       },
