@@ -28,7 +28,7 @@ export default {
     faculties: "Факультет",
     students: "Студент",
     education: "Билим берүү",
-    science: "Илим жана Эл аралык",
+    science: "Илим жана эл аралык",
     news: "Жаңылыктар",
     documents: "Документ",
     applicants: "Абитуриент",
