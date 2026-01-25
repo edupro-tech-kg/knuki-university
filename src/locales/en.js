@@ -1299,7 +1299,7 @@ export default {
       {
         name: "Surapbaeva Gulzada Raimjanovna",
         post: "Head of the Library",
-        image: "",
+        image: "photo-placeholder.svg",
         additionalInfo: {},
       },
       {

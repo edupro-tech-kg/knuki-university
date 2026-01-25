@@ -1311,7 +1311,7 @@ export default {
       {
         name: "Сурапбаева Гүлзада Раимжановна",
         post: "Китепкана башчысы",
-        image: "",
+        image: "photo-placeholder.svg",
         additionalInfo: {},
       },
       {

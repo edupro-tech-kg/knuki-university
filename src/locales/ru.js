@@ -1353,7 +1353,7 @@ export default {
       {
         name: "Сурапбаева Гүлзада Раимжановна",
         post: "Заведующая библиотекой",
-        image: '',
+        image: "photo-placeholder.svg",
         additionalInfo: {},
       },
       {
