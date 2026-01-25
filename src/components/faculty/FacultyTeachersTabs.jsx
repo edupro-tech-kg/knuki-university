@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function FacultyTeachersTabs({ groups }) {
+export default function FacultyTeachersTabs({ groups, resetKey }) {
   const validGroups = groups?.filter((g) => g && g.title && g.teachers?.length);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [resetKey]);
 
   if (!validGroups?.length) return null;
   const activeGroup = validGroups[Math.min(activeIndex, validGroups.length - 1)];
