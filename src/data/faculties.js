@@ -223,6 +223,18 @@ export const FACULTIES_KG = [
           },
         ],
       },
+      {
+        title: "Фортепиано жана концертмейстердик кафедрасы",
+        teachers: [
+          {
+            name: "Фортепиано жана концертмейстердик кафедрасы",
+            position: "",
+            description: `“Жалпы фортепиано” сабагы институттун ачылган күнүнөн тартып 1967-жылдан баштап окутула баштаган. Алгач фортепиано кафедрасынын курамында секция катары иштеген. Ал секцияны Орловская Н.А. жетектеген. Кафедранын базасында жыл сайын музыканы пропагандалоо максатында сынактар, фестивалдар, семинарлар, тегерек столдор жана ачык лекциялар өткөрүлүп келет.`,
+            subtitle: "Кафедра башчысы: Искенова Бибигуль Иличбековна",
+            photo: personPlaceholder,
+          },
+        ],
+      },
     ],
     documents: [],
   },
@@ -653,6 +665,18 @@ export const FACULTIES_RU = [
           },
         ],
       },
+      {
+        title: "Кафедра фортепиано и концертмейстеры",
+        teachers: [
+          {
+            name: "Кафедра фортепиано и концертмейстеры",
+            position: "",
+            description: `Предмет “Общее фортепиано” был введен со дня открытия института в 1967 году. Он существовал сначала в виде секции при кафедре спец.фортепиано. Набор студентов тогда был небольшой и поэтому преподаватели спец. Фортепиано пареллельно вели занятия и по общему фортепиано. Этой сецией заведовала Орловская Н.А. В целях пропаганды музыки ежегодно на базе кафедры организуются конкурсы, фестивали, семинары, круглые столи и открытые лекции.`,
+            subtitle: "Заведующая кафедрой Искенова Бибигуль Иличбековна",
+            photo: personPlaceholder,
+          },
+        ],
+      },
     ],
     documents: [],
   },
@@ -1078,6 +1102,18 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "The department trains specialists in the preservation, study and development of traditional musical folklore. Students learn folk artAfter Kyrgyzstan gained independence, in 1993, when the importance of national musical heritage increased especially, it was organized. The department teaches epic storytelling, akyn art, traditional singing and instrumental music. The teaching staff includes folk artists, art critics, the best specialists in folklore.This department is a center for the study, preservation and development of national traditional music.Head of the Department of Traditional Music and Folklore - Kyshtobaev Maksat Cherikbaevich",
             subtitle: "Head of the Department: Kyshtobaev Maksat Cherikbaev",
+            photo: personPlaceholder,
+          },
+        ],
+      },
+      {
+        title: "Department of Piano and Accompaniment",
+        teachers: [
+          {
+            name: "Department of Piano and Accompaniment",
+            position: "",
+            description: `The “General Piano” course has been taught since the institute opened in 1967. Initially, it functioned as a section within the Special Piano Department. This section was headed by N.A. Orlovskaya. Every year, the department organizes competitions, festivals, seminars, round tables, and open lectures to promote music.`,
+            subtitle: "Head of Department: Iskenova Bibigul Ilichbekovna",
             photo: personPlaceholder,
           },
         ],
