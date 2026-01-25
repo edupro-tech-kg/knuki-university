@@ -316,7 +316,7 @@ export const FACULTIES_KG = [
             description:
               "Кафедра Б.Бейшеналиева атындагы Кыргыз мамлекеттик маданият жана искусство университетинин эстрада-музыкалык факультетинин курамында 1993-жылдын сентябрь айында негизделген.Негиздөөчүсү — Кыргыз Республикасынын эмгек сиңирген маданият ишмери, профессор, композитор Роман Владимирович.",
             subtitle:
-              "Кафедра башчысы: маданият таануу боюнча кандидат Көрпөбаева Мариам Керималиевна.",
+              "Кафедра башчысы: маданият таануу боюнча кандидат Корпобаева Мариам Керималиевна.",
             photo: Maryam_Korpobaeva,
           },
         ],
@@ -757,7 +757,7 @@ export const FACULTIES_RU = [
             position: "",
             description:
               "Кафедра была основана в сентябре 1993 года в составе эстрадно-музыкального факультета Кыргызского государственного университета культуры и искусства им. Б.Бейшеналиевой.Основатель — заслуженный деятель культуры Кыргызской Республики, профессор, композитор Роман Владимирович.",
-            subtitle: "Заведующая кафедрой: кандидат культурологии Көрпөбаева Мариам Керималиевна.",
+            subtitle: "Заведующая кафедрой: кандидат культурологии Корпобаева Мариам Керималиевна.",
             photo: Maryam_Korpobaeva,
           },
         ],
@@ -1199,7 +1199,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "The department was founded in September 1993 as part of the estrada and music faculty of B. Beishenalieva Kyrgyz State University of Culture and Arts.Founder — Honored Cultural Worker of the Kyrgyz Republic, professor, composer Roman Vladimirovich.",
             subtitle:
-              "Head of Department: Candidate of Cultural Studies Korpebaeva Mariam Kerimalievna.",
+              "Head of Department: Candidate of Cultural Studies Korpobaeva Mariam Kerimalievna.",
             photo: Maryam_Korpobaeva,
           },
         ],
