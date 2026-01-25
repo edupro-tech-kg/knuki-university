@@ -1,3 +1,21 @@
+import taberikdec from "../assets/images/taberikdec.jpg";
+import ulanProrector from "../assets/images/ulanProrector.jpg";
+import kubatProrector from "../assets/images/kubatProrector.jpg";
+import janylAlm from "../assets/images/janylAlm.jpg";
+import ilimelaralyk from "../assets/images/ilim&elaralyk.jpg";
+import practikcareer from "../assets/images/practik&career.jpg";
+import charbaProrector from "../assets/images/charbaProrector.jpg";
+import kadrlarbol from "../assets/images/kadrlarbol.jpg";
+import gulzadaAbd from "../assets/images/glzadaAbd.jpg";
+import bugalter from "../assets/images/bugalter.jpg";
+import magistraspirantur from "../assets/images/magistr&aspirntur.jpg";
+import estradakaf from "../assets/images/estradakaf.jpg";
+import musicdec from "../assets/images/musicdec.jpg";
+import sahnakaf from "../assets/images/sahnakaf.jpg";
+import teatrdec from "../assets/images/teatrdec.jpg";
+import tumonbai from "../assets/images/tumonbai.jpg";
+import maksatkysh from "../assets/images/maksatkysh.jpg";
+
 export default {
   locale: "en",
   code: "en",
@@ -910,6 +928,7 @@ export default {
       {
         name: "Koldoshov Tumenbay Rakhmanovich",
         post: "Rector",
+        image: tumonbai,
         additionalInfo: {
           academicDegree:
             "Postgraduate and Master’s Department, B. Beishenalieva Kyrgyz University of Culture and Arts, Bishkek.",
@@ -958,11 +977,11 @@ export default {
       {
         name: "Dzhakuypov Kubatbek Kulanchievich",
         post: "Vice-Rector for Academic Affairs",
+        image: kubatProrector,
         additionalInfo: {
           birthDatePlace: "March 18, 1966",
           residence: "Alamudun district, Kara-Zhygach village, T. Buzurmankul St. 3/1",
           contact: "+996500 708 561",
-          email: "abdigaparov.nur93@gmail.com",
           academicDegree: "Postgraduate and Master's Department, KSUCА, Bishkek.",
           academicTitle: "Associate Professor",
           education:
@@ -981,6 +1000,7 @@ export default {
       {
         name: "Imankulova Saadat Esenbaevna",
         post: "Vice-Rector for Research",
+        image: ilimelaralyk,
         additionalInfo: {
           birthDatePlace: "May 21, 1985",
           contact: "+996770241531",
@@ -998,6 +1018,7 @@ export default {
       {
         name: "Turdaliev Ulanbek Matkarimovich",
         post: "Vice-Rector for State Language and Educational Affairs",
+        image: ulanProrector,
         additionalInfo: {
           birthDatePlace: "May 25, 1978",
           residence: "Bishkek city, Pervomaisky district\nKalys Ordo microdistrict, 7/66",
@@ -1014,6 +1035,7 @@ export default {
       {
         name: "Imanaliev Maksat Baktybekovich",
         post: "Vice-Rector for Administrative and Economic Affairs",
+        image: charbaProrector,
         additionalInfo: {
           birthDatePlace: "June 10, 2004",
           residence: "Chui region, Alamudun district, Besh-Kungey village, Sarbagysheva St., No.26",
@@ -1037,6 +1059,7 @@ export default {
       {
         name: "Kyshtobaev Maksat Cherikbaevich",
         post: "Chairman of the Trade Union",
+        image: maksatkysh,
         additionalInfo: {
           birthDatePlace: "January 28, 1989, Issyk-Kul region",
           residence: "Bishkek, Kyrgyz Republic",
@@ -1056,6 +1079,7 @@ export default {
       {
         name: "Marazhapova Nurzhan Kenzhekulovna",
         post: "Head of Postgraduate and Master's Department",
+        image: magistraspirantur,
         additionalInfo: {
           birthDatePlace: "October 4, 1972, Osh region, Kara-Kulja district",
           residence: "Bishkek, Sadyrbaev St., 1/5, apt. 152B",
@@ -1080,6 +1104,7 @@ export default {
       {
         name: "Almanbet kyzy Zhanyl",
         post: "KUMIU, Bishkek city, Head of the Academic Affairs Department, Senior Lecturer of the Department of Social and Humanitarian Disciplines.",
+        image: janylAlm,
         additionalInfo: {
           birthDatePlace: "February 15, 1994",
           residence: "Bishkek city, Ak-Ordo 3 residential area",
@@ -1094,6 +1119,7 @@ export default {
       {
         name: "Baktybekova Begai Baktybekovna",
         post: "Head of the Human Resources Department",
+        image: kadrlarbol,
         additionalInfo: {
           birthDatePlace: "December 2, 1990",
           residence: "Bishkek city, Kyrgyz Republic",
@@ -1117,6 +1143,7 @@ export default {
       {
         name: "Ybyrayakunova Nazira Kubanychbekovna",
         post: "Chief Accountant",
+        image: bugalter,
         additionalInfo: {
           birthDatePlace: "March 9, 1976",
           residence: "Tash-Debe village, Bolnichnaya Street, 65",
@@ -1132,9 +1159,8 @@ export default {
       {
         name: "Ergeshova Kumarkan Tokoyevna",
         post: "Head of the Internship and Career Department",
+        image: practikcareer,
         additionalInfo: {
-          birthDatePlace: "May 21, 1985",
-          residence: "Bishkek city, Alamedin district, Bektoo dacha area, 13th line, house 4",
           contact: "+996708771171",
           email: "kumar.ergesheva2@gmail.com",
           education:
@@ -1157,41 +1183,15 @@ export default {
         },
       },
       {
-        name: "Samieva Shairgul Turatovna",
+        name: "Surapbaeva Gulzada Raimjanovna",
         post: "Head of the Library",
-        additionalInfo: {
-          birthDatePlace: "February 6, 1969",
-          residence: "Bishkek city, Ch. Aitmatov Avenue 299/1",
-          contact: "0553 42 00 36",
-          maritalStatus: "Married",
-          education:
-            "1986–1996 — Kyrgyz National Agrarian University, specialty: Agroecologist, Certified Agronomist.\n" +
-            "Courses:\n" +
-            "1. Moscow Higher School “Economics and Law”, Moscow.\n" +
-            "2. Advanced training courses for librarians of the Kyrgyz Republican Association of Public Libraries at the National Library of the Kyrgyz Republic named after A. Osmonov, Bishkek.",
-          workExperience:
-            "September 1992 – February 1995 — Biology Teacher, Secondary School No. 11, Tash-Kumyr.\n" +
-            "March 1995 – May 1996 — Human Resources Inspector, Small Enterprise “Kelechek”.\n" +
-            "May 1996 – August 1996 — Records Manager, Osh Regional State Administration.\n" +
-            "September 1999 – October 2000 — Human Resources Inspector, Osh Branch of KGNU.\n" +
-            "September 2002 – September 2004 — Ecology Lecturer, Osh State University.",
-          professionalSkills:
-            "Advanced PC user: MS Word, Excel, Internet, 1C Accounting, PowerPoint, Canva.\n" +
-            "ABBYY FineReader — scanning, OCR, cleaning and editing PDF files.\n" +
-            "ScanTailor / ScanTailor Advanced — cropping, cleaning and post-processing scanned pages.\n" +
-            "Adobe Acrobat Pro — merging, splitting and editing PDF files.\n" +
-            "DJVU Small / WinDjView — working with DJVU formats.\n" +
-            "Calibre — conversion of e-books (EPUB, MOBI, PDF).\n" +
-            "Adobe Photoshop / GIMP — image cleaning, correction and processing.",
-          additionalInfo:
-            "Communicative and active.\n" +
-            "Goal-oriented life position.\n" +
-            "Strong motivation for development and professional growth.",
-        },
+        image: "",
+        additionalInfo: {},
       },
       {
         name: "Urmatbekov Chynasyl Urmatbekovich",
         post: "Dean of the Faculty of Theatre",
+        image: teatrdec,
         additionalInfo: {
           birthDatePlace: "December 22, 1992",
           residence: "Bishkek city, Torekul Aitmatov Street, 221",
@@ -1213,6 +1213,7 @@ export default {
       {
         name: "Bakytbek uulu Isabek",
         post: "Dean of the Faculty of Choreography and Cultural Activities",
+        image: sahnakaf,
         additionalInfo: {
           birthDatePlace: "January 7, 1999",
           residence: "Alamudun district, Lenin Village, Novoselskaya Street, 3",
@@ -1235,6 +1236,7 @@ export default {
       {
         name: "Abdigaparov Nurtilek Abdigaparovich",
         post: "Dean of the Faculty of Folk Music",
+        image: musicdec,
         additionalInfo: {
           birthDatePlace: "January 16, 1994",
           residence: "Bishkek city, Kyrgyz Republic",
@@ -1257,11 +1259,13 @@ export default {
       {
         name: "Arstanbek uulu Asylbek",
         post: "Dean of the Faculty of Pop Music and Musical Education",
+        image: estradakaf,
         additionalInfo: {},
       },
       {
         name: "Yusupova Taberik Rishatovna",
         post: "Dean of the Faculty of Cinema and Television",
+        image: taberikdec,
         additionalInfo: {
           education:
             "2020–present — Kyrgyz-Russian Slavic University named after B. Yeltsin, Master’s program, Master of Business Administration.\n" +
@@ -1318,6 +1322,7 @@ export default {
       {
         name: "Abdyrahmanova Gulzada Abdyrahmanovna",
         post: "Press Secretary",
+        image: gulzadaAbd,
         additionalInfo: {
           birthDatePlace:
             "August 27, 1996\nJalal-Abad region, Aksy district, Zherge-Tal rural municipality, Bospiek village\nPersonal number: 12708199600474\nNationality: Kyrgyz\nCitizenship: Kyrgyzstan",

@@ -111,6 +111,7 @@ function ManagementPage() {
                   <ManagementCard
                     name={item.name}
                     post={item.post}
+                    image={item.image}
                     btnText={ManagementInfo.btn}
                     showButton={hasAdditionalInfo}
                     onOpenModal={

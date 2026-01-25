@@ -1,6 +1,6 @@
 import Button from "./UI/Button";
 
-function ManagementCard({ name, post, onOpenModal, btnText, showButton }) {
+function ManagementCard({ name, post, onOpenModal, btnText, showButton, image }) {
   const splitName = (fullName) => {
     if (!fullName) return { firstLine: "", secondLine: "" };
 
@@ -22,8 +22,8 @@ function ManagementCard({ name, post, onOpenModal, btnText, showButton }) {
 
   return (
     <div className="flex-shrink-0 w-full flex flex-col rounded-lg bg-white p-1.5 sm:p-3">
-      <div className="w-full aspect-[5/6] bg-gray-100 rounded-md mb-2 sm:mb-4 flex items-center justify-center overflow-hidden">
-        <span className="text-gray-400 text-xs sm:text-sm">Photo</span>
+      <div className="w-full aspect-[5/7] bg-gray-100 rounded-md mb-2 sm:mb-4 flex items-center justify-center overflow-hidden">
+        <img src={image} alt={name}/>
       </div>
 
       <div className="flex flex-col flex-1 text-center">

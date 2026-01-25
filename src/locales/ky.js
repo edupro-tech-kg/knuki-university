@@ -1,3 +1,21 @@
+import taberikdec from "../assets/images/taberikdec.jpg";
+import ulanProrector from "../assets/images/ulanProrector.jpg";
+import kubatProrector from "../assets/images/kubatProrector.jpg";
+import janylAlm from "../assets/images/janylAlm.jpg";
+import ilimelaralyk from "../assets/images/ilim&elaralyk.jpg";
+import practikcareer from "../assets/images/practik&career.jpg";
+import charbaProrector from "../assets/images/charbaProrector.jpg";
+import kadrlarbol from "../assets/images/kadrlarbol.jpg";
+import gulzadaAbd from "../assets/images/glzadaAbd.jpg";
+import bugalter from "../assets/images/bugalter.jpg";
+import magistraspirantur from "../assets/images/magistr&aspirntur.jpg";
+import estradakaf from "../assets/images/estradakaf.jpg";
+import musicdec from "../assets/images/musicdec.jpg";
+import sahnakaf from "../assets/images/sahnakaf.jpg";
+import teatrdec from "../assets/images/teatrdec.jpg";
+import tumonbai from "../assets/images/tumonbai.jpg";
+import maksatkysh from "../assets/images/maksatkysh.jpg";
+
 export default {
   locale: "ky",
   code: "ky",
@@ -916,6 +934,7 @@ export default {
       {
         name: "Колдошов Түмөнбай Рахманович",
         post: "Ректор",
+        image: tumonbai,
         additionalInfo: {
           academicDegree:
             "Аспирантура жана магистратура бөлүмү, Б.Бейшеналиева  ат. КУМИУ. Бишкек.",
@@ -951,11 +970,11 @@ export default {
       {
         name: "Джакыпов Кубатбек Куланчиевич",
         post: "Окуу иштери боюнча проректор",
+        image: kubatProrector,
         additionalInfo: {
           birthDatePlace: "1966-жыл 18-март.",
           residence: "Аламүдүн району, Каражыгач айылы. Т.Бузурманкул көч 3/1",
           contact: "+996500 708 561",
-          email: "abdigaparov.nur93@gmail.com",
           academicDegree:
             "Аспирантура жана магистратура бөлүмү, Б.Бейшеналиева  ат. КУМИУ. Бишкек.",
           academicTitle: "доцент",
@@ -980,6 +999,7 @@ export default {
       {
         name: "Иманкулова Саадат Эсенбаевна",
         post: "Илимий иштер жана эл аларык байланыштар боюнча проректор",
+        image: ilimelaralyk,
         additionalInfo: {
           birthDatePlace: "21.05.1985",
           contact: "+996770241531",
@@ -999,6 +1019,7 @@ export default {
       {
         name: "Турдалиев Уланбек Маткаримович",
         post: "Мамлекеттик тил жана тарбия иштери боюнча проректору",
+        image: ulanProrector,
         additionalInfo: {
           birthDatePlace: "25-май, 1978-жыл",
           residence: "Бишкек шаары, 1 май району\n- Калыс Ордо-7/66",
@@ -1015,6 +1036,7 @@ export default {
       {
         name: "Иманалиев Максат Бактыбекович",
         post: "Административдик-чарбалык иштери боюнча проректор",
+        image: charbaProrector,
         additionalInfo: {
           birthDatePlace: "10.06.2004",
           residence: "Чуй, Аламудун район, Беш-Кунгей , улица Сарбагышева,  № 26",
@@ -1040,6 +1062,7 @@ export default {
       {
         name: "Кыштобаев Максат Черикбаевич",
         post: "Кесиптик бирликтин төрагасы",
+        image: maksatkysh,
         additionalInfo: {
           birthDatePlace: "1989.01.28, Ысык-Көл",
           residence: "Бишкек шаары, Кыргызстан",
@@ -1062,6 +1085,7 @@ export default {
       {
         name: "Маражапова Нуржан Кенжекуловна",
         post: "Окумушту катчы",
+        image: magistraspirantur,
         additionalInfo: {
           birthDatePlace: "1972-жыл, 4-октябрь, Ош облусу, Кара-Кулжа району",
           residence: "Бишкек ш.,Садырбаев көч., 1/5,152 Б",
@@ -1090,10 +1114,9 @@ export default {
         },
       },
       {
-        name: "АЛМАНБЕТ КЫЗЫ ЖАҢЫЛ",
-        post: "КУМИУ, Бишкек ш., окуу бөлүмүнүн башчысы",
         name: "Алманбет кызы Жаныл",
         post: "Окуу бөлүмүнүн башчысы",
+        image: janylAlm,
         additionalInfo: {
           birthDatePlace: "1994.02.15.",
           residence: "Бишкек ш., ж/к Ак Ордо 3",
@@ -1108,6 +1131,7 @@ export default {
       {
         name: "Бактыбекова Бегай Бактыбековна",
         post: "Кадрлар бөлүмүнүн башчысы",
+        image: kadrlarbol,
         additionalInfo: {
           birthDatePlace: "02.12.1990ж.",
           residence: "Бишкек шаары, Кыргызстан",
@@ -1131,6 +1155,7 @@ export default {
       {
         name: "Ыбырайахунова Назира Кубанычбековна",
         post: "Башкы эсепчи",
+        image: bugalter,
         additionalInfo: {
           birthDatePlace: "09.03.1976",
           residence: "село Таш –Дебе ул. Больничная 65 ",
@@ -1147,9 +1172,8 @@ export default {
       {
         name: "Эргешова  Кумаркан Токоевна",
         post: "Карьера жана практика жетекчиси",
+        image: practikcareer,
         additionalInfo: {
-          birthDatePlace: "21.05.1985",
-          residence: "г Бишкек. Аламединский р-н дача Бектоо 13 линия дом 4",
           email: "kumar.ergesheva2@gmail.com",
           education:
             "1979–1983-жылдары Бишкек шаарындагы М. Куренкеев атындагы КГМУда билим алган. Квалификациясы: бас кыяк классынын педагогусу, улуттук аспаптар оркестринин дирижери. \n 1983–1988-жылдары Б. Бейшеналиева атындагы КГИИде билим алган. Квалификациясы: концерттик аткаруучу, бас кыяк классынын мугалими, улуттук аспаптар оркестринин дирижери.",
@@ -1171,26 +1195,15 @@ export default {
         },
       },
       {
-        name: "Самиева Шаиргүл Туратовна",
+        name: "Сурапбаева Гүлзада Раимжановна",
         post: "Китепкана башчысы",
-        additionalInfo: {
-          birthDatePlace: "06 февраля 1969 г.",
-          residence: "г. Бишкек, Проспект Ч. Айтматова 299/1",
-          contact: "0553 42 00 36",
-          maritalStatus: "замужем",
-          education:
-            "· 1986-1996гг. Кыргызский Национальный Аграрный Университет Специальность: Агроэколог.Ученый агроном \nКурсы: 1. Московская высшая школа «Экономика и права»  г. Москва.\n2. Курс повышения квалификации библиотечных работников Кыргызской республиканской ассоциации общественных библиотек при Национальной библиотеке Кыргызской Республики имени А. Осмонова. г. Бишкек",
-          workExperience:
-            "· с сентября 1992г. по февраль 1995г. – Учитель биологии  СШ  №11, г. Таш-Кумыр\n· с марта 1995г. по май 1996г.  –Инспектор по кадрам. М/П Келечек\n· с мая 1996г. по август 1996г. –Делопроизводитель. Ошск. Обл. Гос. Администрация\n· с сентября 1999г. по октябрь 2000г. –Инспектор отдела кадров. Ошский филиал КГНУ\n. с сентября 2002г. по сентябрь 2004г. –Преподаватель по экологии. ОшскийГосударственный университет",
-          professionalSkills:
-            "· Опытный пользователь ПК: MS Office: Word, Excel, Internet\n .1С-Бухгалтерия, PowerPoint, Canva, ABBYY FineReader — сканирование, OCR (распознавание текста), очистка и редактирование PDF ScanTailor / ScanTailor Advanced — обрезка, очистка и постобработка сканированных страниц Adobe Acrobat Pro — объединение, разделение и редактирование PDF-файлов DJVU Small / WinDjView — работа с форматами DJVU Calibre — конвертация электронных книг (EPUB, MOBI, PDF) Adobe Photoshop / GIMP — очистка, коррекция и обработка изображений",
-          additionalInfo:
-            "· Коммуникабельная, активная\n· В жизненной позиции - целеустремленная\n· Стремление к развитию и профессиональному росту",
-        },
+        image: "",
+        additionalInfo: {},
       },
       {
         name: "Урматбеков Чынасыл Урматбекович",
         post: "Театр факультетинин деканы",
+        image: teatrdec,
         additionalInfo: {
           birthDatePlace: "1992.12.22ж.",
           residence: "Бишкек ш., Төрөкул Айтматова 221",
@@ -1212,6 +1225,7 @@ export default {
       {
         name: "Бакытбек уулу Исабек",
         post: "Хореография жана маданий ишмердик факультетинин деканы",
+        image: sahnakaf,
         additionalInfo: {
           birthDatePlace: "1999.01.07",
           residence: "Аламүдүн району, Ленинский айылы, новосельская 3",
@@ -1234,6 +1248,7 @@ export default {
       {
         name: "Абдигапаров Нуртилек Абдигапарович",
         post: "Элдик музыка факультетинин деканы",
+        image: musicdec,
         additionalInfo: {
           birthDatePlace: "16.01.1994ж.",
           residence: "Бишкек шаары, Кыргызстан",
@@ -1255,11 +1270,13 @@ export default {
       {
         name: "Арстанбек уулу Асылбек",
         post: "Эстрада жана музыкалык билим беруу факультетинин деканы",
+        image: estradakaf,
         additionalInfo: {},
       },
       {
         name: "Юсупова Таберик Ришатовна",
         post: "Кино жана ТК факультетинин деканы",
+        image: taberikdec,
         additionalInfo: {
           education:
             "2020-… Кыргызско-Российский Славянский университет им.Б.Ельцина, магистратура – Master of Business Administration\n 2009-2014 - Университет культуры и искусства им. Б.Бейшеналиевой - Режиссура кино и телефильма\n2003-2006 - Бишкекский Государственный университет Экономики и Предпринимательства – бухгалтер-экономист",
@@ -1272,6 +1289,7 @@ export default {
       {
         name: "Абдырахманова Гүлзада Абдырахмановна",
         post: "Маалымат катчы",
+        image: gulzadaAbd,
         additionalInfo: {
           birthDatePlace:
             "27-август, 1996-жыл\nЖалал-Абад облусу, Аксы району, Жерге-Тал айыл аймагы Боспиек айылы\nЖеке номуру: 12708199600474\nУлуту: Кыргыз\nЖарандыгы: Кыргызстан",
