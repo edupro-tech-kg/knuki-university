@@ -59,13 +59,20 @@ import postgraduate6 from "../assets/images/faculties/postgraduate/slide6.jpg";
 import postgraduate7 from "../assets/images/faculties/postgraduate/slide7.jpg";
 import postgraduate8 from "../assets/images/faculties/postgraduate/slide8.jpg";
 
-import personPlaceholder from "/person-placeholder.jpeg";
-import filmmakingDepartment from "../assets/images/filmmakingSkills-department.png";
-import televisionDepartment from "../assets/images/televisionRadio-department.png";
-
 import Meerim_Beishenalieva from "../assets/images/faculties/choreography/Meerim_Beishenalieva.jpg";
 import Zamira_Majenova from "../assets/images/faculties/choreography/Zamira_Majenova.jpg";
 import Nurzada_Seytalieva from "../assets/images/faculties/choreography/Nurzada_Seytalieva.jpg";
+import Parizat_Kadyrkulova from "../assets/images/faculties/folk-music/Parizat_Kadyrkulova.jpg";
+import Bibigul_Iskenova from "../assets/images/faculties/folk-music/Bibigul_Iskenova.jpg";
+import Maksat_Kyshtobaev from "../assets/images/maksatkysh.jpg";
+import Bekzat_Orozov from "../assets/images/faculties/estrada-music/Bekzat_Orozov.jpg";
+import Nargiza_Orunbaeva from "../assets/images/faculties/estrada-music/Nargiza_Orunbaeva.jpg";
+import Maryam_Korpobaeva from "../assets/images/faculties/estrada-music/Maryam_Korpobaeva.jpg";
+import Chyngyz_Zamirbekuulu from "../assets/images/faculties/theater/Chyngyz_Zamirbekuulu.jpg";
+import Anara_Solpueva from "../assets/images/faculties/theater/Anara_Solpueva.jpg";
+import Jodar_Turumbekov from "../assets/images/faculties/kino-tele/Jodar_Turumbekov.jpg";
+import Burush_Kurmanbекova from "../assets/images/faculties/kino-tele/Burush_Kurmanbekova.jpg";
+import Gulnara_Damirkyzy from "../assets/images/faculties/kino-tele/Gulnara_Damirkyzy.jpg";
 
 export const FACULTIES_KG = [
   {
@@ -197,7 +204,7 @@ export const FACULTIES_KG = [
             description:
               "Институттун алгачкы кафедраларынын бири. 1971-жылдан тартып дирижёрлорду, солист-педагогдорду жана элдик оркестрдин кесипкөй жетекчилерин даярдоого багытталган атайын бөлүм иштей баштады. Феферман Б.В., Асакеев А.А., Давлесов Н., Токтоналиев Ш.Т. сыяктуу бир катар көркөм ишмерлер кафедранын өнүгүшүнө чоң салым кошушту.Бүгүнкү күндө кафедра чыгармачылык, илимий жана усулдук багыттарда активдүү иш алып барат.",
             subtitle: "Кафедра башчысы: Кадыркулова Паризат Озубековна",
-            photo: personPlaceholder,
+            photo: Parizat_Kadyrkulova,
           },
         ],
       },
@@ -210,7 +217,7 @@ export const FACULTIES_KG = [
             description:
               "Хор кафедра академиялык хорлордун жетекчилерин, кесипкөй хормейстерлерди даярдап келет. Кафедранын окутуучулары — монографиялардын, окуу куралдардын авторлору, белгилүү изилдөөчүлөр. Алар Кыргызстан жана башка өлкөлөрүнүн музыкалык мекемелери менен тыгыз чыгармачыл байланыштарды жүргүзүшөт. Оркестр жана хор дирижерлугу кафедрасынын башчысы доценттин м.а. - Кадыркулова Паризат Өзүбековна",
             subtitle: "Кафедра башчысы: Кадыркулова Паризат Озубековна",
-            photo: personPlaceholder,
+            photo: Parizat_Kadyrkulova,
           },
         ],
       },
@@ -222,8 +229,8 @@ export const FACULTIES_KG = [
             position: "",
             description:
               "Кафедра салттык музыкалык фольклорду сактоо, изилдөө жана өнүктүрүү боюнча адистерди даярдайт. Студенттер элдик аКыргызстан эгемендүүлүккө жеткенден кийин, 1993-жылы улуттук музыкалык мурастын мааниси өзгөчө өскөн учурда уюшулган. Кафедрада дастанчылык, акындык өнөр, салттык ырдоо жана аспаптык музыкага үйрөтүү жүргүзүлөт. Преподавательдеринин курамында эл артисттери, искусство таануучулар, фольклор чөйрөсүнүн мыкты адистери бар.Бул кафедра улуттук салттуу музыканы үйрөнүүнүн, сактоонун жана өнүктүрүүнүн борбору болуп саналат.Салттык музыка жана фольклор кафедрасынын башчысы- Кыштобаев Максат Черикбаевич",
-            subtitle: "Кафедра башчысы: Кыштобаев Максат Черикбаевнч",
-            photo: personPlaceholder,
+            subtitle: "Кафедра башчысы: Кыштобаев Максат Черикбаевич",
+            photo: Maksat_Kyshtobaev,
           },
         ],
       },
@@ -235,7 +242,7 @@ export const FACULTIES_KG = [
             position: "",
             description: `“Жалпы фортепиано” сабагы институттун ачылган күнүнөн тартып 1967-жылдан баштап окутула баштаган. Алгач фортепиано кафедрасынын курамында секция катары иштеген. Ал секцияны Орловская Н.А. жетектеген. Кафедранын базасында жыл сайын музыканы пропагандалоо максатында сынактар, фестивалдар, семинарлар, тегерек столдор жана ачык лекциялар өткөрүлүп келет.`,
             subtitle: "Кафедра башчысы: Искенова Бибигуль Иличбековна",
-            photo: personPlaceholder,
+            photo: Bibigul_Iskenova,
           },
         ],
       },
@@ -283,7 +290,7 @@ export const FACULTIES_KG = [
             description:
               "Адистиги: 570029 — Социалдык-маданий педагогикалык ишмердүүлүк. Квалификациясы: Эстрадалык коллективдин жетекчиси, окутуучу Эстрадалык искусство боюнча негизги адистик — «Эстрадалык коллектив жана эстрадалык оркестрдин жетекчиси» — 1993-жылы ачылган. Бул адистик боюнча билим берүү күндүзгү жана сырттан окуу формаларында жүргүзүлөт.Эстрадалык бөлүмдө штаттык кызматкерлердин арасынан вокалисттер жана аспапта ойногон аткаруучулар даярдалат.",
             subtitle: "Кафедра башчысы: Орозов Бекзат Эсенбаевич. ",
-            photo: personPlaceholder,
+            photo: Bekzat_Orozov,
           },
         ],
       },
@@ -296,7 +303,7 @@ export const FACULTIES_KG = [
             description:
               "Адистик: 550600 Көркөм  билим берүү. Квалификациясы: Музыка мугалими  Музыкалык билим берүү кафедрасынын тарыхы 1996-жылдан башталат. Кафедра кеңири көз караштагы, музыкага болгон сүйүүсү күчтүү жогорку квалификациялуу музыка мугалимдерин  даярдайт. Кафедранын түзүлүшүнө жана өнүгүшүнө Кыргыз Республикасынын маданиятына  эмгек сиңирген ишмери, профессор Ө.А. Абдылдаев чоң салым кошкон.",
             subtitle: "Кафедра башчысы Орунбаева Наргиза Темирбековна",
-            photo: personPlaceholder,
+            photo: Nargiza_Orunbaeva,
           },
         ],
       },
@@ -310,7 +317,7 @@ export const FACULTIES_KG = [
               "Кафедра Б.Бейшеналиева атындагы Кыргыз мамлекеттик маданият жана искусство университетинин эстрада-музыкалык факультетинин курамында 1993-жылдын сентябрь айында негизделген.Негиздөөчүсү — Кыргыз Республикасынын эмгек сиңирген маданият ишмери, профессор, композитор Роман Владимирович.",
             subtitle:
               "Кафедра башчысы: маданият таануу боюнча кандидат Көрпөбаева Мариам Керималиевна.",
-            photo: personPlaceholder,
+            photo: Maryam_Korpobaeva,
           },
         ],
       },
@@ -361,7 +368,7 @@ export const FACULTIES_KG = [
               "1993-жылдан бери келечек ээлерине билим берип келет. Студенттерибиз театр тармагында, драмалык ар түрдүү жанрдагы спектаклдерди сахналаштырып, көркөм тасмаларды тартып, үзүрлүү эмгектенип, маданиятка эбегейсиз салым кошуп келишүүдө. Ошондой эле кыргыздын, дүйнөлүк классикалык чыгармаларды окуу жана аткаруу менен бирге, аң-сезимин жана ой-жүгүртүүсүн өнүктүрө алышат.",
             subtitle:
               "Режиссура жана актер чеберчилиги кафедрасынын башчысы – Замирбек уулу Чыңгыз – 1995-жылы 1-октябрда Токмок шаарында төрөлгөн. 2015-2020-жылдары Б.Бейшеналиева атындагы КУМИУнун театр факультетин драма актеру, педагог адистигине ээ болгон. \nАдистиги: Драма актеру\nКвалификациясы: Драмалык театрдын актеру",
-            photo: personPlaceholder,
+            photo: Chyngyz_Zamirbekuulu,
           },
         ],
       },
@@ -375,7 +382,7 @@ export const FACULTIES_KG = [
               "Өндүрүштүк зарылчылыкка байланыштуу 2023-жылы түзүлдү. Сахнада сүйлөө техникаларын эл алдына чыкканда уялбоого, сүрдөбөөгө, пикир алышууга жана эске тутуусун өнүктүрүүгө үйрөтүп келет. ",
             subtitle:
               "Сахна кеби кафедрасынын башчысы – Сөлпүева Анара Капарбековна 1986-жылы Нарын облусунун Кочкор районуна караштуу Шамшы айылында төрөлгөн. 2002-2006-жылдары М.Күрөңкеев атындагы КУМОЖнын КНИ бөлүмүндө, 2006-2010-жылдары Т.Абдумомунов атындагы КУАДТнын театр окуу жайында, андан соң 2010-2014-жылдары Б.Бейшеналиева атындагы КУМИУнун театр факультетинде сырттан окуу бөлүмүндө драма актеру адистигине ээ болгон.",
-            photo: personPlaceholder,
+            photo: Anara_Solpueva,
           },
         ],
       },
@@ -426,21 +433,21 @@ export const FACULTIES_KG = [
             description:
               "Кино кафедрасы 1993 - жылы Кыргызстан кинематографистер союзунун демилгеси менен Б.Бейшеналиева атындагы искусство институнун базасында түзүлгөн. Кафедранын түптөлүшүнө кинорежиссер, профессор Акматалиев Каридин Сартбаевичтин эмгеги чоң. Мамлекеттик окуу стандарттын негизинде “Көркөм фильм жана телефильмдин режиссеру, педагог”, “Адабий чыгармачылык (киносценарист), педагог”, “Кино таануучу, педагог” адистиги боюнча бүтүрүүчүлөрүн даярдайт. Профессордук-окутуучулук курамында КРнын эл артисттер, маданиятка эмгек сиңирген ишмерлер, билимге эмгек сиңирген ишмерлер, кыргыз киносунун отличниктери, профессор, доценттер эмгектенишет.",
             subtitle: "Кино кафедрасынын башчысы - Турумбеков Жодарбек Аруунович. ",
-            photo: personPlaceholder,
+            photo: Jodar_Turumbekov,
           },
         ],
       },
       {
-        title: "«Кинооператор чеберчилиги» кафедрасы",
+        title: "Кинооператор чеберчилиги кафедрасы",
         teachers: [
           {
-            name: "«Кинооператор чеберчилиги» кафедрасы",
+            name: "Кинооператор чеберчилиги кафедрасы",
             position: "",
             description:
               "1993 - жылы кинооператор чеберчилиги боюнча алгач  өнөркана ачылган. Ал эми 2014-жылы «Телекоммуникация» факультети түзүлгөндөн бери өз алдынча кафедра болуп ишмердуулугун жургузуп келет. Мамлекеттик окуу стандарттынын негизинде «Кино жана телекөрсөтүү оператору, педагог» багытында КРнын аймагында жана коңшулаш Республикалар үчүн кесипкөй бүтүрүүчүлөрдү даярдап келет.",
             subtitle:
-              "“Кинооператор чеберчилиги” кафедрасынын башчысы – Курманбекова Бурул Курманбековна.",
-            photo: personPlaceholder,
+              "Кинооператор чеберчилиги кафедрасынын башчысы – Курманбекова Буруш Курманбековна.",
+            photo: Burush_Kurmanbекova,
           },
         ],
       },
@@ -454,7 +461,7 @@ export const FACULTIES_KG = [
               "Кафедра 2006-жылы ачылган. Анын түптөлүшүнө КРнын эл артисти, профессор Молдосейит Мамбетакуновдун эмгеги чоң. Азыркы тапта кафедра Республиканын бардык аймактары үчүн режиссер, үн режиссеру, дизайнер, монтаждоочу адистерди даярдап, ишмердүүлүгүн жүргүзүп келүүдө. Телекөрсөтүү жана радио уктуруу жаатында жогорку квалификациялуу тажрыйбасы мол, илимий- педагогикалык кадрлар эмгектенишет.  ",
             subtitle:
               "Телекөрсөтүү жана радио уктуруу режиссерлугу кафедрасынын башчысы -Дамир кызы Гулнара.",
-            photo: personPlaceholder,
+            photo: Gulnara_Damirkyzy,
           },
         ],
       },
@@ -639,7 +646,7 @@ export const FACULTIES_RU = [
             description:
               "Одна из первых кафедр института. С 1971 года начала работать специальная секция, ориентированная на подготовку дирижеров, солистов-педагогов и профессиональных руководителей народного оркестра. Ряд деятелей искусства, таких как Феферман Б.В., Асакеев А.А., Давлесов Н., Токтоналиев Ш.Т., внесли большой вклад в развитие кафедры.Сегодня кафедра активно работает в творческом, научном и методическом направлениях.",
             subtitle: "Заведующий отделением: Кадыркулова Паризат Озубековна",
-            photo: personPlaceholder,
+            photo: Parizat_Kadyrkulova,
           },
         ],
       },
@@ -652,7 +659,7 @@ export const FACULTIES_RU = [
             description:
               "Кафедра хора готовит руководителей академических хоров, профессиональных хормейстеров. Преподаватели кафедры — авторы монографий, учебных пособий, известные исследователи. Они поддерживают тесные творческие связи с музыкальными учреждениями Кыргызстана и других стран. Заведующий кафедрой оркестрового и хорового дирижирования и.о. доцента - Кадыркулова Паризат Өзүбековна",
             subtitle: "Заведующий отделением: Кадыркулова Паризат Озубековна",
-            photo: personPlaceholder,
+            photo: Parizat_Kadyrkulova,
           },
         ],
       },
@@ -665,7 +672,7 @@ export const FACULTIES_RU = [
             description:
               "Кафедра готовит специалистов по сохранению, изучению и развитию традиционного музыкального фольклора. Студенты обучаются народному искусствуПосле обретения независимости Кыргызстаном, в 1993 году, когда значение национального музыкального наследия особенно возросло, была организована. На кафедре преподается сказительство, акынское искусство, традиционное пение и инструментальная музыка. В составе преподавателей есть народные артисты, искусствоведы, лучшие специалисты в области фольклора.Эта кафедра является центром изучения, сохранения и развития национальной традиционной музыки.Заведующий кафедрой традиционной музыки и фольклора - Кыштобаев Максат Черикбаевич",
             subtitle: "Заведующий отделом: Кыштобаев, Максат Черикбаев",
-            photo: personPlaceholder,
+            photo: Maksat_Kyshtobaev,
           },
         ],
       },
@@ -677,7 +684,7 @@ export const FACULTIES_RU = [
             position: "",
             description: `Предмет “Общее фортепиано” был введен со дня открытия института в 1967 году. Он существовал сначала в виде секции при кафедре спец.фортепиано. Набор студентов тогда был небольшой и поэтому преподаватели спец. Фортепиано пареллельно вели занятия и по общему фортепиано. Этой сецией заведовала Орловская Н.А. В целях пропаганды музыки ежегодно на базе кафедры организуются конкурсы, фестивали, семинары, круглые столи и открытые лекции.`,
             subtitle: "Заведующая кафедрой Искенова Бибигуль Иличбековна",
-            photo: personPlaceholder,
+            photo: Bibigul_Iskenova,
           },
         ],
       },
@@ -725,7 +732,7 @@ export const FACULTIES_RU = [
             description:
               "Специальность: 570029 — Социально-культурная педагогическая деятельность. Квалификация: Руководитель эстрадного коллектива, преподаватель Основная специальность по эстрадному искусству — «Руководитель эстрадного коллектива и эстрадного оркестра» — была открыта в 1993 году. Обучение по этой специальности проводится в очной и заочной формах.На эстрадном отделении готовятся вокалисты и инструменталисты из числа штатных сотрудников.",
             subtitle: "Заведующий кафедрой: Орозов Бекзат Эсенбаевич.",
-            photo: personPlaceholder,
+            photo: Bekzat_Orozov,
           },
         ],
       },
@@ -738,7 +745,7 @@ export const FACULTIES_RU = [
             description:
               "Специальность: 550600 Художественное образование. Квалификация: Учитель музыки История кафедры музыкального образования начинается с 1996 года. Кафедра готовит высококвалифицированных учителей музыки с широким кругозором и сильной любовью к музыке. Большой вклад в создание и развитие кафедры внес заслуженный деятель культуры Кыргызской Республики, профессор Ө.А. Абдылдаев.",
             subtitle: "Заведующая кафедрой Орунбаева Наргиза Темирбековна",
-            photo: personPlaceholder,
+            photo: Nargiza_Orunbaeva,
           },
         ],
       },
@@ -751,7 +758,7 @@ export const FACULTIES_RU = [
             description:
               "Кафедра была основана в сентябре 1993 года в составе эстрадно-музыкального факультета Кыргызского государственного университета культуры и искусства им. Б.Бейшеналиевой.Основатель — заслуженный деятель культуры Кыргызской Республики, профессор, композитор Роман Владимирович.",
             subtitle: "Заведующая кафедрой: кандидат культурологии Көрпөбаева Мариам Керималиевна.",
-            photo: personPlaceholder,
+            photo: Maryam_Korpobaeva,
           },
         ],
       },
@@ -802,7 +809,7 @@ export const FACULTIES_RU = [
               "С 1993 года обучает будущих деятелей. Наши студенты работают в театральной сфере, ставят драматические спектакли различных жанров, снимают художественные фильмы, трудятся плодотворно, внося неоценимый вклад в культуру. Также они могут развивать свое сознание и мышление, читая и исполняя кыргызские и мировые классические произведения.",
             subtitle:
               "Заведующий кафедрой режиссуры и актерского мастерства – Замирбек уулу Чыңгыз – родился 1 октября 1995 года в городе Токмок. В 2015-2020 годах окончил театральный факультет КУМИУ им. Б.Бейшеналиевой по специальности актер драмы, педагог. \nСпециальность: Актер драмы\nКвалификация: Актер драматического театра",
-            photo: personPlaceholder,
+            photo: Chyngyz_Zamirbekuulu,
           },
         ],
       },
@@ -816,7 +823,7 @@ export const FACULTIES_RU = [
               "Создана в 2023 году в связи с производственной необходимостью. Обучает технике речи на сцене, чтобы не стесняться, не бояться выступать перед публикой, вести дискуссии и развивать память.",
             subtitle:
               "Заведующая кафедрой сценической речи – Сөлпүева Анара Капарбековна родилась в 1986 году в селе Шамшы Кочкорского района Нарынской области. В 2002-2006 годах обучалась на отделении КНИ КУМОЖ им. М.Күрөңкеева, в 2006-2010 годах в театральном училище КУАДТ им. Т.Абдумомунова, затем в 2010-2014 годах на заочном отделении театрального факультета КУМИУ им. Б.Бейшеналиевой по специальности актер драмы.",
-            photo: personPlaceholder,
+            photo: Anara_Solpueva,
           },
         ],
       },
@@ -868,7 +875,7 @@ export const FACULTIES_RU = [
             description:
               "Кафедра кино была создана в 1993 году на базе Института искусств им. Б.Бейшеналиевой по инициативе Союза кинематографистов Кыргызстана. Большой вклад в основание кафедры внес кинорежиссер, профессор Акматалиев Каридин Сартбаевич. На основе государственного образовательного стандарта готовит выпускников по специальностям «Режиссер художественного фильма и телефильма, педагог», «Литературное творчество (киносценарист), педагог», «Киновед, педагог». В профессорско-преподавательский состав входят народные артисты КР, заслуженные деятели культуры, заслуженные деятели образования, отличники кыргызского кино, профессора, доценты.",
             subtitle: "Заведующий кафедрой кино - Турумбеков Жодарбек Аруунович.",
-            photo: personPlaceholder,
+            photo: Jodar_Turumbekov,
           },
         ],
       },
@@ -882,7 +889,7 @@ export const FACULTIES_RU = [
               "В 1993 году была открыта первая мастерская по кинооператорскому мастерству. А с 2014 года, с создания факультета «Телекоммуникации», она стала самостоятельной кафедрой и продолжает свою деятельность. На основе государственного образовательного стандарта готовит профессиональных выпускников по направлению «Оператор кино и телевещания, педагог» для регионов Кыргызской Республики и соседних республик.",
             subtitle:
               "Заведующая кафедрой «Кинооператорское мастерство» – Курманбекова Буруш Курманбековна.",
-            photo: filmmakingDepartment,
+            photo: Burush_Kurmanbекova,
           },
         ],
       },
@@ -896,7 +903,7 @@ export const FACULTIES_RU = [
               "Кафедра была открыта в 2006 году. Большой вклад в ее основание внес народный артист КР, профессор Молдосейит Мамбетакунов. В настоящее время кафедра готовит режиссеров, звукорежиссеров, дизайнеров, монтажеров для всех регионов республики и продолжает свою деятельность. В области телевещания и радиовещания работают высококвалифицированные научно-педагогические кадры с большим опытом.",
             subtitle:
               "Заведующая кафедрой телевещания и режиссуры радиовещания - Дамир кызы Гулнара.",
-            photo: televisionDepartment,
+            photo: Gulnara_Damirkyzy,
           },
         ],
       },
@@ -1080,7 +1087,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "One of the first departments of the institute. Since 1971, a special section began working, focused on training conductors, soloist-teachers, and professional leaders of folk orchestras. A number of art figures such as Feferman B.V., Asakeev A.A., Davlesov N., Toktonaliev Sh.T. made a great contribution to the development of the department.Today the department actively works in creative, scientific and methodological directions.",
             subtitle: "Head of the Department: Kadyrkulova Parizat Ozubekovna",
-            photo: personPlaceholder,
+            photo: Parizat_Kadyrkulova,
           },
         ],
       },
@@ -1093,7 +1100,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "The choir department trains leaders of academic choirs, professional choir conductors. Teachers of the department are authors of monographs, textbooks, well-known researchers. They maintain close creative ties with music institutions in Kyrgyzstan and other countries. Head of the Department of Orchestra and Choir Conducting, acting associate professor - Kadyrkulova Parizat Ozybekovna",
             subtitle: "Head of the Department: Kadyrkulova Parizat Ozubekovna",
-            photo: personPlaceholder,
+            photo: Parizat_Kadyrkulova,
           },
         ],
       },
@@ -1106,7 +1113,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "The department trains specialists in the preservation, study and development of traditional musical folklore. Students learn folk artAfter Kyrgyzstan gained independence, in 1993, when the importance of national musical heritage increased especially, it was organized. The department teaches epic storytelling, akyn art, traditional singing and instrumental music. The teaching staff includes folk artists, art critics, the best specialists in folklore.This department is a center for the study, preservation and development of national traditional music.Head of the Department of Traditional Music and Folklore - Kyshtobaev Maksat Cherikbaevich",
             subtitle: "Head of the Department: Kyshtobaev Maksat Cherikbaev",
-            photo: personPlaceholder,
+            photo: Maksat_Kyshtobaev,
           },
         ],
       },
@@ -1118,7 +1125,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             position: "",
             description: `The “General Piano” course has been taught since the institute opened in 1967. Initially, it functioned as a section within the Special Piano Department. This section was headed by N.A. Orlovskaya. Every year, the department organizes competitions, festivals, seminars, round tables, and open lectures to promote music.`,
             subtitle: "Head of Department: Iskenova Bibigul Ilichbekovna",
-            photo: personPlaceholder,
+            photo: Bibigul_Iskenova,
           },
         ],
       },
@@ -1166,7 +1173,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "Specialty: 570029 — Socio-cultural pedagogical activity. Qualification: Leader of an estrada group, teacher The main specialty in estrada art — 'Leader of an estrada group and estrada orchestra' — was opened in 1993. Education in this specialty is conducted in full-time and part-time forms.In the estrada department, vocalists and instrumentalists are trained from among full-time staff.",
             subtitle: "Head of Department: Orozbekov Bekzat Esenbaevich.",
-            photo: personPlaceholder,
+            photo: Bekzat_Orozov,
           },
         ],
       },
@@ -1179,7 +1186,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "Specialty: 550600 Art education. Qualification: Music teacher The history of the Department of Music Education begins in 1996. The department trains highly qualified music teachers with a broad outlook and strong love for music. A great contribution to the creation and development of the department was made by the Honored Cultural Worker of the Kyrgyz Republic, Professor O.A. Abdylbaev.",
             subtitle: "Head of Department Orunbaeva Nargiza Temirbekovna",
-            photo: personPlaceholder,
+            photo: Nargiza_Orunbaeva,
           },
         ],
       },
@@ -1193,7 +1200,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
               "The department was founded in September 1993 as part of the estrada and music faculty of B. Beishenalieva Kyrgyz State University of Culture and Arts.Founder — Honored Cultural Worker of the Kyrgyz Republic, professor, composer Roman Vladimirovich.",
             subtitle:
               "Head of Department: Candidate of Cultural Studies Korpebaeva Mariam Kerimalievna.",
-            photo: personPlaceholder,
+            photo: Maryam_Korpobaeva,
           },
         ],
       },
@@ -1244,7 +1251,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
               "Since 1993, it has been educating future professionals. Our students work in the theater field, stage dramatic performances of various genres, make feature films, work productively, making an invaluable contribution to culture. They can also develop their consciousness and thinking by reading and performing Kyrgyz and world classical works.",
             subtitle:
               "Head of the Department of Directing and Acting – Zamirbek uulu Chingiz – born on October 1, 1995 in Tokmok city. In 2015-2020, he graduated from the Theater Faculty of KUMIU named after B. Beishenalieva with a degree in drama actor, teacher. \nSpecialty: Drama actor\nQualification: Actor of a drama theater",
-            photo: personPlaceholder,
+            photo: Chyngyz_Zamirbekuulu,
           },
         ],
       },
@@ -1258,7 +1265,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
               "Established in 2023 due to production necessity. Teaches speech techniques on stage to not be shy, not afraid to speak in public, conduct discussions and develop memory.",
             subtitle:
               "Head of the Department of Stage Speech – Solpieva Anara Kaparbekovna was born in 1986 in Shamsy village, Kochkor district, Naryn region. In 2002-2006, she studied at the KNI department of KUMOZH named after M. Kurenkeev, in 2006-2010 at the theater school of KUADT named after T. Abdumomunov, then in 2010-2014 at the correspondence department of the Theater Faculty of KUMIU named after B. Beishenalieva with a degree in drama actor.",
-            photo: personPlaceholder,
+            photo: Anara_Solpueva,
           },
         ],
       },
@@ -1310,7 +1317,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "The Cinema Department was established in 1993 on the basis of the Institute of Arts named after B. Beishenalieva on the initiative of the Union of Cinematographers of Kyrgyzstan. A great contribution to the foundation of the department was made by film director, professor Akmataliev Karidin Sartbaevich. Based on the state educational standard, it prepares graduates in the specialties 'Director of feature film and television film, teacher', 'Literary creativity (screenwriter), teacher', 'Film studies, teacher'. The professor-teaching staff includes People's Artists of the KR, Honored Cultural Workers, Honored Education Workers, excellent workers of Kyrgyz cinema, professors, associate professors.",
             subtitle: "Head of the Cinema Department - Turumbekov Zhodarbek Aruunovich.",
-            photo: personPlaceholder,
+            photo: Jodar_Turumbekov,
           },
         ],
       },
@@ -1323,8 +1330,8 @@ In 2023, the departments of Languages and Literature and Physical Education were
             description:
               "In 1993, the first workshop on cinematography was opened. And since 2014, with the creation of the Telecommunications Faculty, it became an independent department and continues its activities. Based on the state educational standard, it prepares professional graduates in the direction 'Cinema and television camera operator, teacher' for the regions of the Kyrgyz Republic and neighboring republics.",
             subtitle:
-              "Head of the Department of Cinematography – Kurmanbekova Burul Kurmanbekovna.",
-            photo: filmmakingDepartment,
+              "Head of the Department of Cinematography – Kurmanbekova Burush Kurmanbekovna.",
+            photo: Burush_Kurmanbекova,
           },
         ],
       },
@@ -1338,7 +1345,7 @@ In 2023, the departments of Languages and Literature and Physical Education were
               "The department was opened in 2006. A great contribution to its foundation was made by People's Artist of the KR, professor Moldoseit Mambetakunov. Currently, the department trains directors, sound directors, designers, editors for all regions of the republic and continues its activities. In the field of television and radio broadcasting, highly qualified scientific and pedagogical staff with extensive experience work.",
             subtitle:
               "Head of the Department of Television Broadcasting and Radio Broadcast Directing - Damir kyzy Gulnara.",
-            photo: televisionDepartment,
+            photo: Gulnara_Damirkyzy,
           },
         ],
       },
