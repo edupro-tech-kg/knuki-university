@@ -81,7 +81,7 @@ export default function NLAKyrgyzRepublic() {
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-3">
       <h1 className="font-serif text-primary text-2xl sm:text-3xl md:text-4xl text-center py-6 md:py-9 uppercase italic">
-        НПА КР
+        {t("documentNLA.title")}
       </h1>
 
       <DocumentTable

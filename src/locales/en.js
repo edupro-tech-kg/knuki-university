@@ -264,7 +264,7 @@ export default {
     cards: {
       ebilim: "EBILIM",
       practic: "Practice & Career Department",
-      qualification: "DEPARTMENT OF QUALIFICATIONS ADVANCEMENT",
+      qualification: "QUALIFICATIONS ADVANCEMENT CENTER",
       library: "LIBRARY",
       literature: "HIGH LITERATURE COURSE",
       department: "PERSONNEL DEPARTMENT",
@@ -379,7 +379,7 @@ export default {
     },
     addressItems: [
       "720005 Bishkek",
-      "Dzhantosheva St. 113",
+      "K.Zhantoshev St. 113",
       "kguki.art@mail.ru",
       "Office",
       "Fax: +996 312 57 07 56",
@@ -1696,9 +1696,11 @@ export default {
     ],
   },
   documentNLA: {
+    title: "Legal Acts of the Kyrgyz Republic",
     btnText: "More",
   },
-  NLAkguki: {
+  NLAknuki: {
+    title: "Legal Acts of the KNUCA",
     btnText: "More",
   },
   sciencePage: {

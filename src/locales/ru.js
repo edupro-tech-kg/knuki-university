@@ -297,7 +297,7 @@ export default {
     cards: {
       ebilim: "EBILIM",
       practic: "Отдел практики и карьеры",
-      qualification: "ОТДЕЛ ПОВЫШЕНИЯ КВАЛИФИКАЦИИ",
+      qualification: "Центр повышения квалификации",
       library: "БИБЛИОТЕКА",
       literature: "КУРС ВЫСШЕЙ ЛИТЕРАТУРЫ",
       department: "ОТДЕЛ КАДРОВ",
@@ -397,7 +397,7 @@ export default {
       "Оставьте контактные данные, и мы расскажем о программах, датах приема и вступительных экзаменах.",
     addressLabel: "Адрес",
     phoneLabel: "Телефон",
-    addressValue: "г. Бишкек, пр. Чуй 123",
+    addressValue: "г. Бишкек, ул. К.Джантошева 113",
     phoneValue: "+996 (312) 000 000",
     formBadge: "Заявка",
     formTitle: "Получить консультацию",
@@ -417,7 +417,7 @@ export default {
     },
     addressItems: [
       "720005 г. Бишкек",
-      "ул. Джантошева 113",
+      "ул. К.Джантошева 113",
       "kguki.art@mail.ru",
       "Канцелярия",
       "Факс: +996 312 57 07 56",
@@ -430,7 +430,7 @@ export default {
     navTitle: "Навигация",
     contactsTitle: "Контакты",
     contact: {
-      address: "г. Бишкек, пр. Чуй 123",
+      address: "г. Бишкек, ул. К.Джантошева 113",
       phone: "+996 (312) 000 000",
       email: "info@knu-arts.kg",
     },
@@ -1721,9 +1721,11 @@ export default {
     ],
   },
   documentNLA: {
+    title: "НПА КР",
     btnText: "Подробнее",
   },
-  NLAkguki: {
+  NLAknuki: {
+    title: "НПА КНУКИ",
     btnText: "Подробнее",
   },
   sciencePage: {

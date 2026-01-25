@@ -266,7 +266,7 @@ export default {
     cards: {
       ebilim: "EBILIM",
       practic: "ПРАКТИКА ЖАНА КАРЬЕРА БӨЛҮМҮ",
-      qualification: "КВАЛИФИКАЦИЯНЫ ЖОГОРУЛАТУУ БӨЛҮМҮ",
+      qualification: "КВАЛИФИКАЦИЯНЫ ЖОГОРУЛАТУУ БОРБОРУ",
       library: "КИТЕПКАНА",
       literature: "ЖОГОРКУ АДАБИЙ КУРС",
       department: "КАДРЛАР БӨЛҮМҮ",
@@ -364,7 +364,7 @@ export default {
       "Байланыштарды калтырыңыз — программалар, кабыл алуу даталары жана экзамендер жөнүндө маалымат беребиз.",
     addressLabel: "Дарек",
     phoneLabel: "Телефон",
-    addressValue: "Бишкек ш., Чүй пр. 123",
+    addressValue: "Бишкек ш. 720005, К.Жантөшев 113 к.",
     phoneValue: "+996 (312) 000 000",
     formBadge: "Өтүнмө",
     formTitle: "Консультация алуу",
@@ -379,12 +379,12 @@ export default {
   },
   footer: {
     labels: {
-      address: "АДРЕС",
+      address: "ДАРЕГИ",
       links: "ТЕЗ ШИЛТЕМЕЛЕР",
     },
     addressItems: [
-      "720005 г. Бишкек",
-      "ул. Джантошева 113",
+      "Бишкек ш. 720005",
+      "К.Жантөшев 113 к.",
       "kguki.art@mail.ru",
       "Канцелярия",
       "Факс: +996 312 57 07 56",
@@ -396,7 +396,7 @@ export default {
     navTitle: "Навигация",
     contactsTitle: "Байланыш",
     contact: {
-      address: "Бишкек ш., Чүй пр. 123",
+      address: "Бишкек ш. 720005, К.Жантөшев 113 к.",
       phone: "+996 (312) 000 000",
       email: "info@knu-arts.kg",
     },
@@ -1645,9 +1645,11 @@ export default {
     ],
   },
   documentNLA: {
+    title: "КР ЧЕНЕМДИК- УКУКТУК АКТЫЛАРЫ",
     btnText: "Кененирээк",
   },
-  NLAkguki: {
+  NLAknuki: {
+    title: "КУМИУНУН ЧЕНЕМДИК- УКУКТУК АКТЫЛАРЫ",
     btnText: "Кененирээк",
   },
   sciencePage: {
