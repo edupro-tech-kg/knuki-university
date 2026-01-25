@@ -6,34 +6,60 @@ import DocumentTable from "../components/UI/DocumentTable";
 import doc1 from "../assets/pdf/doc1.pdf";
 import doc2 from "../assets/pdf/doc2.pdf";
 import doc3 from "../assets/pdf/doc3.pdf";
-import doc4 from "../assets/pdf/doc4.pdf";
-import doc5 from "../assets/pdf/doc5.pdf";
-import doc6 from "../assets/pdf/doc6.pdf";
+import doc4 from "../assets/pdf/doc6.pdf";
+import doc5 from "../assets/pdf/doc7.pdf";
+import doc6 from "../assets/pdf/doc47.pdf";
 import doc7 from "../assets/pdf/doc7.pdf";
-import doc8 from "../assets/pdf/doc8.pdf";
-import doc9 from "../assets/pdf/doc9.pdf";
-import doc10 from "../assets/pdf/doc10.pdf";
-import doc11 from "../assets/pdf/doc11.pdf";
-import doc12 from "../assets/pdf/doc12.pdf";
-import doc13 from "../assets/pdf/doc13.pdf";
-import doc14 from "../assets/pdf/doc14.pdf";
-import doc15 from "../assets/pdf/doc15.pdf";
-import doc16 from "../assets/pdf/doc16.pdf";
-import doc17 from "../assets/pdf/doc17.pdf";
-import doc18 from "../assets/pdf/doc18.pdf";
-import doc19 from "../assets/pdf/doc19.pdf";
-import doc20 from "../assets/pdf/doc20.pdf";
-import doc21 from "../assets/pdf/doc21.pdf";
-import doc22 from "../assets/pdf/doc22.pdf";
-import doc23 from "../assets/pdf/doc23.pdf";
-import doc24 from "../assets/pdf/doc24.pdf";
-import doc25 from "../assets/pdf/doc25.pdf";
-import doc26 from "../assets/pdf/doc26.pdf";
-import doc27 from "../assets/pdf/doc27.pdf";
-import doc28 from "../assets/pdf/doc28.pdf";
-import doc29 from "../assets/pdf/doc29.pdf";
-import doc30 from "../assets/pdf/doc30.pdf";
-import doc31 from "../assets/pdf/doc31.pdf";
+import doc8 from "../assets/pdf/doc49.pdf";
+import doc9 from "../assets/pdf/doc50.pdf";
+import doc10 from "../assets/pdf/doc51.pdf";
+import doc11 from "../assets/pdf/doc53.pdf";
+import doc12 from "../assets/pdf/doc54.pdf";
+import doc13 from "../assets/pdf/doc56.pdf";
+import doc14 from "../assets/pdf/doc64.pdf";
+import doc15 from "../assets/pdf/doc72.pdf";
+import doc16 from "../assets/pdf/doc85.pdf";
+import doc17 from "../assets/pdf/doc89.pdf";
+import doc18 from "../assets/pdf/doc91.pdf";
+import doc19 from "../assets/pdf/doc94.pdf";
+import doc20 from "../assets/pdf/doc95.pdf";
+import doc21 from "../assets/pdf/doc96.pdf";
+import doc22 from "../assets/pdf/doc102.pdf";
+import doc23 from "../assets/pdf/doc110.pdf";
+import doc24 from "../assets/pdf/doc114.pdf";
+import doc25 from "../assets/pdf/doc116.pdf";
+import doc26 from "../assets/pdf/doc58.pdf";
+import doc27 from "../assets/pdf/doc52.pdf";
+import doc28 from "../assets/pdf/doc55.pdf";
+import doc29 from "../assets/pdf/doc58.pdf";
+import doc30 from "../assets/pdf/doc71.pdf";
+import doc31 from "../assets/pdf/doc76.pdf";
+import doc32 from "../assets/pdf/doc72.pdf";
+import doc33 from "../assets/pdf/doc104.pdf";
+import doc34 from "../assets/pdf/doc106.pdf";
+import doc35 from "../assets/pdf/doc149.pdf";
+import doc36 from "../assets/pdf/doc29.pdf";
+import doc37 from "../assets/pdf/doc146.pdf";
+import doc38 from "../assets/pdf/doc138.pdf";
+import doc39 from "../assets/pdf/doc140.pdf";
+import doc40 from "../assets/pdf/doc141.pdf";
+import doc41 from "../assets/pdf/doc142.pdf";
+import doc42 from "../assets/pdf/doc143.pdf";
+import doc43 from "../assets/pdf/doc144.pdf";
+import doc44 from "../assets/pdf/doc151.pdf";
+import doc45 from "../assets/pdf/doc152.pdf";
+import doc46 from "../assets/pdf/doc153.pdf";
+import doc47 from "../assets/pdf/doc154.pdf";
+import doc48 from "../assets/pdf/doc155.pdf";
+import doc49 from "../assets/pdf/doc156.pdf";
+import doc50 from "../assets/pdf/doc157.pdf";
+import doc51 from "../assets/pdf/doc158.pdf";
+import doc52 from "../assets/pdf/doc159.pdf";
+import doc53 from "../assets/pdf/doc160.pdf";
+import doc54 from "../assets/pdf/doc161.pdf";
+import doc55 from "../assets/pdf/doc162.pdf";
+import doc56 from "../assets/pdf/doc163.pdf";
+
 
 const nlaKgukiPdfs = {
   doc1,
@@ -67,6 +93,31 @@ const nlaKgukiPdfs = {
   doc29,
   doc30,
   doc31,
+  doc32,
+  doc33,
+  doc34,
+  doc35,
+  doc36,
+  doc37,
+  doc38,
+  doc39,
+  doc40,
+  doc41,
+  doc42,
+  doc43,
+  doc44,
+  doc45,
+  doc46,
+  doc47,
+  doc48,
+  doc49,
+  doc50,
+  doc51,
+  doc52,
+  doc53,
+  doc54,
+  doc55,
+  doc56,
 };
 
 const nlaKgukiDocuments = [
@@ -194,6 +245,106 @@ const nlaKgukiDocuments = [
     text: "Б.Бейшеналиева атындагы Кыргыз улуттук маданият жана искусство университетиндеги студенттердин тандоо курстары жөнүндө ЖОБО",
     id: "doc31",
   },
+  {
+    text: "КУМИУнун бүтүрүүчүлөрүн жыйынтыктоочу мам.аттестациялоо ж-до жобосу./ Положение об итоговой государственной аттестации выпускников КНУКИ им. Б. Бейшеналиевой",
+    id: "doc32",
+  },
+  {
+    text: "Университеттин окутуучулары жана студенттери үчүн Практиканы уюштуруу жана өткөрүү боюнча методикалык колдонмо",
+    id: "doc33",
+  },
+  {
+    text: "Программа практики по направлению подготовки магистр",
+    id: "doc34",
+  },
+  {
+    text: "КУМИУнун сыйлыктар жөнүндө жобосу",
+    id: "doc35",
+  },
+  {
+    text: "КММИУнун ректораты жана Профсоюз комитетинин ортосунда 2023-2026-жылдарга социалдык-экономикалык жана эмгек маселелери боюнча ЖАМААТТЫК КЕЛИШИМ",
+    id: "doc36",
+  },
+  {
+    text: "Положение о сайте КНУКИ",
+    id: "doc37",
+  },
+  {
+    text: "Магистратура жана аспирантура бөлүмү жөнүндө Жобо",
+    id: "doc38",
+  },
+  {
+    text: "КУМИУде илимдин магистрлерин даярдоо боюнча Жобо",
+    id: "doc39",
+  },
+  {
+    text: "“Иш берүүчүлөр кеңеши” жөнүндө жобо (аспирантура жана магистратура программалары үчүн)",
+    id: "doc40",
+  },
+  {
+    text: "Жогорку окуу жайынан кийинки кесиптик билим берүү программасы, 2025",
+    id: "doc41",
+  },
+  {
+    text: "Жогорку окуу жайынан кийинки кесиптик билим берүү программалары боюнча илимий жана илимий-педагогикалык кадрларды даярдоо жөнүндө ЖОБО, 2025",
+    id: "doc42",
+  },
+  {
+    text: "Б.Бейшеналиева атындагы КУМИУнун аспиранттарынын практикаларды өтөө тартиби жөнүндө жобосу",
+    id: "doc43",
+  },
+  {
+    text: "“Спорт -ден соолук” жобосу",
+    id: "doc44",
+  },
+  {
+    text: "Студенттик кеңештин жобосу",
+    id: "doc45",
+  },
+  {
+    text: "Жеңилдик комиссиясы жобо",
+    id: "doc46",
+  },
+  {
+    text: "МАМТИЛ жобо",
+    id: "doc47",
+  },
+  {
+    text: "Кыргызтест.Жобо",
+    id: "doc48",
+  },
+  {
+    text: "Правила пользования библиотечным фондом",
+    id: "doc49",
+  },
+  {
+    text: "Положение о Библиотеке",
+    id: "doc50",
+  },
+  {
+    text: "Пожарный безопасность для студентов",
+    id: "doc51",
+  },
+  {
+    text: "Бүтүрүүчүлөр Ассоциациясы ЖОБО",
+    id: "doc52",
+  },
+  {
+    text: "Положение об работе охране труда",
+    id: "doc53",
+  },
+  {
+    text: "Пожарный безопасность",
+    id: "doc54",
+  },
+  {
+    text: "Бүтүр.Ассоциациянын мүчөлөрү",
+    id: "doc55",
+  },
+  {
+    text: "Положение о комиссии по охране труда",
+    id: "doc56",
+  }
 ];
 
 export default function NLAkguki() {
