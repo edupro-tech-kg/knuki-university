@@ -148,7 +148,7 @@ export default function NLAKyrgyzRepublic() {
   ];
 
   const tableData = STATIC_ITEMS.map((item, index) => ({
-    id: index,
+    id: index + 1,
     text: item.text,
     link: item.link,
     index: index + 1,
