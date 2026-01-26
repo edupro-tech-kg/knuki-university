@@ -532,6 +532,7 @@ export default {
   news: {
     title: "NEWS",
     pageHeading: "News and updates",
+    readMore: "Read more",
     items: [
       {
         id: "makam",

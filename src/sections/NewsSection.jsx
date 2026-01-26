@@ -18,9 +18,13 @@ import instrument2 from "../../src/assets/images/instrument2.jpg";
 import makam from "../../src/assets/images/makam.jpg";
 
 export default function NewsSectionInfinite() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const newsTitle = t("news.title");
-  const newsItems = t("news.items", { returnObjects: true });
+  const newsItems = useMemo(
+    () => t("news.items", { returnObjects: true }) || [],
+    [t, i18n.language]
+  );
+  const readMoreLabel = t("news.readMore", { defaultValue: newsTitle });
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -34,39 +38,39 @@ export default function NewsSectionInfinite() {
         id: 1,
         slug: newsItems?.[0]?.id || 1,
         image: makam,
-        title: newsItems?.[0]?.title,
-        buttonText: newsItems?.[0]?.buttonText,
+        title: newsItems?.[0]?.title || newsTitle,
+        buttonText: newsItems?.[0]?.buttonText || readMoreLabel,
       },
       {
         id: 2,
         slug: newsItems?.[1]?.id || 2,
         image: newGym,
-        title: newsItems?.[1]?.title || "Girl Singing",
-        buttonText: newsItems?.[1]?.buttonText || "View Details",
+        title: newsItems?.[1]?.title || newsTitle,
+        buttonText: newsItems?.[1]?.buttonText || readMoreLabel,
       },
       {
         id: 3,
         slug: newsItems?.[2]?.id || 3,
         image: construction1,
-        title: newsItems?.[2]?.title || "Fast Delivery",
-        buttonText: newsItems?.[2]?.buttonText || "Order Now",
+        title: newsItems?.[2]?.title || newsTitle,
+        buttonText: newsItems?.[2]?.buttonText || readMoreLabel,
       },
       {
         id: 4,
         slug: newsItems?.[3]?.id || 4,
         image: grand1,
-        title: newsItems?.[3]?.title || "Rehearsal",
-        buttonText: newsItems?.[3]?.buttonText || "Get Tickets",
+        title: newsItems?.[3]?.title || newsTitle,
+        buttonText: newsItems?.[3]?.buttonText || readMoreLabel,
       },
       {
         id: 5,
         slug: newsItems?.[4]?.id || 5,
         image: instrument2,
-        title: newsItems?.[4]?.title || "Audience",
-        buttonText: newsItems?.[4]?.buttonText || "Join Event",
+        title: newsItems?.[4]?.title || newsTitle,
+        buttonText: newsItems?.[4]?.buttonText || readMoreLabel,
       },
     ],
-    [newsItems]
+    [newsItems, newsTitle, readMoreLabel]
   );
 
   const createInfiniteSlides = () => {
@@ -85,8 +89,22 @@ export default function NewsSectionInfinite() {
     return slides;
   };
 
-  const [slides, setSlides] = useState(createInfiniteSlides());
+  const [slides, setSlides] = useState(() => createInfiniteSlides());
   const [activeSlideIndex, setActiveSlideIndex] = useState(10);
+
+  useEffect(() => {
+    // When language/content changes, rebuild slides so titles/buttons update immediately.
+    setSlides(createInfiniteSlides());
+    setActiveSlideIndex(10);
+    setHasMore(true);
+    setIsLoading(false);
+
+    if (swiperInstance) {
+      swiperInstance.update();
+      swiperInstance.virtual.update();
+      swiperInstance.slideTo(10, 0);
+    }
+  }, [i18n.language, swiperInstance]);
 
   const loadMoreSlides = useCallback(async () => {
     if (isLoading || !hasMore) return;
@@ -212,18 +230,9 @@ export default function NewsSectionInfinite() {
                   className="!h-72 md:!w-72 md:!h-96 lg:!w-80 lg:!h-[28rem]"
                 >
                   <div
-                    className={`relative w-full h-full rounded-xl overflow-hidden shadow-xl transition-all duration-500 ${
+                    className={`relative w-full h-full rounded-xl overflow-hidden shadow-xl transition-transform duration-500 ease-out ${
                       index === activeSlideIndex ? "scale-100" : "scale-95"
                     }`}
-                    style={{
-                      transform:
-                        index === activeSlideIndex
-                          ? "perspective(1000px) rotateY(0deg)"
-                          : index < activeSlideIndex
-                            ? "perspective(1000px) rotateY(-8deg)"
-                            : "perspective(1000px) rotateY(8deg)",
-                      transformStyle: "preserve-3d",
-                    }}
                     role="button"
                     tabIndex={0}
                     onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}
@@ -243,22 +252,20 @@ export default function NewsSectionInfinite() {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80" />
-                    {index === activeSlideIndex && (
+                    {index === activeSlideIndex ? (
                       <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6 text-white">
                         <div className="text-center mb-4">
-                          <h4 className="text-lg md:text-xl font-bold mb-2 line-clamp-1">
+                          <h4 className="text-lg md:text-xl font-bold mb-2 line-clamp-2 drop-shadow">
                             {slide.title}
                           </h4>
                         </div>
                         <div className="flex justify-center">
-                          <ButtonPrimary
-                            onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}
-                          >
+                          <ButtonPrimary onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}>
                             {slide.buttonText}
                           </ButtonPrimary>
                         </div>
                       </div>
-                    )}
+                    ) : null}
                   </div>
                 </SwiperSlide>
               ))}

@@ -30,7 +30,7 @@ export default function NewsList() {
           id: slug,
           title: item?.title || t("news.title"),
           image: mapped || fallback,
-          buttonText: item?.buttonText || t("news.title"),
+          buttonText: item?.buttonText || t("news.readMore", { defaultValue: t("news.title") }),
         };
       }),
     [items, t]
@@ -41,7 +41,7 @@ export default function NewsList() {
       <div className="max-w-6xl mx-auto space-y-8">
         <div className="space-y-2 text-center">
           <h1 className="uppercase font-serif text-xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-primary italic text-center">
-            {t("newsPageHeading", { defaultValue: t("news.title") })}
+            {t("news.pageHeading", { defaultValue: t("news.title") })}
           </h1>
         </div>
 
@@ -69,7 +69,7 @@ export default function NewsList() {
                   type="button"
                   className="mt-auto inline-flex items-center justify-start text-[#751715] font-semibold"
                 >
-                  {card.buttonText || t("news.title")} →
+                  {card.buttonText || t("news.readMore", { defaultValue: t("news.title") })} →
                 </button>
               </div>
             </article>

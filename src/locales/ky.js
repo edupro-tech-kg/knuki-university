@@ -537,6 +537,7 @@ export default {
   news: {
     title: "Жаңылыктар",
     pageHeading: "Жаңылыктар жана иш-чаралар",
+    readMore: "Кененирээк",
     items: [
       {
         id: "makam",

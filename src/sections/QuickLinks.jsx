@@ -29,8 +29,11 @@ function QuickLinks() {
       </h2>
       <div
         className="
-          grid grid-cols-2 gap-4 px-4 md:px-6
-          md:grid-cols-4
+          flex gap-3 pl-4 pr-4 md:px-6 md:gap-4
+          overflow-x-auto md:overflow-visible
+          snap-x snap-mandatory
+          scroll-pl-6
+          md:grid md:grid-cols-4
           lg:grid-cols-5
           max-w-[1440px] mx-auto
         "
@@ -39,10 +42,12 @@ function QuickLinks() {
           <div
             key={item.key}
             className="
-              border border-text-secondary p-4 w-full
+              border border-text-secondary p-4 w-[248px] md:w-full
               flex flex-col justify-between items-center text-center
               duration-300 bg-white
               h-64
+              flex-none snap-start
+              md:min-w-0 md:flex-auto
             "
           >
             <div className="flex justify-between w-full -mt-6">

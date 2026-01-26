@@ -571,6 +571,7 @@ export default {
   news: {
     title: "НОВОСТИ",
     pageHeading: "Новости и события",
+    readMore: "Подробнее",
     items: [
       {
         id: "makam",
