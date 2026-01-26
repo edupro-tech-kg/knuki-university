@@ -9,7 +9,7 @@ import doc3 from "../assets/pdf/doc3.pdf";
 import doc4 from "../assets/pdf/doc6.pdf";
 import doc5 from "../assets/pdf/doc7.pdf";
 import doc6 from "../assets/pdf/doc47.pdf";
-import doc7 from "../assets/pdf/doc7.pdf";
+import doc7 from "../assets/pdf/doc48.pdf";
 import doc8 from "../assets/pdf/doc49.pdf";
 import doc9 from "../assets/pdf/doc50.PDF";
 import doc10 from "../assets/pdf/doc51.pdf";
