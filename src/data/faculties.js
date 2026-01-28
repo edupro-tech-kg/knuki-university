@@ -71,7 +71,7 @@ import Maryam_Korpobaeva from "../assets/images/faculties/estrada-music/Maryam_K
 import Chyngyz_Zamirbekuulu from "../assets/images/faculties/theater/Chyngyz_Zamirbekuulu.jpg";
 import Anara_Solpueva from "../assets/images/faculties/theater/Anara_Solpueva.jpg";
 import Jodar_Turumbekov from "../assets/images/faculties/kino-tele/Jodar_Turumbekov.jpg";
-import Burush_Kurmanbекova from "../assets/images/faculties/kino-tele/Burush_Kurmanbekova.jpg";
+import Burush_Kurmanbекova from "../assets/images/faculties/kino-tele/Burush_Kurmanbekova.jpeg";
 import Gulnara_Damirkyzy from "../assets/images/faculties/kino-tele/Gulnara_Damirkyzy.jpg";
 
 export const FACULTIES_KG = [

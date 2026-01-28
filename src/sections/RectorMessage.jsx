@@ -26,16 +26,19 @@ const baseSignature = [
 
 export default function RectorMessage() {
   const { t } = useTranslation();
+  const paragraphsFromTranslation = t("rector.paragraphs", { returnObjects: true, defaultValue: baseParagraphs });
   const fullText = t("rector.fullText", { defaultValue: "" });
-  const paragraphsFromFullText = typeof fullText === "string" && fullText.trim()
-    ? fullText
-        .split(/\n\s*\n/g)
-        .map((p) => p.trim())
-        .filter(Boolean)
-    : null;
-  const paragraphs = paragraphsFromFullText
-    ? paragraphsFromFullText
-    : t("rector.paragraphs", { returnObjects: true, defaultValue: baseParagraphs });
+  const paragraphsFromFullText =
+    typeof fullText === "string" && fullText.trim()
+      ? fullText
+          .split(/\n\s*\n/g)
+          .map((p) => p.trim())
+          .filter(Boolean)
+      : null;
+  const paragraphs =
+    Array.isArray(paragraphsFromTranslation) && paragraphsFromTranslation.length
+      ? paragraphsFromTranslation
+      : paragraphsFromFullText ?? baseParagraphs;
   const signature = t("rector.signature", { returnObjects: true, defaultValue: baseSignature });
   const midpoint = Math.ceil(paragraphs.length / 2);
   const firstColumn = paragraphs.slice(0, midpoint);
