@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useRef, useEffect, useState } from "react";
 import ManagementCard from "../components/ManagementCard";
 import ManagementModal from "../components/ManagementModal";
+import UniversityStructureChart from "../components/UniversityStructureChart";
 
 function ManagementPage() {
   const { t, i18n } = useTranslation();
@@ -25,7 +26,7 @@ function ManagementPage() {
     setTimeout(() => setSelectedPerson(null), 300);
   };
 
-  useEffect(() => { }, [i18n.language]);
+  useEffect(() => {}, [i18n.language]);
 
   useEffect(() => {
     const container = scrollContainerRef.current;
@@ -114,14 +115,11 @@ function ManagementPage() {
                     image={item.image}
                     btnText={ManagementInfo.btn}
                     showButton={hasAdditionalInfo}
-                    onOpenModal={
-                      hasAdditionalInfo ? () => handleOpenModal(item) : undefined
-                    }
+                    onOpenModal={hasAdditionalInfo ? () => handleOpenModal(item) : undefined}
                   />
                 </div>
               );
             })}
-
           </div>
         </div>
 
@@ -135,6 +133,8 @@ function ManagementPage() {
           }
         `}</style>
       </section>
+
+      <UniversityStructureChart />
 
       <ManagementModal isOpen={isModalOpen} onClose={handleCloseModal} person={selectedPerson} />
     </>
