@@ -16,6 +16,7 @@ import newGym from "../../src/assets/images/newGym.jpg";
 import construction1 from "../../src/assets/images/construction1.jpg";
 import instrument2 from "../../src/assets/images/instrument2.jpg";
 import makam from "../../src/assets/images/makam.jpg";
+import accreditation from "../../src/assets/images/accreditation1.jpg";
 
 export default function NewsSectionInfinite() {
   const { t, i18n } = useTranslation();
@@ -69,6 +70,13 @@ export default function NewsSectionInfinite() {
         title: newsItems?.[4]?.title || newsTitle,
         buttonText: newsItems?.[4]?.buttonText || readMoreLabel,
       },
+      {
+        id: 6,
+        slug: newsItems?.[5]?.id || 6,
+        image: accreditation,
+        title: newsItems?.[5]?.title || newsTitle,
+        buttonText: newsItems?.[5]?.buttonText || readMoreLabel,
+      }
     ],
     [newsItems, newsTitle, readMoreLabel]
   );
