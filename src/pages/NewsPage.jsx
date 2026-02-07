@@ -101,6 +101,7 @@ export default function NewsPage() {
   return (
     <section className="container-edge mx-auto px-4 py-10">
       <div className="max-w-6xl mx-auto space-y-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-800">{title}</h1>
         <div className="relative overflow-hidden rounded-2xl shadow-lg border border-gray-100">
           {images.length > 0 ? (
             <Swiper

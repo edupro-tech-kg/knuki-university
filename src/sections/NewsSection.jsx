@@ -65,18 +65,18 @@ export default function NewsSectionInfinite() {
       },
       {
         id: 5,
+        slug: newsItems?.[5]?.id || 6,
+        image: accreditation,
+        title: newsItems?.[5]?.title || newsTitle,
+        buttonText: newsItems?.[5]?.buttonText || readMoreLabel,
+      },
+      {
+        id: 6,
         slug: newsItems?.[4]?.id || 5,
         image: instrument2,
         title: newsItems?.[4]?.title || newsTitle,
         buttonText: newsItems?.[4]?.buttonText || readMoreLabel,
       },
-      {
-        id: 6,
-        slug: newsItems?.[5]?.id || 6,
-        image: accreditation,
-        title: newsItems?.[5]?.title || newsTitle,
-        buttonText: newsItems?.[5]?.buttonText || readMoreLabel,
-      }
     ],
     [newsItems, newsTitle, readMoreLabel]
   );
