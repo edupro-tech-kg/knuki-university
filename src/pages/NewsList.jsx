@@ -6,6 +6,7 @@ import grand1 from "../assets/images/grand1.jpg";
 import construction1 from "../assets/images/construction1.jpg";
 import instrument2 from "../assets/images/instrument2.jpg";
 import newGym from "../assets/images/newGym.jpg";
+import accreditation from "../assets/images/accreditation1.jpg";
 
 const IMAGE_MAP = {
   makam,
@@ -13,6 +14,7 @@ const IMAGE_MAP = {
   building: construction1,
   instruments: instrument2,
   gym: newGym,
+  accreditation: accreditation,
 };
 
 export default function NewsList() {

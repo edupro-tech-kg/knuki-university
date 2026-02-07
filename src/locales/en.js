@@ -563,6 +563,12 @@ export default {
         title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
         buttonText: "more",
       },
+      {
+        id: "accreditation",
+        date: "2025-04-03",
+        title: "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
+        buttonText: "more",
+      }
     ],
   },
   consultation: {
@@ -723,6 +729,11 @@ export default {
         content:
           "Fourth-year students of the Faculty of Choreography and Cultural Activities of KNUCA, Erbolot Urmatbek uulu and Maria Dubanaeva, have been awarded Presidential Scholarships for outstanding academic achievements. On October 31, 2025, President Sadyr Japarov personally presented Presidential Scholarships to the best students of higher education institutions.",
       },
+      {
+        id: "accreditation",
+        title: "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
+        content: "The Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva successfully completed programmatic accreditation in 14 specialties, as well as institutional accreditation.Based on preliminary results, the educational institution was recommended to carry out educational activities for a period of 5 years in institutional and programmatic areas.Experts particularly noted that in Kyrgyzstan, the 24.00.01 - Theory and History of Culture and 17.00.02 - Musical Arts programs were accredited at the postgraduate level for the first time.We express our sincere gratitude to the Independent Institute of Accreditation, Rating and Certification, the staff who worked 24/7, vice-rectors, heads of departments, deans, heads of departments,and also to the faculty for their significant contribution to the university's successful accreditation! Every achievement of the educational institution is the result of the coordinated work of the administration, the faculty, and, of course, our greatest asset—talented students!Art begins with us!"
+      }
     ],
   },
   studentStructure: {
