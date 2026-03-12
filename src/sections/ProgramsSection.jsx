@@ -7,14 +7,15 @@ import music from "../assets/svg/music.svg";
 import mask from "../assets/svg/mask.svg";
 import projector from "../assets/svg/projector.svg";
 import ballerina from "../assets/svg/ballerina.svg";
-
+import mortarboard from "../assets/svg/mortarboard.svg";
+import microphone from "../assets/svg/microphone.svg";
 const directions = [
-  { icon: music, slug: "choreography" },
-  { icon: mask, slug: "folk-music" },
-  { icon: projector, slug: "estrada-music" },
-  { icon: ballerina, slug: "theater" },
-  { icon: music, slug: "kino-tele" },
-  { icon: mask, slug: "postgraduate" },
+  { icon: ballerina, slug: "choreography" },
+  { icon: music, slug: "folk-music" },
+  { icon: microphone, slug: "estrada-music" },
+  { icon: mask, slug: "theater" },
+  { icon: projector, slug: "kino-tele" },
+  { icon: mortarboard, slug: "postgraduate" },
 ];
 
 export default function ProgramsSection() {
