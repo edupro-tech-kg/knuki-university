@@ -14,7 +14,9 @@ import sahnakaf from "../assets/images/sahnakaf.jpg";
 import teatrdec from "../assets/images/teatrdec.jpg";
 import tumonbai from "../assets/images/tumonbai.jpg";
 import maksatkysh from "../assets/images/maksatkysh.jpg";
-
+import libraryleader from "../assets/images/libraryleader.jpg";
+import musicDean from "../assets/images/musicDean.jpg";
+import choreographyDean from "../assets/images/choreographyDean.jpg";
 export default {
   locale: "en",
   code: "en",
@@ -668,7 +670,7 @@ export default {
     description:
       "Culture and Art is to develop talented, creative, and intellectual personnel in the field of culture and art.",
     imageDescription:
-      "The theatre festival “New Names” was first proposed in 2016 by Bolot Tentimishev, a lecturer at the B. Beishenalieva Kyrgyz National University of Culture and Arts and an Honored Artist of the Kyrgyz Republic, and in 2016 it was held at the republican level with the support of the Ministry of Culture, Information and Youth Policy of the Kyrgyz Republic and the Union of Theatre Workers of Kyrgyzstan.Starting from 2023, the festival reached the international level, and alongside Kyrgyzstan, students of theatrical educational institutions, young actors and directors from such countries as Turkey, Kazakhstan, Uzbekistan, Russia, and Azerbaijan have been participating in it.“New Names” is a platform that provides young theatrical talents with the opportunity to take their first professional steps, gain experience in the field of theatre and the arts, and establish international creative connections.In the years 2024–2025, the B. Beishenalieva Kyrgyz National University of Culture and Arts won the Grand Prix of the festival.",
+      "Training talented, creative, and intellectually capable professionals for the field of culture and the arts. To be a creative center integrated into global education that preserves and develops national cultural heritage.",
     button: "Learn More",
   },
   week: {
@@ -1310,7 +1312,7 @@ export default {
       {
         name: "Surapbaeva Gulzada Raimjanovna",
         post: "Head of the Library",
-        image: "photo-placeholder.svg",
+        image: libraryleader,
         additionalInfo: {},
       },
       {
@@ -1337,7 +1339,7 @@ export default {
       },
       {
         name: "Bakytbek uulu Isabek",
-        post: "Dean of the Faculty of Choreography and Cultural Activities",
+        post: "Dean of the Faculty of Folk Music",
         image: sahnakaf,
         additionalInfo: {
           birthDatePlace: "January 7, 1999",
@@ -1360,7 +1362,7 @@ export default {
       },
       {
         name: "Abdigaparov Nurtilek Abdigaparovich",
-        post: "Dean of the Faculty of Folk Music",
+        post: "Head of the Academic Department",
         image: musicdec,
         additionalInfo: {
           birthDatePlace: "January 16, 1994",
@@ -1372,7 +1374,7 @@ export default {
           education:
             "2016 — Music Teacher. Faculty of Arts, Osh State University, Osh.\n2021 — Opera, concert and chamber singer, pedagogue. Faculty of Vocal and Choral Arts, Kyrgyz National Conservatory named after K. Moldobasanov, Bishkek.\nSince 2024 — 1st-year PhD student in specialty 17.00.02 “Musical Art”. Department of Postgraduate and Master’s Studies, Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek.",
           workExperience:
-            "Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek — Dean of the Faculty of Folk Music.",
+            "Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek — Head of the Academic Department",
           courses:
             "Training course “Accreditation of Educational Programs. Conducting Self-Assessment”, NIARS (IARC), November 12, 2024.",
           professionalSkills:
@@ -1382,9 +1384,15 @@ export default {
         },
       },
       {
-        name: "Arstanbek uulu Asylbek",
+        name: "Orunbaeva Nargiza Temirbekovna",
         post: "Dean of the Faculty of Pop Music and Musical Education",
-        image: "photo-placeholder.svg",
+        image: musicDean,
+        additionalInfo: {},
+      },
+      {
+        name: "Merim Iskenderovna Beishenalieva",
+        post: "Dean of the Faculty of Choreography and Cultural Activities",
+        image: choreographyDean,
         additionalInfo: {},
       },
       {
@@ -1812,7 +1820,7 @@ export default {
     },
     contacts: {
       phoneLabel: "Phone",
-      phone: "+996 312 57 03 79",
+      phone: "+996 500 708 561, +996 709 78 94 26, +996 557 27 08 96",
       instagramLabel: "Instagram",
       instagram: "@knuki_kg",
       websiteLabel: "Website",
