@@ -14,7 +14,7 @@ import sahnakaf from "../assets/images/sahnakaf.jpg";
 import teatrdec from "../assets/images/teatrdec.jpg";
 import tumonbai from "../assets/images/tumonbai.jpg";
 import maksatkysh from "../assets/images/maksatkysh.jpg";
-import libraryleader from "../assets/images/libraryLeader.jpg";
+import libraryleader from "../assets/images/libraryleader.jpg";
 import musicDean from "../assets/images/musicDean.jpg";
 import choreographyDean from "../assets/images/choreographyDean.jpg";
 export default {
