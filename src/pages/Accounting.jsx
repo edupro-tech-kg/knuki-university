@@ -6,10 +6,10 @@ import AccountingThird from "../components/AccountingThird.jsx";
 function Accounting() {
   return (
     <div>
-      <AccountingFirst />
-      <AccountingSecond />
       <AccountingThird />
+      <AccountingFirst />
       <AccountingFourth />
+      <AccountingSecond />
     </div>
   );
 }

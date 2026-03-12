@@ -19,6 +19,19 @@ import construction2 from "../assets/images/construction2.jpg";
 import instrument1 from "../assets/images/instrument1.jpg";
 import instrument2 from "../assets/images/instrument2.jpg";
 import instrument3 from "../assets/images/instrument3.jpg";
+import accreditation1 from "../assets/images/accreditation1.jpg";
+import accreditation2 from "../assets/images/accreditation2.jpg";
+import accreditation3 from "../assets/images/accreditation3.jpg";
+import accreditation4 from "../assets/images/accreditation4.jpg";
+import accreditation5 from "../assets/images/accreditation5.jpg";
+import accreditation6 from "../assets/images/accreditation6.jpg";
+import accreditation7 from "../assets/images/accreditation7.jpg";
+import accreditation8 from "../assets/images/accreditation8.jpg";
+import accreditation9 from "../assets/images/accreditation9.jpg";
+import accreditation10 from "../assets/images/accreditation10.jpg";
+import accreditation11 from "../assets/images/accreditation11.jpg";
+import accreditation12 from "../assets/images/accreditation12.jpg";
+import accreditation13 from "../assets/images/accreditation13.jpg";
 
 export default function NewsPage() {
   const { id } = useParams();
@@ -33,6 +46,21 @@ export default function NewsPage() {
     gym: [newGym, newGym1, newGym2, newGym3, newGym4],
     building: [construction1, construction2],
     instruments: [instrument1, instrument2, instrument3],
+    accreditation: [
+      accreditation1,
+      accreditation2,
+      accreditation3,
+      accreditation4,
+      accreditation5,
+      accreditation6,
+      accreditation7,
+      accreditation8,
+      accreditation9,
+      accreditation10,
+      accreditation11,
+      accreditation12,
+      accreditation13,
+    ],
   };
   const idNum = parseInt(id, 10);
 
@@ -73,6 +101,7 @@ export default function NewsPage() {
   return (
     <section className="container-edge mx-auto px-4 py-10">
       <div className="max-w-6xl mx-auto space-y-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-800">{title}</h1>
         <div className="relative overflow-hidden rounded-2xl shadow-lg border border-gray-100">
           {images.length > 0 ? (
             <Swiper

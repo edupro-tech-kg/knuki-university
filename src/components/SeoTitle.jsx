@@ -26,6 +26,8 @@ export default function SeoTitle() {
       "/documents": t("pageTitles.documents"),
       "/science": t("pageTitles.science"),
       "/consultation": t("pageTitles.consultation"),
+      "/profsouz": t("pageTitles.profsouz"),
+      "/okuu-bolumu": t("pageTitles.okuuBolumu"),
     };
     return map[cleanPath] || "";
   }, [pathname, t]);

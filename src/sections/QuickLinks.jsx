@@ -6,14 +6,16 @@ import Ornament from "../assets/svg/ornament.svg";
 import Button from "../components/UI/Button";
 
 const QUICK_LINKS = [
-  { key: "ebilim", link: "/ebilim" },
   { key: "practic", link: "/practice-career" },
-  { key: "qualification", link: "/qualification" },
-  { key: "library", link: "/library" },
-  { key: "literature", link: "/literature" },
-  { key: "department", link: "/HRdepartment" },
   { key: "council", link: "/council" },
+  { key: "okuuBolumu", link: "/okuu-bolumu" },
+  { key: "literature", link: "/literature" },
+  { key: "qualification", link: "/qualification" },
+  { key: "department", link: "/HRdepartment" },
+  { key: "library", link: "/library" },
+  { key: "profsouz", link: "/profsouz" },
   { key: "accounting", link: "/accounting" },
+  { key: "ebilim", link: "/ebilim" },
 ];
 function QuickLinks() {
   const { t } = useTranslation();
@@ -27,9 +29,12 @@ function QuickLinks() {
       </h2>
       <div
         className="
-          flex gap-4 overflow-x-auto px-4 md:px-6
-          md:grid md:grid-cols-2 md:gap-4 md:overflow-visible
-          lg:grid lg:grid-cols-4 lg:gap-4 scrollbar-transparent
+          flex gap-3 pl-4 pr-4 md:px-6 md:gap-4
+          overflow-x-auto md:overflow-visible
+          snap-x snap-mandatory
+          scroll-pl-6
+          md:grid md:grid-cols-4
+          lg:grid-cols-5
           max-w-[1440px] mx-auto
         "
       >
@@ -37,11 +42,12 @@ function QuickLinks() {
           <div
             key={item.key}
             className="
-              border border-text-secondary p-4 min-w-[280px] md:min-w-0 md:w-full
+              border border-text-secondary p-4 w-[248px] md:w-full
               flex flex-col justify-between items-center text-center
               duration-300 bg-white
               h-64
-              md:justify-self-center
+              flex-none snap-start
+              md:min-w-0 md:flex-auto
             "
           >
             <div className="flex justify-between w-full -mt-6">

@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -40,6 +40,10 @@ export default function FacultyPage() {
     () => getFacultyData(slug, localizedFaculties, currentLanguage),
     [slug, localizedFaculties, currentLanguage, i18n.language]
   );
+
+  useEffect(() => {
+    setActiveTabIndex(0);
+  }, [slug]);
 
   if (!faculty) {
     return (
@@ -104,7 +108,7 @@ export default function FacultyPage() {
       )}
 
       <FacultyStats stats={faculty.stats} heading={faculty.teachersTitle} />
-      <FacultyTeachersTabs groups={faculty.teacherGroups || []} />
+      <FacultyTeachersTabs groups={faculty.teacherGroups || []} resetKey={slug} />
       <DocumentsSection documents={faculty.documents} />
     </div>
   );

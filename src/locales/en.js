@@ -1,3 +1,20 @@
+import Yusupova_Taberik from "../assets/images/Yusupova_Taberik.jpeg";
+import ulanProrector from "../assets/images/ulanProrector.jpg";
+import kubatProrector from "../assets/images/kubatProrector.jpg";
+import janylAlm from "../assets/images/janylAlm.jpg";
+import ilimelaralyk from "../assets/images/ilim&elaralyk.jpg";
+import practikcareer from "../assets/images/practik&career.jpg";
+import charbaProrector from "../assets/images/charbaProrector.jpg";
+import kadrlarbol from "../assets/images/kadrlarbol.jpg";
+import gulzadaAbd from "../assets/images/glzadaAbd.jpg";
+import bugalter from "../assets/images/bugalter.jpg";
+import magistraspirantur from "../assets/images/magistr&aspirntur.jpg";
+import musicdec from "../assets/images/musicdec.jpg";
+import sahnakaf from "../assets/images/sahnakaf.jpg";
+import teatrdec from "../assets/images/teatrdec.jpg";
+import tumonbai from "../assets/images/tumonbai.jpg";
+import maksatkysh from "../assets/images/maksatkysh.jpg";
+
 export default {
   locale: "en",
   code: "en",
@@ -51,11 +68,123 @@ export default {
     department: "HR Department",
     ebilim: "EBILIM",
     education: "Education",
+    profsouz: "Trade Union",
+    okuuBolumu: "Academic Office",
     literature: "High Literature Course",
     documents: "Documents",
     science: "Science",
     faculty: "Faculty",
     consultation: "Consultation",
+  },
+  okuuBolumuPage: {
+    intro:
+      "The Academic Office is one of the university’s key structural units. It plans and organizes the educational process for all forms of study, develops regulatory documents for teaching and methodological work, evaluates the learning process, performs statistical analysis, and provides reporting. It also prepares and approves curricula for all educational programs and approves the academic calendar and schedules.",
+    headings: {
+      tasks: "Key responsibilities:",
+      goalPrefix: "Main goal: ",
+      staff: "Core staff",
+    },
+    tableHeaders: {
+      no: "No.",
+      name: "Full name",
+      role: "Position",
+      email: "Email",
+      phone: "Phone",
+    },
+    tasks: [
+      "Plan, organize, and monitor the educational process for all forms of study;",
+      "Provide all types of academic reporting in the university;",
+      "Provide materials for the university’s licensing and accreditation;",
+      "Prepare the university’s academic calendar;",
+      "Monitor classroom utilization;",
+      "Prepare orders to approve state attestation and state examination commission compositions;",
+    ],
+    goal: "To develop, modernize, and optimize the university’s educational process, and to manage and monitor the work of the university’s structural units.",
+    staff: [
+      {
+        no: 1,
+        name: "Алманбет кызы Жаңыл",
+        role: "Head of the Academic Office",
+        email: "almanbetovajaku94@gmail.com",
+        phone: "0550 55 03 66",
+      },
+      {
+        no: 2,
+        name: "Амангазиева Чынара Жапаровна",
+        role: "Methodologist (Academic Office)",
+        email: "chinarachka87@mail.ru",
+        phone: "0709 20 94 06",
+      },
+      {
+        no: 3,
+        name: "Юзефович Ярослав Брониславович",
+        role: "Programmer",
+        email: "yarik198989@gmail.com",
+        phone: "0550 694 888",
+      },
+      {
+        no: 4,
+        name: "Төлөбекова Ализа Арисовна",
+        role: "Methodologist (HKD Faculty)",
+        email: "aku.tolobekova@gmail.com",
+        phone: "0704 243 453",
+      },
+      {
+        no: 5,
+        name: "Таалайбекова Жаңылай Таалайбековна",
+        role: "Methodologist (Theatre Faculty)",
+        email: "taalaibekovajanylai552@gmail.com",
+        phone: "0504 100 732",
+      },
+      {
+        no: 6,
+        name: "Турдакунова Жазгүл Нурдиновна",
+        role: "Methodologist (Folk Music Faculty)",
+        email: "turdakunovazazgul934@gmail.com",
+        phone: "0706 465 111",
+      },
+      {
+        no: 7,
+        name: "Нурланбек кызы Наристе",
+        role: "Methodologist (Pop & Music Education Faculty)",
+        email: "nurlanovanariste723@gmail.com",
+        phone: "0704 73 52 15",
+      },
+      {
+        no: 8,
+        name: "Цайзель Елена Анатольевна",
+        role: "Methodologist (Cinema & TV Faculty)",
+        email: "tsaizel@mail.ru",
+        phone: "0555 97 22 52",
+      },
+      {
+        no: 9,
+        name: "Кенжакун кызы Жаңыл",
+        role: "Methodologist (Postgraduate Department)",
+        email: "kenzhakunkyzy@mail.ru",
+        phone: "0708 54 59 48",
+      },
+      {
+        no: 10,
+        name: "Наралиева Миргүл Разылкановна",
+        role: "Methodologist (Higher Literature Course)",
+        email: "",
+        phone: "0705 321 386",
+      },
+    ],
+  },
+  profsouzPage: {
+    intro:
+      "The trade union is a voluntary organization of employees (teachers). Its main goal is to protect employees’ rights, interests, and social and economic conditions.",
+    bullets: [
+      "Negotiates with the employer",
+      "Protects employees’ labor rights",
+      "Explains labor law and regulations to employees",
+      "Raises issues of wages, working hours, rest, and occupational safety",
+      "Participates in collective bargaining and signing collective agreements",
+      "Helps resolve labor disputes between employees and the employer",
+      "Provides legal and social support to its members",
+    ],
   },
   consultationPage: {
     contact: {
@@ -81,7 +210,7 @@ export default {
     items: {
       "kino-tele": { title: "Faculty of Film and Television" },
       theater: { title: "Faculty of Theatre" },
-      choreography: { title: "Choreography Faculty" },
+      choreography: { title: "Faculty of Choreography and Cultural Activities" },
       "estrada-music": { title: "Faculty of Pop and Music Education" },
       "folk-music": { title: "Faculty of Folk Music" },
       postgraduate: { title: "Graduate and Postgraduate Studies" },
@@ -262,14 +391,16 @@ export default {
   quickLinks: {
     title: "Quick Links",
     cards: {
-      ebilim: "EBILIM",
       practic: "Practice & Career Department",
-      qualification: "DEPARTMENT OF QUALIFICATIONS ADVANCEMENT",
-      library: "LIBRARY",
-      literature: "HIGH LITERATURE COURSE",
-      department: "PERSONNEL DEPARTMENT",
       council: "Academic Council",
+      okuuBolumu: "Academic Office",
+      literature: "HIGH LITERATURE COURSE",
+      qualification: "QUALIFICATIONS ADVANCEMENT CENTER",
+      department: "PERSONNEL DEPARTMENT",
+      library: "LIBRARY",
+      profsouz: "Trade Union",
       accounting: "ACCOUNTING",
+      ebilim: "EBILIM",
     },
     button: "Learn More",
   },
@@ -379,7 +510,7 @@ export default {
     },
     addressItems: [
       "720005 Bishkek",
-      "Dzhantosheva St. 113",
+      "K.Zhantoshev St. 113",
       "kguki.art@mail.ru",
       "Office",
       "Fax: +996 312 57 07 56",
@@ -400,6 +531,7 @@ export default {
   news: {
     title: "NEWS",
     pageHeading: "News and updates",
+    readMore: "Read more",
     items: [
       {
         id: "makam",
@@ -431,6 +563,12 @@ export default {
         title: "KNUCA ACQUIRES MUSIC INSTRUMENTS FOR 2 700 000 SOM",
         buttonText: "more",
       },
+      {
+        id: "accreditation",
+        date: "2025-04-03",
+        title: "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
+        buttonText: "more",
+      }
     ],
   },
   consultation: {
@@ -591,6 +729,11 @@ export default {
         content:
           "Fourth-year students of the Faculty of Choreography and Cultural Activities of KNUCA, Erbolot Urmatbek uulu and Maria Dubanaeva, have been awarded Presidential Scholarships for outstanding academic achievements. On October 31, 2025, President Sadyr Japarov personally presented Presidential Scholarships to the best students of higher education institutions.",
       },
+      {
+        id: "accreditation",
+        title: "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
+        content: "The Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva successfully completed programmatic accreditation in 14 specialties, as well as institutional accreditation.Based on preliminary results, the educational institution was recommended to carry out educational activities for a period of 5 years in institutional and programmatic areas.Experts particularly noted that in Kyrgyzstan, the 24.00.01 - Theory and History of Culture and 17.00.02 - Musical Arts programs were accredited at the postgraduate level for the first time.We express our sincere gratitude to the Independent Institute of Accreditation, Rating and Certification, the staff who worked 24/7, vice-rectors, heads of departments, deans, heads of departments,and also to the faculty for their significant contribution to the university's successful accreditation! Every achievement of the educational institution is the result of the coordinated work of the administration, the faculty, and, of course, our greatest asset—talented students!Art begins with us!"
+      }
     ],
   },
   studentStructure: {
@@ -910,6 +1053,7 @@ export default {
       {
         name: "Koldoshov Tumenbay Rakhmanovich",
         post: "Rector",
+        image: tumonbai,
         additionalInfo: {
           academicDegree:
             "Postgraduate and Master’s Department, B. Beishenalieva Kyrgyz University of Culture and Arts, Bishkek.",
@@ -958,11 +1102,11 @@ export default {
       {
         name: "Dzhakuypov Kubatbek Kulanchievich",
         post: "Vice-Rector for Academic Affairs",
+        image: kubatProrector,
         additionalInfo: {
           birthDatePlace: "March 18, 1966",
           residence: "Alamudun district, Kara-Zhygach village, T. Buzurmankul St. 3/1",
           contact: "+996500 708 561",
-          email: "abdigaparov.nur93@gmail.com",
           academicDegree: "Postgraduate and Master's Department, KSUCА, Bishkek.",
           academicTitle: "Associate Professor",
           education:
@@ -981,6 +1125,7 @@ export default {
       {
         name: "Imankulova Saadat Esenbaevna",
         post: "Vice-Rector for Research",
+        image: ilimelaralyk,
         additionalInfo: {
           birthDatePlace: "May 21, 1985",
           contact: "+996770241531",
@@ -998,6 +1143,7 @@ export default {
       {
         name: "Turdaliev Ulanbek Matkarimovich",
         post: "Vice-Rector for State Language and Educational Affairs",
+        image: ulanProrector,
         additionalInfo: {
           birthDatePlace: "May 25, 1978",
           residence: "Bishkek city, Pervomaisky district\nKalys Ordo microdistrict, 7/66",
@@ -1014,6 +1160,7 @@ export default {
       {
         name: "Imanaliev Maksat Baktybekovich",
         post: "Vice-Rector for Administrative and Economic Affairs",
+        image: charbaProrector,
         additionalInfo: {
           birthDatePlace: "June 10, 2004",
           residence: "Chui region, Alamudun district, Besh-Kungey village, Sarbagysheva St., No.26",
@@ -1037,6 +1184,7 @@ export default {
       {
         name: "Kyshtobaev Maksat Cherikbaevich",
         post: "Chairman of the Trade Union",
+        image: maksatkysh,
         additionalInfo: {
           birthDatePlace: "January 28, 1989, Issyk-Kul region",
           residence: "Bishkek, Kyrgyz Republic",
@@ -1056,6 +1204,7 @@ export default {
       {
         name: "Marazhapova Nurzhan Kenzhekulovna",
         post: "Head of Postgraduate and Master's Department",
+        image: magistraspirantur,
         additionalInfo: {
           birthDatePlace: "October 4, 1972, Osh region, Kara-Kulja district",
           residence: "Bishkek, Sadyrbaev St., 1/5, apt. 152B",
@@ -1080,6 +1229,7 @@ export default {
       {
         name: "Almanbet kyzy Zhanyl",
         post: "KUMIU, Bishkek city, Head of the Academic Affairs Department, Senior Lecturer of the Department of Social and Humanitarian Disciplines.",
+        image: janylAlm,
         additionalInfo: {
           birthDatePlace: "February 15, 1994",
           residence: "Bishkek city, Ak-Ordo 3 residential area",
@@ -1094,6 +1244,7 @@ export default {
       {
         name: "Baktybekova Begai Baktybekovna",
         post: "Head of the Human Resources Department",
+        image: kadrlarbol,
         additionalInfo: {
           birthDatePlace: "December 2, 1990",
           residence: "Bishkek city, Kyrgyz Republic",
@@ -1117,6 +1268,7 @@ export default {
       {
         name: "Ybyrayakunova Nazira Kubanychbekovna",
         post: "Chief Accountant",
+        image: bugalter,
         additionalInfo: {
           birthDatePlace: "March 9, 1976",
           residence: "Tash-Debe village, Bolnichnaya Street, 65",
@@ -1132,9 +1284,8 @@ export default {
       {
         name: "Ergeshova Kumarkan Tokoyevna",
         post: "Head of the Internship and Career Department",
+        image: practikcareer,
         additionalInfo: {
-          birthDatePlace: "May 21, 1985",
-          residence: "Bishkek city, Alamedin district, Bektoo dacha area, 13th line, house 4",
           contact: "+996708771171",
           email: "kumar.ergesheva2@gmail.com",
           education:
@@ -1157,41 +1308,15 @@ export default {
         },
       },
       {
-        name: "Samieva Shairgul Turatovna",
+        name: "Surapbaeva Gulzada Raimjanovna",
         post: "Head of the Library",
-        additionalInfo: {
-          birthDatePlace: "February 6, 1969",
-          residence: "Bishkek city, Ch. Aitmatov Avenue 299/1",
-          contact: "0553 42 00 36",
-          maritalStatus: "Married",
-          education:
-            "1986–1996 — Kyrgyz National Agrarian University, specialty: Agroecologist, Certified Agronomist.\n" +
-            "Courses:\n" +
-            "1. Moscow Higher School “Economics and Law”, Moscow.\n" +
-            "2. Advanced training courses for librarians of the Kyrgyz Republican Association of Public Libraries at the National Library of the Kyrgyz Republic named after A. Osmonov, Bishkek.",
-          workExperience:
-            "September 1992 – February 1995 — Biology Teacher, Secondary School No. 11, Tash-Kumyr.\n" +
-            "March 1995 – May 1996 — Human Resources Inspector, Small Enterprise “Kelechek”.\n" +
-            "May 1996 – August 1996 — Records Manager, Osh Regional State Administration.\n" +
-            "September 1999 – October 2000 — Human Resources Inspector, Osh Branch of KGNU.\n" +
-            "September 2002 – September 2004 — Ecology Lecturer, Osh State University.",
-          professionalSkills:
-            "Advanced PC user: MS Word, Excel, Internet, 1C Accounting, PowerPoint, Canva.\n" +
-            "ABBYY FineReader — scanning, OCR, cleaning and editing PDF files.\n" +
-            "ScanTailor / ScanTailor Advanced — cropping, cleaning and post-processing scanned pages.\n" +
-            "Adobe Acrobat Pro — merging, splitting and editing PDF files.\n" +
-            "DJVU Small / WinDjView — working with DJVU formats.\n" +
-            "Calibre — conversion of e-books (EPUB, MOBI, PDF).\n" +
-            "Adobe Photoshop / GIMP — image cleaning, correction and processing.",
-          additionalInfo:
-            "Communicative and active.\n" +
-            "Goal-oriented life position.\n" +
-            "Strong motivation for development and professional growth.",
-        },
+        image: "photo-placeholder.svg",
+        additionalInfo: {},
       },
       {
         name: "Urmatbekov Chynasyl Urmatbekovich",
         post: "Dean of the Faculty of Theatre",
+        image: teatrdec,
         additionalInfo: {
           birthDatePlace: "December 22, 1992",
           residence: "Bishkek city, Torekul Aitmatov Street, 221",
@@ -1213,6 +1338,7 @@ export default {
       {
         name: "Bakytbek uulu Isabek",
         post: "Dean of the Faculty of Choreography and Cultural Activities",
+        image: sahnakaf,
         additionalInfo: {
           birthDatePlace: "January 7, 1999",
           residence: "Alamudun district, Lenin Village, Novoselskaya Street, 3",
@@ -1235,6 +1361,7 @@ export default {
       {
         name: "Abdigaparov Nurtilek Abdigaparovich",
         post: "Dean of the Faculty of Folk Music",
+        image: musicdec,
         additionalInfo: {
           birthDatePlace: "January 16, 1994",
           residence: "Bishkek city, Kyrgyz Republic",
@@ -1257,11 +1384,13 @@ export default {
       {
         name: "Arstanbek uulu Asylbek",
         post: "Dean of the Faculty of Pop Music and Musical Education",
+        image: "photo-placeholder.svg",
         additionalInfo: {},
       },
       {
         name: "Yusupova Taberik Rishatovna",
         post: "Dean of the Faculty of Cinema and Television",
+        image: Yusupova_Taberik,
         additionalInfo: {
           education:
             "2020–present — Kyrgyz-Russian Slavic University named after B. Yeltsin, Master’s program, Master of Business Administration.\n" +
@@ -1318,6 +1447,7 @@ export default {
       {
         name: "Abdyrahmanova Gulzada Abdyrahmanovna",
         post: "Press Secretary",
+        image: gulzadaAbd,
         additionalInfo: {
           birthDatePlace:
             "August 27, 1996\nJalal-Abad region, Aksy district, Zherge-Tal rural municipality, Bospiek village\nPersonal number: 12708199600474\nNationality: Kyrgyz\nCitizenship: Kyrgyzstan",
@@ -1337,6 +1467,48 @@ export default {
         },
       },
     ],
+  },
+  managementStructure: {
+    titleLines: ["UNIVERSITY ORGANIZATIONAL STRUCTURE"],
+    nodes: {
+      university: "B. Beishenalieva Kyrgyz National University of Culture and Arts",
+      academicCouncil: "Academic Council",
+      academicSecretary: "Academic Secretary",
+      supervisoryBoard: "Supervisory Board",
+      rector: "Rector",
+      prorectorAcademic: "Vice-Rector for Academic Affairs",
+      prorectorScienceIntl: "Vice-Rector for Science and International Relations",
+      prorectorStateLanguageEducation: "Vice-Rector for State Language and Educational Work",
+      prorectorAdministrative: "Vice-Rector for Administrative and Economic Affairs",
+      educationalDepartment: "Academic Department",
+      eBilim: "E-bilim, Programmer",
+      practiceCareerDepartment: "Practice and Career Department",
+      qualificationCenter: "Professional Development Center",
+      internationalRelations: "International Relations",
+      library: "Library",
+      studentCouncil: "Student Council",
+      dormitory: "Dormitory",
+      press: "Press",
+      civilDefense: "Civil Defense",
+      accounting: "Accounting",
+      hrDepartment: "HR Department",
+      recordsOfficer: "Records Officer",
+      archive: "Archive",
+      lawyer: "Lawyer",
+      technicalServiceStaff: "Technical Service Staff",
+      juniorServiceStaff: "Junior Service Staff",
+      educationalSupportStaff: "Educational Support Staff",
+      leadInspector: "Lead Inspector",
+      tradeUnion: "Trade Union",
+      faculties: "Faculties",
+      facultyFolkMusic: "Faculty of Folk Music",
+      facultyPopMusicEducation: "Faculty of Pop and Music Education",
+      facultyTheater: "Faculty of Theatre",
+      facultyCinemaTv: "Faculty of Cinema and Television",
+      facultyChoreographyCulture: "Faculty of Choreography and Cultural Activities",
+      higherLiteratureCourse: "Higher Literature Course",
+      magistracyPostgraduate: "Master’s and Postgraduate Department",
+    },
   },
   HRdepartment: {
     title: "human resources department",
@@ -1696,9 +1868,11 @@ export default {
     ],
   },
   documentNLA: {
+    title: "Legal Acts of the Kyrgyz Republic",
     btnText: "More",
   },
-  NLAkguki: {
+  NLAknuki: {
+    title: "Legal Acts of the KNUCA",
     btnText: "More",
   },
   sciencePage: {
@@ -1746,21 +1920,23 @@ export default {
   },
   rector: {
     eyebrow: "Rector’s Address",
-    title: "Toward a Prosperous Year",
+    title: "Taking Stock of a Prosperous Year",
+    fullText: "",
     paragraphs: [
-      "Dear colleagues and students! I congratulate you on the coming New Year! May the Year of the Horse bring peace, and may we live and work in prosperity. I wish 2026 to be a successful year for our country and every family.",
-      "The year 2025 was successful for the Kyrgyz National University of Culture and Arts. Guided by the decree of the President of the Kyrgyz Republic S. N. Zhaparov “National Spirit – Global Summit”, we accomplished a number of important tasks. Based on this decree, we streamlined curricula and drafted a new state standard reflecting this guiding course. Several regulatory documents were developed, and we digitized entrance tests, module and exam questions to reduce human influence.",
-      "Document management has been fully transferred to the electronic SED system, and accounting to the centralized “Bukh.Government” system. An online survey was conducted for staff and students to provide feedback on the leadership and faculty. Systematic anti-corruption efforts continue. Together with our workforce and students, we actively implement state programs related to education and culture.",
-      "Among the most significant milestones in our history, 2025 stands out. On March 22, 2025, by Presidential Decree No. 96, the B. Beishenalieva Kyrgyz State University of Culture and Arts was granted “national” status. This increased our responsibility; nearly 60 years of dedicated training of cultural professionals and contributions to the country’s cultural life were recognized. We are now tasked with preparing high-quality personnel, integrating into global education, ensuring campus safety, and expanding educational exports.",
-      "For the first time, using the university’s own funds, a student cafeteria of 97 m² was built and opened in May. A modern sports hall was constructed in a short time per the personal instruction and support of the Deputy Chairman of the Cabinet of Ministers of the Kyrgyz Republic, Chairman of the State Committee for National Security, General K. K. Tashiev, and opened on September 17.",
-      "In 1993, the K. Moldobasanov Kyrgyz National Conservatory separated from the B. Beishenalieva Kyrgyz State Institute of Arts. The institute’s main academic building was given to the conservatory, with a total area of 1.5 hectares divided unevenly: 0.49 hectares for the institute and 1.1 hectares for the conservatory. On September 10, 2025, 0.37 hectares of that land were returned to the university. Our total area expanded from 0.49 to 0.8642 hectares.",
-      "From 1993 until September 2025, we operated in a dormitory-type building. The long-held wish of our staff, who worked in cramped conditions, has come true: by order and support of President Sadyr Nurgozhoevich Zhaparov, with the help of the Chairman of the State Committee for National Security, General Kamchybek Kydyrshaevich Tashiev, construction of a new 10,000 m² modern academic building has begun. Our staff and students are overjoyed.",
-      "I want to highlight the contribution of our united team to these historic achievements. As a leader who helped usher the university into a new era, I am happy as well.",
-      "During the year, our students won at several national and international festivals, and our scholars participated in conferences. Their work is invaluable in raising the university’s profile globally. With support from the Ministry of Culture, Information and Youth Policy, four scientific-methodological guides and monographs by our scholars were published. We are considering honoraria for researchers studying the history and theory of national culture and arts.",
-      "Dear colleagues and students! I want to draw your attention to a very important matter. This year marks exactly 59 years since the university’s founding. Next year we celebrate our 60th anniversary, and we approach it with solid accomplishments. There are still big tasks and responsibilities ahead. We recently received national status, and now we will act according to our strategic development plan. On January 20–21, 2026, we will undergo national accreditation for both programmatic and institutional directions — a crucial milestone.",
-      "We intend for KNUCA to obtain special status by 2030. This will allow freer development across several areas: opening new specialties, creating a personnel reserve, increasing salaries, activating student startups, and moving to a “study + practice + income” model. Employment, dual education, double-degree programs, and academic mobility will grow by 10–20%. An agency for education quality and diploma recognition will be established. We plan to collaborate with international accreditation agencies.",
-      "The university nurtures humane, talented, creative thinkers who are flexible, multilingual, computer-literate, and able to work with others—competent specialists who meet modern demands. Beyond training creative personnel, we aim to produce works that reduce aggression in society and build resilience against violence among youth. KNUCA graduates receive an additional “pedagogue” qualification, reminding us of the high responsibility creative educators hold. Countering degradation, pessimism, and aggression is our civic and professional duty.",
-      "Let us fill every Kyrgyz heart with song, show good role models, capture kind eyes on camera, dance the dance of unity, and foster diplomatic relations among people.",
+      "Dear colleagues and students!",
+      "Congratulations on the New Year! May there be peace in the world during the Year of the Horse, and may we live and work in prosperity. Let us educate knowledgeable youth and contribute to Kyrgyzstan’s bright future. I wish 2026 to be a prosperous year for our country and every family.",
+      "The year 2025 was a successful year for the Kyrgyz National University of Culture and Arts. Guided by the Decree of the President of the Kyrgyz Republic S. N. Zhaparov on the national development course “Uluttuk dem — düynölük biyiktik” (“National Spirit — Global Heights”), we carried out a number of important initiatives. We organized and updated curricula, and began preparing a new state educational standard that incorporates the “Uñgu Jol” concept. Several regulatory documents were developed, and admission procedures, applicant testing, module assessments, and examinations were digitalized, minimizing the human factor.",
+      "Document management is now fully carried out through the electronic SED system, and the accounting department has moved to the centralized “Bukh.Ökmöt” system. An online survey was conducted for staff and students to collect suggestions and feedback on the work of the administration and faculty. Systematic work is also being done to prevent corruption. Together with our staff and students, we actively support the implementation of national development programs related to education and culture.",
+      "Among the most important milestones in our long history, 2025 stands out. On March 22, 2025, in accordance with Presidential Decree No. 96, the B. Beishenalieva Kyrgyz State University of Culture and Arts was granted “national” status. This recognition reflects nearly sixty years of dedicated work in training specialists in culture and the arts and our contribution to the country’s cultural life. At the same time, national status brings new responsibilities: improving the quality of training, integrating into the international education space, strengthening educational export, and building a safe university environment.",
+      "For the first time, using the university’s own funds, a student cafeteria with a total area of 97 m² was built and began operating in May. A modern sports hall was built in a short time by personal instruction and support of the Deputy Chairman of the Cabinet of Ministers of the Kyrgyz Republic, Chairman of the State Committee for National Security, General K. K. Tashiev, and was opened on September 17.",
+      "In 1993, the K. Moldobasanov Kyrgyz National Conservatory separated from the B. Beishenalieva Kyrgyz State Institute of Arts. The institute’s main academic building was transferred to the conservatory, and the total land area of 1.5 hectares was not divided equally: the institute received 0.49 hectares and the conservatory 1.1 hectares. Much time has passed, and on September 10, 2025, 0.37 hectares of that land were returned to the university. As a result, the total land area of the B. Beishenalieva Kyrgyz National University of Culture and Arts expanded to 0.8642 hectares.",
+      "From 1993 until September 2025, for 32 years, we carried out our work in a dormitory-type academic building. The long-held wish of our staff, who worked for many years in difficult conditions, has come true: by instruction and support of President Sadyr Nurgozhoevich Zhaparov, and with the assistance of the Chairman of the State Committee for National Security, General Kamchybek Kydyrshaevich Tashiev, construction of a new modern academic building with an area of 10,000 m² has begun. The joy of our staff and students knows no bounds.",
+      "I would like to emphasize the great contribution of our united team and strong leadership to these historic achievements. As a leader involved in these new stages of the university’s history, I am happy as well.",
+      "During the year, our students became winners of several national and international student festivals, and our scholars took part in scientific conferences. The work of our scholars is invaluable for promoting the university internationally and strengthening its image. With support from the Ministry of Culture, Information and Youth Policy, scientific-methodological manuals and monographs by four of our scholars were published. We are also considering honoraria for research works on the history and theory of national culture and arts.",
+      "Dear colleagues and student friends! I would like to draw your attention to something very important. This year marks exactly 59 years since the university was founded. Next year we will celebrate our glorious 60th anniversary. We are approaching this milestone with real achievements. At the same time, we face major tasks and responsibilities ahead. We recently received national status, and from now on we will work in accordance with our strategic development plan. On January 28–29, 2026, we will undergo national accreditation for our programmatic and institutional directions. This is an extremely important milestone for the university.",
+      "We are determined that by 2030 KNUCA will obtain a special status. This will open the way for freer development in several areas: launching new specialties, building a personnel reserve fund, increasing salaries, activating student startups, and moving to a “study + practice + income” model. Dual education, graduate employment, international double-degree programs, and academic mobility will increase by 10–20%. A dedicated agency will operate to ensure education quality and diploma recognition. We will cooperate with international accreditation agencies.",
+      "The university educates humane, talented, creative thinkers—flexible, multilingual, digitally literate specialists who can work well with others and meet the demands of the times. Beyond training creative professionals, we aim to create works that reduce aggression in society and build resilience against violence among youth. When KNUCA graduates are awarded their professional qualification, they also receive an additional “pedagogue” qualification. Therefore, we must remember the high mission of creative educators before society. Protesting against harmful phenomena such as aggression, pessimism, and degradation is our civic and professional duty.",
+      "Let us bring song to the heart of every Kyrgyz citizen, show positive role models, capture kind eyes on film, dance the dance of unity, and build tolerant and diplomatic relations among people.",
       "KNUCA invites you to live while feeling the vivid colors of life.",
     ],
     signature: [

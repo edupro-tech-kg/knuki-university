@@ -25,6 +25,8 @@ const SciencePage = lazy(() => import("./pages/SciencePage"));
 const ConsultationPage = lazy(() => import("./pages/ConsultationPage"));
 const CouncilPage = lazy(() => import("./pages/CouncilPage"));
 const Accounting = lazy(() => import("./pages/Accounting.jsx"));
+const ProfsoyuzPage = lazy(() => import("./pages/ProfsoyuzPage"));
+const OkuuBolumuPage = lazy(() => import("./pages/OkuuBolumuPage"));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -78,13 +80,15 @@ function App() {
                 <Route path="/education" element={<EducationPage />} />
                 <Route path="/literature" element={<LiteraturePage />} />
                 <Route path="/documents" element={<DocumentPage />} />
-                <Route path="/science" element={<SciencePage />} />
-                <Route path="/consultation" element={<ConsultationPage />} />
-                <Route path="/council" element={<CouncilPage />} />
-                <Route path="/accounting" element={<Accounting />} />
-              </Routes>
-            </main>
-            <Footer />
+              <Route path="/science" element={<SciencePage />} />
+              <Route path="/consultation" element={<ConsultationPage />} />
+              <Route path="/council" element={<CouncilPage />} />
+              <Route path="/accounting" element={<Accounting />} />
+              <Route path="/profsouz" element={<ProfsoyuzPage />} />
+              <Route path="/okuu-bolumu" element={<OkuuBolumuPage />} />
+            </Routes>
+          </main>
+          <Footer />
           </Suspense>
         </ChunkLoadErrorBoundary>
       </div>
