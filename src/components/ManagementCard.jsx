@@ -22,8 +22,13 @@ function ManagementCard({ name, post, onOpenModal, btnText, showButton, image })
 
   return (
     <div className="flex-shrink-0 w-full flex flex-col rounded-lg bg-white p-1.5 sm:p-3">
-      <div className="w-full aspect-[5/7] bg-gray-100 rounded-md mb-2 sm:mb-4 flex items-center justify-center overflow-hidden">
-        <img src={image} alt={name}/>
+      <div className="w-full aspect-[5/7] bg-gray-100 rounded-md mb-2 sm:mb-4 overflow-hidden flex items-start">
+        <img
+          src={image}
+          alt={name}
+          className="w-full object-contain"
+          style={{ maxHeight: '100%', objectFit: 'contain', objectPosition: 'top' }}
+        />
       </div>
 
       <div className="flex flex-col flex-1 text-center">
@@ -43,8 +48,7 @@ function ManagementCard({ name, post, onOpenModal, btnText, showButton, image })
             {post || "Должность не указана"}
           </p>
         </div>
-
-        {/* 🔴 КНОПКА ТОЛЬКО ЕСЛИ ЕСТЬ additionalInfo */}
+        
         {showButton && (
           <div className="mt-auto pt-1 sm:pt-1.5">
             <Button
