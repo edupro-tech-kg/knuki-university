@@ -32,6 +32,14 @@ import accreditation10 from "../assets/images/accreditation10.jpg";
 import accreditation11 from "../assets/images/accreditation11.jpg";
 import accreditation12 from "../assets/images/accreditation12.jpg";
 import accreditation13 from "../assets/images/accreditation13.jpg";
+import meeting1 from "../assets/images/meeting1.jpg";
+import meeting2 from "../assets/images/meeting2.jpg";
+import meeting3 from "../assets/images/meeting3.jpg";
+import meeting4 from "../assets/images/meeting4.jpg";
+import meeting5 from "../assets/images/meeting5.jpg";
+import meeting6 from "../assets/images/meeting6.jpg";
+import meeting7 from "../assets/images/meeting7.jpg";
+import meeting8 from "../assets/images/meeting8.jpg";
 
 export default function NewsPage() {
   const { id } = useParams();
@@ -61,6 +69,8 @@ export default function NewsPage() {
       accreditation12,
       accreditation13,
     ],
+
+    meeting: [ meeting1, meeting2, meeting3, meeting4, meeting5, meeting6, meeting7, meeting8],
   };
   const idNum = parseInt(id, 10);
 

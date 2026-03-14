@@ -536,11 +536,12 @@ export default {
     readMore: "Read more",
     items: [
       {
-        id: "makam",
-        date: "2025-03-22",
-        title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
+        id: "meeting",
+        date: "2026-03-12",
+        title: "NATIONAL SPIRIT - GLOBAL HEIGHTS",
         buttonText: "more",
       },
+      
       {
         id: "gym",
         date: "2025-09-17",
@@ -570,7 +571,13 @@ export default {
         date: "2025-04-03",
         title: "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
         buttonText: "more",
-      }
+      },
+      {
+        id: "makam",
+        date: "2025-03-22",
+        title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
+        buttonText: "more",
+      },
     ],
   },
   consultation: {
@@ -668,9 +675,9 @@ export default {
   mission: {
     title: "The University's mission",
     description:
-      "Culture and Art is to develop talented, creative, and intellectual personnel in the field of culture and art.",
+      "Culture and Art is to develop talented, creative, and intellectual personnel in the field of culture and art. To be a creative center integrated into global education that preserves and develops national cultural heritage.",
     imageDescription:
-      "Training talented, creative, and intellectually capable professionals for the field of culture and the arts. To be a creative center integrated into global education that preserves and develops national cultural heritage.",
+      "The theatre festival “New Names” was first proposed in 2016 by Bolot Tentimishev, a lecturer at the B. Beishenalieva Kyrgyz National University of Culture and Arts and an Honored Artist of the Kyrgyz Republic, and in 2016 it was held at the republican level with the support of the Ministry of Culture, Information and Youth Policy of the Kyrgyz Republic and the Union of Theatre Workers of Kyrgyzstan.Starting from 2023, the festival reached the international level, and alongside Kyrgyzstan, students of theatrical educational institutions, young actors and directors from such countries as Turkey, Kazakhstan, Uzbekistan, Russia, and Azerbaijan have been participating in it.“New Names” is a platform that provides young theatrical talents with the opportunity to take their first professional steps, gain experience in the field of theatre and the arts, and establish international creative connections.In the years 2024–2025, the B. Beishenalieva Kyrgyz National University of Culture and Arts won the Grand Prix of the festival.",
     button: "Learn More",
   },
   week: {
@@ -698,6 +705,15 @@ export default {
   },
   newsPage: {
     news: [
+      {
+        id: "meeting",
+        title: "NATIONAL SPIRIT - GLOBAL HEIGHTS",
+        content: `Today, March 12, a meeting dedicated to the implementation of the Decree of the President of the Kyrgyz Republic dated December 18, 2024 No. 369 “On the Concept ‘National Spirit – Global Heights’”, as well as the order of the Ministry of Science, Higher Education and Innovation dated February 2, 2026 No. 59, was held at the Kyrgyz National University of Culture and Arts named after B. Beishenaliev.
+
+The meeting was attended by Candidate of Historical Sciences, Professor, Honored Cultural Worker of the Kyrgyz Republic Kyias Moldokasymov; Candidate of Economic Sciences, Associate Professor, mentor of the concept “National Spirit – Global Heights” and the “Bakdoolot” society Kadyrzhan Raiymbekov; Candidate of Sociological Sciences, Associate Professor, Director of the Institute of Social and Humanitarian Sciences of the Kyrgyz National University named after J. Balasagyn Abdikayym Jusubaliev; as well as the Chief Specialist of the Department for the Promotion of Creative Initiatives of the State Intellectual Property Fund Aidai Sulaimanova.
+
+During the meeting, the guests presented reports on the concept “National Spirit – Global Heights”, after which a lively discussion with students took place. Participants of the event had the opportunity to ask questions of interest and receive detailed answers.`,
+      },
       {
         id: "makam",
         title: "UNIVERSITY OF CULTURE AND ARTS GRANTED NATIONAL STATUS",
@@ -1229,18 +1245,26 @@ export default {
         },
       },
       {
-        name: "Almanbet kyzy Zhanyl",
-        post: "KUMIU, Bishkek city, Head of the Academic Affairs Department, Senior Lecturer of the Department of Social and Humanitarian Disciplines.",
-        image: janylAlm,
+        name: "Abdigaparov Nurtilek Abdigaparovich",
+        post: "Head of the Academic Department",
+        image: musicdec,
         additionalInfo: {
-          birthDatePlace: "February 15, 1994",
-          residence: "Bishkek city, Ak-Ordo 3 residential area",
-          contact: "+996550550366",
-          email: "almanbetovajaku94@mail.com",
-          workExperience:
-            "2016–2018 — Secondary School No. 87, Bishkek, Geography Teacher.\n2018–2019 — Special General Education Boarding School of the Kyrgyz Republic, Bishkek, Educator.\n2019–2022 — T. Ermatov Bishkek Pedagogical College, Bishkek, Academic Affairs Inspector, Geography Teacher, Deputy Director.\n2022–2023 — T. Ermatov Bishkek Pedagogical College, Bishkek, Deputy Director, Geography Teacher.\nSince 2023 — KUMIU, Bishkek, Head of the Academic Affairs Department, Senior Lecturer of the Department of Social and Humanitarian Disciplines.",
+          birthDatePlace: "January 16, 1994",
+          residence: "Bishkek city, Kyrgyz Republic",
+          contact: "+996500727971",
+          email: "abdigaparov.nur93@gmail.com",
+          academicDegree:
+            "Department of Postgraduate and Master’s Studies, Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek.",
           education:
-            "2016 — Bachelor’s degree in Geography (Physical Geography), Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek.\n2020 — Master’s degree in Geography (Economic, Social and Political Geography), Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek.\nSince 2023 — 2nd-year PhD student in specialty 25.00.24 — Economic, Social, Political and Recreational Geography, Faculty of Geography, Ecology and Tourism, Kyrgyz National University named after J. Balasagyn, Bishkek.",
+            "2016 — Music Teacher. Faculty of Arts, Osh State University, Osh.\n2021 — Opera, concert and chamber singer, pedagogue. Faculty of Vocal and Choral Arts, Kyrgyz National Conservatory named after K. Moldobasanov, Bishkek.\nSince 2024 — 1st-year PhD student in specialty 17.00.02 “Musical Art”. Department of Postgraduate and Master’s Studies, Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek.",
+          workExperience:
+            "Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek — Head of the Academic Department",
+          courses:
+            "Training course “Accreditation of Educational Programs. Conducting Self-Assessment”, NIARS (IARC), November 12, 2024.",
+          professionalSkills:
+            "Work with documentation;\ncomputer proficiency;\nvocal performance;\nteaching skills.",
+          personalQualities:
+            "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate.",
         },
       },
       {
@@ -1356,29 +1380,6 @@ export default {
             "Certificate No. 2048 “Competency-Based Approach in Higher Education”, 72 hours, Ministry of Education and Science of the Kyrgyz Republic and RIMB, 21.11–03.12.2024.\nCertificate No. 7701 “Digitalization of the Educational Process: Credit Technology, Competency-Based Approach, Learning Outcomes, Teaching Materials”, 72 hours, RPKK and KDI under the Ministry of Education and Science, 05.02–16.02.2024.\nCertificate No. 5552 “Modern Technologies for Teaching Ethno-, Music and Neuro-Pedagogy in Higher Education Institutions”, 72 hours, RPKK and KDI under the Ministry of Education and Science, 20.01–13.02.2025.\nCertificate — Training course “Accreditation of Educational Programs. Conducting Self-Assessment”, NIARS (IARC).",
           professionalSkills:
             "Work with documentation;\ncomputer skills;\ninstrumental performance (accordion);\nteaching expertise.",
-          personalQualities:
-            "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate.",
-        },
-      },
-      {
-        name: "Abdigaparov Nurtilek Abdigaparovich",
-        post: "Head of the Academic Department",
-        image: musicdec,
-        additionalInfo: {
-          birthDatePlace: "January 16, 1994",
-          residence: "Bishkek city, Kyrgyz Republic",
-          contact: "+996500727971",
-          email: "abdigaparov.nur93@gmail.com",
-          academicDegree:
-            "Department of Postgraduate and Master’s Studies, Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek.",
-          education:
-            "2016 — Music Teacher. Faculty of Arts, Osh State University, Osh.\n2021 — Opera, concert and chamber singer, pedagogue. Faculty of Vocal and Choral Arts, Kyrgyz National Conservatory named after K. Moldobasanov, Bishkek.\nSince 2024 — 1st-year PhD student in specialty 17.00.02 “Musical Art”. Department of Postgraduate and Master’s Studies, Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek.",
-          workExperience:
-            "Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek — Head of the Academic Department",
-          courses:
-            "Training course “Accreditation of Educational Programs. Conducting Self-Assessment”, NIARS (IARC), November 12, 2024.",
-          professionalSkills:
-            "Work with documentation;\ncomputer proficiency;\nvocal performance;\nteaching skills.",
           personalQualities:
             "Easily establishes communication;\ncalm;\nresponsible;\ndecisive;\naccurate.",
         },
