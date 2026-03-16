@@ -40,6 +40,25 @@ import meeting5 from "../assets/images/meeting5.jpg";
 import meeting6 from "../assets/images/meeting6.jpg";
 import meeting7 from "../assets/images/meeting7.jpg";
 import meeting8 from "../assets/images/meeting8.jpg";
+import myktyRegisser from "../assets/images/news/mykty-regisser.jpg";
+import myktyRegisser1 from "../assets/images/news/mykty-regisser_1.jpg";
+import myktyRegisser2 from "../assets/images/news/mykty-regisser_2.jpg";
+import myktyRegisser3 from "../assets/images/news/mykty-regisser_3.jpg";
+import knukiAlatoo from "../assets/images/news/knuki-alatoo.jpg";
+import knukiAlatoo1 from "../assets/images/news/knuki-alatoo_1.jpg";
+import knukiAlatoo2 from "../assets/images/news/knuki-alatoo_2.jpg";
+import knukiAlatoo3 from "../assets/images/news/knuki-alatoo_3.jpg";
+import knukiAlatoo4 from "../assets/images/news/knuki-alatoo_4.jpg";
+import subbotnik from "../assets/images/news/subbotnik.jpg";
+import subbotnik1 from "../assets/images/news/subbotnik_1.jpg";
+import subbotnik2 from "../assets/images/news/subbotnik_2.jpg";
+import subbotnik3 from "../assets/images/news/subbotnik_3.jpg";
+import subbotnik4 from "../assets/images/news/subbotnik_4.jpg";
+import uluttukDem from "../assets/images/news/uluttuk-dem.jpg";
+import uluttukDem1 from "../assets/images/news/uluttuk-dem_1.jpg";
+import uluttukDem2 from "../assets/images/news/uluttuk-dem_2.jpg";
+import uluttukDem3 from "../assets/images/news/uluttuk-dem_3.jpg";
+import uluttukDem4 from "../assets/images/news/uluttuk-dem_4.jpg";
 
 export default function NewsPage() {
   const { id } = useParams();
@@ -49,6 +68,27 @@ export default function NewsPage() {
   const newsPage = t("newsPage", { returnObjects: true }) || {};
 
   const NEWS_IMAGES = {
+    "knuki-alatoo": [
+      knukiAlatoo,
+      knukiAlatoo1,
+      knukiAlatoo2,
+      knukiAlatoo3,
+      knukiAlatoo4,
+    ],
+    subbotnik: [subbotnik, subbotnik1, subbotnik2, subbotnik3, subbotnik4],
+    "mykty-regisser": [
+      myktyRegisser,
+      myktyRegisser1,
+      myktyRegisser2,
+      myktyRegisser3,
+    ],
+    "uluttuk-dem": [
+      uluttukDem,
+      uluttukDem1,
+      uluttukDem2,
+      uluttukDem3,
+      uluttukDem4,
+    ],
     makam: [makam],
     students: [grand1, grand2],
     gym: [newGym, newGym1, newGym2, newGym3, newGym4],
@@ -70,7 +110,6 @@ export default function NewsPage() {
       accreditation13,
     ],
 
-    meeting: [ meeting1, meeting2, meeting3, meeting4, meeting5, meeting6, meeting7, meeting8],
   };
   const idNum = parseInt(id, 10);
 

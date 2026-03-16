@@ -7,8 +7,16 @@ import construction1 from "../assets/images/construction1.jpg";
 import instrument2 from "../assets/images/instrument2.jpg";
 import newGym from "../assets/images/newGym.jpg";
 import accreditation from "../assets/images/accreditation1.jpg";
+import myktyRegisser from "../assets/images/news/mykty-regisser.jpg";
+import knukiAlatoo from "../assets/images/news/knuki-alatoo.jpg";
+import subbotnik from "../assets/images/news/subbotnik.jpg";
+import uluttukDem from "../assets/images/news/uluttuk-dem.jpg";
 
 const IMAGE_MAP = {
+  "knuki-alatoo": knukiAlatoo,
+  subbotnik,
+  "mykty-regisser": myktyRegisser,
+  "uluttuk-dem": uluttukDem,
   makam,
   students: grand1,
   building: construction1,

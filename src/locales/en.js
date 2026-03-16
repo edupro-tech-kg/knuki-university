@@ -537,7 +537,25 @@ export default {
     readMore: "Read more",
     items: [
       {
-        id: "meeting",
+        id: "knuki-alatoo",
+        date: "2026-03-12",
+        title: "KNUCA COOPERATES WITH ALA-TOO INTERNATIONAL UNIVERSITY",
+        buttonText: "more",
+      },
+      {
+        id: "subbotnik",
+        date: "2026-03-14",
+        title: "NATIONWIDE COMMUNITY CLEAN-UP HELD",
+        buttonText: "more",
+      },
+      {
+        id: "mykty-regisser",
+        date: "2026-03-07",
+        title: "KNUCA STUDENT WINS “BEST DIRECTOR” AWARD",
+        buttonText: "more",
+      },
+      {
+        id: "uluttuk-dem",
         date: "2026-03-12",
         title: "NATIONAL SPIRIT - GLOBAL HEIGHTS",
         buttonText: "more",
@@ -707,7 +725,38 @@ export default {
   newsPage: {
     news: [
       {
-        id: "meeting",
+        id: "knuki-alatoo",
+        title: "KNUCA COOPERATES WITH ALA-TOO INTERNATIONAL UNIVERSITY",
+        content: `Today, on March 12, an official meeting was held between the Kyrgyz National University of Culture and Arts named after B. Beishenalieva and Ala-Too International University to sign a memorandum of cooperation.
+
+The meeting was attended by Tumonbay Rakhmanovich Koldoshov, Rector of the Kyrgyz National University of Culture and Arts named after B. Beishenalieva, Candidate of Philological Sciences and Professor, and Saadat Esenbaevna Imankulova, Vice-Rector for Research and International Relations, Candidate of Pedagogical Sciences and Associate Professor. Representing Ala-Too International University were Salidin Kadyrkulovich Kaldybaev, Vice-Rector for Social Affairs and the State Language, Doctor of Pedagogical Sciences and Professor, Aikokul Mamaeva, Head of the Extracurricular Activities Department, and Gulmira Usubalieva, Coordinator of the Career and Practice Center.
+
+During the meeting, the parties discussed expanding cooperation in science, education, and student activity, and agreed to support and develop joint initiatives. Ala-Too International University will assist in preparing and writing scientific articles, while the scientific journal "Ala-Too Academic Studies" will provide opportunities for publication. In addition, lectures and training meetings will be held on developing students’ academic skills and methods of writing scientific articles.
+
+Special attention was given to the active participation of students of B. Beishenalieva University in extracurricular activities of Ala-Too International University. This cooperation will help strengthen cultural exchange, develop students’ creative potential, and expand ties between the two universities.`,
+      },
+      {
+        id: "subbotnik",
+        title: "NATIONWIDE COMMUNITY CLEAN-UP HELD",
+        content: `Today, on March 14, a nationwide community clean-up was held across the country.
+
+The teaching staff of KNUCA took part, along with first- and second-year students, since third-, fourth-, and fifth-year students were away on internships during this period.
+
+In total, about 140 people participated. Each department cleaned the assigned areas around the university and removed waste. The university’s internal classrooms were also washed and cleaned.`,
+      },
+      {
+        id: "mykty-regisser",
+        title: "KNUCA STUDENT WINS “BEST DIRECTOR” AWARD",
+        content: `At the international “Umut” film forum, Daniyar Abirov, a student of the Faculty of Film and Television at KNUCA, won the “Best Director” award for his film “Obonchu”.
+
+The forum opened with the screening of “Toolor meni kuchaktagyla” by KNUCA student Gulzhan Iresh.
+
+The “Umut” prize was also awarded to Nurkanat Kubatov for the film “Baidyldanyn sozu”.
+
+The event was held in Bishkek on March 4–7, 2026, for the 13th time with the participation of young filmmakers from CIS countries. As part of the forum, 38 films were screened and master classes were organized.`,
+      },
+      {
+        id: "uluttuk-dem",
         title: "NATIONAL SPIRIT - GLOBAL HEIGHTS",
         content: `Today, March 12, a meeting dedicated to the implementation of the Decree of the President of the Kyrgyz Republic dated December 18, 2024 No. 369 “On the Concept ‘National Spirit – Global Heights’”, as well as the order of the Ministry of Science, Higher Education and Innovation dated February 2, 2026 No. 59, was held at the Kyrgyz National University of Culture and Arts named after B. Beishenaliev.
 
