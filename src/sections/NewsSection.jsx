@@ -16,6 +16,10 @@ import construction1 from "../../src/assets/images/construction1.jpg";
 import instrument2 from "../../src/assets/images/instrument2.jpg";
 import makam from "../../src/assets/images/makam.jpg";
 import accreditation from "../../src/assets/images/accreditation1.jpg";
+import knukiAlatoo from "../../src/assets/images/news/knuki-alatoo.jpg";
+import myktyRegisser from "../../src/assets/images/news/mykty-regisser.jpg";
+import subbotnik from "../../src/assets/images/news/subbotnik.jpg";
+import uluttukDem from "../../src/assets/images/news/uluttuk-dem.jpg";
 
 export default function NewsSectionInfinite() {
   const { t, i18n } = useTranslation();
@@ -32,52 +36,41 @@ export default function NewsSectionInfinite() {
   const [hasMore, setHasMore] = useState(true);
   const navigate = useNavigate();
 
+  const imageMap = useMemo(
+    () => ({
+      "knuki-alatoo": knukiAlatoo,
+      subbotnik,
+      "mykty-regisser": myktyRegisser,
+      "uluttuk-dem": uluttukDem,
+      gym: newGym,
+      building: construction1,
+      students: grand1,
+      instruments: instrument2,
+      accreditation,
+      makam,
+    }),
+    []
+  );
+
+  const prioritizedNewsItems = useMemo(() => {
+    const items = Array.isArray(newsItems) ? [...newsItems] : [];
+    return items.sort((left, right) => {
+      const leftTime = left?.date ? new Date(left.date).getTime() : 0;
+      const rightTime = right?.date ? new Date(right.date).getTime() : 0;
+      return rightTime - leftTime;
+    });
+  }, [newsItems]);
+
   const slidesData = useMemo(
-    () => [
-      {
-        id: 1,
-        slug: newsItems?.[0]?.id || 1,
-        image: makam,
-        title: newsItems?.[0]?.title || newsTitle,
-        buttonText: newsItems?.[0]?.buttonText || readMoreLabel,
-      },
-      {
-        id: 2,
-        slug: newsItems?.[1]?.id || 2,
-        image: newGym,
-        title: newsItems?.[1]?.title || newsTitle,
-        buttonText: newsItems?.[1]?.buttonText || readMoreLabel,
-      },
-      {
-        id: 3,
-        slug: newsItems?.[2]?.id || 3,
-        image: construction1,
-        title: newsItems?.[2]?.title || newsTitle,
-        buttonText: newsItems?.[2]?.buttonText || readMoreLabel,
-      },
-      {
-        id: 4,
-        slug: newsItems?.[3]?.id || 4,
-        image: grand1,
-        title: newsItems?.[3]?.title || newsTitle,
-        buttonText: newsItems?.[3]?.buttonText || readMoreLabel,
-      },
-      {
-        id: 6,
-        slug: newsItems?.[4]?.id || 5,
-        image: instrument2,
-        title: newsItems?.[4]?.title || newsTitle,
-        buttonText: newsItems?.[4]?.buttonText || readMoreLabel,
-      },
-      {
-        id: 5,
-        slug: newsItems?.[5]?.id || 6,
-        image: accreditation,
-        title: newsItems?.[5]?.title || newsTitle,
-        buttonText: newsItems?.[5]?.buttonText || readMoreLabel,
-      },
-    ],
-    [newsItems, newsTitle, readMoreLabel]
+    () =>
+      prioritizedNewsItems.slice(0, 6).map((item, index) => ({
+        id: index + 1,
+        slug: item?.id || index + 1,
+        image: imageMap[item?.id] || accreditation,
+        title: item?.title || newsTitle,
+        buttonText: item?.buttonText || readMoreLabel,
+      })),
+    [imageMap, prioritizedNewsItems, newsTitle, readMoreLabel]
   );
 
   const createInfiniteSlides = () => {
@@ -93,27 +86,25 @@ export default function NewsSectionInfinite() {
   // Инициализация слайдов
   const [slides, setSlides] = useState(() => createInfiniteSlides());
 
-  // Найти индекс слайда с accreditation
-  const initialSlideIndex = slides.findIndex(slide => slide.image === accreditation);
+  const initialSlideIndex = slidesData.length > 0 ? slidesData.length * 2 : 0;
 
-  // Активный слайд
   const [activeSlideIndex, setActiveSlideIndex] = useState(
-    initialSlideIndex >= 0 ? initialSlideIndex : 10
+    initialSlideIndex
   );
 
   useEffect(() => {
-    // При смене языка/контента обновляем слайды и ставим accreditation в центр
-    setSlides(createInfiniteSlides());
-    setActiveSlideIndex(initialSlideIndex >= 0 ? initialSlideIndex : 10);
+    const updatedSlides = createInfiniteSlides();
+    setSlides(updatedSlides);
+    setActiveSlideIndex(initialSlideIndex);
     setHasMore(true);
     setIsLoading(false);
 
     if (swiperInstance) {
       swiperInstance.update();
       swiperInstance.virtual.update();
-      swiperInstance.slideTo(initialSlideIndex >= 0 ? initialSlideIndex : 10, 0);
+      swiperInstance.slideTo(initialSlideIndex, 0);
     }
-  }, [i18n.language, swiperInstance]);
+  }, [i18n.language, swiperInstance, initialSlideIndex, slidesData]);
 
   const loadMoreSlides = useCallback(async () => {
     if (isLoading || !hasMore) return;
@@ -174,7 +165,7 @@ export default function NewsSectionInfinite() {
             centeredSlides={true}
             slidesPerView={"auto"}
             spaceBetween={40}
-            initialSlide={initialSlideIndex >= 0 ? initialSlideIndex : 10}
+            initialSlide={initialSlideIndex}
             onSwiper={setSwiperInstance}
             modules={[EffectCoverflow, Navigation, Virtual]}
             className="w-full pb-16"
