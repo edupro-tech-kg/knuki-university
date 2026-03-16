@@ -8,6 +8,7 @@ import charbaProrector from "../assets/images/charbaProrector.jpg";
 import kadrlarbol from "../assets/images/kadrlarbol.jpg";
 import gulzadaAbd from "../assets/images/glzadaAbd.jpg";
 import bugalter from "../assets/images/bugalter.jpg";
+import graybg from "../assets/images/graybg.png";
 import magistraspirantur from "../assets/images/magistr&aspirntur.jpg";
 import musicdec from "../assets/images/musicdec.jpg";
 import sahnakaf from "../assets/images/sahnakaf.jpg";
@@ -105,10 +106,10 @@ export default {
     staff: [
       {
         no: 1,
-        name: "Алманбет кызы Жаңыл",
-        role: "Head of the Academic Office",
-        email: "almanbetovajaku94@gmail.com",
-        phone: "0550 55 03 66",
+        name: "Abdigaparov Nurtilek Abdigaparovich",
+        role: "Head of the Academic Department",
+        email: "abdigaparov.nur93@gmail.com",
+        phone: "+996500727971",
       },
       {
         no: 2,
@@ -1292,20 +1293,10 @@ During the meeting, the guests presented reports on the concept “National Spir
         },
       },
       {
-        name: "Ybyrayakunova Nazira Kubanychbekovna",
+        name: "Moldoeva Torkunbubu Toktonalievna",
         post: "Chief Accountant",
-        image: bugalter,
-        additionalInfo: {
-          birthDatePlace: "March 9, 1976",
-          residence: "Tash-Debe village, Bolnichnaya Street, 65",
-          contact: "0555 820576, 0700 090576",
-          education:
-            "1993–1995 — Bishkek Financial and Economic Technical School. Specialty: Accounting, Control and Analysis of Economic Activity.\n2004–2008 — International Academy of Management, Law, Finance and Business. Specialty: Accounting, Analysis and Audit.",
-          workExperience:
-            "March 19, 1996 – October 28, 2000 — Cashier at the Republican Children’s Clinical Hospital.\nMay 2, 2001 – December 31, 2003 — Cashier at BADT.\nDecember 31, 2003 – March 17, 2014 — Acting Chief Accountant at BADT.\nMarch 17, 2014 – July 1, 2024 — Payroll Accountant at BADK.\nJuly 1, 2024 – February 14, 2025 — Accountant at Arashan Ayil Okmotu.\nSince February 17, 2025 — Chief Accountant of KNUKI named after B. Beishenalieva.",
-          professionalSkills: "Advanced PC user: MS Office (Word, Excel), Internet, 1C Accounting",
-          maritalStatus: "Married, two children",
-        },
+        image: graybg,
+        additionalInfo: {},
       },
       {
         name: "Ergeshova Kumarkan Tokoyevna",
@@ -1334,7 +1325,7 @@ During the meeting, the guests presented reports on the concept “National Spir
         },
       },
       {
-        name: "Surapbaeva Gulzada Raimjanovna",
+        name: "Samieva Shairgul Turatovna",
         post: "Head of the Library",
         image: libraryleader,
         additionalInfo: {},

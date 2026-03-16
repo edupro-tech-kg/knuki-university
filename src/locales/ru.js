@@ -8,6 +8,7 @@ import charbaProrector from "../assets/images/charbaProrector.jpg";
 import kadrlarbol from "../assets/images/kadrlarbol.jpg";
 import gulzadaAbd from "../assets/images/glzadaAbd.jpg";
 import bugalter from "../assets/images/bugalter.jpg";
+import graybg from "../assets/images/graybg.png";
 import magistraspirantur from "../assets/images/magistr&aspirntur.jpg";
 import musicdec from "../assets/images/musicdec.jpg";
 import sahnakaf from "../assets/images/sahnakaf.jpg";
@@ -104,10 +105,10 @@ export default {
     staff: [
       {
         no: 1,
-        name: "Алманбет кызы Жаңыл",
-        role: "Начальник учебной части",
-        email: "almanbetovajaku94@gmail.com",
-        phone: "0550 55 03 66",
+        name: "Абдигапаров Нуртилек Абдигапарович",
+        role: "Начальник учебного отдела",
+        email: "abdigaparov.nur93@gmail.com",
+        phone: "+996500727971",
       },
       {
         no: 2,
@@ -1345,21 +1346,10 @@ export default {
         },
       },
       {
-        name: "Ыбырайакунова Назира Кубанычбековна",
+        name: "Молдоева Торкунбубу Токтоналиевна",
         post: "Главный бухгалтер",
-        image: bugalter,
-        additionalInfo: {
-          birthDatePlace: "09.03.1976 г.",
-          residence: "с. Таш-Дебе, ул. Больничная, 65",
-          contact: "0555 820576, 0700 090576",
-          education:
-            "1993–1995 гг. — Бишкекский финансово-экономический техникум. Специальность: бухгалтерский учет, контроль и анализ хозяйственной деятельности.\n2004–2008 гг. — Международная академия управления, права, финансов и бизнеса. Специальность: бухгалтерский учет, анализ и аудит.",
-          workExperience:
-            "19.03.1996–28.10.2000 гг. — кассир Республиканской детской клинической больницы.\n02.05.2001–31.12.2003 гг. — кассир БАДТ.\n31.12.2003–17.03.2014 гг. — и.о. главного бухгалтера БАДТ.\n17.03.2014–01.07.2024 гг. — расчетный бухгалтер БАДК.\n01.07.2024–14.02.2025 гг. — бухгалтер Арашанского айыл окмоту.\nС 17.02.2025 года по настоящее время — главный бухгалтер КНУКИ им. Б. Бейшеналиевой.",
-          professionalSkills:
-            "Опытный пользователь ПК: MS Office (Word, Excel), Internet, 1С-Бухгалтерия",
-          maritalStatus: "Замужем, двое детей",
-        },
+        image: graybg,
+        additionalInfo: {},
       },
       {
         name: "Эргешова Кумаркан Токоевна",
@@ -1388,7 +1378,7 @@ export default {
         },
       },
       {
-        name: "Шайыргүл Самиева",
+        name: "Самиева Шаиргүл Туратовна",
         post: "Заведующая библиотекой",
         image: libraryleader,
         additionalInfo: {},
@@ -1439,14 +1429,14 @@ export default {
         },
       },
       {
-        name: "Орунбаева Наргиза Темирбековна ",
-        post: "Декан факультета хореографии и культурной деятельности",
+        name: "Орунбаева Наргиза Темирбековна",
+        post: "Декан факультета эстрадного и музыкального образования",
         image: musicDean,
         additionalInfo: {},
       },
       {
         name: "Бейшеналиева Мерим Искендеровна",
-        post: "Хореография жана маданий ишмердик факультетинин деканы",
+        post: "Декан факультета хореографии и культурной деятельности",
         image: choreographyDean,
         additionalInfo: {},
       },

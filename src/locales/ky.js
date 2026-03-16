@@ -8,6 +8,7 @@ import charbaProrector from "../assets/images/charbaProrector.jpg";
 import kadrlarbol from "../assets/images/kadrlarbol.jpg";
 import gulzadaAbd from "../assets/images/glzadaAbd.jpg";
 import bugalter from "../assets/images/bugalter.jpg";
+import graybg from "../assets/images/graybg.png";
 import magistraspirantur from "../assets/images/magistr&aspirntur.jpg";
 import musicdec from "../assets/images/musicdec.jpg";
 import sahnakaf from "../assets/images/sahnakaf.jpg";
@@ -103,10 +104,10 @@ export default {
     staff: [
       {
         no: 1,
-        name: "Алманбет кызы Жаңыл",
+        name: "Абдигапаров Нуртилек Абдигапарович",
         role: "Окуу бөлүмүнүн башчысы",
-        email: "snejina94@mail.ru",
-        phone: "0550 55 03 66",
+        email: "abdigaparov.nur93@gmail.com",
+        phone: "+996500727971",
       },
       {
         no: 2,
@@ -1303,21 +1304,10 @@ export default {
         },
       },
       {
-        name: "Ыбырайахунова Назира Кубанычбековна",
+        name: "Молдоева Төркүнбүбү Токтоналиевна",
         post: "Башкы эсепчи",
-        image: bugalter,
-        additionalInfo: {
-          birthDatePlace: "09.03.1976",
-          residence: "село Таш –Дебе ул. Больничная 65 ",
-          contact: "0555 820576,  0700 090576",
-          education:
-            "· 1993-1995гг. «Бишкекский финансово-экономический техникум». Специальность: Бухгалтерский учет контроль и анализ хозяйственной деятельности.\n· 2004-2008гг. «Международная академия управления, права, финансов и бизнеса». Специальность:  Бухгалтерский учет, анализ иаудит.",
-          workExperience:
-            "· с 19.03.1996г. по 28.10.2000г. - кассир республиканской детской клинической больнице.\n· с 02.05.2001г. по 31.12. 2003г.  -кассир БАДТ\n· с 31.12.2003г. по 17.03.2014г. -и.о. главногобухгалтера БАДТ\n· с 17.03.2014г. по 01.07.2024г. -расчетным бухгалтером БАДК\n. с 01.07.2024г.по 14.02.2025г. бухгалтером Арашанского айыл окмоту\n. с 17.02.2025г. по настоящее время работаюглавного бухгалтера КНУКИ им. Б.Бейшеналиева.",
-          professionalSkills:
-            "· Опытный пользователь ПК: MS Office: Word, Excel, Internet\n .1С-Бухгалтерия",
-          maritalStatus: "замужем, двое детей",
-        },
+        image: graybg,
+        additionalInfo: {},
       },
       {
         name: "Эргешова  Кумаркан Токоевна",
@@ -1345,7 +1335,7 @@ export default {
         },
       },
       {
-        name: "Шайыргүл Самиева",
+        name: "Самиева Шаиргүл Туратовна",
         post: "Китепкана башчысы",
         image: libraryleader,
         additionalInfo: {},
