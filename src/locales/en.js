@@ -1211,9 +1211,8 @@ During the meeting, the guests presented reports on the concept “National Spir
           birthDatePlace: "Aksy District, Jalal-Abad Region, May 25, 1978",
           residence: "Bishkek",
           email: "ulanbekturdaliev1978@gmail.com",
-          academicDegree:
-            "In 2003–2006, he completed the Institute of Pedagogy and Psychology at I. Arabaev KSU and defended a master’s thesis on aesthetic education of students through komuz kyuis during individual lessons in music departments of pedagogical universities. By decision of the State Attestation Commission dated January 26, 2006, he was awarded the academic degree of Master of Pedagogy.\n\nIn 2013, his approved research topic on pedagogical conditions for the aesthetic education of future music teachers through komuz kyuis was successfully defended on May 30, 2019, and on November 28, 2019, the Higher Attestation Commission of the Kyrgyz Republic confirmed the academic degree of Candidate of Pedagogical Sciences.",
-          academicTitle: "Candidate of Pedagogical Sciences",
+          academicDegree: "",
+          academicTitle: "",
           education: "Kyrgyz National University named after J. Balasagyn",
           workExperience:
             "2005–2006 — Lecturer and Deputy Dean of the Faculty of Kyrgyz Philology at Kyrgyz National University named after J. Balasagyn.\n2006–2008 — Head of the Youth and Student Self-Government Committee at KNU.\n2008–2009 — Deputy Vice-Rector for Youth and Social Policy at KNU.\n2010 (20.04–12.10.10) — Director of the Student Campus.\n2010–2021 — Deputy Director of the Institute for Targeted Teacher Training at KNU, Deputy Dean of the Pedagogical Faculty, Senior Lecturer.\n2022 (26.08–12.11) — Deputy Director of T. Ermatov Bishkek Music Pedagogical College for State Language and Educational Affairs.\n2022–2024 — Director of T. Ermatov Bishkek Music Pedagogical College.\n2024–2025 — Senior Lecturer at T. Ermatov Bishkek Music Pedagogical College.\nSince 2025 — Vice-Rector for State Language and Educational Affairs at KUMIU named after B. Beishenalieva.",
@@ -1390,7 +1389,23 @@ During the meeting, the guests presented reports on the concept “National Spir
         name: "Orunbaeva Nargiza Temirbekovna",
         post: "Dean of the Faculty of Pop Music and Musical Education",
         image: musicDean,
-        additionalInfo: {},
+        additionalInfo: {
+          birthDatePlace:
+            "October 19, 1987, Chat-Bazar village, Talas district, Talas region",
+          residence: "Bishkek",
+          email: "nargizaorunbaeva6@gmail.com",
+          academicDegree: "",
+          academicTitle: "",
+          education:
+            "Higher education.\n2011-2016 — B. Beishenalieva KMMIU.",
+          workExperience:
+            "2016-2023 — Music teacher at Secondary School No. 81 of the Pervomaisky district of Bishkek.\n2020-2024 — Postgraduate student at the Kyrgyz Academy of Education.\nSince 2020 — part-time lecturer at the Department of Music and Singing of B. Beishenalieva KMMIU.\nSince March 1, 2023 — full-time assistant to the head of department.\nSince March 1, 2025 — Head of the Department of Music Education.\nSince February 9, 2026 — Dean of the Faculty of Pop Music and Musical Education.",
+          courses:
+            "2019 — Republican Institute for Advanced Training and Retraining of Pedagogical Workers under the Ministry of Education and Science of the Kyrgyz Republic: “Theory and Methods of Teaching Music”.\n2024 — Republican Institute for Advanced Training and Retraining of Pedagogical Workers under the Ministry of Education and Science of the Kyrgyz Republic: “Competency-Based Approach in Higher Education”.\n2024 — B. Beishenalieva KMMIU: “Theory and Methods of Scientific Research”.\n2025 — Republican Institute for Advanced Training and Retraining of Pedagogical Workers under the Ministry of Education and Science of the Kyrgyz Republic: “Modern Technologies for Teaching Ethno-, Music-, and Neuro-Pedagogy in Higher Education Institutions”.",
+          publications: "",
+          awards:
+            "Certificates and a letter of appreciation from Secondary School No. 81 of the Pervomaisky district.\nHonorary Certificate of the Bishkek City Mayor’s Office Department of Culture in the “Best Teacher of the Year - 2019” competition.\n2020 — Honorary Certificate of the municipal administration of the Pervomaisky administrative district.\nHonorary Certificate of the Bishkek City Kenesh.\nJune 17, 2025 — Honorary Certificate of the Bishkek City Kenesh.",
+        },
       },
       {
         name: "Merim Iskenderovna Beishenalieva",
