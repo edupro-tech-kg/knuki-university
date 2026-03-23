@@ -6,7 +6,11 @@ function formatIsoDate(isoDate, language) {
   if (!isoDate) return "";
   const date = new Date(`${isoDate}T00:00:00`);
   if (Number.isNaN(date.getTime())) return "";
-  return new Intl.DateTimeFormat(language, { year: "numeric", month: "long", day: "numeric" }).format(date);
+  return new Intl.DateTimeFormat(language, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
 }
 
 export default function LastNews({ items: overrideItems, selectedDate, onClearFilter }) {
@@ -27,13 +31,18 @@ export default function LastNews({ items: overrideItems, selectedDate, onClearFi
       }))
       .filter((it) => it.title);
 
-    list.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+    list.sort((a, b) => {
+      // Prioritize nooruz news to be first
+      if (a.id === "nooruz") return -1;
+      if (b.id === "nooruz") return 1;
+
+      // Then sort by date
+      return a.date < b.date ? 1 : a.date > b.date ? -1 : 0;
+    });
     return list;
   }, [items]);
 
-  const filtered = selectedDate
-    ? normalized.filter((it) => it.date === selectedDate)
-    : normalized;
+  const filtered = selectedDate ? normalized.filter((it) => it.date === selectedDate) : normalized;
 
   return (
     <div className="font-sans text-[#1f1f1f]">

@@ -11,12 +11,14 @@ import myktyRegisser from "../assets/images/news/mykty-regisser.jpg";
 import knukiAlatoo from "../assets/images/news/knuki-alatoo.jpg";
 import subbotnik from "../assets/images/news/subbotnik.jpg";
 import uluttukDem from "../assets/images/news/uluttuk-dem.jpg";
+import nooruz from "../assets/images/news/nooruz.jpg";
 
 const IMAGE_MAP = {
   "knuki-alatoo": knukiAlatoo,
   subbotnik,
   "mykty-regisser": myktyRegisser,
   "uluttuk-dem": uluttukDem,
+  nooruz,
   makam,
   students: grand1,
   building: construction1,
@@ -30,9 +32,23 @@ export default function NewsList() {
   const navigate = useNavigate();
   const items = t("news.items", { returnObjects: true }) || [];
 
+  const prioritizedItems = useMemo(() => {
+    const itemsList = Array.isArray(items) ? [...items] : [];
+    return itemsList.sort((left, right) => {
+      // Prioritize nooruz news to be first
+      if (left?.id === "nooruz") return -1;
+      if (right?.id === "nooruz") return 1;
+
+      // Then sort by date
+      const leftTime = left?.date ? new Date(left.date).getTime() : 0;
+      const rightTime = right?.date ? new Date(right.date).getTime() : 0;
+      return rightTime - leftTime;
+    });
+  }, [items]);
+
   const cards = useMemo(
     () =>
-      items.map((item, idx) => {
+      prioritizedItems.map((item, idx) => {
         const slug = item?.id ?? idx + 1;
         const mapped = item?.id && IMAGE_MAP[item.id];
         const fallback = Object.values(IMAGE_MAP)[idx % Object.values(IMAGE_MAP).length];
@@ -43,7 +59,7 @@ export default function NewsList() {
           buttonText: item?.buttonText || t("news.readMore", { defaultValue: t("news.title") }),
         };
       }),
-    [items, t]
+    [prioritizedItems, t]
   );
 
   return (

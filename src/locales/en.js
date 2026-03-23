@@ -558,9 +558,14 @@ export default {
         id: "uluttuk-dem",
         date: "2026-03-12",
         title: "NATIONAL SPIRIT - GLOBAL HEIGHTS",
-        buttonText: "more",
+        buttonText: "Read more",
       },
-      
+      {
+        id: "nooruz",
+        date: "2026-03-19",
+        title: "NOORUZ HOLIDAY CELEBRATED AT KNUKI",
+        buttonText: "Read more",
+      },
       {
         id: "gym",
         date: "2025-09-17",
@@ -588,7 +593,8 @@ export default {
       {
         id: "accreditation",
         date: "2025-04-03",
-        title: "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
+        title:
+          "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
         buttonText: "more",
       },
       {
@@ -799,9 +805,24 @@ During the meeting, the guests presented reports on the concept “National Spir
       },
       {
         id: "accreditation",
-        title: "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
-        content: "The Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva successfully completed programmatic accreditation in 14 specialties, as well as institutional accreditation.Based on preliminary results, the educational institution was recommended to carry out educational activities for a period of 5 years in institutional and programmatic areas.Experts particularly noted that in Kyrgyzstan, the 24.00.01 - Theory and History of Culture and 17.00.02 - Musical Arts programs were accredited at the postgraduate level for the first time.We express our sincere gratitude to the Independent Institute of Accreditation, Rating and Certification, the staff who worked 24/7, vice-rectors, heads of departments, deans, heads of departments,and also to the faculty for their significant contribution to the university's successful accreditation! Every achievement of the educational institution is the result of the coordinated work of the administration, the faculty, and, of course, our greatest asset—talented students!Art begins with us!"
-      }
+        title:
+          "KNUKI SUCCESSFULLY PASSED PROGRAM AND INSTITUTIONAL ACCREDITATION IN 14 SPECIALTIES",
+        content:
+          "The Kyrgyz National University of Culture and Arts named after Bubusara Beishenalieva successfully completed programmatic accreditation in 14 specialties, as well as institutional accreditation.Based on preliminary results, the educational institution was recommended to carry out educational activities for a period of 5 years in institutional and programmatic areas.Experts particularly noted that in Kyrgyzstan, the 24.00.01 - Theory and History of Culture and 17.00.02 - Musical Arts programs were accredited at the postgraduate level for the first time.We express our sincere gratitude to the Independent Institute of Accreditation, Rating and Certification, the staff who worked 24/7, vice-rectors, heads of departments, deans, heads of departments,and also to the faculty for their significant contribution to the university's successful accreditation! Every achievement of the educational institution is the result of the coordinated work of the administration, the faculty, and, of course, our greatest asset—talented students!Art begins with us!",
+      },
+      {
+        id: "nooruz",
+        title: "NOORUZ HOLIDAY CELEBRATED AT KNUKI",
+        content: `Today, on March 19, the Nooruz holiday was celebrated at KNUKI named after B. Beishenalieva.
+
+The event was attended by KNUKI Rector Tumonbay Koldoshov, faculty members, and students.
+
+The solemn event dedicated to the Nooruz holiday was accompanied by a concert program, and an inter-faculty competition of national dishes was held. In the competition, the Faculty of Pop Music and Music Education took 1st place, the Faculty of Folk Music took 2nd place, and the Theater Faculty took 3rd place.
+
+Additionally, a team volleyball game was held between faculties.
+
+The event was organized by the Faculty of Choreography and Cultural Activities.`,
+      },
     ],
   },
   studentStructure: {
@@ -1292,8 +1313,7 @@ During the meeting, the guests presented reports on the concept “National Spir
           academicTitle: "",
           education:
             "2016 — Osh State University, Faculty of Arts, Music Teacher.\n2021 — Kyrgyz National Conservatory named after K. Moldobasanov, Opera, concert and chamber singer, teacher.\nSince 2024 — 1st-year postgraduate student in specialty 17.00.02 “Musical Art” at the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.",
-          workExperience:
-            "Dean of the Faculty of Folk Music.\nHead of the Academic Department.",
+          workExperience: "Dean of the Faculty of Folk Music.\nHead of the Academic Department.",
           publications: "",
           awards: "",
         },
@@ -1362,8 +1382,7 @@ During the meeting, the guests presented reports on the concept “National Spir
             "2010–2015 — Acting Arts program, specialty “Drama Actor”. Faculty of Theatre, Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek.\n2022 — Manager (Socio-Cultural Activities and Pedagogy). Faculty of Theatre, Kyrgyz University of Culture and Arts named after B. Beishenalieva, Bishkek.",
           workExperience:
             "2015–2016 — Actor at the Barpy Regional Drama Theatre in Jalal-Abad.\n2016 — First-category director at the Jalal-Abad Regional State TV and Radio Company and senior editor.\n2016–2017 — Chief administrator of the Chui Regional Theatre named after Sharshen Termechikov.\n2017–2018 — Chief specialist at the Regional Development Department of the National Cultural Center under the Ministry of Culture, Information and Tourism.\n2018–2019 — ATS specialist at the Toktobolot Abdumomunov Kyrgyz Academic Drama Theatre.\n2019–2021 — Deputy director for academic and production work at the Murataly Kurenkeev Kyrgyz State Music School.\n2021–2023 — Lecturer at the Murataly Kurenkeev Kyrgyz State Music School.\n2023–2025 — Head of the Department of Directing and Acting Skills at the Kyrgyz National University of Culture and Arts named after B. Beishenalieva.\nSince September 2025 — Dean of the Faculty of Theatre.",
-          publications:
-            "Author of the books “Jan Duyno Syrlary” and “Ochposun Omur Jarygy”.",
+          publications: "Author of the books “Jan Duyno Syrlary” and “Ochposun Omur Jarygy”.",
           awards: "Honored Cultural Worker",
         },
       },
@@ -1390,14 +1409,12 @@ During the meeting, the guests presented reports on the concept “National Spir
         post: "Dean of the Faculty of Pop Music and Musical Education",
         image: musicDean,
         additionalInfo: {
-          birthDatePlace:
-            "October 19, 1987, Chat-Bazar village, Talas district, Talas region",
+          birthDatePlace: "October 19, 1987, Chat-Bazar village, Talas district, Talas region",
           residence: "Bishkek",
           email: "nargizaorunbaeva6@gmail.com",
           academicDegree: "",
           academicTitle: "",
-          education:
-            "Higher education.\n2011-2016 — B. Beishenalieva KMMIU.",
+          education: "Higher education.\n2011-2016 — B. Beishenalieva KMMIU.",
           workExperience:
             "2016-2023 — Music teacher at Secondary School No. 81 of the Pervomaisky district of Bishkek.\n2020-2024 — Postgraduate student at the Kyrgyz Academy of Education.\nSince 2020 — part-time lecturer at the Department of Music and Singing of B. Beishenalieva KMMIU.\nSince March 1, 2023 — full-time assistant to the head of department.\nSince March 1, 2025 — Head of the Department of Music Education.\nSince February 9, 2026 — Dean of the Faculty of Pop Music and Musical Education.",
           courses:
