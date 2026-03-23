@@ -59,6 +59,11 @@ import uluttukDem1 from "../assets/images/news/uluttuk-dem_1.jpg";
 import uluttukDem2 from "../assets/images/news/uluttuk-dem_2.jpg";
 import uluttukDem3 from "../assets/images/news/uluttuk-dem_3.jpg";
 import uluttukDem4 from "../assets/images/news/uluttuk-dem_4.jpg";
+import nooruz from "../assets/images/news/nooruz.jpg";
+import nooruz1 from "../assets/images/news/nooruz_1.jpg";
+import nooruz2 from "../assets/images/news/nooruz_2.jpg";
+import nooruz3 from "../assets/images/news/nooruz_3.jpg";
+import nooruz4 from "../assets/images/news/nooruz_4.jpg";
 
 export default function NewsPage() {
   const { id } = useParams();
@@ -68,27 +73,11 @@ export default function NewsPage() {
   const newsPage = t("newsPage", { returnObjects: true }) || {};
 
   const NEWS_IMAGES = {
-    "knuki-alatoo": [
-      knukiAlatoo,
-      knukiAlatoo1,
-      knukiAlatoo2,
-      knukiAlatoo3,
-      knukiAlatoo4,
-    ],
+    "knuki-alatoo": [knukiAlatoo, knukiAlatoo1, knukiAlatoo2, knukiAlatoo3, knukiAlatoo4],
     subbotnik: [subbotnik, subbotnik1, subbotnik2, subbotnik3, subbotnik4],
-    "mykty-regisser": [
-      myktyRegisser,
-      myktyRegisser1,
-      myktyRegisser2,
-      myktyRegisser3,
-    ],
-    "uluttuk-dem": [
-      uluttukDem,
-      uluttukDem1,
-      uluttukDem2,
-      uluttukDem3,
-      uluttukDem4,
-    ],
+    "mykty-regisser": [myktyRegisser, myktyRegisser1, myktyRegisser2, myktyRegisser3],
+    "uluttuk-dem": [uluttukDem, uluttukDem1, uluttukDem2, uluttukDem3, uluttukDem4],
+    nooruz: [nooruz, nooruz1, nooruz2, nooruz3, nooruz4],
     makam: [makam],
     students: [grand1, grand2],
     gym: [newGym, newGym1, newGym2, newGym3, newGym4],
@@ -109,7 +98,6 @@ export default function NewsPage() {
       accreditation12,
       accreditation13,
     ],
-
   };
   const idNum = parseInt(id, 10);
 

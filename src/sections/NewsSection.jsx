@@ -20,6 +20,7 @@ import knukiAlatoo from "../../src/assets/images/news/knuki-alatoo.jpg";
 import myktyRegisser from "../../src/assets/images/news/mykty-regisser.jpg";
 import subbotnik from "../../src/assets/images/news/subbotnik.jpg";
 import uluttukDem from "../../src/assets/images/news/uluttuk-dem.jpg";
+import nooruz from "../../src/assets/images/news/nooruz.jpg";
 
 export default function NewsSectionInfinite() {
   const { t, i18n } = useTranslation();
@@ -42,6 +43,7 @@ export default function NewsSectionInfinite() {
       subbotnik,
       "mykty-regisser": myktyRegisser,
       "uluttuk-dem": uluttukDem,
+      nooruz,
       gym: newGym,
       building: construction1,
       students: grand1,
@@ -55,6 +57,11 @@ export default function NewsSectionInfinite() {
   const prioritizedNewsItems = useMemo(() => {
     const items = Array.isArray(newsItems) ? [...newsItems] : [];
     return items.sort((left, right) => {
+      // Prioritize nooruz news to be first
+      if (left?.id === "nooruz") return -1;
+      if (right?.id === "nooruz") return 1;
+
+      // Then sort by date
       const leftTime = left?.date ? new Date(left.date).getTime() : 0;
       const rightTime = right?.date ? new Date(right.date).getTime() : 0;
       return rightTime - leftTime;
@@ -88,9 +95,7 @@ export default function NewsSectionInfinite() {
 
   const initialSlideIndex = slidesData.length > 0 ? slidesData.length * 2 : 0;
 
-  const [activeSlideIndex, setActiveSlideIndex] = useState(
-    initialSlideIndex
-  );
+  const [activeSlideIndex, setActiveSlideIndex] = useState(initialSlideIndex);
 
   useEffect(() => {
     const updatedSlides = createInfiniteSlides();
@@ -110,7 +115,7 @@ export default function NewsSectionInfinite() {
     if (isLoading || !hasMore) return;
     setIsLoading(true);
     try {
-      await new Promise(resolve => setTimeout(resolve, 300));
+      await new Promise((resolve) => setTimeout(resolve, 300));
       const newSlides = [];
       const currentLength = slides.length;
       for (let i = 0; i < 10; i++) {
@@ -119,7 +124,7 @@ export default function NewsSectionInfinite() {
         const originalSlide = slidesData[originalIndex];
         newSlides.push({ ...originalSlide, id: globalIndex + 1 });
       }
-      setSlides(prev => [...prev, ...newSlides]);
+      setSlides((prev) => [...prev, ...newSlides]);
       if (swiperInstance) {
         swiperInstance.update();
         swiperInstance.virtual.update();
@@ -133,7 +138,7 @@ export default function NewsSectionInfinite() {
   }, [slides.length, isLoading, hasMore, swiperInstance, slidesData]);
 
   const handleSlideChange = useCallback(
-    swiper => {
+    (swiper) => {
       const realIndex = swiper.activeIndex;
       setActiveSlideIndex(realIndex);
       if (realIndex >= slides.length - 6 && hasMore && !isLoading) loadMoreSlides();
@@ -169,7 +174,13 @@ export default function NewsSectionInfinite() {
             onSwiper={setSwiperInstance}
             modules={[EffectCoverflow, Navigation, Virtual]}
             className="w-full pb-16"
-            coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 2, slideShadows: false }}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2,
+              slideShadows: false,
+            }}
             navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
             breakpoints={{
               320: { spaceBetween: 20, coverflowEffect: { depth: 50 } },
@@ -179,13 +190,17 @@ export default function NewsSectionInfinite() {
             virtual={{ enabled: true, addSlidesBefore: 2, addSlidesAfter: 2 }}
           >
             {slides.map((slide, index) => (
-              <SwiperSlide key={slide.id} virtualIndex={index} className="!h-72 md:!w-72 md:!h-96 lg:!w-80 lg:!h-[28rem]">
+              <SwiperSlide
+                key={slide.id}
+                virtualIndex={index}
+                className="!h-72 md:!w-72 md:!h-96 lg:!w-80 lg:!h-[28rem]"
+              >
                 <div
                   className={`relative w-full h-full rounded-xl overflow-hidden shadow-xl transition-transform duration-500 ease-out ${index === activeSlideIndex ? "scale-100" : "scale-95"}`}
                   role="button"
                   tabIndex={0}
                   onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}
-                  onKeyDown={e => {
+                  onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
                       navigate(`/news/${slide.slug ?? slide.id}`);
@@ -202,10 +217,14 @@ export default function NewsSectionInfinite() {
                   {index === activeSlideIndex && (
                     <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6 text-white">
                       <div className="text-center mb-4">
-                        <h4 className="text-lg md:text-xl font-bold mb-2 line-clamp-2 drop-shadow">{slide.title}</h4>
+                        <h4 className="text-lg md:text-xl font-bold mb-2 line-clamp-2 drop-shadow">
+                          {slide.title}
+                        </h4>
                       </div>
                       <div className="flex justify-center">
-                        <ButtonPrimary onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}>{slide.buttonText}</ButtonPrimary>
+                        <ButtonPrimary onClick={() => navigate(`/news/${slide.slug ?? slide.id}`)}>
+                          {slide.buttonText}
+                        </ButtonPrimary>
                       </div>
                     </div>
                   )}
@@ -214,10 +233,16 @@ export default function NewsSectionInfinite() {
             ))}
           </Swiper>
           <div className="hidden absolute py-3 left-1/2 transform -translate-x-1/2 md:flex items-center gap-4 z-10">
-            <button ref={prevRef} className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 px-5 md:px-4">
+            <button
+              ref={prevRef}
+              className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 px-5 md:px-4"
+            >
               <FaArrowLeftLong className="w-6 h-6 md:w-14" />
             </button>
-            <button ref={nextRef} className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 px-5 md:px-4">
+            <button
+              ref={nextRef}
+              className="bg-transparent hover:bg-white/20 text-gray-700 h-10 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border border-gray-300 px-5 md:px-4"
+            >
               <FaArrowRightLong className="w-6 h-6 md:w-14" />
             </button>
           </div>
