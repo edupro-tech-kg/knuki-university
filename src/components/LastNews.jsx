@@ -32,7 +32,11 @@ export default function LastNews({ items: overrideItems, selectedDate, onClearFi
       .filter((it) => it.title);
 
     list.sort((a, b) => {
-      // Prioritize nooruz news to be first
+      // Prioritize uzbek-rel news to be first (latest)
+      if (a.id === "uzbek-rel") return -1;
+      if (b.id === "uzbek-rel") return 1;
+
+      // Then prioritize nooruz news to be second
       if (a.id === "nooruz") return -1;
       if (b.id === "nooruz") return 1;
 

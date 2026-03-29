@@ -64,6 +64,11 @@ import nooruz1 from "../assets/images/news/nooruz_1.jpg";
 import nooruz2 from "../assets/images/news/nooruz_2.jpg";
 import nooruz3 from "../assets/images/news/nooruz_3.jpg";
 import nooruz4 from "../assets/images/news/nooruz_4.jpg";
+import uzbekRel from "../assets/images/news/uzbek-rel.jpg";
+import uzbekRel1 from "../assets/images/news/uzbek-rel_1.jpg";
+import uzbekRel2 from "../assets/images/news/uzbek-rel_2.jpg";
+import uzbekRel3 from "../assets/images/news/uzbek-rel_3.jpg";
+import uzbekRel4 from "../assets/images/news/uzbek-rel_4.jpg";
 
 export default function NewsPage() {
   const { id } = useParams();
@@ -78,6 +83,7 @@ export default function NewsPage() {
     "mykty-regisser": [myktyRegisser, myktyRegisser1, myktyRegisser2, myktyRegisser3],
     "uluttuk-dem": [uluttukDem, uluttukDem1, uluttukDem2, uluttukDem3, uluttukDem4],
     nooruz: [nooruz, nooruz1, nooruz2, nooruz3, nooruz4],
+    "uzbek-rel": [uzbekRel, uzbekRel1, uzbekRel2, uzbekRel3, uzbekRel4],
     makam: [makam],
     students: [grand1, grand2],
     gym: [newGym, newGym1, newGym2, newGym3, newGym4],
@@ -151,7 +157,7 @@ export default function NewsPage() {
             >
               {images.map((img, i) => (
                 <SwiperSlide key={i}>
-                  <div className="relative w-full h-[240px] md:h-[340px] lg:h-[420px] overflow-hidden bg-gray-100">
+                  <div className="relative w-full h-[260px] md:h-[360px] lg:h-[440px] overflow-hidden bg-gray-100">
                     <img
                       src={img}
                       alt={title || `News image ${i + 1}`}
@@ -163,7 +169,7 @@ export default function NewsPage() {
               ))}
             </Swiper>
           ) : (
-            <div className="relative w-full h-[240px] md:h-[340px] lg:h-[420px] overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 text-gray-500 text-sm flex items-center justify-center">
+            <div className="relative w-full h-[260px] md:h-[360px] lg:h-[440px] overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 text-gray-500 text-sm flex items-center justify-center">
               <div className="absolute inset-0 flex items-center justify-center">
                 {t("news.title")}
               </div>
