@@ -12,6 +12,7 @@ import knukiAlatoo from "../assets/images/news/knuki-alatoo.jpg";
 import subbotnik from "../assets/images/news/subbotnik.jpg";
 import uluttukDem from "../assets/images/news/uluttuk-dem.jpg";
 import nooruz from "../assets/images/news/nooruz.jpg";
+import uzbekRel from "../assets/images/news/uzbek-rel.jpg";
 
 const IMAGE_MAP = {
   "knuki-alatoo": knukiAlatoo,
@@ -19,6 +20,7 @@ const IMAGE_MAP = {
   "mykty-regisser": myktyRegisser,
   "uluttuk-dem": uluttukDem,
   nooruz,
+  "uzbek-rel": uzbekRel,
   makam,
   students: grand1,
   building: construction1,
@@ -35,7 +37,11 @@ export default function NewsList() {
   const prioritizedItems = useMemo(() => {
     const itemsList = Array.isArray(items) ? [...items] : [];
     return itemsList.sort((left, right) => {
-      // Prioritize nooruz news to be first
+      // Prioritize uzbek-rel news to be first (latest)
+      if (left?.id === "uzbek-rel") return -1;
+      if (right?.id === "uzbek-rel") return 1;
+
+      // Then prioritize nooruz news to be second
       if (left?.id === "nooruz") return -1;
       if (right?.id === "nooruz") return 1;
 

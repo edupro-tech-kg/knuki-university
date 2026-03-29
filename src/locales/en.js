@@ -567,6 +567,12 @@ export default {
         buttonText: "Read more",
       },
       {
+        id: "uzbek-rel",
+        date: "2026-03-30",
+        title: "KNUKI EXPANDS SCIENTIFIC COOPERATION WITH UZBEKISTAN",
+        buttonText: "Read more",
+      },
+      {
         id: "gym",
         date: "2025-09-17",
         title: " NEW SPORTS HALL COMMISSIONED AT KNUCA",
@@ -822,6 +828,17 @@ The solemn event dedicated to the Nooruz holiday was accompanied by a concert pr
 Additionally, a team volleyball game was held between faculties.
 
 The event was organized by the Faculty of Choreography and Cultural Activities.`,
+      },
+      {
+        id: "uzbek-rel",
+        title: "KNUKI EXPANDS SCIENTIFIC COOPERATION WITH UZBEKISTAN",
+        content: `During a visit, the Kyrgyz delegation led by Rector Tumonbay Koldoshov and People's Writer of Kyrgyzstan, Candidate of Cultural Sciences, Associate Professor Zhanys Kulmambetov, discussed prospects for bilateral cooperation in art studies and cultural studies with the leadership of the Uzbekistan Academy of Sciences' Institute of Art Studies. Special attention was paid to attracting scientific supervisors from Uzbekistan for KNUKI's master's and doctoral students.
+
+The delegation also visited the Uzbek National Institute of Traditional Music named after Yunus Rajabiy, where a meeting was held with Rector Eldar Shermanov Uralovich, teachers, and students of the educational institution.
+
+It should be noted that KNUKI had previously concluded cooperation agreements with several scientific institutions of Uzbekistan. Within the framework of existing agreements, the parties discussed the participation of KNUKI's Department of Traditional Music and Folklore teachers and students in the International Forum of Traditional Music, which will be held in May of this year in Uzbekistan.
+
+The issue of providing qualified scientific supervisors for master's and doctoral students remains relevant for the university. Due to the limited number of specialists in art studies and cultural theory in Kyrgyzstan, KNUKI is consistently developing international cooperation with scientific centers of Kazakhstan and Uzbekistan.`,
       },
     ],
   },

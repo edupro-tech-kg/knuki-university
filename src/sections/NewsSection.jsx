@@ -21,6 +21,7 @@ import myktyRegisser from "../../src/assets/images/news/mykty-regisser.jpg";
 import subbotnik from "../../src/assets/images/news/subbotnik.jpg";
 import uluttukDem from "../../src/assets/images/news/uluttuk-dem.jpg";
 import nooruz from "../../src/assets/images/news/nooruz.jpg";
+import uzbekRel from "../../src/assets/images/news/uzbek-rel.jpg";
 
 export default function NewsSectionInfinite() {
   const { t, i18n } = useTranslation();
@@ -44,6 +45,7 @@ export default function NewsSectionInfinite() {
       "mykty-regisser": myktyRegisser,
       "uluttuk-dem": uluttukDem,
       nooruz,
+      "uzbek-rel": uzbekRel,
       gym: newGym,
       building: construction1,
       students: grand1,
@@ -57,7 +59,11 @@ export default function NewsSectionInfinite() {
   const prioritizedNewsItems = useMemo(() => {
     const items = Array.isArray(newsItems) ? [...newsItems] : [];
     return items.sort((left, right) => {
-      // Prioritize nooruz news to be first
+      // Prioritize uzbek-rel news to be first (latest)
+      if (left?.id === "uzbek-rel") return -1;
+      if (right?.id === "uzbek-rel") return 1;
+
+      // Then prioritize nooruz news to be second
       if (left?.id === "nooruz") return -1;
       if (right?.id === "nooruz") return 1;
 

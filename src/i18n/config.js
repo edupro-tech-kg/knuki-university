@@ -8,11 +8,19 @@ const resources = {
   ky: { translation: translations.ky },
 };
 
+// Get saved language from localStorage or use default
+const getSavedLanguage = () => {
+  if (typeof window !== "undefined") {
+    return localStorage.getItem("preferred-language") || defaultLocale;
+  }
+  return defaultLocale;
+};
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: defaultLocale,
+    lng: getSavedLanguage(),
     fallbackLng: "ky",
     interpolation: { escapeValue: false },
     returnObjects: true,
