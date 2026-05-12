@@ -54,10 +54,6 @@ const FacultyBox = ({ text, isBold = false }) => (
 export default function UniversityStructureChart() {
   const { t } = useTranslation();
   const content = t("managementStructure", { returnObjects: true, defaultValue: null });
-  if (!content?.nodes) return null;
-
-  const titleLines = Array.isArray(content.titleLines) ? content.titleLines : [];
-  const n = content.nodes;
   const rightBusGapPx = 56;
   const rightBusContainerRef = useRef(null);
   const tradeUnionRef = useRef(null);
@@ -94,6 +90,11 @@ export default function UniversityStructureChart() {
 
     return () => observers.forEach((fn) => fn());
   }, []);
+
+  if (!content?.nodes) return null;
+
+  const titleLines = Array.isArray(content.titleLines) ? content.titleLines : [];
+  const n = content.nodes;
 
   return (
     <div className="mt-10 flex justify-center px-3 sm:px-4 lg:px-8">
@@ -147,92 +148,92 @@ export default function UniversityStructureChart() {
 
             {/* 6 columns + right bus */}
             <div className="grid grid-cols-[1fr_1fr_1fr_1.05fr_0.9fr_0.9fr] gap-x-4 pt-6">
-            {/* Column 1: Academic */}
-            <div className="flex flex-col items-center gap-4">
-              <HeaderBox text={n.prorectorAcademic} />
-              <Arrow />
-              <ItemBox text={n.educationalDepartment} />
-              <Arrow />
-              <ItemBox text={n.eBilim} />
-              <Arrow />
-              <ItemBox text={n.practiceCareerDepartment} />
-              <Arrow />
-              <ItemBox text={n.qualificationCenter} />
-            </div>
-
-            {/* Column 2: Science */}
-            <div className="flex flex-col items-center gap-4">
-              <HeaderBox text={n.prorectorScienceIntl} />
-              <Arrow />
-              <ItemBox text={n.magistracyPostgraduate} />
-              <Arrow />
-              <ItemBox text={n.library} />
-              <Arrow />
-              <ItemBox text={n.internationalRelations} />
-
-              {/* Horizontal connector to educational support staff (offset box + clean line like the reference) */}
-              <div className="relative mt-4 w-full">
-                <div className="absolute left-0 top-1/2 h-px w-8 -translate-y-1/2 bg-black" />
-                <ItemBox
-                  text={n.educationalSupportStaff}
-                  className="ml-8 flex min-h-[56px] items-center justify-center rounded-[22px] p-2"
-                />
+              {/* Column 1: Academic */}
+              <div className="flex flex-col items-center gap-4">
+                <HeaderBox text={n.prorectorAcademic} />
+                <Arrow />
+                <ItemBox text={n.educationalDepartment} />
+                <Arrow />
+                <ItemBox text={n.eBilim} />
+                <Arrow />
+                <ItemBox text={n.practiceCareerDepartment} />
+                <Arrow />
+                <ItemBox text={n.qualificationCenter} />
               </div>
-            </div>
 
-            {/* Column 3: State language / student */}
-            <div className="flex flex-col items-center gap-4">
-              <HeaderBox text={n.prorectorStateLanguageEducation} />
-              <Arrow />
-              <ItemBox text={n.studentCouncil} />
-              <Arrow />
-              <ItemBox text={n.dormitory} />
-              <Arrow />
-              <ItemBox text={n.press} />
-            </div>
+              {/* Column 2: Science */}
+              <div className="flex flex-col items-center gap-4">
+                <HeaderBox text={n.prorectorScienceIntl} />
+                <Arrow />
+                <ItemBox text={n.magistracyPostgraduate} />
+                <Arrow />
+                <ItemBox text={n.library} />
+                <Arrow />
+                <ItemBox text={n.internationalRelations} />
 
-            {/* Column 4: Administrative / economic */}
-            <div className="flex flex-col items-center gap-4">
-              <HeaderBox text={n.prorectorAdministrative} />
-              <Arrow />
-              <ItemBox text={n.juniorServiceStaff} />
-              <Arrow />
-              <TallItemBox text={n.technicalServiceStaff} />
-              <Arrow />
-              <ItemBox text={n.civilDefense} />
-            </div>
-
-            {/* Column 5: HR / inspector */}
-            <div className="flex flex-col items-center gap-4 pt-4">
-              <ItemBox text={n.hrDepartment} />
-              <Arrow />
-              <ItemBox text={n.leadInspector} />
-              <Arrow />
-              <ItemBox text={n.lawyer} />
-              <Arrow />
-              <ItemBox text={n.archive} />
-            </div>
-
-            {/* Column 6: Right side chain + bus line (improved: connectors are tied to each box, not % offsets) */}
-            <div ref={rightBusContainerRef} className="relative pt-4 pr-[56px]">
-              {/* Right bus line should end at the last connected item (trade union). */}
-              <div
-                className="absolute -top-6 right-0 w-px bg-black"
-                style={{ bottom: `${rightBusBottomPx}px` }}
-              />
-
-              <div className="flex flex-col items-center gap-6">
-                <BusConnectedItem text={n.academicSecretary} busGapPx={rightBusGapPx} />
-                <BusConnectedItem text={n.accounting} busGapPx={rightBusGapPx} />
-                <BusConnectedItem text={n.recordsOfficer} busGapPx={rightBusGapPx} />
-                <div className="h-6" />
-                <BusConnectedItem
-                  text={n.tradeUnion}
-                  busGapPx={rightBusGapPx}
-                  wrapperRef={tradeUnionRef}
-                />
+                {/* Horizontal connector to educational support staff (offset box + clean line like the reference) */}
+                <div className="relative mt-4 w-full">
+                  <div className="absolute left-0 top-1/2 h-px w-8 -translate-y-1/2 bg-black" />
+                  <ItemBox
+                    text={n.educationalSupportStaff}
+                    className="ml-8 flex min-h-[56px] items-center justify-center rounded-[22px] p-2"
+                  />
+                </div>
               </div>
-            </div>
+
+              {/* Column 3: State language / student */}
+              <div className="flex flex-col items-center gap-4">
+                <HeaderBox text={n.prorectorStateLanguageEducation} />
+                <Arrow />
+                <ItemBox text={n.studentCouncil} />
+                <Arrow />
+                <ItemBox text={n.dormitory} />
+                <Arrow />
+                <ItemBox text={n.press} />
+              </div>
+
+              {/* Column 4: Administrative / economic */}
+              <div className="flex flex-col items-center gap-4">
+                <HeaderBox text={n.prorectorAdministrative} />
+                <Arrow />
+                <ItemBox text={n.juniorServiceStaff} />
+                <Arrow />
+                <TallItemBox text={n.technicalServiceStaff} />
+                <Arrow />
+                <ItemBox text={n.civilDefense} />
+              </div>
+
+              {/* Column 5: HR / inspector */}
+              <div className="flex flex-col items-center gap-4 pt-4">
+                <ItemBox text={n.hrDepartment} />
+                <Arrow />
+                <ItemBox text={n.leadInspector} />
+                <Arrow />
+                <ItemBox text={n.lawyer} />
+                <Arrow />
+                <ItemBox text={n.archive} />
+              </div>
+
+              {/* Column 6: Right side chain + bus line (improved: connectors are tied to each box, not % offsets) */}
+              <div ref={rightBusContainerRef} className="relative pt-4 pr-[56px]">
+                {/* Right bus line should end at the last connected item (trade union). */}
+                <div
+                  className="absolute -top-6 right-0 w-px bg-black"
+                  style={{ bottom: `${rightBusBottomPx}px` }}
+                />
+
+                <div className="flex flex-col items-center gap-6">
+                  <BusConnectedItem text={n.academicSecretary} busGapPx={rightBusGapPx} />
+                  <BusConnectedItem text={n.accounting} busGapPx={rightBusGapPx} />
+                  <BusConnectedItem text={n.recordsOfficer} busGapPx={rightBusGapPx} />
+                  <div className="h-6" />
+                  <BusConnectedItem
+                    text={n.tradeUnion}
+                    busGapPx={rightBusGapPx}
+                    wrapperRef={tradeUnionRef}
+                  />
+                </div>
+              </div>
             </div>
           </div>
 

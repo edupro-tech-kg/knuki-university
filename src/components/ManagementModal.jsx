@@ -122,13 +122,11 @@ function ManagementModal({ isOpen, onClose, person }) {
         </button>
 
         <div className="bg-white rounded-lg w-full max-h-[90vh] md:max-h-[85vh] flex flex-col md:flex-row overflow-hidden shadow-2xl">
-          
           <div className="md:hidden w-full flex flex-col flex-1 min-h-0">
             <div className="w-full flex-shrink-0">
-             
               <div className="w-1/3 mt-4 mx-auto aspect-[3/4] bg-gray-100 rounded-lg mb-3 flex items-center justify-center">
-                <img 
-                  src={person.image} 
+                <img
+                  src={person.image}
                   alt={person.name}
                   className="w-full h-full object-contain"
                 />
@@ -171,8 +169,8 @@ function ManagementModal({ isOpen, onClose, person }) {
             <div className="w-2/5 lg:w-1/3 p-6 md:p-8">
               <div className="h-full flex flex-col">
                 <div className="w-full aspect-[5/6] bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
-                  <img 
-                    src={person.image} 
+                  <img
+                    src={person.image}
                     alt={person.name}
                     className="w-full h-full object-contain"
                   />
@@ -205,7 +203,7 @@ function ManagementModal({ isOpen, onClose, person }) {
 
                   <div className="text-gray-700 text-base leading-relaxed">
                     {person.details}
-                    
+
                     {hasAdditionalInfo && (
                       <div className="mt-8 pt-8 border-t border-gray-200">
                         <div className="space-y-6">{renderAdditionalInfo()}</div>

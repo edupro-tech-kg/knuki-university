@@ -63,7 +63,9 @@ export default function TwoGisMap({
           if (mapRef.current) {
             try {
               mapRef.current.remove();
-            } catch {}
+            } catch (error) {
+              console.warn("Failed to remove map:", error);
+            }
             mapRef.current = null;
           }
 
@@ -78,7 +80,8 @@ export default function TwoGisMap({
           mapRef.current = map;
           markerRef.current = marker;
         });
-      } catch (e) {
+      } catch (error) {
+        console.warn("Map initialization failed:", error);
         if (!cancelled) setFailed(true);
       }
     }
@@ -90,7 +93,9 @@ export default function TwoGisMap({
       if (mapRef.current) {
         try {
           mapRef.current.remove();
-        } catch {}
+        } catch (error) {
+          console.warn("Failed to remove map:", error);
+        }
         mapRef.current = null;
       }
       markerRef.current = null;

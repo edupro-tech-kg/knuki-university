@@ -54,54 +54,6 @@ export default function ProgramsSection() {
     return { cardWidth, gap, scrollAmount: cardWidth + gap };
   };
 
-  const handleNext = () => {
-    if (!containerRef.current || !isDesktop) return;
-
-    const container = containerRef.current;
-    const { scrollLeft, scrollWidth, clientWidth } = container;
-    const { scrollAmount } = getScrollAmount();
-
-    const newScrollLeft = scrollLeft + scrollAmount;
-
-    if (newScrollLeft >= scrollWidth - clientWidth - 1) {
-      const endScrollLeft = scrollWidth - clientWidth;
-      container.scrollTo({ left: endScrollLeft, behavior: "smooth" });
-
-      setTimeout(() => {
-        container.scrollTo({ left: 0, behavior: "auto" });
-        setTimeout(() => {
-          container.scrollTo({ left: scrollAmount, behavior: "smooth" });
-        }, 50);
-      }, 300);
-    } else {
-      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
-    }
-  };
-
-  const handlePrev = () => {
-    if (!containerRef.current || !isDesktop) return;
-
-    const container = containerRef.current;
-    const { scrollLeft, scrollWidth, clientWidth } = container;
-    const { scrollAmount } = getScrollAmount();
-
-    const newScrollLeft = scrollLeft - scrollAmount;
-
-    if (newScrollLeft < 0) {
-      container.scrollTo({ left: 0, behavior: "smooth" });
-
-      setTimeout(() => {
-        const endScrollLeft = scrollWidth - clientWidth;
-        container.scrollTo({ left: endScrollLeft, behavior: "auto" });
-        setTimeout(() => {
-          container.scrollTo({ left: endScrollLeft - scrollAmount, behavior: "smooth" });
-        }, 50);
-      }, 300);
-    } else {
-      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
-    }
-  };
-
   const handleNextSimple = () => {
     if (!containerRef.current || !isDesktop) return;
 

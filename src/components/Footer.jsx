@@ -124,7 +124,11 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="cursor-pointer hover:opacity-80 transition-opacity"
               >
-                <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9" src={icon.src} alt={icon.alt} />
+                <img
+                  className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9"
+                  src={icon.src}
+                  alt={icon.alt}
+                />
               </a>
             ))}
           </div>
@@ -140,7 +144,11 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="cursor-pointer hover:opacity-80 transition-opacity"
             >
-              <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9" src={icon.src} alt={icon.alt} />
+              <img
+                className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9"
+                src={icon.src}
+                alt={icon.alt}
+              />
             </a>
           ))}
         </div>

@@ -89,7 +89,7 @@
 }
 
 .fc .fc-daygrid-day.has-holiday-day:not(.fc-day-today) {
-  background: rgba(245, 158, 11, 0.10);
+  background: rgba(245, 158, 11, 0.1);
 }
 
 .fc .fc-daygrid-day.has-news-day .fc-daygrid-day-number::after {

@@ -27,7 +27,7 @@ function ManagementCard({ name, post, onOpenModal, btnText, showButton, image })
           src={image}
           alt={name}
           className="w-full object-contain"
-          style={{ maxHeight: '100%', objectFit: 'contain', objectPosition: 'top' }}
+          style={{ maxHeight: "100%", objectFit: "contain", objectPosition: "top" }}
         />
       </div>
 
@@ -48,7 +48,7 @@ function ManagementCard({ name, post, onOpenModal, btnText, showButton, image })
             {post || "Должность не указана"}
           </p>
         </div>
-        
+
         {showButton && (
           <div className="mt-auto pt-1 sm:pt-1.5">
             <Button

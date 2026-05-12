@@ -11,11 +11,9 @@ const ReusableSlider = ({
   showDots = true,
   autoplay = true,
   autoplayInterval = 2000,
-  overlap = false,
   className = "",
   imageClassName = "",
   dotsPosition = "top",
-  mobilePosition = "top",
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -31,7 +29,7 @@ const ReusableSlider = ({
     }, autoplayInterval);
 
     return () => clearInterval(interval);
-  }, [autoplay, autoplayInterval, images.length, currentSlide, prefersReducedMotion]);
+  }, [autoplay, autoplayInterval, images.length, prefersReducedMotion]);
 
   if (!images.length) return null;
 
@@ -58,8 +56,9 @@ const ReusableSlider = ({
                   {images.map((_, i) => (
                     <span
                       key={i}
-                      className={`h-1.5 w-1.5 rounded-full ${i === currentSlide ? "bg-white" : "bg-white/40"
-                        }`}
+                      className={`h-1.5 w-1.5 rounded-full ${
+                        i === currentSlide ? "bg-white" : "bg-white/40"
+                      }`}
                     />
                   ))}
                 </div>
@@ -85,8 +84,9 @@ const ReusableSlider = ({
                 key={i}
                 src={image.src}
                 alt={image.alt || `Slide ${i + 1}`}
-                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out ${i === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
+                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out ${
+                  i === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+                }`}
               />
             ))}
           </div>
@@ -96,8 +96,9 @@ const ReusableSlider = ({
               {images.map((_, i) => (
                 <span
                   key={i}
-                  className={`h-1.5 w-1.5 rounded-full ${i === currentSlide ? "bg-white" : "bg-white/40"
-                    }`}
+                  className={`h-1.5 w-1.5 rounded-full ${
+                    i === currentSlide ? "bg-white" : "bg-white/40"
+                  }`}
                 />
               ))}
             </div>

@@ -26,7 +26,10 @@ const baseSignature = [
 
 export default function RectorMessage() {
   const { t } = useTranslation();
-  const paragraphsFromTranslation = t("rector.paragraphs", { returnObjects: true, defaultValue: baseParagraphs });
+  const paragraphsFromTranslation = t("rector.paragraphs", {
+    returnObjects: true,
+    defaultValue: baseParagraphs,
+  });
   const fullText = t("rector.fullText", { defaultValue: "" });
   const paragraphsFromFullText =
     typeof fullText === "string" && fullText.trim()
@@ -38,7 +41,7 @@ export default function RectorMessage() {
   const paragraphs =
     Array.isArray(paragraphsFromTranslation) && paragraphsFromTranslation.length
       ? paragraphsFromTranslation
-      : paragraphsFromFullText ?? baseParagraphs;
+      : (paragraphsFromFullText ?? baseParagraphs);
   const signature = t("rector.signature", { returnObjects: true, defaultValue: baseSignature });
   const midpoint = Math.ceil(paragraphs.length / 2);
   const firstColumn = paragraphs.slice(0, midpoint);

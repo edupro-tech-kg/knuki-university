@@ -16,15 +16,6 @@ function SciencePage() {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState(0);
 
-  const data = t("sciencePage", { returnObjects: true });
-  if (!data || !data.tabs) {
-    return (
-      <div className="container mx-auto px-4 py-12">
-        <div className="text-center">Loading...</div>
-      </div>
-    );
-  }
-
   const sliderImages = useMemo(
     () => [
       { src: photo1, alt: "Science photo 1" },
@@ -37,6 +28,15 @@ function SciencePage() {
     ],
     []
   );
+
+  const data = t("sciencePage", { returnObjects: true });
+  if (!data || !data.tabs) {
+    return (
+      <div className="container mx-auto px-4 py-12">
+        <div className="text-center">Loading...</div>
+      </div>
+    );
+  }
 
   const heroData = {
     title: data.title,

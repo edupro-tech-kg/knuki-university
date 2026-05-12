@@ -48,7 +48,7 @@ function StaffTable({ rows, headers }) {
 }
 
 export default function OkuuBolumuPage() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const content = t("okuuBolumuPage", { returnObjects: true });
   const headings = content?.headings || {};
   const tableHeaders = content?.tableHeaders || {};

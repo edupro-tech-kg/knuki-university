@@ -59,4 +59,3 @@ export default class ChunkLoadErrorBoundary extends React.Component {
     );
   }
 }
-

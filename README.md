@@ -1,16 +1,99 @@
-# React + Vite
+# Knuki University Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based website for Knuki University built with Vite, featuring multilingual support and responsive design.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the official website for Knuki University (knuki.kg), built with:
 
-## React Compiler
+- React 19 with Vite for fast development
+- TailwindCSS for styling
+- React Router for navigation
+- i18next for internationalization (Kyrgyz, Russian, English)
+- FullCalendar for events management
+- Framer Motion for animations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Development Setup
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create `.env` files based on `.env.example`:
+
+- `.env` - Development environment
+- `.env.production` - Production environment
+
+Required variables:
+
+- `VITE_SITE_URL=https://www.knuki.kg`
+
+### Available Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+npm run format       # Format code with Prettier
+```
+
+## Project Structure
+
+- `src/pages/` - Main page components
+- `src/components/` - Reusable UI components
+- `src/sections/` - Page sections
+- `src/locales/` - Translation files (en, ky, ru)
+- `src/assets/` - Static assets (images, PDFs)
+- `src/data/` - Static data (faculties, news, etc.)
+
+## Deployment
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Production Build
+
+```bash
+npm run build
+```
+
+The build output is in the `dist/` directory and can be deployed to any static hosting service.
+
+### Vercel Deployment
+
+The project is configured for Vercel deployment via `vercel.json`.
+
+## Code Quality
+
+Before committing changes:
+
+1. Run linting: `npm run lint`
+2. Format code: `npm run format`
+3. Test build: `npm run build`
+
+## Known Issues
+
+There are some linting warnings that need to be addressed:
+
+- Unused variables in locale files
+- React hooks optimization opportunities
+- Some escape characters in data files
+
+These do not affect functionality but should be cleaned up for better code quality.
+
+## Contact
+
+For questions about this project, contact the development team.

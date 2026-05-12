@@ -56,7 +56,7 @@ export default function EducationPage() {
         hasPdf: pdfMapping[item.id] && !noLinkIds.includes(item.id),
         // Определяем, показывать ли кнопку
         showButton: pdfMapping[item.id] && !noLinkIds.includes(item.id),
-      }))
+      })),
     }));
   };
 
@@ -65,7 +65,7 @@ export default function EducationPage() {
       setModalState({
         isOpen: true,
         pdf: item.pdf,
-        title: item.title
+        title: item.title,
       });
     }
   };
@@ -73,23 +73,17 @@ export default function EducationPage() {
   const closePdfModal = () => {
     setModalState({ isOpen: false, pdf: null, title: "" });
   };
-  const renderActionButton = (item, index, defaultButton) => {
-    if (!item.showButton) {
-      return null;
-    }
-    return defaultButton;
-  };
 
   const renderLeftCell = (item) => {
     return (
       <div>
-        <p className="text-gray-700 text-sm sm:text-base font-normal">
-          {item.title}
-        </p>
+        <p className="text-gray-700 text-sm sm:text-base font-normal">{item.title}</p>
         {item.list && (
           <ul className="list-disc pl-5 mt-2 space-y-1">
             {item.list.map((li, i) => (
-              <li key={i} className="text-sm text-gray-600">{li}</li>
+              <li key={i} className="text-sm text-gray-600">
+                {li}
+              </li>
             ))}
           </ul>
         )}
@@ -99,9 +93,7 @@ export default function EducationPage() {
 
   const renderRightCell = (item) => (
     <div className="py-1">
-      <p className="font-medium text-gray-800 text-sm sm:text-base">
-        {item.title}
-      </p>
+      <p className="font-medium text-gray-800 text-sm sm:text-base">{item.title}</p>
       {item.list && (
         <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-700 text-sm sm:text-base">
           {item.list.map((li, i) => (
@@ -109,9 +101,7 @@ export default function EducationPage() {
           ))}
         </ul>
       )}
-      {item.footer && (
-        <p className="mt-3 italic text-gray-600 text-sm">{item.footer}</p>
-      )}
+      {item.footer && <p className="mt-3 italic text-gray-600 text-sm">{item.footer}</p>}
     </div>
   );
 
@@ -128,7 +118,6 @@ export default function EducationPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-20 mt-8 lg:mt-12">
         <div className="flex flex-col gap-10 lg:gap-16">
           <div>
-
             <DocumentTable
               data={leftTableData}
               config={{
@@ -181,11 +170,7 @@ export default function EducationPage() {
       </div>
 
       {modalState.isOpen && (
-        <PdfModal
-          pdf={modalState.pdf}
-          title={modalState.title}
-          onClose={closePdfModal}
-        />
+        <PdfModal pdf={modalState.pdf} title={modalState.title} onClose={closePdfModal} />
       )}
     </div>
   );

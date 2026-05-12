@@ -12,22 +12,17 @@ function LibraryDescription() {
           {library.title}
         </h2>
 
-        <p className="text-text-primary text-left whitespace-pre-line">
-          {library.content}
-        </p>
+        <p className="text-text-primary text-left whitespace-pre-line">{library.content}</p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
         {library.cards.map((card) => (
           <div key={card.id} className="p-4 border rounded-lg">
-            <h4 className="text-lg text-text-primary font-bold mb-2">
-              {card.name}
-            </h4>
+            <h4 className="text-lg text-text-primary font-bold mb-2">{card.name}</h4>
 
             <p className="text-text-primary whitespace-pre-line leading-relaxed">
               {card.description}
             </p>
-
           </div>
         ))}
       </div>

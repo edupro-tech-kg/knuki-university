@@ -23,8 +23,6 @@ function LibraryUsers() {
         ))}
       </div>
     </section>
-
-
   );
 }
 

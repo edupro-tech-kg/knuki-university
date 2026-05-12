@@ -49,15 +49,14 @@ export default function CalendarEvents() {
                 highlightDates={highlightedDates}
                 holidays={holidays}
                 selectedDate={selectedDate}
-                onSelectDate={(dateStr) => setSelectedDate((prev) => (prev === dateStr ? null : dateStr))}
+                onSelectDate={(dateStr) =>
+                  setSelectedDate((prev) => (prev === dateStr ? null : dateStr))
+                }
                 initialDate={initialDate}
               />
             </div>
             <div className="hidden xl:block lg:w-[45%] px-6 sm:px-10 lg:px-12 py-10 lg:py-12">
-              <LastNews
-                selectedDate={selectedDate}
-                onClearFilter={() => setSelectedDate(null)}
-              />
+              <LastNews selectedDate={selectedDate} onClearFilter={() => setSelectedDate(null)} />
             </div>
 
             {/* Mobile carousel-like toggle: calendar <-> news */}
@@ -70,7 +69,9 @@ export default function CalendarEvents() {
                       highlightDates={highlightedDates}
                       holidays={holidays}
                       selectedDate={selectedDate}
-                      onSelectDate={(dateStr) => setSelectedDate((prev) => (prev === dateStr ? null : dateStr))}
+                      onSelectDate={(dateStr) =>
+                        setSelectedDate((prev) => (prev === dateStr ? null : dateStr))
+                      }
                       initialDate={initialDate}
                     />
                   </div>
